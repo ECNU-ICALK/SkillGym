@@ -1,0 +1,23 @@
+{
+  "page_id": "monitoring",
+  "path": "/monitoring/",
+  "title": "Monitoring for release teams",
+  "meta_description": "Legacy monitoring overview page.",
+  "h1": "Monitoring overview",
+  "canonical_path": "/monitoring/",
+  "indexable": true,
+  "include_in_sitemap": true,
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Monitoring"
+    }
+  ],
+  "body_blocks": [
+    {
+      "type": "paragraph",
+      "text": "This older page competes with the new error monitoring landing page."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "task_id": "package_distribution__pkgmeta_kit_release_candidate",
+  "category": "package-distribution",
+  "design_status": "experiment_validated",
+  "selected_skill": "python-pypi-package-builder",
+  "selected_skill_stars": "31.5k",
+  "selection_rationale": [
+    "Strong match for Python package build, wheel and sdist production, entry points, package data, and release preparation workflows.",
+    "Does not require external publishing accounts, private registries, OTP flows, or sensitive production access.",
+    "Supports a single-container task where the key difference between with_skill and without_skill can remain isolated to environment/skills."
+  ],
+  "rejected_high_star_skills": [
+    {
+      "skill": "publish-extension",
+      "stars": "132.1k",
+      "reason": "Depends on external Microsoft Store or WinGet release channels."
+    },
+    {
+      "skill": "version-release",
+      "stars": "75.8k",
+      "reason": "Centered on repository-specific release permissions and upstream publishing state."
+    },
+    {
+      "skill": "publish-placeholder-package",
+      "stars": "32.7k",
+      "reason": "Requires npm auth and registry-side permission setup."
+    }
+  ],
+  "task_shape": {
+    "service_type": "internal release engineering utility",
+    "domain": "Python package metadata catalogs",
+    "runtime": "single-container Python workspace with local catalog snapshots",
+    "solver_action": "prepare a source-checkout utility as a distributable package instead of producing a report"
+  },
+  "planned_verifier_focus": [
+    "Wheel and sdist production from repository root",
+    "Console script and module execution entry points",
+    "Installed-state data access through packaged resources",
+    "Manifest fidelity against built artifacts and metadata",
+    "Anti-cheat checks against hardcoded contract-only behavior",
+    "Preservation of provided catalog inputs"
+  ],
+  "real_data_sources": [
+    {
+      "planned_file": "environment/workspace/pkgmeta-kit/data/licenses.json",
+      "reference_type": "direct input snapshot",
+      "reference": "SPDX license list data",
+      "link": "https://github.com/spdx/license-list-data/blob/main/json/licenses.json"
+    },
+    {
+      "planned_file": "environment/workspace/pkgmeta-kit/data/trove_classifiers.py",
+      "reference_type": "direct input snapshot",
+      "reference": "PyPA trove-classifiers source",
+      "link": "https://github.com/pypa/trove-classifiers/blob/main/src/trove_classifiers/__init__.py"
+    },
+    {
+      "planned_file": "environment/workspace/pkgmeta-kit/seed_sampleproject_README.md",
+      "reference_type": "layout and package README seed",
+      "reference": "PyPA sampleproject README",
+      "link": "https://github.com/pypa/sampleproject/blob/main/README.md"
+    }
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime skill-copy logic may differ between with_skill and without_skill variants.",
+  "local_validation": {
+    "buggy_workspace_expected_result": "fails substantive verifier checks because it is not packaged, lacks installable entry points, and reads catalogs from source-checkout-relative paths",
+    "oracle_result": "latest E2B oracle trial passes 9/9 after the sdist-install verifier was added",
+    "local_test_command": "tests/test.sh"
+  },
+  "iteration_notes": [
+    "Do not modify the selected skill contents.",
+    "Do not alter tests, task statement, data, or dependencies between with_skill and without_skill variants.",
+    "Finalize README metrics only after completed E2B comparison runs.",
+    "After a without-skill run achieved 8/8, the verifier was expanded to cover sdist installation behavior in a fresh venv.",
+    "The final task-level failure retained for without_skill is action-level: metadata and built wheel disagree on Requires-Python."
+  ],
+  "experiment_outcome": {
+    "latest_oracle_e2b": {
+      "trial_name": "pkgdist_oracle_latest",
+      "summary": "passed 9/9"
+    },
+    "effective_comparisons": [
+      {
+        "with_skill_trial": "pkgdist_with_final_20260502-223122",
+        "without_skill_trial": "pkgdist_without_final_20260502-223122",
+        "with_skill_result": "pass",
+        "without_skill_result": "fail",
+        "without_skill_failure": "manifest python_requires disagrees with wheel metadata"
+      },
+      {
+        "with_skill_trial": "pkgdist_with_r3_$(date +%Y%m%d-%H%M%S)",
+        "without_skill_trial": "pkgdist_without_debug_$(date +%Y%m%d-%H%M%S)",
+        "with_skill_result": "pass",
+        "without_skill_result": "fail",
+        "without_skill_failure": "sdist packaging path / metadata gap left one verifier failure before the final verifier expansion"
+      },
+      {
+        "with_skill_trial": "pkgdist_with_final3_20260502-224808",
+        "without_skill_trial": "pkgdist_without_final3_20260502-224808",
+        "with_skill_result": "pass",
+        "without_skill_result": "fail",
+        "without_skill_failure": "manifest python_requires disagrees with wheel metadata; added sdist-install verification still passes"
+      }
+    ]
+  }
+}

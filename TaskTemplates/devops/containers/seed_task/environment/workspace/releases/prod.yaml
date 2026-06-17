@@ -1,0 +1,21 @@
+namespace: observability-prod
+environment: prod
+replicaCount: 1
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  host: ""
+  path: /
+  pathType: Prefix
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 1
+  targetCPUUtilizationPercentage: 75
+  targetMemoryUtilizationPercentage: 80
+pdb:
+  enabled: false
+  minAvailable: 1
+config: {}
+secretEnv: []

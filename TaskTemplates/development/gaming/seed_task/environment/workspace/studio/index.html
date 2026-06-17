@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanto Encounter Atlas</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container app-shell">
+      <aside class="sidebar">
+        <h1>Kanto Encounter Atlas</h1>
+        <p class="subtitle">Seeded field atlas from local encounter snapshots.</p>
+
+        <section class="control-section">
+          <h3>Seed</h3>
+          <div class="seed-display" id="seed-display">24021</div>
+          <div class="seed-row">
+            <input class="seed-input" id="seed-input" type="number" step="1" />
+            <button class="button" id="seed-go" type="button">Go</button>
+          </div>
+          <div class="seed-controls">
+            <button class="button secondary" id="seed-prev" type="button">Previous</button>
+            <button class="button secondary" id="seed-next" type="button">Next</button>
+          </div>
+          <button class="button tertiary regen-button" id="seed-random" type="button">Random</button>
+        </section>
+
+        <section class="control-section">
+          <h3>Zone</h3>
+          <select id="zone-select"></select>
+        </section>
+
+        <section class="control-section">
+          <h3>Preset</h3>
+          <div class="preset-row">
+            <button class="button secondary" id="preset-survey" data-preset="survey" type="button">Survey</button>
+            <button class="button secondary" id="preset-bloom" data-preset="bloom" type="button">Bloom</button>
+            <button class="button secondary" id="preset-storm" data-preset="storm" type="button">Storm</button>
+          </div>
+        </section>
+
+        <section class="control-section">
+          <h3>Parameters</h3>
+
+          <div class="control-group">
+            <label for="density-control">Density</label>
+            <div class="slider-container">
+              <input id="density-control" type="range" />
+              <span class="value-display" id="density-value"></span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="turbulence-control">Turbulence</label>
+            <div class="slider-container">
+              <input id="turbulence-control" type="range" />
+              <span class="value-display" id="turbulence-value"></span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="focus-control">Focus</label>
+            <div class="slider-container">
+              <input id="focus-control" type="range" />
+              <span class="value-display" id="focus-value"></span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="contrast-control">Contrast</label>
+            <div class="slider-container">
+              <input id="contrast-control" type="range" />
+              <span class="value-display" id="contrast-value"></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="control-section">
+          <h3>Colors</h3>
+
+          <div class="color-group">
+            <label for="color1">Primary Color</label>
+            <div class="color-picker-container">
+              <input id="color1" type="color" value="#d97757" />
+              <span class="color-value" id="color1-value">#d97757</span>
+            </div>
+          </div>
+
+          <div class="color-group">
+            <label for="color2">Secondary Color</label>
+            <div class="color-picker-container">
+              <input id="color2" type="color" value="#6a9bcc" />
+              <span class="color-value" id="color2-value">#6a9bcc</span>
+            </div>
+          </div>
+
+          <div class="color-group">
+            <label for="color3">Accent Color</label>
+            <div class="color-picker-container">
+              <input id="color3" type="color" value="#788c5d" />
+              <span class="color-value" id="color3-value">#788c5d</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="control-section">
+          <h3>Actions</h3>
+          <div class="button-row action-row">
+            <button class="button" id="regenerate-button" type="button">Regenerate</button>
+            <button class="button secondary" id="reset-button" type="button">Reset</button>
+          </div>
+          <button class="button tertiary" id="export-button" type="button">Export Scene JSON</button>
+          <p id="export-status">No export yet.</p>
+          <textarea id="export-json" rows="8" readonly></textarea>
+        </section>
+      </aside>
+
+      <main class="canvas-area">
+        <div class="stage">
+          <header class="stage-header">
+            <h2 id="route-title">Loading zone...</h2>
+            <p id="route-summary"></p>
+          </header>
+
+          <section class="metric-strip">
+            <article class="metric-card">
+              <h4>Species</h4>
+              <p id="metric-species-count">-</p>
+            </article>
+            <article class="metric-card">
+              <h4>Avg Level Band</h4>
+              <p id="metric-avg-level">-</p>
+            </article>
+            <article class="metric-card">
+              <h4>Avg BST</h4>
+              <p id="metric-avg-bst">-</p>
+            </article>
+            <article class="metric-card">
+              <h4>Type Mix</h4>
+              <p id="metric-type-mix">-</p>
+            </article>
+          </section>
+
+          <section class="canvas-shell">
+            <div id="canvas-container">
+              <div class="loading" id="canvas-loading">Initializing local atlas shell...</div>
+            </div>
+          </section>
+
+          <section class="cards-shell">
+            <h3>Highlighted Species</h3>
+            <div id="highlighted-species"></div>
+          </section>
+
+          <section class="pressure-shell">
+            <h3>Type Pressure</h3>
+            <div id="type-pressure" class="pressure-grid">
+              <article class="pressure-card">
+                <h4>Dominant Mix</h4>
+                <div id="type-mix-bars" class="bar-stack"></div>
+              </article>
+              <article class="pressure-card">
+                <h4>Attack Coverage</h4>
+                <ul id="attack-coverage" class="token-list"></ul>
+              </article>
+              <article class="pressure-card">
+                <h4>Exposure Profile</h4>
+                <ul id="exposure-profile" class="token-list"></ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="signals-shell">
+            <h3>Zone Signals</h3>
+            <div id="zone-signals" class="signals-grid"></div>
+          </section>
+
+          <section class="sources-shell">
+            <h3>Source Links</h3>
+            <ul id="source-links"></ul>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="./vendor/p5.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

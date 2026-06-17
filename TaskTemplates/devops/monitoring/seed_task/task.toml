@@ -1,0 +1,35 @@
+version = "1.0"
+
+[metadata]
+id = "monitoring__harbor-prometheus-bundle"
+name = "Template: Harbor Prometheus Bundle"
+description = "Build a Prometheus monitoring bundle for a Harbor-like service set and deliver a service summary report."
+difficulty = "hard"
+category = "monitoring"
+tags = [
+  "monitoring",
+  "prometheus",
+  "promql",
+  "service-discovery",
+  "observability",
+  "recording-rules",
+  "alerting"
+]
+required_skills = ["prometheus-configuration"]
+primary_output_file = "/app/output/monitoring_bundle_report.json"
+source_template_id = "monitoring__harbor-prometheus-bundle"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 600.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 12288
+gpus = 0
+allow_internet = true

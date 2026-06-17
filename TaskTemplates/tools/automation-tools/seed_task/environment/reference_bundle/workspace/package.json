@@ -1,0 +1,8 @@
+{
+  "name": "channel-aware-changelog-workspace",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "format": "node -e \"process.exit(0)\""
+  }
+}

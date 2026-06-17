@@ -1,0 +1,13 @@
+{
+  "name": "partner-order-refund-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Partner-facing order and refund API service used for the backend template task.",
+  "scripts": {
+    "start": "node server.js",
+    "reset-state": "node scripts/reset_runtime_state.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

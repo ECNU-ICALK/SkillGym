@@ -1,0 +1,32 @@
+[
+  {
+    "api_key": "pk_live_gold_partner",
+    "partner_name": "northwind-marketplace",
+    "tier": "gold",
+    "scopes": ["orders:read", "refunds:write"],
+    "rate_limit": {
+      "window_seconds": 60,
+      "max_requests": 8
+    }
+  },
+  {
+    "api_key": "pk_live_bronze_partner",
+    "partner_name": "maple-reseller",
+    "tier": "bronze",
+    "scopes": ["orders:read", "refunds:write"],
+    "rate_limit": {
+      "window_seconds": 60,
+      "max_requests": 3
+    }
+  },
+  {
+    "api_key": "pk_live_readonly_partner",
+    "partner_name": "audit-console",
+    "tier": "silver",
+    "scopes": ["orders:read"],
+    "rate_limit": {
+      "window_seconds": 60,
+      "max_requests": 5
+    }
+  }
+]

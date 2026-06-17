@@ -1,0 +1,39 @@
+{
+  "provider_id": "mta_static",
+  "queries": [
+    {
+      "kind": "stop_search",
+      "query": "Canal",
+      "limit": 5
+    },
+    {
+      "kind": "stop_search",
+      "query": "L08",
+      "limit": 3
+    },
+    {
+      "kind": "departures",
+      "stop_id": "A24",
+      "date": "2026-03-03",
+      "time": "08:30:00",
+      "limit": 4
+    },
+    {
+      "kind": "departures",
+      "stop_id": "L08",
+      "date": "2026-03-07",
+      "time": "11:15:00",
+      "limit": 4
+    },
+    {
+      "kind": "service_window",
+      "route_id": "A",
+      "date": "2026-03-03"
+    },
+    {
+      "kind": "service_window",
+      "route_id": "L",
+      "date": "2026-03-07"
+    }
+  ]
+}

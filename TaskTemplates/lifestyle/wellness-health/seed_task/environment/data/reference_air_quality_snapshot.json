@@ -1,0 +1,19 @@
+{
+  "exported_at": "2026-05-04T16:10:00-05:00",
+  "covers_until": "2026-05-04T16:00:00-05:00",
+  "note": "Earlier air-quality export for internal backlog review.",
+  "hours": [
+    {
+      "time_local": "2026-05-04T08:00:00-05:00",
+      "us_aqi": 42
+    },
+    {
+      "time_local": "2026-05-04T09:00:00-05:00",
+      "us_aqi": 42
+    },
+    {
+      "time_local": "2026-05-04T16:00:00-05:00",
+      "us_aqi": 55
+    }
+  ]
+}

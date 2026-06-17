@@ -1,0 +1,100 @@
+{
+  "anchor_stride_rows": 3,
+  "development_counts_by_source_and_phase": {
+    "datatest.txt": {
+      "RAMPING_DOWN": 44,
+      "RAMPING_UP": 44,
+      "STEADY_EMPTY": 44,
+      "STEADY_OCCUPIED": 44
+    },
+    "datatraining.txt": {
+      "RAMPING_DOWN": 83,
+      "RAMPING_UP": 83,
+      "STEADY_EMPTY": 83,
+      "STEADY_OCCUPIED": 83
+    }
+  },
+  "development_examples": 508,
+  "development_sources": [
+    "datatraining.txt",
+    "datatest.txt"
+  ],
+  "feature_columns": [
+    "Temperature",
+    "Humidity",
+    "Light",
+    "CO2",
+    "HumidityRatio",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos"
+  ],
+  "holdout_counts_by_source_and_phase": {
+    "datatest2.txt": {
+      "RAMPING_DOWN": 101,
+      "RAMPING_UP": 101,
+      "STEADY_EMPTY": 101,
+      "STEADY_OCCUPIED": 101
+    }
+  },
+  "holdout_examples": 404,
+  "holdout_source": "datatest2.txt",
+  "max_sequence_length": 120,
+  "phase_mapping": {
+    "0": "STEADY_EMPTY",
+    "1": "RAMPING_UP",
+    "2": "RAMPING_DOWN",
+    "3": "STEADY_OCCUPIED"
+  },
+  "sequence_length_choices": [
+    30,
+    45,
+    60,
+    75,
+    90,
+    105,
+    120
+  ],
+  "source_page_url": "https://archive-beta.ics.uci.edu/dataset/357/occupancy+detection",
+  "source_zip_url": "https://cdn.uci-ics-mlr-prod.aws.uci.edu/357/occupancy%2Bdetection.zip",
+  "storage_sequence_length_choices": [
+    30,
+    36,
+    42,
+    45,
+    48,
+    51,
+    54,
+    57,
+    60,
+    63,
+    66,
+    69,
+    72,
+    75,
+    78,
+    81,
+    84,
+    87,
+    90,
+    93,
+    96,
+    99,
+    102,
+    105,
+    108,
+    111,
+    114,
+    117,
+    120,
+    123,
+    126,
+    129,
+    132,
+    138,
+    144
+  ],
+  "storage_sequence_length_max": 144,
+  "zip_sha256": "4ae3f46aa98eedff564a9f6924d1635173e2fd2c816004342a9be93076d3a81a"
+}

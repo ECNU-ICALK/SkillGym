@@ -1,0 +1,38 @@
+version = "1.0"
+
+[metadata]
+id = "package_distribution__pkgmeta_kit_release_candidate"
+name = "Template: Pkgmeta Kit Release Candidate"
+description = "Prepare an internal metadata reporting utility as a releasable Python distribution with installable CLI entry points and packaged data files."
+difficulty = "hard"
+category = "package-distribution"
+tags = [
+  "python-packaging",
+  "pyproject",
+  "wheel",
+  "sdist",
+  "entry-points",
+  "package-data",
+  "release-manifest"
+]
+required_skills = ["python-pypi-package-builder"]
+primary_output_file = "/workspace/out/release_manifest.json"
+source_template_id = "package_distribution__pkgmeta_kit_release_candidate"
+task_role = "template"
+
+[agent]
+timeout_sec = 900.0
+
+[solution]
+timeout_sec = 900.0
+
+[verifier]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

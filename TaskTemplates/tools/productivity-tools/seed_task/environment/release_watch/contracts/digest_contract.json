@@ -1,0 +1,50 @@
+{
+  "title": "Engineering Release Watch",
+  "output_file": "engineering_release_digest.md",
+  "inventory_file": "feed_inventory.json",
+  "manifest_file": "delivery_manifest.json",
+  "state_db_file": "blogwatcher.db",
+  "audit_log_file": "blogwatcher_audit.ndjson",
+  "reopen_targets_file": "data/review_reopen_targets.csv",
+  "reopen_state_file": "review_reopen_state.json",
+  "seed_state_file": "seed/initial_watch_state.json",
+  "local_server_port": 19100,
+  "required_sections": [
+    {
+      "tier": "high",
+      "heading": "High Priority"
+    },
+    {
+      "tier": "standard",
+      "heading": "Standard Priority"
+    }
+  ],
+  "per_source_delivery_cap": 2,
+  "required_shell_strings": [
+    "# Engineering Release Watch",
+    "## High Priority",
+    "## Standard Priority",
+    "## Source Coverage"
+  ],
+  "cleanup_tokens": [
+    "todo",
+    "placeholder",
+    "reviewer note",
+    "scratch"
+  ],
+  "required_source_labels": [
+    "uv Releases",
+    "Node.js Blog",
+    "GitHub Changelog",
+    "TypeScript Releases"
+  ],
+  "legacy_blog_names": [
+    "Legacy Ops Weekly"
+  ],
+  "notes": [
+    "Use the bundled release-watch inputs and persisted workspace state to produce a repeatable delivery run.",
+    "Preserve earlier read history and keep unchanged reruns continuing from the same workspace state.",
+    "Keep resolved bundle references bundle-relative in inventory and manifest outputs.",
+    "If any legacy blogs are removed while reconciling this run, call them out in Source Coverage."
+  ]
+}

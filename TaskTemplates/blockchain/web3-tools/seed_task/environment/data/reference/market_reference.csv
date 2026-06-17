@@ -1,0 +1,5 @@
+exchange,market_id,native_symbol,canonical_symbol,volume_unit,snapshot_date,note
+coinbase,BTC-USD,BTC-USD,BTC/USD,base,2023-03-30,older catalog export page 1
+coinbase,DASH-USD,DASH-USD,DASH/USD,base,2023-03-30,older catalog export page 1
+kraken,XBTUSD,XBT/USD,BTC/USD,quote,2023-03-30,older catalog export page 1
+kraken,DASHUSD,DASH/USD,DASH/USD,quote,2023-03-30,older catalog export page 1

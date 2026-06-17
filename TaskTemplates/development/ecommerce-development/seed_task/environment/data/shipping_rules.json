@@ -1,0 +1,71 @@
+{
+  "shipping_classes": [
+    {
+      "slug": "standard-print",
+      "name": "Standard Print"
+    },
+    {
+      "slug": "oversized-print",
+      "name": "Oversized Print"
+    }
+  ],
+  "zones": [
+    {
+      "name": "United States",
+      "order": 1,
+      "locations": [
+        {
+          "type": "country",
+          "code": "US"
+        }
+      ],
+      "method": {
+        "id": "flat_rate",
+        "title": "Ground Prints",
+        "base_cost": "8",
+        "class_costs": {
+          "standard-print": "0",
+          "oversized-print": "10"
+        }
+      }
+    },
+    {
+      "name": "Canada",
+      "order": 2,
+      "locations": [
+        {
+          "type": "country",
+          "code": "CA"
+        }
+      ],
+      "method": {
+        "id": "flat_rate",
+        "title": "Tracked Prints",
+        "base_cost": "18",
+        "class_costs": {
+          "standard-print": "0",
+          "oversized-print": "14"
+        }
+      }
+    },
+    {
+      "name": "Europe",
+      "order": 3,
+      "locations": [
+        {
+          "type": "continent",
+          "code": "EU"
+        }
+      ],
+      "method": {
+        "id": "flat_rate",
+        "title": "International Prints",
+        "base_cost": "24",
+        "class_costs": {
+          "standard-print": "0",
+          "oversized-print": "14"
+        }
+      }
+    }
+  ]
+}

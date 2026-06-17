@@ -1,0 +1,35 @@
+{
+  "task_id": "content_creation__renewable_capacity_publication_pack",
+  "category": "content-creation",
+  "selected_skill": "article-writing",
+  "task_shape": "multi_channel_publication_pack",
+  "inputs": {
+    "campaign_brief": "environment/campaign/brief/editorial_brief.md",
+    "channel_contract": "environment/campaign/brief/channel_contract.json",
+    "claim_bank": "environment/campaign/data/claim_bank.json",
+    "source_manifest": "environment/campaign/data/source_manifest.json",
+    "source_extracts": "environment/campaign/data/source_extracts.json",
+    "voice_samples": "environment/campaign/voice/house_style_samples.md",
+    "channel_voice_notes": "environment/campaign/voice/channel_voice_notes.md",
+    "video_cue_sheet": "environment/campaign/assets/video_cue_sheet.md"
+  },
+  "outputs": [
+    "newsletter_intro.md",
+    "linkedin_post.md",
+    "thread.md",
+    "video_script.md",
+    "content_manifest.json"
+  ],
+  "verifier_focus": [
+    "channel_specific_copy",
+    "source_grounding",
+    "manifest_alignment",
+    "channel_compactness",
+    "house_style_adherence",
+    "alternate_fixture_rerun"
+  ],
+  "environment_notes": {
+    "single_container": true,
+    "hidden_service": false
+  }
+}

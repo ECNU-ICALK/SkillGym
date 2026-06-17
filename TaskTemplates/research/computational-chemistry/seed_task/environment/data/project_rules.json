@@ -1,0 +1,37 @@
+{
+  "task_id": "computational-chemistry__aqsol-release-refresh",
+  "target_column": "measured_logS",
+  "smiles_column": "SMILES",
+  "selection_metric": "valid_rmse",
+  "tie_breakers": [
+    "valid_mae",
+    "test_rmse",
+    "test_mae",
+    "run_id"
+  ],
+  "duplicate_policy_required": "canonical",
+  "current_signature": "aqsol_current_release_v1",
+  "retention_cap": 6,
+  "release_thresholds": {
+    "max_valid_rmse": 0.8,
+    "max_test_rmse": 0.82,
+    "max_gap": 0.15
+  },
+  "workspace_project": "aqsol_release_2026",
+  "required_current_model_types": [
+    "rf",
+    "hgb",
+    "ridge",
+    "elasticnet"
+  ],
+  "audit_requirements": {
+    "require_project_switch": true,
+    "required_cleanup_event": "cleanup.auto",
+    "min_train_events": 4,
+    "min_rank_events": 1,
+    "min_show_events": 1,
+    "min_predict_events": 2,
+    "min_cleanup_events": 1,
+    "min_storage_events": 2
+  }
+}

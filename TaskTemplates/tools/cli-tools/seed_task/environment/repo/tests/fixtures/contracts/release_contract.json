@@ -1,0 +1,63 @@
+{
+  "package_name": "airdesk",
+  "version": "0.4.0",
+  "artifact_name": "airdesk_0.4.0_linux_amd64.tar.gz",
+  "entrypoint": "bin/airdesk",
+  "source_date_epoch": 1710115200,
+  "source_files": [
+    "countries.csv",
+    "regions.csv",
+    "airports.csv",
+    "runways.csv",
+    "airport-frequencies.csv"
+  ],
+  "smoke_cases": [
+    {
+      "id": "help",
+      "args": [
+        "--help"
+      ],
+      "format": "text"
+    },
+    {
+      "id": "version-json",
+      "args": [
+        "version",
+        "--format",
+        "json"
+      ],
+      "format": "json"
+    },
+    {
+      "id": "stats-json",
+      "args": [
+        "stats",
+        "--format",
+        "json"
+      ],
+      "format": "json"
+    },
+    {
+      "id": "airport-kjfk-json",
+      "args": [
+        "airport",
+        "KJFK",
+        "--format",
+        "json"
+      ],
+      "format": "json"
+    },
+    {
+      "id": "country-us-top1-json",
+      "args": [
+        "country",
+        "US",
+        "--limit",
+        "1",
+        "--format",
+        "json"
+      ],
+      "format": "json"
+    }
+  ]
+}

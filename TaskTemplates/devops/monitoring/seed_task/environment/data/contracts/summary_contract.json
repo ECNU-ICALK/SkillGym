@@ -1,0 +1,13 @@
+{
+  "bundle_id": "release-2026-05-monitoring",
+  "target_bundle_label": "release-2026-05-monitoring",
+  "target_lane_label": "primary",
+  "summary_window": "10s",
+  "histogram_quantile": 0.95,
+  "healthy_target_count_semantics": "Count distinct in-scope services whose monitoring summary is currently available; page/ticket services still count, and multiple scrape endpoints of the same service count once.",
+  "expected_report_path": "/app/output/monitoring_bundle_report.json",
+  "required_metric_families": [
+    "harbor_http_requests_total",
+    "harbor_http_request_duration_seconds_bucket"
+  ]
+}

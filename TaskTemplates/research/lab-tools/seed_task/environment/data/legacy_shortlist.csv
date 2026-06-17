@@ -1,0 +1,10 @@
+rank,molecule_chembl_id,pref_name,best_raw_nM,reference_standard_type,reference_relation,reference_assay_chembl_id
+1,CHEMBL139307,,20.0,Inhibition,<,CHEMBL623728
+2,CHEMBL136058,,80.0,Inhibition,>,CHEMBL623728
+3,CHEMBL136404,,80.0,Inhibition,=,CHEMBL623728
+4,CHEMBL138691,,80.0,Inhibition,=,CHEMBL623728
+5,CHEMBL285063,,80.0,Inhibition,>,CHEMBL623728
+6,CHEMBL334697,,80.0,Inhibition,>,CHEMBL623727
+7,CHEMBL422292,,80.0,Inhibition,=,CHEMBL623728
+8,CHEMBL434827,,80.0,Inhibition,>,CHEMBL623728
+9,CHEMBL545315,CANERTINIB DIHYDROCHLORIDE,80.0,Inhibition,>,CHEMBL623728

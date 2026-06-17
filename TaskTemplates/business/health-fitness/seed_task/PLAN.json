@@ -1,0 +1,199 @@
+{
+  "task_id": "health-fitness__boutique-gym-onboarding-plan",
+  "category": "health-fitness",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/root/output/member_assessment.json",
+  "selected_skill": {
+    "dir": "fitness-nutrition",
+    "skillsmp_page": "https://skillsmp.com/skills/nousresearch-hermes-agent-optional-skills-health-fitness-nutrition-skill-md",
+    "stars": "122.5k",
+    "selection_reason": [
+      "热门程度高，且能力边界清晰，集中在训练动作检索、营养数据查询和体能/热量计算。",
+      "不依赖外部私有账号、订阅权限或第三方登录。",
+      "可以完全基于公开数据快照和容器内本地 service 构造确定性环境。",
+      "相比睡眠、慢性病、神经反馈或代谢诊断类 skill，隐私和安全敏感度更低。"
+    ]
+  },
+  "screened_skill_families": [
+    {
+      "name": "fitness-nutrition",
+      "stars": "122.5k",
+      "decision": "selected",
+      "notes": "公共动作库 + 公共营养数据库 + 结构化计算，最适合构造可验证模板任务。"
+    },
+    {
+      "name": "health-fitness-optimization",
+      "stars": "122.5k",
+      "decision": "not selected",
+      "notes": "覆盖面偏宽，容易把题型推向泛建议或难以稳定量化的优化问题。"
+    },
+    {
+      "name": "meal-planner",
+      "stars": "56.9k",
+      "decision": "reserve",
+      "notes": "适合作为 nutrition 子链路参考，但单独使用会削弱训练动作选择这一半任务价值。"
+    },
+    {
+      "name": "neuroskill-bci",
+      "stars": "24.8k",
+      "decision": "rejected",
+      "notes": "依赖设备和脑机反馈，环境搭建成本高，且敏感度偏高。"
+    },
+    {
+      "name": "health-guidance",
+      "stars": "21.8k",
+      "decision": "rejected",
+      "notes": "范围过泛，容易退化为不可验证的开放式建议。"
+    },
+    {
+      "name": "sleep-optimization-coach",
+      "stars": "18.4k",
+      "decision": "rejected",
+      "notes": "更容易涉及长期个人状态与隐私，不如训练/营养计划易于验证。"
+    }
+  ],
+  "real_data_sources": [
+    {
+      "local_input": "environment/data/reference_exercise_shortlist.json",
+      "role": "候选动作导出",
+      "source": "wger API / software docs",
+      "link": "https://wger.de/en/software/api"
+    },
+    {
+      "local_input": "environment/service_seed/exercise_catalog.json",
+      "role": "live planning service 的动作与器械权威数据",
+      "source": "wger API / software docs",
+      "link": "https://wger.de/en/software/api"
+    },
+    {
+      "local_input": "environment/data/reference_food_shortlist.csv",
+      "role": "候选食物导出",
+      "source": "USDA FoodData Central",
+      "link": "https://fdc.nal.usda.gov/api-guide"
+    },
+    {
+      "local_input": "environment/service_seed/food_catalog.csv",
+      "role": "live planning service 的营养权威数据",
+      "source": "USDA FoodData Central",
+      "link": "https://fdc.nal.usda.gov/download-datasets.html"
+    },
+    {
+      "local_input": "environment/service_seed/program_policy.json",
+      "role": "训练量、活动等级和每日活动建议的 policy 形态参考",
+      "source": "Physical Activity Guidelines for Americans",
+      "link": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines"
+    }
+  ],
+  "task_shape": {
+    "scenario": "boutique gym onboarding planning",
+    "deliverables": [
+      "/root/output/member_assessment.json",
+      "/root/output/workout_plan.csv",
+      "/root/output/meal_plan.csv",
+      "/root/output/coach_handoff.md"
+    ],
+    "live_chain": [
+      "local planning service for current exercise catalog",
+      "local planning service for current food catalog",
+      "local planning service for active program policy",
+      "bundled intake files and reference exports under /root/data"
+    ],
+    "difficulty_rationale": [
+      "需要跨会员资料、器械清单、旧导出、live catalog 和 policy 做多源对齐。",
+      "训练与饮食两条链路都要满足约束，且 handoff 还要与结构化输出保持一致。",
+      "可以设计旧导出缺项与 live-only 记录，稳定制造 without_skill 的行动级失败风险。"
+    ]
+  },
+  "instruction_design": {
+    "principles": [
+      "题面只交代业务症状、输入材料、正式输出合同和禁止事项。",
+      "不在 instruction 中直接展开完整计算公式、检索顺序或 verifier 逻辑。",
+      "明确指出 live planning service 才是权威来源，旧导出只是参考。",
+      "明确禁止替换真实链路、删功能规避问题、修改 tests 或 skill。"
+    ],
+    "expected_solver_discovery": [
+      "识别出需要查阅或使用绑定 skill，或手动复现其训练/营养工作流。",
+      "识别出只看旧导出不够，必须访问 live planning service。",
+      "在训练动作、器械约束、过敏原、餐次规则和宏量目标之间收敛出一套可执行计划。"
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "输出文件存在且 schema 正确",
+      "按 current policy 重算 assessment 字段",
+      "按 live exercise catalog 校验训练计划的动作、器械、禁忌和训练日覆盖",
+      "按 live food catalog 校验餐单营养换算、过敏原限制、餐次规则与每日容差",
+      "检查 coach_handoff.md 与结构化输出一致"
+    ],
+    "guardrails": [
+      "access log 必须证明 solver 访问了 live planning service",
+      "reference_* 旧导出单独使用不能通过",
+      "/root/data/、隐藏服务和 environment/skills 内容不得被修改",
+      "所有测试点都必须执行，不能中途退出"
+    ],
+    "without_skill_failure_target": "without_skill 至少保留一项行动级失败，优先是旧导出依赖、宏量不达标、禁忌动作误用、器械约束误判或 handoff 与实际方案脱节。"
+  },
+  "environment_constraints": {
+    "container_shape": "single Docker container",
+    "runtime_rule": "with_skill 和 without_skill 的唯一区别只能来自 environment/skills 及其对应 runtime 复制逻辑",
+    "skill_handling": "选定 skill 只允许原样复制，不允许改写 skill 内容",
+    "e2b_rule": "后续每次 E2B 实验都必须从新的隔离 runtime 副本启动"
+  },
+  "experiment_results": {
+    "oracle": {
+      "job": "health-fitness-template-oracle-20260430-230351",
+      "trial": "task_oracle_e2b__KZfQWSA",
+      "reward": 1.0
+    },
+    "with_skill": {
+      "n_valid_trials": 3,
+      "pass_rate": "66.7%",
+      "avg_agent_execution_sec": 649.0,
+      "avg_total_tokens": 1125189.33,
+      "trials": [
+        {
+          "job": "health-fitness-with-skill-20260430-g2",
+          "trial": "task_with_skills_e2b__uSLceVw",
+          "reward": 1.0
+        },
+        {
+          "job": "health-fitness-with-skill-20260430-r3",
+          "trial": "task_with_skills_e2b__BXqxRQd",
+          "reward": 1.0
+        },
+        {
+          "job": "health-fitness-with-skill-20260430-r4",
+          "trial": "task_with_skills_e2b__NuzT9sn",
+          "reward": 0.0,
+          "note": "仅在 coach_handoff.md 摘要覆盖度上失败，其余 8/9 测试点通过。"
+        }
+      ]
+    },
+    "without_skill": {
+      "n_valid_trials": 3,
+      "pass_rate": "0%",
+      "avg_agent_execution_sec": 528.57,
+      "avg_total_tokens": 1298439.0,
+      "trials": [
+        {
+          "job": "health-fitness-without-skill-20260430-r1",
+          "trial": "task_without_skills_e2b__njgtNiW",
+          "reward": 0.0,
+          "note": "assessment、meal_plan 和 handoff 同时失败。"
+        },
+        {
+          "job": "health-fitness-without-skill-20260430-r2",
+          "trial": "task_without_skills_e2b__TGo5w38",
+          "reward": 0.0
+        },
+        {
+          "job": "health-fitness-without-skill-20260430-r3",
+          "trial": "task_without_skills_e2b__UZ8pEhj",
+          "reward": 0.0
+        }
+      ]
+    }
+  },
+  "status": "oracle 已在 E2B 稳定通过；with_skill vs without_skill 的 3x3 有效对照也已完成，且唯一区别仅来自 environment/skills 及对应 runtime 剥离逻辑。"
+}

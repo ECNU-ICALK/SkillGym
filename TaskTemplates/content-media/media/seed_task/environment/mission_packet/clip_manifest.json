@@ -1,0 +1,29 @@
+{
+  "bundle_id": "mission_pick_bundle",
+  "clips": [
+    {
+      "clip_id": "launch",
+      "filename": "launch_pad.mp4",
+      "source_label": "Launch pad sequence",
+      "width": 1280,
+      "height": 720,
+      "duration_sec": 15.015
+    },
+    {
+      "clip_id": "tracking",
+      "filename": "landing_targeting.mp4",
+      "source_label": "Descent tracking sequence",
+      "width": 1920,
+      "height": 1080,
+      "duration_sec": 9.009
+    },
+    {
+      "clip_id": "touchdown",
+      "filename": "landing_touchdown.mp4",
+      "source_label": "Touchdown and recovery sequence",
+      "width": 1920,
+      "height": 1080,
+      "duration_sec": 6.006
+    }
+  ]
+}

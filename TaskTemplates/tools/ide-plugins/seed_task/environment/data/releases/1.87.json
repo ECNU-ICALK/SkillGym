@@ -1,0 +1,60 @@
+{
+  "version": "1.87",
+  "published": "2024-02-07",
+  "highlights": [
+    {
+      "focus": "extension-api",
+      "title": {
+        "en": "Language model access control for extensions",
+        "pt-br": "Controle de acesso a modelos de linguagem para extensões",
+        "zh-cn": "扩展的语言模型访问控制"
+      },
+      "summary": {
+        "en": "VS Code 1.87 documented language-model access management for extensions alongside other protected capabilities so maintainers can plan consent and permission prompts earlier.",
+        "pt-br": "O VS Code 1.87 documentou o gerenciamento de acesso a modelos de linguagem para extensões junto de outras capacidades protegidas, permitindo planejar consentimento e permissões com antecedência.",
+        "zh-cn": "VS Code 1.87 将扩展使用语言模型的访问管理与其他受保护能力一起说明，便于维护者更早规划授权与权限提示。"
+      },
+      "action": {
+        "en": "Review how your extension requests AI-related capabilities before the next rollout.",
+        "pt-br": "Revise como sua extensão solicita capacidades de IA antes da próxima distribuição.",
+        "zh-cn": "在下一轮发布前，检查扩展请求 AI 能力的方式。"
+      }
+    },
+    {
+      "focus": "testing",
+      "title": {
+        "en": "Test coverage support for extension test runs",
+        "pt-br": "Suporte a cobertura de testes nas execuções de extensão",
+        "zh-cn": "扩展测试运行的覆盖率支持"
+      },
+      "summary": {
+        "en": "The February release added coverage collection support to extension test workflows, which helps maintainers track which contribution paths are exercised.",
+        "pt-br": "A atualização de fevereiro adicionou suporte à coleta de cobertura nos fluxos de teste de extensões, ajudando a medir quais caminhos de contribuição são exercitados.",
+        "zh-cn": "二月版本为扩展测试流程加入覆盖率采集支持，帮助维护者了解哪些贡献路径被执行。"
+      },
+      "action": {
+        "en": "Add coverage checks to extension smoke suites where onboarding and commands share code.",
+        "pt-br": "Adicione verificações de cobertura aos smoke tests quando onboarding e comandos compartilham código.",
+        "zh-cn": "当引导内容与命令共用代码时，把覆盖率检查纳入扩展 smoke 流程。"
+      }
+    },
+    {
+      "focus": "extension-api",
+      "title": {
+        "en": "FindFiles2 proposal for richer file queries",
+        "pt-br": "Proposta FindFiles2 para consultas de arquivos mais ricas",
+        "zh-cn": "用于更丰富文件查询的 FindFiles2 提案"
+      },
+      "summary": {
+        "en": "The proposed FindFiles2 API expanded how extensions can target workspace files, which is useful for tools that build reports from structured content.",
+        "pt-br": "A API proposta FindFiles2 ampliou como extensões podem localizar arquivos do workspace, útil para ferramentas que geram relatórios a partir de conteúdo estruturado.",
+        "zh-cn": "提议中的 FindFiles2 API 扩展了扩展定位工作区文件的方式，适合基于结构化内容生成报告的工具。"
+      },
+      "action": {
+        "en": "Check whether your report-building commands should move to richer file discovery APIs.",
+        "pt-br": "Verifique se seus comandos de geração de relatórios devem migrar para APIs de descoberta de arquivos mais ricas.",
+        "zh-cn": "评估生成报告的命令是否应迁移到更丰富的文件发现 API。"
+      }
+    }
+  ]
+}

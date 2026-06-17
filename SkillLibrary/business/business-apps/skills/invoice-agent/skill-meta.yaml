@@ -1,0 +1,23 @@
+---
+name: invoice-agent
+version: 1.0.0
+description: >
+  💰 Professional invoice & payment management — create, track, and collect from your terminal.
+  Generate invoices from natural language ("bill Acme $2500 for website design"), send smart payment
+  reminders with automatic escalation (gentle → firm → final), produce beautiful HTML invoices,
+  track overdue payments, and get monthly revenue dashboards. Supports 10+ currencies, auto tax
+  calculation, and multi-item invoices. 100% local — no cloud, no API keys, no subscriptions.
+  Replace FreshBooks/QuickBooks with a one-time skill purchase. Perfect for freelancers, agencies,
+  and small businesses who want billing without the SaaS tax.
+tags:
+  - billing
+  - invoices
+  - payments
+  - freelancer
+  - agency
+  - finance
+  - business
+  - money
+  - collection
+  - small-business
+---

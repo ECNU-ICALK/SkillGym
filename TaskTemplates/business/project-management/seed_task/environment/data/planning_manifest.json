@@ -1,0 +1,12 @@
+{
+  "sprint_id": "SPR-2026-11",
+  "planning_window": {
+    "start": "2026-05-04",
+    "end": "2026-05-15"
+  },
+  "release_theme": "Supavisor connection resilience and network-control hardening",
+  "page_size_hint": 5,
+  "service_urls": {
+    "planning_api": "http://127.0.0.1:8137/api"
+  }
+}

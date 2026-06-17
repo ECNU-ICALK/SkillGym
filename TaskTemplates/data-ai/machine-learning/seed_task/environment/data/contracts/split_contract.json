@@ -1,0 +1,19 @@
+{
+  "source_dataset": "uci_occupancy_detection_sequence_phases",
+  "development_sources": [
+    "datatraining.txt",
+    "datatest.txt"
+  ],
+  "holdout_source": "datatest2.txt",
+  "validation_policy": {
+    "type": "source_file_subset_of_development_pool",
+    "validation_sources": [
+      "datatest.txt"
+    ]
+  },
+  "sequence_contract": {
+    "storage": "each sequence_path points to a per-sample .npy file and on-disk row counts are not guaranteed to match across files",
+    "valid_prefix_key": "sequence_length",
+    "padding_rule": "sequence_length defines the valid prefix used for training, validation, holdout scoring, and exported replay"
+  }
+}

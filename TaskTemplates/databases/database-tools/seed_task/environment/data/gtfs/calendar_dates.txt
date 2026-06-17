@@ -1,0 +1,5 @@
+service_id,date,exception_type,holiday_name
+RTL20262-hms26011-Weekday-01,20260514,2,
+RTL20262-hms26011-Weekday-01,20260518,2,
+RTL20262-hms26011-Weekday-01,20260525,2,Memorial Day
+SpringWeekday,20260525,2,Memorial Day

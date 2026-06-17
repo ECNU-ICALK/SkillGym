@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#faf7ef"/>
+  <rect x="56" y="56" width="1088" height="563" rx="24" fill="none" stroke="#6b7280" stroke-width="4"/>
+  <rect x="84" y="88" width="360" height="48" fill="none" stroke="#6b7280" stroke-width="3"/>
+  <rect x="84" y="164" width="700" height="340" fill="none" stroke="#6b7280" stroke-width="3"/>
+  <rect x="812" y="164" width="268" height="190" fill="none" stroke="#6b7280" stroke-width="3"/>
+  <rect x="84" y="526" width="996" height="62" fill="none" stroke="#6b7280" stroke-width="3"/>
+  <text x="92" y="82" fill="#374151" font-size="22" font-family="Arial">power mix: title / chart / legend / explainer</text>
+</svg>

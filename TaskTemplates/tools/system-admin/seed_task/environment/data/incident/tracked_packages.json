@@ -1,0 +1,8 @@
+[
+  "bind9",
+  "curl",
+  "libssl3",
+  "openssh-client",
+  "openssl",
+  "postgresql-15"
+]

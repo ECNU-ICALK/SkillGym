@@ -1,0 +1,58 @@
+[
+  {
+    "clause_id": "pol_01",
+    "source_id": "unesco_guidance",
+    "category": "human_oversight",
+    "rule_type": "hard_constraint",
+    "summary": "Student-facing generative AI use in education needs age-appropriate boundaries and educator oversight."
+  },
+  {
+    "clause_id": "pol_02",
+    "source_id": "doe_future_teaching_learning",
+    "category": "oversight",
+    "rule_type": "hard_constraint",
+    "summary": "Systems used in teaching and learning should remain inspectable, explainable, and overridable by people."
+  },
+  {
+    "clause_id": "pol_03",
+    "source_id": "doe_leader_toolkit",
+    "category": "equity",
+    "rule_type": "operating_precondition",
+    "summary": "AI integration planning should cover accessibility, civil rights, digital equity, and human remedy paths."
+  },
+  {
+    "clause_id": "pol_04",
+    "source_id": "ptac_best_practices",
+    "category": "privacy",
+    "rule_type": "hard_constraint",
+    "summary": "Schools using online educational services need clear privacy and security protections for student information."
+  },
+  {
+    "clause_id": "pol_05",
+    "source_id": "ptac_model_terms",
+    "category": "procurement",
+    "rule_type": "hard_constraint",
+    "summary": "Vendor terms should address data collection, transmission, retention, and reuse explicitly."
+  },
+  {
+    "clause_id": "pol_06",
+    "source_id": "nist_ai_rmf",
+    "category": "risk_management",
+    "rule_type": "operating_precondition",
+    "summary": "Govern, Map, Measure, and Manage activities should be visible in the launch decision."
+  },
+  {
+    "clause_id": "pol_07",
+    "source_id": "nist_genai_profile",
+    "category": "risk_management",
+    "rule_type": "operating_precondition",
+    "summary": "Generative-AI deployments should account for confabulation, privacy, harmful bias, and information integrity risks."
+  },
+  {
+    "clause_id": "pol_08",
+    "source_id": "ada_fact_sheet",
+    "category": "accessibility",
+    "rule_type": "operating_precondition",
+    "summary": "Public schools need accessible digital services and mobile experiences."
+  }
+]

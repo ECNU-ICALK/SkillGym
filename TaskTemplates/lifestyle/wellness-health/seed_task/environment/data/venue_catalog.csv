@@ -1,0 +1,7 @@
+venue_id,venue_name,setting,open_local,close_local,capacity,accessible,mobility_support,allowed_activity_tags,source_ref,notes
+ARC_LAWN,Austin Recreation Center Lawn,outdoor,07:00,20:00,24,true,true,walk;breathwork;movement_lab;recovery_yoga,atx-arc,Open lawn on the Austin Recreation Center campus
+ARC_STUDIO,Austin Recreation Center Studio,indoor,08:00,20:00,18,true,true,breathwork;stretch;recovery_yoga,atx-arc,Indoor studio with chair setup
+ARC_GYM,Austin Recreation Center Gym,indoor,08:00,20:00,36,true,false,movement_lab,atx-arc,Indoor gym for larger movement classes
+GIVENS_PAVILION,Givens Covered Pavilion,covered,09:00,19:00,20,true,true,walk;stretch;breathwork,atx-givens,Open-sided covered outdoor space with seating access
+GIVENS_STUDIO,Givens Community Studio,indoor,09:00,19:00,16,true,true,breathwork;stretch;recovery_yoga,atx-givens,Indoor studio for lower-intensity classes
+BST_POOL,Big Stacy Pool,outdoor,10:00,20:00,22,true,true,water_mobility,atx-big-stacy,Outdoor pool with chair lift support

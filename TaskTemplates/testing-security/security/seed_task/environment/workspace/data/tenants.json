@@ -1,0 +1,52 @@
+{
+  "tenants": [
+    {
+      "tenant_id": "tenant_gold",
+      "name": "Atlas Security",
+      "api_key": "pk_live_emerald",
+      "role": "analyst",
+      "scopes": ["read:advisories", "bulk:lookups", "export:advisories"],
+      "vendor_allowlist": ["apache", "citrix", "progress", "jenkins", "fortinet", "jetbrains", "paloaltonetworks", "xz"],
+      "max_page_size": 50,
+      "bulk_lookup_limit": 8,
+      "daily_quota": 12,
+      "export_rows_limit": 3
+    },
+    {
+      "tenant_id": "tenant_readonly",
+      "name": "Northwind Readonly",
+      "api_key": "pk_live_view_only",
+      "role": "viewer",
+      "scopes": ["read:advisories", "bulk:lookups"],
+      "vendor_allowlist": ["apache", "citrix", "progress"],
+      "max_page_size": 20,
+      "bulk_lookup_limit": 5,
+      "daily_quota": 6,
+      "export_rows_limit": 0
+    },
+    {
+      "tenant_id": "tenant_viewer_export",
+      "name": "Harbor Viewer Export",
+      "api_key": "pk_live_viewer_export",
+      "role": "viewer",
+      "scopes": ["read:advisories", "export:advisories"],
+      "vendor_allowlist": ["apache", "citrix"],
+      "max_page_size": 10,
+      "bulk_lookup_limit": 2,
+      "daily_quota": 5,
+      "export_rows_limit": 2
+    },
+    {
+      "tenant_id": "tenant_burst",
+      "name": "Signal Burst",
+      "api_key": "pk_live_burst",
+      "role": "analyst",
+      "scopes": ["read:advisories"],
+      "vendor_allowlist": ["jenkins", "fortinet"],
+      "max_page_size": 5,
+      "bulk_lookup_limit": 3,
+      "daily_quota": 3,
+      "export_rows_limit": 0
+    }
+  ]
+}

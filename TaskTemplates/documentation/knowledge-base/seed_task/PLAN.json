@@ -1,0 +1,96 @@
+{
+  "task_id": "knowledge_base__promises_async_await_resource_refresh",
+  "category": "knowledge-base",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/app/output/promises-and-async-await.mdx",
+  "selected_skill": {
+    "dir": "resource-curator",
+    "purpose": "Use the bundled public-resource curation workflow to audit existing links, close section gaps, and rebuild a publishable knowledge-base resource shelf without replacing the surrounding page shell.",
+    "skillsmp_references": [
+      {
+        "name": "resource-curator.md",
+        "stars": "66356",
+        "relevance": "Direct match for auditing current resources, closing section gaps, and writing publishable card descriptions."
+      },
+      {
+        "name": "technical-writer.md",
+        "stars": "108448",
+        "relevance": "Adjacent documentation-writing workflow that reinforces clarity and publishable phrasing."
+      },
+      {
+        "name": "fact-check.md",
+        "stars": "66356",
+        "relevance": "Adjacent quality-control workflow for validating claims and rejecting weak or off-topic sources."
+      },
+      {
+        "name": "project-overview.md",
+        "stars": "75968",
+        "relevance": "Adjacent knowledge-base organization workflow, useful as a contrast point but less targeted than resource curation."
+      }
+    ]
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "live_services": [],
+    "determinism": "The task ships a fixed MDX page draft, fixed candidate-resource snapshots, a fixed link-audit snapshot, and a fixed resource contract. Verifier-side checks recompute the expected final selection from the local inputs and compare it against both the output page and the output manifest.",
+    "anti_toy_features": [
+      "an existing concept page shell that must be preserved outside the resource block",
+      "current draft resources that mix redirects, non-JavaScript sources, weak replacements, and placeholders",
+      "a bundled candidate pool with overlapping coverage, section diversity, and fallback options",
+      "a formal local build entrypoint that must stay reusable on alternate fixtures",
+      "an audit report requirement that forces agents to account for removals, replacements, redirects, and additions",
+      "alternate-fixture checks that mutate candidate availability and require the build to select different fallback resources"
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "formal build entrypoint produces the required page, audit report, and manifest",
+      "manifest selection matches the local oracle derived from the contract and snapshots",
+      "the generated resource block matches the required section order and selected canonical links",
+      "the surrounding page shell is preserved while reviewer residue and placeholders are cleared",
+      "the audit report accounts for redirected, removed, replaced, and added resources",
+      "alternate-fixture reruns produce different fallback selections instead of a hardcoded answer"
+    ],
+    "guardrails": [
+      "input knowledge-base files remain unchanged",
+      "top-level output inventory exactly matches the contract",
+      "outputs do not contain placeholder or verifier-oriented residue"
+    ]
+  },
+  "expected_skill_effect": {
+    "without_skill": "Without the bundled resource-curation workflow, agents are more likely to keep weak draft resources, skip section-gap closure, or stop after a superficial link swap without rebuilding the publishable resource set and audit trail.",
+    "with_skill": "The skill gives the agent a concrete route for auditing current links, filling the missing section coverage, and writing stronger card descriptions, which materially improves the odds of completing the full refresh package."
+  },
+  "experiment_results": {
+    "oracle_e2b_reward": 1.0,
+    "oracle_job": "/home/lenovo/.tmp_harbor_jobs_kb_oracle_final_20260505_015014/kb_oracle_final_20260505_015014/result.json",
+    "valid_comparison_runs": 3,
+    "with_skill": {
+      "pass_rate": "100%",
+      "mean_agent_trajectory_sec": 301.0,
+      "mean_tokens_prompt_plus_completion": 533491,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "without_skill": {
+      "pass_rate": "0%",
+      "mean_agent_trajectory_sec": 266.7,
+      "mean_tokens_prompt_plus_completion": 312464,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "notes": [
+      "Stable comparison set uses final-state with-skill trials compare4, compare7, and compare8 plus final-state without-skill trials compare3, compare7, and compare8 under fresh isolated E2B runtimes.",
+      "without_skill failed all three valid runs on resource-description depth and excerpt-sensitive alternate-bundle output while still producing the required files.",
+      "Several high-concurrency E2B trials were discarded because the platform cancelled builds before task-level execution; they were not counted in pass-rate or average-metric summaries.",
+      "Average agent seconds and token totals were normalized from per-trial Codex thread metadata in each trial's state database so that runs with missing Harbor trial result JSON still contributed a comparable metric row."
+    ]
+  }
+}

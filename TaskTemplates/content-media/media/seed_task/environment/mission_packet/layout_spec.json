@@ -1,0 +1,60 @@
+{
+  "bundle_id": "mission_pick_bundle",
+  "sheet_background_rgb": [18, 20, 25],
+  "sheets": [
+    {
+      "clip_id": "launch",
+      "output_file": "sheets/launch_sheet.jpg",
+      "request_order": [
+        "launch_001",
+        "launch_002",
+        "launch_003",
+        "launch_004"
+      ],
+      "columns": 2,
+      "rows": 2,
+      "canvas_width": 1360,
+      "canvas_height": 800,
+      "cell_width": 620,
+      "cell_height": 349,
+      "padding": 40,
+      "gap": 20
+    },
+    {
+      "clip_id": "tracking",
+      "output_file": "sheets/tracking_sheet.jpg",
+      "request_order": [
+        "tracking_001",
+        "tracking_002",
+        "tracking_003",
+        "tracking_004"
+      ],
+      "columns": 2,
+      "rows": 2,
+      "canvas_width": 1960,
+      "canvas_height": 1160,
+      "cell_width": 900,
+      "cell_height": 506,
+      "padding": 50,
+      "gap": 40
+    },
+    {
+      "clip_id": "touchdown",
+      "output_file": "sheets/touchdown_sheet.jpg",
+      "request_order": [
+        "touchdown_001",
+        "touchdown_002",
+        "touchdown_003",
+        "touchdown_004"
+      ],
+      "columns": 2,
+      "rows": 2,
+      "canvas_width": 1960,
+      "canvas_height": 1160,
+      "cell_width": 900,
+      "cell_height": 506,
+      "padding": 50,
+      "gap": 40
+    }
+  ]
+}

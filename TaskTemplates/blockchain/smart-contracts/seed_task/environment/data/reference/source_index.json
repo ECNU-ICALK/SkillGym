@@ -1,0 +1,44 @@
+{
+  "references": [
+    {
+      "id": "eip20",
+      "title": "ERC-20 Token Standard",
+      "url": "https://eips.ethereum.org/EIPS/eip-20"
+    },
+    {
+      "id": "eip4626",
+      "title": "ERC-4626 Tokenized Vault Standard",
+      "url": "https://eips.ethereum.org/EIPS/eip-4626"
+    },
+    {
+      "id": "openzeppelin-erc20",
+      "title": "OpenZeppelin Contracts ERC20 API",
+      "url": "https://docs.openzeppelin.com/contracts/5.x/api/token/erc20"
+    },
+    {
+      "id": "openzeppelin-erc4626",
+      "title": "OpenZeppelin ERC4626 Guide",
+      "url": "https://docs.openzeppelin.com/contracts/5.x/erc4626"
+    },
+    {
+      "id": "openzeppelin-safeerc20-source",
+      "title": "OpenZeppelin SafeERC20 Source",
+      "url": "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/utils/SafeERC20.sol"
+    },
+    {
+      "id": "openzeppelin-erc4626-source",
+      "title": "OpenZeppelin ERC4626 Source",
+      "url": "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC4626.sol"
+    },
+    {
+      "id": "weird-erc20",
+      "title": "weird-erc20",
+      "url": "https://github.com/d-xo/weird-erc20"
+    },
+    {
+      "id": "token-integration-checklist",
+      "title": "Token Integration Checklist",
+      "url": "https://ethereum.org/developers/tutorials/token-integration-checklist/"
+    }
+  ]
+}

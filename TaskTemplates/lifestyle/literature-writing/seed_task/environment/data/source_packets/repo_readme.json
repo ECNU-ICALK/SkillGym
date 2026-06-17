@@ -1,0 +1,24 @@
+{
+  "doc_id": "repo_readme",
+  "title": "zed-industries/zed README",
+  "url": "https://raw.githubusercontent.com/zed-industries/zed/main/README.md",
+  "document_type": "repository_readme",
+  "snapshot_note": "Structured fact packet distilled from the public zed repository README.",
+  "facts": [
+    {
+      "fact_id": "repo_readme.high_performance_multiplayer",
+      "statement": "The repository README describes Zed as a high-performance, multiplayer code editor.",
+      "tags": ["positioning", "product"]
+    },
+    {
+      "fact_id": "repo_readme.atom_tree_sitter",
+      "statement": "The repository README says Zed comes from the creators of Atom and Tree-sitter.",
+      "tags": ["team", "history"]
+    },
+    {
+      "fact_id": "repo_readme.platforms",
+      "statement": "The repository README says Zed can be downloaded directly on macOS, Linux, and Windows.",
+      "tags": ["platforms"]
+    }
+  ]
+}

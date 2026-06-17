@@ -1,0 +1,42 @@
+http:
+  providers_endpoint: "/v1/providers"
+  expected_provider_ids:
+    - "demo_static"
+    - "city_reference"
+    - "mta_static"
+  stop_search_endpoint: "/v1/providers/:provider_id/stops/search"
+  departures_endpoint: "/v1/providers/:provider_id/stops/:stop_id/departures"
+  service_window_endpoint: "/v1/providers/:provider_id/routes/:route_id/service-window"
+  required_provider_fields:
+    - id
+    - label
+    - kind
+    - timezone
+  stop_search_fields:
+    - stop_id
+    - stop_name
+    - location_type
+    - child_stop_ids
+  departure_fields:
+    - trip_id
+    - route_id
+    - route_short_name
+    - route_long_name
+    - service_id
+    - direction_id
+    - stop_id
+    - parent_stop_id
+    - departure_time
+    - headsign
+  service_window_fields:
+    - first_departure
+    - last_departure
+    - trip_count
+    - stop_count
+    - direction_count
+export:
+  output_path: "/app/workspace/output/schedule_snapshot.json"
+  top_level_fields:
+    - provider_id
+    - query_count
+    - results

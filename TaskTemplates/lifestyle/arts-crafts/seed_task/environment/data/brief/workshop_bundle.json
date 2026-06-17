@@ -1,0 +1,51 @@
+{
+  "bundle_name": "fiber-workshop-starter-bundle",
+  "slot_order": [
+    "yarn-management",
+    "stitch-marker",
+    "tool-storage"
+  ],
+  "context": {
+    "program": "community fiber workshop",
+    "delivery_target": "local print supplier",
+    "notes": [
+      "The workshop table must support mixed crochet and knitting sessions.",
+      "The supplier needs per-model file records and a short note about any manual review items.",
+      "Each slot should map to one selected model only."
+    ]
+  },
+  "slots": [
+    {
+      "slot_id": "yarn-management",
+      "goal": "Keep one active skein or cake controlled at the table during instruction.",
+      "must_have": [
+        "passive tabletop use",
+        "stable base",
+        "usable with a single active yarn feed"
+      ]
+    },
+    {
+      "slot_id": "stitch-marker",
+      "goal": "Provide a marker that stays secure in storage pouches between classes.",
+      "must_have": [
+        "closable or fully enclosed marker form",
+        "single participant item",
+        "transport-friendly"
+      ]
+    },
+    {
+      "slot_id": "tool-storage",
+      "goal": "Hold both crochet hooks and knitting needles at the shared tool table.",
+      "must_have": [
+        "supports hooks and needles together",
+        "desk-ready organizer",
+        "more than one printable part is acceptable"
+      ]
+    }
+  ],
+  "manual_checks_template": [
+    "Confirm nozzle size and material choice with the supplier.",
+    "Confirm color preference for shared classroom sets.",
+    "Confirm whether any model should be scaled before print preparation."
+  ]
+}

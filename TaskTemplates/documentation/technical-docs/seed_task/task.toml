@@ -1,0 +1,36 @@
+version = "1.0"
+
+[metadata]
+id = "technical_docs__pqueue_api_reference_page"
+name = "Template: PQueue API Reference Page"
+description = "Complete a review-ready API reference page for PQueue from a bundled release snapshot, local reference pages, and a delivery contract."
+difficulty = "hard"
+category = "technical-docs"
+tags = [
+  "technical-docs",
+  "api-reference",
+  "mdx",
+  "typescript",
+  "documentation",
+  "source-analysis",
+]
+required_skills = [
+  "write-api-reference",
+]
+primary_output_file = "/environment/output/pqueue_api_reference.mdx"
+source_template_id = "technical_docs__pqueue_api_reference_page"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 12288
+gpus = 0
+allow_internet = true

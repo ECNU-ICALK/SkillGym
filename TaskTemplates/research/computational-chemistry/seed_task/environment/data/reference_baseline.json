@@ -1,0 +1,48 @@
+{
+  "project": "aqsol_release_2026",
+  "snapshot": "legacy_snapshot_v0",
+  "notes": "Earlier release snapshot; kept for comparison only.",
+  "top_snapshot_run_id": "legacy_rf_raw_202402",
+  "runs": [
+    {
+      "run_id": "legacy_rf_raw_202402",
+      "valid_rmse": 0.6029,
+      "valid_mae": 0.4619,
+      "test_rmse": 0.7658,
+      "test_mae": 0.5531,
+      "data_signature": "legacy_snapshot_v0",
+      "duplicate_policy": "raw_rows",
+      "release_band": "shadow"
+    },
+    {
+      "run_id": "legacy_hgb_shadow_202403",
+      "valid_rmse": 0.6377,
+      "valid_mae": 0.4735,
+      "test_rmse": 0.746,
+      "test_mae": 0.5353,
+      "data_signature": "legacy_snapshot_v0",
+      "duplicate_policy": "raw_rows",
+      "release_band": "shadow"
+    },
+    {
+      "run_id": "legacy_ridge_shadow_202403",
+      "valid_rmse": 1.0569,
+      "valid_mae": 0.8327,
+      "test_rmse": 0.886,
+      "test_mae": 0.6995,
+      "data_signature": "legacy_snapshot_v0",
+      "duplicate_policy": "raw_rows",
+      "release_band": "shadow"
+    },
+    {
+      "run_id": "legacy_elastic_shadow_202403",
+      "valid_rmse": 1.0552,
+      "valid_mae": 0.8191,
+      "test_rmse": 0.8809,
+      "test_mae": 0.6995,
+      "data_signature": "legacy_snapshot_v0",
+      "duplicate_policy": "raw_rows",
+      "release_band": "shadow"
+    }
+  ]
+}

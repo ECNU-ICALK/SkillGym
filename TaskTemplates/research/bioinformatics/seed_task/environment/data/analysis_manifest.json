@@ -1,0 +1,13 @@
+{
+  "task_id": "bioinformatics__pbmc-single-cell-cluster-handoff",
+  "service_urls": {
+    "health": "http://127.0.0.1:8143/health",
+    "analysis_policy_current": "http://127.0.0.1:8143/api/analysis-policy/current",
+    "marker_panel_current": "http://127.0.0.1:8143/api/marker-panel/current"
+  },
+  "authority_notes": [
+    "Use the current local analysis policy and current local marker panel as the authoritative source.",
+    "The current policy publishes the active workflow profile for this pilot and can disagree with earlier notes.",
+    "Files prefixed with reference_ are orientation material only."
+  ]
+}

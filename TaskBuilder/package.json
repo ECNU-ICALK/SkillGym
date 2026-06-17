@@ -1,0 +1,22 @@
+{
+  "name": "harbor-task-builder",
+  "type": "module",
+  "scripts": {
+    "inventory": "node --import tsx src/cli.ts inventory",
+    "generate-family": "node --import tsx src/cli.ts generate-family",
+    "check": "tsc --noEmit",
+    "test:codex": "node --import tsx tests/codex.test.ts",
+    "test:skill-effect": "node --import tsx tests/skill_effect.test.ts",
+    "test:prompts": "node --import tsx tests/prompts.test.ts",
+    "test:validate": "node --import tsx tests/validate.test.ts"
+  },
+  "dependencies": {
+    "@openai/codex-sdk": "^0.130.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

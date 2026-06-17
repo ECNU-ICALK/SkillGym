@@ -1,0 +1,94 @@
+{
+  "task_id": "react-energy-workbench-state-regressions",
+  "category": "frontend",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/app",
+  "selected_skill": {
+    "dir": "frontend-patterns",
+    "purpose": "Guide the solver through React state architecture, URL and UI synchronization, on-demand code loading, and keyboard-safe interaction patterns without changing task data, tests, or the bound skill itself.",
+    "task_design_intent": [
+      "Keep the instruction focused on observable frontend regressions, delivery contract, and prohibitions.",
+      "Move the diagnosis pressure for state ownership, routing, lazy-loading, and focus management into the skill and the verifier.",
+      "Make with_skill and without_skill differ only by environment/skills and the corresponding runtime copy logic."
+    ],
+    "skillsmp_references": [
+      {
+        "name": "frontend-patterns.md",
+        "stars": "169.2k",
+        "relevance": "React state, navigation, performance, and UI interaction patterns"
+      },
+      {
+        "name": "coding-standards.md",
+        "stars": "169.2k",
+        "relevance": "general engineering quality patterns adjacent to frontend implementation"
+      },
+      {
+        "name": "vercel-composition-patterns.md",
+        "stars": "102k",
+        "relevance": "component composition patterns for React"
+      },
+      {
+        "name": "angular-developer.md",
+        "stars": "100k",
+        "relevance": "framework-specific frontend state and component patterns"
+      },
+      {
+        "name": "material-ui-tailwind.md",
+        "stars": "98.3k",
+        "relevance": "frontend UI integration and styling constraints"
+      }
+    ]
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "live_services": [
+      "React/Vite single-page app on port 3000",
+      "hidden in-container energy API on port 3001"
+    ],
+    "data_properties": [
+      "deterministic local snapshots derived from public OWID energy data and World Bank country metadata",
+      "multi-field country records with region, income level, generation, demand, and electricity mix slices",
+      "alternate fixture support to catch hardcoded region ordering and static UI shortcuts"
+    ],
+    "real_world_references": [
+      "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv",
+      "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-codebook.csv",
+      "https://api.worldbank.org/v2/country?format=json&per_page=400"
+    ]
+  },
+  "instruction_design": {
+    "principles": [
+      "State the product symptoms and required frontend behavior before any technical hints.",
+      "Describe the available code, local API, and input data as the authoritative surface.",
+      "Avoid spelling out hook, reducer, lazy-loading, or focus-management implementation details in the instruction.",
+      "Explicitly prohibit replacing the real chain, deleting functionality, changing input data, or introducing a parallel page."
+    ],
+    "expected_solver_discovery": [
+      "Recognize that URL, local state, and rendered state currently fight each other.",
+      "Identify that heavy comparison code is loading before the user requests it.",
+      "Repair keyboard interaction and focus behavior inside the real DOM instead of bypassing the workflow."
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "real hidden API response is used and matches the frozen snapshot semantics",
+      "deep-link state survives load, reload, and history navigation without drifting to stale local state",
+      "comparison workspace chunk is not requested before the user opens it, but does load and work on demand",
+      "keyboard close and focus return behavior works in the details drawer",
+      "repeated drawer interactions do not leak runtime listeners"
+    ],
+    "guardrails": [
+      "input data and hidden API implementation remain unchanged",
+      "alternate fixture changes the Europe ranking and must appear in the UI after API restart",
+      "agent log may be inspected for skill access when skill artifacts are present"
+    ],
+    "failure_target": "Without-skill failures should concentrate on action-level misses such as stale state ownership, broken browser history behavior, eager loading of heavy UI, or missing keyboard/focus repair, not merely cosmetic formatting issues."
+  },
+  "experiment_protocol": {
+    "environment": "E2B",
+    "isolation_rule": "Every experiment run must start from a fresh isolated runtime copy.",
+    "with_without_diff": "The only allowed difference is whether environment/skills is present and copied into the runtime.",
+    "required_result_state": "Do not finalize the template README until oracle and at least three valid with-skill/without-skill comparison runs have been collected."
+  }
+}

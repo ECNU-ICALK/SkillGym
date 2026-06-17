@@ -1,0 +1,7 @@
+{
+  "id": "javascript_info_async_await",
+  "description_sentences": [
+    "Shows how `async` and `await` sit on top of Promises, with examples that connect syntax back to underlying behavior.",
+    "It works well as the bridge resource once Promise basics already make sense."
+  ]
+}

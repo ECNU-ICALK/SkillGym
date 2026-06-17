@@ -1,0 +1,58 @@
+[
+  {
+    "risk_code": "title_and_encumbrance",
+    "risk_title": "Title annotations and court restraints",
+    "risk_level": "high",
+    "evidence_source": "source_notice_excerpt.pdf#p9:item568",
+    "summary": "The notice row states that the title carries gravame, penhora, or indisponibilidade, which can delay transfer and require extra registry work."
+  },
+  {
+    "risk_code": "debt_responsibility",
+    "risk_title": "Buyer takes debt survey and settlement",
+    "risk_level": "high",
+    "evidence_source": "source_notice_excerpt.pdf#p1:summary",
+    "summary": "The edital summary assigns debt survey and payment to the buyer, so condo, IPTU, and related charges need cash reserve."
+  },
+  {
+    "risk_code": "occupancy_and_possession",
+    "risk_title": "Possession may require extra time and cost",
+    "risk_level": "medium",
+    "evidence_source": "source_fiduciary_law.html#art27",
+    "summary": "Foreclosure auction closing does not guarantee immediate possession, so eviction or recovery timing can affect the business plan."
+  },
+  {
+    "risk_code": "payment_constraints",
+    "risk_title": "Credit and own-funds constraints still apply",
+    "risk_level": "medium",
+    "evidence_source": "source_notice_excerpt.pdf#p4:item4.2",
+    "summary": "FGTS and financing depend on prior approval, and at least 5 percent own funds must still be available within the Caixa timetable."
+  },
+  {
+    "risk_code": "auction_timing",
+    "risk_title": "Compressed post-auction deadlines",
+    "risk_level": "medium",
+    "evidence_source": "source_notice_excerpt.pdf#p1:payment_deadlines",
+    "summary": "The leiloeiro fee is due on auction day and the non-financed portion is due shortly after homologation, leaving little room for delay."
+  },
+  {
+    "risk_code": "document_regularization",
+    "risk_title": "Regularization burden sits with the buyer",
+    "risk_level": "high",
+    "evidence_source": "source_notice_excerpt.pdf#p9:item568",
+    "summary": "The notice row explicitly places regularization on the buyer, so cleanup filings and registry follow-up stay outside the bid price."
+  },
+  {
+    "risk_code": "resale_or_liquidity",
+    "risk_title": "Exit timing can slip while title issues are pending",
+    "risk_level": "medium",
+    "evidence_source": "source_notice_excerpt.pdf#p9:item568|source_fiduciary_law.html#art27",
+    "summary": "An unresolved title annotation can slow refinancing, resale, or immediate exit even if the winning bid closes."
+  },
+  {
+    "risk_code": "municipal_tax_basis",
+    "risk_title": "Transfer tax may exceed a bid-only estimate",
+    "risk_level": "medium",
+    "evidence_source": "source_itbi_sp.html#section-1.2.2",
+    "summary": "Sao Paulo ITBI uses the greater of transaction value and municipal reference value in most cases, which can lift transfer tax above a bid-only worksheet."
+  }
+]

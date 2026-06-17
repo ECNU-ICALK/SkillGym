@@ -1,0 +1,176 @@
+id,code,local_code,name,continent,iso_country,wikipedia_link,keywords
+302967,AU-AAT,AAT,Australian Antarctic Territory,OC,AU,https://en.wikipedia.org/wiki/Australian_Antarctic_Territory,Airports in Australian Antarctic Territory
+302968,AU-ACT,ACT,Australian Capital Territory,OC,AU,https://en.wikipedia.org/wiki/Australian_Capital_Territory,Airports in Australian Capital Territory
+302969,AU-NSW,NSW,New South Wales,OC,AU,https://en.wikipedia.org/wiki/New_South_Wales,Airports in New South Wales
+302970,AU-NT,NT,Northern Territory,OC,AU,https://en.wikipedia.org/wiki/Northern_Territory,Airports in Northern Territory
+302971,AU-QLD,QLD,Queensland,OC,AU,https://en.wikipedia.org/wiki/Queensland,Airports in Queensland
+302972,AU-SA,SA,South Australia,OC,AU,https://en.wikipedia.org/wiki/South_Australia,South Australian airports
+302973,AU-TAS,TAS,Tasmania,OC,AU,https://en.wikipedia.org/wiki/Tasmania,Tasmanian airports
+302974,AU-U-A,U-A,(unassigned),OC,AU,,Airports in (unassigned)
+302975,AU-VIC,VIC,Victoria,OC,AU,https://en.wikipedia.org/wiki/Victoria_(Australia),Victorian airports
+302976,AU-WA,WA,Western Australia,OC,AU,https://en.wikipedia.org/wiki/Western_Australia,Western Australian airports
+430671,AU-XX,XX,(FPSOs),OC,AU,,
+303199,BR-AC,AC,Acre,SA,BR,https://en.wikipedia.org/wiki/Acre_(state),Airports in Acre
+303200,BR-AL,AL,Alagoas,SA,BR,https://en.wikipedia.org/wiki/Alagoas,Airports in Alagoas
+303201,BR-AM,AM,Amazonas,SA,BR,https://en.wikipedia.org/wiki/Amazonas_(Brazilian_state),Airports in Amazonas
+303202,BR-AP,AP,Amapá,SA,BR,https://en.wikipedia.org/wiki/Amapá,Airports in Amapá
+303203,BR-BA,BA,Bahia,SA,BR,https://en.wikipedia.org/wiki/Bahia,Airports in Bahia
+303204,BR-CE,CE,Ceará,SA,BR,https://en.wikipedia.org/wiki/Ceará,Airports in Ceará
+303205,BR-DF,DF,Distrito Federal,SA,BR,https://en.wikipedia.org/wiki/Federal_District_(Brazil),Airports in Distrito Federal
+303206,BR-ES,ES,Espírito Santo,SA,BR,https://en.wikipedia.org/wiki/Espírito_Santo,Airports in Espírito Santo
+303207,BR-GO,GO,Goiás,SA,BR,https://en.wikipedia.org/wiki/Goiás,Airports in Goiás
+303208,BR-MA,MA,Maranhão,SA,BR,https://en.wikipedia.org/wiki/Maranhão,Airports in Maranhão
+303209,BR-MG,MG,Minas Gerais,SA,BR,https://en.wikipedia.org/wiki/Minas_Gerais,Airports in Minas Gerais
+303210,BR-MS,MS,Mato Grosso do Sul,SA,BR,https://en.wikipedia.org/wiki/Mato_Grosso_do_Sul,Airports in Mato Grosso do Sul
+303211,BR-MT,MT,Mato Grosso,SA,BR,https://en.wikipedia.org/wiki/Mato_Grosso,Airports in Mato Grosso
+303212,BR-PA,PA,Pará,SA,BR,https://en.wikipedia.org/wiki/Pará,Airports in Pará
+303213,BR-PB,PB,Paraíba,SA,BR,https://en.wikipedia.org/wiki/Paraíba,Airports in Paraíba
+303214,BR-PE,PE,Pernambuco,SA,BR,https://en.wikipedia.org/wiki/Pernambuco,Airports in Pernambuco
+303215,BR-PI,PI,Piauí,SA,BR,https://en.wikipedia.org/wiki/Piauí,Airports in Piauí
+303216,BR-PR,PR,Paraná,SA,BR,https://en.wikipedia.org/wiki/Paran%C3%A1_(state),Airports in Paraná
+303217,BR-RJ,RJ,Rio de Janeiro,SA,BR,https://en.wikipedia.org/wiki/Rio_de_Janeiro_(state),Airports in Rio de Janeiro
+303218,BR-RN,RN,Rio Grande do Norte,SA,BR,https://en.wikipedia.org/wiki/Rio_Grande_do_Norte,Airports in Rio Grande do Norte
+303219,BR-RO,RO,Rondônia,SA,BR,https://en.wikipedia.org/wiki/Rondônia,Airports in Rondônia
+303220,BR-RR,RR,Roraima,SA,BR,https://en.wikipedia.org/wiki/Roraima,Airports in Roraima
+303221,BR-RS,RS,Rio Grande do Sul,SA,BR,https://en.wikipedia.org/wiki/Rio_Grande_do_Sul,Airports in Rio Grande do Sul
+303222,BR-SC,SC,Santa Catarina,SA,BR,https://en.wikipedia.org/wiki/Santa_Catarina_(state),Airports in Santa Catarina
+303223,BR-SE,SE,Sergipe,SA,BR,https://en.wikipedia.org/wiki/Sergipe,Airports in Sergipe
+303224,BR-SP,SP,São Paulo,SA,BR,https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_(state),Airports in São Paulo
+303225,BR-TO,TO,Tocantins,SA,BR,https://en.wikipedia.org/wiki/Tocantins,Airports in Tocatins
+303226,BR-U-A,U-A,(unassigned),SA,BR,,Airports in (unassigned)
+303294,CA-AB,AB,Alberta,NA,CA,https://en.wikipedia.org/wiki/Alberta,Albertan airports
+303295,CA-BC,BC,British Columbia,NA,CA,https://en.wikipedia.org/wiki/British_Columbia,British Columbian airports
+303296,CA-MB,MB,Manitoba,NA,CA,https://en.wikipedia.org/wiki/Manitoba,Airports in Manitoba
+303297,CA-NB,NB,New Brunswick,NA,CA,https://en.wikipedia.org/wiki/New_Brunswick,Airports in New Brunswick
+303298,CA-NL,NL,Newfoundland and Labrador,NA,CA,https://en.wikipedia.org/wiki/Newfoundland_and_Labrador,Airports in Newfoundland and Labrador
+303299,CA-NS,NS,Nova Scotia,NA,CA,https://en.wikipedia.org/wiki/Nova_Scotia,Nova Scotian airports
+303300,CA-NT,NT,Northwest Territories,NA,CA,https://en.wikipedia.org/wiki/Northwest_Territories,Airports in Northwest Territories
+303301,CA-NU,NU,Nunavut,NA,CA,https://en.wikipedia.org/wiki/Nunavut,Airports in Nunavut
+303302,CA-ON,ON,Ontario,NA,CA,https://en.wikipedia.org/wiki/Ontario,Airports in Ontario
+303303,CA-PE,PE,Prince Edward Island,NA,CA,https://en.wikipedia.org/wiki/Prince_Edward_Island,Airports in Prince Edward Island
+303304,CA-QC,QC,Quebec,NA,CA,https://en.wikipedia.org/wiki/Quebec,Aéroports du Québec
+303305,CA-SK,SK,Saskatchewan,NA,CA,https://en.wikipedia.org/wiki/Saskatchewan,Airports in Saskatchewan
+303306,CA-U-A,U-A,(unassigned),NA,CA,,Airports in (unassigned)
+303307,CA-YT,YT,Yukon,NA,CA,https://en.wikipedia.org/wiki/Yukon_Territory,Airports in Yukon
+303548,DE-BE,BE,Berlin,EU,DE,https://en.wikipedia.org/wiki/Berlin,Airports in Berlin
+303547,DE-BR,BR,Brandenburg,EU,DE,https://en.wikipedia.org/wiki/Brandenburg,Airports in Brandenburg
+303549,DE-BW,BW,Baden-Württemberg,EU,DE,https://en.wikipedia.org/wiki/Baden-Württemberg,Baden-Wuerttemberg
+303550,DE-BY,BY,Bavaria,EU,DE,https://en.wikipedia.org/wiki/Bavaria,Bayern
+303551,DE-HB,HB,Bremen,EU,DE,https://en.wikipedia.org/wiki/Bremen,Airports in Bremen
+303552,DE-HE,HE,Hesse,EU,DE,https://en.wikipedia.org/wiki/Hesse,Hessen
+303553,DE-HH,HH,Hamburg,EU,DE,https://en.wikipedia.org/wiki/Hamburg,Airports in Hamburg
+303554,DE-MV,MV,Mecklenburg-Vorpommern,EU,DE,https://en.wikipedia.org/wiki/Mecklenburg-Vorpommern,Airports in Mecklenburg-Vorpommern
+303555,DE-NI,NI,Lower Saxony,EU,DE,https://en.wikipedia.org/wiki/Lower_Saxony,Niedersachsen
+303556,DE-NW,NW,North Rhine-Westphalia,EU,DE,https://en.wikipedia.org/wiki/North_Rhine-Westphalia,Nordrhein-Westfalen
+303557,DE-RP,RP,Rhineland-Palatinate,EU,DE,https://en.wikipedia.org/wiki/Rhineland-Palatinate,Rheinland-Pfalz
+303558,DE-SH,SH,Schleswig-Holstein,EU,DE,https://en.wikipedia.org/wiki/Schleswig-Holstein,Airports in Schleswig-Holstein
+303559,DE-SL,SL,Saarland,EU,DE,https://en.wikipedia.org/wiki/Saarland,Airports in Saarland
+303560,DE-SN,SN,Saxony,EU,DE,https://en.wikipedia.org/wiki/Saxony,Sachsen
+303561,DE-ST,ST,Saxony-Anhalt,EU,DE,https://en.wikipedia.org/wiki/Saxony-Anhalt,Sachsen-Anhalt
+303562,DE-TH,TH,Thuringia,EU,DE,https://en.wikipedia.org/wiki/Thuringia,"Thueringen, Freistaat Thüringen"
+303563,DE-U-A,U-A,(unassigned),EU,DE,,Airports in (unassigned)
+597933,DE-XX,XX,*Offshore Wind Farms,EU,DE,,
+306351,FR-ARA,ARA,Auvergne-Rhône-Alpes,EU,FR,https://en.wikipedia.org/wiki/Auvergne-Rh%C3%B4ne-Alpes,Airports in Auvergne-Rhône-Alpes
+306350,FR-BFC,BFC,Bourgogne-Franche-Comté,EU,FR,https://en.wikipedia.org/wiki/Bourgogne-Franche-Comt%C3%A9,Bourgogne
+306348,FR-BRE,BRE,Brittany,EU,FR,https://en.wikipedia.org/wiki/Brittany,Bretagne
+306345,FR-COR,COR,Corsica,EU,FR,https://en.wikipedia.org/wiki/Corsica,Corse
+306347,FR-CVL,CVL,Centre-Val de Loire,EU,FR,https://en.wikipedia.org/wiki/Centre-Val_de_Loire,Airports in Centre-Val de Loire
+306353,FR-GES,GES,Grand Est,EU,FR,https://en.wikipedia.org/wiki/Grand_Est,Airports in Grand Est
+306337,FR-HDF,HDF,Hauts-de-France,EU,FR,https://en.wikipedia.org/wiki/Hauts-de-France,Airports in Hauts-de-France
+306342,FR-IDF,IDF,Île-de-France,EU,FR,https://en.wikipedia.org/wiki/Île-de-France,Airports in Île-de-France
+306352,FR-NAQ,NAQ,Nouvelle-Aquitaine,EU,FR,https://en.wikipedia.org/wiki/Nouvelle-Aquitaine,"Limousin, Poitou-Charentes"
+306343,FR-NOR,NOR,Normandy,EU,FR,https://en.wikipedia.org/wiki/Normandy,Haute-Normandie
+306341,FR-OCC,OCC,Occitanie,EU,FR,https://en.wikipedia.org/wiki/Occitania_(administrative_region),"Languedoc-Roussillon, Midi-Pyrénées"
+306333,FR-PAC,PAC,Provence-Alpes-Côte-d'Azur,EU,FR,https://en.wikipedia.org/wiki/Provence-Alpes-C%C3%B4te_d%27Azur,Airports in Provence-Alpes-Côte-d'Azur
+306336,FR-PDL,PDL,Pays-de-la-Loire,EU,FR,https://en.wikipedia.org/wiki/Pays-de-la-Loire,Airports in Pays-de-la-Loire
+303819,FR-U-A,U-A,(unassigned),EU,FR,,Airports in (unassigned)
+306374,GB-ENG,ENG,England,EU,GB,https://en.wikipedia.org/wiki/England,English airports
+306375,GB-NIR,NIR,Northern Ireland,EU,GB,https://en.wikipedia.org/wiki/Northern_Ireland,"Northern Irish airports, Aerfoirt Thuaisceart Éireann"
+306377,GB-SCT,SCT,Scotland,EU,GB,https://en.wikipedia.org/wiki/Scotland,"Scottish airports, Puirt-adhair Albannach"
+303830,GB-U-A,U-A,(unassigned),EU,GB,,keep
+306376,GB-WLS,WLS,Wales,EU,GB,https://en.wikipedia.org/wiki/Wales,"Welsh airports, Cymru, Meysydd awyr Cymru"
+304790,MX-AGU,AGU,Aguascalientes,NA,MX,https://en.wikipedia.org/wiki/Aguascalientes,Airports in Aguascalientes
+304791,MX-BCN,BCN,Baja California,NA,MX,https://en.wikipedia.org/wiki/Baja_California,Airports in Baja California
+304792,MX-BCS,BCS,Baja California Sur,NA,MX,https://en.wikipedia.org/wiki/Baja_California_Sur,Airports in Baja California Sur
+304793,MX-CAM,CAM,Campeche,NA,MX,https://en.wikipedia.org/wiki/Campeche,Airports in Campeche
+304794,MX-CHH,CHH,Chihuahua,NA,MX,https://en.wikipedia.org/wiki/Chihuahua_(state),Airports in Chihuahua
+304795,MX-CHP,CHP,Chiapas,NA,MX,https://en.wikipedia.org/wiki/Chiapas,Airports in Chiapas
+304796,MX-COA,COA,Coahuila,NA,MX,https://en.wikipedia.org/wiki/Coahuila,Airports in Coahuila
+304797,MX-COL,COL,Colima,NA,MX,https://en.wikipedia.org/wiki/Colima,Airports in Colima
+304798,MX-DIF,DIF,Ciudad de México,NA,MX,https://en.wikipedia.org/wiki/Mexico_City,Airports in Mexico City
+304799,MX-DUR,DUR,Durango,NA,MX,https://en.wikipedia.org/wiki/Durango,Airports in Durango
+304800,MX-GRO,GRO,Guerrero,NA,MX,https://en.wikipedia.org/wiki/Guerrero,Airports in Guerrero
+304801,MX-GUA,GUA,Guanajuato,NA,MX,https://en.wikipedia.org/wiki/Guanajuato,Airports in Guanajuato
+304802,MX-HID,HID,Hidalgo,NA,MX,https://en.wikipedia.org/wiki/Hidalgo_(state),Airports in Hidalgo
+304803,MX-JAL,JAL,Jalisco,NA,MX,https://en.wikipedia.org/wiki/Jalisco,Airports in Jalisco
+304804,MX-MEX,MEX,México (state),NA,MX,https://en.wikipedia.org/wiki/State_of_Mexico,Airports in México (state)
+304805,MX-MIC,MIC,Michoacán,NA,MX,https://en.wikipedia.org/wiki/Michoac%C3%A1n,Airports in Michoacán
+304806,MX-MOR,MOR,Morelos,NA,MX,https://en.wikipedia.org/wiki/Morelos,Airports in Morelos
+304807,MX-NAY,NAY,Nayarit,NA,MX,https://en.wikipedia.org/wiki/Nayarit,Airports in Nayarit
+304808,MX-NLE,NLE,Nuevo León,NA,MX,https://en.wikipedia.org/wiki/Nuevo_Le%C3%B3n,Airports in Nuevo León
+304809,MX-OAX,OAX,Oaxaca,NA,MX,https://en.wikipedia.org/wiki/Oaxaca,Airports in Oaxaca
+304810,MX-PUE,PUE,Puebla,NA,MX,https://en.wikipedia.org/wiki/Puebla,Airports in Puebla
+304811,MX-QUE,QUE,Querétaro,NA,MX,https://en.wikipedia.org/wiki/Quer%C3%A9taro,Airports in Querétaro
+304812,MX-ROO,ROO,Quintana Roo,NA,MX,https://en.wikipedia.org/wiki/Quintana_Roo,Airports in Quintana Roo
+304813,MX-SIN,SIN,Sinaloa,NA,MX,https://en.wikipedia.org/wiki/Sinaloa,Airports in Sinaloa
+304814,MX-SLP,SLP,San Luis Potosí,NA,MX,https://en.wikipedia.org/wiki/San_Luis_Potos%C3%AD,Airports in San Luis Potosí
+304815,MX-SON,SON,Sonora,NA,MX,https://en.wikipedia.org/wiki/Sonora,Airports in Sonora
+304816,MX-TAB,TAB,Tabasco,NA,MX,https://en.wikipedia.org/wiki/Tabasco,Airports in Tabasco
+304817,MX-TAM,TAM,Tamaulipas,NA,MX,https://en.wikipedia.org/wiki/Tamaulipas,Airports in Tamaulipas
+304818,MX-TLA,TLA,Tlaxcala,NA,MX,https://en.wikipedia.org/wiki/Tlaxcala,Airports in Tlaxcala
+304819,MX-U-A,U-A,(unassigned),NA,MX,,Airports in (unassigned)
+304820,MX-VER,VER,Veracruz,NA,MX,https://en.wikipedia.org/wiki/Veracruz,Airports in Veracruz
+304821,MX-YUC,YUC,Yucatán,NA,MX,https://en.wikipedia.org/wiki/Yucat%C3%A1n,Airports in Yucatán
+304822,MX-ZAC,ZAC,Zacatecas,NA,MX,https://en.wikipedia.org/wiki/Zacatecas,Airports in Zacatecas
+306076,US-AK,AK,Alaska,NA,US,https://en.wikipedia.org/wiki/Alaska,Airports in Alaska
+306077,US-AL,AL,Alabama,NA,US,https://en.wikipedia.org/wiki/Alabama,Airports in Alabama
+306078,US-AR,AR,Arkansas,NA,US,https://en.wikipedia.org/wiki/Arkansas,Airports in Arkansas
+306079,US-AZ,AZ,Arizona,NA,US,https://en.wikipedia.org/wiki/Arizona,Airports in Arizona
+306080,US-CA,CA,California,NA,US,https://en.wikipedia.org/wiki/California,Californian airports
+306081,US-CO,CO,Colorado,NA,US,https://en.wikipedia.org/wiki/Colorado,Airports in Colorado
+306082,US-CT,CT,Connecticut,NA,US,https://en.wikipedia.org/wiki/Connecticut,Airports in Connecticut
+306083,US-DC,DC,District of Columbia,NA,US,https://en.wikipedia.org/wiki/District_of_Columbia,Airports in the District of Columbia
+306084,US-DE,DE,Delaware,NA,US,https://en.wikipedia.org/wiki/Delaware,Airports in Delaware
+306085,US-FL,FL,Florida,NA,US,https://en.wikipedia.org/wiki/Florida,Airports in Florida
+306086,US-GA,GA,Georgia,NA,US,https://en.wikipedia.org/wiki/Georgia,Airports in Georgia
+306087,US-HI,HI,Hawaii,NA,US,https://en.wikipedia.org/wiki/Hawaii,Airports in Hawaii
+306088,US-IA,IA,Iowa,NA,US,https://en.wikipedia.org/wiki/Iowa,Airports in Iowa
+306089,US-ID,ID,Idaho,NA,US,https://en.wikipedia.org/wiki/Idaho,Airports in Idaho
+306090,US-IL,IL,Illinois,NA,US,https://en.wikipedia.org/wiki/Illinois,Airports in Illinois
+306091,US-IN,IN,Indiana,NA,US,https://en.wikipedia.org/wiki/Indiana,Airports in Indiana
+306092,US-KS,KS,Kansas,NA,US,https://en.wikipedia.org/wiki/Kansas,Airports in Kansas
+306093,US-KY,KY,Kentucky,NA,US,https://en.wikipedia.org/wiki/Kentucky,Airports in Kentucky
+306094,US-LA,LA,Louisiana,NA,US,https://en.wikipedia.org/wiki/Louisiana,Airports in Louisiana
+306095,US-MA,MA,Massachusetts,NA,US,https://en.wikipedia.org/wiki/Massachusetts,Airports in Massachusetts
+306096,US-MD,MD,Maryland,NA,US,https://en.wikipedia.org/wiki/Maryland,Airports in Maryland
+306097,US-ME,ME,Maine,NA,US,https://en.wikipedia.org/wiki/Maine,Airports in Maine
+306098,US-MI,MI,Michigan,NA,US,https://en.wikipedia.org/wiki/Michigan,Airports in Michigan
+306099,US-MN,MN,Minnesota,NA,US,https://en.wikipedia.org/wiki/Minnesota,Airports in Minnesota
+306100,US-MO,MO,Missouri,NA,US,https://en.wikipedia.org/wiki/Missouri,Airports in Missouri
+306101,US-MS,MS,Mississippi,NA,US,https://en.wikipedia.org/wiki/Mississippi,Airports in Mississippi
+306102,US-MT,MT,Montana,NA,US,https://en.wikipedia.org/wiki/Montana,Airports in Montana
+306103,US-NC,NC,North Carolina,NA,US,https://en.wikipedia.org/wiki/North_Carolina,Airports in North Carolina
+306104,US-ND,ND,North Dakota,NA,US,https://en.wikipedia.org/wiki/North_Dakota,Airports in North Dakota
+306105,US-NE,NE,Nebraska,NA,US,https://en.wikipedia.org/wiki/Nebraska,Airports in Nebraska
+306106,US-NH,NH,New Hampshire,NA,US,https://en.wikipedia.org/wiki/New_Hampshire,Airports in New Hampshire
+306107,US-NJ,NJ,New Jersey,NA,US,https://en.wikipedia.org/wiki/New_Jersey,Airports in New Jersey
+306108,US-NM,NM,New Mexico,NA,US,https://en.wikipedia.org/wiki/New_Mexico,Airports in New Mexico
+306109,US-NV,NV,Nevada,NA,US,https://en.wikipedia.org/wiki/Nevada,Airports in Nevada
+306110,US-NY,NY,New York,NA,US,https://en.wikipedia.org/wiki/New_York,Airports in New York
+306111,US-OH,OH,Ohio,NA,US,https://en.wikipedia.org/wiki/Ohio,Airports in Ohio
+306112,US-OK,OK,Oklahoma,NA,US,https://en.wikipedia.org/wiki/Oklahoma,Airports in Oklahoma
+306113,US-OR,OR,Oregon,NA,US,https://en.wikipedia.org/wiki/Oregon,Airports in Oregon
+306114,US-PA,PA,Pennsylvania,NA,US,https://en.wikipedia.org/wiki/Pennsylvania,Airports in Pennsylvania
+306115,US-RI,RI,Rhode Island,NA,US,https://en.wikipedia.org/wiki/Rhode_Island,Airports in Rhode Island
+306116,US-SC,SC,South Carolina,NA,US,https://en.wikipedia.org/wiki/South_Carolina,Airports in South Carolina
+306117,US-SD,SD,South Dakota,NA,US,https://en.wikipedia.org/wiki/South_Dakota,Airports in South Dakota
+306118,US-TN,TN,Tennessee,NA,US,https://en.wikipedia.org/wiki/Tennessee,Airports in Tennessee
+306119,US-TX,TX,Texas,NA,US,https://en.wikipedia.org/wiki/Texas,Texan airports
+306120,US-U-A,U-A,(unassigned),NA,US,,Airports in (unassigned)
+306121,US-UT,UT,Utah,NA,US,https://en.wikipedia.org/wiki/Utah,Airports in Utah
+306122,US-VA,VA,Virginia,NA,US,https://en.wikipedia.org/wiki/Virginia,Virginian airports
+306123,US-VT,VT,Vermont,NA,US,https://en.wikipedia.org/wiki/Vermont,Airports in Vermont
+306124,US-WA,WA,Washington,NA,US,https://en.wikipedia.org/wiki/Washington,Airports in Washington
+306125,US-WI,WI,Wisconsin,NA,US,https://en.wikipedia.org/wiki/Wisconsin,Airports in Wisconsin
+306126,US-WV,WV,West Virginia,NA,US,https://en.wikipedia.org/wiki/West_Virginia,Airports in West Virginia
+306127,US-WY,WY,Wyoming,NA,US,https://en.wikipedia.org/wiki/Wyoming,Airports in Wyoming

@@ -1,0 +1,19 @@
+{
+  "task_id": "real-estate-legal__caixa-auction-edital-audit",
+  "asset_id": "SP-CAIXA-568",
+  "delivery_context": "Prepare an investment-committee auction review pack for one Caixa foreclosure asset in Sao Paulo.",
+  "service_base_url": "http://127.0.0.1:8146",
+  "service_urls": {
+    "manifest": "http://127.0.0.1:8146/api/manifest",
+    "asset_current": "http://127.0.0.1:8146/api/asset/current",
+    "cost_model_current": "http://127.0.0.1:8146/api/cost-model/current",
+    "risk_signals": "http://127.0.0.1:8146/api/risk-signals",
+    "decision_policy_current": "http://127.0.0.1:8146/api/decision-policy/current"
+  },
+  "required_outputs": [
+    "/root/output/notice_extract.json",
+    "/root/output/risk_register.csv",
+    "/root/output/cash_requirements.json",
+    "/root/output/investment_committee_memo.md"
+  ]
+}

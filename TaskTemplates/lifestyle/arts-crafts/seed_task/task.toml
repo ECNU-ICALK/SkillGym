@@ -1,0 +1,33 @@
+version = "1.0"
+
+[metadata]
+id = "arts-crafts__fiber-workshop-printable-bundle"
+name = "Fiber Workshop Printable Bundle"
+description = "Assemble a supplier-ready 3D printable bundle for a fiber crafts workshop from local candidate data and a local model source service."
+difficulty = "hard"
+category = "arts-crafts"
+tags = [
+  "arts-crafts",
+  "3d-printing",
+  "catalog-selection",
+  "file-packaging",
+  "license-review",
+  "local-service",
+]
+required_skills = ["find-stl"]
+primary_output_file = "/root/answer/bundle_manifest.json"
+source_template_id = "arts-crafts__fiber-workshop-printable-bundle"
+task_role = "template"
+
+[verifier]
+timeout_sec = 600.0
+
+[agent]
+timeout_sec = 1200.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 12288
+gpus = 0

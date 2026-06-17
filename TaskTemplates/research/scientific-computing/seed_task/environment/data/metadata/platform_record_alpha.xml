@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<stations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ndbc.noaa.gov/metadata/stationmetadata.xsd" created="2026-05-06T05:00:01Z"><station id="44013" name="BOSTON 16 NM East of Boston, MA" owner="NDBC" pgm="NDBC Meteorological/Ocean" type="moored buoy">
+  <history start="2024-04-23" stop="" lat="42.346" lng="-70.651" elev="0" met="y" hull="2.1D13" anemom_height="5.0"/>
+  <history start="2020-10-28" stop="2024-04-23" lat="42.346" lng="-70.651" elev="0" met="y" hull="2.1D08" anemom_height="5.0"/>
+  <history start="2016-04-06" stop="2020-10-28" lat="42.346" lng="-70.651" elev="0" met="y" hull="3DV22" anemom_height="5.0"/>
+  <history start="2012-06-19" stop="2016-04-06" lat="42.346" lng="-70.651" elev="0" met="y" hull="3D85" anemom_height="5.0"/>
+  <history start="2011-12-09" stop="2012-06-19" lat="42.346" lng="-70.651" elev="0" met="y" hull="" anemom_height="5.0"/>
+  <history start="2009-01-13" stop="2011-12-09" lat="42.346" lng="-70.651" elev="0" met="y" hull="3D43" anemom_height="5.0"/>
+  <history start="2009-01-12" stop="2009-01-13" lat="42.346" lng="-70.651" elev="0" met="y" hull="" anemom_height="5.0"/>
+  <history start="2007-07-02" stop="2009-01-12" lat="42.346" lng="-70.651" elev="0" met="y" hull="3DV04" anemom_height="5.0"/>
+  <history start="2003-06-23" stop="2007-07-02" lat="42.354" lng="-70.691" elev="0" met="y" hull="3DV04" anemom_height="5.0"/>
+  <history start="2001-04-24" stop="2003-06-23" lat="42.354" lng="-70.691" elev="0" met="y" hull="3D06" anemom_height="5.0"/>
+  <history start="1999-05-05" stop="2001-04-24" lat="42.354" lng="-70.691" elev="0" met="y" hull="3D05" anemom_height="5.0"/>
+ </station>
+ </stations>

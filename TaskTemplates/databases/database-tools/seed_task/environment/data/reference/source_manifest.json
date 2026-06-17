@@ -1,0 +1,23 @@
+{
+  "source_name": "MBTA GTFS static feed",
+  "source_url": "https://cdn.mbta.com/MBTA_GTFS.zip",
+  "source_feed_version": "Spring 2026, 2026-05-12T21:54:16+00:00, version D",
+  "analysis_window": {
+    "start_date": "2026-05-11",
+    "end_date": "2026-05-15"
+  },
+  "selected_route_ids": [
+    "Blue",
+    "Orange",
+    "Red"
+  ],
+  "record_counts": {
+    "agency_rows": 1,
+    "route_rows": 3,
+    "trip_rows": 3260,
+    "stop_time_rows": 48574,
+    "stop_rows": 158,
+    "calendar_rows": 6,
+    "calendar_dates_rows": 4
+  }
+}

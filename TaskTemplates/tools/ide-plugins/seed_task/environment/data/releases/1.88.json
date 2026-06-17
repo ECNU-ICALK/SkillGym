@@ -1,0 +1,60 @@
+{
+  "version": "1.88",
+  "published": "2024-03-06",
+  "highlights": [
+    {
+      "focus": "workspace-extensions",
+      "title": {
+        "en": "Local workspace extensions preview",
+        "pt-br": "Prévia de extensões locais de workspace",
+        "zh-cn": "本地工作区扩展预览"
+      },
+      "summary": {
+        "en": "VS Code 1.88 highlighted the preview flow for local workspace extensions, giving teams a clearer path for sharing workspace-scoped tooling during development.",
+        "pt-br": "O VS Code 1.88 destacou o fluxo em prévia para extensões locais de workspace, oferecendo um caminho mais claro para compartilhar ferramentas do workspace durante o desenvolvimento.",
+        "zh-cn": "VS Code 1.88 重点介绍了本地工作区扩展的预览流程，让团队在开发期间共享工作区级工具时路径更清晰。"
+      },
+      "action": {
+        "en": "Validate how your extension is opened and reviewed when it lives inside the workspace itself.",
+        "pt-br": "Valide como sua extensão é aberta e revisada quando vive dentro do próprio workspace.",
+        "zh-cn": "验证扩展直接位于工作区内部时的打开与审查流程。"
+      }
+    },
+    {
+      "focus": "views",
+      "title": {
+        "en": "Webview and custom editor support for floating windows",
+        "pt-br": "Suporte a webviews e editores customizados em janelas flutuantes",
+        "zh-cn": "浮动窗口中的 Webview 与自定义编辑器支持"
+      },
+      "summary": {
+        "en": "The March release improved how webviews and custom editors behave in floating-window scenarios, which matters for extensions that surface structured project summaries.",
+        "pt-br": "A atualização de março melhorou o comportamento de webviews e editores customizados em janelas flutuantes, algo importante para extensões que exibem resumos estruturados do projeto.",
+        "zh-cn": "三月版本改进了 Webview 与自定义编辑器在浮动窗口场景下的行为，这对展示结构化项目摘要的扩展很重要。"
+      },
+      "action": {
+        "en": "Review whether views opened from your Activity Bar entry remain clear outside the main window.",
+        "pt-br": "Revise se as views abertas a partir da Activity Bar permanecem claras fora da janela principal.",
+        "zh-cn": "检查从 Activity Bar 打开的视图在主窗口外是否仍然清晰可用。"
+      }
+    },
+    {
+      "focus": "extension-api",
+      "title": {
+        "en": "Issue reporter command support for extensions",
+        "pt-br": "Suporte ao comando de issue reporter para extensões",
+        "zh-cn": "面向扩展的问题报告命令支持"
+      },
+      "summary": {
+        "en": "VS Code 1.88 expanded issue reporter integration so extension authors can route user feedback through editor-native entrypoints.",
+        "pt-br": "O VS Code 1.88 ampliou a integração do issue reporter para que autores de extensões encaminhem feedback do usuário por pontos de entrada nativos do editor.",
+        "zh-cn": "VS Code 1.88 扩展了问题报告集成，使扩展作者能够通过编辑器原生入口收集用户反馈。"
+      },
+      "action": {
+        "en": "Decide whether your extension should surface feedback or support entrypoints alongside export commands.",
+        "pt-br": "Decida se sua extensão deve oferecer pontos de entrada de feedback ou suporte ao lado dos comandos de exportação.",
+        "zh-cn": "评估扩展是否应在导出命令旁提供反馈或支持入口。"
+      }
+    }
+  ]
+}

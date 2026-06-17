@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cli-anything-unimol-tools"
+version = "0.1.0"
+description = "Local Uni-Mol tools compatible CLI for benchmark tasks"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy==1.26.4",
+  "pandas==2.2.2",
+  "scikit-learn==1.5.2",
+  "rdkit-pypi==2022.9.5",
+]
+
+[project.scripts]
+unimol-tools = "cli_anything.unimol_tools:main"
+
+[tool.setuptools]
+packages = ["cli_anything"]

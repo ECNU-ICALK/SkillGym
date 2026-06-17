@@ -1,0 +1,36 @@
+version = "1.0"
+
+[metadata]
+id = "knowledge_base__promises_async_await_resource_refresh"
+name = "Template: Promises and Async/Await Resource Refresh"
+description = "Refresh a JavaScript concept page resource shelf from a bundled candidate pool, link audit snapshot, and fixed documentation contract."
+difficulty = "hard"
+category = "knowledge-base"
+tags = [
+  "knowledge-base",
+  "documentation",
+  "resource-curation",
+  "mdx",
+  "link-audit",
+  "content-refresh",
+]
+required_skills = [
+  "resource-curator",
+]
+primary_output_file = "/app/output/promises-and-async-await.mdx"
+source_template_id = "knowledge_base__promises_async_await_resource_refresh"
+task_role = "template"
+
+[verifier]
+timeout_sec = 700.0
+
+[agent]
+timeout_sec = 700.0
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 16384
+gpus = 0
+allow_internet = true

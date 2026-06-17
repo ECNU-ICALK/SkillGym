@@ -1,0 +1,21 @@
+{
+  "required_top_level_fields": [
+    "project_id",
+    "release_ready",
+    "summary",
+    "gates",
+    "blocking_issues",
+    "publishable_artifacts"
+  ],
+  "allowed_gate_status_values": [
+    "pass",
+    "fail"
+  ],
+  "gate_fields": [
+    "name",
+    "status",
+    "command",
+    "evidence",
+    "blocking"
+  ]
+}

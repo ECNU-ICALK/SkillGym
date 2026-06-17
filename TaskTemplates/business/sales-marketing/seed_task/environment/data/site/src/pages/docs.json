@@ -1,0 +1,32 @@
+{
+  "page_id": "docs",
+  "path": "/docs/",
+  "title": "Docs for engineering teams",
+  "meta_description": "Implementation guides, release checklists, and event instrumentation notes for Acme Observe.",
+  "h1": "Documentation",
+  "canonical_path": "/docs/",
+  "indexable": true,
+  "include_in_sitemap": true,
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Acme Observe documentation"
+    }
+  ],
+  "body_blocks": [
+    {
+      "type": "paragraph",
+      "text": "Read implementation notes for event pipelines, release diagnostics, and observability workflows."
+    },
+    {
+      "type": "links",
+      "links": [
+        {
+          "href": "/product-analytics/",
+          "label": "Product analytics setup"
+        }
+      ]
+    }
+  ]
+}

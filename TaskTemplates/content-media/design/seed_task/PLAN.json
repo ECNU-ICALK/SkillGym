@@ -1,0 +1,126 @@
+{
+  "task_id": "design__north_america_power_mix_brief_site",
+  "category": "design",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/app/output/north_america_power_mix_brief.html",
+  "selected_skill": {
+    "dir": "single-file-briefing-deck",
+    "purpose": "Guide the agent to turn a fixed contract, wireframes, and public data snapshots into a single-file browser briefing site with contract-complete pages, embedded charts, and local-file playback.",
+    "naming_note": "This template binds the shipped task-local skill directory `single-file-briefing-deck` under environment/skills. The without-skill comparison removes only that directory during runtime copy.",
+    "key_workflow_points": [
+      "read the page contract before editing code",
+      "track page completion against required page ids, modules, and chart ids",
+      "derive shared metric years from the bundled data instead of guessing them",
+      "keep the deck in one HTML file plus one manifest file",
+      "audit navigation and viewport fit in a browser before handoff"
+    ],
+    "skillsmp_references": [
+      {
+        "name": "frontend-slides",
+        "stars": "177.6k",
+        "relevance": "High-overlap workflow for browser-run presentations, page sequencing, and viewport-safe delivery."
+      },
+      {
+        "name": "concept-diagrams",
+        "stars": "142.4k",
+        "relevance": "Reinforces structured visual explanation and diagram-plus-copy composition inside a browser artifact."
+      },
+      {
+        "name": "popular-web-designs",
+        "stars": "142.4k",
+        "relevance": "Contributes strong browser-delivery expectations for polished layout, visual hierarchy, and page composition."
+      },
+      {
+        "name": "sketch",
+        "stars": "142.4k",
+        "relevance": "Supports quick layout variation thinking and wireframe-aware page composition for browser-delivered work."
+      },
+      {
+        "name": "canvas-design",
+        "stars": "131.6k",
+        "relevance": "Contributes presentation-level craft expectations for static visual framing without changing the task into an art-only deliverable."
+      },
+      {
+        "name": "imagegen",
+        "stars": "81.5k",
+        "relevance": "Relevant neighboring design skill for raster outputs, included here as a contrast point because this template stays code-native in HTML."
+      },
+      {
+        "name": "ckmbanner-design",
+        "stars": "76.0k",
+        "relevance": "Useful comparison point for high-direction visual polish and structured design guidance."
+      },
+      {
+        "name": "ppt-generation",
+        "stars": "66.4k",
+        "relevance": "Adjacent briefing-delivery workflow for structured page composition and chart-heavy storytelling."
+      },
+      {
+        "name": "editorial-burgundy-principles-template",
+        "stars": "36.2k",
+        "relevance": "Provides a close deck-oriented comparison point for page-by-page editorial presentation work."
+      },
+      {
+        "name": "open-design-landing-deck",
+        "stars": "36.2k",
+        "relevance": "Another strong browser deck reference for navigation chrome, slide sequencing, and single-file presentation behavior."
+      },
+      {
+        "name": "html-ppt-zhangzara-block-frame",
+        "stars": "36.2k",
+        "relevance": "Useful reference for bold deck page composition and review-ready presentation framing."
+      },
+      {
+        "name": "tailwind-design-system",
+        "stars": "35.1k",
+        "relevance": "Useful comparison point for token-driven layout consistency and reusable page modules."
+      },
+      {
+        "name": "excalidraw-diagram-generator",
+        "stars": "32.6k",
+        "relevance": "Useful lower-level diagram reference for structured visual explanation, though this template delivers in HTML rather than Excalidraw JSON."
+      },
+      {
+        "name": "legacy-circuit-mockups",
+        "stars": "32.6k",
+        "relevance": "Another comparison point for generated visual artifacts with deterministic structure and browser-visible output."
+      }
+    ]
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "live_services": [],
+    "hidden_services": [],
+    "determinism": "The task uses fixed public-data snapshots, fixed wireframes, and a fixed page contract. Verifier-side checks recompute expected metrics from the local snapshots, inspect the generated HTML structure, and replay viewport checks instead of trusting filenames or summaries alone.",
+    "with_without_rule": "The with-skill and without-skill variants may differ only by the presence or absence of environment/skills and the established runtime copy logic that removes that directory for the without-skill run. Instruction, tests, data, dependencies, and the skill contents themselves must stay identical across the comparison.",
+    "anti_toy_features": [
+      "multiple public-source datasets in mixed formats with different metric vintages",
+      "contract-defined page order plus wireframe-defined layout expectations, so page completion requires more than filling text slots",
+      "required chart, table, and explanatory-text colocation on the same page sections",
+      "single-file HTML delivery with local-file playback, navigation behavior, and viewport constraints",
+      "manifest cross-checks against page ids, chart ids, module ids, and metric years",
+      "formal local build entrypoint that must remain reusable on alternate fixtures"
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "formal build entrypoint produces the required HTML site and manifest",
+      "required page ids, page order, module coverage, and chart coverage match the contract",
+      "computed metrics and captions match the bundled data snapshots",
+      "wireframe-sensitive structure checks confirm that required sections appear on the intended pages",
+      "viewport-fit and navigation checks run across all required pages instead of stopping at the first pass",
+      "manifest and HTML stay consistent on page ids, chart ids, embedded assets, and metric years"
+    ],
+    "guardrails": [
+      "input files under /app/power_brief remain unchanged",
+      "the shipped input area remains unchanged",
+      "top-level output inventory exactly matches the contract",
+      "placeholder-oriented or verifier-oriented text in the formal outputs fails"
+    ]
+  },
+  "expected_skill_effect": {
+    "without_skill": "Without the bundled skill, agents are more likely to drift into building a generic webpage, miss the contract-to-wireframe mapping, skip viewport and navigation auditing, or stop after partial page assembly. Those are action-level or analysis-level misses rather than narrow formatting misses.",
+    "with_skill": "The bundled skill can provide a compact workflow for contract reading, page-by-page module tracking, local-file browser verification, and final manifest alignment, which should materially improve completion odds without changing the task statement or test surface."
+  }
+}

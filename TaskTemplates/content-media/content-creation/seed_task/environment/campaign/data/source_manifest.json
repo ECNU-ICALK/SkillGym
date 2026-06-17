@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "id": "irena_stats_2025",
+      "label": "IRENA Renewable Capacity Statistics 2025",
+      "url": "https://www.irena.org/Publications/2025/Mar/Renewable-Capacity-Statistics-2025",
+      "reference_note": "Global renewable capacity totals and 2024 additions"
+    },
+    {
+      "id": "iea_stocktake_2025",
+      "label": "IEA stocktake on the roadmaps to tripling renewables by 2030",
+      "url": "https://www.iea.org/reports/from-taking-stock-to-taking-action-the-roadmaps-to-tripling-renewables-by-2030",
+      "reference_note": "2030 benchmark, current ambitions, and bottlenecks"
+    },
+    {
+      "id": "iea_tripling_2023",
+      "label": "IEA Tripling Renewable Power by 2030",
+      "url": "https://www.iea.org/reports/tripling-renewable-power-by-2030",
+      "reference_note": "Solar share of additions and coal-generation implication"
+    },
+    {
+      "id": "owid_generation",
+      "label": "Our World in Data electricity generation by source snapshot",
+      "url": "https://ourworldindata.org/grapher/electricity-prod-source-stacked.csv?v=1&csvType=full&useColumnShortNames=false",
+      "reference_note": "World and China solar and wind generation snapshots"
+    }
+  ]
+}

@@ -1,0 +1,706 @@
+row_id,SMILES,measured_logS,source_compound_id,split_note
+train_0001,CCCC(C)(COC(N)=O)COC(N)=O,-1.807,Meprobamate,current_release
+train_0002,CCCCCC(=O)OC,-1.87,Methyl hexanoate,current_release
+train_0003,c1ccc2ncccc2c1,-1.3,Quinoline,current_release
+train_0004,CCCCC#C,-2.36,1-Hexyne ,current_release
+train_0005,CC1=CCCCC1,-3.27,1-Methylcyclohexene ,current_release
+train_0006,CC1CO1,-0.59,"1,2-Propylene oxide",current_release
+train_0007,CCSSCC,-2.42,Diethyldisulfide,current_release
+train_0008,Cc1cccc2c1Cc3ccccc32,-5.22,1-Methylfluorene,current_release
+train_0009,c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45,-8.699,Benzo(a)pyrene,current_release
+train_0010,COc1c(O)c(Cl)c(Cl)c(Cl)c1Cl,-4.02,tetrachloroguaiacol,current_release
+train_0011,Cn2cc(c1ccccc1)c(=O)c(c2)c3cccc(c3)C(F)(F)F,-4.445,Fluridone,current_release
+train_0012,OC(c1ccc(Cl)cc1)(c2ccc(Cl)cc2)C(Cl)(Cl)Cl,-5.666,Dicofol,current_release
+train_0013,CC1(OC(=O)N(C1=O)c2cc(Cl)cc(Cl)c2)C=C,-4.925,Vinclozolin,current_release
+train_0014,CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C,-4.15,Piperophos,current_release
+train_0015,Cc1cc(C)c2ccccc2c1,-4.29,"1,3-Dimethylnaphthalene",current_release
+train_0016,O=C1CCC(=O)N1,0.3,Succinimide,current_release
+train_0017,NC(=O)c1cnccn1,-0.667,Pyrazinamide,current_release
+train_0018,CCOC(=O)c1ccccc1C(=O)OCC,-2.35,Diethyl phthalate ,current_release
+train_0019,Oc1c(Cl)cc(Cl)cc1Cl,-2.34,"2,4,6-Trichlorophenol",current_release
+train_0020,CCCCCCl,-2.73,1-Chloropentane,current_release
+train_0021,C1c2ccccc2c3ccccc13,-5.0,Fluorene ,current_release
+train_0022,Cc1cccc(C)n1,0.45,"2,6-Dimethylpyridine",current_release
+train_0023,CC(C)(C)CO,-0.4,"2,2-Dimethylpropanol",current_release
+train_0024,CNC(=O)Oc1cccc2ccccc12,-3.224,Carbaryl,current_release
+train_0025,CC(C)c1ccc(C)cc1O,-2.22,Thymol,current_release
+train_0026,C=CCCC=C,-2.68,"1,5-Hexadiene ",current_release
+train_0027,CCCCCCCC(C)O,-2.74,2-Nonanol,current_release
+train_0028,CCCCCCCCCC(=O)OCC,-4.1,Ethyl decanoate,current_release
+train_0029,CC(C)CCOC(=O)C,-1.92,Isopentyl acetate,current_release
+train_0030,CCCCCBr,-3.08,1-Bromopentane,current_release
+train_0031,C1c2ccccc2c3ccc4ccccc4c13,-6.68,Benzo(a)fluorene,current_release
+train_0032,Cc1ncnc2nccnc12,-0.466,4-methylpteridine,current_release
+train_0033,NS(=O)(=O)c1cc(ccc1Cl)C2(O)NC(=O)c3ccccc23,-3.451,Chlorthalidone,current_release
+train_0034,Clc1c(Cl)c(Cl)c(N(=O)=O)c(Cl)c1Cl,-5.82,Quintozene,current_release
+train_0035,CCCCS,-2.18,Butanethiol ,current_release
+train_0036,C/C1CCC(\C)CC1,-4.47,"trans-1,4-Dimethylcyclohexane",current_release
+train_0037,O=c1[nH]cnc2[nH]ncc12,-2.266,allopurinol,current_release
+train_0038,CCCCC1C(=O)N(N(C1=O)c2ccccc2)c3ccccc3,-3.81,phenylbutazone,current_release
+train_0039,CCC2NC(=O)c1cc(c(Cl)cc1N2)S(N)(=O)=O,-3.29,Quinethazone,current_release
+train_0040,CN(C)C(=O)NC1CCCCCCC1,-2.218,Cycluron,current_release
+train_0041,COP(=S)(OC)Oc1cc(Cl)c(I)cc1Cl,-6.62,Iodofenphos,current_release
+train_0042,CC(C)CC(=O)C,-0.74,4-Methyl-2-pentanone,current_release
+train_0043,CCOP(=S)(OCC)Oc1nc(Cl)n(n1)C(C)C,-3.658,Isazofos,current_release
+train_0044,CC34CCC1C(CC=C2CC(O)CCC12C)C3CCC4=O,-4.12,Prasterone,current_release
+train_0045,C1CCCCC1,-3.1,Cyclohexane,current_release
+train_0046,C2c1ccccc1N(CCF)C(=O)c3ccccc23,-4.799,RTI 20,current_release
+train_0047,CCCCCCCCCCCCCCCCO,-7.0,1-Hexadecanol,current_release
+train_0048,O=C2NC(=O)C1(CCCCCC1)C(=O)N2,-3.168,Cycloheptyl-5-spirobarbituric acid,current_release
+train_0049,c1ccccc1SC,-2.39,thioanisole,current_release
+train_0050,c1ccncc1,0.76,Pyridine,current_release
+train_0051,CCCCOc1ccc(C(=O)OCC)c(c1)N(CC)CC,-3.84,stadacaine,current_release
+train_0052,CCC(C)(C)C,-3.55,"2,2-Dimethylbutane",current_release
+train_0053,Nc3ccc2cc1ccccc1cc2c3,-5.17,2-aminoanthracene,current_release
+train_0054,NS(=O)(=O)c2cc1c(NC(NS1(=O)=O)C(Cl)Cl)cc2Cl,-2.68,Trichlomethiazide,current_release
+train_0055,ClC(Cl)(Cl)C#N,-2.168,Trichloroacetonitrile,current_release
+train_0056,O=Cc2ccc1OCOc1c2,-1.63,piperonal,current_release
+train_0057,c1ccc2c(c1)c3cccc4ccc5cccc2c5c43,-7.8,Benzo(e)pyrene,current_release
+train_0058,CSc1nc(NC(C)C)nc(NC(C)C)n1,-4.1,Prometryn,current_release
+train_0059,COc1cc(CC=C)ccc1O,-1.56,Eugenol,current_release
+train_0060,CC(C)CO,0.1,2-Methylpropan-1-ol,current_release
+train_0061,CCc1ccc2ccccc2c1,-4.29,2-Ethylnaphthalene,current_release
+train_0062,Nc2cccc3nc1ccccc1cc23,-4.22,1-aminoacridine,current_release
+train_0063,CCC(C)(C)Cl,-2.51,2-Chloro-2-methylbutane,current_release
+train_0064,CCN(CC)C(=O)C(=CCOP(=O)(OC)OC)Cl,0.523,Dimecron,current_release
+train_0065,CCC#N,0.28,Propionitrile,current_release
+train_0066,CCNP(=S)(OC)OC(=CC(=O)OC(C)C)C,-3.408,Propetamphos,current_release
+train_0067,Cc1ccc(Br)cc1,-3.19,4-Bromotoluene,current_release
+train_0068,Clc1cccc(Cl)c1c2ccccc2,-5.21,"2,6-PCB",current_release
+train_0069,C/C=C/C=O,0.32,t-Crotonaldehyde,current_release
+train_0070,CCCCCCCC,-5.24,Octane,current_release
+train_0071,CC(C)N(C(=O)CCl)c1ccccc1,-2.48,propachlor,current_release
+train_0072,CCN(=O)=O,-0.22,Nitroethane,current_release
+train_0073,CCOC(=O)CC(SP(=S)(OC)OC)C(=O)OCC,-3.37,Malathion,current_release
+train_0074,Nc1cc(nc(N)n1=O)N2CCCCC2,-1.989,Minoxidil,current_release
+train_0075,c1ccc2cc3cc4ccccc4cc3cc2c1,-8.6,Napthacene,current_release
+train_0076,CC1(C)C2CCC1(C)C(=O)C2,-1.96,Camphor,current_release
+train_0077,CCOC(=O)N,0.85,O-Ethyl carbamate,current_release
+train_0078,c1ccccc1,-1.64,Benzene ,current_release
+train_0079,CN(C)C(=O)Nc1ccccc1,-1.6,Fenuron,current_release
+train_0080,CC(C)C(C)O,-0.18,3-Methyl-2-butanol,current_release
+train_0081,ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl,-4.64,Lindane,current_release
+train_0082,CCC(O)CC,-0.24,3-Pentanol,current_release
+train_0083,c1ccc2c(c1)sc3ccccc23,-4.38,Dibenzothiophene,current_release
+train_0084,ClC=C(Cl)Cl,-1.96,Trichloroethylene,current_release
+train_0085,COC(=O)C=C,-0.22,Methyl acrylate,current_release
+train_0086,ClC1=C(Cl)C(Cl)(C(=C1Cl)Cl)C2(Cl)C(=C(Cl)C(=C2Cl)Cl)Cl,-7.278,Dienochlor,current_release
+train_0087,c1ccc2c(c1)c3cccc4c3c2cc5ccccc54,-8.23,Benzo(b)fluoranthene,current_release
+train_0088,Clc1ccc(c(Cl)c1Cl)c2ccc(Cl)c(Cl)c2Cl,-8.01,"2,2',3,3',4,4'-PCB",current_release
+train_0089,COc1cccc(Cl)c1,-2.78,3-Chloroanisole,current_release
+train_0090,CCCC/C=C/C,-3.82,trans-2-Heptene ,current_release
+train_0091,Clc1ccc(c(Cl)c1Cl)c2c(Cl)cc(Cl)c(Cl)c2Cl,-7.66,"2,3,3',4,4'6-PCB",current_release
+train_0092,OCCCC=C,-0.15,4-Pentene-1-ol,current_release
+train_0093,CC=C(C(=CC)c1ccc(O)cc1)c2ccc(O)cc2,-4.95,Dienestrol,current_release
+train_0094,Cc1ccccc1N,-2.21,o-Toluidine,current_release
+train_0095,CCCCC(=O)OC,-1.34,Propyl propanoate,current_release
+train_0096,CCCCCCCCCCCCO,-4.8,1-Dodecanol,current_release
+train_0097,Cc1ccc(cc1)N(=O)=O,-2.49,p-Nitrotoluene,current_release
+train_0098,Oc1ccc(cc1)N(=O)=O,-0.74,p-Nitrophenol,current_release
+train_0099,CC(C)Oc1cc(c(Cl)cc1Cl)n2nc(oc2=O)C(C)(C)C,-5.696000000000001,Oxadiazon,current_release
+train_0100,Clc1cccc(Cl)c1c2c(Cl)cccc2Cl,-7.39,"2,2',6,6'-PCB",current_release
+train_0101,CC1CC2C3CCC4=CC(=O)C=CC4(C)C3(F)C(O)CC2(C)C1(O)C(=O)CO,-3.59,Dexamethasone,current_release
+train_0102,CCCCC(C)CC,-5.16,3-Methylheptane,current_release
+train_0103,CCC(C)(C)O,0.15,2-Methylbutan-2-ol,current_release
+train_0104,CC12CC(=O)C3C(CCC4=CC(=O)CCC34C)C2CCC1(O)C(=O)CO,-3.11,Cortisone,current_release
+train_0105,NC(=N)NS(=O)(=O)c1ccc(N)cc1,-1.99,sulfaguanidine,current_release
+train_0106,c1ccc2c(c1)c3cccc4cccc2c34,-6.0,Fluoranthene,current_release
+train_0107,CCN(CC)c1c(cc(c(N)c1N(=O)=O)C(F)(F)F)N(=O)=O,-5.47,Dinitramine,current_release
+train_0108,CC(C)CC(C)(C)O,-0.92,"2,4-Dimethyl-2-pentanol ",current_release
+train_0109,CCCC(O)C=C,-0.59,1-Hexene-3-ol,current_release
+train_0110,CC(=O)OCC(=O)C3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C,-4.63,deoxycorticosterone acetate,current_release
+train_0111,NC(=S)N,0.32,Thiourea,current_release
+train_0112,Nc1cccc2ccccc12,-1.92,1-Napthylamine,current_release
+train_0113,CCC=O,0.58,Propionaldehyde,current_release
+train_0114,CCC1(CCC(C)C)C(=O)NC(=O)NC1=O,-2.468,Amobarbital,current_release
+train_0115,Cn2c(=O)on(c1ccc(Cl)c(Cl)c1)c2=O,-2.82,Methazole,current_release
+train_0116,CC1CCCC1,-3.3,Methylcyclopentane,current_release
+train_0117,FC(F)(Cl)C(F)(F)Cl,-2.74,"1,2-Dichlorotetrafluoroethane",current_release
+train_0118,CCCCCC=C,-3.73,1-Heptene,current_release
+train_0119,Clc1ccc(cc1)N(=O)=O,-2.92,p-Chloronitrobenzene,current_release
+train_0120,O=C1NC(=O)C(=O)N1,-0.4,parabanic acid,current_release
+train_0121,CCC(C)C1(CC(Br)=C)C(=O)NC(=O)NC1=O,-2.647,butallylonal,current_release
+train_0122,ClCCCl,-1.06,"1,2-Dichloroethane",current_release
+train_0123,CCOCC,-0.09,Diethyl ether ,current_release
+train_0124,O2c1ccccc1N(CC)C(=O)c3ccccc23,-3.68,RTI 9,current_release
+train_0125,CC#C,-0.41,Propyne,current_release
+train_0126,CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2,-3.35,Methyldymron,current_release
+train_0127,c1cccc2c3c(C)cc4ccccc4c3ccc12,-6.59,5-Methylchrysene,current_release
+train_0128,c1ccoc1,-0.82,Furane,current_release
+train_0129,CC(C)N(=O)=O,-0.62,2-Nitropropane,current_release
+train_0130,CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1O,-4.02,Testosterone,current_release
+train_0131,c1ccccc1n2ncc(N)c(Br)c2(=O),-3.127,brompyrazone,current_release
+train_0132,CCC,-1.94,Propane,current_release
+train_0133,CC(C)CC(C)(C)C,-4.74,"2,2,4-Trimethylpentane",current_release
+train_0134,Cc1occc1C(=O)Nc2ccccc2,-3.3,Fenfuram,current_release
+train_0135,CSC,-0.45,Dimethyl sulfide,current_release
+train_0136,CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO,-3.24,Corticosterone,current_release
+train_0137,CCCCCCCCl,-4.0,1-Chloroheptane,current_release
+train_0138,Oc2ccc1ncccc1c2,-2.16,6-hydroxyquinoline,current_release
+train_0139,Cc1ccccc1O,-0.62,2-Methylphenol,current_release
+train_0140,CCSC(=O)N(CC)C1CCCCC1,-3.4,cycloate,current_release
+train_0141,O=c2c(C3CCCc4ccccc43)c(O)c1ccccc1o2,-2.84,Coumatetralyl,current_release
+train_0142,Clc1cccc(n1)C(Cl)(Cl)Cl,-3.76,Nitrapyrin,current_release
+train_0143,CCCCCOC(=O)CC,-1.28,Ethyl butyrate,current_release
+train_0144,CC(C)Cl,-1.41,2-Chloropropane,current_release
+train_0145,ClC(Cl)(Cl)C(Cl)(Cl)Cl,-3.67,Hexachloroethane,current_release
+train_0146,CCOP(=S)(OCC)Oc1cc(C)nc(n1)C(C)C,-3.64,Diazinon,current_release
+train_0147,OC(C(=O)c1ccccc1)c2ccccc2,-2.85,benzoin,current_release
+train_0148,Clc1ccc(cc1)c2cc(Cl)ccc2Cl,-6.25,"2,4',5-PCB",current_release
+train_0149,O=Cc1ccccc1,-1.19,Benzaldehyde,current_release
+train_0150,ClC1=C(Cl)C2(Cl)C3C4CC(C=C4)C3C1(Cl)C2(Cl)Cl,-6.307,Aldrin,current_release
+train_0151,C1CCCC1,-2.64,Cyclopentane ,current_release
+train_0152,C=CC#N,0.15,Acrylonitrile,current_release
+train_0153,COC(C)(C)C,-0.24,Methyl t-butyl ether ,current_release
+train_0154,Oc1c(Cl)cccc1Cl,-1.79,"2,6-Dichlorophenol",current_release
+train_0155,C1CCC2CCCCC2C1,-5.19,Decalin,current_release
+train_0156,COc1ccc(Cl)cc1,-2.78,4-Chloroanisole,current_release
+train_0157,Oc1c(Br)cc(C#N)cc1Br,-3.33,bromoxynil,current_release
+train_0158,CCCCCC(C)(C)O,-1.72,2-Methyl-2-heptanol,current_release
+train_0159,CSc1nc(nc(n1)N(C)C)N(C)C,-2.676,Simetryn,current_release
+train_0160,CCCN(CCC)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O,-5.68,Trifluralin,current_release
+train_0161,CCCCl,-1.47,1-Chloropropane,current_release
+train_0162,CC,-1.36,Ethane,current_release
+train_0163,Fc1ccccc1Br,-2.7,o-Fluorobromobenzene,current_release
+train_0164,OCC(O)CO,1.12,Glycerol,current_release
+train_0165,CCOC(=O)c1ccc(N)cc1,-2.616,Benzocaine,current_release
+train_0166,Oc1cccc(Cl)c1,-0.7,3-Chlorophenol,current_release
+train_0167,O=C1NC(=O)c2ccccc12,-2.61,phthalimide,current_release
+train_0168,O=c2[nH]c(=O)c1[nH]c(=O)[nH]c1[nH]2,-3.93,uric acid,current_release
+train_0169,Cc1ccc(C)c2ccccc12,-4.14,"1,4-Dimethylnaphthalene ",current_release
+train_0170,Clc1cc(c(Cl)c(Cl)c1Cl)c2cc(Cl)c(Cl)c(Cl)c2Cl,-9.16,"2,2',3,3',4,4',5,5'-PCB",current_release
+train_0171,OCC2OC(OC1(CO)OC(CO)C(O)C1O)C(O)C(O)C2O,0.79,Sucrose,current_release
+train_0172,CN(C)c2c(C)n(C)n(c1ccccc1)c2=O,-0.364,aminopyrine,current_release
+train_0173,CC(=O)c1ccccc1,-1.28,Acetophenone,current_release
+train_0174,Cc3nnc4CN=C(c1ccccc1Cl)c2cc(Cl)ccc2n34,-4.09,Triazolam,current_release
+train_0175,Clc1ccccc1,-2.38,Chlorobenzene,current_release
+train_0176,Clc1ccc(c(Cl)c1)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl,-7.92,"2,2',3,4,4',5',6-PCB",current_release
+train_0177,CCCCOC(=O)CCCCCCCCC(=O)OCCCC,-3.896,dibutyl sebacate,current_release
+train_0178,c1(C(C)(C)C)cc(C(C)(C)C)cc(OC(=O)NC)c1,-4.24,butacarb,current_release
+train_0179,ClC(Cl)C(Cl)(Cl)Cl,-2.6,Pentachloroethane,current_release
+train_0180,CCC(C)(C)CO,-1.04,"2,2-Dimethyl-1-butanol",current_release
+train_0181,CC(=O)SC4CC1=CC(=O)CCC1(C)C5CCC2(C)C(CCC23CCC(=O)O3)C45,-4.173,Spironolactone,current_release
+train_0182,CCNc1nc(Cl)nc(NCC)n1,-4.55,simazine,current_release
+train_0183,CCCCC=C,-3.23,1-Hexene,current_release
+train_0184,CNC(=O)ON=C(CSC)C(C)(C)C,-1.62,thiofanox,current_release
+train_0185,CC2Cc1ccccc1N2NC(=O)c3ccc(Cl)c(c3)S(N)(=O)=O,-3.5860000000000003,Indapamide,current_release
+train_0186,OCC1OC(OC2C(O)C(O)C(O)OC2CO)C(O)C(O)C1O,-0.244,Lactose,current_release
+train_0187,CON(C)C(=O)Nc1ccc(Cl)c(Cl)c1,-3.592,Linuron,current_release
+train_0188,O=C1N(COC(=O)C)C(=O)C(N1)(c2ccccc2)c3ccccc3,-4.47,3-Ethanoyloxymethylphenytoin,current_release
+train_0189,Nc1ccc(O)cc1,-0.8,p-Aminophenol,current_release
+train_0190,C#C,0.29,Ethyne,current_release
+train_0191,CCNc1nc(NC(C)(C)C)nc(SC)n1,-4.0,Terbutryn,current_release
+train_0192,CCOC(C)OCC,-0.43,"1,1-Diethoxyethane ",current_release
+train_0193,CCCCC(=O)CCCC,-2.58,5-Nonanone,current_release
+train_0194,COc1ccccc1OCC(O)COC(N)=O,-0.985,Methocarbamol,current_release
+train_0195,Cc1ccc2ccccc2c1,-3.77,2-Methylnapthalene,current_release
+train_0196,COc1ncnc2nccnc12,-1.11,4-methoxypteridine,current_release
+train_0197,COC(=O)c1cccnc1,-0.46,methyl nicotinate,current_release
+train_0198,COC(=O)Nc2nc1ccc(cc1[nH]2)C(=O)c3ccccc3,-3.88,Mebendazole,current_release
+train_0199,CCCCCCCCC,-5.88,Nonane,current_release
+train_0200,CCOC(=O)c1ccccc1S(=O)(=O)NN(C=O)c2nc(Cl)cc(OC)n2,-4.5760000000000005,Chlorimuron-ethyl (ph 7),current_release
+train_0201,CCOP(=S)(OCC)SC(CCl)N1C(=O)c2ccccc2C1=O,-6.34,Dialifor,current_release
+train_0202,c1ccc2c(c1)c3ccccc3c4ccccc24,-6.726,Triphenylene,current_release
+train_0203,Cc3ccnc4N(C1CC1)c2ncccc2C(=O)Nc34,-3.19,nevirapine,current_release
+train_0204,c1c(OC)c(OC)C2C(=O)OCC2c1,-1.899,meconin,current_release
+train_0205,OC3N=C(c1ccccc1)c2cc(Cl)ccc2NC3=O,-3.952,Oxazepam,current_release
+train_0206,COc1ccc(cc1)C(O)(C2CC2)c3cncnc3,-2.596,Ancymidol,current_release
+train_0207,Cc1ccc2cc3ccccc3cc2c1,-6.96,2-Methylanthracene,current_release
+train_0208,CCC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C,-5.37,testosterone propionate,current_release
+train_0209,CC(=O)OCC(=O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3C(O)CC21C,-4.88,Hydrocortisone 21-acetate,current_release
+train_0210,CCSC(=O)N(CC(C)C)CC(C)C,-3.68,Butylate,current_release
+train_0211,CC(C)OC(=O)C,-0.55,Isopropyl acetate,current_release
+train_0212,CCOP(=S)(OCC)ON=C(C#N)c1ccccc1,-4.862,Phoxim,current_release
+train_0213,c1ccsc1,-1.33,Thiophene,current_release
+train_0214,COc2cnc1cncnc1n2,-0.91,7-methoxypteridine,current_release
+train_0215,Oc2cc(O)c1C(=O)CC(Oc1c2)c3ccc(O)c(O)c3,-3.62,Eriodictyol,current_release
+train_0216,CCN(Cc1c(F)cccc1Cl)c2c(cc(cc2N(=O)=O)C(F)(F)F)N(=O)=O,-6.78,Flumetralin,current_release
+train_0217,Cc1ccc(cc1N(=O)=O)N(=O)=O,-2.82,"2,4-Dinitrotoluene",current_release
+train_0218,c1ccccc1NC(=O)c2c(O)cccc2,-3.59,salicylanilide,current_release
+train_0219,CCOC(=O)C=Cc1ccccc1,-3.0,ethyl cinnamate,current_release
+train_0220,Cc1c[nH]c2ccccc12,-2.42,3-methylindole,current_release
+train_0221,CC(C)(C)CCO,-0.5,"3,3-Dimethyl-1-butanol",current_release
+train_0222,CCOC(=O)CC(=O)OCC,-0.82,Malonic acid diethylester,current_release
+train_0223,COP(=O)(OC)OC(=CCl)c1cc(Cl)c(Cl)cc1Cl,-4.522,Stirofos,current_release
+train_0224,CCCCCCCCCCCCCCCO,-6.35,1-Pentadecanol,current_release
+train_0225,CCOP(=S)(OCC)Oc1nc(Cl)c(Cl)cc1Cl,-5.67,chlorpyrifos,current_release
+train_0226,Oc1ccccn1,1.02,2-Hydroxypyridine,current_release
+train_0227,Clc1ccccc1c2ccccc2,-4.54,2-Chlorobiphenyl,current_release
+train_0228,CC(=O)OCC(COC(=O)C)OC(=O)C,-0.6,Glyceryl triacetate,current_release
+train_0229,CC1=C(SCCO1)C(=O)Nc2ccccc2,-3.14,Carboxin,current_release
+train_0230,OC1CCCCCC1,-0.88,Cycloheptanol,current_release
+train_0231,N(Nc1ccccc1)c2ccccc2,-2.92,hydrazobenzene,current_release
+train_0232,O=C1NC(=O)NC(=O)C1(C)CC,-1.228,5-Methyl-5-ethylbarbituric acid,current_release
+train_0233,Cc1cc(ccc1NS(=O)(=O)C(F)(F)F)S(=O)(=O)c2ccccc2,-3.8,Perfluidone,current_release
+train_0234,CCN(CC)C(=S)SCC(Cl)=C,-3.39,Sulfallate,current_release
+train_0235,CN(C)C(=O)C(c1ccccc1)c2ccccc2,-2.98,diphenamid,current_release
+train_0236,Nc1nc[nH]n1,0.522,Amitrole,current_release
+train_0237,COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C,-4.76,nifedipine,current_release
+train_0238,C=CCC=C,-2.09,"1,4-Pentadiene ",current_release
+train_0239,c1cC2C(=O)NC(=O)C2cc1,-2.932,phthalamide,current_release
+train_0240,CN(C)C(=O)Nc1ccc(Cl)cc1,-2.89,Monuron,current_release
+train_0241,CCCC(C)CO,-1.11,2-Methylpentanol,current_release
+train_0242,Cl\C=C/Cl,-1.3,"cis 1,2-Dichloroethylene",current_release
+train_0243,O=C1c2ccccc2C(=O)c3ccccc13,-5.19,Anthraquinone,current_release
+train_0244,CN1CC(O)N(C1=O)c2nnc(s2)C(C)(C)C,-1.877,Buthidazole,current_release
+train_0245,CCC(=O)Nc1ccc(Cl)c(Cl)c1,-3.0,Propanil,current_release
+train_0246,CC(=C)C=C,-2.03,"2-Methyl-1,3-Butadiene ",current_release
+train_0247,C/C1CCCCC1\C,-4.3,"cis-1,2-Dimethylcyclohexane",current_release
+train_0248,OC1CCCCC1,-0.44,Cyclohexanol ,current_release
+train_0249,c1ccc2c(c1)ccc3ccccc32,-5.26,Phenanthrene,current_release
+train_0250,Oc1cccc(Cl)c1Cl,-1.3,"2,3-Dichlorophenol",current_release
+train_0251,C1(=O)NC(=O)NC(=O)C1(O)C2(O)C(=O)NC(=O)NC2(=O),-1.99,alloxantin,current_release
+train_0252,CNc1ccccc1,-1.28,N-Methylaniline ,current_release
+train_0253,CCCC(=O)OCC,-1.36,Methyl pentanoate,current_release
+train_0254,CCOc1ccccc1,-2.33,Phenetole,current_release
+train_0255,c1ccc2cc3ccccc3cc2c1,-6.35,Anthracene,current_release
+train_0256,C=CC=O,0.57,Acrolein,current_release
+train_0257,Clc1ccc(Cl)c(Cl)c1Cl,-4.57,"1,2,3,4-Tetrachlorobenzene",current_release
+train_0258,COc1ccc(C=O)cc1,-1.49,p-Methoxybenzaldehyde,current_release
+train_0259,Clc1cccc(Cl)c1Cl,-4.0,"1,2,3-Trichlorobenzene",current_release
+train_0260,CCCCC1(CC)C(=O)NC(=O)NC1=O,-1.661,Butethal,current_release
+train_0261,ClC(Cl)(Cl)C(NC=O)N1C=CN(C=C1)C(NC=O)C(Cl)(Cl)Cl,-4.19,triforine,current_release
+train_0262,Cc1ccc2cc(C)ccc2c1,-4.89,"2,6-Dimethylnaphthalene ",current_release
+train_0263,Clc1ccc(cc1)c2c(Cl)cccc2Cl,-6.14,"2,4,6-PCB",current_release
+train_0264,CN(C(=O)COc1nc2ccccc2s1)c3ccccc3,-4.873,Mefenacet,current_release
+train_0265,Cc1ccccc1Br,-2.23,2-Bromotoluene,current_release
+train_0266,O=C2NC(=O)C1(CCCCC1)C(=O)N2,-3.06,Cyclohexyl-5-spirobarbituric acid,current_release
+train_0267,Oc1ccc(Cl)cc1Cc2cc(Cl)ccc2O,-3.953,Dichlorophen,current_release
+train_0268,Clc1ccc(c(Cl)c1)c2c(Cl)ccc(Cl)c2Cl,-7.43,"2,2',3,4,6-PCB",current_release
+train_0269,CCCC(C)(C)O,-0.49,2-Methyl-2-pentanol,current_release
+train_0270,CCCCCCBr,-3.81,1-Bromohexane,current_release
+train_0271,Clc1cccc(c1Cl)c2c(Cl)c(Cl)cc(Cl)c2Cl,-8.6,"2,2',3,3',5,6-PCB",current_release
+train_0272,C=C,-0.4,Ethylene,current_release
+train_0273,CCCCC(C)O,-0.89,2-Hexanol,current_release
+train_0274,CCCCCCCCCC(C)O,-2.94,2-Undecanol,current_release
+train_0275,NS(=O)(=O)c2cc1c(NCNS1(=O)=O)cc2Cl,-2.63,hydrochlorothiazide,current_release
+train_0276,CCc1cccc(C)c1N(C(C)COC)C(=O)CCl,-2.73,Metolachlor,current_release
+train_0277,C1CCC=CC1,-2.59,Cyclohexene,current_release
+train_0278,BrC(Br)(Br)Br,-3.14,Tetrabromomethane,current_release
+train_0279,NC(=O)c1ccccc1,-0.96,Benzamide,current_release
+train_0280,CCI,-1.6,Iodoethane,current_release
+train_0281,CCC(C)CC,-3.68,3-Methylpentane,current_release
+train_0282,CN(C)C(=O)NC1CC2CC1C3CCCC23,-3.1710000000000003,Norea,current_release
+train_0283,Cc1ccc(cc1)c2ccccc2,-4.62,4-Methylbiphenyl,current_release
+train_0284,Nc1ccc(cc1)N(=O)=O,-2.37,p-Nitroaniline,current_release
+train_0285,CN(C)C=Nc1ccc(Cl)cc1C,-2.86,chlordimeform,current_release
+train_0286,CC(C)Nc1nc(Cl)nc(NC(C)C)n1,-4.43,Propazine,current_release
+train_0287,CCN(CC)c1nc(Cl)nc(n1)N(CC)CC,-4.4110000000000005,Chlorazine,current_release
+train_0288,CC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O)C(=O)COC(C)=O,-4.9,dexamethasone acetate,current_release
+train_0289,Cc1ccnc(C)c1,0.38,"2,4-Dimethylpyridine",current_release
+train_0290,CCCCCCCCCO,-3.01,1-Nonanol,current_release
+train_0291,Cc1ccc(C)c(C)c1,-3.31,"1,2,4-Trimethylbenzene",current_release
+train_0292,CC2Nc1cc(Cl)c(cc1C(=O)N2c3ccccc3C)S(N)(=O)=O,-3.78,Metolazone,current_release
+train_0293,C1SC(=S)NC1(=O),-1.77,rhodanine,current_release
+train_0294,CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O,-3.35,Ditalimfos,current_release
+train_0295,CCCC(O)CC,-0.8,3-Hexanol,current_release
+train_0296,CCN(CC)C(=O)CSc1ccc(Cl)nn1,-1.716,Azintamide,current_release
+train_0297,O=c1[nH]cnc2nc[nH]c12,-2.296,Hypoxanthine,current_release
+train_0298,CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO,-3.45,Deoxycorticosterone,current_release
+train_0299,CC(C)Br,-1.59,2-Bromopropane,current_release
+train_0300,CN(C)c1nc(nc(n1)N(C)C)N(C)C,-3.364,Altretamine,current_release
+train_0301,CC13CCC(=O)C=C1CCC4C2CCC(C(=O)CO)C2(CC(O)C34)C=O,-3.85,aldosterone,current_release
+train_0302,CCCCC,-3.18,Pentane,current_release
+train_0303,c1ccc2c(c1)[nH]c3ccccc32,-5.27,Carbazole,current_release
+train_0304,Brc1ccc(I)cc1,-4.56,p-Bromoiodobenzene,current_release
+train_0305,c1ccc2c3c(ccc2c1)c4cccc5cccc3c45,-8.0,Benzo(j)fluoranthene,current_release
+train_0306,CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl,-5.752000000000001,Trichloronate,current_release
+train_0307,CCCC=C,-2.68,1-Pentene ,current_release
+train_0308,O=N(=O)c1cc(cc(c1)N(=O)=O)N(=O)=O,-2.89,"1,3,5-Trinitrobenzene",current_release
+train_0309,CCOC2Oc1ccc(OS(C)(=O)=O)cc1C2(C)C,-3.42,ethofumesate,current_release
+train_0310,CCCCN(C)C(=O)Nc1ccc(Cl)c(Cl)c1,-4.77,Neburon,current_release
+train_0311,O=N(=O)c1ccccc1N(=O)=O,-3.1,"1,2-Dinitrobenzene",current_release
+train_0312,ClCC#N,-0.092,Chloroacetonitrile,current_release
+train_0313,O=N(=O)c1c(Cl)c(Cl)ccc1,-3.48,"2,3-Dichloronitrobenzene",current_release
+train_0314,CC(=O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C,-3.817,Hydroxyprogesterone-17a,current_release
+train_0315,CCCC=O,-0.01,Butyraldehyde,current_release
+train_0316,Cc1cc(C)cc(C)c1,-3.4,"1,3,5-Trimethylbenzene ",current_release
+train_0317,Brc1cc(Br)c(Br)cc1Br,-6.98,"1,2,4,5-Tetrabromobenzene",current_release
+train_0318,O=c1cc[nH]c(=O)[nH]1,-1.4880000000000002,uracil,current_release
+train_0319,O=C1NC(=O)NC(=O)C1(CC=C)c1ccccc1,-2.369,5-Allyl-5-phenylbarbital,current_release
+train_0320,CC(C)=CCCC(O)(C)C=C,-1.99,linalool,current_release
+train_0321,N(=Nc1ccccc1)c2ccccc2,-4.45,Azobenzene,current_release
+train_0322,CN(C)C(=O)OC1=CC(=O)CC(C)(C)C1,-0.85,dimetan,current_release
+train_0323,CCCC(C)C1(CC)C(=O)NC(=S)NC1=O,-3.36,thiopental,current_release
+train_0324,CNN,1.34,Methyl hydrazine,current_release
+train_0325,BrCCBr,-1.68,"1,2-Dibromoethane",current_release
+train_0326,CCC(C)(O)CC,-0.36,3-Methyl-3-pentanol,current_release
+train_0327,CCCC#C,-1.64,1-Pentyne,current_release
+train_0328,CC34CCC1C(CCC2=CC(=O)CCC12O)C3CCC4(O)C#C,-4.57,Norethisterone,current_release
+train_0329,CC(C)=CCCC(C)=CC(=O),-2.06,citral,current_release
+train_0330,COCC(=O)N(C(C)C(=O)OC)c1c(C)cccc1C,-1.601,metalaxyl,current_release
+train_0331,CN(C)c1ccccc1,-1.92,"N,N-Dimethylaniline",current_release
+train_0332,CC1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C,-3.999,17a-Methyltestosterone,current_release
+train_0333,CCCC(C)(C)C,-4.36,"2,2-Dimethylpentane",current_release
+train_0334,OCC1OC(O)C(O)C(O)C1O,0.74,glucose,current_release
+train_0335,Clc1cccc(Br)c1,-3.21,m-Chlorobromobenzene,current_release
+train_0336,C,-0.9,Methane,current_release
+train_0337,CC(C)C(C)C,-3.65,"2,3-Dimethylbutane",current_release
+train_0338,Clc1cc(Cl)c(cc1Cl)c2cc(Cl)c(Cl)cc2Cl,-8.56,"2,2',4,4',5,5'-PCB",current_release
+train_0339,COP(=S)(OC)Oc1cc(Cl)c(Cl)cc1Cl,-5.72,Ronnel,current_release
+train_0340,CCCC(O)CCC,-1.4,4-Heptanol,current_release
+train_0341,c2(Cl)c(Cl)c(Cl)c1nccnc1c2(Cl),-5.43,chlorquinox,current_release
+train_0342,OC(C1=CC2C5C(C1C2=C(c3ccccc3)c4ccccn4)C(=O)NC5=O)(c6ccccc6)c7ccccn7,-3.931,norbormide,current_release
+train_0343,Clc1cccc(Cl)c1,-3.04,"1,3-Dichlorobenzene",current_release
+train_0344,CCCOCCC,-1.62,Dipropyl ether,current_release
+train_0345,CCCCI,-2.96,1-Iodobutane,current_release
+train_0346,CC=C(C)C,-2.56,2-Methy-2-Butene,current_release
+train_0347,c1ccc2ccccc2c1,-3.6,Napthalene,current_release
+train_0348,ClC(Cl)C(c1ccc(Cl)cc1)c2ccccc2Cl,-6.51,"O,P'-DDD",current_release
+train_0349,Nc1ncnc2nc[nH]c12,-2.12,adenine,current_release
+train_0350,Sc2nc1ccccc1s2,-3.18,mercaptobenzothiazole,current_release
+train_0351,CNC(=O)Oc1ccccc1C(C)C,-2.863,Isoprocarb,current_release
+train_0352,O=C1N(COC(=O)CCCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3,-5.886,3-Hexanoyloxymethylphenyltoin,current_release
+train_0353,Cc1cc(cc(N(=O)=O)c1O)N(=O)=O,-1.456,DNOC,current_release
+train_0354,CC(=O)N(S(=O)c1ccc(N)cc1)c2onc(C)c2C,-3.59,acetyl sulfisoxazole,current_release
+train_0355,CC34CCC1C(=CCc2cc(O)ccc12)C3CCC4=O,-5.282,Equilin,current_release
+train_0356,CCCCC(CC)CO,-2.11,2-Ethyl-1-hexanol,current_release
+train_0357,CC1(C)C(C=C(Cl)Cl)C1C(=O)OCc2cccc(Oc3ccccc3)c2,-6.291,Permethrin,current_release
+train_0358,CCNc1nc(NC(C)C)nc(OC)n1,-2.084,Atratone,current_release
+train_0359,CCC(=O)C,0.52,2-Butanone,current_release
+train_0360,CO,1.57,Methanol,current_release
+train_0361,CS(=O)(=O)c1ccc(cc1)C(O)C(CO)NC(=O)C(Cl)Cl,-2.154,Thiamphenicol,current_release
+train_0362,OC3N=C(c1ccccc1Cl)c2cc(Cl)ccc2NC3=O,-3.604,Lorazepam,current_release
+train_0363,C1C=CCC=C1,-2.06,"1,4-Cyclohexadiene",current_release
+train_0364,OCC1OC(C(O)C1O)n2cnc3c(O)ncnc23,-1.23,Inosine,current_release
+train_0365,ClC(Cl)(Cl)N(=O)=O,-2.0,Chloropicrin,current_release
+train_0366,CCCCSP(=O)(SCCCC)SCCCC,-5.14,DEF,current_release
+train_0367,CCCCCCC#C,-3.66,1-Octyne ,current_release
+train_0368,Oc1ccccc1N(=O)=O,-1.74,o-Nitrophenol,current_release
+train_0369,OCC(O)C(O)C(O)C(O)CO,0.06,mannitol,current_release
+train_0370,COc1ccccc1Cl,-2.46,2-Chloroanisole,current_release
+train_0371,CC(C)(C)c1ccccc1,-3.66,t-Butylbenzene ,current_release
+train_0372,CN(C)C(=O)C,1.11,"N,N-Dimethylacetamide",current_release
+train_0373,CC(C)CCCO,-1.14,4-Methylpentanol,current_release
+train_0374,ClC(Cl)=C(c1ccc(Cl)cc1)c2ccc(Cl)cc2,-6.9,"P,P'-DDE",current_release
+train_0375,CC(OC(=O)Nc1cccc(Cl)c1)C#C,-2.617,Chlorbufam,current_release
+train_0376,Nc1ncnc2n(ccc12)C3OC(CO)C(O)C3O,-1.95,tubercidin,current_release
+train_0377,Oc1ccncc1,1.02,4-hydroxypyridine,current_release
+train_0378,FC(F)(F)C(Cl)Br,-1.71,halothane,current_release
+train_0379,CCCCN(CC)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O,-5.53,Benfluralin,current_release
+train_0380,COC(=O)Nc1cccc(OC(=O)Nc2cccc(C)c2)c1,-4.805,Phenmedipham,current_release
+train_0381,CCCCCCCCCCCCCCCCCCCC,-8.172,Eicosane,current_release
+train_0382,OCCOc1ccccc1,-0.7,2-Phenoxyethanol,current_release
+train_0383,CCC(C(CC)c1ccc(O)cc1)c2ccc(O)cc2,-4.43,Hexestrol,current_release
+train_0384,CC(=O)Nc1ccc(O)cc1,-1.03,p-Hydroxyacetanilide,current_release
+train_0385,CCCC(=O)CCC,-1.3,4-Heptanone,current_release
+train_0386,ClCC(Cl)Cl,-1.48,"1,1,2-Trichloroethane",current_release
+train_0387,Clc1cccc2ccccc12,-3.93,1-Chloronapthalene,current_release
+train_0388,CCCCCC(=O)OCC,-2.35,Ethyl hexanoate,current_release
+train_0389,CCCCCCO,-1.24,1-Hexanol,current_release
+train_0390,O=C(Nc1ccccc1)Nc2ccccc2,-3.15,Carbanilide,current_release
+train_0391,CCOP(=S)(OCC)SCSc1ccc(Cl)cc1,-5.736000000000001,Carbophenthion,current_release
+train_0392,CC(C)C(C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1)c3ccc(OC(F)F)cc3,-6.876,Flucythrinate,current_release
+train_0393,CC(=O)Nc1ccc(Br)cc1,-3.083,p-Bromoacetanilide,current_release
+train_0394,CC(C)O,0.43,2-Propanol,current_release
+train_0395,c1ccccc1O,0.0,Phenol,current_release
+train_0396,CCC(CC)CO,-1.17,2-Ethyl-1-butanol,current_release
+train_0397,CC(=O)OCC(=O)C3(O)C(CC4C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC34C)OC(C)=O,-4.13,triamcinolone diacetate,current_release
+train_0398,CCOC(=O)C,-0.04,Ethyl acetate,current_release
+train_0399,CCCCCCCCCCCCCCO,-5.84,1-Tetradecanol,current_release
+train_0400,ClC1C=CC2C1C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl,-6.317,Heptachlor,current_release
+train_0401,CCOC(=O)N(C)C(=O)CSP(=S)(OCC)OCC,-2.518,Mecarbam,current_release
+train_0402,CC(=O)Nc1nnc(s1)S(N)(=O)=O,-2.36,acetazolamide,current_release
+train_0403,CC(C)COC(=O)C,-1.21,Isobutyl acetate,current_release
+train_0404,CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C,-4.328,Dimefuron,current_release
+train_0405,CCOP(=S)(OCC)Oc2ccc1oc(=O)c(Cl)c(C)c1c2,-5.382000000000001,Coumaphos,current_release
+train_0406,Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,-4.28,Pentachlorophenol,current_release
+train_0407,COc2c1occc1cc3ccc(=O)oc23,-3.664,Methoxsalen,current_release
+train_0408,ClCC(Cl)(Cl)Cl,-2.18,"1,1,1,2-Tetrachloroethane",current_release
+train_0409,CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12,-5.233,Phosalone,current_release
+train_0410,CC12CCC3C(CCc4cc(O)ccc34)C2CCC1O,-5.03,Estradiol,current_release
+train_0411,c1(C(=O)OCCCCCC(C)(C))c(C(=O)OCCCCCC(C)(C))cccc1,-6.6370000000000005,diisooctyl phthalate,current_release
+train_0412,c2ccc1ocnc1c2,-1.16,Benzoxazole,current_release
+train_0413,CN(C)C(=O)Nc1cccc(OC(=O)NC(C)(C)C)c1,-2.93,karbutilate,current_release
+train_0414,ClC(=C(Cl)Cl)Cl,-2.54,Tetrachloroethylene,current_release
+train_0415,Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl,-7.32,"2,2,4,6,6'-PCB",current_release
+train_0416,N#Cc1ccccc1,-1.0,Benzonitrile,current_release
+train_0417,c1c(Br)ccc2ccccc12,-4.4,2-bromonaphthalene,current_release
+train_0418,CCCCCC(O)CC,-1.98,3-Octanol,current_release
+train_0419,Ic1cccc2ccccc12,-4.55,1-Iodonapthalene,current_release
+train_0420,Clc1ccccc1C2=NCC(=O)Nc3ccc(cc23)N(=O)=O,-3.499,Clonazepam,current_release
+train_0421,CCCN(CCC)c1c(cc(cc1N(=O)=O)C(C)C)N(=O)=O,-6.49,Isopropalin,current_release
+train_0422,CCCCCCCCCCO,-3.63,1-Decanol,current_release
+train_0423,Nc1c(C)c[nH]c(=O)n1,-1.4580000000000002,5-methylcytosine,current_release
+train_0424,CC3C2CCC1(C)C=CC(=O)C(=C1C2OC3=O)C,-3.09,Santonin,current_release
+train_0425,Oc1cccc2cccnc12,-2.42,8-quinolinol,current_release
+train_0426,O=C1NC(=O)NC(=O)C1(CC)CC=C(C)C,-2.253,5-(3-Methyl-2-butenyl)-5-ethylbarbital,current_release
+train_0427,Oc1ccc(c(O)c1)c3oc2cc(O)cc(O)c2c(=O)c3O,-3.083,Morin,current_release
+train_0428,CCOC(=O)CC,-0.66,Ethyl propionate,current_release
+train_0429,Cn2c(=O)n(C)c1ncn(CC(O)CO)c1c2=O,-0.17,Dyphylline,current_release
+train_0430,CC(=O)OC3(CCC4C2C=C(C)C1=CC(=O)CCC1(C)C2CCC34C)C(C)=O,-5.35,megestrol acetate,current_release
+train_0431,CCCC(C)C1(CC=C)C(=O)NC(=S)NC1=O,-3.46,thiamylal,current_release
+train_0432,c1(Br)c(Br)cc(Br)cc1,-4.5,"1,2,4-tribromobenzene",current_release
+train_0433,CC(=O)CCC1C(=O)N(N(C1=O)c2ccccc2)c3ccccc3,-3.27,kebuzone,current_release
+train_0434,CC(C)SC(C)C,-2.24,Diisopropylsulfide,current_release
+train_0435,Fc1ccccc1,-1.8,Fluorobenzene,current_release
+train_0436,Clc1cccc(c1)c2cc(Cl)ccc2Cl,-6.01,"2,3',5-PCB",current_release
+train_0437,Oc1c(Cl)ccc(Cl)c1Cl,-2.64,"2,3,6-Trichlorophenol",current_release
+train_0438,CCC(C)c1cc(cc(N(=O)=O)c1O)N(=O)=O,-3.38,Dinoseb,current_release
+train_0439,BrC(Cl)Cl,-1.54,Bromodichloromethane,current_release
+train_0440,Cc1cccnc1C,0.38,"2,3-Dimethylpyridine",current_release
+train_0441,CCCCc1c(C)nc(nc1O)N(C)C,-2.24,dimethirimol,current_release
+train_0442,CN(=O)=O,0.26,Nitromethane,current_release
+train_0443,BrC(Br)Br,-1.91,Tribromomethane,current_release
+train_0444,CCCCCCC(=O)C,-2.05,2-Octanone,current_release
+train_0445,c1ccc2cc3c4cccc5cccc(c3cc2c1)c45,-8.49,Benzo(k)fluoranthene,current_release
+train_0446,CCCCC(=O)OCC,-2.25,Pentyl propanoate,current_release
+train_0447,Nc1cccc(Cl)c1,-1.37,m-Chloroaniline,current_release
+train_0448,CCOC(=O)c1ccc(O)cc1,-2.35,Ethyl-p-hydroxybenzoate ,current_release
+train_0449,C1CC=CC1,-2.1,Cyclopentene ,current_release
+train_0450,CCCCNC(=O)n1c(NC(=O)OC)nc2ccccc12,-4.883,Benomyl,current_release
+train_0451,CCCCN(CC)C(=O)SCCC,-3.53,Pebulate,current_release
+train_0452,CC45CCC2C(CCC3CC1SC1CC23C)C4CCC5O,-5.41,Epitostanol,current_release
+train_0453,Cc1cncc(C)c1,0.38,"3,5-Dimethylpyridine",current_release
+train_0454,Clc1cc(Cl)c(Cl)c(Cl)c1,-4.63,"1,2,3,5-Tetrachlorobenzene",current_release
+train_0455,CN2C(=C(O)c1ccccc1S2(=O)=O)C(=O)Nc3ccccn3,-4.16,piroxicam,current_release
+train_0456,Clc1ccc(Cl)c(Cl)c1,-3.59,"1,2,4-Trichlorobenzene",current_release
+train_0457,Cc1ccccc1n3c(C)nc2ccccc2c3=O,-2.925,Methaqualone,current_release
+train_0458,CCC(C)(C)CC,-4.23,"3,3-Dimethylpentane",current_release
+train_0459,Clc1ccc(Cl)c(c1)c2c(Cl)c(Cl)cc(Cl)c2Cl,-7.42,"2,2',3,5,5',6-PCB",current_release
+train_0460,CC34CC(O)C1(F)C(CCC2=CC(=O)C=CC12C)C3CC(O)C4(O)C(=O)CO,-3.68,Triamcinolone,current_release
+train_0461,c1ccnnc1,1.1,Pyridazine,current_release
+train_0462,Cn1c(=O)n(C)c2nc[nH]c2c1=O,-1.39,Theophylline,current_release
+train_0463,c1cc2cccc3c4cccc5cccc(c(c1)c23)c54,-8.804,Perylene,current_release
+train_0464,CCC(C)n1c(=O)[nH]c(C)c(Br)c1=O,-2.523,Bromacil,current_release
+train_0465,c1cc2ccc3ccc4ccc5cccc6c(c1)c2c3c4c56,-9.018,Benzo[ghi]perylene,current_release
+train_0466,CC1CC2C3CC(F)C4=CC(=O)C=CC4(C)C3(F)C(O)CC2(C)C1(O)C(=O)CO,-5.613,Flumethasone,current_release
+train_0467,CCCCC1C(=O)N(N(C1=O)c2ccc(O)cc2)c3ccccc3,-3.73,oxyphenbutazone,current_release
+train_0468,Oc1cc(Cl)cc(Cl)c1,-1.34,"3,5-Dichlorophenol",current_release
+train_0469,CC(C)NC(=O)N1CC(=O)N(C1=O)c2cc(Cl)cc(Cl)c2,-4.376,Rovral,current_release
+train_0470,CCN(CC)C(=O)C(C)Oc1cccc2ccccc12,-3.57,Napropamide,current_release
+train_0471,CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1(O)C(=O)CO,-3.09,Hydrocortisone ,current_release
+train_0472,Cn1ccc(=O)[nH]c1=O,-0.807,1-methyluracil,current_release
+train_0473,Clc1ccc(cc1)c2cccc(Cl)c2Cl,-6.29,"2',3,4-PCB",current_release
+train_0474,CC(C)N(C(C)C)C(=O)SCC(=CCl)Cl,-4.2860000000000005,Diallate,current_release
+train_0475,CC(C)=CC3C(C(=O)OCc2cccc(Oc1ccccc1)c2)C3(C)C,-5.24,phenothrin,current_release
+train_0476,CCNc1nc(NC(C)(C)C)nc(OC)n1,-3.239,Terbumeton,current_release
+train_0477,Clc1ccc(cc1)C(c2ccc(Cl)cc2)C(Cl)(Cl)Cl,-7.15,DDT,current_release
+train_0478,CCCC(C)(C)CO,-1.52,"2,2-Dimethylpentanol",current_release
+train_0479,CC2(C)C1CCC(C)(C1)C2=O,-1.85,D-fenchone,current_release
+train_0480,CCCCc1ccccc1,-4.06,Butylbenzene,current_release
+train_0481,COP(=S)(OC)Oc1ccc(cc1Cl)N(=O)=O,-4.31,Dicapthon,current_release
+train_0482,CCCCCC,-3.84,Hexane ,current_release
+train_0483,O=C1NC(=O)NC(=O)C1(C(C)C)C(C)C,-2.766,"5,5-Diisopropylbarbital",current_release
+train_0484,CCCCC(CC)C=O,-2.13,2-Ethylhexanal,current_release
+train_0485,C1CCOC1,0.49,Tetrahydrofurane ,current_release
+train_0486,c1ccc2c(c1)cnc3ccccc23,-2.78,phenanthridine,current_release
+train_0487,CN(C)C(=S)SSC(=S)N(C)C,-3.9,Thiram,current_release
+train_0488,CCCCCCCI,-4.81,1-Iodoheptane,current_release
+train_0489,Oc1ccc(cc1)c2ccccc2,-3.48,p-Phenylphenol,current_release
+train_0490,C(Cc1ccccc1)c2ccccc2,-4.62,Bibenzyl ,current_release
+train_0491,ClCC,-1.06,Chloroethane,current_release
+train_0492,CN(C)C(=O)Nc1ccc(Cl)c(Cl)c1,-3.8,Diuron,current_release
+train_0493,Nc1ccc(cc1)S(N)(=O)=O,-1.34,Sulfanilamide,current_release
+train_0494,Clc1ccc(I)cc1,-4.03,p-Chloroiodobenzene,current_release
+train_0495,CCc1cccc(CC)c1N(COC)C(=O)CCl,-3.26,alachlor,current_release
+train_0496,O=C1NCCN1c2ncc(s2)N(=O)=O,-3.22,Niridazole,current_release
+train_0497,C1=Cc2cccc3cccc1c23,-3.96,Acenapthylene,current_release
+train_0498,CCCCCCOC(=O)c1ccccc1C(=O)OCCCCCC,-6.144,Dihexyl phthalate,current_release
+train_0499,Cc1cccc(C)c1O,-1.29,"2,6-Dimethylphenol",current_release
+train_0500,CCN2c1ccccc1N(C)C(=O)c3ccccc23,-4.749,RTI 19,current_release
+train_0501,CNC(=O)Oc1ccccc1C2OCCO2,-1.57,Dioxacarb,current_release
+train_0502,CCc1cccc2ccccc12,-4.17,1-Ethylnaphthalene ,current_release
+train_0503,O=N(=O)c1cc(Cl)c(Cl)cc1,-3.2,"3,4-Dichloronitrobenzene",current_release
+train_0504,COP(=S)(OC)Oc1ccc(Sc2ccc(OP(=S)(OC)OC)cc2)cc1,-6.237,Abate,current_release
+train_0505,CC(=O)Nc1ccccc1,-1.33,Acetanilide,current_release
+train_0506,ICI,-2.34,Diiodomethane,current_release
+train_0507,CC(C)(C)Cc1ccccc1,-4.15,t-Pentylbenzene,current_release
+train_0508,Nc3nc(N)c2nc(c1ccccc1)c(N)nc2n3,-2.404,Triamterene,current_release
+train_0509,CN(C)C(=O)Oc1nc(nc(C)c1C)N(C)C,-1.95,Pirimicarb,current_release
+train_0510,CC34CC(O)C1(F)C(CCC2=CC(=O)CCC12C)C3CCC4(O)C(=O)CO,-3.43,Fludrocortisone,current_release
+train_0511,Oc1ccc(cc1)C2(OC(=O)c3ccccc23)c4ccc(O)cc4,-2.9,phenolphthalein,current_release
+train_0512,CC(C)OC=O,-0.63,Isopropyl formate,current_release
+train_0513,CCOC(=O)c1cncn1C(C)c2ccccc2,-4.735,Etomidate,current_release
+train_0514,c1cnc2c(c1)ccc3ncccc23,-2.68,"1,7-phenantroline",current_release
+train_0515,CCCCCCC(=O)OCC,-2.74,Ethyl heptanoate,current_release
+train_0516,CCN(CC)c1nc(Cl)nc(NC(C)C)n1,-3.785,Ipazine,current_release
+train_0517,ClCBr,-0.89,Bromochloromethane,current_release
+train_0518,ClC(Cl)(Cl)Cl,-2.31,Tetrachloromethane,current_release
+train_0519,O=C1N(COC(=O)CCCCCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3,-6.523,3-Octanoyloxymethylphenytoin,current_release
+train_0520,CC(=C)C,-2.33,2-Methylpropene,current_release
+train_0521,CC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C,-5.184,testosterone acetate,current_release
+train_0522,CCCCCCCC(=O)C,-2.58,2-Nonanone,current_release
+train_0523,C=Cc1ccccc1,-2.82,Styrene,current_release
+train_0524,c1c(Cl)cccc1c2ccccc2,-4.88,3-Chlorobiphenyl,current_release
+train_0525,CCCCCCCBr,-4.43,1-Bromoheptane,current_release
+train_0526,CCOP(=S)(OCC)SCSP(=S)(OCC)OCC,-5.54,Ethion,current_release
+train_0527,Cc1cc(C)c(C)cc1C,-4.59,"1,2,4,5-Tetramethylbenzene",current_release
+train_0528,CN(C)C(=O)N(C)C,0.94,tetramethylurea,current_release
+train_0529,CC(C)CC(C)O,-0.8,4-Methyl-2-pentanol,current_release
+train_0530,CCCCOCN(C(=O)CCl)c1c(CC)cccc1CC,-4.19,butachlor,current_release
+train_0531,c1ccc2c(c1)ccc3c4ccccc4ccc23,-8.057,Chrysene,current_release
+train_0532,Oc1ccc2ccccc2c1,-2.28,2-Napthol,current_release
+train_0533,Nc1nc(O)nc2nc[nH]c12,-3.401,isoguanine,current_release
+train_0534,COP(=S)(OC)SCC(=O)N(C)C=O,-1.995,Formothion,current_release
+train_0535,Clc2c(Cl)c(Cl)c(c1ccccc1)c(Cl)c2Cl,-7.92,"2,3,4,5,6-PCB",current_release
+train_0536,OC(Cn1cncn1)(c2ccc(F)cc2)c3ccccc3F,-3.37,Flutriafol,current_release
+train_0537,c1cc2ccc(OC)c(CC=C(C)(C))c2oc1=O,-4.314,osthole,current_release
+train_0538,CCC(C)Cl,-1.96,2-Chlorobutane,current_release
+train_0539,O=C2NC(=O)C1(CC1)C(=O)N2,-1.886,Cyclopropyl-5-spirobarbituric acid,current_release
+train_0540,OC1CCCCCCC1,-1.29,Cyclooctanol,current_release
+train_0541,C1N(C(=O)NCC(C)C)C(=O)NC1,-2.15,isocarbamid,current_release
+train_0542,Cc1ccc(O)c(C)c1,-1.19,"2,4-Dimethylphenol",current_release
+train_0543,CCCCCCCCC(=O)C,-3.3,2-Decanone,current_release
+train_0544,C1Cc2cccc3cccc1c23,-4.63,Acenapthene,current_release
+train_0545,CCc1ccc(C)cc1,-3.11,4-Ethyltoluene,current_release
+train_0546,CCC#CCC,-1.99,3-Hexyne,current_release
+train_0547,Cc1ccc(cc1)S(=O)(=O)N,-1.74,p-Toluenesulfonamide ,current_release
+train_0548,ClC1CC2C(C1Cl)C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl,-6.86,Chlordane,current_release
+train_0549,CCC(C)CCO,-0.71,3-Methyl-2-pentanol,current_release
+train_0550,CC1(C)CON(Cc2ccccc2Cl)C1=O,-2.338,Clomazone,current_release
+train_0551,NC(=O)NCc1ccccc1,-0.95,benzylurea,current_release
+train_0552,CNC(=O)Oc1ccccc1OC(C)C,-2.05,Propoxur,current_release
+train_0553,CCc1ccccc1CC,-3.28,"1,2-Diethylbenzene",current_release
+train_0554,ClC(=C)Cl,-1.64,"1,1-Dichloroethylene",current_release
+train_0555,COP(=O)(NC(C)=O)SC,0.54,Acephate,current_release
+train_0556,CC(=O)N,1.58,Acetamide,current_release
+train_0557,N#Cc1ccccc1C#N,-2.38,Phthalonitrile,current_release
+train_0558,CC1(C)C(C=C(Cl)Cl)C1C(=O)OC(C#N)c2ccc(F)c(Oc3ccccc3)c2,-7.337000000000001,Cyfluthrin,current_release
+train_0559,Cc1cccc(C)c1C,-3.2,"1,2,3-Trimethylbenzene ",current_release
+train_0560,CCCC(C)C,-3.74,2-Methylpentane,current_release
+train_0561,CC1(C)C(C=C(Br)Br)C1C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2,-8.402000000000001,Deltamethrin,current_release
+train_0562,Fc1ccc(F)cc1,-1.97,"1,4-Difluorobenzene",current_release
+train_0563,COc1ccccc1,-1.85,Anisole,current_release
+train_0564,CCOc1ccc(NC(N)=O)cc1,-2.17,Dulcin,current_release
+train_0565,Cc2c(N)c(=O)n(c1ccccc1)n2C,-0.624,ampyrone,current_release
+train_0566,Cc1ccc(O)cc1C,-1.38,"3,4-Dimethylphenol",current_release
+train_0567,CC(=O)CC(c1ccccc1)c3c(O)c2ccccc2oc3=O,-3.893,Warfarin,current_release
+train_0568,C1Cc2ccccc2C1,-3.04,Indan,current_release
+train_0569,CCN(CC)c1ccccc1,-3.03,"N,N-Diethylaniline",current_release
+train_0570,CCCCOCCO,-0.42,2-Butoxyethanol,current_release
+train_0571,Nc3cc2c1ccccc1ccc2c4ccccc34,-6.2,6-aminochrysene,current_release
+train_0572,CNC(=O)Oc1cc(C)cc(C)c1,-2.5810000000000004,XMC,current_release
+train_0573,O=N(=O)c1cccc(c1)N(=O)=O,-2.29,"1,3-Dinitrobenzene",current_release
+train_0574,CC(=O)Nc1ccc(F)cc1,-1.78,p-Fluoroacetanilide,current_release
+train_0575,CCCCc1c(C)nc(NCC)nc1OS(=O)(=O)N(C)C,-4.16,bupirimate,current_release
+train_0576,ClC2=C(Cl)C3(Cl)C1C=CCC1C2(Cl)C3(Cl)Cl,-5.64,Chlordene,current_release
+train_0577,c1cc2ccc3ccc4ccc5ccc6ccc1c7c2c3c4c5c67,-9.332,Coronene,current_release
+train_0578,CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)CCC1(C)C2C(=O)CC34C,-4.21,cortisone acetate,current_release
+train_0579,CCNc1nc(Cl)nc(n1)N(CC)CC,-4.06,Trietazine,current_release
+train_0580,Brc1cc(Br)cc(Br)c1,-5.6,"1,3,5-Tribromobenzene",current_release
+train_0581,ClC4=C(Cl)C5(Cl)C3C1CC(C2OC12)C3C4(Cl)C5(Cl)Cl,-6.29,Dieldrin,current_release
+train_0582,Oc1c(Cl)cc(Cl)c(Cl)c1Cl,-3.1,"2,3,4,6-Tetrachlorophenol",current_release
+train_0583,CCCN(=O)=O,-0.8,1-Nitropropane,current_release
+train_0584,Fc1cccc(F)c1C(=O)NC(=O)Nc2cc(Cl)c(F)c(Cl)c2F,-7.28,TEFLUBENZURON,current_release
+train_0585,c3ccc2c(O)c1ccccc1cc2c3,-4.73,9-anthrol,current_release
+train_0586,CCNC(=S)NCC,-1.46,"1,3-diethylthiourea",current_release
+train_0587,Clc1ccc(cc1)c2ccc(Cl)cc2,-6.56,"4,4'-PCB",current_release
+train_0588,CN(C)C(=O)SCCCCOc1ccccc1,-3.927,Fenothiocarb,current_release
+train_0589,CCCCc1c(C)nc(NCC)[nH]c1=O,-3.028,Ethirimol,current_release
+train_0590,Clc1cc(Cl)c(Cl)c(c1Cl)c2c(Cl)c(Cl)cc(Cl)c2Cl,-9.15,"2,2',3,3',5,5',6,6'-PCB",current_release
+train_0591,OC(CC(c1ccccc1)c3c(O)c2ccccc2oc3=O)c4ccc(cc4)c5ccc(Br)cc5,-4.445,bromadiolone,current_release
+train_0592,Cc2cccc3sc1nncn1c23,-2.07,Tricyclazole,current_release
+train_0593,CNc2cnn(c1cccc(c1)C(F)(F)F)c(=O)c2Cl,-4.046,norflurazon,current_release
+train_0594,NC(=O)CCl,-0.02,chloroacetamide,current_release
+train_0595,OCC(O)COC(=O)c1ccccc1Nc2ccnc3cc(Cl)ccc23,-4.571000000000001,Glafenine,current_release
+train_0596,CCC(Br)(CC)C(=O)NC(N)=O,-2.68,Carbromal,current_release
+train_0597,Cc1cccc(C)c1,-2.82,m-Xylene ,current_release
+train_0598,CCOC=O,0.15,Ethyl formate,current_release
+train_0599,Cc1cccc2c1ccc3ccccc32,-5.85,1-Methylphenanthrene,current_release
+train_0600,CCCOC(=O)c1ccc(N)cc1,-2.452,Risocaine,current_release
+train_0601,Cc2cnc1cncnc1n2,-0.8540000000000001,7-methylpteridine,current_release
+train_0602,COc2cc1c(N)nc(nc1c(OC)c2OC)N3CCN(CC3)C(=O)OCC(C)(C)O,-3.638,Trimazosin,current_release
+train_0603,CCCCOC(=O)c1ccc(N)cc1,-3.082,Butamben,current_release
+train_0604,Clc1cccc(c1)N(=O)=O,-2.77,m-Chloronitrobenzene ,current_release
+train_0605,CC(C)CCO,-0.51,3-Methylbutan-1-ol,current_release
+train_0606,CC(=O)CC(c1ccc(Cl)cc1)c2c(O)c3ccccc3oc2=O,-5.839,Coumachlor,current_release
+train_0607,Nc1ccccc1Cl,-1.52,o-Chloroaniline,current_release
+train_0608,CCC(CC)C=O,-1.52,2-Ethylbutanal,current_release
+train_0609,ON=Cc1ccc(o1)N(=O)=O,-2.19,nifuroxime,current_release
+train_0610,CC1(C)C(C=C(Cl)C(F)(F)F)C1C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2,-8.176,Cyhalothrin,current_release
+train_0611,CCC(O)(CC)CC,-0.85,3-Ethyl-3-pentanol,current_release
+train_0612,FC(F)(Cl)C(F)(Cl)Cl,-3.04,"1,1,2-Trichlorotrifluoroethane",current_release
+train_0613,c1cc(C)cc2c1c3cc4cccc5CCc(c45)c3cc2,-7.92,3-Methylcholanthrene,current_release
+train_0614,OCC1OC(O)(CO)C(O)C1O,0.64,Fructose,current_release
+train_0615,CCCOC,-0.39,Methyl propyl ether ,current_release
+train_0616,Brc1cccc2ccccc12,-4.35,1-Bromonapthalene,current_release
+train_0617,COc1nc(NC(C)C)nc(NC(C)C)n1,-2.478,Prometon,current_release
+train_0618,O=C1NC(=O)NC(=O)C1(CC)CC=C,-1.614,5-Allyl-5-ethylbarbital,current_release
+train_0619,Cc1cc(=O)[nH]c(=S)[nH]1,-2.436,methylthiouracil,current_release
+train_0620,CC12CC2(C)C(=O)N(C1=O)c3cc(Cl)cc(Cl)c3,-4.8,Procymidone,current_release
+train_0621,CCOc2ccc1nc(sc1c2)S(N)(=O)=O,-3.81,Ethoxyzolamide,current_release
+train_0622,COC(=O)C,0.46,Methyl acetate,current_release
+train_0623,C1CCc2ccccc2C1,-4.37,"1,2,3,4-Tetrahydronapthalene",current_release
+train_0624,Cc1cccc(c1)N(=O)=O,-2.44,m-Nitrotoluene,current_release
+train_0625,CCCCC(C)(C)O,-1.08,2-Methyl-2-hexanol,current_release
+train_0626,CCNc1nc(Cl)nc(NC(C)(C)C#N)n1,-3.15,Cyanazine,current_release
+train_0627,CCCCCCCCCCCCCC,-7.96,Tetradecane,current_release
+train_0628,CCSCc1ccccc1OC(=O)NC,-2.09,ethiofencarb,current_release
+train_0629,CCOP(=S)(NC(C)C)Oc1ccccc1C(=O)OC(C)C,-4.194,Isofenphos,current_release
+train_0630,c2ccc1[nH]nnc1c2,-0.78,Benzotriazole,current_release
+train_0631,COc1cc(cc(OC)c1O)C6C2C(COC2=O)C(OC4OC3COC(C)OC3C(O)C4O)c7cc5OCOc5cc67,-3.571,"Etoposide (148-167,25mg/ml)",current_release
+train_0632,O=C1NC(=O)C(=O)C(=O)N1,-1.25,alloxan,current_release
+train_0633,CCC1(C(=O)NC(=O)NC1=O)c2ccccc2,-2.322,phenobarbital,current_release
+train_0634,CC(C)C(=O)C,-0.12,3-Methyl-2-butanone,current_release
+train_0635,CCCCO,0.0,1-Butanol,current_release
+train_0636,CC(C)OC(=O)Nc1cccc(Cl)c1,-3.38,Chloropham,current_release
+train_0637,c1cc(O)c(O)c2OCC3(O)CC4=CC(=O)C(O)=CC4=C3c21,-2.7,hematein,current_release
+train_0638,c1ccccc1C(O)c2ccccc2,-2.55,benzhydrol,current_release
+train_0639,Clc1ccc(Br)cc1,-3.63,p-Chlorobromobenzene,current_release
+train_0640,c1c(NC(=O)OC(C)C(=O)NCC)cccc1,-1.83,Carbetamide,current_release
+train_0641,CCOc1ccc(NC(=O)C)cc1,-2.35,Phenacetin,current_release
+train_0642,Oc2ccc1CCCCc1c2,-1.99,"5,6,7,8-tetrahydro-2-naphthol",current_release
+train_0643,Clc1ccc(cc1)c2ccccc2Cl,-5.28,"2,4'-PCB",current_release
+train_0644,CC12CCC(=O)C=C1CCC3C2CCC4(C)C3CCC4(O)C#C,-5.66,Ethisterone,current_release
+train_0645,c1(C#N)c(Cl)c(C#N)c(Cl)c(Cl)c(Cl)1,-5.64,Chlorothalonil,current_release
+train_0646,OC4=C(C1CCC(CC1)c2ccc(Cl)cc2)C(=O)c3ccccc3C4=O,-5.931,"Atovaquone(0,430mg/ml) - neutral",current_release
+train_0647,Sc1nccc(=O)[nH]1,-2.273,thiouracil,current_release
+train_0648,Cc1c(C)c2c3ccccc3ccc2c4ccccc14,-7.01,"5,6-Dimethylchrysene",current_release
+train_0649,NC(=O)N,0.96,Urea,current_release
+train_0650,CCCSCCC,-2.58,Di-n-propylsulfide,current_release
+train_0651,CCBr,-1.09,Bromoethane,current_release
+train_0652,CC=C,-1.08,Propylene,current_release
+train_0653,Brc1cccc(Br)c1,-3.54,"1,3-Dibromobenzene",current_release
+train_0654,COC(=O)c1ccccc1C(=O)OC,-1.66,Dimethyl phthalate,current_release
+train_0655,O=N(=O)c1cccc2ccccc12,-3.54,1-Nitronapthalene,current_release
+train_0656,O2c1ccc(N)cc1N(C)C(=O)c3cc(C)ccc23,-3.928,RTI 11,current_release
+train_0657,Nc1ccc(cc1)S(=O)(=O)c2ccc(N)cc2,-3.094,Dapsone,current_release
+train_0658,Fc1cccc(Br)c1,-2.67,m-Fluorobromobenzene,current_release
+train_0659,Clc1ccc(Cl)c(c1)c2cc(Cl)c(Cl)c(Cl)c2Cl,-7.68,"2,2',3,4,5,5'-PCB",current_release
+train_0660,c2ccc1NCCc1c2,-1.04,indoline,current_release
+train_0661,CCC(C)CO,-0.47,2-Methylbutanol,current_release
+train_0662,Nc1ccccc1O,-0.72,o-Aminophenol,current_release
+train_0663,CCO,1.1,Ethanol,current_release
+train_0664,CC(C)OC(C)C,-1.1,Diisopropyl ether ,current_release
+train_0665,CCN2c1ccccc1N(C)C(=S)c3cccnc23,-4.706,RTI 17,current_release
+train_0666,CCOc1ccc(cc1)C(C)(C)COCc3cccc(Oc2ccccc2)c3,-8.6,Etofenprox,current_release
+train_0667,C=CCS(=O)SCC=C,-0.83,allicin,current_release
+train_0668,CCCCC(O)CC,-1.47,3-Heptanol ,current_release
+train_0669,CCCCOC,-0.99,Methyl butyl ether ,current_release
+train_0670,O=C2NC(=O)C1(CCCCCCC1)C(=O)N2,-2.982,Cyclooctyl-5-spirobarbituric acid,current_release
+train_0671,CC34CCC1C(CCC2CC(O)CCC12C)C3CCC4=O,-4.16,Epiandrosterone,current_release
+train_0672,CCOCCOCC,-0.77,"1,2-Diethoxyethane ",current_release
+train_0673,CCNc1ccccc1,-1.7,N-Ethylaniline,current_release
+train_0674,CC=CC=O,0.32,2-butenal,current_release
+train_0675,Cc1c2ccccc2c(C)c3ccccc13,-6.57,"9,10-Dimethylanthracene",current_release
+train_0676,Cc1ccccc1C,-2.8,o-Xylene ,current_release
+train_0677,Cc1cccc2c(C)cccc12,-4.678999999999999,"1,5-Dimethlnapthalene",current_release
+train_0678,Oc1ccc(O)cc1,-0.17,"1,4-Benzenediol",current_release
+train_0679,Clc1ccc(Cl)c(c1)c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl,-8.94,"2,2',3,4,5,5',6-PCB",current_release
+train_0680,Nc2cnn(c1ccccc1)c(=O)c2Cl,-2.878,Pyrazon,current_release
+train_0681,CCc1ccccn1,0.51,2-Ethyl pyridine,current_release
+train_0682,CSCS(=O)CC(CO)NC(=O)C=Cc1c(C)[nH]c(=O)[nH]c1=O,-1.981,"Sparsomycin (3,8mg/ml)",current_release
+train_0683,CCCCCCCO,-1.81,1-Heptanol,current_release
+train_0684,O2c1ccccc1N(C)C(=O)c3cccnc23,-3.672,RTI 10,current_release
+train_0685,O=N(=O)OCC(CON(=O)=O)ON(=O)=O,-2.22,nitroglycerin,current_release
+train_0686,CCCN(CCC)c1c(cc(cc1N(=O)=O)S(N)(=O)=O)N(=O)=O,-5.16,oryzalin,current_release
+train_0687,CC(=O)Nc1ccc(cc1)N(=O)=O,-2.692,4-Nitroacetanilide,current_release
+train_0688,Cc1[nH]c(=O)n(c(=O)c1Cl)C(C)(C)C,-2.484,Terbacil,current_release
+train_0689,O=Cc1ccco1,-0.1,Furfural,current_release
+train_0690,CCC=C,-1.94,1-Butene,current_release
+train_0691,CCC(O)C(C)C,-0.7,2-Methyl-3-pentanol,current_release
+train_0692,Oc2ncc1nccnc1n2,-1.947,2-hydroxypteridine,current_release
+train_0693,COc2ncc1nccnc1n2,-1.11,2-methoxypteridine,current_release
+train_0694,CC(=O)Nc1cc(NS(=O)(=O)C(F)(F)F)c(C)cc1C,-3.24,Mefluidide,current_release
+train_0695,Clc1ccc(c(Cl)c1)c2cc(Cl)ccc2Cl,-6.57,"2,2',4,5'-PCB",current_release
+train_0696,CCCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCCC,-5.115,dioctyl phthalate,current_release
+train_0697,CC5(C)OC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O5)C(=O)CO,-4.31,triamcinolone acetonide,current_release
+train_0698,c2cnc1ncncc1n2,0.02,Pteridine,current_release
+train_0699,Clc1ccc(Cl)cc1,-3.27,"1,4-Dichlorobenzene",current_release
+train_0700,Cc1cc2c3ccccc3ccc2c4ccccc14,-6.57,6-Methylchrysene,current_release
+train_dup_01,Cc1[nH]c(=O)n(c(=O)c1Cl)C(C)(C)C,-2.484,Terbacil,duplicate_in_file
+train_dup_02,ClC(Cl)(Cl)C(NC=O)N1C=CN(C=C1)C(NC=O)C(Cl)(Cl)Cl,-4.19,triforine,duplicate_in_file
+train_bad_01,C1(CC,,bad_01,invalid_smiles
+train_bad_02,not_a_smiles,,bad_02,invalid_smiles
+train_bad_03,,,bad_03,invalid_smiles

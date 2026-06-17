@@ -1,0 +1,23 @@
+version = "1.0"
+
+[metadata]
+difficulty = "hard"
+category = "nosql-databases"
+tags = ["redis", "redis-data-structures", "python", "operations-planning", "gbfs"]
+
+[agent]
+timeout_sec = 600.0
+
+[solution]
+timeout_sec = 600.0
+
+[verifier]
+timeout_sec = 600.0
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

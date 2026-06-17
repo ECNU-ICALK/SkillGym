@@ -1,0 +1,7 @@
+{
+  "id": "fireship_async_await_100_seconds",
+  "description_sentences": [
+    "A fast visual recap of what async functions and `await` change in everyday JavaScript code.",
+    "Use it when you want the shortest route to a working refresh before diving back into longer docs."
+  ]
+}

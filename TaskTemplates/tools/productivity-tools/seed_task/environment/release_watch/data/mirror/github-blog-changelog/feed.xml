@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>GitHub Changelog</title>
+    <link>https://github.blog/changelog/</link>
+    <description>Bundled GitHub changelog feed snapshot.</description>
+    <item>
+      <title>Copilot code review: Comment experience improvements</title>
+      <link>https://github.blog/changelog/2026-05-12-copilot-code-review-comment-experience-improvements</link>
+      <guid>https://github.blog/changelog/2026-05-12-copilot-code-review-comment-experience-improvements</guid>
+      <pubDate>Tue, 12 May 2026 19:14:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>April reports are now available to prepare for usage-based billing</title>
+      <link>https://github.blog/changelog/2026-05-12-april-reports-are-now-available-to-prepare-for-usage-based-billing</link>
+      <guid>https://github.blog/changelog/2026-05-12-april-reports-are-now-available-to-prepare-for-usage-based-billing</guid>
+      <pubDate>Tue, 12 May 2026 19:01:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>CodeQL 2.25.4 adds Swift 6.3.1 support, improvements to C# and Java, and more</title>
+      <link>https://github.blog/changelog/2026-05-12-codeql-2-25-4-adds-swift-6-3-1-support-improvements-to-c-and-java-and-more</link>
+      <guid>https://github.blog/changelog/2026-05-12-codeql-2-25-4-adds-swift-6-3-1-support-improvements-to-c-and-java-and-more</guid>
+      <pubDate>Tue, 12 May 2026 18:04:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Synchronous SBOM API deprecated</title>
+      <link>https://github.blog/changelog/2026-05-12-synchronous-sbom-api-deprecated</link>
+      <guid>https://github.blog/changelog/2026-05-12-synchronous-sbom-api-deprecated</guid>
+      <pubDate>Tue, 12 May 2026 16:00:53 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

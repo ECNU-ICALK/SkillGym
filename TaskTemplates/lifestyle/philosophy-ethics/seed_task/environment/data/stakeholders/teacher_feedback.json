@@ -1,0 +1,12 @@
+{
+  "stakeholder": "teachers",
+  "requested_conditions": [
+    "teacher_opt_in_first_semester",
+    "human_review_for_graded_work",
+    "teacher_training_hours_under_ten"
+  ],
+  "notes": [
+    "Teachers want help with brainstorming and drafting support, not automated grading.",
+    "Training time is acceptable if it stays bounded and tied to actual classroom workflows."
+  ]
+}

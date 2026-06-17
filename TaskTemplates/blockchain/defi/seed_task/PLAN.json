@@ -1,0 +1,94 @@
+{
+  "task_id": "defi__governance_liquidity_launch",
+  "category": "defi",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/root/workspace/out/launch_report.json",
+  "selected_skill": {
+    "dir": "defi-protocol-templates",
+    "skillsmp_name": "defi-protocol-templates.md",
+    "stars_observed": "36,529",
+    "purpose": "Provide protocol templates for staking, AMM, governance, lending, and other common DeFi primitives.",
+    "selection_rationale": "The skill is a strong fit for an implementation-oriented DeFi task because it directly covers staking, AMM, and governance token workflows without depending on private wallets, external accounts, or permission-gated chain access."
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "data_sources": [
+      "Uniswap token metadata",
+      "Uniswap V2 mechanics notes",
+      "Uniswap liquidity mining program notes",
+      "Synthetix staking reward accounting notes",
+      "OpenZeppelin ERC20Votes notes"
+    ],
+    "determinism": "The task runs entirely on the bundled local Hardhat network from a fixed scenario and curated local input files.",
+    "anti_toy_features": [
+      "governance-enabled ERC20Votes token",
+      "constant-product AMM with fee update",
+      "LP staking rewards with mid-campaign top-up",
+      "delegation, proposal, queue, and execute flow",
+      "machine-readable report generated from live replay"
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "output existence and report structure",
+      "independent fresh replay against the current contracts",
+      "AMM reserve and LP-share math",
+      "reward accrual and funding boundary checks",
+      "governance snapshot voting and queued execution",
+      "stable report-field projection against a fresh replay"
+    ],
+    "guardrails": [
+      "spec input hashes must remain unchanged",
+      "stale report content must be overwritten by a fresh run",
+      "extra actors added through the public input shape must still replay and appear in summaries",
+      "unauthorized or premature governance actions must fail",
+      "claim totals must stay within funded rewards"
+    ]
+  },
+  "expected_skill_effect": {
+    "without_skill": "The task remains solvable from the local workspace and public-input-shaped notes, but the Agent must infer three protocol templates and connect them into one replayable launch flow.",
+    "with_skill": "The skill provides concrete contract patterns for staking, AMM, and governance token construction while keeping the task contract, data, tests, and environment otherwise identical."
+  },
+  "final_e2b_results": {
+    "oracle_job": "defi-launch-v11-oracle-20260508-r1",
+    "oracle_trial": "task_oracle_e2b__cZx5ANN",
+    "oracle_reward": 1.0,
+    "oracle_tests": "13 passed in 50.28s",
+    "with_skill_jobs": [
+      "defi-launch-v11-with-20260508-r1",
+      "defi-launch-v11-with-20260508-r2",
+      "defi-launch-v11-with-20260508-r3"
+    ],
+    "with_skill_trials": [
+      "task_with_skills_e2b__atsJ3Cn",
+      "task_with_skills_e2b__QHvDDRg",
+      "task_with_skills_e2b__YTMRS37"
+    ],
+    "with_skill_passed": 3,
+    "with_skill_total": 3,
+    "with_skill_pass_rate": 1.0,
+    "with_skill_avg_agent_seconds": 315.58818533333334,
+    "with_skill_avg_total_tokens": 746554.0,
+    "without_skill_jobs": [
+      "defi-launch-v11-without-20260508-r1",
+      "defi-launch-v11-without-20260508-r2",
+      "defi-launch-v11-without-20260508-r3"
+    ],
+    "without_skill_trials": [
+      "task_without_skills_e2b__VSUTJvq",
+      "task_without_skills_e2b__hvCBqe5",
+      "task_without_skills_e2b__rE5b4Gj"
+    ],
+    "without_skill_passed": 0,
+    "without_skill_total": 3,
+    "without_skill_pass_rate": 0.0,
+    "without_skill_avg_agent_seconds": 328.04934933333334,
+    "without_skill_avg_total_tokens": 763143.6666666666,
+    "without_skill_failure_pattern": [
+      "direct Hardhat behavior probes stayed broken",
+      "pair reserve synchronization check kept failing",
+      "staking rollover probe stayed incomplete"
+    ]
+  }
+}

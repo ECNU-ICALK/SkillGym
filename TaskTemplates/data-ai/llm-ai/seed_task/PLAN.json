@@ -1,0 +1,95 @@
+{
+  "task_id": "ai-ticket-triage-api-regression-repair",
+  "category": "llm-ai",
+  "design_status": "validated_after_e2b_iterations",
+  "selected_skill": "ai-regression-testing",
+  "selected_skill_stars": "169,199",
+  "selected_skill_source": "https://skillsmp.com/skills/affaan-m-everything-claude-code-docs-zh-cn-skills-ai-regression-testing-skill-md",
+  "selection_rationale": [
+    "The selected skill is explicitly centered on sandbox/live parity, API contract regressions, structured outputs, and automated regression workflows for AI-assisted systems.",
+    "It is easier than speech-model tasks to keep oracle behavior deterministic inside a single-container Harbor task while still preserving a realistic runtime chain.",
+    "The task can keep with_skill and without_skill variants identical except for environment/skills/ and its runtime copy logic."
+  ],
+  "rejected_high_star_skills": [
+    {
+      "skill": "openai-whisper",
+      "stars": "365,790 related-import count",
+      "reason": "Would push the template toward model downloads, inference-time variability, and higher runtime cost in E2B."
+    },
+    {
+      "skill": "skill-creator",
+      "stars": "365,790 related-import count",
+      "reason": "More suitable for skill-authoring workflows than for a realistic runtime service-repair benchmark."
+    },
+    {
+      "skill": "model-usage",
+      "stars": "365,790 related-import count",
+      "reason": "Task surface is too narrow and is less likely to preserve a meaningful with_skill versus without_skill gap."
+    },
+    {
+      "skill": "feishu-wiki",
+      "stars": "365,790 related-import count",
+      "reason": "Depends on external workspace permissions and may involve private enterprise content."
+    }
+  ],
+  "task_shape": {
+    "service_type": "AI-assisted support ticket triage API",
+    "domain": "intent routing, escalation, and evidence-backed suggestions",
+    "runtime": "single-container Node.js service with local provider simulator and local data fixtures",
+    "solver_action": "repair the existing service and regression surface instead of replacing it with a report or mock"
+  },
+  "planned_verifier_focus": [
+    "Sandbox/live response-shape parity",
+    "Batch triage completeness without silent drops",
+    "Structured output contract stability",
+    "Escalation and retryability semantics",
+    "Evidence-field presence and empty-evidence fallback behavior",
+    "Guardrails against hardcoded fixture-only logic and simulator bypass"
+  ],
+  "real_data_sources": [
+    {
+      "planned_file": "environment/workspace/data/tickets/banking77_curated.jsonl",
+      "reference_type": "in-domain support-ticket text and intent semantics",
+      "reference": "PolyAI/banking77 dataset card",
+      "link": "https://huggingface.co/datasets/PolyAI/banking77"
+    },
+    {
+      "planned_file": "environment/workspace/data/tickets/clinc150_oos_curated.jsonl",
+      "reference_type": "out-of-scope and escalation-style utterances",
+      "reference": "CLINC150 dataset",
+      "link": "https://archive.ics.uci.edu/dataset/570/clinc150"
+    },
+    {
+      "planned_file": "environment/workspace/data/contracts/structured_output_schema.json",
+      "reference_type": "structured-output contract design",
+      "reference": "OpenAI Structured Outputs guide",
+      "link": "https://platform.openai.com/docs/guides/structured-outputs"
+    },
+    {
+      "planned_file": "environment/workspace/data/contracts/provider_message_examples.json",
+      "reference_type": "provider request and response message shape",
+      "reference": "Anthropic Messages API",
+      "link": "https://docs.anthropic.com/en/api/messages"
+    }
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime copy/removal logic may differ between with_skill and without_skill variants.",
+  "non_goals_before_experiments": [
+    "Do not modify any existing skill.",
+    "Do not let with_skill and without_skill diverge in anything except environment/skills/ and the corresponding runtime copy logic."
+  ],
+  "experiment_summary": {
+    "oracle_validation_date": "2026-05-01",
+    "final_probe_runs": [
+      "iter21",
+      "iter22",
+      "iter23"
+    ],
+    "with_skill_pass_rate_recent_3": "2/3",
+    "without_skill_pass_rate_recent_3": "0/3",
+    "notes": [
+      "Oracle remained stable in isolated E2B environments.",
+      "The final verifier keeps output-contract checks and adds a workflow guardrail tied to the bound ai-regression-testing skill.",
+      "Recent probe runs still show some model randomness on with_skill, but without_skill remained strictly worse across the latest three effective trials."
+    ]
+  }
+}

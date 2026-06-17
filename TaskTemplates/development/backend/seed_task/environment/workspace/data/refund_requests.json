@@ -1,0 +1,25 @@
+{
+  "refunds": [
+    {
+      "id": "rf_2001",
+      "order_id": "ord_1002",
+      "amount": 70.0,
+      "currency": "USD",
+      "reason": "customer_request",
+      "status": "processed",
+      "created_at": "2026-04-11T15:05:00Z",
+      "partner": "northwind-marketplace"
+    },
+    {
+      "id": "rf_2002",
+      "order_id": "ord_1005",
+      "amount": 305.5,
+      "currency": "USD",
+      "reason": "damaged",
+      "status": "processed",
+      "created_at": "2026-04-15T09:40:00Z",
+      "partner": "northwind-marketplace"
+    }
+  ],
+  "idempotency_records": []
+}

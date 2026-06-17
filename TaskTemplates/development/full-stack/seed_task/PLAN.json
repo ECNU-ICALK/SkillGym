@@ -1,0 +1,78 @@
+{
+  "task_id": "imdb-curation-workbench-scaffold",
+  "category": "full-stack",
+  "design_status": "validated_with_e2b_comparisons",
+  "selected_skill": "project-setup-info-local",
+  "selected_skill_stars": "184,356",
+  "selection_rationale": [
+    "Highest-star full-stack skill in the category with direct alignment to building a complete project from an empty workspace.",
+    "No dependency on private accounts, external cloud permissions, or sensitive operations.",
+    "Strong fit for a task where the solver must create project structure, dependencies, local routes, state persistence, and a working frontend in one container."
+  ],
+  "task_shape": {
+    "service_type": "single-project Next.js App Router curation workbench",
+    "domain": "film and series curation",
+    "runtime": "single-container Next.js App Router web app with local route handlers and local JSON persistence",
+    "solver_action": "build the application in the workspace rather than patch an existing implementation"
+  },
+  "planned_verifier_focus": [
+    "Project boots from the default workspace entrypoint",
+    "Workspace contains a complete Next.js App Router plus TypeScript plus src/app scaffold rather than an ad hoc server",
+    "Catalog filtering, sorting, and pagination derive from the local IMDb snapshot",
+    "Detail view returns a stable title record from basics and ratings",
+    "Shortlist writes validate allowed fields and persist across restart",
+    "Browser flow reaches the real page and updates shortlist state",
+    "Synthetic alternate fixture catches hardcoded catalog answers",
+    "Input data remains unchanged"
+  ],
+  "real_data_sources": [
+    {
+      "planned_file": "environment/data/title_basics_sample.tsv",
+      "reference_type": "direct subset from public source",
+      "reference": "IMDb non-commercial datasets: title.basics.tsv.gz",
+      "link": "https://datasets.imdbws.com/title.basics.tsv.gz"
+    },
+    {
+      "planned_file": "environment/data/title_ratings_sample.tsv",
+      "reference_type": "direct subset from public source",
+      "reference": "IMDb non-commercial datasets: title.ratings.tsv.gz",
+      "link": "https://datasets.imdbws.com/title.ratings.tsv.gz"
+    },
+    {
+      "planned_file": "environment/data/shortlist_seed.json",
+      "reference_type": "task-local seed derived from the selected title subset",
+      "reference": "seeded shortlist starter rows",
+      "link": ""
+    }
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime Dockerfile skill-copy logic may differ between with_skill and without_skill variants.",
+  "local_validation": {
+    "buggy_workspace_expected_result": "fails action-level checks because the Next.js project scaffold, default build chain, route handlers, browser flow, or persistent shortlist behavior is absent or incomplete",
+    "oracle_result": "solution/reference passed local verifier with the expected Next.js App Router TypeScript scaffold and data-driven browser flow",
+    "local_test_command": "tests/test.sh inside the built task container"
+  },
+  "experiment_validation": {
+    "comparison_window": "4 most recent valid E2B task-level comparisons completed on 2026-05-03",
+    "with_skill": {
+      "pass_rate": "2/4",
+      "avg_agent_duration_sec": 628.7,
+      "avg_total_tokens": 2649879.75
+    },
+    "without_skill": {
+      "pass_rate": "0/4",
+      "avg_agent_duration_sec": 651.5,
+      "avg_total_tokens": 2675743.75
+    },
+    "observed_failure_modes_without_skill": [
+      "browser workflow did not complete",
+      "Next.js scaffold contract was incomplete",
+      "health payload contract did not match the computed catalog size"
+    ],
+    "timeout_rationale": "Observed with-skill agent execution peaked at about 719 seconds; the task timeout was raised to 1500 seconds as the next higher 100-second bucket above 2x that solve time."
+  },
+  "iteration_notes": [
+    "Do not modify the shipped input data.",
+    "Do not finalize README experiment metrics until E2B runs complete.",
+    "Without-skill failure target is task execution or contract behavior, not minor formatting drift."
+  ]
+}

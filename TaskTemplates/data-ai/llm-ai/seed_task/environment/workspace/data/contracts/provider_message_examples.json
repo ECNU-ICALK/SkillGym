@@ -1,0 +1,21 @@
+{
+  "classify_request": {
+    "ticket_id": "bank_001"
+  },
+  "classify_response": {
+    "data": {
+      "ticket_id": "bank_001",
+      "status": "success",
+      "queue": "cash-ops",
+      "intent": "cash_withdrawal_charged_twice",
+      "recommended_action": "open_duplicate_cash_claim",
+      "evidence": [
+        {
+          "source_id": "kb:cash-duplicate-claim",
+          "snippet": "Cash withdrawal disputes should be opened when the transaction posts twice."
+        }
+      ],
+      "escalation_reason": null
+    }
+  }
+}

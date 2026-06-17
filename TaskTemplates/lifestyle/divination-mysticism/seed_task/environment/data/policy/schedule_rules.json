@@ -1,0 +1,23 @@
+{
+  "selected_count": 4,
+  "season_bucket_order": [
+    "spring",
+    "early-summer",
+    "late-summer",
+    "late-autumn"
+  ],
+  "require_one_per_bucket": true,
+  "bucket_requirements": {
+    "early-summer": {
+      "required_program_kind": "reflection-rite"
+    },
+    "late-summer": {
+      "required_audience_tag": "family-night-market"
+    }
+  },
+  "manual_checks": [
+    "Confirm whether the late-summer evening event needs extra crowd-flow staff.",
+    "Confirm whether the senior-friendly event needs shuttle support.",
+    "Confirm whether the spring event should have an indoor overflow plan."
+  ]
+}

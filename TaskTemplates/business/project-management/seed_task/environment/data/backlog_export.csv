@@ -1,0 +1,12 @@
+item_id,title,priority,story_points,owner_role,milestone_date,status_snapshot,ready_snapshot,blocked_snapshot,must_ship_snapshot,qa_required,source_issue_url
+SV-236,Support network restrictions,P0,8,Platform Engineer,2026-05-20,ready,true,false,true,true,https://github.com/supabase/supavisor/issues/236
+SV-320,Handle Receive query error,P0,5,Backend Engineer,2026-05-20,ready,true,false,true,true,https://github.com/supabase/supavisor/issues/320
+SV-343,Prepend application_name from client to application_name set by DbHandler only in session mode,P1,3,Backend Engineer,2026-05-27,ready,true,false,true,false,https://github.com/supabase/supavisor/issues/343
+SV-349,Naive proxy from client to owner node,P1,8,Backend Engineer,2026-06-03,ready,true,false,false,true,https://github.com/supabase/supavisor/issues/349
+SV-314,Failed to connect using interval private network Postgres,P1,5,SRE,2026-05-27,ready,true,false,false,true,https://github.com/supabase/supavisor/issues/314
+SV-319,Supavisor brings down infrastructure after role modification,P0,8,Platform Engineer,2026-05-20,ready,true,false,false,true,https://github.com/supabase/supavisor/issues/319
+SV-221,Don't start all pool connections immediately,P1,8,Backend Engineer,2026-06-10,ready,true,false,false,true,https://github.com/supabase/supavisor/issues/221
+SV-209,Option to set a log level on a client connection,P2,3,Backend Engineer,2026-06-10,ready,true,false,false,false,https://github.com/supabase/supavisor/issues/209
+SV-163,Read replica support,P2,13,Backend Engineer,2026-06-17,ready,true,false,false,true,https://github.com/supabase/supavisor/issues/163
+SV-830,Supavisor memory usage gradually reaches 100%,P1,8,Platform Engineer,2026-05-27,ready,true,false,false,true,https://github.com/supabase/supavisor/issues/830
+SV-854,Fails to connect when a startup parameter has an empty value,P1,3,Backend Engineer,2026-05-27,ready,true,false,false,true,https://github.com/supabase/supavisor/issues/854

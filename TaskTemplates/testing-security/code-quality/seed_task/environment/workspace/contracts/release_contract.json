@@ -1,0 +1,38 @@
+{
+  "project_id": "code-quality__toolchain-release-readiness-audit",
+  "required_gate_order": [
+    {
+      "name": "buildability",
+      "blocking": true,
+      "description": "The package must complete its existing build check successfully."
+    },
+    {
+      "name": "type_safety",
+      "blocking": true,
+      "description": "The package must pass its static type validation path."
+    },
+    {
+      "name": "style_checks",
+      "blocking": true,
+      "description": "The package must pass its existing source hygiene checks."
+    },
+    {
+      "name": "test_suite",
+      "blocking": true,
+      "description": "The package must pass its existing local verification suite against the bundled snapshots."
+    },
+    {
+      "name": "security_scan",
+      "blocking": true,
+      "description": "The candidate must satisfy the repository security scan gate for promotion."
+    },
+    {
+      "name": "diff_review",
+      "blocking": true,
+      "description": "The candidate must satisfy the tracked-change diff review gate for promotion."
+    }
+  ],
+  "decision_rules": {
+    "release_ready_requires_all_gates_pass": true
+  }
+}

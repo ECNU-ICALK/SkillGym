@@ -1,0 +1,377 @@
+{
+  "source": "PokeAPI type endpoints",
+  "type_count": 14,
+  "types": [
+    {
+      "type_name": "bug",
+      "double_damage_from": [
+        "fire",
+        "flying",
+        "rock"
+      ],
+      "double_damage_to": [
+        "dark",
+        "grass",
+        "psychic"
+      ],
+      "half_damage_from": [
+        "fighting",
+        "grass",
+        "ground"
+      ],
+      "half_damage_to": [
+        "fairy",
+        "fighting",
+        "fire",
+        "flying",
+        "ghost",
+        "poison",
+        "steel"
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    {
+      "type_name": "dragon",
+      "double_damage_from": [
+        "dragon",
+        "fairy",
+        "ice"
+      ],
+      "double_damage_to": [
+        "dragon"
+      ],
+      "half_damage_from": [
+        "electric",
+        "fire",
+        "grass",
+        "water"
+      ],
+      "half_damage_to": [
+        "steel"
+      ],
+      "no_damage_from": [],
+      "no_damage_to": [
+        "fairy"
+      ]
+    },
+    {
+      "type_name": "electric",
+      "double_damage_from": [
+        "ground"
+      ],
+      "double_damage_to": [
+        "flying",
+        "water"
+      ],
+      "half_damage_from": [
+        "electric",
+        "flying",
+        "steel"
+      ],
+      "half_damage_to": [
+        "dragon",
+        "electric",
+        "grass"
+      ],
+      "no_damage_from": [],
+      "no_damage_to": [
+        "ground"
+      ]
+    },
+    {
+      "type_name": "fairy",
+      "double_damage_from": [
+        "poison",
+        "steel"
+      ],
+      "double_damage_to": [
+        "dark",
+        "dragon",
+        "fighting"
+      ],
+      "half_damage_from": [
+        "bug",
+        "dark",
+        "fighting"
+      ],
+      "half_damage_to": [
+        "fire",
+        "poison",
+        "steel"
+      ],
+      "no_damage_from": [
+        "dragon"
+      ],
+      "no_damage_to": []
+    },
+    {
+      "type_name": "fire",
+      "double_damage_from": [
+        "ground",
+        "rock",
+        "water"
+      ],
+      "double_damage_to": [
+        "bug",
+        "grass",
+        "ice",
+        "steel"
+      ],
+      "half_damage_from": [
+        "bug",
+        "fairy",
+        "fire",
+        "grass",
+        "ice",
+        "steel"
+      ],
+      "half_damage_to": [
+        "dragon",
+        "fire",
+        "rock",
+        "water"
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    {
+      "type_name": "flying",
+      "double_damage_from": [
+        "electric",
+        "ice",
+        "rock"
+      ],
+      "double_damage_to": [
+        "bug",
+        "fighting",
+        "grass"
+      ],
+      "half_damage_from": [
+        "bug",
+        "fighting",
+        "grass"
+      ],
+      "half_damage_to": [
+        "electric",
+        "rock",
+        "steel"
+      ],
+      "no_damage_from": [
+        "ground"
+      ],
+      "no_damage_to": []
+    },
+    {
+      "type_name": "grass",
+      "double_damage_from": [
+        "bug",
+        "fire",
+        "flying",
+        "ice",
+        "poison"
+      ],
+      "double_damage_to": [
+        "ground",
+        "rock",
+        "water"
+      ],
+      "half_damage_from": [
+        "electric",
+        "grass",
+        "ground",
+        "water"
+      ],
+      "half_damage_to": [
+        "bug",
+        "dragon",
+        "fire",
+        "flying",
+        "grass",
+        "poison",
+        "steel"
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    {
+      "type_name": "ground",
+      "double_damage_from": [
+        "grass",
+        "ice",
+        "water"
+      ],
+      "double_damage_to": [
+        "electric",
+        "fire",
+        "poison",
+        "rock",
+        "steel"
+      ],
+      "half_damage_from": [
+        "poison",
+        "rock"
+      ],
+      "half_damage_to": [
+        "bug",
+        "grass"
+      ],
+      "no_damage_from": [
+        "electric"
+      ],
+      "no_damage_to": [
+        "flying"
+      ]
+    },
+    {
+      "type_name": "ice",
+      "double_damage_from": [
+        "fighting",
+        "fire",
+        "rock",
+        "steel"
+      ],
+      "double_damage_to": [
+        "dragon",
+        "flying",
+        "grass",
+        "ground"
+      ],
+      "half_damage_from": [
+        "ice"
+      ],
+      "half_damage_to": [
+        "fire",
+        "ice",
+        "steel",
+        "water"
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    {
+      "type_name": "normal",
+      "double_damage_from": [
+        "fighting"
+      ],
+      "double_damage_to": [],
+      "half_damage_from": [],
+      "half_damage_to": [
+        "rock",
+        "steel"
+      ],
+      "no_damage_from": [
+        "ghost"
+      ],
+      "no_damage_to": [
+        "ghost"
+      ]
+    },
+    {
+      "type_name": "poison",
+      "double_damage_from": [
+        "ground",
+        "psychic"
+      ],
+      "double_damage_to": [
+        "fairy",
+        "grass"
+      ],
+      "half_damage_from": [
+        "bug",
+        "fairy",
+        "fighting",
+        "grass",
+        "poison"
+      ],
+      "half_damage_to": [
+        "ghost",
+        "ground",
+        "poison",
+        "rock"
+      ],
+      "no_damage_from": [],
+      "no_damage_to": [
+        "steel"
+      ]
+    },
+    {
+      "type_name": "psychic",
+      "double_damage_from": [
+        "bug",
+        "dark",
+        "ghost"
+      ],
+      "double_damage_to": [
+        "fighting",
+        "poison"
+      ],
+      "half_damage_from": [
+        "fighting",
+        "psychic"
+      ],
+      "half_damage_to": [
+        "psychic",
+        "steel"
+      ],
+      "no_damage_from": [],
+      "no_damage_to": [
+        "dark"
+      ]
+    },
+    {
+      "type_name": "rock",
+      "double_damage_from": [
+        "fighting",
+        "grass",
+        "ground",
+        "steel",
+        "water"
+      ],
+      "double_damage_to": [
+        "bug",
+        "fire",
+        "flying",
+        "ice"
+      ],
+      "half_damage_from": [
+        "fire",
+        "flying",
+        "normal",
+        "poison"
+      ],
+      "half_damage_to": [
+        "fighting",
+        "ground",
+        "steel"
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    {
+      "type_name": "water",
+      "double_damage_from": [
+        "electric",
+        "grass"
+      ],
+      "double_damage_to": [
+        "fire",
+        "ground",
+        "rock"
+      ],
+      "half_damage_from": [
+        "fire",
+        "ice",
+        "steel",
+        "water"
+      ],
+      "half_damage_to": [
+        "dragon",
+        "grass",
+        "water"
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    }
+  ]
+}

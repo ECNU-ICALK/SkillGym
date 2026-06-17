@@ -1,0 +1,10 @@
+{
+  "workspace_id": "revops-732",
+  "cohort_date": "2026-05-20",
+  "manifest_endpoint": "http://127.0.0.1:8144/api/manifest",
+  "required_outputs": [
+    "/root/output/renewal_worklist.csv",
+    "/root/output/renewal_control_summary.json",
+    "/root/output/ops_brief.md"
+  ]
+}

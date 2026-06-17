@@ -1,0 +1,59 @@
+{
+  "id": "demo_static",
+  "label": "Demo Static Connector",
+  "kind": "reference-json",
+  "timezone": "UTC",
+  "stops": [
+    {
+      "stop_id": "ALP",
+      "stop_name": "Alpha Terminal",
+      "location_type": "1",
+      "child_stop_ids": [
+        "ALP-N",
+        "ALP-S"
+      ]
+    },
+    {
+      "stop_id": "BET",
+      "stop_name": "Beta Square",
+      "location_type": "1",
+      "child_stop_ids": [
+        "BET-N",
+        "BET-S"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "D1",
+      "route_short_name": "D1",
+      "route_long_name": "Demo Crosstown"
+    }
+  ],
+  "departures": [
+    {
+      "trip_id": "demo-1",
+      "route_id": "D1",
+      "route_short_name": "D1",
+      "route_long_name": "Demo Crosstown",
+      "service_id": "Weekday",
+      "direction_id": "0",
+      "stop_id": "ALP-N",
+      "parent_stop_id": "ALP",
+      "departure_time": "08:05:00",
+      "headsign": "Beta Square",
+      "service_date": "2026-03-03"
+    }
+  ],
+  "service_windows": [
+    {
+      "route_id": "D1",
+      "service_date": "2026-03-03",
+      "first_departure": "05:00:00",
+      "last_departure": "23:45:00",
+      "trip_count": 42,
+      "stop_count": 2,
+      "direction_count": 2
+    }
+  ]
+}

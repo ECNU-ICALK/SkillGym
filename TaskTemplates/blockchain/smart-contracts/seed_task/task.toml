@@ -1,0 +1,41 @@
+version = "1.0"
+
+[metadata]
+id = "smart-contracts__token_onboarding_review"
+name = "Template: Token Onboarding Review"
+description = "Build a token onboarding review workflow for a yield vault protocol from Solidity contracts, candidate token behavior profiles, and a local onboarding policy."
+difficulty = "hard"
+category = "smart-contracts"
+tags = [
+  "smart-contracts",
+  "erc20",
+  "erc4626",
+  "token-integration",
+  "solidity",
+  "python",
+  "risk-review",
+]
+required_skills = [
+  "token-integration-analyzer",
+]
+distractor_skills = [
+  "solidity-security",
+  "web3-testing",
+]
+primary_output_file = "/root/answer/token_decisions.tsv"
+source_template_id = "smart-contracts__token_onboarding_review"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 1600.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

@@ -1,0 +1,9 @@
+{
+  "required_tags": {
+    "ManagedBy": "terraform",
+    "Platform": "harbor",
+    "Owner": "platform-team"
+  },
+  "name_tag_key": "Name",
+  "environment_tag_key": "Environment"
+}

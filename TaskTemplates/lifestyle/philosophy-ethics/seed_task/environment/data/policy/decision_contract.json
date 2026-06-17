@@ -1,0 +1,220 @@
+{
+  "output_contract": {
+    "memo_sections": [
+      "Scope",
+      "Recommendation",
+      "Option comparison",
+      "Controls",
+      "Open questions"
+    ],
+    "source_inventory_columns": [
+      "source_name",
+      "path",
+      "source_type",
+      "coverage",
+      "note"
+    ],
+    "option_assessment_columns": [
+      "option_id",
+      "outcome_id",
+      "decision_status",
+      "hard_fail_reasons",
+      "governance_score",
+      "delivery_score",
+      "total_score",
+      "budget_status",
+      "data_status",
+      "oversight_status",
+      "recommended_next_step"
+    ],
+    "decision_issues_columns": [
+      "issue_id",
+      "category",
+      "status",
+      "severity",
+      "linked_option_ids",
+      "evidence_ids",
+      "required_control",
+      "owner",
+      "next_review"
+    ],
+    "assumption_audit_columns": [
+      "assumption_id",
+      "layer",
+      "assumption_type",
+      "assumption_statement",
+      "fragility",
+      "impact",
+      "risk_score",
+      "linked_issue_id",
+      "linked_control_id",
+      "verification_question"
+    ],
+    "source_inventory_expected_sources": [
+      "committee_brief",
+      "deployment_options",
+      "decision_contract",
+      "policy_clauses",
+      "public_evidence",
+      "stakeholder_notes",
+      "reference_index"
+    ]
+  },
+  "assumption_contract": {
+    "layers": [
+      "surface",
+      "middle",
+      "deep"
+    ],
+    "types": [
+      "physical_fact",
+      "historical_convention",
+      "subjective_belief",
+      "interest_driven"
+    ],
+    "row_count": 8,
+    "top_risk_monitoring_count": 3
+  },
+  "hard_rules": {
+    "budget_cap_usd": "budget_cap_usd",
+    "max_prompt_retention_days": "prompt_retention_days",
+    "student_data_used_for_model_training": "student_data_used_for_model_training",
+    "human_review_for_graded_work": "human_review_for_graded_work",
+    "teacher_opt_in_first_semester": "teacher_opt_in_first_semester",
+    "family_notice_plan": "family_notice_plan",
+    "student_opt_out": "student_opt_out"
+  },
+  "score_weights": {
+    "governance_score": 0.6,
+    "delivery_score": 0.4
+  },
+  "controls": [
+    {
+      "control_id": "district_gateway_no_training",
+      "label": "District gateway with no model training on student work",
+      "owner": "technology_office",
+      "trigger": "selected option is deployable"
+    },
+    {
+      "control_id": "graded_use_human_review",
+      "label": "Human review remains required for graded use",
+      "owner": "curriculum_office",
+      "trigger": "selected option is deployable"
+    },
+    {
+      "control_id": "teacher_opt_in_gate",
+      "label": "Teacher opt-in gate for the first semester",
+      "owner": "school_leadership",
+      "trigger": "selected option is deployable"
+    },
+    {
+      "control_id": "family_notice_and_opt_out",
+      "label": "Family notice with student opt-out path",
+      "owner": "communications_office",
+      "trigger": "selected option is deployable"
+    },
+    {
+      "control_id": "accessibility_review",
+      "label": "Accessibility and multilingual support review before launch",
+      "owner": "student_support_services",
+      "trigger": "selected option is deployable"
+    },
+    {
+      "control_id": "incident_reporting_channel",
+      "label": "Incident reporting and escalation channel",
+      "owner": "technology_office",
+      "trigger": "selected option is deployable"
+    },
+    {
+      "control_id": "semester_end_evaluation",
+      "label": "Semester-end evaluation with board checkpoint",
+      "owner": "research_office",
+      "trigger": "selected option is deployable"
+    }
+  ],
+  "issue_rules": [
+    {
+      "issue_id": "student_data_reuse",
+      "category": "privacy",
+      "severity": "high",
+      "required_control": "district_gateway_no_training",
+      "owner": "technology_office",
+      "next_review": "before launch",
+      "evidence_ids": [
+        "ev01",
+        "ev04",
+        "ev05",
+        "ev09"
+      ]
+    },
+    {
+      "issue_id": "graded_work_oversight",
+      "category": "oversight",
+      "severity": "high",
+      "required_control": "graded_use_human_review",
+      "owner": "curriculum_office",
+      "next_review": "before launch",
+      "evidence_ids": [
+        "ev02",
+        "ev03",
+        "ev06"
+      ]
+    },
+    {
+      "issue_id": "teacher_readiness",
+      "category": "operations",
+      "severity": "medium",
+      "required_control": "teacher_opt_in_gate",
+      "owner": "professional_learning",
+      "next_review": "two weeks before launch",
+      "evidence_ids": [
+        "ev02",
+        "ev03",
+        "ev10"
+      ]
+    },
+    {
+      "issue_id": "family_notice_and_choice",
+      "category": "community_trust",
+      "severity": "medium",
+      "required_control": "family_notice_and_opt_out",
+      "owner": "communications_office",
+      "next_review": "before family notice release",
+      "evidence_ids": [
+        "ev04",
+        "ev05",
+        "ev10"
+      ]
+    },
+    {
+      "issue_id": "accessibility_and_language_support",
+      "category": "equity",
+      "severity": "medium",
+      "required_control": "accessibility_review",
+      "owner": "student_support_services",
+      "next_review": "before launch",
+      "evidence_ids": [
+        "ev03",
+        "ev07",
+        "ev08"
+      ]
+    },
+    {
+      "issue_id": "incident_response",
+      "category": "risk_management",
+      "severity": "medium",
+      "required_control": "incident_reporting_channel",
+      "owner": "technology_office",
+      "next_review": "before launch",
+      "evidence_ids": [
+        "ev06",
+        "ev07"
+      ]
+    }
+  ],
+  "open_question_rules": [
+    "Confirm that the accessibility review is signed off before launch.",
+    "Verify teacher training completion before the first graded-use checkpoint.",
+    "Define the semester-end evaluation metrics and reporting date."
+  ]
+}

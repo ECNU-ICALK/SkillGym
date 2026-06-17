@@ -1,0 +1,7 @@
+{
+  "id": "ydkjs_async_performance",
+  "description_sentences": [
+    "Kyle Simpson goes beyond syntax to explain the deeper mechanics behind asynchrony, scheduling, and Promise behavior.",
+    "Keep it for long-form study when you want the edge cases and mental models that shorter guides skip."
+  ]
+}

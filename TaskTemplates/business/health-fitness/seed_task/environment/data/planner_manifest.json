@@ -1,0 +1,23 @@
+{
+  "member_id": "HF-001",
+  "planning_window": {
+    "start_date": "2026-05-04",
+    "days": 7
+  },
+  "deliverables": [
+    "/root/output/member_assessment.json",
+    "/root/output/workout_plan.csv",
+    "/root/output/meal_plan.csv",
+    "/root/output/coach_handoff.md"
+  ],
+  "service_urls": {
+    "api_root": "http://127.0.0.1:8137/api",
+    "policy_current": "http://127.0.0.1:8137/api/policy/current",
+    "exercise_catalog": "http://127.0.0.1:8137/api/exercises",
+    "food_catalog": "http://127.0.0.1:8137/api/foods"
+  },
+  "pagination": {
+    "mode": "cursor",
+    "note": "Follow next_cursor until it becomes null."
+  }
+}

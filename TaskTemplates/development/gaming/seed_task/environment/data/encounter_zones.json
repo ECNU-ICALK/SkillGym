@@ -1,0 +1,1370 @@
+{
+  "source": "PokeAPI location-area endpoints",
+  "zone_count": 6,
+  "zones": [
+    {
+      "zone_id": "viridian-forest-area",
+      "zone_label": "Viridian Forest",
+      "biome": "forest",
+      "accent": "#5d8c57",
+      "source_url": "https://pokeapi.co/api/v2/location-area/viridian-forest-area/",
+      "encounters": [
+        {
+          "species_name": "bellsprout",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/69/",
+          "avg_chance": 100.0,
+          "min_level": 3,
+          "max_level": 6,
+          "methods": [
+            "overworld"
+          ],
+          "version_names": [
+            "lets-go-eevee"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Bellsprout",
+          "dex_number": 69,
+          "types": [
+            "grass",
+            "poison"
+          ],
+          "base_stat_total": 300,
+          "habitat": "forest",
+          "color": "green"
+        },
+        {
+          "species_name": "bulbasaur",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/1/",
+          "avg_chance": 100.0,
+          "min_level": 3,
+          "max_level": 6,
+          "methods": [
+            "overworld-special"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Bulbasaur",
+          "dex_number": 1,
+          "types": [
+            "grass",
+            "poison"
+          ],
+          "base_stat_total": 318,
+          "habitat": "grassland",
+          "color": "green"
+        },
+        {
+          "species_name": "oddish",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/43/",
+          "avg_chance": 100.0,
+          "min_level": 3,
+          "max_level": 6,
+          "methods": [
+            "overworld"
+          ],
+          "version_names": [
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Oddish",
+          "dex_number": 43,
+          "types": [
+            "grass",
+            "poison"
+          ],
+          "base_stat_total": 320,
+          "habitat": "grassland",
+          "color": "blue"
+        },
+        {
+          "species_name": "beedrill",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/15/",
+          "avg_chance": 55.0,
+          "min_level": 3,
+          "max_level": 7,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "soulsilver"
+          ],
+          "rarity_tier": "support",
+          "display_name": "Beedrill",
+          "dex_number": 15,
+          "types": [
+            "bug",
+            "poison"
+          ],
+          "base_stat_total": 395,
+          "habitat": "forest",
+          "color": "yellow"
+        },
+        {
+          "species_name": "butterfree",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/12/",
+          "avg_chance": 55.0,
+          "min_level": 3,
+          "max_level": 7,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "heartgold",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "support",
+          "display_name": "Butterfree",
+          "dex_number": 12,
+          "types": [
+            "bug",
+            "flying"
+          ],
+          "base_stat_total": 395,
+          "habitat": "forest",
+          "color": "white"
+        },
+        {
+          "species_name": "pidgey",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/16/",
+          "avg_chance": 54.8,
+          "min_level": 3,
+          "max_level": 8,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "heartgold",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "soulsilver",
+            "yellow"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Pidgey",
+          "dex_number": 16,
+          "types": [
+            "normal",
+            "flying"
+          ],
+          "base_stat_total": 251,
+          "habitat": "forest",
+          "color": "brown"
+        },
+        {
+          "species_name": "weedle",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/13/",
+          "avg_chance": 51.11,
+          "min_level": 3,
+          "max_level": 6,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "soulsilver"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Weedle",
+          "dex_number": 13,
+          "types": [
+            "bug",
+            "poison"
+          ],
+          "base_stat_total": 195,
+          "habitat": "forest",
+          "color": "brown"
+        },
+        {
+          "species_name": "caterpie",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/10/",
+          "avg_chance": 51.0,
+          "min_level": 3,
+          "max_level": 6,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "heartgold",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "yellow"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Caterpie",
+          "dex_number": 10,
+          "types": [
+            "bug"
+          ],
+          "base_stat_total": 195,
+          "habitat": "forest",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "zone_id": "mt-moon-1f",
+      "zone_label": "Mt. Moon 1F",
+      "biome": "cavern",
+      "accent": "#7d7ea8",
+      "source_url": "https://pokeapi.co/api/v2/location-area/mt-moon-1f/",
+      "encounters": [
+        {
+          "species_name": "chansey",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/113/",
+          "avg_chance": 100.0,
+          "min_level": 5,
+          "max_level": 10,
+          "methods": [
+            "overworld-special"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Chansey",
+          "dex_number": 113,
+          "types": [
+            "normal"
+          ],
+          "base_stat_total": 450,
+          "habitat": "urban",
+          "color": "pink"
+        },
+        {
+          "species_name": "onix",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/95/",
+          "avg_chance": 100.0,
+          "min_level": 5,
+          "max_level": 10,
+          "methods": [
+            "overworld"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Onix",
+          "dex_number": 95,
+          "types": [
+            "rock",
+            "ground"
+          ],
+          "base_stat_total": 385,
+          "habitat": "cave",
+          "color": "gray"
+        },
+        {
+          "species_name": "zubat",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/41/",
+          "avg_chance": 69.93,
+          "min_level": 5,
+          "max_level": 11,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "blue",
+            "crystal",
+            "firered",
+            "gold",
+            "green-japan",
+            "heartgold",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "silver",
+            "soulsilver",
+            "yellow"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Zubat",
+          "dex_number": 41,
+          "types": [
+            "poison",
+            "flying"
+          ],
+          "base_stat_total": 245,
+          "habitat": "cave",
+          "color": "purple"
+        },
+        {
+          "species_name": "geodude",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/74/",
+          "avg_chance": 40.36,
+          "min_level": 5,
+          "max_level": 10,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "blue",
+            "crystal",
+            "firered",
+            "gold",
+            "green-japan",
+            "heartgold",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "silver",
+            "soulsilver",
+            "yellow"
+          ],
+          "rarity_tier": "support",
+          "display_name": "Geodude",
+          "dex_number": 74,
+          "types": [
+            "rock",
+            "ground"
+          ],
+          "base_stat_total": 300,
+          "habitat": "mountain",
+          "color": "brown"
+        },
+        {
+          "species_name": "paras",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/46/",
+          "avg_chance": 23.08,
+          "min_level": 5,
+          "max_level": 12,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "blue",
+            "crystal",
+            "firered",
+            "gold",
+            "green-japan",
+            "heartgold",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "silver",
+            "soulsilver"
+          ],
+          "rarity_tier": "support",
+          "display_name": "Paras",
+          "dex_number": 46,
+          "types": [
+            "bug",
+            "grass"
+          ],
+          "base_stat_total": 285,
+          "habitat": "forest",
+          "color": "red"
+        },
+        {
+          "species_name": "sandshrew",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/27/",
+          "avg_chance": 21.0,
+          "min_level": 8,
+          "max_level": 12,
+          "methods": [
+            "walk"
+          ],
+          "version_names": [
+            "crystal",
+            "gold",
+            "heartgold",
+            "yellow"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Sandshrew",
+          "dex_number": 27,
+          "types": [
+            "ground"
+          ],
+          "base_stat_total": 300,
+          "habitat": "rough-terrain",
+          "color": "yellow"
+        },
+        {
+          "species_name": "clefairy",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/35/",
+          "avg_chance": 18.71,
+          "min_level": 5,
+          "max_level": 12,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "blue",
+            "crystal",
+            "firered",
+            "gold",
+            "green-japan",
+            "heartgold",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "silver",
+            "soulsilver",
+            "yellow"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Clefairy",
+          "dex_number": 35,
+          "types": [
+            "fairy"
+          ],
+          "base_stat_total": 323,
+          "habitat": "mountain",
+          "color": "pink"
+        },
+        {
+          "species_name": "sandslash",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/28/",
+          "avg_chance": 5.0,
+          "min_level": 10,
+          "max_level": 10,
+          "methods": [
+            "walk"
+          ],
+          "version_names": [
+            "gold",
+            "heartgold"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Sandslash",
+          "dex_number": 28,
+          "types": [
+            "ground"
+          ],
+          "base_stat_total": 450,
+          "habitat": "rough-terrain",
+          "color": "yellow"
+        }
+      ]
+    },
+    {
+      "zone_id": "rock-tunnel-1f",
+      "zone_label": "Rock Tunnel 1F",
+      "biome": "tunnel",
+      "accent": "#a16d59",
+      "source_url": "https://pokeapi.co/api/v2/location-area/rock-tunnel-1f/",
+      "encounters": [
+        {
+          "species_name": "charmander",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/4/",
+          "avg_chance": 100.0,
+          "min_level": 18,
+          "max_level": 23,
+          "methods": [
+            "overworld-special"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Charmander",
+          "dex_number": 4,
+          "types": [
+            "fire"
+          ],
+          "base_stat_total": 309,
+          "habitat": "mountain",
+          "color": "red"
+        },
+        {
+          "species_name": "golbat",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/42/",
+          "avg_chance": 100.0,
+          "min_level": 18,
+          "max_level": 23,
+          "methods": [
+            "overworld"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Golbat",
+          "dex_number": 42,
+          "types": [
+            "poison",
+            "flying"
+          ],
+          "base_stat_total": 455,
+          "habitat": "cave",
+          "color": "purple"
+        },
+        {
+          "species_name": "graveler",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/75/",
+          "avg_chance": 100.0,
+          "min_level": 18,
+          "max_level": 23,
+          "methods": [
+            "overworld"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Graveler",
+          "dex_number": 75,
+          "types": [
+            "rock",
+            "ground"
+          ],
+          "base_stat_total": 390,
+          "habitat": "mountain",
+          "color": "brown"
+        },
+        {
+          "species_name": "kangaskhan",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/115/",
+          "avg_chance": 100.0,
+          "min_level": 18,
+          "max_level": 23,
+          "methods": [
+            "overworld"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Kangaskhan",
+          "dex_number": 115,
+          "types": [
+            "normal"
+          ],
+          "base_stat_total": 490,
+          "habitat": "grassland",
+          "color": "brown"
+        },
+        {
+          "species_name": "rhyhorn",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/111/",
+          "avg_chance": 100.0,
+          "min_level": 18,
+          "max_level": 23,
+          "methods": [
+            "overworld"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Rhyhorn",
+          "dex_number": 111,
+          "types": [
+            "ground",
+            "rock"
+          ],
+          "base_stat_total": 345,
+          "habitat": "rough-terrain",
+          "color": "gray"
+        },
+        {
+          "species_name": "cubone",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/104/",
+          "avg_chance": 57.14,
+          "min_level": 10,
+          "max_level": 23,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "crystal",
+            "gold",
+            "heartgold",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "silver",
+            "soulsilver"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Cubone",
+          "dex_number": 104,
+          "types": [
+            "ground"
+          ],
+          "base_stat_total": 320,
+          "habitat": "mountain",
+          "color": "brown"
+        },
+        {
+          "species_name": "geodude",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/74/",
+          "avg_chance": 55.56,
+          "min_level": 10,
+          "max_level": 23,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "crystal",
+            "firered",
+            "gold",
+            "heartgold",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "silver",
+            "soulsilver"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Geodude",
+          "dex_number": 74,
+          "types": [
+            "rock",
+            "ground"
+          ],
+          "base_stat_total": 300,
+          "habitat": "mountain",
+          "color": "brown"
+        },
+        {
+          "species_name": "onix",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/95/",
+          "avg_chance": 52.5,
+          "min_level": 13,
+          "max_level": 23,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "firered",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Onix",
+          "dex_number": 95,
+          "types": [
+            "rock",
+            "ground"
+          ],
+          "base_stat_total": 385,
+          "habitat": "cave",
+          "color": "gray"
+        }
+      ]
+    },
+    {
+      "zone_id": "kanto-power-plant-area",
+      "zone_label": "Power Plant",
+      "biome": "industrial",
+      "accent": "#d0a24a",
+      "source_url": "https://pokeapi.co/api/v2/location-area/kanto-power-plant-area/",
+      "encounters": [
+        {
+          "species_name": "voltorb",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/100/",
+          "avg_chance": 377.78,
+          "min_level": 21,
+          "max_level": 42,
+          "methods": [
+            "only-one",
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "yellow"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Voltorb",
+          "dex_number": 100,
+          "types": [
+            "electric"
+          ],
+          "base_stat_total": 330,
+          "habitat": "urban",
+          "color": "red"
+        },
+        {
+          "species_name": "electrode",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/101/",
+          "avg_chance": 200.0,
+          "min_level": 34,
+          "max_level": 43,
+          "methods": [
+            "only-one",
+            "overworld"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "yellow"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Electrode",
+          "dex_number": 101,
+          "types": [
+            "electric"
+          ],
+          "base_stat_total": 490,
+          "habitat": "urban",
+          "color": "red"
+        },
+        {
+          "species_name": "chansey",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/113/",
+          "avg_chance": 100.0,
+          "min_level": 37,
+          "max_level": 42,
+          "methods": [
+            "overworld-special"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Chansey",
+          "dex_number": 113,
+          "types": [
+            "normal"
+          ],
+          "base_stat_total": 450,
+          "habitat": "urban",
+          "color": "pink"
+        },
+        {
+          "species_name": "koffing",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/109/",
+          "avg_chance": 100.0,
+          "min_level": 37,
+          "max_level": 42,
+          "methods": [
+            "overworld"
+          ],
+          "version_names": [
+            "lets-go-eevee"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Koffing",
+          "dex_number": 109,
+          "types": [
+            "poison"
+          ],
+          "base_stat_total": 340,
+          "habitat": "urban",
+          "color": "purple"
+        },
+        {
+          "species_name": "weezing",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/110/",
+          "avg_chance": 100.0,
+          "min_level": 37,
+          "max_level": 42,
+          "methods": [
+            "overworld"
+          ],
+          "version_names": [
+            "lets-go-eevee"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Weezing",
+          "dex_number": 110,
+          "types": [
+            "poison"
+          ],
+          "base_stat_total": 490,
+          "habitat": "urban",
+          "color": "purple"
+        },
+        {
+          "species_name": "zapdos",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/145/",
+          "avg_chance": 100.0,
+          "min_level": 50,
+          "max_level": 50,
+          "methods": [
+            "only-one"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "yellow"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Zapdos",
+          "dex_number": 145,
+          "types": [
+            "electric",
+            "flying"
+          ],
+          "base_stat_total": 580,
+          "habitat": "rare",
+          "color": "yellow"
+        },
+        {
+          "species_name": "grimer",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/88/",
+          "avg_chance": 57.5,
+          "min_level": 33,
+          "max_level": 42,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "lets-go-pikachu",
+            "yellow"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Grimer",
+          "dex_number": 88,
+          "types": [
+            "poison"
+          ],
+          "base_stat_total": 325,
+          "habitat": "urban",
+          "color": "purple"
+        },
+        {
+          "species_name": "muk",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/89/",
+          "avg_chance": 52.5,
+          "min_level": 33,
+          "max_level": 42,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "lets-go-pikachu",
+            "yellow"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Muk",
+          "dex_number": 89,
+          "types": [
+            "poison"
+          ],
+          "base_stat_total": 500,
+          "habitat": "urban",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "zone_id": "seafoam-islands-b1f",
+      "zone_label": "Seafoam Islands B1F",
+      "biome": "glacier",
+      "accent": "#5b9db6",
+      "source_url": "https://pokeapi.co/api/v2/location-area/seafoam-islands-b1f/",
+      "encounters": [
+        {
+          "species_name": "jynx",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/124/",
+          "avg_chance": 100.0,
+          "min_level": 39,
+          "max_level": 44,
+          "methods": [
+            "overworld"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Jynx",
+          "dex_number": 124,
+          "types": [
+            "ice",
+            "psychic"
+          ],
+          "base_stat_total": 455,
+          "habitat": "urban",
+          "color": "red"
+        },
+        {
+          "species_name": "squirtle",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/7/",
+          "avg_chance": 100.0,
+          "min_level": 39,
+          "max_level": 44,
+          "methods": [
+            "overworld-special"
+          ],
+          "version_names": [
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Squirtle",
+          "dex_number": 7,
+          "types": [
+            "water"
+          ],
+          "base_stat_total": 314,
+          "habitat": "waters-edge",
+          "color": "blue"
+        },
+        {
+          "species_name": "slowbro",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/80/",
+          "avg_chance": 68.33,
+          "min_level": 33,
+          "max_level": 44,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Slowbro",
+          "dex_number": 80,
+          "types": [
+            "water",
+            "psychic"
+          ],
+          "base_stat_total": 490,
+          "habitat": "waters-edge",
+          "color": "pink"
+        },
+        {
+          "species_name": "zubat",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/41/",
+          "avg_chance": 46.86,
+          "min_level": 18,
+          "max_level": 44,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "firered",
+            "heartgold",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "soulsilver",
+            "yellow"
+          ],
+          "rarity_tier": "support",
+          "display_name": "Zubat",
+          "dex_number": 41,
+          "types": [
+            "poison",
+            "flying"
+          ],
+          "base_stat_total": 245,
+          "habitat": "cave",
+          "color": "purple"
+        },
+        {
+          "species_name": "slowpoke",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/79/",
+          "avg_chance": 46.67,
+          "min_level": 28,
+          "max_level": 44,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "yellow"
+          ],
+          "rarity_tier": "support",
+          "display_name": "Slowpoke",
+          "dex_number": 79,
+          "types": [
+            "water",
+            "psychic"
+          ],
+          "base_stat_total": 315,
+          "habitat": "waters-edge",
+          "color": "pink"
+        },
+        {
+          "species_name": "golbat",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/42/",
+          "avg_chance": 41.71,
+          "min_level": 26,
+          "max_level": 44,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "firered",
+            "heartgold",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "soulsilver",
+            "yellow"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Golbat",
+          "dex_number": 42,
+          "types": [
+            "poison",
+            "flying"
+          ],
+          "base_stat_total": 455,
+          "habitat": "cave",
+          "color": "purple"
+        },
+        {
+          "species_name": "dewgong",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/87/",
+          "avg_chance": 36.0,
+          "min_level": 38,
+          "max_level": 44,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "blue",
+            "green-japan",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Dewgong",
+          "dex_number": 87,
+          "types": [
+            "water",
+            "ice"
+          ],
+          "base_stat_total": 475,
+          "habitat": "sea",
+          "color": "white"
+        },
+        {
+          "species_name": "seel",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/86/",
+          "avg_chance": 31.36,
+          "min_level": 22,
+          "max_level": 44,
+          "methods": [
+            "overworld",
+            "walk"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "heartgold",
+            "leafgreen",
+            "lets-go-eevee",
+            "lets-go-pikachu",
+            "red",
+            "red-japan",
+            "soulsilver",
+            "yellow"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Seel",
+          "dex_number": 86,
+          "types": [
+            "water"
+          ],
+          "base_stat_total": 325,
+          "habitat": "sea",
+          "color": "white"
+        }
+      ]
+    },
+    {
+      "zone_id": "kanto-safari-zone-middle",
+      "zone_label": "Safari Zone Middle",
+      "biome": "wetland",
+      "accent": "#7fa35d",
+      "source_url": "https://pokeapi.co/api/v2/location-area/kanto-safari-zone-middle/",
+      "encounters": [
+        {
+          "species_name": "magikarp",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/129/",
+          "avg_chance": 115.71,
+          "min_level": 5,
+          "max_level": 15,
+          "methods": [
+            "good-rod",
+            "old-rod",
+            "super-rod"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "leafgreen",
+            "red",
+            "red-japan",
+            "yellow"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Magikarp",
+          "dex_number": 129,
+          "types": [
+            "water"
+          ],
+          "base_stat_total": 200,
+          "habitat": "waters-edge",
+          "color": "red"
+        },
+        {
+          "species_name": "goldeen",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/118/",
+          "avg_chance": 64.29,
+          "min_level": 5,
+          "max_level": 25,
+          "methods": [
+            "good-rod",
+            "super-rod"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "leafgreen",
+            "red",
+            "red-japan",
+            "yellow"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Goldeen",
+          "dex_number": 118,
+          "types": [
+            "water"
+          ],
+          "base_stat_total": 320,
+          "habitat": "waters-edge",
+          "color": "red"
+        },
+        {
+          "species_name": "poliwag",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/60/",
+          "avg_chance": 41.43,
+          "min_level": 5,
+          "max_level": 15,
+          "methods": [
+            "good-rod"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "leafgreen",
+            "red",
+            "red-japan",
+            "yellow"
+          ],
+          "rarity_tier": "core",
+          "display_name": "Poliwag",
+          "dex_number": 60,
+          "types": [
+            "water"
+          ],
+          "base_stat_total": 300,
+          "habitat": "waters-edge",
+          "color": "blue"
+        },
+        {
+          "species_name": "psyduck",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/54/",
+          "avg_chance": 40.8,
+          "min_level": 15,
+          "max_level": 40,
+          "methods": [
+            "super-rod",
+            "surf"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "red",
+            "red-japan"
+          ],
+          "rarity_tier": "support",
+          "display_name": "Psyduck",
+          "dex_number": 54,
+          "types": [
+            "water"
+          ],
+          "base_stat_total": 320,
+          "habitat": "waters-edge",
+          "color": "yellow"
+        },
+        {
+          "species_name": "slowpoke",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/79/",
+          "avg_chance": 40.8,
+          "min_level": 15,
+          "max_level": 40,
+          "methods": [
+            "super-rod",
+            "surf"
+          ],
+          "version_names": [
+            "blue",
+            "green-japan",
+            "leafgreen",
+            "red",
+            "red-japan"
+          ],
+          "rarity_tier": "support",
+          "display_name": "Slowpoke",
+          "dex_number": 79,
+          "types": [
+            "water",
+            "psychic"
+          ],
+          "base_stat_total": 315,
+          "habitat": "waters-edge",
+          "color": "pink"
+        },
+        {
+          "species_name": "seaking",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/119/",
+          "avg_chance": 40.0,
+          "min_level": 20,
+          "max_level": 30,
+          "methods": [
+            "super-rod"
+          ],
+          "version_names": [
+            "firered",
+            "leafgreen"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Seaking",
+          "dex_number": 119,
+          "types": [
+            "water"
+          ],
+          "base_stat_total": 450,
+          "habitat": "waters-edge",
+          "color": "red"
+        },
+        {
+          "species_name": "krabby",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/98/",
+          "avg_chance": 25.0,
+          "min_level": 15,
+          "max_level": 15,
+          "methods": [
+            "super-rod"
+          ],
+          "version_names": [
+            "blue",
+            "green-japan",
+            "red",
+            "red-japan"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Krabby",
+          "dex_number": 98,
+          "types": [
+            "water"
+          ],
+          "base_stat_total": 325,
+          "habitat": "waters-edge",
+          "color": "red"
+        },
+        {
+          "species_name": "dratini",
+          "pokemon_url": "https://pokeapi.co/api/v2/pokemon/147/",
+          "avg_chance": 21.43,
+          "min_level": 10,
+          "max_level": 25,
+          "methods": [
+            "super-rod"
+          ],
+          "version_names": [
+            "blue",
+            "firered",
+            "green-japan",
+            "leafgreen",
+            "red",
+            "red-japan",
+            "yellow"
+          ],
+          "rarity_tier": "rare",
+          "display_name": "Dratini",
+          "dex_number": 147,
+          "types": [
+            "dragon"
+          ],
+          "base_stat_total": 300,
+          "habitat": "waters-edge",
+          "color": "blue"
+        }
+      ]
+    }
+  ]
+}

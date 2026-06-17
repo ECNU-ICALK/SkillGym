@@ -1,0 +1,80 @@
+{
+  "policy_version": "2026-05-01",
+  "intents": {
+    "cash_withdrawal_charged_twice": {
+      "queue": "cash-ops",
+      "recommended_action": "open_duplicate_cash_claim",
+      "evidence": [
+        {
+          "source_id": "kb:cash-duplicate-claim",
+          "snippet": "Cash withdrawal disputes should be opened when the transaction posts twice."
+        }
+      ],
+      "review_disposition": "send_knowledge_reply",
+      "review_note": "Advise the customer that duplicate cash withdrawal disputes can be opened after the duplicate has posted.",
+      "review_evidence": [
+        {
+          "source_id": "kb:cash-duplicate-claim",
+          "snippet": "Cash withdrawal disputes should be opened when the transaction posts twice."
+        }
+      ],
+      "escalation_reason": null
+    },
+    "cash_withdrawal_reverted": {
+      "queue": "card-ops",
+      "recommended_action": "explain_reverted_card_payment",
+      "evidence": [
+        {
+          "source_id": "kb:card-reverted-payment",
+          "snippet": "Reverted card payments are usually released automatically if the merchant did not capture the authorization."
+        }
+      ],
+      "review_disposition": "send_knowledge_reply",
+      "review_note": "Explain that reversed card authorizations usually drop off automatically if the merchant did not capture them.",
+      "review_evidence": [
+        {
+          "source_id": "kb:card-reverted-payment",
+          "snippet": "Reverted card payments are usually released automatically if the merchant did not capture the authorization."
+        }
+      ],
+      "escalation_reason": null
+    },
+    "beneficiary_not_allowed": {
+      "queue": "transfers-risk",
+      "recommended_action": "collect_transfer_risk_context",
+      "evidence": [
+        {
+          "source_id": "kb:transfer-risk-review",
+          "snippet": "Payments blocked by beneficiary rules require a manual risk review before release."
+        }
+      ],
+      "review_disposition": "manual_review",
+      "review_note": "Collect recipient details and route the case to transfers risk for manual verification.",
+      "review_evidence": [
+        {
+          "source_id": "kb:transfer-risk-review",
+          "snippet": "Payments blocked by beneficiary rules require a manual risk review before release."
+        }
+      ],
+      "escalation_reason": "manual_risk_review_required"
+    },
+    "beneficiary_not_defined": {
+      "queue": "profile-maintenance",
+      "recommended_action": "guide_profile_update_steps",
+      "evidence": [],
+      "review_disposition": "send_knowledge_reply",
+      "review_note": "Provide the account profile update steps and confirm the supported verification path.",
+      "review_evidence": [],
+      "escalation_reason": null
+    },
+    "out_of_scope": {
+      "queue": "human-triage",
+      "recommended_action": "route_to_manual_triage",
+      "evidence": [],
+      "review_disposition": "manual_review",
+      "review_note": "This request is outside the supported banking flows and should be handled by a human triage agent.",
+      "review_evidence": [],
+      "escalation_reason": "out_of_scope_request"
+    }
+  }
+}

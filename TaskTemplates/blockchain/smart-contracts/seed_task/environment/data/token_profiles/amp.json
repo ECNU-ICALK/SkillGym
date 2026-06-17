@@ -1,0 +1,21 @@
+{
+  "token_id": "amp",
+  "symbol": "AMP",
+  "name": "Amp",
+  "decimals": 18,
+  "behaviors": {
+    "missing_return_value": false,
+    "fee_on_transfer": false,
+    "balance_drift": false,
+    "blocklist_or_pause": false,
+    "upgradeable_or_replaceable": false,
+    "approval_edgecase": false,
+    "hook_or_callback_risk": true
+  },
+  "summary": "Callback-capable collateral profile whose token movement may trigger reentrant control flow if the protocol is not guarded.",
+  "source_refs": [
+    "reference/source_index.json#weird-erc20",
+    "reference/source_index.json#token-integration-checklist",
+    "reference/source_index.json#openzeppelin-erc4626-source"
+  ]
+}

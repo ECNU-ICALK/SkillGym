@@ -1,0 +1,11 @@
+{
+  "owner": "0x7466",
+  "slug": "kimai-time-tracking",
+  "displayName": "Kimai Time Tracking",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1770580333864,
+    "commit": "https://github.com/openclaw/skills/commit/8867a1d5e906441d7f719de27e4f6dd4a14aeede"
+  },
+  "history": []
+}

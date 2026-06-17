@@ -1,0 +1,9 @@
+-- Required reusable analysis objects:
+--   analysis.trip_fact_normalized
+--   analysis.airport_zone_daily
+--   analysis.airport_zone_rolling_7d
+--   analysis.airport_zone_snapshot_leaderboard
+--
+-- Deliver these as MATERIALIZED VIEW objects in query_pack.sql.
+-- Derive their definitions from the local PostgreSQL tables and
+-- analysis_contract.json rather than from this note.

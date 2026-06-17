@@ -1,0 +1,31 @@
+{
+  "preferred_terms": [
+    "Parallel Agents",
+    "Threads Sidebar",
+    "agent thread",
+    "external agent",
+    "Agent Client Protocol",
+    "ACP",
+    "open source",
+    "GPU-accelerated",
+    "Rust"
+  ],
+  "terms_to_avoid": [
+    "AI teammate",
+    "autonomous coworker",
+    "one-click automation",
+    "revolutionary platform",
+    "all-purpose assistant"
+  ],
+  "style_notes": [
+    "Lead with the fact a developer needs first.",
+    "Explain the workflow before broad positioning language.",
+    "Use complete sentences and steady cadence.",
+    "Let claims rest on named mechanisms or documented product details."
+  ],
+  "release_constraints": [
+    "Do not promise outcomes the source packet does not support.",
+    "Do not use endorsements, rankings, or customer proof that is not in the packet.",
+    "Do not imply private data is sent anywhere unless the source packet explicitly supports it."
+  ]
+}

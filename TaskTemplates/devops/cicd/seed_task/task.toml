@@ -1,0 +1,35 @@
+version = "1.0"
+
+[metadata]
+id = "cicd__saturn-checkout-release-automation"
+name = "Template: Saturn Checkout Release Automation"
+description = "Deliver a multi-stage GitHub Actions release pipeline and canary rollout bundle for a checkout service."
+difficulty = "hard"
+category = "cicd"
+tags = [
+  "cicd",
+  "github-actions",
+  "release-automation",
+  "container-publish",
+  "canary-rollout",
+  "artifact-promotion",
+  "security-scan"
+]
+required_skills = ["github-actions-templates"]
+primary_output_file = "/app/workspace/repo/artifacts/release_bundle.json"
+source_template_id = "cicd__saturn-checkout-release-automation"
+task_role = "template"
+
+[verifier]
+timeout_sec = 1200.0
+
+[agent]
+timeout_sec = 700.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 12288
+gpus = 0
+allow_internet = true

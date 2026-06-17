@@ -1,0 +1,9 @@
+1. Release: {{ .Release.Name }}
+2. Namespace: {{ .Values.namespace }}
+3. Service: {{ include "podpulse.fullname" . }}
+4. HTTP endpoint:
+{{- if .Values.ingress.enabled }}
+   http{{ if eq (index .Values.ingress.annotations "nginx.ingress.kubernetes.io/ssl-redirect") "true" }}s{{ end }}://{{ .Values.ingress.host }}{{ .Values.ingress.path }}
+{{- else }}
+   kubectl port-forward svc/{{ include "podpulse.fullname" . }} 8080:{{ .Values.service.port }} -n {{ .Values.namespace }}
+{{- end }}

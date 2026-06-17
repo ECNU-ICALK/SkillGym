@@ -1,0 +1,33 @@
+{
+  "seeded_blogs": [
+    {
+      "name": "uv Releases",
+      "source_id": "uv_releases",
+      "homepage_snapshot": "mirror/uv-releases/index.html",
+      "feed_snapshot": "mirror/uv-releases/feed.atom",
+      "mark_read_urls": [
+        "https://github.com/astral-sh/uv/releases/tag/0.11.12",
+        "https://github.com/astral-sh/uv/releases/tag/0.11.11"
+      ]
+    },
+    {
+      "name": "Node.js Blog",
+      "source_id": "nodejs_blog",
+      "homepage_snapshot": "mirror/nodejs-blog/index.html",
+      "feed_snapshot": "mirror/nodejs-blog/feed.xml",
+      "mark_read_urls": [
+        "https://nodejs.org/en/blog/release/v26.1.0",
+        "https://nodejs.org/en/blog/release/v26.0.0",
+        "https://nodejs.org/en/blog/events/collab-summit-2026-london",
+        "https://nodejs.org/en/blog/release/v24.15.0"
+      ]
+    }
+  ],
+  "legacy_blogs": [
+    {
+      "name": "Legacy Ops Weekly",
+      "url": "http://127.0.0.1:19100/legacy/ops-weekly/index.html",
+      "feed_url": "http://127.0.0.1:19100/legacy/ops-weekly/feed.xml"
+    }
+  ]
+}

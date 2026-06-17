@@ -1,0 +1,8 @@
+[
+  {"date": "2026-05-12", "meal_type": "lunch", "recipe_uid": "PR-L1"},
+  {"date": "2026-05-12", "meal_type": "dinner", "recipe_uid": "PR-D1"},
+  {"date": "2026-05-13", "meal_type": "lunch", "recipe_uid": "PR-L2"},
+  {"date": "2026-05-13", "meal_type": "dinner", "recipe_uid": "PR-D2"},
+  {"date": "2026-05-14", "meal_type": "lunch", "recipe_uid": "PR-L3"},
+  {"date": "2026-05-14", "meal_type": "dinner", "recipe_uid": "PR-D3"}
+]

@@ -1,0 +1,45 @@
+nameOverride: ""
+fullnameOverride: ""
+
+replicaCount: 1
+
+image:
+  repository: ghcr.io/stefanprodan/podinfo
+  tag: "6.11.2"
+  pullPolicy: IfNotPresent
+
+serviceAccount:
+  create: false
+  annotations: {}
+
+service:
+  type: ClusterIP
+  port: 80
+  metricsPort: 9797
+
+container:
+  port: 9898
+
+config: {}
+secretEnv: []
+
+resources: {}
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  host: ""
+  path: /
+  pathType: Prefix
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 1
+  targetCPUUtilizationPercentage: 75
+  targetMemoryUtilizationPercentage: 80
+
+pdb:
+  enabled: false
+  minAvailable: 1

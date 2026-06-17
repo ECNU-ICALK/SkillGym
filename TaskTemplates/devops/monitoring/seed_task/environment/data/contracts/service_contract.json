@@ -1,0 +1,15 @@
+{
+  "bundle_id": "release-2026-05-monitoring",
+  "services": [
+    "harbor-core",
+    "harbor-jobservice",
+    "harbor-registry",
+    "harbor-exporter"
+  ],
+  "required_fields": [
+    "request_rate_rps",
+    "error_rate_pct",
+    "p95_latency_ms",
+    "slo_state"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "required_labels": {
+    "app.kubernetes.io/managed-by": "Helm",
+    "app.kubernetes.io/component": "api",
+    "app.kubernetes.io/part-of": "observability-suite",
+    "platform.example.com/team": "sre",
+    "platform.example.com/tier": "observability"
+  },
+  "dynamic_labels": [
+    "app.kubernetes.io/name",
+    "app.kubernetes.io/instance",
+    "platform.example.com/environment"
+  ],
+  "selector_labels": [
+    "app.kubernetes.io/name",
+    "app.kubernetes.io/instance"
+  ]
+}

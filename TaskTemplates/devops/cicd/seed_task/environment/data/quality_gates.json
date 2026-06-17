@@ -1,0 +1,17 @@
+{
+  "verify_commands": {
+    "lint": "npm run lint",
+    "unit": "npm test",
+    "security_scan": "npm run security-scan"
+  },
+  "staging_commands": {
+    "deploy": "python3 scripts/deploy/render_manifest.py staging",
+    "smoke": "npm run smoke",
+    "e2e": "npm run e2e"
+  },
+  "production_commands": {
+    "deploy": "python3 scripts/deploy/render_manifest.py production",
+    "smoke": "./scripts/deploy/run_smoke.sh production",
+    "e2e": "./scripts/deploy/run_e2e.sh production"
+  }
+}

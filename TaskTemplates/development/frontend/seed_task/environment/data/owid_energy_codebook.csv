@@ -1,0 +1,10 @@
+column,description,unit,source
+electricity_demand,Measured in terawatt-hours.,terawatt-hours (TWh),https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-codebook.csv
+electricity_generation,Total electricity generated in each country or region measured in terawatt-hours.,terawatt-hours (TWh),https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-codebook.csv
+coal_share_elec,Measured as a percentage of total electricity produced in the country or region.,%,https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-codebook.csv
+gas_share_elec,Measured as a percentage of total electricity produced in the country or region.,%,https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-codebook.csv
+oil_share_elec,Measured as a percentage of total electricity produced in the country or region.,%,https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-codebook.csv
+hydro_share_elec,Measured as a percentage of total electricity produced in the country or region.,%,https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-codebook.csv
+solar_share_elec,Measured as a percentage of total electricity produced in the country or region.,%,https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-codebook.csv
+wind_share_elec,Measured as a percentage of total electricity produced in the country or region.,%,https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-codebook.csv
+nuclear_share_elec,Measured as a percentage of total electricity produced in the country or region.,%,https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-codebook.csv

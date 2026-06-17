@@ -1,0 +1,20 @@
+{
+  "field_id": "M101-LS-DR10",
+  "coordinate_frame": "ICRS",
+  "time_scale": "UTC",
+  "galactic_frame": "Galactic",
+  "gaia_reject_arcsec": 1.25,
+  "host_match_arcsec": 18.0,
+  "min_snr": 2.2,
+  "max_mag_unc": 0.4,
+  "reportable_absolute_mag_max": -10.5,
+  "classification_priority": [
+    "reject_bad_measurement",
+    "reject_low_snr",
+    "reject_foreground_star",
+    "review_no_host",
+    "reject_uncertain_photometry",
+    "review_faint_host_association",
+    "extragalactic_candidate"
+  ]
+}

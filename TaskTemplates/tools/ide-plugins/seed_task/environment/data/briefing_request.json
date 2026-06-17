@@ -1,0 +1,29 @@
+{
+  "report_id": "vs-code-release-briefing-q2-2024",
+  "title": {
+    "en": "VS Code Release Briefing",
+    "pt-br": "Resumo de Atualizações do VS Code",
+    "zh-cn": "VS Code 更新简报"
+  },
+  "audience": {
+    "en": "Extension maintainers preparing the next workspace rollout.",
+    "pt-br": "Mantenedores de extensões preparando a próxima distribuição do workspace.",
+    "zh-cn": "准备下一轮工作区发布的扩展维护者。"
+  },
+  "versions": [
+    "1.87",
+    "1.88",
+    "1.89"
+  ],
+  "focus_areas": [
+    "extension-api",
+    "workspace-extensions",
+    "views"
+  ],
+  "target_locales": [
+    "en",
+    "pt-br",
+    "zh-cn"
+  ],
+  "max_highlights_per_version": 2
+}

@@ -1,0 +1,126 @@
+{
+  "workspace_id": "revops-732",
+  "cohort_date": "2026-05-20",
+  "page_size": 3,
+  "cohort_pages": [
+    {
+      "cursor": null,
+      "next_cursor": "cursor-2",
+      "items": ["ACC-101", "ACC-102", "ACC-103"]
+    },
+    {
+      "cursor": "cursor-2",
+      "next_cursor": "cursor-3",
+      "items": ["ACC-104", "ACC-105", "ACC-106"]
+    },
+    {
+      "cursor": "cursor-3",
+      "next_cursor": null,
+      "items": ["ACC-107", "ACC-108"]
+    }
+  ],
+  "accounts": {
+    "ACC-101": {
+      "account_id": "ACC-101",
+      "company_name": "Acorn Analytics",
+      "crm_deal_id": "DEAL-101",
+      "renewal_date": "2026-05-20",
+      "invoice_status": "paid",
+      "autopay_enabled": true,
+      "procurement_blocker": "none",
+      "legal_hold": false
+    },
+    "ACC-102": {
+      "account_id": "ACC-102",
+      "company_name": "Beacon Freight",
+      "crm_deal_id": "DEAL-102",
+      "renewal_date": "2026-05-20",
+      "invoice_status": "draft",
+      "autopay_enabled": false,
+      "procurement_blocker": "none",
+      "legal_hold": false
+    },
+    "ACC-103": {
+      "account_id": "ACC-103",
+      "company_name": "Cinder Health",
+      "crm_deal_id": "DEAL-103",
+      "renewal_date": "2026-05-20",
+      "invoice_status": "open",
+      "autopay_enabled": false,
+      "procurement_blocker": "none",
+      "legal_hold": false,
+      "open_invoice_amount_usd": 18400
+    },
+    "ACC-104": {
+      "account_id": "ACC-104",
+      "company_name": "Delta Commerce",
+      "crm_deal_id": "DEAL-104",
+      "renewal_date": "2026-05-20",
+      "invoice_status": "open",
+      "autopay_enabled": false,
+      "procurement_blocker": "missing_purchase_order",
+      "legal_hold": false,
+      "open_invoice_amount_usd": 30000
+    },
+    "ACC-105": {
+      "account_id": "ACC-105",
+      "company_name": "Elm Retail",
+      "crm_deal_id": "DEAL-105",
+      "renewal_date": "2026-05-20",
+      "invoice_status": "paid",
+      "autopay_enabled": true,
+      "procurement_blocker": "missing_purchase_order",
+      "legal_hold": false
+    },
+    "ACC-106": {
+      "account_id": "ACC-106",
+      "company_name": "Fable Legal",
+      "crm_deal_id": "DEAL-106",
+      "renewal_date": "2026-05-20",
+      "invoice_status": "hold",
+      "autopay_enabled": false,
+      "procurement_blocker": "none",
+      "legal_hold": true
+    },
+    "ACC-107": {
+      "account_id": "ACC-107",
+      "company_name": "Granite Solar",
+      "crm_deal_id": "DEAL-107",
+      "renewal_date": "2026-05-20",
+      "invoice_status": "draft",
+      "autopay_enabled": false,
+      "procurement_blocker": "none",
+      "legal_hold": false
+    },
+    "ACC-108": {
+      "account_id": "ACC-108",
+      "company_name": "Harbor Works",
+      "crm_deal_id": "DEAL-108",
+      "renewal_date": "2026-05-20",
+      "invoice_status": "draft",
+      "autopay_enabled": false,
+      "procurement_blocker": "none",
+      "legal_hold": false
+    }
+  },
+  "renewal_previews": {
+    "ACC-101": {"renewal_arr_usd": 12000.0, "seat_delta": 0, "quote_required": false},
+    "ACC-102": {"renewal_arr_usd": 24500.0, "seat_delta": 0, "quote_required": false},
+    "ACC-103": {"renewal_arr_usd": 18400.0, "seat_delta": 0, "quote_required": false},
+    "ACC-104": {"renewal_arr_usd": 30000.0, "seat_delta": 0, "quote_required": false},
+    "ACC-105": {"renewal_arr_usd": 52200.0, "seat_delta": 18, "quote_required": true},
+    "ACC-106": {"renewal_arr_usd": 9800.0, "seat_delta": 12, "quote_required": true},
+    "ACC-107": {"renewal_arr_usd": 16100.0, "seat_delta": 0, "quote_required": false},
+    "ACC-108": {"renewal_arr_usd": 27800.0, "seat_delta": 9, "quote_required": true}
+  },
+  "dunning_events": {
+    "ACC-101": {"current_stage": "healthy", "payment_attempts": 0, "past_due_days": 0},
+    "ACC-102": {"current_stage": "none", "payment_attempts": 0, "past_due_days": 0},
+    "ACC-103": {"current_stage": "attempt_3", "payment_attempts": 3, "past_due_days": 41},
+    "ACC-104": {"current_stage": "procurement_blocked", "payment_attempts": 2, "past_due_days": 35},
+    "ACC-105": {"current_stage": "quote_pending", "payment_attempts": 0, "past_due_days": 0},
+    "ACC-106": {"current_stage": "legal_hold", "payment_attempts": 0, "past_due_days": 0},
+    "ACC-107": {"current_stage": "none", "payment_attempts": 0, "past_due_days": 0},
+    "ACC-108": {"current_stage": "quote_pending", "payment_attempts": 0, "past_due_days": 0}
+  }
+}

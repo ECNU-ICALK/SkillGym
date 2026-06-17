@@ -1,0 +1,25 @@
+{
+  "task_id": "mobile__citibike-commuter-reentry-pwa",
+  "install_entry_name": "BikeBoard",
+  "quick_access_start_url": "/?entry=quick-access",
+  "mobile_viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "required_release_note_headings": [
+    "# Home",
+    "# Search",
+    "# Station Detail",
+    "# Re-entry Behavior",
+    "# Quick Access",
+    "# Data Freshness"
+  ],
+  "offline_detail_station_id": "1975518133370609774",
+  "offline_detail_station_name": "Broadway & E 19 St",
+  "online_refresh_station_id": "904930bd-2671-4695-9c1a-8a894b041129",
+  "online_refresh_station_name": "6 Ave & W 45 St",
+  "freshness_labels": {
+    "current": "Current feed",
+    "saved": "Saved snapshot"
+  }
+}

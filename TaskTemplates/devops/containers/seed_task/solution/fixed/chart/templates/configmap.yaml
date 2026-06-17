@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "podpulse.fullname" . }}-config
+  namespace: {{ .Values.namespace }}
+  labels:
+    {{- include "podpulse.labels" . | nindent 4 }}
+data:
+  LOG_FORMAT: {{ .Values.config.LOG_FORMAT | quote }}
+  CACHE_STRATEGY: {{ .Values.config.CACHE_STRATEGY | quote }}
+  FEATURE_BANNER: {{ .Values.config.FEATURE_BANNER | quote }}
+  LOG_LEVEL: {{ .Values.config.LOG_LEVEL | quote }}

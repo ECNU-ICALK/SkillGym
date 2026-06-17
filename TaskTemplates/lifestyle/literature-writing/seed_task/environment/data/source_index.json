@@ -1,0 +1,39 @@
+{
+  "docs": [
+    {
+      "doc_id": "ai_overview",
+      "title": "AI Code Editor Documentation - Zed",
+      "path": "source_packets/ai_overview.json",
+      "url": "https://raw.githubusercontent.com/zed-industries/zed/main/docs/src/ai/overview.md",
+      "document_type": "docs"
+    },
+    {
+      "doc_id": "parallel_agents_blog",
+      "title": "Introducing Parallel Agents in Zed",
+      "path": "source_packets/parallel_agents_blog.json",
+      "url": "https://zed.dev/blog/parallel-agents",
+      "document_type": "blog_post"
+    },
+    {
+      "doc_id": "parallel_agents_docs",
+      "title": "Parallel Agents - Zed",
+      "path": "source_packets/parallel_agents_docs.json",
+      "url": "https://raw.githubusercontent.com/zed-industries/zed/main/docs/src/ai/parallel-agents.md",
+      "document_type": "docs"
+    },
+    {
+      "doc_id": "codex_in_zed",
+      "title": "Codex is Live in Zed",
+      "path": "source_packets/codex_in_zed.json",
+      "url": "https://zed.dev/blog/codex-is-live-in-zed",
+      "document_type": "blog_post"
+    },
+    {
+      "doc_id": "repo_readme",
+      "title": "zed-industries/zed README",
+      "path": "source_packets/repo_readme.json",
+      "url": "https://raw.githubusercontent.com/zed-industries/zed/main/README.md",
+      "document_type": "repository_readme"
+    }
+  ]
+}

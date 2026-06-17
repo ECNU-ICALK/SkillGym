@@ -1,0 +1,72 @@
+{
+  "service_name": "saturn-checkout",
+  "workflow_name": "Saturn Checkout Release",
+  "release_bundle_path": "artifacts/release_bundle.json",
+  "image_repository": "ghcr.io/saturn-labs/saturn-checkout",
+  "delivery_refs": {
+    "default_branch": "main",
+    "release_tag_glob": "v*"
+  },
+  "delivery_stages": [
+    "verify",
+    "publish",
+    "staging",
+    "production",
+    "summary"
+  ],
+  "release_serialization": {
+    "required": true,
+    "scope": "per-delivery-ref",
+    "group": "saturn-checkout-release-${{ github.ref }}",
+    "cancel_in_progress": false
+  },
+  "promotion_policy": {
+    "publish_event": "push",
+    "staging_event": "push",
+    "production_tag_prefix": "refs/tags/v",
+    "summary_tag_prefix": "refs/tags/v"
+  },
+  "verification_policy": {
+    "shared_entry_required": true,
+    "runtime_input_name": "node-version",
+    "runtime_selection_owner": "caller",
+    "multi_runtime_validation": true,
+    "node_versions": ["18.x", "20.x"],
+    "required_checks": ["lint", "unit", "security_scan"]
+  },
+  "publish_policy": {
+    "registry": "ghcr.io",
+    "image_identity": "saturn-labs/saturn-checkout",
+    "immutable_promotion_reference_required": true
+  },
+  "environment_contract": {
+    "staging_name": "staging",
+    "production_name": "production",
+    "serialized": true,
+    "production_approval_required": true,
+    "artifact_archive_required": ["manifest_summary", "rendered_manifest"],
+    "artifact_names": {
+      "staging_summary": "artifacts/staging-manifest-summary.json",
+      "production_summary": "artifacts/production-manifest-summary.json",
+      "staging_manifest": "artifacts/staging-manifest.yaml",
+      "production_manifest": "artifacts/production-manifest.yaml"
+    },
+    "manifest_sources": {
+      "staging": "deploy/manifests/checkout-deployment.yaml",
+      "production": "deploy/rollouts/checkout-production-rollout.yaml"
+    },
+    "production_manifest_kind": "Rollout"
+  },
+  "bundle_policy": {
+    "verification_summary_required": true,
+    "workflow_drift_rejected": true,
+    "reusable_verify_drift_rejected": true,
+    "rollout_drift_rejected": true
+  },
+  "rollout_contract": {
+    "strategy": "canary",
+    "analysis_signals": ["success-rate", "p95-latency"]
+  },
+  "service_port": 8080,
+  "health_path": "/healthz"
+}

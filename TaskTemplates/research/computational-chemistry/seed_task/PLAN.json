@@ -1,0 +1,96 @@
+{
+  "template_id": "research__computational-chemistry__template_new",
+  "task_name": "aqsol-release-refresh",
+  "category": "computational-chemistry",
+  "skill": {
+    "name": "cli-anything-unimol-tools",
+    "source_url": "https://skillsmp.com/skills/hkuds-cli-anything-skills-cli-anything-unimol-tools-skill-md",
+    "skillsmp_stars": "33,244",
+    "reason": "The task requires local project management, regression training, model ranking, prediction, storage-aware retention, and machine-readable audit outputs around a molecular property workflow."
+  },
+  "data_design": {
+    "input_directory": "environment/data",
+    "workspace_directory": "environment/workbench",
+    "references": [
+      "DeepChem Delaney ESOL dataset",
+      "Uni-Mol Tools quickstart regression workflow"
+    ],
+    "determinism": "All splits, rules, baseline metadata, preloaded model artifacts, and the local CLI backend are bundled in the task. Verifier recomputes expected exclusions, metrics, model eligibility, retained runs, and predictions from the shipped data and workspace state."
+  },
+  "task_shape": {
+    "business_goal": "Refresh an aqueous-solubility benchmark release package from current bundled data and a local experiment workspace.",
+    "workflow_pressure": [
+      "Review prior model snapshot without treating it as the current release answer.",
+      "Add a current run to the local experiment workspace.",
+      "Rank and select the final retained model under current rules.",
+      "Generate scored and holdout predictions plus an audit trail."
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "Validate the required output file set and output schemas.",
+      "Recompute row exclusions from the bundled splits and compare excluded_rows.csv.",
+      "Recompute current-run eligibility and final selection from project_rules.json and workspace metadata.",
+      "Recompute selected-model predictions for scored and holdout rows from the retained model artifact.",
+      "Validate model_summary.csv ranks, selection_status values, metrics, and retained-run notes.",
+      "Validate selected_model.json and method_notes.md against the current release state."
+    ],
+    "guardrails": [
+      "Hash-check all bundled inputs and bundled preloaded baseline files.",
+      "Require the selected run to come from the local workspace and to remain present after retention handling.",
+      "Require a current-session workspace action chain through audit_log.jsonl, including at least one train event, one models.rank event, and one predict event for the selected run.",
+      "Reject hardcoded outputs by recomputing metrics and predictions from shipped artifacts."
+    ]
+  },
+  "with_without_skill_control": {
+    "only_difference": "environment/skills/ is present for with_skill and removed for without_skill runtime copies.",
+    "no_other_differences": [
+      "same instruction.md",
+      "same tests",
+      "same data",
+      "same workbench",
+      "same Dockerfile with conditional skill-copy logic only",
+      "same dependencies",
+      "skill payload is copied as-is"
+    ]
+  },
+  "verification": {
+    "e2b_oracle": {
+      "job_root": "/home/lenovo/.tmp_harbor_jobs_compchem_oracle.20260507-054029/template-new-oracle-e2b-20260507-054029",
+      "trial_path": "/home/lenovo/.tmp_harbor_jobs_compchem_oracle.20260507-054029/template-new-oracle-e2b-20260507-054029/task_with_skills_e2b__FWjn94h",
+      "reward": 1.0
+    },
+    "effective_skill_vs_no_skill_pairs": [
+      {
+        "pair": "pair4",
+        "with_skill_trial": "/home/lenovo/.tmp_harbor_jobs_compchem_pair4_with.20260507-055314/template-new-with-skills-e2b-pair4-20260507-055314/task_with_skills_e2b__Gtim46k",
+        "without_skill_trial": "/home/lenovo/.tmp_harbor_jobs_compchem_pair4_without.20260507-055314/template-new-without-skills-e2b-pair4-20260507-055314/task_without_skills_e2b__3iZissp",
+        "with_reward": 1.0,
+        "without_reward": 0.0
+      },
+      {
+        "pair": "pair6",
+        "with_skill_trial": "/home/lenovo/.tmp_harbor_jobs_compchem_pair6_with.20260507-062015/template-new-with-skills-e2b-pair6-20260507-062015/task_with_skills_e2b__hGtJbio",
+        "without_skill_trial": "/home/lenovo/.tmp_harbor_jobs_compchem_pair6_without.20260507-062015/template-new-without-skills-e2b-pair6-20260507-062015/task_without_skills_e2b__JwBC7qc",
+        "with_reward": 1.0,
+        "without_reward": 0.0
+      },
+      {
+        "pair": "pair7",
+        "with_skill_trial": "/home/lenovo/.tmp_harbor_jobs_compchem_pair7_with.20260507-062918/template-new-with-skills-e2b-pair7-20260507-062918/task_with_skills_e2b__c5ouaZd",
+        "without_skill_trial": "/home/lenovo/.tmp_harbor_jobs_compchem_pair7_without.20260507-062918/template-new-without-skills-e2b-pair7-20260507-062918/task_without_skills_e2b__Ht5tD3t",
+        "with_reward": 1.0,
+        "without_reward": 0.0
+      }
+    ],
+    "aggregate_metrics": {
+      "with_skill_pass_rate": "3/3",
+      "without_skill_pass_rate": "0/3",
+      "with_skill_avg_seconds": 354.134,
+      "without_skill_avg_seconds": 659.919,
+      "with_skill_avg_total_tokens": 614353,
+      "without_skill_avg_total_tokens": 1122327
+    }
+  },
+  "status": "validated-in-e2b; oracle passes and three effective with-skill versus without-skill comparisons are complete."
+}

@@ -1,0 +1,10 @@
+solid yarn_bowl_body.stl
+  facet normal 0 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 10 0 0
+      vertex 0 10 0
+    endloop
+  endfacet
+  // model:354172 file:354172-1
+endsolid yarn_bowl_body.stl

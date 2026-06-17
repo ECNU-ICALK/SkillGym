@@ -1,0 +1,46 @@
+version = "1.0"
+
+[metadata]
+id = "git-workflows__meridian-hotfix-isolated-worktree"
+name = "Template: Meridian Hotfix in an Isolated Worktree"
+description = "Prepare a hotfix from a release branch without disturbing a dirty primary checkout, then run the in-repo validation and packaging chain."
+difficulty = "hard"
+category = "git-workflows"
+tags = [
+  "git-workflows",
+  "git",
+  "hotfix",
+  "release-engineering",
+  "worktree",
+  "branch-management",
+  "changelog",
+  "devops",
+]
+required_skills = [
+  "using-git-worktrees",
+]
+distractor_skills = [
+  "git-workflow",
+  "prepare-release",
+  "docs-changelog",
+]
+primary_output_file = "/app/repo/.worktrees/hotfix-2026.04.3/artifacts/hotfix_report.json"
+source_template_id = "git-workflows__meridian-hotfix-isolated-worktree"
+task_role = "template"
+
+[agent]
+timeout_sec = 600.0
+
+[solution]
+timeout_sec = 600.0
+
+[verifier]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

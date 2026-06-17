@@ -1,0 +1,37 @@
+version = "1.0"
+
+[metadata]
+id = "wellness-health__weather-safe-community-schedule"
+name = "Template: Weather-Safe Community Schedule"
+description = "Prepare a compliant 3-day wellness schedule by reconciling live local conditions, venue rules, and participant support needs."
+difficulty = "hard"
+category = "wellness-health"
+tags = [
+  "wellness-health",
+  "weather-safety",
+  "community-programming",
+  "air-quality",
+  "venue-operations",
+  "schedule-adjustment",
+  "advisories",
+]
+required_skills = [
+  "weather-safety-guardrails",
+]
+primary_output_file = "/root/output/session_risk_assessment.json"
+source_template_id = "wellness-health__weather-safe-community-schedule"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

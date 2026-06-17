@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+**/.DS_Store
+.cache/
+coverage/
+outputs/
+.local-workspace/
+
+# Local TaskBuilder install/runtime artifacts.
+TaskBuilder/node_modules/
+TaskBuilder/*.log
+TaskBuilder/*.pid
+TaskBuilder/*.lock
+TaskBuilder/.cache/
+TaskBuilder/dist/

@@ -1,0 +1,23 @@
+{
+  "page_id": "pricing",
+  "path": "/pricing/",
+  "title": "Usage-based plans for engineering teams",
+  "meta_description": "",
+  "h1": "Simple plans for shipping teams",
+  "canonical_path": "/pricing/",
+  "indexable": true,
+  "include_in_sitemap": false,
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Pricing"
+    }
+  ],
+  "body_blocks": [
+    {
+      "type": "paragraph",
+      "text": "Choose a plan for early-stage product teams, scale-up engineering orgs, or platform operators."
+    }
+  ]
+}

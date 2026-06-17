@@ -1,0 +1,37 @@
+version = "1.0"
+
+[metadata]
+id = "design__north_america_power_mix_brief_site"
+name = "Template: North America Power Mix Brief Deck"
+description = "Build a browser-run single-file briefing deck from public energy data snapshots, fixed page contracts, and required wireframes."
+difficulty = "hard"
+category = "design"
+tags = [
+  "design",
+  "briefing-deck",
+  "single-file-html",
+  "page-by-page-briefing",
+  "data-driven-layout",
+  "wireframe-delivery",
+  "browser-presentation",
+]
+required_skills = [
+  "single-file-briefing-deck",
+]
+primary_output_file = "/app/output/north_america_power_mix_brief.html"
+source_template_id = "design__north_america_power_mix_brief_site"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 2
+memory_mb = 6144
+storage_mb = 16384
+gpus = 0
+allow_internet = true

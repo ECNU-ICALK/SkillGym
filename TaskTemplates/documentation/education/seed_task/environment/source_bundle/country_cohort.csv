@@ -1,0 +1,11 @@
+entity,code,entity_type,region_group,peer_group,include_in_lesson,note
+Germany,DEU,country,Europe,advanced_system,yes,High-attainment comparator
+United States,USA,country,North America,advanced_system,yes,Large high-income comparator
+Uruguay,URY,country,Latin America,access_expander,yes,High-enrolment comparator
+Thailand,THA,country,Asia,access_expander,yes,Upper-middle-income comparator
+Indonesia,IDN,country,Asia,system_scaler,yes,Large lower-spending comparator
+South Africa,ZAF,country,Africa,system_scaler,yes,Higher-spending comparator
+Sweden,SWE,country,Europe,holdout_reference,no,Distractor row for filtering checks
+Portugal,PRT,country,Europe,holdout_reference,no,Distractor row for filtering checks
+Vietnam,VNM,country,Asia,holdout_reference,no,Distractor row for filtering checks
+Bangladesh,BGD,country,Asia,holdout_reference,no,Distractor row for filtering checks

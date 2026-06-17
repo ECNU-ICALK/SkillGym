@@ -1,0 +1,83 @@
+{
+  "task_id": "payment__invoice_batch_review",
+  "category": "payment",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/root/output/payment_batch.json",
+  "selected_skill": {
+    "dir": "invoice-organizer",
+    "skillsmp_name": "invoice-organizer",
+    "stars_observed": 56861,
+    "selection_reason": "High-star payment-adjacent skill with a folder-scan, invoice extraction, renaming, and organization workflow that maps well to accounts-payable batch preparation.",
+    "safe_use_screening": {
+      "external_private_account_required": false,
+      "privileged_org_access_required": false,
+      "sensitive_personal_data_required": false,
+      "notes": "The template uses public sample invoices, task-local reference files, and a local review service. It avoids outside payment accounts, merchant credentials, live charges, and webhook secrets."
+    }
+  },
+  "real_data_design": {
+    "source_type": "public invoice samples plus task-local payment review facts",
+    "links": [
+      "https://raw.githubusercontent.com/invoice-x/invoice2data/master/tests/compare/AmazonWebServices.pdf",
+      "https://raw.githubusercontent.com/invoice-x/invoice2data/master/tests/compare/AzureInterior.pdf",
+      "https://raw.githubusercontent.com/invoice-x/invoice2data/master/tests/compare/FlipkartInvoice.pdf",
+      "https://raw.githubusercontent.com/invoice-x/invoice2data/master/tests/compare/NetpresseInvoice.pdf",
+      "https://raw.githubusercontent.com/invoice-x/invoice2data/master/tests/compare/QualityHosting.pdf",
+      "https://raw.githubusercontent.com/invoice-x/invoice2data/master/tests/compare/free_fiber.pdf",
+      "https://raw.githubusercontent.com/invoice-x/invoice2data/master/tests/compare/coolblue1.pdf",
+      "https://raw.githubusercontent.com/invoice-x/invoice2data/master/tests/compare/Orlen.txt"
+    ],
+    "normalization_strategy": "Use public sample documents as the semantic backbone for vendor names, invoice numbers, dates, currencies, and amounts, then layer task-local vendor aliases, expense categories, duplicate policy, and AP review states on top.",
+    "determinism": "All task inputs and review-service payloads live inside the template, so the verifier can recompute expected outputs without network calls."
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "services": [
+      "local ap review service on 127.0.0.1:8148 with manifest, paginated document inventory, and per-document current review facts"
+    ],
+    "inputs": [
+      "nested invoice inbox under /root/data/inbox",
+      "vendor master under /root/data/vendor_master.csv",
+      "stale settlement snapshot under /root/data/settlement_snapshot.csv",
+      "batch context under /root/data/batch_context.json",
+      "filing policy under /root/data/filing_policy.yaml"
+    ],
+    "with_without_control": "with_skill and without_skill differ only by whether environment/skills is present in the runtime copy and copied into the agent skill path."
+  },
+  "instruction_design": {
+    "goals": [
+      "State the batch deliverables, current-source rule, and file-organization contract clearly.",
+      "Keep the batch workflow explicit while leaving folder scan, extraction order, and duplicate handling steps mostly implicit.",
+      "Make the stale settlement snapshot tempting but insufficient."
+    ],
+    "hidden_workflow_pressure": [
+      "The document inventory is paginated and includes live-only records that are absent from the stale snapshot.",
+      "Current payment status and manual-review flags only come from the AP review service.",
+      "The verifier checks both service traversal and document-copy behavior."
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "required output files exist and parse",
+      "invoice register rows exactly match document-derived fields plus policy and live review facts",
+      "payment batch JSON recomputes payable rows, exclusion reasons, currency totals, and service checks",
+      "batch review note contains the required operational facts"
+    ],
+    "guardrails": [
+      "solver must query the manifest endpoint and traverse all document pages before verifier traffic",
+      "solver must fetch detail facts for every live document",
+      "input files, hidden service files, and installed skill files must remain unchanged",
+      "organized output copies must exist for every row and preserve source file hashes",
+      "service must remain healthy at verifier end",
+      "live-only documents absent from the stale snapshot must still appear in the output"
+    ],
+    "failure_target": "without_skill should fail for action-level reasons such as trusting the stale snapshot, skipping later pages, skipping detail fetches, or mishandling folder-wide organization and duplicate review."
+  },
+  "experiment_protocol": {
+    "environment": "E2B",
+    "isolation_rule": "Every cloud trial must use a new isolated runtime copy.",
+    "oracle_rule": "Do not finalize README until oracle and comparison trials are available.",
+    "comparison_rule": "with_skill and without_skill differ only by environment/skills presence and corresponding copy behavior."
+  }
+}

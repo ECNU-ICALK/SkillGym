@@ -1,0 +1,6 @@
+{
+  "0": "STEADY_EMPTY",
+  "1": "RAMPING_UP",
+  "2": "RAMPING_DOWN",
+  "3": "STEADY_OCCUPIED"
+}

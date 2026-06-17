@@ -1,0 +1,36 @@
+{
+  "page_id": "home",
+  "path": "/",
+  "title": "Developer observability without heavyweight setup",
+  "meta_description": "Acme Observe unifies product analytics, error monitoring, and release diagnostics for engineering teams.",
+  "h1": "Ship with fewer blind spots",
+  "canonical_path": "/",
+  "indexable": true,
+  "include_in_sitemap": true,
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Acme Observe"
+    }
+  ],
+  "body_blocks": [
+    {
+      "type": "paragraph",
+      "text": "Acme Observe helps engineering teams connect product events, release health, and user-impact signals."
+    },
+    {
+      "type": "links",
+      "links": [
+        {
+          "href": "/pricing/",
+          "label": "See pricing"
+        },
+        {
+          "href": "/docs/",
+          "label": "Read the docs"
+        }
+      ]
+    }
+  ]
+}

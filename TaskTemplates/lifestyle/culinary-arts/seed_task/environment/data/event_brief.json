@@ -1,0 +1,30 @@
+{
+  "event_id": "SPRING-WORKSHOP-2026",
+  "event_name": "Spring Workshop Meal Packet",
+  "guest_count": 8,
+  "service_dates": [
+    "2026-05-12",
+    "2026-05-13",
+    "2026-05-14"
+  ],
+  "meal_slots": [
+    "lunch",
+    "dinner"
+  ],
+  "nutrition_targets_per_person": {
+    "kcal_min": 980,
+    "kcal_max": 1180,
+    "protein_min_g": 55,
+    "fiber_min_g": 15
+  },
+  "carryover_policy": {
+    "reserved_event_field": "reserved_event_id",
+    "matching_value": "SPRING-WORKSHOP-2026",
+    "count_purchased_items": true,
+    "count_unpurchased_items": true
+  },
+  "allergen_watchlist": [
+    "peanuts",
+    "shellfish"
+  ]
+}

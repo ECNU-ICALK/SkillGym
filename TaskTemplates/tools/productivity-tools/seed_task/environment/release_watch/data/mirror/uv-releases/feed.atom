@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>astral-sh/uv releases</title>
+  <link href="https://github.com/astral-sh/uv/releases.atom" rel="self" />
+  <updated>2026-05-12T18:04:36Z</updated>
+  <id>https://github.com/astral-sh/uv/releases</id>
+  <entry>
+    <title>0.11.14</title>
+    <link href="https://github.com/astral-sh/uv/releases/tag/0.11.14" />
+    <id>tag:github.com,2008:Repository/674682447/0.11.14</id>
+    <updated>2026-05-12T18:04:36Z</updated>
+  </entry>
+  <entry>
+    <title>0.11.13</title>
+    <link href="https://github.com/astral-sh/uv/releases/tag/0.11.13" />
+    <id>tag:github.com,2008:Repository/674682447/0.11.13</id>
+    <updated>2026-05-11T01:40:21Z</updated>
+  </entry>
+  <entry>
+    <title>0.11.12</title>
+    <link href="https://github.com/astral-sh/uv/releases/tag/0.11.12" />
+    <id>tag:github.com,2008:Repository/674682447/0.11.12</id>
+    <updated>2026-05-08T22:38:38Z</updated>
+  </entry>
+  <entry>
+    <title>0.11.11</title>
+    <link href="https://github.com/astral-sh/uv/releases/tag/0.11.11" />
+    <id>tag:github.com,2008:Repository/674682447/0.11.11</id>
+    <updated>2026-05-06T20:08:24Z</updated>
+  </entry>
+</feed>

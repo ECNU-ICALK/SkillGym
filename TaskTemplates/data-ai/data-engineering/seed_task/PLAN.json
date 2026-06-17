@@ -1,0 +1,61 @@
+{
+  "task_id": "data-engineering__clickhouse-tlc-route-metrics",
+  "category": "data-engineering",
+  "difficulty": "hard",
+  "primary_skill": {
+    "name": "clickhouse-io",
+    "stars": "169.2k",
+    "source": "affaan-m/everything-claude-code"
+  },
+  "design_goals": [
+    "Use a real single-container ClickHouse analytics pipeline rather than a puzzle or static answer check.",
+    "Keep with-skill and without-skill identical except for environment/skills.",
+    "Force the solver to repair action-level data engineering issues around schema drift, loading, and monthly ranking."
+  ],
+  "input_data": [
+    {
+      "path": "environment/workspace/data/yellow_tripdata_2023-01.parquet",
+      "source": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.parquet",
+      "notes": "Deterministic subset of the official January 2023 NYC TLC Yellow Taxi Trip Records."
+    },
+    {
+      "path": "environment/workspace/data/yellow_tripdata_2023-02.parquet",
+      "source": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-02.parquet",
+      "notes": "Deterministic subset of the official February 2023 NYC TLC Yellow Taxi Trip Records. Preserves the Airport_fee schema drift."
+    },
+    {
+      "path": "environment/workspace/data/taxi_zone_lookup.csv",
+      "source": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv",
+      "notes": "Official NYC TLC zone lookup reference."
+    },
+    {
+      "path": "environment/workspace/data/trip_record_user_guide.pdf",
+      "source": "https://www.nyc.gov/assets/tlc/downloads/pdf/trip_record_user_guide.pdf",
+      "notes": "Official field and submission guide."
+    },
+    {
+      "path": "environment/workspace/data/data_dictionary_trip_records_yellow.pdf",
+      "source": "https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf",
+      "notes": "Official Yellow Taxi data dictionary."
+    }
+  ],
+  "runtime_contract": {
+    "entrypoint": "/app/workspace/run_pipeline.sh",
+    "required_outputs": [
+      "ClickHouse table analytics.daily_borough_metrics",
+      "ClickHouse table analytics.top_zone_routes",
+      "/app/workspace/output/summary.json"
+    ]
+  },
+  "intended_failures": [
+    "The initial loader silently skips February because it assumes airport_fee instead of Airport_fee.",
+    "The initial route ranking computes a single global top 20 instead of top 20 per month."
+  ],
+  "verifier_focus": [
+    "Recompute expected metrics independently from the provided Parquet and CSV inputs.",
+    "Check summary contract, raw row counts, accepted row counts, and both month coverage.",
+    "Check exact daily_borough_metrics contents.",
+    "Check exact top_zone_routes contents and monthly ranking behavior.",
+    "Rerun the pipeline to ensure idempotence and to catch static-output shortcuts."
+  ]
+}

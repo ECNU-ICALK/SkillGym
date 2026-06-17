@@ -1,0 +1,35 @@
+version = "1.0"
+
+[metadata]
+id = "system-admin__debian-security-digest-recovery"
+name = "Template: Debian Security Digest Recovery via Interactive Console"
+description = "Recover a paused Debian Security digest publisher and complete a real publish through a TTY-only operations console."
+difficulty = "hard"
+category = "system-admin"
+tags = [
+  "system-admin",
+  "tmux",
+  "tty",
+  "interactive-cli",
+  "debian",
+  "incident-recovery",
+  "package-metadata"
+]
+required_skills = ["tmux"]
+primary_output_file = "/app/output/recovery_report.json"
+source_template_id = "system-admin__debian-security-digest-recovery"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 600.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

@@ -1,0 +1,22 @@
+paper_id	legacy_decision	legacy_exclusion_reason	legacy_reasoning_family	legacy_note
+2201.11903	include	in_scope	cot	Early manual CoT paper; keep.
+2203.11171	include	in_scope	self_consistency	Multi-path decoding paper.
+2203.14465	exclude	requires_parameter_update		Requires iterative fine-tuning.
+2205.10625	include	in_scope	decomposition	Problem decomposition method.
+2205.11916	exclude	outside_topic		Looks like a prompt tip rather than a paper worth keeping.
+2210.03350	exclude	tool_or_agent_orchestration		Self-ask seems tied to web search.
+2210.03493	include	in_scope	automatic_demonstration	Automatic demo construction.
+2210.03629	include	in_scope	decomposition	Interleaved reasoning/action looks prompt-based.
+2211.10435	exclude	tool_or_agent_orchestration		Interpreter-based execution probably out of scope.
+2211.12588	include	in_scope	program_of_thought	Executable program reasoning.
+2301.13379	exclude	outside_topic		Faithfulness analysis more than a method.
+2302.04761	exclude	requires_parameter_update		Model is trained for tools.
+2303.03103	include	in_scope	zero_shot_cot	Talks about zero-shot compositionality.
+2303.09014	exclude	tool_or_agent_orchestration		External tool orchestration.
+2304.07919	exclude	outside_scope_modality		Vision-language paper.
+2305.02317	exclude	outside_scope_modality		Visual grounding method.
+2305.04091	include	in_scope	zero_shot_cot	Plan before solving.
+2305.10601	include	in_scope	tree_search	Thought tree search.
+2307.02477	exclude	diagnostic_only		Counterfactual evaluation study.
+2307.15337	include	in_scope	decomposition	Planning answer skeleton may count as reasoning.
+2308.09687	include	in_scope	tree_search	Graph generalization of ToT.

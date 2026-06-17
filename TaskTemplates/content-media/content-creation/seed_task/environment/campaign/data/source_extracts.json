@@ -1,0 +1,32 @@
+{
+  "extracts": [
+    {
+      "source_id": "irena_stats_2025",
+      "supported_points": [
+        "2024 was the largest annual increase in renewable power capacity on record in this pack.",
+        "The annual increase and the expansion share should be treated as separate proof points."
+      ]
+    },
+    {
+      "source_id": "iea_stocktake_2025",
+      "supported_points": [
+        "The benchmark and the current ambition level should be framed as a delivery gap, not as the same number.",
+        "Permitting, grid investment, and financing are recurring deployment bottlenecks in the packaged notes."
+      ]
+    },
+    {
+      "source_id": "iea_tripling_2023",
+      "supported_points": [
+        "Solar should be treated as the main growth engine in the current expansion cycle.",
+        "The coal-generation implication belongs late in the campaign arc, not in the first sentence."
+      ]
+    },
+    {
+      "source_id": "owid_generation",
+      "supported_points": [
+        "Use the world rows for the broad generation trend and the China row for scale concentration.",
+        "Generation trend claims should stay tied to the packaged years rather than treated as timeless facts."
+      ]
+    }
+  ]
+}

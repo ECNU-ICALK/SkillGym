@@ -1,0 +1,42 @@
+{
+  "project_id": "code-quality__toolchain-release-readiness-audit",
+  "package_count": 3,
+  "packages": [
+    {
+      "package_name": "eslint",
+      "npm_version": "10.3.0",
+      "npm_license": "MIT",
+      "npm_tarball_host": "registry.npmjs.org",
+      "github_repo": "eslint/eslint",
+      "github_latest_stable_tag": "v10.3.0",
+      "github_latest_stable_published_at": "2026-05-01T15:39:48Z",
+      "github_asset_count": 0,
+      "stable_tag_matches_npm_latest": true,
+      "prerelease_present_in_window": false
+    },
+    {
+      "package_name": "prettier",
+      "npm_version": "3.8.3",
+      "npm_license": "MIT",
+      "npm_tarball_host": "registry.npmjs.org",
+      "github_repo": "prettier/prettier",
+      "github_latest_stable_tag": "3.8.3",
+      "github_latest_stable_published_at": "2026-04-15T01:00:35Z",
+      "github_asset_count": 0,
+      "stable_tag_matches_npm_latest": true,
+      "prerelease_present_in_window": false
+    },
+    {
+      "package_name": "typescript",
+      "npm_version": "6.0.3",
+      "npm_license": "Apache-2.0",
+      "npm_tarball_host": "registry.npmjs.org",
+      "github_repo": "microsoft/TypeScript",
+      "github_latest_stable_tag": "v6.0.3",
+      "github_latest_stable_published_at": "2026-04-16T23:43:08Z",
+      "github_asset_count": 1,
+      "stable_tag_matches_npm_latest": true,
+      "prerelease_present_in_window": true
+    }
+  ]
+}

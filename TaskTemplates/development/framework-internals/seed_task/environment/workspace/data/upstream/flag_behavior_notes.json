@@ -1,0 +1,24 @@
+{
+  "docsReferences": [
+    {
+      "topic": "cacheComponents",
+      "url": "https://nextjs.org/docs/app/getting-started/cache-components",
+      "note": "documents a cache-oriented experimental feature that changes route execution behavior"
+    },
+    {
+      "topic": "authInterrupts",
+      "url": "https://nextjs.org/docs/app/api-reference/config/next-config-js/authInterrupts",
+      "note": "documents an experimental next.config.js boolean option"
+    },
+    {
+      "topic": "taint",
+      "url": "https://nextjs.org/docs/app/api-reference/config/next-config-js/taint",
+      "note": "documents another experimental config flag with runtime implications"
+    }
+  ],
+  "designHints": [
+    "The task report must show one disabled and one enabled scenario.",
+    "The enabled scenario should change both build output and runtime/export output.",
+    "The route snapshot digest should flow through the report so alternate fixtures can invalidate hardcoded answers."
+  ]
+}

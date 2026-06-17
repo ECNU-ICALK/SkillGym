@@ -1,0 +1,5 @@
+# Source
+# https://raw.githubusercontent.com/prometheus/node_exporter/master/collector/fixtures/e2e-output.txt
+#
+# The full upstream fixture is large; this task keeps the source link and
+# uses synthetic local metrics services for deterministic runtime behavior.

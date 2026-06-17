@@ -1,0 +1,116 @@
+{
+  "task_id": "database-tools__rapid-transit-schema-release",
+  "category": "database-tools",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/root/output/terminal_service_gap_leaderboard.tsv",
+  "selected_skill": {
+    "dir": "database-migrations",
+    "source": "affaan-m/everything-claude-code",
+    "skillsmp_category_url": "https://skillsmp.com/categories/database-tool",
+    "skillsmp_detail_reference": "database-migrations",
+    "observed_github_stars": "174.4k to 177.6k across recent SkillsMP category/detail page variants",
+    "risk_screening": "No external account, permission grant, private credential, or sensitive operational target is required. The skill focuses on local database migration planning, schema evolution, backfills, and ordered release workflows."
+  },
+  "scenario": "building a weekday rapid-transit release package from a public GTFS snapshot, a contract file, and a local PostgreSQL workflow",
+  "user_visible_goal": "Produce a zero-filled station window panel, a terminal service-gap leaderboard, ordered migration SQL files, and release notes from the shipped GTFS inputs.",
+  "input_assets": [
+    "/root/data/gtfs/agency.txt",
+    "/root/data/gtfs/routes.txt",
+    "/root/data/gtfs/stops.txt",
+    "/root/data/gtfs/trips.txt",
+    "/root/data/gtfs/stop_times.txt",
+    "/root/data/gtfs/calendar.txt",
+    "/root/data/gtfs/calendar_dates.txt",
+    "/root/data/release_contract.json",
+    "/root/data/reference/feed_info.txt",
+    "/root/data/reference/gtfs_field_notes.md",
+    "/root/data/reference/source_manifest.json",
+    "/root/workspace/run_rapid_transit_release.py"
+  ],
+  "required_outputs": [
+    "/root/output/weekday_station_window_panel.csv",
+    "/root/output/terminal_service_gap_leaderboard.tsv",
+    "/root/output/migrations/001_raw_gtfs.sql",
+    "/root/output/migrations/002_service_core.sql",
+    "/root/output/migrations/003_release_marts.sql",
+    "/root/output/release_notes.md"
+  ],
+  "shipped_skills": [
+    "database-migrations"
+  ],
+  "task_design_intent": [
+    "Keep the instruction focused on the delivery contract, input paths, and prohibitions.",
+    "Move migration ordering discipline, replayable raw/core/mart separation, and repeatable release organization into the skill and verifier.",
+    "Make with_skill and without_skill differ only by environment/skills and the corresponding runtime copy logic."
+  ],
+  "environment_design": {
+    "shape": "single Docker container",
+    "runtime": "local PostgreSQL started inside the same container",
+    "source_tables": [
+      "raw.gtfs_agency",
+      "raw.gtfs_routes",
+      "raw.gtfs_trips",
+      "raw.gtfs_stop_times",
+      "raw.gtfs_stops",
+      "raw.gtfs_calendar",
+      "raw.gtfs_calendar_dates"
+    ],
+    "data_properties": [
+      "static local GTFS subset derived from the MBTA public Spring 2026 feed",
+      "service-calendar exceptions inside the analysis window",
+      "parent-station rollup requirements for station-level analytics",
+      "deterministic ranked outputs with reusable migration SQL"
+    ]
+  },
+  "skill_hypothesis": {
+    "with_skill": "The solver is more likely to keep migration ordering disciplined, separate raw schema creation from downstream release layers, preserve calendar exception semantics, and leave behind reusable SQL that can rebuild the release relations.",
+    "without_skill": "The solver may reach visible CSV and TSV outputs while missing one or more action-level requirements such as proper service-date expansion, trip-id plus service-date handling, ordered migration deliverables, or replayable PostgreSQL relations."
+  },
+  "verifier_design": {
+    "main_tests": [
+      "All required outputs exist, parse, and satisfy the declared file and column contracts.",
+      "weekday_station_window_panel.csv and terminal_service_gap_leaderboard.tsv are checked against an independent oracle rebuilt from the GTFS files and contract.",
+      "The migration SQL files must execute against the local PostgreSQL source tables and recreate the required relations used for verification, including replay from a fresh raw load.",
+      "release_notes.md must be traceable to the leaderboard output and include the required sections."
+    ],
+    "guardrails": [
+      "The solution must read the contract and appear to derive outputs from PostgreSQL rather than hard-coding answer rows.",
+      "Mutating the contract must change the analytical outputs in a rerun.",
+      "Repeated runs must produce stable deliverables for the same inputs.",
+      "The bound skill file, when present, must be discoverable by the runtime."
+    ],
+    "failure_target": "Without-skill failures should concentrate on action-level misses such as mishandling calendar_dates, collapsing trip_id across multiple service dates, skipping zero-fill station rows, or leaving non-replayable migration SQL."
+  },
+  "experiment_protocol": {
+    "environment": "E2B",
+    "isolation_rule": "Every experiment run must start from a fresh isolated runtime copy.",
+    "with_without_diff": "The only allowed difference is whether environment/skills is present and copied into the runtime.",
+    "runtime_hint_rule": "Only temporary with-skill runtime copies may receive a one-line reminder to use the local skill. The final template source must not contain that reminder."
+  },
+  "local_validation": {
+    "oracle_solution": "Official solution replayed in Harbor E2B oracle run database-tools-oracle-20260515_r6; verifier reward 1.0 with 10/10 tests passing."
+  },
+  "e2b_validation": {
+    "oracle_job": "oracle_20260515_r6/database-tools-oracle-20260515_r6/template_new__Knx9oSS",
+    "with_skill_jobs": [
+      "compare_20260515_r5/with/database-tools-with-skill-20260515_r5/task_with_skills_e2b__J2yzShb",
+      "compare_20260515_0140_r6/with/database-tools-with-skill-20260515_0140_r6/task_with_skills_e2b__oqXvBY2",
+      "compare_20260515_with_r8/database-tools-with-skill-20260515_r8/task_with_skills_e2b__DF2uKVZ"
+    ],
+    "without_skill_jobs": [
+      "compare_20260515_0130_r5/without/database-tools-without-skill-20260515_0130_r5/task_without_skills_e2b__o734R9v",
+      "compare_20260515_r5/without/database-tools-without-skill-20260515_r5/task_without_skills_e2b__BHepkns",
+      "compare_20260515_0140_r6/without/database-tools-without-skill-20260515_0140_r6/task_without_skills_e2b__ogLVkow"
+    ],
+    "comparison_summary": {
+      "n_effective_trials_per_arm": 3,
+      "with_skill_pass_rate": "3/3",
+      "without_skill_pass_rate": "1/3",
+      "notable_without_failures": [
+        "missing core.station_departures composite index on service_date and departure_seconds",
+        "missing raw.gtfs_stop_times composite index on trip_id and stop_sequence"
+      ]
+    }
+  }
+}

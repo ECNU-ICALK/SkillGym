@@ -1,0 +1,66 @@
+[
+  {
+    "item_id": "G-001",
+    "ingredient_id": "I001",
+    "ingredient_name": "chickpeas",
+    "grams": 360,
+    "purchased": false,
+    "reserved_event_id": "SPRING-WORKSHOP-2026"
+  },
+  {
+    "item_id": "G-002",
+    "ingredient_id": "I005",
+    "ingredient_name": "olive_oil",
+    "grams": 120,
+    "purchased": true,
+    "reserved_event_id": "SPRING-WORKSHOP-2026"
+  },
+  {
+    "item_id": "G-003",
+    "ingredient_id": "I020",
+    "ingredient_name": "brown_rice",
+    "grams": 200,
+    "purchased": false,
+    "reserved_event_id": "SPRING-WORKSHOP-2026"
+  },
+  {
+    "item_id": "G-004",
+    "ingredient_id": "I034",
+    "ingredient_name": "basil_pesto",
+    "grams": 80,
+    "purchased": true,
+    "reserved_event_id": "SPRING-WORKSHOP-2026"
+  },
+  {
+    "item_id": "G-005",
+    "ingredient_id": "I008",
+    "ingredient_name": "salmon",
+    "grams": 200,
+    "purchased": false,
+    "reserved_event_id": "PERSONAL-SUPPER"
+  },
+  {
+    "item_id": "G-006",
+    "ingredient_id": "I016",
+    "ingredient_name": "yogurt",
+    "grams": 60,
+    "purchased": true,
+    "reserved_event_id": "SPRING-WORKSHOP-2026"
+  },
+  {
+    "item_id": "G-007",
+    "ingredient_id": "I011",
+    "ingredient_name": "dill",
+    "grams": 20,
+    "purchased": false,
+    "reserved_event_id": "SPRING-WORKSHOP-2026"
+  },
+  {
+    "item_id": "G-008",
+    "ingredient_id": "I006",
+    "ingredient_name": "lemon_juice",
+    "grams": 40,
+    "purchased": true,
+    "reserved_event_id": "SPRING-WORKSHOP-2026"
+  }
+]

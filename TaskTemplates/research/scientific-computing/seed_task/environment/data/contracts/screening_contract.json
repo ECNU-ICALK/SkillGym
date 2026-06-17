@@ -1,0 +1,68 @@
+{
+  "station": {
+    "station_id": "44013",
+    "station_name": "BOSTON 16 NM East of Boston, MA"
+  },
+  "study_window": {
+    "start_date": "2024-04-01",
+    "end_date": "2024-04-30"
+  },
+  "input_selection_rules": {
+    "metadata_match_rule": "station_id_equals_contract_station",
+    "metadata_history_rule": "latest_open_ended_history",
+    "buoy_match_rule": "candidate_coverage_must_span_study_window",
+    "grid_match_rule": "candidate_time_and_spatial_coverage_must_span_selected_station"
+  },
+  "grid_selection": {
+    "history_record_rule": "latest_open_ended_history",
+    "longitude_mode": "0_to_360",
+    "distance_method": "nearest_available_grid_cell"
+  },
+  "cleaning_rules": {
+    "missing_value_sentinels": [
+      99.0,
+      999.0,
+      9999.0,
+      99999.0
+    ]
+  },
+  "daily_quality_rules": {
+    "expected_utc_hours_per_day": 24,
+    "min_distinct_utc_hours": 24,
+    "min_hour_coverage_ratio": 1.0,
+    "min_wtmp_completeness_ratio": 0.99,
+    "min_wspd_completeness_ratio": 0.99
+  },
+  "window_rules": {
+    "window_days": 3,
+    "min_daily_sst_anom_c": 1.0,
+    "min_daily_sst_anom_operator": "strictly_greater_than",
+    "top_k": 3,
+    "selection_note": "meets_contract_window_rules"
+  },
+  "output_contract": {
+    "analysis_intake_headings": [
+      "Scope",
+      "Input summary",
+      "Data issues",
+      "Overlap window",
+      "Candidate windows",
+      "Method notes"
+    ],
+    "input_summary_expected_datasets": [
+      "oisst_subset",
+      "buoy_stdmet",
+      "station_metadata",
+      "screening_contract"
+    ],
+    "analysis_ready_values": [
+      "yes",
+      "no"
+    ],
+    "severity_values": [
+      "info",
+      "warn",
+      "high"
+    ]
+  }
+}

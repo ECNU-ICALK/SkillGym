@@ -1,0 +1,15 @@
+{
+  "brief_id": "pricing",
+  "page_id": "pricing",
+  "audience": "Engineering managers and founders",
+  "approved_facts": [
+    "Acme Observe uses usage-based pricing.",
+    "Plans are intended for startup, scale-up, and platform teams.",
+    "Pricing consolidates analytics and release diagnostics in one product line."
+  ],
+  "forbidden_claims": [
+    "cheapest on the market",
+    "free forever for every use case",
+    "unlimited retention on all plans"
+  ]
+}

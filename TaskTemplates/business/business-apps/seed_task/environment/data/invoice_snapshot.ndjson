@@ -1,0 +1,6 @@
+{"account_id":"ACC-101","invoice_status":"paid","dunning_stage":"healthy","payment_attempts":0,"past_due_days":0,"autopay_enabled":true,"captured_at":"2026-05-15T07:10:00Z"}
+{"account_id":"ACC-102","invoice_status":"sent","dunning_stage":"none","payment_attempts":0,"past_due_days":0,"autopay_enabled":false,"captured_at":"2026-05-15T07:10:00Z"}
+{"account_id":"ACC-103","invoice_status":"open","dunning_stage":"attempt_1","payment_attempts":1,"past_due_days":12,"autopay_enabled":false,"captured_at":"2026-05-15T07:10:00Z"}
+{"account_id":"ACC-104","invoice_status":"open","dunning_stage":"healthy","payment_attempts":0,"past_due_days":0,"autopay_enabled":false,"captured_at":"2026-05-15T07:10:00Z"}
+{"account_id":"ACC-105","invoice_status":"paid","dunning_stage":"healthy","payment_attempts":0,"past_due_days":0,"autopay_enabled":true,"captured_at":"2026-05-15T07:10:00Z"}
+{"account_id":"ACC-106","invoice_status":"open","dunning_stage":"none","payment_attempts":0,"past_due_days":0,"autopay_enabled":false,"captured_at":"2026-05-15T07:10:00Z"}

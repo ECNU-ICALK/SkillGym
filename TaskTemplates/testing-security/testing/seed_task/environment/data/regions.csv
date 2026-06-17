@@ -1,0 +1,13 @@
+id,code,local_code,name,continent,iso_country,wikipedia_link,keywords
+302821,AE-DU,DU,Dubai Emirate,AS,AE,https://en.wikipedia.org/wiki/Dubai,Dubayy
+302969,AU-NSW,NSW,New South Wales,OC,AU,https://en.wikipedia.org/wiki/New_South_Wales,Airports in New South Wales
+303302,CA-ON,ON,Ontario,NA,CA,https://en.wikipedia.org/wiki/Ontario,Airports in Ontario
+303552,DE-HE,HE,Hesse,EU,DE,https://en.wikipedia.org/wiki/Hesse,Hessen
+306342,FR-IDF,IDF,Île-de-France,EU,FR,https://en.wikipedia.org/wiki/Île-de-France,Airports in Île-de-France
+306374,GB-ENG,ENG,England,EU,GB,https://en.wikipedia.org/wiki/England,English airports
+304298,JP-13,13,Tōkyō Prefecture,AS,JP,https://en.wikipedia.org/wiki/Tokyo,Kanto
+304939,NL-NH,NH,Noord-Holland,EU,NL,https://en.wikipedia.org/wiki/Noord-Holland,Airports in Noord-Holland
+306080,US-CA,CA,California,NA,US,https://en.wikipedia.org/wiki/California,Californian airports
+306081,US-CO,CO,Colorado,NA,US,https://en.wikipedia.org/wiki/Colorado,Airports in Colorado
+306110,US-NY,NY,New York,NA,US,https://en.wikipedia.org/wiki/New_York,Airports in New York
+306124,US-WA,WA,Washington,NA,US,https://en.wikipedia.org/wiki/Washington,Airports in Washington

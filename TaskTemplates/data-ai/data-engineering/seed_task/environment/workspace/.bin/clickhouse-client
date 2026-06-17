@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+set -euo pipefail
+exec "/home/lenovo/.clickhouse/versions/26.2.17.27/clickhouse" client --host 127.0.0.1 --port "9000" "$@"

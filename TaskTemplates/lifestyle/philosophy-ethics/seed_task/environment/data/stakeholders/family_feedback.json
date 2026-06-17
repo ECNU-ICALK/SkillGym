@@ -1,0 +1,12 @@
+{
+  "stakeholder": "families",
+  "requested_conditions": [
+    "family_notice_plan",
+    "student_opt_out",
+    "no_student_data_model_training"
+  ],
+  "notes": [
+    "Families want clear notice before student use begins.",
+    "Data reuse for model training is not acceptable."
+  ]
+}

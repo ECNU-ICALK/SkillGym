@@ -1,0 +1,75 @@
+{
+  "catalogVersion": "2026.05.05",
+  "vulnerabilities": [
+    {
+      "cveID": "CVE-2021-44228",
+      "vendorProject": "Apache",
+      "product": "Log4j2",
+      "vulnerabilityName": "Apache Log4j2 Remote Code Execution",
+      "dateAdded": "2021-12-10",
+      "dueDate": "2021-12-24",
+      "requiredAction": "Apply vendor-provided fixes or mitigations.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2024-3400",
+      "vendorProject": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "vulnerabilityName": "PAN-OS Command Injection",
+      "dateAdded": "2024-04-12",
+      "dueDate": "2024-05-03",
+      "requiredAction": "Apply vendor-provided fixes or mitigations.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2024-27198",
+      "vendorProject": "JetBrains",
+      "product": "TeamCity",
+      "vulnerabilityName": "TeamCity Authentication Bypass",
+      "dateAdded": "2024-03-04",
+      "dueDate": "2024-03-21",
+      "requiredAction": "Apply vendor-provided fixes or mitigations.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2023-3519",
+      "vendorProject": "Citrix",
+      "product": "NetScaler ADC and Gateway",
+      "vulnerabilityName": "NetScaler ADC and Gateway RCE",
+      "dateAdded": "2023-07-19",
+      "dueDate": "2023-08-09",
+      "requiredAction": "Apply vendor-provided fixes or mitigations.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2023-34362",
+      "vendorProject": "Progress",
+      "product": "MOVEit Transfer",
+      "vulnerabilityName": "MOVEit Transfer SQL Injection",
+      "dateAdded": "2023-06-02",
+      "dueDate": "2023-06-23",
+      "requiredAction": "Apply vendor-provided fixes or mitigations.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2024-21762",
+      "vendorProject": "Fortinet",
+      "product": "FortiOS",
+      "vulnerabilityName": "FortiOS SSL VPN Out-of-Bounds Write",
+      "dateAdded": "2024-02-09",
+      "dueDate": "2024-02-29",
+      "requiredAction": "Apply vendor-provided fixes or mitigations.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2024-23897",
+      "vendorProject": "Jenkins",
+      "product": "Jenkins Command Line Interface (CLI)",
+      "vulnerabilityName": "Jenkins CLI File Access",
+      "dateAdded": "2024-01-24",
+      "dueDate": "2024-02-14",
+      "requiredAction": "Apply vendor-provided fixes or mitigations.",
+      "knownRansomwareCampaignUse": "Unknown"
+    }
+  ]
+}

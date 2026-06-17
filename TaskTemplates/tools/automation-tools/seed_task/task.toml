@@ -1,0 +1,37 @@
+version = "1.0"
+
+[metadata]
+id = "automation_tools__channel_aware_changelog_delivery"
+name = "Template: Channel-Aware Changelog Delivery"
+description = "Complete bundled changelog deliverables for a CLI release using the local docs workspace, release payload, and formal generation entrypoint."
+difficulty = "hard"
+category = "automation-tools"
+tags = [
+  "automation-tools",
+  "changelog",
+  "release-notes",
+  "documentation",
+  "markdown",
+  "python",
+  "release-workflow",
+]
+required_skills = [
+  "docs-changelog",
+]
+primary_output_file = "/environment/output/release_manifest.json"
+source_template_id = "automation_tools__channel_aware_changelog_delivery"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 12288
+gpus = 0
+allow_internet = true

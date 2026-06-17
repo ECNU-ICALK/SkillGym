@@ -1,0 +1,33 @@
+version = "1.0"
+
+[metadata]
+id = "divination-mysticism__observance-slate-2026"
+name = "Observance Slate 2026"
+description = "Resolve lunar-to-Gregorian dates for candidate observances and prepare a policy-compliant 2026 studio schedule pack."
+difficulty = "hard"
+category = "divination-mysticism"
+tags = [
+  "divination-mysticism",
+  "calendar-conversion",
+  "schedule-selection",
+  "archive-inspection",
+  "evidence-packaging",
+  "local-tooling",
+]
+required_skills = ["ccal"]
+primary_output_file = "/root/answer/observance_schedule.json"
+source_template_id = "divination-mysticism__observance-slate-2026"
+task_role = "template"
+
+[verifier]
+timeout_sec = 600.0
+
+[agent]
+timeout_sec = 1000.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 12288
+gpus = 0

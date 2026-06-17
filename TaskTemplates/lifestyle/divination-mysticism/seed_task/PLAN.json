@@ -1,0 +1,207 @@
+{
+  "task_id": "divination-mysticism__observance-slate-2026",
+  "category": "divination-mysticism",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/root/answer/observance_schedule.json",
+  "selected_skill": {
+    "dir": "ccal",
+    "skillsmp_page": "https://skillsmp.com/skills/x-cmd-x-cmd-mod-ccal-skill-md",
+    "stars": "4351",
+    "selection_reason": [
+      "热门度高，能力边界清楚，集中在农历公历换算和历法数据读取。",
+      "不依赖外部私有账号、订阅权限或登录态。",
+      "可以依托公开历法数据快照和容器内本地工具链构造稳定环境。",
+      "相比八字、关系占卜、个人命盘类 skill，隐私与安全敏感度更低。"
+    ]
+  },
+  "screened_skill_families": [
+    {
+      "name": "ccal",
+      "stars": "4351",
+      "decision": "selected",
+      "notes": "公开数据快照 + 明确工具链 + 强结构化输出，适合做可验证模板任务。"
+    },
+    {
+      "name": "let-fate-decide",
+      "stars": "5.0k",
+      "decision": "not selected",
+      "notes": "题材贴近分类，但本地镜像脚本当前不可直接运行，不适合本轮模板绑定。"
+    },
+    {
+      "name": "bazi",
+      "stars": "1.3k",
+      "decision": "rejected",
+      "notes": "需要个人出生信息，敏感度更高，不优先。"
+    }
+  ],
+  "real_data_sources": [
+    {
+      "local_input": "environment/skills/ccal/SKILL.md",
+      "role": "绑定 skill 原文",
+      "source": "x-cmd ccal skill",
+      "link": "https://raw.githubusercontent.com/x-cmd/x-cmd/main/mod/ccal/SKILL.md"
+    },
+    {
+      "local_input": "environment/x-cmd-root-data/ccal/data/ccal-data-v0.0.6.tar.xz",
+      "role": "本地历法 archive",
+      "source": "x-cmd ccal-data release v0.0.6",
+      "link": "https://codeberg.org/x-cmd/ccal-data/releases/download/v0.0.6/ccal-data.tar.xz"
+    },
+    {
+      "local_input": "environment/data/reference/hko_conversion.htm",
+      "role": "公开换算参考入口",
+      "source": "Hong Kong Observatory",
+      "link": "https://www.hko.gov.hk/en/gts/time/conversion.htm"
+    },
+    {
+      "local_input": "environment/data/reference/hko_conversion_text.htm",
+      "role": "公开文字版换算入口",
+      "source": "Hong Kong Observatory",
+      "link": "https://www.hko.gov.hk/en/gts/time/conversion1_text.htm"
+    },
+    {
+      "local_input": "environment/data/reference/hko_2026e.pdf",
+      "role": "2026 年公开历书参考",
+      "source": "Hong Kong Observatory",
+      "link": "https://www.hko.gov.hk/en/gts/time/calendar/pdf/files/2026e.pdf"
+    }
+  ],
+  "task_shape": {
+    "scenario": "folk-culture studio observance scheduling",
+    "deliverables": [
+      "/root/answer/observance_schedule.json",
+      "/root/answer/date_resolution.json",
+      "/root/answer/source_audit.json",
+      "/root/answer/selection_report.md",
+      "/root/answer/evidence/"
+    ],
+    "live_chain": [
+      "environment-provisioned x command for archive inspection",
+      "preloaded ccal calendar archive under the x-cmd data root",
+      "public reference files under /root/environment/data/reference"
+    ],
+    "difficulty_rationale": [
+      "需要先做农历到公历的解析，再把运营约束和节目规则应用到候选集合上。",
+      "最终输出要同时覆盖全部候选的解析记录、最终入选方案和可复核证据文件。",
+      "可以设计 canonical archive 工作流，稳定制造 without_skill 的行动级失败风险。"
+    ]
+  },
+  "instruction_design": {
+    "principles": [
+      "题面只交代业务目标、输入材料、正式输出合同和禁止事项。",
+      "不在 instruction 中直接展开 archive 路径、命令语法或 verifier 逻辑。",
+      "保留支持证据要求，但把具体读取流程留给 skill 和 solver 自己识别。",
+      "明确禁止改动候选集、目标年份和约束定义。"
+    ],
+    "expected_solver_discovery": [
+      "识别出需要查阅绑定 skill，或手动重建其历法读取工作流。",
+      "识别出仅靠公开参考材料不够高效，最好使用环境内已 provision 的 archive 工具链。",
+      "在日期解析、候选过滤、证据整理和交付合同之间收敛出一套完整交付包。"
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "输出文件存在且 schema 正确",
+      "按 archive 数据重算全部候选日期与 weekday",
+      "按 policy 和 ops 约束重算最终 4 个入选节俗活动",
+      "证据文件、resolution、schedule 和 report 之间保持一致"
+    ],
+    "guardrails": [
+      "x command access log 必须证明 solver 走过 canonical archive 读取链路",
+      "公开输入、x archive 和本地工具文件不得被修改",
+      "skill consultation check 保持可选，without_skill 仍能正常启动和结算",
+      "全部测试点都必须执行，不能中途退出"
+    ],
+    "without_skill_failure_target": "without_skill 至少保留一项行动级失败，优先是没有走 canonical archive workflow、未解析全量候选、选错活动、缺证据文件，或 cross-file 不一致。"
+  },
+  "environment_constraints": {
+    "container_shape": "single Docker container",
+    "runtime_rule": "with_skill 和 without_skill 的唯一区别只能来自 environment/skills 及其对应 runtime 复制逻辑",
+    "skill_handling": "绑定 skill 只原样复制，不改写 skill 内容",
+    "e2b_rule": "后续每次 E2B 实验都必须从新的隔离 runtime 副本启动"
+  },
+  "experiment_results": {
+    "oracle": {
+      "status": "local-verifier-pass",
+      "notes": [
+        "官方解在当前 verifier 上通过。",
+        "最终对照实验口径以 E2B task-level 结果为准。"
+      ]
+    },
+    "with_skill": {
+      "n_valid_trials": 3,
+      "pass_rate": "100%",
+      "average_agent_seconds": 490.6,
+      "average_input_output_tokens": 1053043.7,
+      "trials": [
+        {
+          "job": "divination_ccal_pair7_20260505_031252_with",
+          "trial": "task_with_skills_e2b__BHs5y2U",
+          "reward": 1.0,
+          "agent_seconds": 419.8,
+          "input_output_tokens": 1064289
+        },
+        {
+          "job": "divination_ccal_pair9_20260505_032910_with",
+          "trial": "task_with_skills_e2b__neNCg8H",
+          "reward": 1.0,
+          "agent_seconds": 433.1,
+          "input_output_tokens": 797039
+        },
+        {
+          "job": "divination_ccal_pair11_20260505_034206_with",
+          "trial": "task_with_skills_e2b__CUrSreL",
+          "reward": 1.0,
+          "agent_seconds": 618.9,
+          "input_output_tokens": 1297803
+        }
+      ]
+    },
+    "without_skill": {
+      "n_valid_trials": 3,
+      "pass_rate": "0%",
+      "average_agent_seconds": 462.1,
+      "average_input_output_tokens": 1086519.7,
+      "dominant_failure_mode": "绕开 canonical archive workflow，未产生 `x zuz cat` access log，最终落在 action-level guardrail 失败。",
+      "trials": [
+        {
+          "job": "divination_ccal_pair6_20260505_031234_without",
+          "trial": "task_without_skills_e2b__FwfzoTX",
+          "reward": 0.0,
+          "agent_seconds": 663.4,
+          "input_output_tokens": 1458577,
+          "failed_tests": [
+            "test_outputs.py::test_evidence_files_match_selected_rows",
+            "test_guardrails.py::test_outputs_are_not_shortcuts",
+            "test_guardrails.py::test_solver_used_canonical_archive_chain_before_verifier"
+          ]
+        },
+        {
+          "job": "divination_ccal_pair8_20260505_032909_without",
+          "trial": "task_without_skills_e2b__DhpLbjF",
+          "reward": 0.0,
+          "agent_seconds": 363.9,
+          "input_output_tokens": 697336,
+          "failed_tests": [
+            "test_outputs.py::test_evidence_files_match_selected_rows",
+            "test_guardrails.py::test_outputs_are_not_shortcuts",
+            "test_guardrails.py::test_solver_used_canonical_archive_chain_before_verifier"
+          ]
+        },
+        {
+          "job": "divination_ccal_pair10_20260505_034205_without",
+          "trial": "task_without_skills_e2b__xwq6qCS",
+          "reward": 0.0,
+          "agent_seconds": 358.9,
+          "input_output_tokens": 1103646,
+          "failed_tests": [
+            "test_guardrails.py::test_outputs_are_not_shortcuts",
+            "test_guardrails.py::test_solver_used_canonical_archive_chain_before_verifier"
+          ]
+        }
+      ]
+    }
+  },
+  "status": "validated"
+}

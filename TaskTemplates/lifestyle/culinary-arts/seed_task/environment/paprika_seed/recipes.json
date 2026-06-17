@@ -1,0 +1,152 @@
+[
+  {
+    "uid": "PR-L1",
+    "name": "Lemon Herb Chickpea Salad",
+    "category": "Lunch",
+    "servings": 4,
+    "tags": ["vegetarian", "spring", "make-ahead"],
+    "total_time_min": 20,
+    "source_url": "https://www.themediterraneandish.com/chickpea-salad/",
+    "nutrition_per_serving": {
+      "kcal": 430,
+      "protein_g": 18,
+      "carbs_g": 38,
+      "fat_g": 22,
+      "fiber_g": 11
+    },
+    "ingredients": [
+      {"ingredient_id": "I001", "ingredient_name": "chickpeas", "grams": 480},
+      {"ingredient_id": "I002", "ingredient_name": "cucumber", "grams": 150},
+      {"ingredient_id": "I003", "ingredient_name": "tomato", "grams": 180},
+      {"ingredient_id": "I004", "ingredient_name": "parsley", "grams": 20},
+      {"ingredient_id": "I005", "ingredient_name": "olive_oil", "grams": 35},
+      {"ingredient_id": "I006", "ingredient_name": "lemon_juice", "grams": 40},
+      {"ingredient_id": "I007", "ingredient_name": "feta", "grams": 120}
+    ]
+  },
+  {
+    "uid": "PR-D1",
+    "name": "Roasted Salmon Orzo Tray",
+    "category": "Dinner",
+    "servings": 4,
+    "tags": ["seafood", "tray-bake", "spring"],
+    "total_time_min": 35,
+    "source_url": "https://www.bbcgoodfood.com/recipes/orzo-salmon-traybake",
+    "nutrition_per_serving": {
+      "kcal": 610,
+      "protein_g": 39,
+      "carbs_g": 34,
+      "fat_g": 31,
+      "fiber_g": 4
+    },
+    "ingredients": [
+      {"ingredient_id": "I008", "ingredient_name": "salmon", "grams": 520},
+      {"ingredient_id": "I009", "ingredient_name": "orzo", "grams": 280},
+      {"ingredient_id": "I010", "ingredient_name": "zucchini", "grams": 250},
+      {"ingredient_id": "I011", "ingredient_name": "dill", "grams": 12},
+      {"ingredient_id": "I005", "ingredient_name": "olive_oil", "grams": 30},
+      {"ingredient_id": "I006", "ingredient_name": "lemon_juice", "grams": 30},
+      {"ingredient_id": "I012", "ingredient_name": "spinach", "grams": 120}
+    ]
+  },
+  {
+    "uid": "PR-L2",
+    "name": "Turkey White Bean Wrap Bowls",
+    "category": "Lunch",
+    "servings": 4,
+    "tags": ["high-protein", "meal-prep", "spring"],
+    "total_time_min": 25,
+    "source_url": "https://www.eatingwell.com/recipe/275923/white-bean-turkey-bowls/",
+    "nutrition_per_serving": {
+      "kcal": 540,
+      "protein_g": 41,
+      "carbs_g": 39,
+      "fat_g": 22,
+      "fiber_g": 10
+    },
+    "ingredients": [
+      {"ingredient_id": "I013", "ingredient_name": "turkey", "grams": 420},
+      {"ingredient_id": "I014", "ingredient_name": "white_beans", "grams": 400},
+      {"ingredient_id": "I015", "ingredient_name": "romaine", "grams": 180},
+      {"ingredient_id": "I003", "ingredient_name": "tomato", "grams": 160},
+      {"ingredient_id": "I016", "ingredient_name": "yogurt", "grams": 100},
+      {"ingredient_id": "I017", "ingredient_name": "whole_wheat_wrap", "grams": 240},
+      {"ingredient_id": "I005", "ingredient_name": "olive_oil", "grams": 20}
+    ]
+  },
+  {
+    "uid": "PR-D2",
+    "name": "Miso Tofu Broccoli Rice",
+    "category": "Dinner",
+    "servings": 4,
+    "tags": ["vegetarian", "weeknight", "umami"],
+    "total_time_min": 30,
+    "source_url": "https://www.feastingathome.com/miso-tofu-bowls/",
+    "nutrition_per_serving": {
+      "kcal": 520,
+      "protein_g": 26,
+      "carbs_g": 49,
+      "fat_g": 20,
+      "fiber_g": 7
+    },
+    "ingredients": [
+      {"ingredient_id": "I018", "ingredient_name": "tofu", "grams": 560},
+      {"ingredient_id": "I019", "ingredient_name": "broccoli", "grams": 400},
+      {"ingredient_id": "I020", "ingredient_name": "brown_rice", "grams": 260},
+      {"ingredient_id": "I021", "ingredient_name": "miso", "grams": 45},
+      {"ingredient_id": "I022", "ingredient_name": "sesame_oil", "grams": 18},
+      {"ingredient_id": "I023", "ingredient_name": "scallion", "grams": 35},
+      {"ingredient_id": "I024", "ingredient_name": "soy_sauce", "grams": 20},
+      {"ingredient_id": "I025", "ingredient_name": "carrot", "grams": 140}
+    ]
+  },
+  {
+    "uid": "PR-L3",
+    "name": "Lentil Quinoa Picnic Jars",
+    "category": "Lunch",
+    "servings": 4,
+    "tags": ["vegetarian", "portable", "fiber-forward"],
+    "total_time_min": 25,
+    "source_url": "https://www.loveandlemons.com/quinoa-lentil-salad/",
+    "nutrition_per_serving": {
+      "kcal": 500,
+      "protein_g": 22,
+      "carbs_g": 50,
+      "fat_g": 24,
+      "fiber_g": 12
+    },
+    "ingredients": [
+      {"ingredient_id": "I026", "ingredient_name": "lentils", "grams": 420},
+      {"ingredient_id": "I027", "ingredient_name": "quinoa", "grams": 240},
+      {"ingredient_id": "I028", "ingredient_name": "arugula", "grams": 90},
+      {"ingredient_id": "I025", "ingredient_name": "carrot", "grams": 130},
+      {"ingredient_id": "I029", "ingredient_name": "pumpkin_seeds", "grams": 70},
+      {"ingredient_id": "I005", "ingredient_name": "olive_oil", "grams": 26},
+      {"ingredient_id": "I030", "ingredient_name": "apple_cider_vinegar", "grams": 24}
+    ]
+  },
+  {
+    "uid": "PR-D3",
+    "name": "Chicken Pesto Potatoes",
+    "category": "Dinner",
+    "servings": 4,
+    "tags": ["high-protein", "sheet-pan", "comfort"],
+    "total_time_min": 40,
+    "source_url": "https://www.delish.com/cooking/recipe-ideas/a28625784/sheet-pan-pesto-chicken-recipe/",
+    "nutrition_per_serving": {
+      "kcal": 645,
+      "protein_g": 42,
+      "carbs_g": 34,
+      "fat_g": 35,
+      "fiber_g": 5
+    },
+    "ingredients": [
+      {"ingredient_id": "I031", "ingredient_name": "chicken_thigh", "grams": 560},
+      {"ingredient_id": "I032", "ingredient_name": "baby_potato", "grams": 500},
+      {"ingredient_id": "I033", "ingredient_name": "green_beans", "grams": 280},
+      {"ingredient_id": "I034", "ingredient_name": "basil_pesto", "grams": 120},
+      {"ingredient_id": "I005", "ingredient_name": "olive_oil", "grams": 18},
+      {"ingredient_id": "I035", "ingredient_name": "parmesan", "grams": 50}
+    ]
+  }
+]

@@ -1,0 +1,145 @@
+{
+  "task_id": "cloud__terraform-shared-vpc-module-library",
+  "category": "cloud",
+  "design_status": "completed",
+  "selected_skill": {
+    "name": "terraform-module-library",
+    "local_path": "environment/skills/22__terraform-module-library/SKILL.md",
+    "source_skill_path": "/home/lenovo/skill/Harbor/skill_moban/devops/cloud/skills/22__terraform-module-library/SKILL.md",
+    "skillsmp_reference": "terraform-module-library",
+    "skillsmp_stars": "35.5k",
+    "selection_reason": "This skill directly matches a construction task for a reusable Terraform module library, can be fully simulated in a single container, does not require private cloud accounts, and is easy to verify through real Terraform planning and multi-environment module consumption."
+  },
+  "design_goals": [
+    "Keep the task as a construction task rather than a repair or incident prompt.",
+    "Keep with-skill and without-skill identical except for environment/skills and the runtime skill-copy logic.",
+    "Force action-level Terraform work around shared module extraction, interface design, variable validation, outputs, examples, and multi-environment consumption."
+  ],
+  "input_data": [
+    {
+      "path": "environment/data/environment_blueprints/staging.json",
+      "source": "https://github.com/terraform-aws-modules/terraform-aws-vpc",
+      "notes": "Deterministic staging VPC blueprint shaped after common terraform-aws-vpc usage patterns and AWS VPC subnet topology guidance."
+    },
+    {
+      "path": "environment/data/environment_blueprints/prod.json",
+      "source": "https://github.com/terraform-aws-modules/terraform-aws-vpc",
+      "notes": "Deterministic production VPC blueprint with a different NAT strategy and AZ count to require reuse rather than one-off hardcoding."
+    },
+    {
+      "path": "environment/data/module_contract.json",
+      "source": "https://developer.hashicorp.com/terraform/language/modules/develop",
+      "notes": "Module interface contract derived from Terraform module development guidance and reusable module expectations."
+    },
+    {
+      "path": "environment/data/eks_subnet_tag_contract.json",
+      "source": "https://docs.aws.amazon.com/eks/latest/userguide/tag-subnets-auto.html",
+      "notes": "Official EKS subnet tag semantics reflected into deterministic contract data."
+    },
+    {
+      "path": "environment/data/platform_tags.json",
+      "source": "https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html",
+      "notes": "Platform tag contract shaped after AWS tagging best practices."
+    }
+  ],
+  "task_shape": {
+    "runtime": "single container with Terraform CLI and local repository workspace",
+    "solver_action": "author a shared Terraform AWS VPC module library and migrate multiple environments to consume it",
+    "required_outputs": [
+      "/root/environment/workspace/terraform-modules/aws/vpc/main.tf",
+      "/root/environment/workspace/terraform-modules/aws/vpc/variables.tf",
+      "/root/environment/workspace/terraform-modules/aws/vpc/outputs.tf",
+      "/root/environment/workspace/terraform-modules/aws/vpc/versions.tf",
+      "/root/environment/workspace/terraform-modules/aws/vpc/README.md",
+      "/root/environment/workspace/examples/complete/"
+    ]
+  },
+  "intended_failures": [
+    "Naive solutions keep direct aws_vpc or aws_subnet resources inside live/staging and live/prod instead of extracting a shared module.",
+    "Naive solutions build a module that only matches one environment and hardcodes a fixed AZ count or NAT topology.",
+    "Naive solutions omit EKS subnet tags, platform tags, or required outputs because they only focus on resource creation.",
+    "Naive solutions skip examples, version constraints, variable validation, or module-facing documentation."
+  ],
+  "verifier_focus": [
+    "Validate that staging and prod both consume the same shared module path and no longer own the core network resources directly.",
+    "Validate Terraform formatting, initialization, validation, and planning through the real repository entrypoints.",
+    "Inspect planned resources to confirm subnet counts, route behavior, NAT strategy, and EKS/platform tags for both visible blueprints.",
+    "Create a hidden QA root invocation from an alternate blueprint to catch environment-specific hardcoding.",
+    "Check that the module structure includes variables, outputs, version constraints, examples, and module documentation."
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime skill-copy logic may differ between with-skill and without-skill variants.",
+  "iteration_notes": [
+    "Do not modify the selected skill.",
+    "Do not change instruction, tests, data, dependencies, or runtime logic between with-skill and without-skill variants.",
+    "without-skill failure should remain action-level, not a mere formatting mismatch.",
+    "README comparison metrics must be filled only after completed task-level experiments."
+  ],
+  "final_validation": {
+    "oracle": {
+      "job_dir": "/home/lenovo/.tmp_harbor_jobs_cloud_template_oracle_20260502_013550/cloud-template-oracle-final",
+      "trial_name": "task_oracle_e2b__Kz8aGUA",
+      "reward": 1.0,
+      "status": "passed"
+    },
+    "comparative_runs": {
+      "n_effective_runs_per_variant": 3,
+      "with_skill": [
+        {
+          "job_dir": "/home/lenovo/.tmp_harbor_jobs_cloud_template_20260502_011256/cloud-template-with-1",
+          "trial_name": "task_with_skills_e2b__xAiCk52",
+          "reward": 1.0,
+          "agent_execution_sec": 406.224857,
+          "total_tokens": 1273511
+        },
+        {
+          "job_dir": "/home/lenovo/.tmp_harbor_jobs_cloud_template_with2_20260502_013535/cloud-template-with-2",
+          "trial_name": "task_with_skills_e2b__g2BH9HM",
+          "reward": 1.0,
+          "agent_execution_sec": 342.483718,
+          "total_tokens": 803623
+        },
+        {
+          "job_dir": "/home/lenovo/.tmp_harbor_jobs_cloud_template_with3_20260502_014147/cloud-template-with-3",
+          "trial_name": "task_with_skills_e2b__iPE6VKo",
+          "reward": 1.0,
+          "agent_execution_sec": 298.068145,
+          "total_tokens": 614882
+        }
+      ],
+      "without_skill": [
+        {
+          "job_dir": "/home/lenovo/.tmp_harbor_jobs_cloud_template_20260502_011256/cloud-template-without-1",
+          "trial_name": "task_without_skills_e2b__s8pbd5q",
+          "reward": 0.0,
+          "agent_execution_sec": 666.814669,
+          "total_tokens": 1365059
+        },
+        {
+          "job_dir": "/home/lenovo/.tmp_harbor_jobs_cloud_template_without2_20260502_013535/cloud-template-without-2",
+          "trial_name": "task_without_skills_e2b__MyJUVBN",
+          "reward": 0.0,
+          "agent_execution_sec": 444.117104,
+          "total_tokens": 820178
+        },
+        {
+          "job_dir": "/home/lenovo/.tmp_harbor_jobs_cloud_template_without3_20260502_014147/cloud-template-without-3",
+          "trial_name": "task_without_skills_e2b__uXobdjU",
+          "reward": 0.0,
+          "agent_execution_sec": 383.821977,
+          "total_tokens": 746084
+        }
+      ],
+      "summary": {
+        "with_skill_pass_rate": "3/3",
+        "without_skill_pass_rate": "0/3",
+        "with_skill_avg_agent_execution_sec": 348.925573,
+        "without_skill_avg_agent_execution_sec": 498.25125,
+        "with_skill_avg_total_tokens": 897338.666667,
+        "without_skill_avg_total_tokens": 977107,
+        "time_reduction_pct_with_skill": 29.969955,
+        "token_ratio_without_over_with": 1.088894
+      },
+      "without_skill_failure_mode": "Action-level failure. The solver builds providerless Terraform, but misses the verifier-critical terraform_data blueprint semantics, especially subnet and route-table input.kind/input.tier modeling, so both visible plans and the hidden QA plan fail."
+    }
+  }
+}

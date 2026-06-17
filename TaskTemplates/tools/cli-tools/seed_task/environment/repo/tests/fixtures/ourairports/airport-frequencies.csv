@@ -1,0 +1,4 @@
+id,airport_ref,airport_ident,type,description,frequency_mhz
+1,1,KJFK,TWR,Tower,123.9
+2,1,KJFK,GND,Ground,121.9
+3,2,KLAX,TWR,Tower,120.95

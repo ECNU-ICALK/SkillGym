@@ -1,0 +1,18 @@
+{
+  "source": "ChEMBL target endpoint",
+  "row": {
+    "target_chembl_id": "CHEMBL203",
+    "pref_name": "Epidermal growth factor receptor",
+    "organism": "Homo sapiens",
+    "target_type": "SINGLE PROTEIN",
+    "component_count": 1,
+    "target_components": [
+      {
+        "accession": "P00533",
+        "component_description": "Epidermal growth factor receptor",
+        "component_type": "PROTEIN",
+        "relationship": "SINGLE PROTEIN"
+      }
+    ]
+  }
+}

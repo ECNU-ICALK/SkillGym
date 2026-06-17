@@ -1,0 +1,26 @@
+{
+  "preferred_style_tags": [
+    "workflow",
+    "automation",
+    "deployment",
+    "observability",
+    "infra"
+  ],
+  "weights": {
+    "brandability": 0.33,
+    "pronounceability": 0.24,
+    "developer_fit": 0.31,
+    "style_match_per_hit": 0.12
+  },
+  "tld_bonus": {
+    "com": 0.58,
+    "ai": 0.52,
+    "tech": 0.40,
+    "xyz": 0.26
+  },
+  "length_bonus_rules": [
+    { "min": 8, "max": 10, "bonus": 0.16 },
+    { "min": 11, "max": 12, "bonus": 0.08 },
+    { "min": 13, "max": 14, "bonus": 0.00 }
+  ]
+}

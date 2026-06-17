@@ -1,0 +1,7 @@
+{
+  "id": "jsconf_event_loop",
+  "description_sentences": [
+    "Philip Roberts visualizes the event loop so queued callbacks and Promise timing become much easier to reason about.",
+    "Watch it when you want the runtime model behind async JavaScript instead of just surface syntax."
+  ]
+}

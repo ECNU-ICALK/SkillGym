@@ -1,0 +1,49 @@
+{
+  "doc_id": "ai_overview",
+  "title": "AI Code Editor Documentation - Zed",
+  "url": "https://raw.githubusercontent.com/zed-industries/zed/main/docs/src/ai/overview.md",
+  "document_type": "docs",
+  "snapshot_note": "Structured fact packet distilled from Zed's public AI overview documentation.",
+  "facts": [
+    {
+      "fact_id": "ai_overview.editor_identity",
+      "statement": "Zed describes itself as an open-source AI code editor.",
+      "tags": ["positioning", "product"]
+    },
+    {
+      "fact_id": "ai_overview.agentic_editing",
+      "statement": "Zed says AI runs throughout the editing experience, including agents that read and write code, inline transformations, code completions on every keystroke, and conversations with models in any buffer.",
+      "tags": ["ai", "features"]
+    },
+    {
+      "fact_id": "ai_overview.native_rust",
+      "statement": "Zed says its AI features run inside a native, GPU-accelerated application built in Rust.",
+      "tags": ["architecture", "performance"]
+    },
+    {
+      "fact_id": "ai_overview.no_electron",
+      "statement": "Zed says there is no Electron layer between the user and the model output.",
+      "tags": ["architecture"]
+    },
+    {
+      "fact_id": "ai_overview.multi_model",
+      "statement": "Zed supports hosted models or bring-your-own API keys from Anthropic, OpenAI, Google, Ollama, and more than eight other providers.",
+      "tags": ["providers", "models"]
+    },
+    {
+      "fact_id": "ai_overview.external_agents",
+      "statement": "Zed says users can run Claude Agent, Gemini CLI, Codex, and other CLI-based agents directly in Zed through the Agent Client Protocol.",
+      "tags": ["external_agents", "protocols"]
+    },
+    {
+      "fact_id": "ai_overview.privacy_opt_in",
+      "statement": "Zed says AI data sharing is opt-in.",
+      "tags": ["privacy"]
+    },
+    {
+      "fact_id": "ai_overview.threads_sidebar",
+      "statement": "The Threads Sidebar is where users organize agent work and can run multiple threads at once.",
+      "tags": ["ui", "agents"]
+    }
+  ]
+}

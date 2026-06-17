@@ -1,0 +1,7 @@
+service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+DIV20262-hms26fi1-Weekday-01,0,0,0,0,1,0,0,20260515,20260515
+DIV20262-hms26rs1-Weekday-01,0,0,0,1,0,0,0,20260514,20260514
+RTL20262-hmb26fr1-Weekday-01,0,0,0,0,1,0,0,20260508,20260612
+RTL20262-hmo26fr1-Weekday-01,0,0,0,0,1,0,0,20260508,20260612
+RTL20262-hms26011-Weekday-01,1,1,1,1,0,0,0,20260505,20260611
+SpringWeekday,1,1,1,1,0,0,0,20260505,20260611

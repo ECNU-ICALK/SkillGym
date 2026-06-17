@@ -1,0 +1,9 @@
+{
+  "draft_ready": false,
+  "last_error": "recovery run left the pipeline paused and a stale draft lock still blocks publication",
+  "pipeline_mode": "paused",
+  "published": false,
+  "recovery_owner_session_id": "",
+  "snapshot_id": "20240311T000000Z",
+  "stale_lock": true
+}

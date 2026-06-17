@@ -1,0 +1,88 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import fnmatch
+import io
+import json
+import lzma
+import os
+import sys
+import tarfile
+from datetime import datetime, timezone
+from pathlib import Path
+
+
+ACCESS_LOG = Path(os.environ.get("CCAL_ACCESS_LOG", "/var/log/ccal/access.log"))
+
+
+def usage() -> int:
+    print("usage: x zuz cat <archive> <member-pattern>", file=sys.stderr)
+    print("       x ccal lunar update", file=sys.stderr)
+    return 1
+
+
+def append_record(record: dict[str, object]) -> None:
+    ACCESS_LOG.parent.mkdir(parents=True, exist_ok=True)
+    with ACCESS_LOG.open("a", encoding="utf-8") as fh:
+        fh.write(json.dumps(record, ensure_ascii=True) + "\n")
+
+
+def read_archive(archive_path: str, member_pattern: str) -> int:
+    archive = Path(archive_path)
+    if not archive.exists():
+        print(f"archive not found: {archive}", file=sys.stderr)
+        return 2
+
+    with lzma.open(archive, "rb") as compressed:
+        payload = compressed.read()
+    with tarfile.open(fileobj=io.BytesIO(payload), mode="r:") as tf:
+        members = [m for m in tf.getmembers() if fnmatch.fnmatch(m.name, member_pattern)]
+        if not members:
+            print(f"no archive members matched: {member_pattern}", file=sys.stderr)
+            return 3
+        for member in members:
+            extracted = tf.extractfile(member)
+            if extracted is None:
+                continue
+            text = extracted.read().decode("utf-8")
+            sys.stdout.write(text)
+            append_record(
+                {
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                    "argv": sys.argv[1:],
+                    "archive": str(archive),
+                    "member": member.name,
+                    "pattern": member_pattern,
+                    "command": "x zuz cat"
+                }
+            )
+    return 0
+
+
+def main() -> int:
+    args = sys.argv[1:]
+    if not args or args[0] in {"-h", "--help", "help"}:
+        return usage()
+
+    if args[:3] == ["ccal", "lunar", "update"]:
+        append_record(
+            {
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "argv": sys.argv[1:],
+                "archive": None,
+                "member": None,
+                "pattern": None,
+                "command": "x ccal lunar update"
+            }
+        )
+        print("ccal archive already provisioned")
+        return 0
+
+    if len(args) == 4 and args[:2] == ["zuz", "cat"]:
+        return read_archive(args[2], args[3])
+
+    return usage()
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

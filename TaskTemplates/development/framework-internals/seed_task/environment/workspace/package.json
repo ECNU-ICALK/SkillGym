@@ -1,0 +1,18 @@
+{
+  "name": "segment-cache-flag-plumbing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "framework:dev": "tsx framework/src/cli/dev-server.ts",
+    "framework:build": "tsx framework/src/cli/build.ts",
+    "framework:report": "tsx framework/src/cli/report.ts"
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "tsx": "4.19.2",
+    "typescript": "5.8.3"
+  }
+}

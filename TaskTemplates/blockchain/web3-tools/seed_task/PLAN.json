@@ -1,0 +1,48 @@
+{
+  "task_id": "web3-tools__cross-exchange-daily-surveillance",
+  "category": "web3-tools",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/app/output/surveillance/market_report.json",
+  "selected_skill": {
+    "dir": "ccxt-python",
+    "skillsmp_name": "ccxt-python.md",
+    "stars_observed": "42.3k",
+    "reference_skillsmp_url": "https://skillsmp.com/skills/ccxt-ccxt-claude-skills-ccxt-python-skill-md",
+    "selection_rationale": "It is a high-star low-risk web3-tools skill centered on read-only exchange data work. The task depends on market discovery, native symbol handling, OHLCV normalization, and structured delivery without wallets, signing, or private account state."
+  },
+  "design_summary": {
+    "scenario": "Use the marketwatch Python workspace to produce a daily cross-exchange surveillance pack for BTC/USD and ETH/USD from a live local manifest, paginated exchange catalogs, and per-market OHLCV payloads.",
+    "skill_relevance": [
+      "The authoritative market set comes from the live manifest and paginated catalog endpoints rather than the older reference export.",
+      "Kraken uses exchange-native identifiers that must be reconciled with contract canonical symbols through alias handling.",
+      "The required metrics depend on bar-order normalization and per-market volume-unit handling before cross-exchange comparison."
+    ],
+    "data_sources": [
+      "https://raw.githubusercontent.com/bhaskatripathi/Cryptodata_Coinbase_Kraken_Binance/main/Coinbase_data_combined_v2_merged.xlsx",
+      "https://raw.githubusercontent.com/bhaskatripathi/Cryptodata_Coinbase_Kraken_Binance/main/Kraken_data_combined_v2_merged.xlsx",
+      "https://raw.githubusercontent.com/bhaskatripathi/Cryptodata_Coinbase_Kraken_Binance/main/README.md"
+    ],
+    "single_container": true
+  },
+  "verifier_focus": {
+    "main_tests": [
+      "Recompute per-market daily metrics, alert rows, and cross-exchange summaries from the task contract and fixture payloads.",
+      "Validate that the solver used the live manifest, every catalog page, and every required OHLCV endpoint before verifier traffic began.",
+      "Validate source manifest hashes, consumed file list, and record counts.",
+      "Rerun the workspace entrypoint and confirm the required artifacts remain stable."
+    ],
+    "guardrails": [
+      "Input data and hidden service files must stay unchanged.",
+      "Placeholder or truncated outputs must fail.",
+      "Output inventory is restricted to the four required delivery files.",
+      "The final outputs must be reproducible through the workspace project entrypoint."
+    ]
+  },
+  "control_condition_rule": "with_skill and without_skill must differ only by environment/skills and corresponding runtime copy behavior",
+  "experiment_status": {
+    "local_oracle": "passed",
+    "oracle_e2b": "pending",
+    "valid_comparisons": []
+  }
+}

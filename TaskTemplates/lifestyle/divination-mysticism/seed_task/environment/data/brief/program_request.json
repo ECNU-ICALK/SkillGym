@@ -1,0 +1,22 @@
+{
+  "program_name": "studio-observance-slate-2026",
+  "target_year": 2026,
+  "delivery_contract": [
+    "Resolve every candidate observance to a 2026 Gregorian date.",
+    "Select exactly four observances under the provided policy and operating limits.",
+    "Preserve enough evidence for a reviewer to recheck each selected date.",
+    "Use the provisioned calendar dataset as the working source and keep the public reference files for cross-checks."
+  ],
+  "bucket_order": [
+    "spring",
+    "early-summer",
+    "late-summer",
+    "late-autumn"
+  ],
+  "report_expectation": "The handoff note should read like a schedule recommendation for studio operators, not like a raw data dump.",
+  "manual_review_prompts": [
+    "Confirm venue staffing for the selected weekend dates.",
+    "Confirm weather fallback plans for outdoor-format events.",
+    "Confirm whether any local permit paperwork is needed before promotion."
+  ]
+}

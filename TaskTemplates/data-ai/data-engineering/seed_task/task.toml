@@ -1,0 +1,25 @@
+version = "1.0"
+
+[metadata]
+difficulty = "hard"
+category = "data-engineering"
+tags = ["clickhouse", "sql", "etl", "parquet", "analytics"]
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 4
+memory_mb = 6144
+storage_mb = 12288
+gpus = 0
+allow_internet = true
+
+[verifier.env]
+
+[solution.env]
+

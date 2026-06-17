@@ -1,0 +1,20 @@
+{
+  "canonical_formats": {
+    "buoy_stdmet": "plain_text_table",
+    "oisst_subset": "netcdf",
+    "station_metadata": "xml",
+    "screening_contract": "json"
+  },
+  "required_issue_keywords": [
+    "row",
+    "wtmp",
+    "grid"
+  ],
+  "required_issue_types": [
+    "row_structure_drops",
+    "missing_water_temperature_rows",
+    "longitude_convention_alignment"
+  ],
+  "numeric_precision_policy": "Preserve derived numeric values at full computation precision in CSV and TSV outputs; do not manually round daily or shortlist metrics.",
+  "note": "Use these labels, issue terms, and output conventions together with the local contract and selected files."
+}

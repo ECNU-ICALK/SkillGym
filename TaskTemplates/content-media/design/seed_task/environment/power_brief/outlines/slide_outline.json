@@ -1,0 +1,68 @@
+{
+  "pages": [
+    {
+      "page_id": "cover",
+      "title": "North America Power Mix Brief",
+      "key_points": [
+        "Frame the site as a compact internal review for Canada, Mexico, and the United States.",
+        "Expose the metric years used in the site.",
+        "Show the brand mark and a short subtitle."
+      ],
+      "note_summary": "This page should establish scope and data years without turning into an executive summary."
+    },
+    {
+      "page_id": "agenda",
+      "title": "Agenda",
+      "key_points": [
+        "List the required sections in contract order.",
+        "Add one short line explaining that the site uses common-year snapshots where possible."
+      ],
+      "note_summary": "Keep this page compact and directional."
+    },
+    {
+      "page_id": "snapshot",
+      "title": "Country Snapshot",
+      "key_points": [
+        "Include a comparison table for population, GDP, annual CO2, and top latest power source.",
+        "Add a short explainer under the table."
+      ],
+      "note_summary": "The table should be the main element. The explainer should interpret the comparison instead of repeating labels."
+    },
+    {
+      "page_id": "power-mix",
+      "title": "Power Mix Comparison",
+      "key_points": [
+        "Show the latest common-year power mix by source for all three countries.",
+        "Include a legend and a short interpretation."
+      ],
+      "note_summary": "This page should make the contrast across source mixes easy to scan."
+    },
+    {
+      "page_id": "emissions",
+      "title": "Emissions Trend",
+      "key_points": [
+        "Show the recent common CO2 window for all three countries.",
+        "Call out the direction of change in a short paragraph."
+      ],
+      "note_summary": "The explainer should mention the window boundaries and at least one directional takeaway."
+    },
+    {
+      "page_id": "implications",
+      "title": "Implications",
+      "key_points": [
+        "Summarize three regional takeaways in compact cards: GDP scale, lowest latest annual CO2 total, and clean-generation lead.",
+        "Include a short callout naming the bundled data sources."
+      ],
+      "note_summary": "Cards should be evidence-led, tied to the earlier pages, and clearly name the country each takeaway belongs to."
+    },
+    {
+      "page_id": "appendix",
+      "title": "Appendix",
+      "key_points": [
+        "Provide country profile notes for capital city, income level, and region.",
+        "Include a method note describing common-year handling."
+      ],
+      "note_summary": "Keep this page concise and structured."
+    }
+  ]
+}

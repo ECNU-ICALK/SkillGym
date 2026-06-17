@@ -1,0 +1,42 @@
+{
+  "lanes": [
+    {
+      "key": "portrait-studio",
+      "title": "Portrait Studio",
+      "audience": "students",
+      "departmentSlugs": [
+        "european-paintings",
+        "photographs"
+      ],
+      "summary": "Portraits and studio studies that help visitors compare media and self-fashioning."
+    },
+    {
+      "key": "cross-cultural-forms",
+      "title": "Cross-Cultural Forms",
+      "audience": "families",
+      "departmentSlugs": [
+        "asian-art"
+      ],
+      "summary": "Objects that help family visitors discuss material, decoration, and repeated forms."
+    },
+    {
+      "key": "city-temples",
+      "title": "City and Temple Sketches",
+      "audience": "travelers",
+      "departmentSlugs": [
+        "the-american-wing"
+      ],
+      "summary": "Travel-oriented works centered on site sketches and monument views."
+    },
+    {
+      "key": "costume-and-performance",
+      "title": "Costume and Performance",
+      "audience": "weekend",
+      "departmentSlugs": [
+        "photographs",
+        "modern-and-contemporary-art"
+      ],
+      "summary": "Performance, costume, and staged-image pairings for short museum visits."
+    }
+  ]
+}

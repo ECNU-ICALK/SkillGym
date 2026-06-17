@@ -1,0 +1,21 @@
+{
+  "token_id": "ampl",
+  "symbol": "AMPL",
+  "name": "Ampleforth",
+  "decimals": 9,
+  "behaviors": {
+    "missing_return_value": false,
+    "fee_on_transfer": false,
+    "balance_drift": true,
+    "blocklist_or_pause": false,
+    "upgradeable_or_replaceable": false,
+    "approval_edgecase": false,
+    "hook_or_callback_risk": false
+  },
+  "summary": "Rebasing collateral profile whose external balances can change outside transfers and whose accounting uses non-18 decimals.",
+  "source_refs": [
+    "reference/source_index.json#weird-erc20",
+    "reference/source_index.json#openzeppelin-erc4626",
+    "reference/source_index.json#eip4626"
+  ]
+}

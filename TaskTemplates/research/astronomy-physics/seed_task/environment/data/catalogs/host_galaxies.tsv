@@ -1,0 +1,3 @@
+host_id	host_name	ra_deg	dec_deg	redshift	reference_tag
+HOST-M101	M101	210.80242916666668	54.34875	0.000804	SIMBAD M101
+HOST-BKG-004	M101 background companion A	210.8060035566469	54.35222222221314	0.0025	public nearby-galaxy slice

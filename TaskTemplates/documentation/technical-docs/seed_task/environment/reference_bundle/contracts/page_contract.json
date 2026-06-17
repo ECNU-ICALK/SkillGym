@@ -1,0 +1,511 @@
+{
+  "output_file": "pqueue_api_reference.mdx",
+  "manifest_file": "reference_manifest.json",
+  "frontmatter": {
+    "title": "PQueue",
+    "nav_title": "PQueue",
+    "description_template": "API reference for the PQueue class in p-queue v{version}."
+  },
+  "source_files": [
+    "upstream/package.json",
+    "upstream/source/index.ts",
+    "upstream/source/options.ts",
+    "upstream/test/test.ts",
+    "upstream/readme.md",
+    "upstream/release_v8.1.1.html"
+  ],
+  "required_sections": [
+    "## Reference",
+    "### Constructor",
+    "### Queue options",
+    "### Task options",
+    "### Methods",
+    "### Properties",
+    "### Events",
+    "## Good to know",
+    "## Examples",
+    "## Version History"
+  ],
+  "constructor": {
+    "signature": "new PQueue(options?)",
+    "summary": "Creates a queue instance that controls how many tasks start at the same time and across an interval."
+  },
+  "queue_options": [
+    {
+      "name": "concurrency",
+      "type": "number",
+      "default": "Infinity",
+      "minimum": "1",
+      "summary": "Limits how many tasks run at the same time."
+    },
+    {
+      "name": "timeout",
+      "type": "number",
+      "default": "undefined",
+      "minimum": "",
+      "summary": "Applies a per-task timeout in milliseconds."
+    },
+    {
+      "name": "throwOnTimeout",
+      "type": "boolean",
+      "default": "false",
+      "minimum": "",
+      "summary": "Controls whether a timeout rejects instead of resolving with no value."
+    },
+    {
+      "name": "autoStart",
+      "type": "boolean",
+      "default": "true",
+      "minimum": "",
+      "summary": "Starts queued work as soon as capacity is available."
+    },
+    {
+      "name": "queueClass",
+      "type": "Function",
+      "default": "PriorityQueue",
+      "minimum": "",
+      "summary": "Supplies a queue implementation with enqueue, dequeue, and size support."
+    },
+    {
+      "name": "intervalCap",
+      "type": "number",
+      "default": "Infinity",
+      "minimum": "1",
+      "summary": "Limits how many runs can start during one interval window."
+    },
+    {
+      "name": "interval",
+      "type": "number",
+      "default": "0",
+      "minimum": "0",
+      "summary": "Defines the interval window in milliseconds."
+    },
+    {
+      "name": "carryoverConcurrencyCount",
+      "type": "boolean",
+      "default": "false",
+      "minimum": "",
+      "summary": "Counts pending tasks against the next interval window when enabled."
+    }
+  ],
+  "task_options": [
+    {
+      "name": "priority",
+      "type": "number",
+      "default": "0",
+      "summary": "Higher values are scheduled before lower values."
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "default": "auto-assigned",
+      "summary": "Identifies a queued task so its priority can be updated before execution."
+    },
+    {
+      "name": "signal",
+      "type": "AbortSignal",
+      "default": "",
+      "summary": "Cancels a queued task or notifies a running task about cancellation."
+    },
+    {
+      "name": "timeout",
+      "type": "number",
+      "default": "inherits queue timeout",
+      "summary": "Overrides the queue-level timeout for one task."
+    },
+    {
+      "name": "throwOnTimeout",
+      "type": "boolean",
+      "default": "inherits queue throwOnTimeout",
+      "summary": "Overrides timeout rejection behavior for one task."
+    }
+  ],
+  "methods": [
+    {
+      "name": "add(fn, options?)",
+      "kind": "method",
+      "required_sections": [
+        "Methods"
+      ],
+      "summary_markers": [
+        "Adds a sync or async task.",
+        "Always returns a promise.",
+        "The task receives `{signal}` as the first argument when it runs."
+      ]
+    },
+    {
+      "name": "addAll(functions, options?)",
+      "kind": "method",
+      "required_sections": [
+        "Methods"
+      ],
+      "summary_markers": [
+        "Accepts an array of sync or async functions.",
+        "Resolves when all queued functions settle."
+      ]
+    },
+    {
+      "name": "start()",
+      "kind": "method",
+      "required_sections": [
+        "Methods"
+      ],
+      "summary_markers": [
+        "Starts or resumes queued work.",
+        "Returns the queue instance."
+      ]
+    },
+    {
+      "name": "pause()",
+      "kind": "method",
+      "required_sections": [
+        "Methods"
+      ],
+      "summary_markers": [
+        "Puts queue execution on hold."
+      ]
+    },
+    {
+      "name": "clear()",
+      "kind": "method",
+      "required_sections": [
+        "Methods"
+      ],
+      "summary_markers": [
+        "Clears queued work that has not started yet."
+      ]
+    },
+    {
+      "name": "onEmpty()",
+      "kind": "method",
+      "required_sections": [
+        "Methods"
+      ],
+      "summary_markers": [
+        "Settles when the queue becomes empty."
+      ]
+    },
+    {
+      "name": "onIdle()",
+      "kind": "method",
+      "required_sections": [
+        "Methods"
+      ],
+      "summary_markers": [
+        "Settles when the queue is empty and no tasks are still pending."
+      ]
+    },
+    {
+      "name": "onSizeLessThan(limit)",
+      "kind": "method",
+      "required_sections": [
+        "Methods"
+      ],
+      "summary_markers": [
+        "Waits until `queue.size < limit`.",
+        "Counts queued tasks waiting to start."
+      ]
+    },
+    {
+      "name": "sizeBy(options)",
+      "kind": "method",
+      "required_sections": [
+        "Methods"
+      ],
+      "summary_markers": [
+        "Returns the queue size filtered by matching options.",
+        "Can be used to inspect queued work for one priority level."
+      ]
+    },
+    {
+      "name": "setPriority(id, priority)",
+      "kind": "method",
+      "required_sections": [
+        "Methods"
+      ],
+      "summary_markers": [
+        "Updates the priority of a queued task by id.",
+        "A defined concurrency limit is required for this to affect execution order."
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "name": "concurrency",
+      "kind": "property",
+      "required_sections": [
+        "Properties"
+      ],
+      "summary_markers": [
+        "Gets or sets the concurrency limit.",
+        "Values below 1 throw a TypeError."
+      ]
+    },
+    {
+      "name": "timeout",
+      "kind": "property",
+      "required_sections": [
+        "Properties"
+      ],
+      "summary_markers": [
+        "Stores the default timeout in milliseconds for future tasks."
+      ]
+    },
+    {
+      "name": "size",
+      "kind": "property",
+      "required_sections": [
+        "Properties"
+      ],
+      "summary_markers": [
+        "Counts queued items waiting to run."
+      ]
+    },
+    {
+      "name": "pending",
+      "kind": "property",
+      "required_sections": [
+        "Properties"
+      ],
+      "summary_markers": [
+        "Counts running items that are no longer in the queue."
+      ]
+    },
+    {
+      "name": "isPaused",
+      "kind": "property",
+      "required_sections": [
+        "Properties"
+      ],
+      "summary_markers": [
+        "Reports whether the queue is currently paused."
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "active",
+      "kind": "event",
+      "required_sections": [
+        "Events"
+      ],
+      "summary_markers": [
+        "Fires when a task starts running."
+      ]
+    },
+    {
+      "name": "completed",
+      "kind": "event",
+      "required_sections": [
+        "Events"
+      ],
+      "summary_markers": [
+        "Fires when a task resolves successfully."
+      ]
+    },
+    {
+      "name": "error",
+      "kind": "event",
+      "required_sections": [
+        "Events"
+      ],
+      "summary_markers": [
+        "Fires when a task rejects or throws."
+      ]
+    },
+    {
+      "name": "empty",
+      "kind": "event",
+      "required_sections": [
+        "Events"
+      ],
+      "summary_markers": [
+        "Fires when the queue becomes empty."
+      ]
+    },
+    {
+      "name": "idle",
+      "kind": "event",
+      "required_sections": [
+        "Events"
+      ],
+      "summary_markers": [
+        "Fires when all running work has completed."
+      ]
+    },
+    {
+      "name": "add",
+      "kind": "event",
+      "required_sections": [
+        "Events"
+      ],
+      "summary_markers": [
+        "Fires when work is added to the queue."
+      ]
+    },
+    {
+      "name": "next",
+      "kind": "event",
+      "required_sections": [
+        "Events"
+      ],
+      "summary_markers": [
+        "Fires when the queue moves to the next slot."
+      ]
+    }
+  ],
+  "behavior_notes": [
+    {
+      "text": "Greater `priority` values schedule before lower values while work is still queued."
+    },
+    {
+      "text": "Queue-level `timeout` can be overridden per `add()` call."
+    },
+    {
+      "text": "`onEmpty()` only tracks queued items, while `onIdle()` also waits for running tasks."
+    },
+    {
+      "text": "`carryoverConcurrencyCount` controls whether pending work counts against the next `intervalCap` window."
+    }
+  ],
+  "required_links": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal",
+    "#custom-queueclass"
+  ],
+  "intro": {
+    "opening_sentence": "`PQueue` creates a promise queue with concurrency control, rate-limiting async or sync operations, timeout handling, and queued reprioritization.",
+    "top_example_id": "basic-concurrency"
+  },
+  "required_examples": [
+    {
+      "id": "basic-concurrency",
+      "title": "Limit concurrent work",
+      "summary": "Use `concurrency` to cap how many queued tasks run at the same time.",
+      "ts_filename": "docs/01-app/03-api-reference/04-functions/pqueue-basic.ts",
+      "js_filename": "docs/01-app/03-api-reference/04-functions/pqueue-basic.js",
+      "ts_code": [
+        "import PQueue from 'p-queue';",
+        "",
+        "const queue = new PQueue({concurrency: 2});",
+        "",
+        "await Promise.all([",
+        "  queue.add(async () => fetch('https://example.com/a')),",
+        "  queue.add(async () => fetch('https://example.com/b')),",
+        "]);"
+      ],
+      "js_code": [
+        "import PQueue from 'p-queue';",
+        "",
+        "const queue = new PQueue({concurrency: 2});",
+        "",
+        "await Promise.all([",
+        "  queue.add(async () => fetch('https://example.com/a')),",
+        "  queue.add(async () => fetch('https://example.com/b')),",
+        "]);"
+      ]
+    },
+    {
+      "id": "timeout-fallback",
+      "title": "Resolve timed-out work without throwing",
+      "summary": "Use queue-level timeout defaults and a stricter per-task override.",
+      "ts_filename": "docs/01-app/03-api-reference/04-functions/pqueue-timeout.ts",
+      "js_filename": "docs/01-app/03-api-reference/04-functions/pqueue-timeout.js",
+      "ts_code": [
+        "import PQueue from 'p-queue';",
+        "import delay from 'delay';",
+        "",
+        "const queue = new PQueue({timeout: 200, throwOnTimeout: false});",
+        "",
+        "await queue.add(async () => {",
+        "  await delay(300);",
+        "  return 'late result';",
+        "});",
+        "",
+        "await queue.add(async () => {",
+        "  await delay(300);",
+        "  return 'strict result';",
+        "}, {timeout: 400, throwOnTimeout: true});"
+      ],
+      "js_code": [
+        "import PQueue from 'p-queue';",
+        "import delay from 'delay';",
+        "",
+        "const queue = new PQueue({timeout: 200, throwOnTimeout: false});",
+        "",
+        "await queue.add(async () => {",
+        "  await delay(300);",
+        "  return 'late result';",
+        "});",
+        "",
+        "await queue.add(async () => {",
+        "  await delay(300);",
+        "  return 'strict result';",
+        "}, {timeout: 400, throwOnTimeout: true});"
+      ]
+    },
+    {
+      "id": "abort-signal",
+      "title": "Cancel queued work with AbortSignal",
+      "summary": "Pass an `AbortSignal` into the queued task and react to controller aborts.",
+      "ts_filename": "docs/01-app/03-api-reference/04-functions/pqueue-abort.ts",
+      "js_filename": "docs/01-app/03-api-reference/04-functions/pqueue-abort.js",
+      "ts_code": [
+        "import PQueue from 'p-queue';",
+        "",
+        "const queue = new PQueue();",
+        "const controller = new AbortController();",
+        "",
+        "const task = queue.add(async ({signal}) => {",
+        "  signal?.throwIfAborted();",
+        "  await fetch('https://example.com/report', {signal});",
+        "}, {signal: controller.signal});",
+        "",
+        "controller.abort();",
+        "await task.catch(() => {});"
+      ],
+      "js_code": [
+        "import PQueue from 'p-queue';",
+        "",
+        "const queue = new PQueue();",
+        "const controller = new AbortController();",
+        "",
+        "const task = queue.add(async ({signal}) => {",
+        "  signal?.throwIfAborted();",
+        "  await fetch('https://example.com/report', {signal});",
+        "}, {signal: controller.signal});",
+        "",
+        "controller.abort();",
+        "await task.catch(() => {});"
+      ]
+    },
+    {
+      "id": "priority-update",
+      "title": "Reprioritize queued work before execution",
+      "summary": "Assign an `id`, enqueue work, and update its priority while it is still waiting.",
+      "ts_filename": "docs/01-app/03-api-reference/04-functions/pqueue-priority.ts",
+      "js_filename": "docs/01-app/03-api-reference/04-functions/pqueue-priority.js",
+      "ts_code": [
+        "import PQueue from 'p-queue';",
+        "",
+        "const queue = new PQueue({concurrency: 1});",
+        "",
+        "queue.add(async () => 'slow lane', {priority: 0, id: 'slow'});",
+        "queue.add(async () => 'normal lane', {priority: 0});",
+        "",
+        "queue.setPriority('slow', 2);",
+        "await queue.onIdle();"
+      ],
+      "js_code": [
+        "import PQueue from 'p-queue';",
+        "",
+        "const queue = new PQueue({concurrency: 1});",
+        "",
+        "queue.add(async () => 'slow lane', {priority: 0, id: 'slow'});",
+        "queue.add(async () => 'normal lane', {priority: 0});",
+        "",
+        "queue.setPriority('slow', 2);",
+        "await queue.onIdle();"
+      ]
+    }
+  ]
+}

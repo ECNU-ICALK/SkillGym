@@ -1,0 +1,11 @@
+{
+  "project_slug": "orbitops",
+  "allowed_tlds": ["com", "ai", "tech", "xyz"],
+  "shortlist_size": 6,
+  "runner_up_size": 2,
+  "taken_showcase_size": 5,
+  "tie_break_rules": {
+    "domain_level": ["score_desc", "tld_order", "domain_asc"],
+    "base_level": ["best_available_score_desc", "base_name_asc"]
+  }
+}

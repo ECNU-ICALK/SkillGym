@@ -1,0 +1,2439 @@
+route_id,trip_id,service_id,trip_headsign,direction_id,shape_id
+A,BFA25GEN-A047-Saturday-00_001150_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_002950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_004000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_004950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_006000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_006950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_007300_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_008000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_008650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_008950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_010000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_010650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_010950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_012000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_012650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_012950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_014000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_014200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_014650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_014950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_016000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_016200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_016650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_016950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_018000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_018200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_018650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_018950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_020000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_020200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_020650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_020950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_022000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_022200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_022650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_022950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_024000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_024200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_024650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_024950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_026000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_026200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_026650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_026950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_028000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_028200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_028650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_028950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_030000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_030200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_030650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_030950_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_032000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_032300_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_032650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_032950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_034000_A..N43R,Saturday,Euclid Av,0,A..N43R
+A,BFA25GEN-A047-Saturday-00_034650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_034700_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_034700_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_035800_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_036350_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_036650_A..S43R,Saturday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A047-Saturday-00_037100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_037950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_038250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_038650_A..S37R,Saturday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A047-Saturday-00_038950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_039100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_039750_A..S37R,Saturday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A047-Saturday-00_039950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_040250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_040950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_041100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_041500_A..S37R,Saturday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A047-Saturday-00_041950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_042250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_042950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_043100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_043950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_044250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_044950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_045100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_045950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_046250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_046950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_047100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_047950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_048250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_048950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_049100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_049950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_050250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_050950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_051100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_051950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_052250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_052950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_053100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_053950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_054250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_054950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_055100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_055950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_056250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_056950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_057100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_057950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_058250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_058950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_059100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_059950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_060250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_060950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_061100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_061950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_062250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_062950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_063100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_063950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_064250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_064950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_065100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_065950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_066250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_066950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_067100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_067950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_068250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_068950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_069100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_069950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_070250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_070950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_071100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_071950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_072250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_072950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_073100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_073950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_074250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_074950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_075100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_075950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_076250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_076950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_077100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_077950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_078250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_078950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_079100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_079950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_080250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_080950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_081100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_081950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_082250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_082950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_083100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_083950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_084250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_084950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_085100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_085950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_086250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_086950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_087100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_087950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_088250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_088950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_089100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_089950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_090250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_090950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_091100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_091950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_092250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_092950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_093100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_093950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_094250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_094950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_095100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_095950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_096250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_096950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_097100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_097950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_098250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_098950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_099100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_099950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_100250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_100950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_101100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_101950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_102250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_102950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_103100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_103950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_104250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_104950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_105100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_105950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_106250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_106950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_107100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_107950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_108250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_108950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_109100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_109950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_110250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_110950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_111100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_111950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_112250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_112950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_113100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_113950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_114250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_114950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_115100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_115950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_116250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_116950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_117100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_117950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_118250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_118950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_119100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_119950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_120250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_120950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_121100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_121950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_122250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_122950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_123100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_123950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_124250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_124950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_125100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_125950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_126250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_126950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_127100_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_127950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_128250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_128950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_129300_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_129950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_130250_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_130950_A..S58R,Saturday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A047-Saturday-00_131800_A..N55R,Saturday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A047-Saturday-00_131950_A..S57R,Saturday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A047-Saturday-00_132600_A..N54R,Saturday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A047-Saturday-00_132600_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_133700_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_133700_A..S05R,Saturday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A047-Saturday-00_134600_A..N04R,Saturday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A047-Saturday-00_135000_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_136100_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_136200_A..S05R,Saturday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A047-Saturday-00_136800_A..N04R,Saturday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A047-Saturday-00_137400_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_138500_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_138600_A..S05R,Saturday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A047-Saturday-00_139200_A..N04R,Saturday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A047-Saturday-00_139800_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_141000_A..S05R,Saturday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A047-Saturday-00_141200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_141800_A..N04R,Saturday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A047-Saturday-00_142200_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_142700_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_143000_A..N37R,Saturday,Euclid Av,0,A..N37R
+A,BFA25GEN-A047-Saturday-00_143600_A..S74R,Saturday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A047-Saturday-00_144200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_146000_A..N37R,Saturday,Euclid Av,0,A..N37R
+A,BFA25GEN-A047-Saturday-00_146200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_148200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_149700_A..S37R,Saturday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A047-Saturday-00_150200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_152200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_154200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A047-Saturday-00_156200_A..N09R,Saturday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_000950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_002950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_004000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_004950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_006000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_006950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_007350_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_008000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_008650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_008950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_010000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_010650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_010950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_012000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_012650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_012950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_014000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_014200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_014650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_014950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_016000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_016200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_016650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_016950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_018000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_018200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_018650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_018950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_020000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_020200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_020650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_020950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_022000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_022200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_022650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_022950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_024000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_024200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_024650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_024950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_026000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_026200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_026650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_026950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_028000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_028200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_028650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_028950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_030000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_030200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_030650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_030950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_032000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_032200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_032650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_032950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_034000_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_034150_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_034650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_034950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_035650_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_035900_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_036650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_036950_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_037150_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_038600_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_038650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_038900_A..N43R,Sunday,Euclid Av,0,A..N43R
+A,BFA25GEN-A055-Sunday-00_040000_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_040150_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_040650_A..S37R,Sunday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A055-Sunday-00_040700_A..N04R,Sunday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A055-Sunday-00_041750_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_042450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_042650_A..S43R,Sunday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A055-Sunday-00_043150_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_043550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_044450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_044550_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_044650_A..S37R,Sunday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A055-Sunday-00_045550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_046150_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_046300_A..S37R,Sunday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A055-Sunday-00_046450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_047350_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_047550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_048450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_048550_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_049550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_049750_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_050450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_050950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_051550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_052150_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_052450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_053350_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_053550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_054450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_054550_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_055550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_055750_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_056450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_056950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_057550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_058150_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_058450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_059350_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_059550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_060450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_060550_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_061550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_061750_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_062450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_062950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_063550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_063950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_064450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_064950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_065550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_065950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_066450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_066950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_067550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_067950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_068450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_068950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_069550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_069950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_070450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_070950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_071550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_071950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_072450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_072950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_073550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_073950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_074450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_074950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_075700_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_075950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_076450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_076950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_077550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_077950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_078450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_078950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_079550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_079950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_080450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_080950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_081550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_081950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_082450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_082950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_083550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_083950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_084450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_084950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_085550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_085950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_086450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_086950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_087550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_087950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_088450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_088950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_089550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_089950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_090450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_090950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_091550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_091950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_092450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_092950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_093550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_093950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_094450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_094950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_095550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_095950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_096450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_096950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_097550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_097950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_098450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_098950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_099550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_099950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_100450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_100950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_101550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_101950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_102450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_102950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_103550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_103950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_104450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_104950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_105550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_105950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_106450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_106950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_107550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_107950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_108450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_108950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_109550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_109950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_110450_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_110950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_111550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_111750_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_112500_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_112950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_113550_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_113950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_114900_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_114950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_115800_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_115950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_116950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_117300_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_117750_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_118200_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_118950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_119700_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_119950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_120600_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_120950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_121950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_122100_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_122950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_123000_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_123750_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_124500_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_124950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_125400_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_125950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_126900_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_126950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_127800_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_127950_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_128950_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_129550_A..N55R,Sunday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A055-Sunday-00_129750_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_130200_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_131000_A..S58R,Sunday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A055-Sunday-00_131750_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_132200_A..S57R,Sunday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A055-Sunday-00_132800_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_133150_A..N54R,Sunday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A055-Sunday-00_133950_A..S05R,Sunday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A055-Sunday-00_135000_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_135000_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_135800_A..N04R,Sunday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A055-Sunday-00_136250_A..S05R,Sunday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A055-Sunday-00_137750_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_138000_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_138800_A..N04R,Sunday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A055-Sunday-00_139150_A..S05R,Sunday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A055-Sunday-00_140450_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_141000_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_141800_A..N04R,Sunday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A055-Sunday-00_142100_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_143450_A..S74R,Sunday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A055-Sunday-00_144200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_144800_A..N04R,Sunday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A055-Sunday-00_146000_A..N37R,Sunday,Euclid Av,0,A..N37R
+A,BFA25GEN-A055-Sunday-00_146200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_148200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_149800_A..S37R,Sunday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A055-Sunday-00_150200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_152200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_154200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A055-Sunday-00_156200_A..N09R,Sunday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_001150_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_002950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_003950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_004950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_005950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_006950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_007300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_007950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_008950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_009300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_009950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_010950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_011300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_011950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_012950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_013300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_013950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_014200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_014950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_015300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_015950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_016200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_016950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_017300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_017950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_018200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_018950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_019300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_019950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_020200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_020950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_021300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_021950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_022200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_022950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_023300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_023950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_024200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_024950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_025300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_025950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_026200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_026950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_027300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_027700_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_027950_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_028950_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_029100_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_029300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_030450_A..N43R,Weekday,Euclid Av,0,A..N43R
+A,BFA25GEN-A087-Weekday-00_030900_A..S53R,Weekday,Far Rockaway-Mott Av,1,A..S53R
+A,BFA25GEN-A087-Weekday-00_031250_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_031300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_032200_A..N04R,Weekday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A087-Weekday-00_032500_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_033250_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_033300_A..S43R,Weekday,Ozone Park-Lefferts Blvd,1,A..S43R
+A,BFA25GEN-A087-Weekday-00_034050_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_034450_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_035200_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_035350_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_035450_A..S37R,Weekday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A087-Weekday-00_036300_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_036350_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_036450_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_037100_A..S37R,Weekday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A087-Weekday-00_037300_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_037800_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_038050_A..S37R,Weekday,Ozone Park-Lefferts Blvd,1,A..S37R
+A,BFA25GEN-A087-Weekday-00_038100_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_038200_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_038450_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_039250_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_039400_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_039800_A..N65R,Weekday,Inwood-207 St,0,A..N65R
+A,BFA25GEN-A087-Weekday-00_039950_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_039950_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_040100_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_040450_A..S16R,Weekday,Far Rockaway-Mott Av,1,A..S16R
+A,BFA25GEN-A087-Weekday-00_041000_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_041000_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_041050_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_041800_A..N65R,Weekday,Inwood-207 St,0,A..N65R
+A,BFA25GEN-A087-Weekday-00_041800_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_042300_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_042550_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_042650_A..S16R,Weekday,Far Rockaway-Mott Av,1,A..S16R
+A,BFA25GEN-A087-Weekday-00_042700_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_043000_A..N82R,Weekday,Dyckman St,0,A..N82R
+A,BFA25GEN-A087-Weekday-00_043250_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_043750_A..N65R,Weekday,Inwood-207 St,0,A..N65R
+A,BFA25GEN-A087-Weekday-00_043900_A..N85R,Weekday,168 St,0,A..N85R
+A,BFA25GEN-A087-Weekday-00_044050_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_044150_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_044600_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_044700_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_045000_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_045500_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_045500_A..N60R,Weekday,Dyckman St,0,A..N60R
+A,BFA25GEN-A087-Weekday-00_045550_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_045950_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_046300_A..N18R,Weekday,Dyckman St,0,A..N18R
+A,BFA25GEN-A087-Weekday-00_046450_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_047000_A..N82R,Weekday,Dyckman St,0,A..N82R
+A,BFA25GEN-A087-Weekday-00_047100_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_047150_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_047700_A..N65R,Weekday,Inwood-207 St,0,A..N65R
+A,BFA25GEN-A087-Weekday-00_047850_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_048100_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_048200_A..N85R,Weekday,168 St,0,A..N85R
+A,BFA25GEN-A087-Weekday-00_048450_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_048900_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_049050_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_049350_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_049800_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_050000_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_050300_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_050750_A..N85R,Weekday,168 St,0,A..N85R
+A,BFA25GEN-A087-Weekday-00_050900_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_051050_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_051450_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_051900_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_051900_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_052300_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_052350_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_052400_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_053200_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_053800_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_053800_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_053850_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_054400_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_054900_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_055350_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_055650_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_055800_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_056150_A..S51R,Weekday,Euclid Av,1,A..S51R
+A,BFA25GEN-A087-Weekday-00_056600_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_056800_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_056950_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_057500_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_057550_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_057700_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_058450_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_059100_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_059200_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_059350_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_059950_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_060350_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_060700_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_060900_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_061050_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_061500_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_062300_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_062400_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_062900_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_063100_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_063900_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_064050_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_064150_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_064700_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_065500_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_065800_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_065850_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_066300_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_067100_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_067300_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_067500_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_067950_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_068800_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_069000_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_069050_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_069500_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_070300_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_070500_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_070500_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_071100_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_071900_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_072050_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_072150_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_072700_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_073500_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_073600_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_073750_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_074300_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_075100_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_075200_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_075300_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_075900_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_076700_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_076700_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_076900_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_077500_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_078300_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_078450_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_078500_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_079100_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_079900_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_080000_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_080000_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_080700_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_081450_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_081500_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_081500_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_082300_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_082900_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_083000_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_083100_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_083900_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_084400_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_084450_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_084700_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_085500_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_085850_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_085950_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_086350_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_087100_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_087450_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_087450_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_087800_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_088500_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_088950_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_089000_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_089300_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_089800_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_090400_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_090500_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_090650_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_091400_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_091900_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_092000_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_092100_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_093000_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_093200_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_093350_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_093800_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_094450_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_094800_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_094850_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_094900_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_095900_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_095950_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_095950_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_096150_A..S87R,Weekday,Rockaway Park-Beach 116 St,1,A..S87R
+A,BFA25GEN-A087-Weekday-00_096350_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_096450_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_097100_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_097400_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_097700_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_097850_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_098450_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_098450_A..S70R,Weekday,Ozone Park-Lefferts Blvd,1,A..S70R
+A,BFA25GEN-A087-Weekday-00_098500_A..S87R,Weekday,Rockaway Park-Beach 116 St,1,A..S87R
+A,BFA25GEN-A087-Weekday-00_098850_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_098950_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_099650_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_099850_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_100150_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_100250_A..S56R,Weekday,Far Rockaway-Mott Av,1,A..S56R
+A,BFA25GEN-A087-Weekday-00_100350_A..S87R,Weekday,Rockaway Park-Beach 116 St,1,A..S87R
+A,BFA25GEN-A087-Weekday-00_100400_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_100900_A..S56R,Weekday,Far Rockaway-Mott Av,1,A..S56R
+A,BFA25GEN-A087-Weekday-00_101100_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_101250_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_101400_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_101750_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_102250_A..S87R,Weekday,Rockaway Park-Beach 116 St,1,A..S87R
+A,BFA25GEN-A087-Weekday-00_102350_A..S70R,Weekday,Ozone Park-Lefferts Blvd,1,A..S70R
+A,BFA25GEN-A087-Weekday-00_102500_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_102850_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_102950_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_103000_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_103650_A..S78R,Weekday,Rockaway Park-Beach 116 St,1,A..S78R
+A,BFA25GEN-A087-Weekday-00_103850_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_104450_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_104450_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_104950_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_105050_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_105550_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_106000_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_106000_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_106550_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_106600_A..S51R,Weekday,Euclid Av,1,A..S51R
+A,BFA25GEN-A087-Weekday-00_106750_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_107200_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_107600_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_107850_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_108200_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_108200_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_108600_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_109100_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_109200_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_109350_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_109750_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_109850_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_110250_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_110800_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_110800_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_111200_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_111500_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_112100_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_112600_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_112650_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_112700_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_113250_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_113900_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_114150_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_114300_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_114600_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_115250_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_115700_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_115850_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_115900_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_116500_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_117150_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_117400_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_117500_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_117650_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_118300_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_118900_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_118950_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_119100_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_119500_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_120200_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_120500_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_120700_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_120900_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_121700_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_122150_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_122350_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_122650_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_123600_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_123750_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_124150_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_124700_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_125450_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_125700_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_126100_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_126800_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_126900_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_127600_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_127900_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_128050_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_128950_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_129250_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_130300_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_130550_A..N55R,Weekday,Inwood-207 St,0,A..N55R
+A,BFA25GEN-A087-Weekday-00_131450_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_131450_A..N58R,Weekday,Euclid Av,0,A..N58R
+A,BFA25GEN-A087-Weekday-00_131500_A..S57R,Weekday,Ozone Park-Lefferts Blvd,1,A..S57R
+A,BFA25GEN-A087-Weekday-00_132600_A..S58R,Weekday,Far Rockaway-Mott Av,1,A..S58R
+A,BFA25GEN-A087-Weekday-00_132800_A..S05R,Weekday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A087-Weekday-00_133150_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_133600_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_133800_A..N54R,Weekday,Inwood-207 St,0,A..N54R
+A,BFA25GEN-A087-Weekday-00_134100_A..N04R,Weekday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A087-Weekday-00_134650_A..S05R,Weekday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A087-Weekday-00_135400_A..S05R,Weekday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A087-Weekday-00_135600_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_136200_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_136500_A..N04R,Weekday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A087-Weekday-00_137300_A..S05R,Weekday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A087-Weekday-00_138150_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_138300_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_139000_A..N04R,Weekday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A087-Weekday-00_139600_A..S05R,Weekday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A087-Weekday-00_140900_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_141200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_141800_A..N04R,Weekday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A087-Weekday-00_142200_A..S05R,Weekday,Ozone Park-Lefferts Blvd,1,A..S05R
+A,BFA25GEN-A087-Weekday-00_143450_A..S74R,Weekday,Far Rockaway-Mott Av,1,A..S74R
+A,BFA25GEN-A087-Weekday-00_144200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_144800_A..N04R,Weekday,Inwood-207 St,0,A..N04R
+A,BFA25GEN-A087-Weekday-00_146000_A..N37R,Weekday,Euclid Av,0,A..N37R
+A,BFA25GEN-A087-Weekday-00_146200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_148200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_150200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_152200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_154200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+A,BFA25GEN-A087-Weekday-00_156200_A..N09R,Weekday,Inwood-207 St,0,A..N09R
+L,BFA25GEN-L027-Saturday-00_000650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_001850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_003050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_004300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_005400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_006300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_006600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_007800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_008300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_009250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_010300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_011250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_012300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_013250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_014300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_015250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_016300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_017250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_018300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_019250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_020300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_021250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_022300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_023250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_024300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_025250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_026300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_027250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_027950_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_029450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_029500_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_030850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_031750_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_032100_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_033250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_033300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_034400_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_034750_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_035400_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_036050_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_036400_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_037250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_037400_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_038300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_038400_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_039300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_039300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_040050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_040300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_040800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_041300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_041500_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_042250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_042300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_043000_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_043300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_043750_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_044100_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_044500_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_044850_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_045250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_045600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_045850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_046350_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_046450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_047050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_047100_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_047650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_047850_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_048250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_048600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_048850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_049200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_049450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_049800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_050050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_050400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_050650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_051000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_051250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_051600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_051750_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_052200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_052250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_052800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_052900_L..N02R,Saturday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Saturday-00_053250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_053400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_053750_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_054000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_054250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_054600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_054750_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_055200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_055250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_055800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_055900_L..N02R,Saturday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Saturday-00_056250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_056300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_056750_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_056800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_057250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_057300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_057750_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_057800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_058250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_058300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_058800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_058900_L..N02R,Saturday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Saturday-00_059250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_059300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_059750_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_059800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_060200_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_060300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_060650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_060800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_061100_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_061300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_061550_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_061800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_062000_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_062300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_062450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_062800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_062900_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_063300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_063500_L..N02R,Saturday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Saturday-00_063750_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_063800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_064200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_064250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_064650_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_064700_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_065100_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_065150_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_065550_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_065600_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_066000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_066050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_066450_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_066500_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_066900_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_066950_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_067350_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_067400_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_067800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_067850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_068250_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_068300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_068700_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_068900_L..N02R,Saturday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Saturday-00_069150_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_069200_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_069600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_069650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_070050_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_070100_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_070500_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_070550_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_070950_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_071000_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_071400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_071450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_071850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_071850_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_072250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_072300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_072650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_072750_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_073050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_073200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_073450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_073650_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_073850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_074100_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_074250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_074550_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_074800_L..N02R,Saturday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Saturday-00_075000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_075050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_075400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_075450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_075800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_075850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_076200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_076250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_076600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_076650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_077000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_077050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_077400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_077600_L..N02R,Saturday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Saturday-00_077800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_077850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_078200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_078250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_078600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_078650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_079000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_079050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_079400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_079450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_079800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_079850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_080200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_080250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_080600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_080650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_081000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_081050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_081400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_081450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_081800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_081850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_082200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_082250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_082600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_082650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_083000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_083050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_083400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_083450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_083800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_083850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_084200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_084250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_084600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_084650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_085000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_085050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_085400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_085450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_085800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_085850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_086200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_086250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_086600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_086650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_087000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_087050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_087400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_087450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_087800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_087850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_088200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_088250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_088600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_088650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_089000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_089050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_089400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_089450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_089800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_089850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_090200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_090250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_090600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_090650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_091000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_091050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_091400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_091450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_091800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_091850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_092200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_092250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_092600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_092650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_093000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_093050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_093400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_093450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_093800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_093850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_094200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_094250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_094600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_094650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_095000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_095050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_095400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_095450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_095800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_095850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_096200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_096250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_096600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_096650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_097000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_097050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_097400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_097450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_097800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_097850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_098200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_098250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_098600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_098650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_099000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_099050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_099400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_099450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_099800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_099850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_100200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_100250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_100600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_100650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_101000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_101050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_101400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_101450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_101800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_101850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_102200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_102250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_102600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_102650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_103000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_103050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_103400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_103450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_103800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_103850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_104200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_104250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_104600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_104650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_105000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_105050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_105400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_105450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_105800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_105850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_106200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_106250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_106600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_106650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_107000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_107050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_107400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_107450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_107800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_107850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_108200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_108250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_108600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_108650_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_109000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_109050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_109400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_109450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_109800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_109850_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_110200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_110250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_110600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_110700_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_111000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_111100_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_111400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_111500_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_111800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_111900_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_112200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_112300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_112600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_112700_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_113000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_113100_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_113400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_113500_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_113800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_113900_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_114200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_114300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_114600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_114700_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_115000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_115100_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_115400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_115500_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_115800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_115900_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_116200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_116300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_116600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_116700_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_117000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_117100_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_117400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_117500_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_117800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_117900_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_118200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_118300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_118600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_118700_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_119000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_119100_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_119400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_119500_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_119800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_119900_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_120200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_120300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_120600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_120700_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_121000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_121100_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_121400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_121500_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_121800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_121900_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_122200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_122300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_122600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_122800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_123000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_123300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_123400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_123800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_123800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_124200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_124300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_124600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_124800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_125000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_125300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_125400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_125800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_125800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_126300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_126300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_126800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_126800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_127300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_127300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_127800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_127800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_128300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_128300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_128800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_128800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_129300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_129300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_129800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_129800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_130300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_130300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_130800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_130800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_131300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_131300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_131800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_131800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_132300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_132300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_132800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_133000_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_133300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_133600_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_133800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_134200_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_134300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_134800_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_134800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_135300_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_135400_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_135800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_135900_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_136400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_136550_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_137000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_137300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_137600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_138050_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_138200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_138800_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_138900_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_139400_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_139550_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_140000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_140300_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_140600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_141250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_141350_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_142100_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_142250_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_142850_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_143450_L..N01R,Saturday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Saturday-00_143600_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_144350_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_145100_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_146000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_147000_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Saturday-00_148200_L..S01R,Saturday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_000650_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_001850_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_003050_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_004300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_005400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_006300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_006600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_007800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_008300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_009250_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_010300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_011250_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_012300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_013250_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_014300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_015250_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_016300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_017250_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_018300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_019250_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_020300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_021250_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_022300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_023250_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_024300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_025250_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_026300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_027250_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_028300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_029550_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_030300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_031750_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_032300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_033750_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_034300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_035750_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_036300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_037750_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_038300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_039700_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_039800_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_040950_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_041700_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_042150_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_043200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_043300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_044300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_044700_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_045300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_046100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_046200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_046900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_047200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_047700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_048200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_048500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_049200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_049300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_050100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_050200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_050900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_051000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_051500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_051800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_052100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_052600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_052700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_053300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_053400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_053900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_054200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_054500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_055000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_055100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_055600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_055700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_056200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_056300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_056800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_056900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_057400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_057500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_058000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_058100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_058600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_058700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_059200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_059300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_059800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_059900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_060400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_060500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_061000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_061000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_061600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_061650_L..N02R,Sunday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Sunday-00_062000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_062200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_062500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_062800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_063000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_063400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_063500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_064000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_064000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_064500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_064650_L..N02R,Sunday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Sunday-00_065000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_065000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_065500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_065500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_066000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_066000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_066500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_066500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_067000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_067050_L..N02R,Sunday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Sunday-00_067300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_067500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_067700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_068000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_068250_L..N02R,Sunday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Sunday-00_068500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_068500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_068900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_069000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_069300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_069500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_069850_L..N02R,Sunday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Sunday-00_070000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_070100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_070400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_070500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_070800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_070900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_071200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_071300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_071600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_071700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_072000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_072250_L..N02R,Sunday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Sunday-00_072400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_072500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_072800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_072900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_073200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_073300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_073600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_073700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_074000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_074250_L..N02R,Sunday,8 Av,0,L..N02R
+L,BFA25GEN-L027-Sunday-00_074400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_074500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_074800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_074900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_075200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_075300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_075600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_075700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_076000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_076100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_076400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_076500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_076800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_076900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_077200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_077300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_077600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_077700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_078000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_078100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_078400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_078500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_078800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_078900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_079200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_079300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_079600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_079700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_080000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_080100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_080400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_080500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_080800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_080900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_081200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_081300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_081600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_081700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_082000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_082100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_082400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_082500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_082800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_082900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_083200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_083300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_083600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_083700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_084000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_084100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_084400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_084500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_084800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_084900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_085200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_085300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_085600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_085700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_086000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_086100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_086400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_086500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_086800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_086900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_087200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_087300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_087600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_087700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_088000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_088100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_088400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_088500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_088800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_088900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_089200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_089300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_089600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_089700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_090000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_090100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_090400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_090500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_090800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_090900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_091200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_091300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_091600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_091700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_092000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_092100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_092400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_092500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_092800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_092900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_093200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_093300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_093600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_093700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_094000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_094100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_094400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_094500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_094800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_094900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_095200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_095300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_095600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_095700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_096000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_096100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_096400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_096500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_096800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_096900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_097200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_097300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_097600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_097700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_098000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_098100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_098400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_098500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_098800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_098900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_099200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_099300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_099600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_099700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_100000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_100100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_100400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_100500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_100800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_100900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_101200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_101300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_101600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_101700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_102000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_102100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_102400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_102500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_102800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_102900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_103200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_103300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_103600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_103700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_104000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_104100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_104400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_104500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_104800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_104900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_105200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_105300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_105600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_105700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_106000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_106100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_106400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_106500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_106800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_106900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_107200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_107300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_107600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_107700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_108000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_108100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_108400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_108500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_108800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_109000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_109200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_109500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_109600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_110000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_110000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_110400_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_110500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_110800_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_111000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_111200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_111500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_111600_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_112000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_112000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_112500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_112500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_113000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_113000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_113500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_113500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_114000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_114000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_114500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_114500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_115000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_115000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_115500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_115500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_116000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_116000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_116500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_116500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_117000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_117000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_117500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_117500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_118000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_118000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_118500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_118500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_119000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_119000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_119500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_119500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_120000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_120000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_120500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_120500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_121000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_121000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_121500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_121500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_122000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_122000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_122500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_122500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_123000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_123000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_123500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_123500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_124000_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_124000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_124500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_124500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_125000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_125100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_125500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_125700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_126000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_126300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_126500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_126900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_127000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_127500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_127500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_128000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_128100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_128500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_128700_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_129100_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_129300_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_129700_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_129900_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_130300_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_130500_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_130900_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_131100_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_131500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_131800_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_132100_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_132450_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_132700_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_133150_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_133300_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_133900_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_134150_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_134500_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_135100_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_135150_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_135700_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_136150_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_136300_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_137000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_137250_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_138000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_138250_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_139000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_139250_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_140000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_140250_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_141000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_141250_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_142000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_142250_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_143000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_143450_L..N01R,Sunday,8 Av,0,L..N01R
+L,BFA25GEN-L027-Sunday-00_144000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_145000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_146000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_147000_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L027-Sunday-00_148200_L..S01R,Sunday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_000650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_001850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_003050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_004300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_005400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_006300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_006600_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_007800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_008300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_009250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_010300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_011250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_012300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_013250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_014300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_015250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_016300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_017250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_018300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_019250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_020300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_021250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_022300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_023250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_024300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_025250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_026300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_027250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_028300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_029500_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_029850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_030850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_031650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_031750_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_032300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_033050_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_033200_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_033500_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_034250_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_034400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_034700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_035400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_035450_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_035900_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_036200_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_036650_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_036800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_037100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_037400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_037850_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_038000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_038300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_038600_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_039050_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_039200_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_039500_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_039800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_040100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_040400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_040700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_041000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_041150_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_041300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_041600_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_041750_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_041900_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_042200_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_042500_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_042800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_042950_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_043100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_043400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_043700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_043800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_044150_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_044200_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_044300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_044650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_044900_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_045200_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_045350_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_045500_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_045500_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_045900_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_045950_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_046100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_046300_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_046600_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_046700_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_046800_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_047100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_047100_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_047500_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_047500_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_047900_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_048000_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_048300_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_048350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_048350_L..N05R,Weekday,8 Av,0,L..N05R
+L,BFA25GEN-L053-Weekday-00_048650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_048750_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_048950_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_049000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_049300_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_049450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_049450_L..N05R,Weekday,8 Av,0,L..N05R
+L,BFA25GEN-L053-Weekday-00_049600_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_049900_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_050050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_050200_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_050450_L..N05R,Weekday,8 Av,0,L..N05R
+L,BFA25GEN-L053-Weekday-00_050500_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_050500_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_050750_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_050800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_051100_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_051250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_051350_L..N05R,Weekday,8 Av,0,L..N05R
+L,BFA25GEN-L053-Weekday-00_051400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_051650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_051900_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_052000_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_052050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_052150_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_052250_L..N05R,Weekday,8 Av,0,L..N05R
+L,BFA25GEN-L053-Weekday-00_052400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_052650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_052750_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_052900_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_053150_L..N05R,Weekday,8 Av,0,L..N05R
+L,BFA25GEN-L053-Weekday-00_053200_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_053300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_053500_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_053800_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_053800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_054100_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_054200_L..N05R,Weekday,8 Av,0,L..N05R
+L,BFA25GEN-L053-Weekday-00_054250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_054400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_054600_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_054700_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_055000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_055100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_055250_L..N05R,Weekday,8 Av,0,L..N05R
+L,BFA25GEN-L053-Weekday-00_055400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_055550_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_055700_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_055950_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_056050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_056350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_056400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_056550_L..N05R,Weekday,8 Av,0,L..N05R
+L,BFA25GEN-L053-Weekday-00_056700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_056750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_057050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_057100_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_057400_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_057450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_057700_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_057750_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_058050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_058100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_058400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_058450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_058750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_058850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_059100_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_059150_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_059450_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_059550_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_059800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_059900_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_060150_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_060200_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_060450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_060550_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_060800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_060900_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_061150_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_061250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_061500_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_061650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_061850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_062050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_062200_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_062450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_062550_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_062850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_062900_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_063250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_063250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_063600_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_063650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_063950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_064050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_064300_L..S05R,Weekday,Myrtle-Wyckoff Avs,1,L..S05R
+L,BFA25GEN-L053-Weekday-00_064450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_064650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_064850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_065050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_065250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_065450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_065650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_065850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_066050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_066250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_066450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_066650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_066850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_067050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_067250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_067450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_067650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_067850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_068050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_068250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_068450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_068650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_068850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_069050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_069350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_069450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_069850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_069850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_070250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_070350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_070650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_070850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_071050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_071350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_071450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_071850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_071850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_072250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_072350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_072750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_072850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_073250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_073350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_073750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_073850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_074250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_074350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_074750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_074850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_075250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_075350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_075750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_075850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_076250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_076350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_076750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_076850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_077250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_077350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_077750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_077850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_078250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_078350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_078750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_078850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_079250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_079350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_079750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_079850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_080250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_080350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_080750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_080850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_081250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_081350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_081750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_081850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_082250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_082350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_082750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_082850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_083250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_083350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_083750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_083850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_084250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_084350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_084750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_084850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_085250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_085350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_085750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_085850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_086250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_086350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_086750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_086850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_087250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_087350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_087750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_087850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_088250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_088350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_088750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_088850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_089250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_089350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_089750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_089850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_090250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_090350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_090750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_090850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_091250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_091350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_091750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_091850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_092250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_092350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_092750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_092850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_093250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_093350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_093750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_093850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_094250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_094300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_094700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_094750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_095100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_095250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_095500_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_095750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_095900_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_096250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_096450_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_096700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_096750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_097100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_097150_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_097500_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_097550_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_097900_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_097950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_098350_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_098450_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_098700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_098750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_099050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_099150_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_099400_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_099550_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_099900_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_099950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_100100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_100350_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_100450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_100750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_100950_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_101150_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_101150_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_101500_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_101550_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_101850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_101950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_102200_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_102300_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_102550_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_102650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_102900_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_103000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_103350_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_103400_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_103600_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_103700_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_103950_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_104050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_104300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_104400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_104650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_104750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_105000_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_105100_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_105350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_105450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_105700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_105800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_106150_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_106200_L..N02R,Weekday,8 Av,0,L..N02R
+L,BFA25GEN-L053-Weekday-00_106300_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_106500_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_106650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_106850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_107000_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_107200_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_107350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_107550_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_107700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_107900_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_108050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_108250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_108400_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_108600_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_108750_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_108950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_109100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_109300_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_109450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_109650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_109800_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_110000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_110200_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_110350_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_110600_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_110700_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_111000_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_111050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_111350_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_111400_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_111700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_111750_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_112100_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_112100_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_112450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_112500_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_112800_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_112850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_113150_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_113200_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_113500_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_113600_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_113850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_114000_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_114250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_114400_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_114650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_114800_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_115050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_115200_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_115450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_115600_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_115850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_116000_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_116250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_116400_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_116650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_116800_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_117050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_117200_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_117450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_117650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_117850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_118050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_118250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_118450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_118650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_118850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_119050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_119250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_119450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_119650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_119850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_120050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_120250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_120450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_120650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_120850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_121050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_121250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_121450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_121650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_121850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_122050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_122250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_122450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_122650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_122850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_123050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_123250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_123450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_123650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_123850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_124050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_124250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_124450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_124650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_124850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_125050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_125250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_125450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_125650_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_125850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_126050_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_126250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_126450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_126650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_126850_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_127050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_127250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_127450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_127700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_127850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_128200_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_128250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_128650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_128700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_129050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_129150_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_129450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_129700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_129850_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_130200_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_130250_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_130650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_130700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_131050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_131150_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_131450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_131700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_131950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_132200_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_132450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_132700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_132950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_133150_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_133450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_133700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_133950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_134200_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_134450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_134700_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_134950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_135250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_135450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_135950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_136150_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_136450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_136950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_137250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_137450_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_138050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_138250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_138650_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_139250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_139350_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_140050_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_140250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_140950_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_141250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_142000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_142250_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_143000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_143450_L..N01R,Weekday,8 Av,0,L..N01R
+L,BFA25GEN-L053-Weekday-00_144000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_145000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_146000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_147000_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R
+L,BFA25GEN-L053-Weekday-00_148200_L..S01R,Weekday,Canarsie-Rockaway Pkwy,1,L..S01R

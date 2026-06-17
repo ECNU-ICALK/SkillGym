@@ -1,0 +1,8 @@
+{
+  "ref_id": "posthog-docs",
+  "source_url": "https://posthog.com/docs",
+  "notes": [
+    "Reference docs hub shape: crawlable internal discovery path from docs to product pages.",
+    "Reference pattern: internal links that reinforce product-topic discovery."
+  ]
+}

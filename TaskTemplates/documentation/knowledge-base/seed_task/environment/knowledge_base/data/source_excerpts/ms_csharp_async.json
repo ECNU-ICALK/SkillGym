@@ -1,0 +1,7 @@
+{
+  "id": "ms_csharp_async",
+  "description_sentences": [
+    "A strong C# async guide that does not target JavaScript semantics.",
+    "It is included in the bundle as a wrong-language decoy for audit filtering."
+  ]
+}

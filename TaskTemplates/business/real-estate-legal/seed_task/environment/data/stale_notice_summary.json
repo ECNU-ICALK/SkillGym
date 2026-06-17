@@ -1,0 +1,26 @@
+{
+  "asset_id": "SP-CAIXA-568",
+  "edital_id": "0020/0226-CPA/RE",
+  "item_number": 568,
+  "first_auction_at": "2026-05-26T10:00:00-03:00",
+  "second_auction_at": "2026-06-01T10:00:00-03:00",
+  "appraisal_value_brl": 209000.0,
+  "first_min_bid_brl": 209000.0,
+  "second_min_bid_brl": 134000.0,
+  "payment_mode": [
+    "cash"
+  ],
+  "fgts_allowed": false,
+  "financing_allowed": false,
+  "address": "RUA MORUBIXABA N. 198 APTO. 203",
+  "city": "SAO PAULO",
+  "state": "SP",
+  "registry_office": "15",
+  "property_registry_number": "148062",
+  "private_area_m2": 49.23,
+  "total_area_m2": 55.96,
+  "taxes_responsibility": "shared",
+  "condo_responsibility": "shared",
+  "encumbrance_notes": "",
+  "regularization_notes": ""
+}

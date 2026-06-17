@@ -1,0 +1,35 @@
+version = "1.0"
+
+[metadata]
+id = "cli-tools__airdesk-release-pack"
+name = "Template: Airdesk Release Pack"
+description = "Prepare a CLI release delivery from an in-repo Makefile workflow and public airport reference data."
+difficulty = "hard"
+category = "cli-tools"
+tags = [
+  "cli-tools",
+  "make",
+  "python",
+  "packaging",
+  "smoke-tests",
+  "release-engineering",
+  "ourairports"
+]
+required_skills = ["discovering-make-commands"]
+primary_output_file = "/app/output/release/release_manifest.json"
+source_template_id = "cli-tools__airdesk-release-pack"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 600.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

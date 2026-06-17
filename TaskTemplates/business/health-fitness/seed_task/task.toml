@@ -1,0 +1,38 @@
+version = "1.0"
+
+[metadata]
+id = "health-fitness__boutique-gym-onboarding-plan"
+name = "Template: Boutique Gym Onboarding Plan"
+description = "Create a coach-ready 7-day onboarding plan using local live exercise and nutrition services rather than stale exports."
+difficulty = "hard"
+category = "health-fitness"
+tags = [
+  "health-fitness",
+  "nutrition",
+  "meal-planning",
+  "exercise-selection",
+  "coach-handoff",
+  "constraint-solving",
+  "usda",
+  "wger",
+]
+required_skills = [
+  "fitness-nutrition",
+]
+primary_output_file = "/root/output/member_assessment.json"
+source_template_id = "health-fitness__boutique-gym-onboarding-plan"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

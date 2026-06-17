@@ -1,0 +1,20 @@
+{
+  "token_id": "sta",
+  "symbol": "STA",
+  "name": "STA",
+  "decimals": 18,
+  "behaviors": {
+    "missing_return_value": false,
+    "fee_on_transfer": true,
+    "balance_drift": false,
+    "blocklist_or_pause": false,
+    "upgradeable_or_replaceable": false,
+    "approval_edgecase": false,
+    "hook_or_callback_risk": false
+  },
+  "summary": "Fee-on-transfer collateral profile whose received amount can differ from the requested transfer amount.",
+  "source_refs": [
+    "reference/source_index.json#weird-erc20",
+    "reference/source_index.json#token-integration-checklist"
+  ]
+}

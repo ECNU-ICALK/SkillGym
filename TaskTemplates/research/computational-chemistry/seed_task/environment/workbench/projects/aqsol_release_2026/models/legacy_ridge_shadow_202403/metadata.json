@@ -1,0 +1,22 @@
+{
+  "project": "aqsol_release_2026",
+  "target_col": "measured_logS",
+  "smiles_col": "SMILES",
+  "task_type": "regression",
+  "model_type": "ridge",
+  "feature_set": "descriptors",
+  "data_signature": "legacy_snapshot_v0",
+  "duplicate_policy": "raw_rows",
+  "release_band": "shadow",
+  "run_id": "legacy_ridge_shadow_202403",
+  "created_at": "2024-03-01T00:00:00Z",
+  "status": "complete",
+  "valid_rmse": 1.0545574571149925,
+  "valid_mae": 0.8313911799840349,
+  "test_rmse": 0.881282074809668,
+  "test_mae": 0.6942697304167957,
+  "train_rows": 700,
+  "valid_rows": 150,
+  "test_rows": 150,
+  "model_file": "model.pkl"
+}

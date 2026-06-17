@@ -1,0 +1,50 @@
+{
+  "bundle_id": "release-2026-05-monitoring",
+  "services": [
+    {
+      "service": "harbor-core",
+      "target_host": "127.0.0.1",
+      "metrics_port": 18081,
+      "metrics_path": "/core/metrics",
+      "component": "core",
+      "team": "harbor-platform",
+      "lane": "primary"
+    },
+    {
+      "service": "harbor-jobservice",
+      "target_host": "127.0.0.1",
+      "metrics_port": 18082,
+      "metrics_path": "/job/metrics",
+      "component": "jobservice",
+      "team": "harbor-platform",
+      "lane": "primary"
+    },
+    {
+      "service": "harbor-registry",
+      "target_host": "127.0.0.1",
+      "metrics_port": 18083,
+      "metrics_path": "/registry/api/metrics",
+      "component": "registry-api",
+      "team": "registry",
+      "lane": "primary"
+    },
+    {
+      "service": "harbor-registry",
+      "target_host": "127.0.0.1",
+      "metrics_port": 18087,
+      "metrics_path": "/registry/storage/metrics",
+      "component": "registry-storage",
+      "team": "registry",
+      "lane": "primary"
+    },
+    {
+      "service": "harbor-exporter",
+      "target_host": "127.0.0.1",
+      "metrics_port": 18084,
+      "metrics_path": "/exporter/metrics",
+      "component": "exporter",
+      "team": "observability",
+      "lane": "primary"
+    }
+  ]
+}

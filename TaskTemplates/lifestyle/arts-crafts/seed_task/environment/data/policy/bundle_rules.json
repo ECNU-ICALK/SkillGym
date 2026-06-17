@@ -1,0 +1,44 @@
+{
+  "allowed_license_ids": [
+    "cc-by-4.0",
+    "cc-by-sa-4.0"
+  ],
+  "minimum_download_count": 200,
+  "slot_rules": {
+    "yarn-management": {
+      "required_terms": [
+        "yarn",
+        "table"
+      ],
+      "preferred_terms": [
+        "passive",
+        "stable"
+      ],
+      "forbidden_terms": [
+        "motorized",
+        "electronic"
+      ]
+    },
+    "stitch-marker": {
+      "required_terms": [
+        "stitch marker"
+      ],
+      "preferred_terms": [
+        "closed"
+      ],
+      "forbidden_terms": [
+        "open marker"
+      ]
+    },
+    "tool-storage": {
+      "required_terms": [
+        "hook",
+        "needle"
+      ],
+      "minimum_files_count": 2,
+      "forbidden_terms": [
+        "hooks only"
+      ]
+    }
+  }
+}

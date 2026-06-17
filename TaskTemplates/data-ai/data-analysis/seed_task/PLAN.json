@@ -1,0 +1,83 @@
+{
+  "task_id": "data-analysis__airport-partner-zone-opportunity",
+  "task_name": "airport-partner-zone-opportunity",
+  "template_category": "data-analysis",
+  "scenario": "building a weekday airport partner-zone opportunity analysis from a local SQLite staging database, airport weather snapshots, and a planning contract",
+  "user_visible_goal": "Produce airport-specific morning departure and evening arrival support recommendations that can be traced back to source data and reusable extraction queries.",
+  "selected_skill": {
+    "name": "data-analyst",
+    "source": "Shubhamsaboo/awesome-llm-apps",
+    "skillsmp_category_url": "https://skillsmp.com/categories/data-analysis",
+    "observed_stars": 106260,
+    "risk_screening": "No external account, permission grant, private credential, or sensitive write target is required. The skill is limited to SQL, pandas, and statistical analysis workflows on local public-data snapshots."
+  },
+  "input_assets": [
+    "/root/data/trips/airport_partner_ops.db",
+    "/root/data/weather/airport_daily_weather.json",
+    "/root/data/planning/analysis_contract.json",
+    "/root/data/reference/taxi_zone_lookup.csv",
+    "/root/data/reference/trip_record_user_guide.pdf",
+    "/root/data/reference/data_dictionary_trip_records_yellow.pdf",
+    "/root/workspace/run_airport_partner_analysis.py"
+  ],
+  "required_outputs": [
+    "/root/output/analysis_brief.md",
+    "/root/output/source_inventory.tsv",
+    "/root/output/quality_checks.tsv",
+    "/root/output/airport_partner_zone_period_summary.csv",
+    "/root/output/airport_weather_sensitivity.tsv",
+    "/root/output/airport_partner_zone_rankings.tsv",
+    "/root/output/query_pack.sql"
+  ],
+  "shipped_skills": [
+    "data-analyst"
+  ],
+  "skill_hypothesis": {
+    "with_skill": "The solver is more likely to inspect the SQLite schema, harmonize monthly drift, join zone metadata, use pandas for period-level aggregation, run the required Mann-Whitney comparisons, and leave behind reusable SQL queries plus concise interpretation notes.",
+    "without_skill": "The solver may stop at visible rankings while missing one or more action-level requirements such as monthly schema harmonization, EWR inclusion, contract-driven top-k changes, airport-specific weather joins, or reusable query extraction."
+  },
+  "verifier_strategy": {
+    "main_tests": [
+      "All required outputs exist, parse, and satisfy the declared column contracts.",
+      "airport_partner_zone_period_summary.csv, airport_weather_sensitivity.tsv, and airport_partner_zone_rankings.tsv are checked against an independent oracle rebuilt from SQLite, weather JSON, and the planning contract, with strict identity checks on recommendation rows and bounded tolerance on non-core numeric drift.",
+      "analysis_brief.md is traceable to the ranking output and includes the required sections.",
+      "query_pack.sql documents reusable extraction logic across both monthly staging tables."
+    ],
+    "guardrails": [
+      "The solution must query SQLite and read the planning contract instead of hardcoding answer rows.",
+      "Mutating the planning contract must change the ranking output in a rerun.",
+      "Repeated runs must produce byte-identical outputs.",
+      "No external account, cloud API, or copied answer table may be used."
+    ]
+  },
+  "data_provenance": {
+    "reference_source": "Task-internal SQLite month tables derived from public NYC TLC yellow taxi samples and zone lookup, plus airport daily weather from NOAA.",
+    "service_source": "Single-container local analysis only; no remote runtime dependency is required during task solving."
+  },
+  "local_validation": {
+    "naive_pipeline": "pending",
+    "oracle_solution": "pass",
+    "oracle_solution_note": "Official solution rerun after the shared-contract clarifications and verifier tolerance adjustments still passes in E2B oracle mode."
+  },
+  "e2b_validation": {
+    "oracle_job": "/home/lenovo/skill/Harbor/skill_moban/e2b_jobs/airport-partner-oracle-r12-20260502_235841/result.json",
+    "oracle_reward": 1.0,
+    "with_skill_jobs": [
+      "/home/lenovo/skill/Harbor/skill_moban/e2b_jobs/airport-partner-c5-with-20260503_003916/result.json",
+      "/home/lenovo/skill/Harbor/skill_moban/e2b_jobs/airport-partner-c7-with-20260503_010152/result.json",
+      "/home/lenovo/skill/Harbor/skill_moban/e2b_jobs/airport-partner-c8-with-20260503_011306/result.json"
+    ],
+    "without_skill_jobs": [
+      "/home/lenovo/skill/Harbor/skill_moban/e2b_jobs/airport-partner-c5-without-20260503_005102/result.json",
+      "/home/lenovo/skill/Harbor/skill_moban/e2b_jobs/airport-partner-c7-without-20260503_010153/result.json",
+      "/home/lenovo/skill/Harbor/skill_moban/e2b_jobs/airport-partner-c8-without-20260503_012334/result.json"
+    ],
+    "with_skill_pass_rate": "1/3 (33%)",
+    "without_skill_pass_rate": "0/3 (0%)",
+    "with_skill_avg_agent_seconds": 611.129,
+    "without_skill_avg_agent_seconds": 629.479,
+    "with_skill_avg_tokens": 696698.333,
+    "without_skill_avg_tokens": 733309.333,
+    "notes": "Three valid comparison pairs were retained. One additional parallelized pair was discarded because both with-skill and without-skill builds were cancelled before task execution. The strongest skill lift came after moving time-window, score, and service-date panel semantics into the visible contract; even then, only one with-skill trial fully matched the final verifier, while all without-skill trials still left at least one verifier failure."
+  }
+}

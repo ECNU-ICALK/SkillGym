@@ -1,0 +1,18 @@
+{
+  "created_from": [
+    "Yahoo Finance chart API",
+    "Kenneth R. French Data Library"
+  ],
+  "symbols": [
+    "ARKK",
+    "QQQ",
+    "SPY",
+    "IWM",
+    "AGG"
+  ],
+  "analysis_window": {
+    "start": "2020-01-02",
+    "end": "2024-12-31"
+  },
+  "notes": "Frozen public market and factor data for deterministic risk metric verification."
+}

@@ -1,0 +1,27 @@
+{
+  "defaultDevScenarioId": "docs-segment-cache",
+  "reportFields": [
+    "scenarioId",
+    "requestedSegmentCache",
+    "resolvedSegmentCache",
+    "buildSegmentCache",
+    "exportMode",
+    "routeDigest",
+    "groupCount",
+    "reusedSegmentCount"
+  ],
+  "scenarios": [
+    {
+      "id": "docs-baseline",
+      "label": "Docs site with segment cache disabled",
+      "configPath": "framework/fixtures/docs-site/segment-cache-off.config.json",
+      "routeDataPath": "data/upstream/docs_route_snapshot.json"
+    },
+    {
+      "id": "docs-segment-cache",
+      "label": "Docs site with segment cache enabled",
+      "configPath": "framework/fixtures/docs-site/segment-cache-on.config.json",
+      "routeDataPath": "data/upstream/docs_route_snapshot.json"
+    }
+  ]
+}

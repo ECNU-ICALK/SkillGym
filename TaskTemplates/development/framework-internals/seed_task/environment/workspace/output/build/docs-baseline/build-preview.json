@@ -1,0 +1,39 @@
+{
+  "mode": "baseline",
+  "groupCount": 6,
+  "reusedSegmentCount": 0,
+  "groupKeys": [
+    "/docs/app/getting-started/cache-components",
+    "/docs/app/api-reference/config/next-config-js",
+    "/docs/app/api-reference/config/next-config-js/authInterrupts",
+    "/docs/app/api-reference/config/next-config-js/taint",
+    "/docs/app/building-your-application/rendering/partial-prerendering",
+    "/docs/app/api-reference/directives/use-cache"
+  ],
+  "topGroups": [
+    {
+      "key": "/docs/app/getting-started/cache-components",
+      "size": 1
+    },
+    {
+      "key": "/docs/app/api-reference/config/next-config-js",
+      "size": 1
+    },
+    {
+      "key": "/docs/app/api-reference/config/next-config-js/authInterrupts",
+      "size": 1
+    },
+    {
+      "key": "/docs/app/api-reference/config/next-config-js/taint",
+      "size": 1
+    },
+    {
+      "key": "/docs/app/building-your-application/rendering/partial-prerendering",
+      "size": 1
+    },
+    {
+      "key": "/docs/app/api-reference/directives/use-cache",
+      "size": 1
+    }
+  ]
+}

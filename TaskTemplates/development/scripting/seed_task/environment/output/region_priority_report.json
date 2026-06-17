@@ -1,0 +1,85 @@
+{
+  "generated_from": "ourairports",
+  "regions": [
+    {
+      "region_code": "NO-46",
+      "region_name": "Vestland",
+      "country_code": "NO",
+      "country_name": "Norway",
+      "open_airport_count": 9,
+      "scheduled_open_airport_count": 6,
+      "runway_count": 9,
+      "longest_runway_ft": 9810
+    },
+    {
+      "region_code": "IS-4",
+      "region_name": "Westfjords",
+      "country_code": "IS",
+      "country_name": "Iceland",
+      "open_airport_count": 5,
+      "scheduled_open_airport_count": 1,
+      "runway_count": 5,
+      "longest_runway_ft": 4593
+    },
+    {
+      "region_code": "IS-8",
+      "region_name": "Southern Region",
+      "country_code": "IS",
+      "country_name": "Iceland",
+      "open_airport_count": 3,
+      "scheduled_open_airport_count": 1,
+      "runway_count": 4,
+      "longest_runway_ft": 4921
+    },
+    {
+      "region_code": "ZA-EC",
+      "region_name": "Eastern Cape",
+      "country_code": "ZA",
+      "country_name": "South Africa",
+      "open_airport_count": 2,
+      "scheduled_open_airport_count": 1,
+      "runway_count": 3,
+      "longest_runway_ft": 8202
+    },
+    {
+      "region_code": "NO-34",
+      "region_name": "Innlandet",
+      "country_code": "NO",
+      "country_name": "Norway",
+      "open_airport_count": 13,
+      "scheduled_open_airport_count": 0,
+      "runway_count": 13,
+      "longest_runway_ft": 6722
+    },
+    {
+      "region_code": "ZA-NC",
+      "region_name": "Northern Cape",
+      "country_code": "ZA",
+      "country_name": "South Africa",
+      "open_airport_count": 5,
+      "scheduled_open_airport_count": 0,
+      "runway_count": 10,
+      "longest_runway_ft": 7480
+    },
+    {
+      "region_code": "NZ-CAN",
+      "region_name": "Canterbury Region",
+      "country_code": "NZ",
+      "country_name": "New Zealand",
+      "open_airport_count": 3,
+      "scheduled_open_airport_count": 0,
+      "runway_count": 3,
+      "longest_runway_ft": 98
+    },
+    {
+      "region_code": "AU-NSW",
+      "region_name": "New South Wales",
+      "country_code": "AU",
+      "country_name": "Australia",
+      "open_airport_count": 2,
+      "scheduled_open_airport_count": 0,
+      "runway_count": 2,
+      "longest_runway_ft": 3799
+    }
+  ]
+}

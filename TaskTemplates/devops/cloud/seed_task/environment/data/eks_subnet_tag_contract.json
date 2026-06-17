@@ -1,0 +1,10 @@
+{
+  "cluster_tag_template": "kubernetes.io/cluster/<cluster_name>",
+  "cluster_tag_value": "shared",
+  "public_subnet_tags": {
+    "kubernetes.io/role/elb": "1"
+  },
+  "private_subnet_tags": {
+    "kubernetes.io/role/internal-elb": "1"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "task_id": "cli-tools__airdesk-release-pack",
+  "category": "cli-tools",
+  "bound_skill": "discovering-make-commands",
+  "reference_skillsmp_url": "https://skillsmp.com/skills/streamlit-streamlit-claude-skills-discovering-make-commands-skill-md",
+  "design_summary": {
+    "scenario": "Use the project's existing staged Makefile workflow to prepare a packaged CLI release artifact, a command catalog, source manifests, and smoke expectations from public airport reference data.",
+    "why_skill_relevant": [
+      "The intended path depends on discovering and using repository Make targets for bootstrap, packaging, packaged smoke validation, and final release generation.",
+      "The task asks for a release bundle whose outputs should agree with the project entrypoints and staged command surface instead of an ad hoc script outside the workspace.",
+      "A command catalog plus staged workflow targets create verifier hooks around whether the solver followed the repository's standard command surface and release path."
+    ],
+    "real_data": [
+      "https://raw.githubusercontent.com/davidmegginson/ourairports-data/main/countries.csv",
+      "https://raw.githubusercontent.com/davidmegginson/ourairports-data/main/regions.csv",
+      "https://raw.githubusercontent.com/davidmegginson/ourairports-data/main/airports.csv",
+      "https://raw.githubusercontent.com/davidmegginson/ourairports-data/main/runways.csv",
+      "https://raw.githubusercontent.com/davidmegginson/ourairports-data/main/airport-frequencies.csv"
+    ],
+    "single_container": true
+  },
+  "verifier_focus": {
+    "main_tests": [
+      "Release outputs are recomputed from the task inputs and match the required schemas, ordering rules, and workspace command surface.",
+      "The packaged CLI artifact is present in the release directory and is used to execute every smoke scenario from the contract.",
+      "The command catalog matches the repository command surface expected for build, bootstrap, packaging, and smoke steps.",
+      "The package-led final release path remains reproducible across reruns, and the preview path stays distinct from the final delivery path."
+    ],
+    "guardrails": [
+      "Input data and contract files remain unchanged.",
+      "The packaged artifact must come from the workspace project rather than a manually assembled substitute.",
+      "Smoke results must be generated from the shipped artifact, not handwritten."
+    ]
+  },
+  "control_condition_rule": "with_skill and without_skill must differ only by environment/skills and corresponding runtime copy behavior",
+  "experiment_status": {
+    "local_oracle": "passed",
+    "oracle_e2b": {
+      "job_name": "cli-tools-oracle-20260506c",
+      "reward": 1.0
+    },
+    "valid_comparisons": [
+      {
+        "label": "final1",
+        "with_skill_job": "cli-tools-with-skills-20260506d",
+        "with_skill_reward": 1.0,
+        "without_skill_job": "cli-tools-without-skills-20260506d",
+        "without_skill_reward": 0.0
+      },
+      {
+        "label": "final3",
+        "with_skill_job": "cli-tools-with-skills-20260506f",
+        "with_skill_reward": 0.0,
+        "without_skill_job": "cli-tools-without-skills-20260506f",
+        "without_skill_reward": 0.0
+      },
+      {
+        "label": "final4",
+        "with_skill_job": "cli-tools-with-skills-20260506g",
+        "with_skill_reward": 1.0,
+        "without_skill_job": "cli-tools-without-skills-20260506g",
+        "without_skill_reward": 0.0
+      }
+    ],
+    "excluded_trials": [
+      {
+        "label": "final2",
+        "reason": "build canceled"
+      }
+    ]
+  }
+}

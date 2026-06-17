@@ -1,0 +1,22 @@
+cell_type_label,marker_gene,priority
+T cells,IL7R,1
+T cells,LTB,2
+T cells,LDHB,3
+Cytotoxic lymphocytes,NKG7,1
+Cytotoxic lymphocytes,GNLY,2
+Cytotoxic lymphocytes,CCL5,3
+B cells,MS4A1,1
+B cells,CD79A,2
+B cells,CD79B,3
+CD14+ monocytes,LYZ,1
+CD14+ monocytes,S100A8,2
+CD14+ monocytes,S100A9,3
+FCGR3A+ monocytes,FCGR3A,1
+FCGR3A+ monocytes,LST1,2
+FCGR3A+ monocytes,IFITM3,3
+Dendritic cells,FCER1A,1
+Dendritic cells,CST3,2
+Dendritic cells,HLA-DPA1,3
+Megakaryocytes,PPBP,1
+Megakaryocytes,PF4,2
+Megakaryocytes,SDPR,3

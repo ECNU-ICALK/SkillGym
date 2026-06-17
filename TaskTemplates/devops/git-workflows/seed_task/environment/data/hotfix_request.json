@@ -1,0 +1,11 @@
+{
+  "service": "meridian-checkout",
+  "release_version": "2026.04.3",
+  "release_branch": "release/2026.04",
+  "hotfix_branch": "hotfix-2026.04.3",
+  "notes_title": "Meridian Hotfix 2026.04.3",
+  "required_outputs": [
+    "artifacts/hotfix_report.json",
+    "artifacts/release_notes.md"
+  ]
+}

@@ -1,0 +1,47 @@
+---
+title: cookies
+description: API reference for the cookies function.
+nav_title: cookies
+---
+
+`cookies` reads request cookies in a server context.
+
+```tsx filename="app/example.tsx" switcher highlight={3}
+import {cookies} from 'next/headers'
+
+const store = await cookies()
+const theme = store.get('theme')
+```
+
+```jsx filename="app/example.jsx" switcher highlight={3}
+import {cookies} from 'next/headers'
+
+const store = await cookies()
+const theme = store.get('theme')
+```
+
+## Reference
+
+### Methods
+
+| Method | Returns | Description |
+| --- | --- | --- |
+| `.get(name)` | `Cookie \| undefined` | Reads a cookie by name. |
+| `.set(name, value)` | `void` | Writes a cookie value. |
+
+## Good to know
+
+- Call `cookies` where request data is available.
+- Await the function before reading values.
+
+## Examples
+
+### Read one cookie
+
+Use the store to read a single cookie before rendering.
+
+## Version History
+
+| Version | Changes |
+| --- | --- |
+| `v1` | Example reference page for local docs style. |

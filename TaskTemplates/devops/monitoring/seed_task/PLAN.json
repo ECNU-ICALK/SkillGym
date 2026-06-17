@@ -1,0 +1,126 @@
+{
+  "task_id": "monitoring__harbor-prometheus-bundle",
+  "category": "monitoring",
+  "design_status": "validated",
+  "selected_skill": {
+    "name": "prometheus-configuration",
+    "local_path": "environment/skills/21__prometheus-configuration/SKILL.md",
+    "source_skill_path": "/home/lenovo/skill/Harbor/skill_moban/devops/monitoring/skills/21__prometheus-configuration/SKILL.md",
+    "skillsmp_reference": "prometheus-configuration",
+    "skillsmp_stars": "35,521",
+    "selection_reason": "This skill is a direct match for a Prometheus setup task covering metric collection, scrape configuration, service discovery, and recording rules. It does not require private accounts or sensitive external access."
+  },
+  "design_goals": [
+    "Keep the task as a configuration-build task rather than a repair or incident task.",
+    "Make with-skill and without-skill differ only by environment/skills and the runtime skill copy logic.",
+    "Force action-level Prometheus work around discovery, relabeling, recording rules, and alert rules."
+  ],
+  "input_data": [
+    {
+      "path": "environment/data/telemetry_reference/prometheus_example_app_README.md",
+      "source": "https://raw.githubusercontent.com/brancz/prometheus-example-app/master/README.md",
+      "notes": "Reference shape for HTTP request counter and latency histogram metrics."
+    },
+    {
+      "path": "environment/data/telemetry_reference/prometheus_example_app_pod_monitor.yaml",
+      "source": "https://raw.githubusercontent.com/brancz/prometheus-example-app/master/manifests/pod-monitor.yaml",
+      "notes": "Reference shape for inventory-driven scrape configuration."
+    },
+    {
+      "path": "environment/data/telemetry_reference/node_exporter_e2e_output.txt",
+      "source": "https://raw.githubusercontent.com/prometheus/node_exporter/master/collector/fixtures/e2e-output.txt",
+      "notes": "Reference sample for exposition format details and metric families."
+    },
+    {
+      "path": "environment/data/docs/harbor_metrics_reference.md",
+      "source": "https://goharbor.io/docs/main/administration/metrics/",
+      "notes": "Scenario reference for Harbor component-oriented monitoring."
+    }
+  ],
+  "task_shape": {
+    "service_type": "Harbor-like local metrics bundle",
+    "runtime": "single container with Prometheus plus multiple metrics endpoints",
+    "solver_action": "author a working monitoring bundle from contracts and inventory data",
+    "required_outputs": [
+      "/app/workspace/prometheus/bundle/prometheus.yml",
+      "/app/workspace/prometheus/rules/recording_rules.yml",
+      "/app/workspace/prometheus/rules/alert_rules.yml",
+      "/app/workspace/prometheus/inventory/release-bundle.json",
+      "/app/output/monitoring_bundle_report.json"
+    ]
+  },
+  "intended_failures": [
+    "Naive solutions hardcode static targets instead of keeping the bundle inventory-driven.",
+    "Naive discovery globs in a shadow manifest and scrapes an extra target.",
+    "Recording rules omit service labels or miscompute histogram p95 values.",
+    "Alert rules are absent or do not distinguish ticket versus page severity."
+  ],
+  "verifier_focus": [
+    "Validate the final report contract and recompute expected summary values independently.",
+    "Check that exactly the contract services are active before the dynamic inventory test.",
+    "Check that recording rules and alert rules are loaded and evaluable.",
+    "Add a new inventory file during verification to confirm directory-driven discovery works.",
+    "Protect input data and ensure the report can be regenerated from the configured bundle."
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime skill-copy logic may differ between with-skill and without-skill variants.",
+  "iteration_notes": [
+    "Do not modify the selected skill.",
+    "Do not use wording that turns the task into an incident-recovery prompt.",
+    "without-skill failure should remain action-level, not a mere formatting mismatch.",
+    "README comparison metrics must be filled only after completed task-level experiments."
+  ],
+  "oracle_validation": {
+    "date": "2026-05-02",
+    "job_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_oracle_20260502-142232_final/monitoring-oracle-20260502-142232-final",
+    "result_path": "/home/lenovo/.tmp_harbor_jobs_monitoring_oracle_20260502-142232_final/monitoring-oracle-20260502-142232-final/result.json",
+    "reward": 1.0
+  },
+  "final_experiments": {
+    "sample_count_per_side": 3,
+    "with_skill": [
+      {
+        "job_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-134042-with206/monitoring-with-skill-206-20260502-134042-with206",
+        "trial_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-134042-with206/monitoring-with-skill-206-20260502-134042-with206/task_with_skills_e2b__CvaJ8t9",
+        "reward": 1.0
+      },
+      {
+        "job_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-135028-with207/monitoring-with-skill-207-20260502-135028-with207",
+        "trial_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-135028-with207/monitoring-with-skill-207-20260502-135028-with207/task_with_skills_e2b__KXGsASL",
+        "reward": 1.0
+      },
+      {
+        "job_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-135840-with208/monitoring-with-skill-208-20260502-135840-with208",
+        "trial_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-135840-with208/monitoring-with-skill-208-20260502-135840-with208/task_with_skills_e2b__WgELkBr",
+        "reward": 1.0
+      }
+    ],
+    "without_skill": [
+      {
+        "job_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-134042-without206/monitoring-without-skill-206-20260502-134042-without206",
+        "trial_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-134042-without206/monitoring-without-skill-206-20260502-134042-without206/task_without_skills_e2b__2NarLWV",
+        "reward": 0.0,
+        "failure_shape": "smoke-probe was not discovered from new inventory file"
+      },
+      {
+        "job_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-135028-without207/monitoring-without-skill-207-20260502-135028-without207",
+        "trial_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-135028-without207/monitoring-without-skill-207-20260502-135028-without207/task_without_skills_e2b__33kCkzT",
+        "reward": 0.0,
+        "failure_shape": "auxiliary inventory targets were scraped or smoke target never settled"
+      },
+      {
+        "job_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-135840-without208/monitoring-without-skill-208-20260502-135840-without208",
+        "trial_dir": "/home/lenovo/.tmp_harbor_jobs_monitoring_20260502-135840-without208/monitoring-without-skill-208-20260502-135840-without208/task_without_skills_e2b__sSASgNi",
+        "reward": 0.0,
+        "failure_shape": "smoke-probe was not discovered from new inventory file"
+      }
+    ],
+    "summary": {
+      "with_skill_pass_rate": "3/3",
+      "without_skill_pass_rate": "0/3",
+      "with_skill_avg_duration_sec": 704.3,
+      "without_skill_avg_duration_sec": 768.4,
+      "with_skill_avg_tokens": 891475.0,
+      "without_skill_avg_tokens": 884800.3
+    }
+  }
+}

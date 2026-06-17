@@ -1,0 +1,70 @@
+{
+  "campaign_title": "Renewable Capacity Momentum 2025",
+  "audience": "climate-tech operators, policy teams, and business readers who need a concise public-facing summary",
+  "core_messages": [
+    "2024 delivered record renewable capacity growth, confirming that scale is no longer the main doubt.",
+    "Current government ambitions still sit below the 2030 tripling benchmark, leaving a material execution gap.",
+    "Grid investment, permitting, financing, and wider deployment capacity now determine whether momentum can hold."
+  ],
+  "deliverable_files": [
+    "newsletter_intro.md",
+    "linkedin_post.md",
+    "thread.md",
+    "video_script.md",
+    "content_manifest.json"
+  ],
+  "manifest_required_keys": [
+    "campaign_title",
+    "audience",
+    "core_messages",
+    "deliverables",
+    "sources_used",
+    "claim_support_notes"
+  ],
+  "deliverable_contract": {
+    "newsletter_intro.md": {
+      "channel": "newsletter",
+      "min_words": 220,
+      "max_words": 320,
+      "section_label": "body"
+    },
+    "linkedin_post.md": {
+      "channel": "linkedin",
+      "min_words": 120,
+      "max_words": 220,
+      "section_label": "body"
+    },
+    "thread.md": {
+      "channel": "thread",
+      "post_count": 6,
+      "section_labels": [
+        "post_1",
+        "post_2",
+        "post_3",
+        "post_4",
+        "post_5",
+        "post_6"
+      ],
+      "max_chars_per_post": 280
+    },
+    "video_script.md": {
+      "channel": "video",
+      "scene_count": 6,
+      "section_labels": [
+        "scene_1",
+        "scene_2",
+        "scene_3",
+        "scene_4",
+        "scene_5",
+        "scene_6"
+      ]
+    }
+  },
+  "banned_phrases": [
+    "in today's rapidly evolving landscape",
+    "game-changer",
+    "cutting-edge",
+    "revolutionary",
+    "here's why this matters"
+  ]
+}

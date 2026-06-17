@@ -1,0 +1,107 @@
+{
+  "checked_at": "2026-05-04",
+  "resources": [
+    {
+      "id": "mdn_using_promises",
+      "status_code": 200,
+      "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises",
+      "flags": []
+    },
+    {
+      "id": "mdn_async_function",
+      "status_code": 200,
+      "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function",
+      "flags": []
+    },
+    {
+      "id": "javascript_info_promise_basics",
+      "status_code": 200,
+      "canonical_url": "https://javascript.info/promise-basics",
+      "flags": []
+    },
+    {
+      "id": "javascript_info_async_await",
+      "status_code": 200,
+      "canonical_url": "https://javascript.info/async-await",
+      "flags": []
+    },
+    {
+      "id": "lydia_visualized_promises_async_await",
+      "status_code": 200,
+      "canonical_url": "https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke",
+      "flags": []
+    },
+    {
+      "id": "webdev_async_functions",
+      "status_code": 200,
+      "canonical_url": "https://web.dev/articles/async-functions",
+      "flags": []
+    },
+    {
+      "id": "freecodecamp_escape_async_await_hell",
+      "status_code": 200,
+      "canonical_url": "https://www.freecodecamp.org/news/avoiding-the-async-await-hell-c77a0fb71c4c/",
+      "flags": []
+    },
+    {
+      "id": "jsconf_event_loop",
+      "status_code": 200,
+      "canonical_url": "https://www.youtube.com/watch?v=8aGhZQkoFbQ",
+      "flags": []
+    },
+    {
+      "id": "wds_promises_10_minutes",
+      "status_code": 200,
+      "canonical_url": "https://www.youtube.com/watch?v=DHvZLI7Db8E",
+      "flags": []
+    },
+    {
+      "id": "fireship_async_await_100_seconds",
+      "status_code": 200,
+      "canonical_url": "https://www.youtube.com/watch?v=PoRJizFvM7s",
+      "flags": []
+    },
+    {
+      "id": "ydkjs_async_performance",
+      "status_code": 200,
+      "canonical_url": "https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/README.md",
+      "flags": []
+    },
+    {
+      "id": "old_mdn_promises_redirect",
+      "status_code": 301,
+      "canonical_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises",
+      "flags": ["redirect"]
+    },
+    {
+      "id": "broken_callback_hell_2014",
+      "status_code": 404,
+      "canonical_url": "https://example.com/blog/callback-hell-2014",
+      "flags": ["broken", "outdated"]
+    },
+    {
+      "id": "generic_async_post",
+      "status_code": 200,
+      "canonical_url": "https://example.com/generic-async",
+      "flags": ["generic_description"]
+    },
+    {
+      "id": "ms_csharp_async",
+      "status_code": 200,
+      "canonical_url": "https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/",
+      "flags": ["other_language"]
+    },
+    {
+      "id": "placeholder_video",
+      "status_code": 404,
+      "canonical_url": "https://example.com/video-placeholder",
+      "flags": ["broken", "placeholder"]
+    },
+    {
+      "id": "placeholder_book",
+      "status_code": 404,
+      "canonical_url": "https://example.com/book-placeholder",
+      "flags": ["broken", "placeholder"]
+    }
+  ]
+}

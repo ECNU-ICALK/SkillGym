@@ -1,0 +1,7 @@
+{
+  "id": "mdn_using_promises",
+  "description_sentences": [
+    "Official MDN guidance covering Promise creation, chaining, composition, and error handling in one place.",
+    "Use it when you need the canonical behavior and examples for the full Promise workflow."
+  ]
+}

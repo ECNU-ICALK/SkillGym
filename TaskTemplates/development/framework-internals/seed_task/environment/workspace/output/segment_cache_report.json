@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-02T19:08:29.563Z",
+  "scenarios": [
+    {
+      "scenarioId": "docs-baseline",
+      "requestedSegmentCache": false,
+      "resolvedSegmentCache": false,
+      "buildSegmentCache": false,
+      "exportMode": "baseline",
+      "routeDigest": "116c118e7435741769eeed05dbf54e3ae77b11dd975ec88613a00011f27c480c",
+      "groupCount": 6,
+      "reusedSegmentCount": 0
+    },
+    {
+      "scenarioId": "docs-segment-cache",
+      "requestedSegmentCache": true,
+      "resolvedSegmentCache": true,
+      "buildSegmentCache": true,
+      "exportMode": "baseline",
+      "routeDigest": "116c118e7435741769eeed05dbf54e3ae77b11dd975ec88613a00011f27c480c",
+      "groupCount": 6,
+      "reusedSegmentCount": 0
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "education__global_education_cohort_notebook",
+  "category": "education",
+  "difficulty": "hard",
+  "selected_skill": {
+    "name": "jupyter-notebook",
+    "stars": "53.7k",
+    "rationale": "Popular public-safe notebook workflow skill for turning a bundled lesson packet into a runnable teaching notebook plus aligned summary artifacts, without external accounts or privileged integrations."
+  },
+  "design_goals": [
+    "Require the solver to build one fully rerunnable notebook plus machine-readable summary outputs from the bundled lesson packet.",
+    "Keep the teaching contract explicit while leaving data cleaning, year harmonization, chart construction, and pedagogical scaffolding to the solver and bundled skill.",
+    "Keep with_skill and without_skill identical except for environment/skills presence."
+  ],
+  "verifier_focus": [
+    "all required outputs exist, parse, and satisfy notebook, CSV, and JSON contracts",
+    "notebook executes top-to-bottom and visibly shows loading, cleaning, alignment, visualization, and conclusion steps",
+    "intro handoff structure includes audience, learning goals, and a clear workflow preview near the start",
+    "charts and summary claims are grounded in source_bundle data and obey analysis_rules.md and chart_requirements.json",
+    "cohort_indicator_table.csv is cohort-filtered, year-aligned, correctly ordered, and consistent with lesson_summary.json",
+    "input bundle files were not modified"
+  ],
+  "oracle_validation": {
+    "local": "passed (7/7 pytest on official solution under the final verifier)",
+    "e2b": "passed (education_oracle_final_20260505_022300, reward=1.0)"
+  },
+  "contrast_experiments": {
+    "valid_trials": 4,
+    "without_skill": {
+      "pass_rate": "0%",
+      "avg_agent_seconds": 452.0,
+      "avg_tokens": 764513
+    },
+    "with_skill": {
+      "pass_rate": "50%",
+      "avg_agent_seconds": 376.8,
+      "avg_tokens": 890920
+    },
+    "comparison_rule": "with_skill and without_skill differ only by environment/skills presence in the runtime copy.",
+    "notes": "Counted trials are pair26, pair27, pair28, and pair29. pair24 was excluded because the with_skill side ended with an E2B-side CancelledError after the without_skill side had already completed. pair25 was excluded because the detached launcher created empty job directories and did not produce Harbor trial artifacts. In the counted set, without_skill failed every time on teaching workflow structure checks near the notebook opening. with_skill passed two runs and failed two runs on teaching structure checks."
+  },
+  "reference_data": [
+    {
+      "file": "environment/source_bundle/years_of_schooling.csv",
+      "source_url": "https://ourworldindata.org/grapher/years-of-schooling.csv?v=1&csvType=full&useColumnShortNames=false&level=all&metric_type=average_years_schooling&sex=both"
+    },
+    {
+      "file": "environment/source_bundle/school_enrolment.csv",
+      "source_url": "https://ourworldindata.org/grapher/school-enrolment.csv?v=1&csvType=full&useColumnShortNames=false&enrolment_type=gross_enrolment&level=upper_secondary&sex=both"
+    },
+    {
+      "file": "environment/source_bundle/education_spending.csv",
+      "source_url": "https://ourworldindata.org/grapher/education-spending.csv?v=1&csvType=full&useColumnShortNames=false&level=all&spending_type=gdp_share"
+    },
+    {
+      "file": "environment/source_bundle/lesson_brief.md",
+      "source_url": ""
+    },
+    {
+      "file": "environment/source_bundle/metric_notes.md",
+      "source_url": ""
+    },
+    {
+      "file": "environment/source_bundle/country_cohort.csv",
+      "source_url": ""
+    },
+    {
+      "file": "environment/source_bundle/chart_requirements.json",
+      "source_url": ""
+    },
+    {
+      "file": "environment/source_bundle/analysis_rules.md",
+      "source_url": ""
+    }
+  ]
+}

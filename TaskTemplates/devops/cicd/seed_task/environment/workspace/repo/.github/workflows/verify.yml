@@ -1,0 +1,10 @@
+name: Saturn Checkout Verify
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "complete the shared review verification workflow"

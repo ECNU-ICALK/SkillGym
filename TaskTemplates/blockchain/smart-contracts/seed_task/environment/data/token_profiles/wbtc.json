@@ -1,0 +1,20 @@
+{
+  "token_id": "wbtc",
+  "symbol": "WBTC",
+  "name": "Wrapped Bitcoin",
+  "decimals": 8,
+  "behaviors": {
+    "missing_return_value": false,
+    "fee_on_transfer": false,
+    "balance_drift": false,
+    "blocklist_or_pause": false,
+    "upgradeable_or_replaceable": false,
+    "approval_edgecase": false,
+    "hook_or_callback_risk": false
+  },
+  "summary": "Collateral with non-18 decimals but no extra non-standard transfer behavior in this task snapshot.",
+  "source_refs": [
+    "reference/source_index.json#eip20",
+    "reference/source_index.json#openzeppelin-erc20"
+  ]
+}

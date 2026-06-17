@@ -1,0 +1,115 @@
+{
+  "task_id": "cicd__saturn-checkout-release-automation",
+  "category": "cicd",
+  "design_status": "validated",
+  "selected_skill": {
+    "name": "github-actions-templates",
+    "local_path": "environment/skills/26__github-actions-templates/SKILL.md",
+    "source_skill_path": "/home/lenovo/skill/Harbor/skill_moban/devops/cicd/skills/26__github-actions-templates/SKILL.md",
+    "skillsmp_reference": "wshobson-agents-plugins-cicd-automation-skills-github-actions-templates-skill-md",
+    "skillsmp_stars": "34.5k",
+    "selection_reason": "This skill aligns directly with authoring multi-stage GitHub Actions workflows, reusable verification jobs, Docker image publication, and deployment handoff. It has no private-account dependency and does not require production access to be useful."
+  },
+  "design_goals": [
+    "Keep the task as a CI/CD delivery build-out task rather than a break-fix or incident task.",
+    "Make with-skill and without-skill differ only by environment/skills and the corresponding runtime skill copy logic.",
+    "Drive action-level GitHub Actions work around workflow triggers, reusable verification, publish steps, environment gates, concurrency, and rollout policy."
+  ],
+  "input_data": [
+    {
+      "path": "environment/data/reference/github_actions_node_ci.md",
+      "source": "https://github.com/actions/starter-workflows/blob/main/ci/node.js.yml",
+      "notes": "Reference shape for Node.js verification workflow, matrix strategy, and setup-node caching."
+    },
+    {
+      "path": "environment/data/reference/github_actions_workflow_syntax.md",
+      "source": "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions",
+      "notes": "Reference for trigger, permissions, strategy, and reusable workflow syntax."
+    },
+    {
+      "path": "environment/data/reference/github_actions_environments.md",
+      "source": "https://docs.github.com/actions/reference/workflows-and-actions/deployments-and-environments",
+      "notes": "Reference for environment names, approvals, and deployment protection semantics."
+    },
+    {
+      "path": "environment/data/reference/github_actions_docker_publish.md",
+      "source": "https://docs.github.com/actions/guides/publishing-docker-images",
+      "notes": "Reference shape for image metadata and Docker publish steps."
+    },
+    {
+      "path": "environment/data/reference/argo_rollouts_canary.md",
+      "source": "https://argo-rollouts.readthedocs.io/en/stable/features/canary/",
+      "notes": "Reference for canary weight and pause sequence structure."
+    },
+    {
+      "path": "environment/data/reference/kubernetes_rolling_update.md",
+      "source": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/",
+      "notes": "Reference for deployment health gates and rollout validation shape."
+    }
+  ],
+  "task_shape": {
+    "service_type": "checkout release automation",
+    "runtime": "single container with a local repo, contract data, and verifier-driven build entrypoint",
+    "solver_action": "author workflow files and rollout configuration so the bundle entrypoint becomes valid",
+    "required_outputs": [
+      "/app/workspace/repo/.github/workflows/release.yml",
+      "/app/workspace/repo/.github/workflows/reusable-verify.yml",
+      "/app/workspace/repo/deploy/rollouts/checkout-production-rollout.yaml",
+      "/app/workspace/repo/artifacts/release_bundle.json"
+    ]
+  },
+  "instruction_audit": {
+    "delivery_contract_retained": true,
+    "skill_specific_details_weakened": true,
+    "notes": [
+      "The instruction keeps required inputs, required output artifact, path constraints, and prohibited shortcuts.",
+      "The instruction avoids naming the bound skill or calling out specific action names, reusable workflow syntax, or exact rollout mechanism keywords beyond business-facing contract terms.",
+      "The implementation details that match the skill workflow are pushed into data contracts, the bundled skill, and the verifier.",
+      "The only newly surfaced public hints are release-lane serialization, caller-owned shared secret context, review-path versus release-path separation, direct rerun availability for the shared verify entry, and immutable promotion references, all framed as business delivery constraints rather than workflow implementation recipes."
+    ]
+  },
+  "intended_failures": [
+    "Naive solutions author a single flat workflow and miss reusable verification or matrix coverage.",
+    "Naive publish jobs skip metadata or image build steps and still try to write the release artifact by hand.",
+    "Naive deployment jobs omit environment and concurrency controls or collapse staging and production into one step.",
+    "Naive rollout files stop at a surface-level manifest and miss canary weights, pauses, or analysis templates."
+  ],
+  "verifier_focus": [
+    "Validate the artifact contract and independently recompute expected workflow and rollout facts from repo files.",
+    "Run the repo's existing lint, unit, security, smoke, e2e, and bundle entrypoints rather than only checking YAML shape.",
+    "Protect input data integrity and make sure the bundle entrypoint reads current repo state rather than a hardcoded answer.",
+    "Add a mutation test that makes the rollout contract invalid and confirms the bundle entrypoint rejects it."
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime skill-copy logic may differ between with-skill and without-skill variants.",
+  "iteration_notes": [
+    "Do not modify the selected skill.",
+    "Do not turn the task into a CI repair incident.",
+    "Keep without-skill failure action-level instead of a formatting-only mismatch.",
+    "Fill README comparison metrics only after completed E2B task-level experiments."
+  ],
+  "experiment_summary": {
+    "evaluation_basis": "Three with-skill trials and three without-skill trials were reviewed against the final verifier logic after the branch-ref trace and conditional checks were relaxed.",
+    "with_skill_trials": [
+      "task_with_skills_e2b__8YSyjVN",
+      "task_with_skills_e2b__g5Qr6ty",
+      "task_with_skills_e2b__CZYYHoK"
+    ],
+    "without_skill_trials": [
+      "task_without_skills_e2b__WvwTkFJ",
+      "task_without_skills_e2b__vmDtGNu",
+      "task_without_skills_e2b__BK7io67"
+    ],
+    "aggregates": {
+      "with_skill_pass_rate": "3/3 (100%)",
+      "without_skill_pass_rate": "0/3 (0%)",
+      "with_skill_avg_agent_seconds": 310.6,
+      "without_skill_avg_agent_seconds": 304.7,
+      "with_skill_avg_tokens": 443496,
+      "without_skill_avg_tokens": 373848
+    },
+    "dominant_without_skill_failures": [
+      "publish workflow does not keep a branch-ref image tag path for non-tag delivery refs",
+      "environment-stage serialization is omitted or left incomplete"
+    ]
+  ]
+}

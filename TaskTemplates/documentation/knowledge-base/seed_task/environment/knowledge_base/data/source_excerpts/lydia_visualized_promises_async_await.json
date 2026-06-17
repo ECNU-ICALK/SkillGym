@@ -1,0 +1,7 @@
+{
+  "id": "lydia_visualized_promises_async_await",
+  "description_sentences": [
+    "Animated diagrams trace the call stack, Web APIs, and queues while Promise callbacks and `await` resolve.",
+    "Pick this when the execution order is still fuzzy and visuals would help it click."
+  ]
+}

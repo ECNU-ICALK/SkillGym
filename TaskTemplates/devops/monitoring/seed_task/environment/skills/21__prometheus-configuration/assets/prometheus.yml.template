@@ -1,0 +1,35 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+rule_files:
+  - /app/workspace/prometheus/rules/*.yml
+
+scrape_configs:
+  - job_name: harbor-bundle
+    file_sd_configs:
+      - files:
+          - /app/workspace/prometheus/inventory/*.json
+          - /app/workspace/prometheus/inventory/*.yml
+        refresh_interval: 5s
+    relabel_configs:
+      - source_labels: [bundle, lane]
+        separator: ';'
+        regex: release-2026-05-monitoring;primary
+        action: keep
+      - source_labels: [service_name]
+        regex: .+
+        action: keep
+      - source_labels: [__address__, metrics_port]
+        separator: ';'
+        regex: '([^;]+?)(?::[0-9]+)?;([0-9]+)'
+        replacement: '$1:$2'
+        target_label: __address__
+      - source_labels: [metrics_path]
+        regex: '(.+)'
+        replacement: '$1'
+        target_label: __metrics_path__
+      - source_labels: [service_name]
+        regex: '(.+)'
+        replacement: '$1'
+        target_label: service

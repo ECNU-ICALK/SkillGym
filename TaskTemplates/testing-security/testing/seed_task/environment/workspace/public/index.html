@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airport Ops Console</title>
+    __THEME_BOOTSTRAP__
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Traffic Coordination Desk</p>
+        <h1>Airport Ops Console</h1>
+        <p class="subhead">
+          Review airport coverage, inspect runway capacity, compare hubs, and export the current operating view.
+        </p>
+      </section>
+
+      <section id="results-summary" data-testid="results-summary" class="panel results-summary">
+        <p id="results-summary-skeleton" data-testid="results-summary-skeleton" class="results-summary-skeleton">
+          Preparing the initial runway balance summary...
+        </p>
+        <div id="results-summary-body" data-testid="results-summary-body" hidden></div>
+      </section>
+
+      <section class="controls" aria-label="Airport filters">
+        <label>
+          Search
+          <input id="search-input" data-testid="search-input" type="text" placeholder="Try JFK or Heathrow" />
+        </label>
+
+        <label>
+          Country
+          <select id="country-select" data-testid="country-select">
+            <option value="">All countries</option>
+          </select>
+        </label>
+
+        <label>
+          Minimum runway length (ft)
+          <input
+            id="min-runway-input"
+            data-testid="min-runway-input"
+            type="number"
+            min="0"
+            step="100"
+            placeholder="12000"
+          />
+        </label>
+
+        <div class="control-actions">
+          <button id="apply-filters" data-testid="apply-filters">Apply filters</button>
+          <button id="clear-filters" data-testid="clear-filters" class="secondary">Clear</button>
+          <button id="export-button" data-testid="export-button" class="secondary">Export current list</button>
+        </div>
+      </section>
+
+      <section class="status-bar">
+        <p id="airport-count" data-testid="airport-count">Loading airports...</p>
+        <p id="loading-indicator" data-testid="loading-indicator" hidden>Loading data...</p>
+        <button id="show-compare" data-testid="show-compare" disabled>Compare selected airports</button>
+      </section>
+
+      <section class="content-grid">
+        <div class="table-card">
+          <table data-testid="airport-table">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Runways</th>
+                <th>Longest runway</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="airport-table-body"></tbody>
+          </table>
+        </div>
+
+        <aside class="panel-stack">
+          <section id="detail-panel" data-testid="detail-panel" class="panel" hidden>
+            <h2>Airport details</h2>
+            <dl id="detail-list"></dl>
+          </section>
+
+          <section id="compare-panel" data-testid="compare-panel" class="panel" hidden>
+            <h2>Comparison summary</h2>
+            <div id="compare-summary"></div>
+          </section>
+
+          <section id="insights-panel" data-testid="insights-panel" class="panel insights-panel">
+            <h2>Operations insights</h2>
+            <p id="insights-skeleton" data-testid="insights-skeleton" class="insights-skeleton">
+              Preparing the next coordination brief...
+            </p>
+            <div id="insights-body" data-testid="insights-body" hidden></div>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <template id="airport-row-template">
+      <tr data-testid="airport-row">
+        <td data-field="code"></td>
+        <td data-field="name"></td>
+        <td data-field="country"></td>
+        <td data-field="city"></td>
+        <td data-field="runways"></td>
+        <td data-field="longest"></td>
+        <td class="row-actions">
+          <button data-action="details">Details</button>
+          <button data-action="compare">Add to compare</button>
+        </td>
+      </tr>
+    </template>
+
+    <script>window.__AIRPORT_UI_FLAGS__ = __UI_FLAGS__;</script>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

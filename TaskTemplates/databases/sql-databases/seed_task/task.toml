@@ -1,0 +1,36 @@
+version = "1.0"
+
+[metadata]
+id = "sql-databases__airport-zone-rolling-mart"
+name = "Airport Zone Rolling Mart"
+description = "Build an indexed PostgreSQL rolling demand mart from schema-drifted taxi trip batches, then deliver a snapshot leaderboard and reusable SQL."
+difficulty = "hard"
+category = "sql-databases"
+tags = [
+  "sql-databases",
+  "postgresql",
+  "sql",
+  "analytics",
+  "transport-analytics",
+  "schema-drift",
+  "rolling-window",
+  "indexing",
+]
+required_skills = ["postgres-patterns"]
+primary_output_file = "/root/output/airport_zone_snapshot_leaderboard.tsv"
+source_template_id = "sql-databases__airport-zone-rolling-mart"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

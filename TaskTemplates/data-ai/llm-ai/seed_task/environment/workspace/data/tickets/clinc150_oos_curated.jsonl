@@ -1,0 +1,2 @@
+{"id":"clinc_001","dataset":"clinc150","text":"What will the weather be in Boston tomorrow?","channel":"chat","language":"en","priority":"low","customer_tier":"standard","expected_intent":"out_of_scope","live_failure_mode":null}
+{"id":"clinc_002","dataset":"clinc150","text":"Book a table for two people near downtown tonight.","channel":"email","language":"en","priority":"low","customer_tier":"standard","expected_intent":"out_of_scope","live_failure_mode":null}

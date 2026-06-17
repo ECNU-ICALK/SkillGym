@@ -1,0 +1,21 @@
+{
+  "token_id": "usdt",
+  "symbol": "USDT",
+  "name": "Tether USD",
+  "decimals": 6,
+  "behaviors": {
+    "missing_return_value": true,
+    "fee_on_transfer": false,
+    "balance_drift": false,
+    "blocklist_or_pause": true,
+    "upgradeable_or_replaceable": true,
+    "approval_edgecase": true,
+    "hook_or_callback_risk": false
+  },
+  "summary": "Legacy stablecoin profile with no-return transfer semantics, zero-reset approval requirements, central pause or blocklist controls, upgradeability, and 6-decimal accounting.",
+  "source_refs": [
+    "reference/source_index.json#weird-erc20",
+    "reference/source_index.json#openzeppelin-erc20",
+    "reference/source_index.json#openzeppelin-safeerc20-source"
+  ]
+}

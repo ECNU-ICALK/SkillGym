@@ -1,0 +1,42 @@
+version = "1.0"
+
+[metadata]
+id = "literature_writing__zed_parallel_agents_launch_copy"
+name = "Template: Zed Parallel Agents Launch Copy Package"
+description = "Build a source-grounded launch copy package for Zed Parallel Agents from local source packets and a local validation service."
+difficulty = "hard"
+category = "literature-writing"
+tags = [
+  "literature-writing",
+  "brand-voice",
+  "developer-marketing",
+  "source-grounding",
+  "copywriting",
+  "launch-content",
+  "fact-ledger",
+]
+required_skills = [
+  "brand-writer",
+]
+distractor_skills = [
+  "story-writing",
+  "cover-letter",
+  "social-media-growth",
+]
+primary_output_file = "/root/final_launch_copy_package.json"
+source_template_id = "literature_writing__zed_parallel_agents_launch_copy"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 700.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

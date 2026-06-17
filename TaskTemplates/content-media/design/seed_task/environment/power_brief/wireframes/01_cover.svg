@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#faf7ef"/>
+  <rect x="56" y="56" width="1088" height="563" rx="24" fill="none" stroke="#6b7280" stroke-width="4"/>
+  <rect x="84" y="92" width="160" height="44" fill="none" stroke="#6b7280" stroke-width="3"/>
+  <rect x="84" y="180" width="560" height="96" fill="none" stroke="#6b7280" stroke-width="3"/>
+  <rect x="84" y="300" width="420" height="46" fill="none" stroke="#6b7280" stroke-width="3"/>
+  <rect x="880" y="84" width="220" height="140" fill="none" stroke="#6b7280" stroke-width="3"/>
+  <text x="92" y="84" fill="#374151" font-size="22" font-family="Arial">cover: hero / title / years / brand</text>
+</svg>

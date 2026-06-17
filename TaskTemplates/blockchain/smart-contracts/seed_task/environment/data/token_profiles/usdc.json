@@ -1,0 +1,21 @@
+{
+  "token_id": "usdc",
+  "symbol": "USDC",
+  "name": "USD Coin",
+  "decimals": 6,
+  "behaviors": {
+    "missing_return_value": false,
+    "fee_on_transfer": false,
+    "balance_drift": false,
+    "blocklist_or_pause": true,
+    "upgradeable_or_replaceable": true,
+    "approval_edgecase": false,
+    "hook_or_callback_risk": false
+  },
+  "summary": "Centrally controlled collateral profile with admin-operated pause or blocklist capabilities, implementation-change risk, and 6-decimal accounting.",
+  "source_refs": [
+    "reference/source_index.json#weird-erc20",
+    "reference/source_index.json#token-integration-checklist",
+    "reference/source_index.json#openzeppelin-erc20"
+  ]
+}

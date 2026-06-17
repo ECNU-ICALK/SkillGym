@@ -1,0 +1,10 @@
+solid needle_support_rail.stl
+  facet normal 0 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 10 0 0
+      vertex 0 10 0
+    endloop
+  endfacet
+  // model:151345 file:151345-3
+endsolid needle_support_rail.stl

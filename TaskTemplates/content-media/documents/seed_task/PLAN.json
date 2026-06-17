@@ -1,0 +1,66 @@
+{
+  "task_id": "documents__north_america_energy_briefing_packet",
+  "category": "documents",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/app/output/north_america_energy_briefing.docx",
+  "selected_skill": {
+    "dir": "docx",
+    "purpose": "Use the bundled OOXML workflow and Word-document handling guidance to complete a branded .docx packet without rebuilding the deliverable in another format.",
+    "skillsmp_references": [
+      {
+        "name": "docx.md",
+        "stars": "125,366",
+        "relevance": "Direct match for creating and editing .docx deliverables with image replacement, find/replace, and review-state cleanup."
+      },
+      {
+        "name": "ocr-and-documents.md",
+        "stars": "122.5k",
+        "relevance": "Adjacent document-processing workflow with structured extraction and document handling overlap."
+      },
+      {
+        "name": "nano-pdf.md",
+        "stars": "122.5k",
+        "relevance": "Adjacent documents workflow for layout-aware inspection, useful as a comparison point but not the chosen path."
+      },
+      {
+        "name": "editor.md",
+        "stars": "107.9k",
+        "relevance": "General document refinement skill, relevant to delivery polish but less specific than docx OOXML editing."
+      }
+    ]
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "live_services": [],
+    "determinism": "The task ships fixed public-data snapshots, a fixed draft .docx, and a fixed delivery contract. Verifier-side checks recompute expected metrics from the local snapshots and inspect the generated .docx package rather than trusting filenames or summaries alone.",
+    "anti_toy_features": [
+      "an existing branded Word draft with header/footer, appendix entry, placeholder tables, placeholder images, and review residue",
+      "public-source datasets with different formats and update cadences, requiring per-metric common-year handling",
+      "required chart replacement inside the final .docx package rather than a sidecar image export",
+      "a formal local build entrypoint that must remain reusable on alternate fixtures",
+      "manifest cross-checks against document sections, table ids, chart ids, and metric vintages",
+      "document-package checks that catch placeholder carry-over, comment residue, and style-shell replacement"
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "formal build entrypoint produces the required .docx and manifest",
+      "document text includes the required sections, headings, and data-derived metrics",
+      "header, footer, and style shell from the draft are preserved",
+      "placeholder image slots are replaced and comment residue is cleared",
+      "manifest and document package stay consistent on sections, chart ids, and metric years",
+      "alternate-fixture reruns change the chart media and the computed metrics"
+    ],
+    "guardrails": [
+      "input briefing files remain unchanged",
+      "the shipped briefing input area remains unchanged",
+      "top-level output inventory exactly matches the contract",
+      "no placeholder-oriented or verifier-oriented strings remain in the formal outputs"
+    ]
+  },
+  "expected_skill_effect": {
+    "without_skill": "Without the bundled docx workflow, agents often drift into rebuilding the packet in another format, leave review residue in OOXML, or skip in-place media replacement because the path from draft package to final package is less obvious.",
+    "with_skill": "The skill gives the agent a concrete route for unpacking, editing, validating, and repacking the .docx package, which materially improves the odds of preserving the branded shell while replacing the document internals correctly."
+  }
+}

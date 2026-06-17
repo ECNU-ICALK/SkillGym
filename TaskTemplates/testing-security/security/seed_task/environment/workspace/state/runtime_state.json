@@ -1,0 +1,26 @@
+{
+  "request_counters": {
+    "tenant_gold": 4,
+    "tenant_readonly": 1,
+    "tenant_viewer_export": 1
+  },
+  "export_jobs": [
+    {
+      "id": "job_0001",
+      "tenant_id": "tenant_gold",
+      "status": "completed",
+      "row_count": 1,
+      "filters": {
+        "vendor": "jenkins",
+        "severity": null,
+        "kev_only": true,
+        "q": null,
+        "sort": "-published"
+      },
+      "artifact_path": "/home/lenovo/skill/Harbor/skill_moban/testing-security/security/template_new_build/environment/workspace/output/exports/job_0001.csv",
+      "integrity": "9878fab933a82108ee4ffe18653cc29fc90fd356f9dec5e40dff7097c5af8cbf",
+      "created_at": "2026-05-06T10:19:17.453Z"
+    }
+  ],
+  "next_export_job_seq": 2
+}

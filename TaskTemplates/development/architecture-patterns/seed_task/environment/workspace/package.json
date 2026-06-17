@@ -1,0 +1,15 @@
+{
+  "name": "mta-schedule-provider-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Harbor architecture-patterns template task for adding a GTFS-backed schedule provider.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "export-snapshot": "node schedule_gateway/export_snapshot.js"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "express": "^4.21.2"
+  }
+}

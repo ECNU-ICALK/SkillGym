@@ -1,0 +1,55 @@
+{
+  "application": {
+    "name": "podpulse",
+    "component": "api",
+    "part_of": "observability-suite",
+    "team": "sre",
+    "tier": "observability",
+    "image": {
+      "repository": "ghcr.io/stefanprodan/podinfo",
+      "tag": "6.11.2",
+      "pullPolicy": "IfNotPresent"
+    },
+    "container": {
+      "port": 9898,
+      "metricsPort": 9797
+    },
+    "service": {
+      "type": "ClusterIP",
+      "port": 80,
+      "metricsPort": 9797
+    },
+    "probes": {
+      "liveness": {
+        "path": "/healthz",
+        "portName": "http"
+      },
+      "readiness": {
+        "path": "/readyz",
+        "portName": "http"
+      }
+    },
+    "resources": {
+      "requests": {
+        "cpu": "50m",
+        "memory": "64Mi"
+      },
+      "limits": {
+        "cpu": "250m",
+        "memory": "256Mi"
+      }
+    },
+    "config": {
+      "LOG_FORMAT": "json",
+      "CACHE_STRATEGY": "memory",
+      "FEATURE_BANNER": "enabled"
+    },
+    "secretEnv": [
+      {
+        "name": "API_TOKEN",
+        "secretName": "podpulse-runtime",
+        "key": "apiToken"
+      }
+    ]
+  }
+}

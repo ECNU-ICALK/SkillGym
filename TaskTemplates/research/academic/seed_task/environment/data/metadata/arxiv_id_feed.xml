@@ -1,0 +1,728 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/g+GJgtI1hb6FMWxtGQqbZ3Pjia4</id>
+  <title>arXiv Query: search_query=&amp;id_list=2201.11903,2203.11171,2205.11916,2205.10625,2210.03493,2210.03350,2211.10435,2211.12588,2301.13379,2305.04091,2305.10601,2308.09687,2303.03103,2307.15337,2203.14465,2210.03629,2302.04761,2303.09014,2304.07919,2305.02317,2307.02477&amp;start=0&amp;max_results=21</title>
+  <updated>2026-05-06T19:40:39Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=21&amp;id_list=2201.11903,2203.11171,2205.11916,2205.10625,2210.03493,2210.03350,2211.10435,2211.12588,2301.13379,2305.04091,2305.10601,2308.09687,2303.03103,2307.15337,2203.14465,2210.03629,2302.04761,2303.09014,2304.07919,2305.02317,2307.02477" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>21</opensearch:itemsPerPage>
+  <opensearch:totalResults>21</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2210.03493v1</id>
+    <title>Automatic Chain of Thought Prompting in Large Language Models</title>
+    <updated>2022-10-07T12:28:21Z</updated>
+    <link href="https://arxiv.org/abs/2210.03493v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.03493v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) can perform complex reasoning by generating intermediate reasoning steps. Providing these steps for prompting demonstrations is called chain-of-thought (CoT) prompting. CoT prompting has two major paradigms. One leverages a simple prompt like "Let's think step by step" to facilitate step-by-step thinking before answering a question. The other uses a few manual demonstrations one by one, each composed of a question and a reasoning chain that leads to an answer. The superior performance of the second paradigm hinges on the hand-crafting of task-specific demonstrations one by one. We show that such manual efforts may be eliminated by leveraging LLMs with the "Let's think step by step" prompt to generate reasoning chains for demonstrations one by one, i.e., let's think not just step by step, but also one by one. However, these generated chains often come with mistakes. To mitigate the effect of such mistakes, we find that diversity matters for automatically constructing demonstrations. We propose an automatic CoT prompting method: Auto-CoT. It samples questions with diversity and generates reasoning chains to construct demonstrations. On ten public benchmark reasoning tasks with GPT-3, Auto-CoT consistently matches or exceeds the performance of the CoT paradigm that requires manual designs of demonstrations. Code is available at https://github.com/amazon-research/auto-cot</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-07T12:28:21Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhuosheng Zhang</name>
+    </author>
+    <author>
+      <name>Aston Zhang</name>
+    </author>
+    <author>
+      <name>Mu Li</name>
+    </author>
+    <author>
+      <name>Alex Smola</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.03103v1</id>
+    <title>Towards Zero-Shot Functional Compositionality of Language Models</title>
+    <updated>2023-03-06T13:15:25Z</updated>
+    <link href="https://arxiv.org/abs/2303.03103v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.03103v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Pre-trained Language Models (PLM) have become the most desirable starting point in the field of NLP, as they have become remarkably good at solving many individual tasks. Despite such success, in this paper, we argue that current paradigms of working with PLMs are neglecting a critical aspect of modeling human intelligence: functional compositionality. Functional compositionality - the ability to compose learned tasks - has been a long-standing challenge in the field of AI (and many other fields) as it is considered one of the hallmarks of human intelligence. An illustrative example of such is cross-lingual summarization, where a bilingual person (English-French) could directly summarize an English document into French sentences without having to translate the English document or summary into French explicitly. We discuss why this matter is an important open problem that requires further attention from the field. Then, we show that current PLMs (e.g., GPT-2 and T5) don't have functional compositionality yet and it is far from human-level generalizability. Finally, we suggest several research directions that could push the field towards zero-shot functional compositionality of language models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-06T13:15:25Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hangyeol Yu</name>
+    </author>
+    <author>
+      <name>Myeongho Jeong</name>
+    </author>
+    <author>
+      <name>Jamin Shin</name>
+    </author>
+    <author>
+      <name>Hyeongdon Moon</name>
+    </author>
+    <author>
+      <name>Juneyoung Park</name>
+    </author>
+    <author>
+      <name>Seungtaek Choi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.15337v3</id>
+    <title>Skeleton-of-Thought: Prompting LLMs for Efficient Parallel Generation</title>
+    <updated>2024-03-02T02:45:33Z</updated>
+    <link href="https://arxiv.org/abs/2307.15337v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.15337v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This work aims at decreasing the end-to-end generation latency of large language models (LLMs). One of the major causes of the high generation latency is the sequential decoding approach adopted by almost all state-of-the-art LLMs. In this work, motivated by the thinking and writing process of humans, we propose Skeleton-of-Thought (SoT), which first guides LLMs to generate the skeleton of the answer, and then conducts parallel API calls or batched decoding to complete the contents of each skeleton point in parallel. Not only does SoT provide considerable speed-ups across 12 LLMs, but it can also potentially improve the answer quality on several question categories. SoT is an initial attempt at data-centric optimization for inference efficiency, and showcases the potential of eliciting high-quality answers by explicitly planning the answer structure in language.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-28T06:31:34Z</published>
+    <arxiv:comment>In ICLR'24</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xuefei Ning</name>
+    </author>
+    <author>
+      <name>Zinan Lin</name>
+    </author>
+    <author>
+      <name>Zixuan Zhou</name>
+    </author>
+    <author>
+      <name>Zifu Wang</name>
+    </author>
+    <author>
+      <name>Huazhong Yang</name>
+    </author>
+    <author>
+      <name>Yu Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2201.11903v6</id>
+    <title>Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</title>
+    <updated>2023-01-10T23:07:57Z</updated>
+    <link href="https://arxiv.org/abs/2201.11903v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2201.11903v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We explore how generating a chain of thought -- a series of intermediate reasoning steps -- significantly improves the ability of large language models to perform complex reasoning. In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via a simple method called chain of thought prompting, where a few chain of thought demonstrations are provided as exemplars in prompting. Experiments on three large language models show that chain of thought prompting improves performance on a range of arithmetic, commonsense, and symbolic reasoning tasks. The empirical gains can be striking. For instance, prompting a 540B-parameter language model with just eight chain of thought exemplars achieves state of the art accuracy on the GSM8K benchmark of math word problems, surpassing even finetuned GPT-3 with a verifier.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-01-28T02:33:07Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jason Wei</name>
+    </author>
+    <author>
+      <name>Xuezhi Wang</name>
+    </author>
+    <author>
+      <name>Dale Schuurmans</name>
+    </author>
+    <author>
+      <name>Maarten Bosma</name>
+    </author>
+    <author>
+      <name>Brian Ichter</name>
+    </author>
+    <author>
+      <name>Fei Xia</name>
+    </author>
+    <author>
+      <name>Ed Chi</name>
+    </author>
+    <author>
+      <name>Quoc Le</name>
+    </author>
+    <author>
+      <name>Denny Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.11171v4</id>
+    <title>Self-Consistency Improves Chain of Thought Reasoning in Language Models</title>
+    <updated>2023-03-07T17:57:37Z</updated>
+    <link href="https://arxiv.org/abs/2203.11171v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.11171v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Chain-of-thought prompting combined with pre-trained large language models has achieved encouraging results on complex reasoning tasks. In this paper, we propose a new decoding strategy, self-consistency, to replace the naive greedy decoding used in chain-of-thought prompting. It first samples a diverse set of reasoning paths instead of only taking the greedy one, and then selects the most consistent answer by marginalizing out the sampled reasoning paths. Self-consistency leverages the intuition that a complex reasoning problem typically admits multiple different ways of thinking leading to its unique correct answer. Our extensive empirical evaluation shows that self-consistency boosts the performance of chain-of-thought prompting with a striking margin on a range of popular arithmetic and commonsense reasoning benchmarks, including GSM8K (+17.9%), SVAMP (+11.0%), AQuA (+12.2%), StrategyQA (+6.4%) and ARC-challenge (+3.9%).</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-21T17:48:52Z</published>
+    <arxiv:comment>Published at ICLR 2023. V2: added PaLM results; V3: added UL2 results; V4: camera ready version at ICLR 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xuezhi Wang</name>
+    </author>
+    <author>
+      <name>Jason Wei</name>
+    </author>
+    <author>
+      <name>Dale Schuurmans</name>
+    </author>
+    <author>
+      <name>Quoc Le</name>
+    </author>
+    <author>
+      <name>Ed Chi</name>
+    </author>
+    <author>
+      <name>Sharan Narang</name>
+    </author>
+    <author>
+      <name>Aakanksha Chowdhery</name>
+    </author>
+    <author>
+      <name>Denny Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.10625v3</id>
+    <title>Least-to-Most Prompting Enables Complex Reasoning in Large Language Models</title>
+    <updated>2023-04-16T22:08:08Z</updated>
+    <link href="https://arxiv.org/abs/2205.10625v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.10625v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Chain-of-thought prompting has demonstrated remarkable performance on various natural language reasoning tasks. However, it tends to perform poorly on tasks which requires solving problems harder than the exemplars shown in the prompts. To overcome this challenge of easy-to-hard generalization, we propose a novel prompting strategy, least-to-most prompting. The key idea in this strategy is to break down a complex problem into a series of simpler subproblems and then solve them in sequence. Solving each subproblem is facilitated by the answers to previously solved subproblems. Our experimental results on tasks related to symbolic manipulation, compositional generalization, and math reasoning reveal that least-to-most prompting is capable of generalizing to more difficult problems than those seen in the prompts. A notable finding is that when the GPT-3 code-davinci-002 model is used with least-to-most prompting, it can solve the compositional generalization benchmark SCAN in any split (including length split) with an accuracy of at least 99% using just 14 exemplars, compared to only 16% accuracy with chain-of-thought prompting. This is particularly noteworthy because neural-symbolic models in the literature that specialize in solving SCAN are trained on the entire training set containing over 15,000 examples. We have included prompts for all the tasks in the Appendix.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-21T15:34:53Z</published>
+    <arxiv:comment>ICLR 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Denny Zhou</name>
+    </author>
+    <author>
+      <name>Nathanael Schärli</name>
+    </author>
+    <author>
+      <name>Le Hou</name>
+    </author>
+    <author>
+      <name>Jason Wei</name>
+    </author>
+    <author>
+      <name>Nathan Scales</name>
+    </author>
+    <author>
+      <name>Xuezhi Wang</name>
+    </author>
+    <author>
+      <name>Dale Schuurmans</name>
+    </author>
+    <author>
+      <name>Claire Cui</name>
+    </author>
+    <author>
+      <name>Olivier Bousquet</name>
+    </author>
+    <author>
+      <name>Quoc Le</name>
+    </author>
+    <author>
+      <name>Ed Chi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.09687v4</id>
+    <title>Graph of Thoughts: Solving Elaborate Problems with Large Language Models</title>
+    <updated>2024-02-06T18:00:18Z</updated>
+    <link href="https://arxiv.org/abs/2308.09687v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.09687v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce Graph of Thoughts (GoT): a framework that advances prompting capabilities in large language models (LLMs) beyond those offered by paradigms such as Chain-of-Thought or Tree of Thoughts (ToT). The key idea and primary advantage of GoT is the ability to model the information generated by an LLM as an arbitrary graph, where units of information ("LLM thoughts") are vertices, and edges correspond to dependencies between these vertices. This approach enables combining arbitrary LLM thoughts into synergistic outcomes, distilling the essence of whole networks of thoughts, or enhancing thoughts using feedback loops. We illustrate that GoT offers advantages over state of the art on different tasks, for example increasing the quality of sorting by 62% over ToT, while simultaneously reducing costs by &gt;31%. We ensure that GoT is extensible with new thought transformations and thus can be used to spearhead new prompting schemes. This work brings the LLM reasoning closer to human thinking or brain mechanisms such as recurrence, both of which form complex networks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-18T17:29:23Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>Proceedings of the AAAI Conference on Artificial Intelligence 2024 (AAAI'24)</arxiv:journal_ref>
+    <author>
+      <name>Maciej Besta</name>
+    </author>
+    <author>
+      <name>Nils Blach</name>
+    </author>
+    <author>
+      <name>Ales Kubicek</name>
+    </author>
+    <author>
+      <name>Robert Gerstenberger</name>
+    </author>
+    <author>
+      <name>Michal Podstawski</name>
+    </author>
+    <author>
+      <name>Lukas Gianinazzi</name>
+    </author>
+    <author>
+      <name>Joanna Gajda</name>
+    </author>
+    <author>
+      <name>Tomasz Lehmann</name>
+    </author>
+    <author>
+      <name>Hubert Niewiadomski</name>
+    </author>
+    <author>
+      <name>Piotr Nyczyk</name>
+    </author>
+    <author>
+      <name>Torsten Hoefler</name>
+    </author>
+    <arxiv:doi>10.1609/aaai.v38i16.29720</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1609/aaai.v38i16.29720" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.03629v3</id>
+    <title>ReAct: Synergizing Reasoning and Acting in Language Models</title>
+    <updated>2023-03-10T01:00:17Z</updated>
+    <link href="https://arxiv.org/abs/2210.03629v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.03629v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While large language models (LLMs) have demonstrated impressive capabilities across tasks in language understanding and interactive decision making, their abilities for reasoning (e.g. chain-of-thought prompting) and acting (e.g. action plan generation) have primarily been studied as separate topics. In this paper, we explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner, allowing for greater synergy between the two: reasoning traces help the model induce, track, and update action plans as well as handle exceptions, while actions allow it to interface with external sources, such as knowledge bases or environments, to gather additional information. We apply our approach, named ReAct, to a diverse set of language and decision making tasks and demonstrate its effectiveness over state-of-the-art baselines, as well as improved human interpretability and trustworthiness over methods without reasoning or acting components. Concretely, on question answering (HotpotQA) and fact verification (Fever), ReAct overcomes issues of hallucination and error propagation prevalent in chain-of-thought reasoning by interacting with a simple Wikipedia API, and generates human-like task-solving trajectories that are more interpretable than baselines without reasoning traces. On two interactive decision making benchmarks (ALFWorld and WebShop), ReAct outperforms imitation and reinforcement learning methods by an absolute success rate of 34% and 10% respectively, while being prompted with only one or two in-context examples. Project site with code: https://react-lm.github.io</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-06T01:00:32Z</published>
+    <arxiv:comment>v3 is the ICLR camera ready version with some typos fixed. Project site with code: https://react-lm.github.io</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shunyu Yao</name>
+    </author>
+    <author>
+      <name>Jeffrey Zhao</name>
+    </author>
+    <author>
+      <name>Dian Yu</name>
+    </author>
+    <author>
+      <name>Nan Du</name>
+    </author>
+    <author>
+      <name>Izhak Shafran</name>
+    </author>
+    <author>
+      <name>Karthik Narasimhan</name>
+    </author>
+    <author>
+      <name>Yuan Cao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.12588v4</id>
+    <title>Program of Thoughts Prompting: Disentangling Computation from Reasoning for Numerical Reasoning Tasks</title>
+    <updated>2023-10-23T01:27:38Z</updated>
+    <link href="https://arxiv.org/abs/2211.12588v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.12588v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, there has been significant progress in teaching language models to perform step-by-step reasoning to solve complex numerical reasoning tasks. Chain-of-thoughts prompting (CoT) is by far the state-of-art method for these tasks. CoT uses language models to perform both reasoning and computation in the multi-step `thought' process. To disentangle computation from reasoning, we propose `Program of Thoughts' (PoT), which uses language models (mainly Codex) to express the reasoning process as a program. The computation is relegated to an external computer, which executes the generated programs to derive the answer. We evaluate PoT on five math word problem datasets (GSM, AQuA, SVAMP, TabMWP, MultiArith) and three financial-QA datasets (FinQA, ConvFinQA, TATQA) for both few-shot and zero-shot setups. Under both few-shot and zero-shot settings, PoT can show an average performance gain over CoT by around 12\% across all the evaluated datasets. By combining PoT with self-consistency decoding, we can achieve SoTA performance on all math problem datasets and near-SoTA performance on financial datasets. All of our data and code are released in Github https://github.com/wenhuchen/Program-of-Thoughts</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-22T21:06:00Z</published>
+    <arxiv:comment>Published at TMLR 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Wenhu Chen</name>
+    </author>
+    <author>
+      <name>Xueguang Ma</name>
+    </author>
+    <author>
+      <name>Xinyi Wang</name>
+    </author>
+    <author>
+      <name>William W. Cohen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.02317v3</id>
+    <title>Visual Chain of Thought: Bridging Logical Gaps with Multimodal Infillings</title>
+    <updated>2024-01-23T02:29:35Z</updated>
+    <link href="https://arxiv.org/abs/2305.02317v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.02317v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in large language models elicit reasoning in a chain-of-thought that allows models to decompose problems in a human-like fashion. Though this paradigm improves multi-step reasoning ability in language models, it is limited by being unimodal and applied mainly to question-answering tasks. We claim that incorporating visual augmentation into reasoning is essential, especially for complex, imaginative tasks. Consequently, we introduce VCoT, a novel method that leverages chain-of-thought prompting with vision-language grounding to recursively bridge the logical gaps within sequential data. Our method uses visual guidance to generate synthetic multimodal infillings that add consistent and novel information to reduce the logical gaps for downstream tasks that can benefit from temporal reasoning, as well as provide interpretability into models' multi-step reasoning. We apply VCoT to the Visual Storytelling and WikiHow summarization datasets and demonstrate through human evaluation that VCoT offers novel and consistent synthetic data augmentation beating chain-of-thought baselines, which can be used to enhance downstream performance.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-03T17:58:29Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Daniel Rose</name>
+    </author>
+    <author>
+      <name>Vaishnavi Himakunthala</name>
+    </author>
+    <author>
+      <name>Andy Ouyang</name>
+    </author>
+    <author>
+      <name>Ryan He</name>
+    </author>
+    <author>
+      <name>Alex Mei</name>
+    </author>
+    <author>
+      <name>Yujie Lu</name>
+    </author>
+    <author>
+      <name>Michael Saxon</name>
+    </author>
+    <author>
+      <name>Chinmay Sonar</name>
+    </author>
+    <author>
+      <name>Diba Mirza</name>
+    </author>
+    <author>
+      <name>William Yang Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.03350v3</id>
+    <title>Measuring and Narrowing the Compositionality Gap in Language Models</title>
+    <updated>2023-10-17T18:57:17Z</updated>
+    <link href="https://arxiv.org/abs/2210.03350v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.03350v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We investigate the ability of language models to perform compositional reasoning tasks where the overall solution depends on correctly composing the answers to sub-problems. We measure how often models can correctly answer all sub-problems but not generate the overall solution, a ratio we call the compositionality gap. We evaluate this ratio by asking multi-hop questions with answers that require composing multiple facts unlikely to have been observed together during pretraining. In the GPT-3 family of models, as model size increases we show that the single-hop question answering performance improves faster than the multi-hop performance does, therefore the compositionality gap does not decrease. This surprising result suggests that while more powerful models memorize and recall more factual knowledge, they show no corresponding improvement in their ability to perform this kind of compositional reasoning.
+  We then demonstrate how elicitive prompting (such as chain of thought) narrows the compositionality gap by reasoning explicitly. We present a new method, self-ask, that further improves on chain of thought. In our method, the model explicitly asks itself (and answers) follow-up questions before answering the initial question. We finally show that self-ask's structured prompting lets us easily plug in a search engine to answer the follow-up questions, which additionally improves accuracy.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-07T06:50:23Z</published>
+    <arxiv:comment>To appear at Findings of EMNLP 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ofir Press</name>
+    </author>
+    <author>
+      <name>Muru Zhang</name>
+    </author>
+    <author>
+      <name>Sewon Min</name>
+    </author>
+    <author>
+      <name>Ludwig Schmidt</name>
+    </author>
+    <author>
+      <name>Noah A. Smith</name>
+    </author>
+    <author>
+      <name>Mike Lewis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.04761v1</id>
+    <title>Toolformer: Language Models Can Teach Themselves to Use Tools</title>
+    <updated>2023-02-09T16:49:57Z</updated>
+    <link href="https://arxiv.org/abs/2302.04761v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.04761v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models (LMs) exhibit remarkable abilities to solve new tasks from just a few examples or textual instructions, especially at scale. They also, paradoxically, struggle with basic functionality, such as arithmetic or factual lookup, where much simpler and smaller models excel. In this paper, we show that LMs can teach themselves to use external tools via simple APIs and achieve the best of both worlds. We introduce Toolformer, a model trained to decide which APIs to call, when to call them, what arguments to pass, and how to best incorporate the results into future token prediction. This is done in a self-supervised way, requiring nothing more than a handful of demonstrations for each API. We incorporate a range of tools, including a calculator, a Q\&amp;A system, two different search engines, a translation system, and a calendar. Toolformer achieves substantially improved zero-shot performance across a variety of downstream tasks, often competitive with much larger models, without sacrificing its core language modeling abilities.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-09T16:49:57Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Timo Schick</name>
+    </author>
+    <author>
+      <name>Jane Dwivedi-Yu</name>
+    </author>
+    <author>
+      <name>Roberto Dessì</name>
+    </author>
+    <author>
+      <name>Roberta Raileanu</name>
+    </author>
+    <author>
+      <name>Maria Lomeli</name>
+    </author>
+    <author>
+      <name>Luke Zettlemoyer</name>
+    </author>
+    <author>
+      <name>Nicola Cancedda</name>
+    </author>
+    <author>
+      <name>Thomas Scialom</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.10601v2</id>
+    <title>Tree of Thoughts: Deliberate Problem Solving with Large Language Models</title>
+    <updated>2023-12-03T22:50:35Z</updated>
+    <link href="https://arxiv.org/abs/2305.10601v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.10601v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models are increasingly being deployed for general problem solving across a wide range of tasks, but are still confined to token-level, left-to-right decision-making processes during inference. This means they can fall short in tasks that require exploration, strategic lookahead, or where initial decisions play a pivotal role. To surmount these challenges, we introduce a new framework for language model inference, Tree of Thoughts (ToT), which generalizes over the popular Chain of Thought approach to prompting language models, and enables exploration over coherent units of text (thoughts) that serve as intermediate steps toward problem solving. ToT allows LMs to perform deliberate decision making by considering multiple different reasoning paths and self-evaluating choices to decide the next course of action, as well as looking ahead or backtracking when necessary to make global choices. Our experiments show that ToT significantly enhances language models' problem-solving abilities on three novel tasks requiring non-trivial planning or search: Game of 24, Creative Writing, and Mini Crosswords. For instance, in Game of 24, while GPT-4 with chain-of-thought prompting only solved 4% of tasks, our method achieved a success rate of 74%. Code repo with all prompts: https://github.com/princeton-nlp/tree-of-thought-llm.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-17T23:16:17Z</published>
+    <arxiv:comment>NeurIPS 2023 camera ready version. Code repo with all prompts: https://github.com/princeton-nlp/tree-of-thought-llm</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shunyu Yao</name>
+    </author>
+    <author>
+      <name>Dian Yu</name>
+    </author>
+    <author>
+      <name>Jeffrey Zhao</name>
+    </author>
+    <author>
+      <name>Izhak Shafran</name>
+    </author>
+    <author>
+      <name>Thomas L. Griffiths</name>
+    </author>
+    <author>
+      <name>Yuan Cao</name>
+    </author>
+    <author>
+      <name>Karthik Narasimhan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.09014v1</id>
+    <title>ART: Automatic multi-step reasoning and tool-use for large language models</title>
+    <updated>2023-03-16T01:04:45Z</updated>
+    <link href="https://arxiv.org/abs/2303.09014v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.09014v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) can perform complex reasoning in few- and zero-shot settings by generating intermediate chain of thought (CoT) reasoning steps. Further, each reasoning step can rely on external tools to support computation beyond the core LLM capabilities (e.g. search/running code). Prior work on CoT prompting and tool use typically requires hand-crafting task-specific demonstrations and carefully scripted interleaving of model generations with tool use. We introduce Automatic Reasoning and Tool-use (ART), a framework that uses frozen LLMs to automatically generate intermediate reasoning steps as a program. Given a new task to solve, ART selects demonstrations of multi-step reasoning and tool use from a task library. At test time, ART seamlessly pauses generation whenever external tools are called, and integrates their output before resuming generation. ART achieves a substantial improvement over few-shot prompting and automatic CoT on unseen tasks in the BigBench and MMLU benchmarks, and matches performance of hand-crafted CoT prompts on a majority of these tasks. ART is also extensible, and makes it easy for humans to improve performance by correcting errors in task-specific programs or incorporating new tools, which we demonstrate by drastically improving performance on select tasks with minimal human intervention.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-16T01:04:45Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Bhargavi Paranjape</name>
+    </author>
+    <author>
+      <name>Scott Lundberg</name>
+    </author>
+    <author>
+      <name>Sameer Singh</name>
+    </author>
+    <author>
+      <name>Hannaneh Hajishirzi</name>
+    </author>
+    <author>
+      <name>Luke Zettlemoyer</name>
+    </author>
+    <author>
+      <name>Marco Tulio Ribeiro</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2301.13379v3</id>
+    <title>Faithful Chain-of-Thought Reasoning</title>
+    <updated>2023-09-20T22:19:30Z</updated>
+    <link href="https://arxiv.org/abs/2301.13379v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2301.13379v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While Chain-of-Thought (CoT) prompting boosts Language Models' (LM) performance on a gamut of complex reasoning tasks, the generated reasoning chain does not necessarily reflect how the model arrives at the answer (aka. faithfulness). We propose Faithful CoT, a reasoning framework involving two stages: Translation (Natural Language query $\rightarrow$ symbolic reasoning chain) and Problem Solving (reasoning chain $\rightarrow$ answer), using an LM and a deterministic solver respectively. This guarantees that the reasoning chain provides a faithful explanation of the final answer. Aside from interpretability, Faithful CoT also improves empirical performance: it outperforms standard CoT on 9 of 10 benchmarks from 4 diverse domains, with a relative accuracy gain of 6.3% on Math Word Problems (MWP), 3.4% on Planning, 5.5% on Multi-hop Question Answering (QA), and 21.4% on Relational Inference. Furthermore, with GPT-4 and Codex, it sets the new state-of-the-art few-shot performance on 7 datasets (with 95.0+ accuracy on 6 of them), showing a strong synergy between faithfulness and accuracy.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-01-31T03:04:26Z</published>
+    <arxiv:comment>IJCNLP-AACL 2023 camera-ready version</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Qing Lyu</name>
+    </author>
+    <author>
+      <name>Shreya Havaldar</name>
+    </author>
+    <author>
+      <name>Adam Stein</name>
+    </author>
+    <author>
+      <name>Li Zhang</name>
+    </author>
+    <author>
+      <name>Delip Rao</name>
+    </author>
+    <author>
+      <name>Eric Wong</name>
+    </author>
+    <author>
+      <name>Marianna Apidianaki</name>
+    </author>
+    <author>
+      <name>Chris Callison-Burch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.02477v3</id>
+    <title>Reasoning or Reciting? Exploring the Capabilities and Limitations of Language Models Through Counterfactual Tasks</title>
+    <updated>2024-03-28T23:37:24Z</updated>
+    <link href="https://arxiv.org/abs/2307.02477v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.02477v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The impressive performance of recent language models across a wide range of tasks suggests that they possess a degree of abstract reasoning skills. Are these skills general and transferable, or specialized to specific tasks seen during pretraining? To disentangle these effects, we propose an evaluation framework based on "counterfactual" task variants that deviate from the default assumptions underlying standard tasks. Across a suite of 11 tasks, we observe nontrivial performance on the counterfactual variants, but nevertheless find that performance substantially and consistently degrades compared to the default conditions. This suggests that while current LMs may possess abstract task-solving skills to an extent, they often also rely on narrow, non-transferable procedures for task-solving. These results motivate a more careful interpretation of language model performance that teases apart these aspects of behavior.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-05T17:50:42Z</published>
+    <arxiv:comment>NAACL 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhaofeng Wu</name>
+    </author>
+    <author>
+      <name>Linlu Qiu</name>
+    </author>
+    <author>
+      <name>Alexis Ross</name>
+    </author>
+    <author>
+      <name>Ekin Akyürek</name>
+    </author>
+    <author>
+      <name>Boyuan Chen</name>
+    </author>
+    <author>
+      <name>Bailin Wang</name>
+    </author>
+    <author>
+      <name>Najoung Kim</name>
+    </author>
+    <author>
+      <name>Jacob Andreas</name>
+    </author>
+    <author>
+      <name>Yoon Kim</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.07919v2</id>
+    <title>Chain of Thought Prompt Tuning in Vision Language Models</title>
+    <updated>2023-06-17T06:40:27Z</updated>
+    <link href="https://arxiv.org/abs/2304.07919v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.07919v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language-Image Pre-training has demonstrated promising results on zero-shot and few-shot downstream tasks by prompting visual models with natural language prompts. However, most recent studies only use a single prompt for tuning, neglecting the inherent step-to-step cognitive reasoning process that humans conduct in complex task settings, for example, when processing images from unfamiliar domains. Chain of Thought is a simple and effective approximation to human reasoning process and has been proven useful for natural language processing (NLP) tasks. Based on this cognitive intuition, we believe that conducting effective reasoning is also an important problem in visual tasks, and a chain of thought could be a solution to this problem. In this work, we propose a novel chain of thought prompt tuning for vision-language modeling. Extensive experiments show that our method not only generalizes better in image classification tasks, has greater transferability beyond a single dataset, and has stronger domain generalization performance, but also performs much better in imagetext retrieval and visual question answering, which require more reasoning capabilities. We are the first to successfully adapt chain-of-thought prompting that combines visual and textual embeddings. We will release our codes</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-16T23:59:25Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Jiaxin Ge</name>
+    </author>
+    <author>
+      <name>Hongyin Luo</name>
+    </author>
+    <author>
+      <name>Siyuan Qian</name>
+    </author>
+    <author>
+      <name>Yulu Gan</name>
+    </author>
+    <author>
+      <name>Jie Fu</name>
+    </author>
+    <author>
+      <name>Shanghang Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.14465v2</id>
+    <title>STaR: Bootstrapping Reasoning With Reasoning</title>
+    <updated>2022-05-20T13:52:54Z</updated>
+    <link href="https://arxiv.org/abs/2203.14465v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.14465v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generating step-by-step "chain-of-thought" rationales improves language model performance on complex reasoning tasks like mathematics or commonsense question-answering. However, inducing language model rationale generation currently requires either constructing massive rationale datasets or sacrificing accuracy by using only few-shot inference. We propose a technique to iteratively leverage a small number of rationale examples and a large dataset without rationales, to bootstrap the ability to perform successively more complex reasoning. This technique, the "Self-Taught Reasoner" (STaR), relies on a simple loop: generate rationales to answer many questions, prompted with a few rationale examples; if the generated answers are wrong, try again to generate a rationale given the correct answer; fine-tune on all the rationales that ultimately yielded correct answers; repeat. We show that STaR significantly improves performance on multiple datasets compared to a model fine-tuned to directly predict final answers, and performs comparably to fine-tuning a 30$\times$ larger state-of-the-art language model on CommensenseQA. Thus, STaR lets a model improve itself by learning from its own generated reasoning.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-28T03:12:15Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Eric Zelikman</name>
+    </author>
+    <author>
+      <name>Yuhuai Wu</name>
+    </author>
+    <author>
+      <name>Jesse Mu</name>
+    </author>
+    <author>
+      <name>Noah D. Goodman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.10435v2</id>
+    <title>PAL: Program-aided Language Models</title>
+    <updated>2023-01-27T15:30:27Z</updated>
+    <link href="https://arxiv.org/abs/2211.10435v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.10435v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have recently demonstrated an impressive ability to perform arithmetic and symbolic reasoning tasks, when provided with a few examples at test time ("few-shot prompting"). Much of this success can be attributed to prompting methods such as "chain-of-thought'', which employ LLMs for both understanding the problem description by decomposing it into steps, as well as solving each step of the problem. While LLMs seem to be adept at this sort of step-by-step decomposition, LLMs often make logical and arithmetic mistakes in the solution part, even when the problem is decomposed correctly. In this paper, we present Program-Aided Language models (PAL): a novel approach that uses the LLM to read natural language problems and generate programs as the intermediate reasoning steps, but offloads the solution step to a runtime such as a Python interpreter. With PAL, decomposing the natural language problem into runnable steps remains the only learning task for the LLM, while solving is delegated to the interpreter. We demonstrate this synergy between a neural LLM and a symbolic interpreter across 13 mathematical, symbolic, and algorithmic reasoning tasks from BIG-Bench Hard and other benchmarks. In all these natural language reasoning tasks, generating code using an LLM and reasoning using a Python interpreter leads to more accurate results than much larger models. For example, PAL using Codex achieves state-of-the-art few-shot accuracy on the GSM8K benchmark of math word problems, surpassing PaLM-540B which uses chain-of-thought by absolute 15% top-1. Our code and data are publicly available at http://reasonwithpal.com/ .</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-18T18:56:13Z</published>
+    <arxiv:comment>The first three authors contributed equally. Our code and data are publicly available at http://reasonwithpal.com/</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Luyu Gao</name>
+    </author>
+    <author>
+      <name>Aman Madaan</name>
+    </author>
+    <author>
+      <name>Shuyan Zhou</name>
+    </author>
+    <author>
+      <name>Uri Alon</name>
+    </author>
+    <author>
+      <name>Pengfei Liu</name>
+    </author>
+    <author>
+      <name>Yiming Yang</name>
+    </author>
+    <author>
+      <name>Jamie Callan</name>
+    </author>
+    <author>
+      <name>Graham Neubig</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.04091v3</id>
+    <title>Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models</title>
+    <updated>2023-05-26T07:06:48Z</updated>
+    <link href="https://arxiv.org/abs/2305.04091v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.04091v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have recently been shown to deliver impressive performance in various NLP tasks. To tackle multi-step reasoning tasks, few-shot chain-of-thought (CoT) prompting includes a few manually crafted step-by-step reasoning demonstrations which enable LLMs to explicitly generate reasoning steps and improve their reasoning task accuracy. To eliminate the manual effort, Zero-shot-CoT concatenates the target problem statement with "Let's think step by step" as an input prompt to LLMs. Despite the success of Zero-shot-CoT, it still suffers from three pitfalls: calculation errors, missing-step errors, and semantic misunderstanding errors. To address the missing-step errors, we propose Plan-and-Solve (PS) Prompting. It consists of two components: first, devising a plan to divide the entire task into smaller subtasks, and then carrying out the subtasks according to the plan. To address the calculation errors and improve the quality of generated reasoning steps, we extend PS prompting with more detailed instructions and derive PS+ prompting. We evaluate our proposed prompting strategy on ten datasets across three reasoning problems. The experimental results over GPT-3 show that our proposed zero-shot prompting consistently outperforms Zero-shot-CoT across all datasets by a large margin, is comparable to or exceeds Zero-shot-Program-of-Thought Prompting, and has comparable performance with 8-shot CoT prompting on the math reasoning problem. The code can be found at https://github.com/AGI-Edgerunners/Plan-and-Solve-Prompting.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-06T16:34:37Z</published>
+    <arxiv:comment>ACL 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Lei Wang</name>
+    </author>
+    <author>
+      <name>Wanyu Xu</name>
+    </author>
+    <author>
+      <name>Yihuai Lan</name>
+    </author>
+    <author>
+      <name>Zhiqiang Hu</name>
+    </author>
+    <author>
+      <name>Yunshi Lan</name>
+    </author>
+    <author>
+      <name>Roy Ka-Wei Lee</name>
+    </author>
+    <author>
+      <name>Ee-Peng Lim</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.11916v4</id>
+    <title>Large Language Models are Zero-Shot Reasoners</title>
+    <updated>2023-01-29T05:14:17Z</updated>
+    <link href="https://arxiv.org/abs/2205.11916v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.11916v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Pretrained large language models (LLMs) are widely used in many sub-fields of natural language processing (NLP) and generally known as excellent few-shot learners with task-specific exemplars. Notably, chain of thought (CoT) prompting, a recent technique for eliciting complex multi-step reasoning through step-by-step answer examples, achieved the state-of-the-art performances in arithmetics and symbolic reasoning, difficult system-2 tasks that do not follow the standard scaling laws for LLMs. While these successes are often attributed to LLMs' ability for few-shot learning, we show that LLMs are decent zero-shot reasoners by simply adding "Let's think step by step" before each answer. Experimental results demonstrate that our Zero-shot-CoT, using the same single prompt template, significantly outperforms zero-shot LLM performances on diverse benchmark reasoning tasks including arithmetics (MultiArith, GSM8K, AQUA-RAT, SVAMP), symbolic reasoning (Last Letter, Coin Flip), and other logical reasoning tasks (Date Understanding, Tracking Shuffled Objects), without any hand-crafted few-shot examples, e.g. increasing the accuracy on MultiArith from 17.7% to 78.7% and GSM8K from 10.4% to 40.7% with large InstructGPT model (text-davinci-002), as well as similar magnitudes of improvements with another off-the-shelf large model, 540B parameter PaLM. The versatility of this single prompt across very diverse reasoning tasks hints at untapped and understudied fundamental zero-shot capabilities of LLMs, suggesting high-level, multi-task broad cognitive capabilities may be extracted by simple prompting. We hope our work not only serves as the minimal strongest zero-shot baseline for the challenging reasoning benchmarks, but also highlights the importance of carefully exploring and analyzing the enormous zero-shot knowledge hidden inside LLMs before crafting finetuning datasets or few-shot exemplars.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-24T09:22:26Z</published>
+    <arxiv:comment>Accepted to NeurIPS2022. Our code is available at https://github.com/kojima-takeshi188/zero_shot_cot</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Takeshi Kojima</name>
+    </author>
+    <author>
+      <name>Shixiang Shane Gu</name>
+    </author>
+    <author>
+      <name>Machel Reid</name>
+    </author>
+    <author>
+      <name>Yutaka Matsuo</name>
+    </author>
+    <author>
+      <name>Yusuke Iwasawa</name>
+    </author>
+  </entry>
+</feed>

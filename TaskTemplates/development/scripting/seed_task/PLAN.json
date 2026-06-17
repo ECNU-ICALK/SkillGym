@@ -1,0 +1,171 @@
+{
+  "task_id": "scripting__airport-report-pipeline",
+  "category": "scripting",
+  "design_status": "validated",
+  "selected_skill": "bash-defensive-patterns",
+  "selected_skill_stars": "35521",
+  "selection_rationale": [
+    "The skill is a high-star scripting-category skill whose public workflow directly matches this task: strict mode, input validation, safe file handling, logging, cleanup, and basic testing.",
+    "It does not depend on private accounts, external SaaS permissions, login state, or privacy-sensitive workflows.",
+    "A shell-pipeline repair task creates action-level failure modes that a defensive Bash workflow can materially reduce."
+  ],
+  "rejected_high_star_skills": [
+    {
+      "skill": "prose",
+      "stars": "365.8k",
+      "reason": "Strong multi-agent orchestration skill, but not specific to repairing a real shell data pipeline."
+    },
+    {
+      "skill": "coding-agent",
+      "stars": "365.8k",
+      "reason": "General autonomous agent workflow rather than a scripting-domain skill for robust Bash repair."
+    },
+    {
+      "skill": "create-prompt",
+      "stars": "184.4k",
+      "reason": "Prompt-production oriented rather than task-local runtime scripting and shell failure handling."
+    },
+    {
+      "skill": "dev-browser",
+      "stars": "54.7k",
+      "reason": "Relies on browser state and a more sensitive runtime surface than this low-risk local scripting template."
+    }
+  ],
+  "task_shape": {
+    "service_type": "batch reporting pipeline",
+    "domain": "airport country and region rollups",
+    "runtime": "single-container shell pipeline with vendored real data",
+    "solver_action": "repair the existing shell orchestration and stage scripts instead of generating static outputs"
+  },
+  "planned_verifier_focus": [
+    "Baseline output correctness against recomputed expected results",
+    "Repeat-run stability and stage-log continuity",
+    "Failure-path cleanup and non-zero exit behavior",
+    "Per-input presence validation with no stale final deliverables left behind",
+    "Generalization on an alternate real-data fixture in a workspace path containing spaces",
+    "Honoring a caller-provided AIRPORTS_TMP_DIR and cleaning it after success",
+    "Rejecting overlapping rebuilds for the same output directory without clobbering the active run",
+    "Cleaning published outputs and internal control artifacts after an interrupted rerun, then allowing a clean retry",
+    "Input immutability and shell-chain preservation"
+  ],
+  "real_data_sources": [
+    {
+      "planned_file": "environment/data/ourairports/countries.tsv",
+      "reference_type": "country dimension rows derived from the real source snapshot",
+      "reference": "OurAirports countries.csv",
+      "link": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/main/countries.csv"
+    },
+    {
+      "planned_file": "environment/data/ourairports/regions.tsv",
+      "reference_type": "region dimension rows derived from the real source snapshot",
+      "reference": "OurAirports regions.csv",
+      "link": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/main/regions.csv"
+    },
+    {
+      "planned_file": "environment/data/ourairports/airports.tsv",
+      "reference_type": "airport fact rows derived from the real source snapshot",
+      "reference": "OurAirports airports.csv",
+      "link": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/main/airports.csv"
+    },
+    {
+      "planned_file": "environment/data/ourairports/runways.tsv",
+      "reference_type": "runway fact rows derived from the real source snapshot",
+      "reference": "OurAirports runways.csv",
+      "link": "https://raw.githubusercontent.com/davidmegginson/ourairports-data/main/runways.csv"
+    }
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime skill-copy logic may differ between with_skill and without_skill variants.",
+  "local_validation": {
+    "buggy_workspace_expected_result": "Fails substantive verifier checks for stale final-output cleanup, missing full-input validation, overlap rejection, interrupted-rerun recovery, and aggregate correctness while still preserving action-level failure modes.",
+    "oracle_result": "Official solution target is to pass all 11 verifier tests locally on the current task version, including overlap rejection and interrupted-rerun recovery.",
+    "local_test_command": "tests/test.sh inside the built task container"
+  },
+  "oracle_validation": {
+    "job": "/home/lenovo/.tmp_harbor_jobs_iter9f-oracle-20260502-004231/iter9f-oracle-20260502-004231",
+    "trial": "task_oracle_e2b__z5iQuLX",
+    "reward": 1.0,
+    "tests_passed": "11/11",
+    "task_checksum": "b33bf2fd7e088a1dcbed72bcc5713f3e0180138c958aed851517383d560f9d60"
+  },
+  "experiment_results": {
+    "effective_comparisons": 4,
+    "with_skill": {
+      "pass_rate": "2/4",
+      "avg_agent_seconds": 510.26055175,
+      "avg_total_tokens": 635147.25,
+      "trials": [
+        {
+          "job": "/home/lenovo/.tmp_harbor_jobs_iter9a-with-20260501-234026/iter9a-with-20260501-234026",
+          "trial": "task_with_skills_e2b__aeJD8W5",
+          "reward": 1.0
+        },
+        {
+          "job": "/home/lenovo/.tmp_harbor_jobs_iter9b-with-20260502-000000/iter9b-with-20260502-000000",
+          "trial": "task_with_skills_e2b__J7PeGff",
+          "reward": 0.0,
+          "note": "Failed on shared tmp-root overlap isolation and interrupted rerun cleanup."
+        },
+        {
+          "job": "/home/lenovo/.tmp_harbor_jobs_iter9c-with-20260502-000608/iter9c-with-20260502-000608",
+          "trial": "task_with_skills_e2b__j8s33yS",
+          "reward": 0.0,
+          "note": "Failed on stale output cleanup after interrupted rerun and on shared tmp-root overlap isolation."
+        },
+        {
+          "job": "/home/lenovo/.tmp_harbor_jobs_iter9e-with-20260502-002858/iter9e-with-20260502-002858",
+          "trial": "task_with_skills_e2b__qaf8UWJ",
+          "reward": 1.0
+        }
+      ]
+    },
+    "without_skill": {
+      "pass_rate": "0/4",
+      "avg_agent_seconds": 493.61259025,
+      "avg_total_tokens": 611481.25,
+      "trials": [
+        {
+          "job": "/home/lenovo/.tmp_harbor_jobs_iter9a-without-20260501-234026/iter9a-without-20260501-234026",
+          "trial": "task_without_skills_e2b__jsWCNbb",
+          "reward": 0.0,
+          "note": "Failed on shared tmp-root overlap isolation and interrupted rerun cleanup."
+        },
+        {
+          "job": "/home/lenovo/.tmp_harbor_jobs_iter9b-without-20260502-000000/iter9b-without-20260502-000000",
+          "trial": "task_without_skills_e2b__5NUtReK",
+          "reward": 0.0,
+          "note": "Failed on shared tmp-root overlap isolation and interrupted rerun cleanup."
+        },
+        {
+          "job": "/home/lenovo/.tmp_harbor_jobs_iter9c-without-20260502-000608/iter9c-without-20260502-000608",
+          "trial": "task_without_skills_e2b__eHZruH4",
+          "reward": 0.0,
+          "note": "Failed on shared tmp-root overlap isolation and interrupted rerun cleanup."
+        },
+        {
+          "job": "/home/lenovo/.tmp_harbor_jobs_iter9e-without-20260502-002858/iter9e-without-20260502-002858",
+          "trial": "task_without_skills_e2b__aEyQGBc",
+          "reward": 0.0,
+          "note": "Failed on shared tmp-root overlap isolation and interrupted rerun cleanup."
+        }
+      ]
+    },
+    "excluded_invalid_trials": [
+      {
+        "job": "/home/lenovo/.tmp_harbor_jobs_iter9d-with-20260502-001659/iter9d-with-20260502-001659",
+        "trial": "task_with_skills_e2b__f4PMRpU",
+        "reason": "Task-level run ended in ReadError after the agent phase, so it was excluded from effective comparisons."
+      },
+      {
+        "job": "/home/lenovo/.tmp_harbor_jobs_iter9d-without-20260502-001700/iter9d-without-20260502-001700",
+        "trial": "task_without_skills_e2b__szVuzHH",
+        "reason": "Omitted from the final aggregate only to keep the comparison window paired after the corresponding with_skill run was invalid."
+      }
+    ]
+  },
+  "iteration_notes": [
+    "Do not modify any existing skill.",
+    "Final README experiment metrics must come from completed E2B runs only.",
+    "without_skill failure must remain action-level rather than a mere formatting mismatch.",
+    "with_skill and without_skill variants must keep identical task statement, tests, data, dependencies, and non-skill environment."
+  ]
+}

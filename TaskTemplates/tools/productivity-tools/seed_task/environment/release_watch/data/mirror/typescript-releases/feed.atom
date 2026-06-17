@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>microsoft/TypeScript releases</title>
+  <link href="https://github.com/microsoft/typescript/releases.atom" rel="self" />
+  <updated>2026-04-17T18:24:03Z</updated>
+  <id>https://github.com/microsoft/typescript/releases</id>
+  <entry>
+    <title>TypeScript 6.0.3</title>
+    <link href="https://github.com/microsoft/TypeScript/releases/tag/v6.0.3" />
+    <id>tag:github.com,2008:Repository/20929025/v6.0.3</id>
+    <updated>2026-04-17T18:24:03Z</updated>
+  </entry>
+  <entry>
+    <title>TypeScript 6.0</title>
+    <link href="https://github.com/microsoft/TypeScript/releases/tag/v6.0.2" />
+    <id>tag:github.com,2008:Repository/20929025/v6.0.2</id>
+    <updated>2026-03-23T17:08:48Z</updated>
+  </entry>
+  <entry>
+    <title>TypeScript 6.0.1 RC</title>
+    <link href="https://github.com/microsoft/TypeScript/releases/tag/v6.0-rc" />
+    <id>tag:github.com,2008:Repository/20929025/v6.0-rc</id>
+    <updated>2026-03-23T17:08:08Z</updated>
+  </entry>
+  <entry>
+    <title>TypeScript 6.0 Beta</title>
+    <link href="https://github.com/microsoft/TypeScript/releases/tag/v6.0-beta" />
+    <id>tag:github.com,2008:Repository/20929025/v6.0-beta</id>
+    <updated>2026-02-18T18:11:46Z</updated>
+  </entry>
+</feed>

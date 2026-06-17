@@ -1,0 +1,11 @@
+{
+  "owner": "1kalin",
+  "slug": "afrexai-crm-updater",
+  "displayName": "Crm Manager",
+  "latest": {
+    "version": "1.1.0",
+    "publishedAt": 1770951526567,
+    "commit": "https://github.com/openclaw/skills/commit/202fd7bc10f3a1fd59f8ba7cbb465ce54300e918"
+  },
+  "history": []
+}

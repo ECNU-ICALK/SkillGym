@@ -1,0 +1,225 @@
+airport_ident	airport_type	airport_name	country_code	region_code	municipality	scheduled_service
+AE-0007	heliport	Al Ghuwaifat Border Post Helipad	AE	AE-AZ	Al Ghuwaifat	no
+AE-0008	closed	Al Ghuwaifat Customs Post Helipad	AE	AE-AZ	Al Ghuwaifat	no
+AE-0009	heliport	Delma Hospital Helipad	AE	AE-AZ	Delma Island	no
+AE-0014	heliport	Ghantoot Racing & Polo Club Helipad	AE	AE-AZ		no
+AE-0015	heliport	Golden Tulip Al Jazira Helipad	AE	AE-AZ		no
+AE-0016	heliport	Ghantoot Hotel 1 Helipad	AE	AE-AZ		no
+AE-0017	heliport	Ghantoot Hotel 2 Helipad	AE	AE-AZ		no
+AE-0018	heliport	Riyadh Palace Helipad	AE	AE-AZ	Ghantoot	no
+AE-0020	heliport	Yas Marina Heliport	AE	AE-AZ	Abu Dhabi	no
+AE-0021	heliport	Yas Marina Circuit Heliport	AE	AE-AZ	Abu Dhabi	no
+AE-0022	heliport	Al Mushrif Palace Helipad	AE	AE-AZ	Abu Dhabi	no
+AE-0023	heliport	Al Forsan Heliport	AE	AE-AZ	Abu Dhabi	no
+AE-0024	small_airport	Upper Yasat Island Airport	AE	AE-AZ	Al-Yasat	no
+AE-0025	heliport	Al Sila Former Hospital Heliport	AE	AE-AZ	Baya Al Sila	no
+AE-0026	small_airport	Al Qaffay Airport	AE	AE-AZ	Al Qaffay	no
+AE-0027	closed	Abu Dhabi Airfield	AE	AE-AZ	Abu Dhabi	no
+AE-0028	heliport	Crown Prince Court Helipad 1	AE	AE-AZ	Abu Dhabi	no
+AE-0029	heliport	Crown Prince Court Helipad 2	AE	AE-AZ	Abu Dhabi	no
+AE-0189	closed	Al Muzoon Central Helipad	AE	AE-AZ	Abu Dhabi	no
+AE-0228	closed	Asab Airfield	AE	AE-AZ	Asab	no
+AE-0043	heliport	Sharjah Government Helipad	AE	AE-SH	Sharjah	no
+AE-0044	heliport	Al Dana Tower Helipad	AE	AE-SH	Sharjah	no
+AE-0045	heliport	Al Batha Tower Helipad	AE	AE-SH	Sharjah	no
+AE-0046	heliport	Gulf Building Helipad	AE	AE-SH	Sharjah	no
+AE-0047	heliport	United Arab Bank Tower Helipad	AE	AE-SH	Sharjah	no
+AE-0048	heliport	Sultaco Building Helipad	AE	AE-SH	Sharjah	no
+AE-0049	heliport	Sharjah Police Heliport	AE	AE-SH	Sharjah	no
+AE-0051	heliport	Sharjah Heliport	AE	AE-SH	Sharjah	no
+AE-0052	heliport	Al Saud Building Helipad	AE	AE-SH	Sharjah	no
+AE-0053	heliport	Al Majarrah Building Helipad	AE	AE-SH	Sharjah	no
+AE-0054	heliport	Al Falasi Building Helipad	AE	AE-SH	Sharjah	no
+AE-0055	heliport	Bel Rasheed Building Helipad	AE	AE-SH	Sharjah	no
+AE-0056	heliport	Al Ferasa Tower Helipad	AE	AE-SH	Sharjah	no
+AE-0057	heliport	Golden Tower Helipad	AE	AE-SH	Sharjah	no
+AE-0058	heliport	Latifa Tower Helipad	AE	AE-SH	Sharjah	no
+AE-0059	heliport	Ali Al Qubaisi Building Helipad	AE	AE-SH	Sharjah	no
+AU-0016	small_airport	Middlebrook Station Scone Airstrip	AU	AU-NSW	Middlebrook Station	no
+AU-0032	small_airport	Tumbarumba Airport	AU	AU-NSW	Tumbarumba	no
+AU-0034	heliport	Royal Prince Alfred Hospital Helipad	AU	AU-NSW	Sydney	no
+AU-0035	heliport	Royal North Shore Hospital Helipad	AU	AU-NSW	Sydney	no
+AU-0055	heliport	Brooklyn Oval Helicopter Landing Site	AU	AU-NSW	Brooklyn	no
+AU-0056	heliport	Brooklyn TMC - Olivers Garage Helipad	AU	AU-NSW	Brooklyn	no
+AU-0057	heliport	Brooms Head Heliport	AU	AU-NSW	Brooms Head	no
+AU-0058	heliport	Cowal Gold Mine Helipad	AU	AU-NSW	West Wyalong	no
+AU-0060	small_airport	Miralwyn Airport	AU	AU-NSW		no
+AU-0061	heliport	Inverell Hospital Helipad	AU	AU-NSW	Inverell	no
+AU-0062	heliport	Blackheath - NPWS Helipad	AU	AU-NSW	Blackheath - NPWS	no
+AU-0063	heliport	Lismore - Mortimer Oval Helicopter Landing Site	AU	AU-NSW	Lismore	no
+AU-0064	heliport	Lismore Helibase	AU	AU-NSW	Lismore	no
+AU-0065	heliport	Long Reef Helipad	AU	AU-NSW	Collaroy	no
+AU-0069	heliport	Appin Colliery Helipad	AU	AU-NSW	Appin	no
+AU-0070	heliport	Baal Bone Colliery Helipad	AU	AU-NSW	Lithgow	no
+AU-0428	closed	Tuncurry Airport	AU	AU-NSW		no
+AU-0429	closed	Breeza Airport	AU	AU-NSW		no
+AU-0430	closed	Greenthorpe Airport	AU	AU-NSW		no
+AU-0484	closed	Tolarno Station Airport	AU	AU-NSW	Menindee	no
+AU-0040	small_airport	Kilcoy Airfield	AU	AU-QLD	Kilcoy	no
+AU-0049	small_airport	Kooringal Airstrip	AU	AU-QLD		no
+AU-0051	heliport	Townsville University Hospital Heliport	AU	AU-QLD	Townsville	no
+AU-0059	heliport	Blackwater Hospital Helipad	AU	AU-QLD	Blackwater	no
+AU-0066	heliport	Agnes Water SES Grounds HLS	AU	AU-QLD	Agnes Water	no
+AU-0068	heliport	Amity Heliport	AU	AU-QLD	Amity	no
+AU-0081	small_airport	Lady Elliot Island Airstrip	AU	AU-QLD	Lady Elliot Island	no
+AU-0082	heliport	Clairview Heliport	AU	AU-QLD	Clairview	no
+AU-0083	heliport	Clermont Hospital Helipad	AU	AU-QLD	Clermont	no
+AU-0084	heliport	Brisbane Water Police Helipad	AU	AU-QLD	Brisbane	no
+AU-0086	heliport	Carmila Town Helicopter Landing Site	AU	AU-QLD	Carmila	no
+AU-0087	heliport	Redland Hospital Helicopter Landing Site	AU	AU-QLD	Cleveland	no
+AU-0088	heliport	Couran Cove Resort Helipad	AU	AU-QLD	Couran Cove Resort	no
+AU-0089	heliport	Crows Nest Helipad	AU	AU-QLD	Crows Nest	no
+AU-0090	small_airport	Dingo Airstrip	AU	AU-QLD	Dingo	no
+AU-0091	heliport	Dululu Helicopter Landing Site	AU	AU-QLD	Dululu	no
+AU-0218	closed	Teewah airstrip	AU	AU-QLD	Teewah	no
+AU-0454	closed	Laguna Quays 3 Airport	AU	AU-QLD	Laguna Quays	no
+AU-0496	closed	Five Mile Tank Airfield	AU	AU-QLD		no
+AU-0580	closed	dont know if this is an airport	AU	AU-QLD	Winston	no
+BIAE	small_airport	Arngerðareyri Airport	IS	IS-4	Arngerðareyri	no
+BIBD	medium_airport	Bildudalur Airport	IS	IS-4	Bildudalur	no
+BIBI	small_airport	Baeir Airport	IS	IS-4	Baeir	no
+BIGJ	small_airport	Gjögur Airport	IS	IS-4	Gjögur	no
+BIHK	small_airport	Hólmavík Airport	IS	IS-4	Hólmavík	no
+BIHS	small_airport	Hrafnseyri Airport	IS	IS-4	Hrafnseyri	no
+BIHT	closed	Holt Airport	IS	IS-4	Flateyri	no
+BIID	closed	Ingjaldssanður Airport	IS	IS-4	Onundarfjörður	no
+BIIS	medium_airport	Ísafjörður Airport	IS	IS-4	Ísafjörður	yes
+BIKJ	small_airport	Kroksfjard-Arnes Airport	IS	IS-4	Kroksfjard-arnes	no
+BIPA	closed	Patreksfjörður Airport	IS	IS-4	Patreksfjörður	no
+BIRE	small_airport	Reykhólar Airport	IS	IS-4	Reykhólar	no
+BIRS	small_airport	Reykjanes Airport	IS	IS-4	Reykjanes	no
+BITE	small_airport	Þingeyri Airport	IS	IS-4	Þingeyri	no
+IS-0001	closed	Suðureyri Airport	IS	IS-4	Suðureyri	no
+BIAL	small_airport	Álftaver Airport	IS	IS-8	Álftaver	no
+BIBA	small_airport	Bakki Airport	IS	IS-8	Bakki	no
+BIFL	small_airport	Flúðir Airport	IS	IS-8	Flúðir	no
+BIFZ	small_airport	Forsæti Airport	IS	IS-8	Forsæti	no
+BIGH	small_airport	Gunnarsholt Airport	IS	IS-8	Gunnarsholt	no
+BIHL	small_airport	Hella Airport	IS	IS-8	Hella	no
+BIHN	medium_airport	Hornafjörður Airport	IS	IS-8	Höfn	yes
+BIHR	small_airport	Hvolsvöllur Airport	IS	IS-8	Hvolsvöllur	no
+BIKE	small_airport	Kerlingafjöll Airport	IS	IS-8	Kerlingafjöll	no
+BIKL	small_airport	Kirkjubæjarklaustur Airport	IS	IS-8	Kirkjubæjarklaustur	no
+BIMK	small_airport	Múlakot Airport	IS	IS-8	Múlakot	no
+BIND	small_airport	Nýjidalur Airport	IS	IS-8	Nýjidalur	no
+BISF	small_airport	Selfoss Airport	IS	IS-8	Selfoss	no
+BISK	small_airport	Skógasandur Airport	IS	IS-8	Skógar	no
+BISP	small_airport	Sprengisandur Airport	IS	IS-8	Sprengisandur	no
+BISV	small_airport	Skálavatn Airport	IS	IS-8	Skálavatn	no
+IS-0006	closed	RAF Kaldadarnes	IS	IS-8		no
+IS-0008	closed	Einholtsmelar Airport	IS	IS-8	Einholtsmelar	no
+IS-0009	closed	Geysir Airport	IS	IS-8	Geysir	no
+IS-0010	closed	Hrauneyjarfoss Airport	IS	IS-8	Hrauneyjarfoss	no
+ENAE	small_airport	Æra Airfield	NO	NO-34	Åmot	no
+ENDB	heliport	Dombås Heliport, Brunshaugen	NO	NO-34	Dombås	no
+ENDO	small_airport	Dokka Thomlevold Airfield	NO	NO-34	Dokka	no
+ENEL	heliport	Elverum Heliport, Innlandet Hospital	NO	NO-34	Elverum	no
+ENFG	small_airport	Fagernes Airport, Leirin	NO	NO-34	Fagernes	no
+ENGN	small_airport	Folldal Grimsmoe Airfield	NO	NO-34	Folldal	no
+ENHA	small_airport	Hamar Lufthavn, Stavsberg	NO	NO-34	Hamar	no
+ENHN	small_airport	Elverum Starmoen Airfield	NO	NO-34	Elverum	no
+ENLH	heliport	Lillehammer Heliport, Innlandet Hospital	NO	NO-34	Lillehammer	no
+ENRI	small_airport	Ringebu Airfield Frya	NO	NO-34	Frya	no
+ENRV	small_airport	Reinsvoll Airfield	NO	NO-34	Reinsvoll	no
+ENTS	small_airport	Trysil Sæteråsen Airfield	NO	NO-34		no
+ENTY	small_airport	Tynset Airfield	NO	NO-34	Tynset	no
+NO-0002	small_airport	Maarud	NO	NO-34		no
+NO-0007	small_airport	Vermundsjøen Ice Runway	NO	NO-34		no
+NO-0019	small_airport	Bjorli Airfield	NO	NO-34	Lesja	no
+NO-0033	closed	Lillehammer Mjøsisen Ice Runway	NO	NO-34	Lillehammer	no
+ENBG	heliport	Grønneviksøren (Haukeland Sykehus) Heliport	NO	NO-46	Bergen	no
+ENBL	small_airport	Førde Airport, Bringeland	NO	NO-46	Førde	yes
+ENBM	small_airport	Bømoen Airfield	NO	NO-46	Tjukkebygdi	no
+ENBR	large_airport	Bergen Airport, Flesland	NO	NO-46	Bergen	yes
+ENFD	heliport	Førde Central Hospital Heliport	NO	NO-46	Førde	no
+ENFJ	heliport	Fedje Heliport, Høgden	NO	NO-46	Fedje	no
+ENFL	medium_airport	Florø Airport	NO	NO-46	Florø	yes
+ENSD	small_airport	Sandane Airport, Anda	NO	NO-46	Sandane	yes
+ENSG	small_airport	Sogndal Airport, Haukåsen	NO	NO-46	Sogndal	yes
+ENSO	medium_airport	Stord Airport, Sørstokken	NO	NO-46	Leirvik	yes
+ENUL	small_airport	Os Vaksinen Ulven Airfield	NO	NO-46	Ulven	no
+NO-0042	small_airport	Rompene Airfield	NO	NO-46	Dalsøyra	no
+NO-0043	closed	Ripel Airstrip	NO	NO-46	Dimmelsvik	no
+NO-0044	heliport	Haukeland Universitetssykehus Heliport	NO	NO-46	Bergen	no
+NO-0050	heliport	Kinsarvik Heliport, Husemoen	NO	NO-46	Kinsarvik	no
+NO-0054	small_airport	Stryn Airstrip	NO	NO-46	Stryn	no
+NO-0056	heliport	Stryn Heliport	NO	NO-46	Stryn	no
+NO-0067	closed	Herdla Airport	NO	NO-46	Bergen	no
+NZ-0001	small_airport	Mesopotamia Station Airstrip	NZ	NZ-CAN		no
+NZ-0002	small_airport	Arrowsmith Station	NZ	NZ-CAN		no
+NZ-0004	small_airport	Hakatere Airstrip	NZ	NZ-CAN		no
+NZ-0006	closed	Arkwrights Airstrip/Dunsandel (Private)	NZ	NZ-CAN		no
+NZ-0007	small_airport	Dunsandel	NZ	NZ-CAN		no
+NZ-0008	small_airport	Cattle Creek Airstrip	NZ	NZ-CAN		no
+NZ-0009	small_airport	Manuka Point Lodge Airstrip	NZ	NZ-CAN		no
+NZ-0011	small_airport	Worthy Lodge airstrip (Ladbrooks)	NZ	NZ-CAN		no
+NZ-0012	small_airport	Kings (Ladbrooks)	NZ	NZ-CAN		no
+NZ-0013	small_airport	Culverden	NZ	NZ-CAN	Hurunui District Council	no
+NZ-0015	small_airport	Taitapu Ag strip	NZ	NZ-CAN	Taitapu	no
+NZ-0086	small_airport	Mount Hutt Station Airstrip	NZ	NZ-CAN	Methven	no
+NZ-0087	closed	Wigram Airport	NZ	NZ-CAN	Christchurch	no
+NZ-0092	small_airport	Anama airstrip	NZ	NZ-CAN	Anama	no
+NZ-0093	heliport	Kaikōura Medical Centre Helipad	NZ	NZ-CAN	Kaikōura	no
+NZ-0094	heliport	Kaikōura Beachfront Heliport	NZ	NZ-CAN	Kaikōura	no
+NZ-0095	heliport	Ashburton Medical Centre Helipad	NZ	NZ-CAN	Ashburton	no
+NZ-0096	heliport	Chevoit	NZ	NZ-CAN	Chevoit	no
+NZ-0039	small_airport	Te Paki Airport	NZ	NZ-NTL	Te Kao	no
+NZ-0040	closed	Paua Airport	NZ	NZ-NTL	Te Kao	no
+NZ-0041	small_airport	Rarawa Airport	NZ	NZ-NTL	Ngataki	no
+NZ-0042	small_airport	Ngataki Airport	NZ	NZ-NTL	Ngataki	no
+NZ-0043	small_airport	Waihopo Airstrip	NZ	NZ-NTL	Houhora	no
+NZ-0044	small_airport	Houhora North Airstrip	NZ	NZ-NTL	Houhora	no
+NZ-0045	small_airport	Sandhills Airstrip	NZ	NZ-NTL	Awanui	no
+NZ-0046	small_airport	Puriri Block Airstrip	NZ	NZ-NTL	Kaingaroa	no
+NZ-0047	small_airport	Fisher Riley North Airstrip	NZ	NZ-NTL	Kaitaia	no
+NZ-0048	small_airport	Fisher Riley South Airstrip	NZ	NZ-NTL	Kaitaia	no
+NZ-0049	small_airport	Pamapuria Airstrip	NZ	NZ-NTL	Kaitaia	no
+NZ-0050	small_airport	Te Rore Airstrip	NZ	NZ-NTL	Kaitaia	no
+NZ-0051	small_airport	Takahue Airstrip	NZ	NZ-NTL	Kaitaia	no
+NZ-0052	small_airport	Broadwood Airstrip	NZ	NZ-NTL	Broadwood	no
+NZ-0053	small_airport	Pukemiro Airstrip	NZ	NZ-NTL	Broadwood	no
+NZ-0054	small_airport	Wairapakuru Airstrip	NZ	NZ-NTL	Broadwood	no
+NZ-0055	small_airport	Ngatieke Airstrip	NZ	NZ-NTL	Broadwood	no
+NZ-0067	closed	Ōkaihau South Airstrip	NZ	NZ-NTL	Ōkaihau	no
+NZ-0074	closed	Ngahuha Airstrip	NZ	NZ-NTL	Pakaraka	no
+NZ-0081	closed	Henty Airstrip	NZ	NZ-NTL	Whakapara	no
+FAAE	small_airport	Aberdeen Airport	ZA	ZA-EC	Aberdeen	no
+FAAN	small_airport	Aliwal North Airport	ZA	ZA-EC	Aliwal North	no
+FABD	small_airport	Burghersdorp Airport	ZA	ZA-EC	Burgersdorp	no
+FABE	medium_airport	Bisho Airport	ZA	ZA-EC	Bisho	no
+FABF	small_airport	Barkly East Airport	ZA	ZA-EC	Barkly East	no
+FABT	small_airport	Bethesda Road Airport	ZA	ZA-EC	Bethesda	no
+FABZ	small_airport	Bizana Airport	ZA	ZA-EC	Bizana	no
+FACD	small_airport	Cradock Airport	ZA	ZA-EC	Cradock	no
+FACF	small_airport	St Francis Airfield	ZA	ZA-EC	St Francis Bay	no
+FACH	small_airport	Cookhouse Airport	ZA	ZA-EC	Cookhouse	no
+FACX	small_airport	Cathcart Airport	ZA	ZA-EC	Cathcart	no
+FADG	small_airport	Dordrecht Airport	ZA	ZA-EC	Dordrecht	no
+FADP	small_airport	Darlington Dam Lodge Airport	ZA	ZA-EC	Port Elizabeth	no
+FAEL	large_airport	King Phalo Airport	ZA	ZA-EC	East London	yes
+FAET	small_airport	Elliot Airport	ZA	ZA-EC	Elliot	no
+FAFO	small_airport	Fort Beaufort Airport	ZA	ZA-EC	Fort Beaufort	no
+FALK	closed	Lusikisiki Airport	ZA	ZA-EC	Lusikisiki	no
+ZA-0007	closed	Stockdale Landing Strip Airport	ZA	ZA-EC	Alfalfa	no
+ZA-0008	closed	Venterstad Airport	ZA	ZA-EC	Venterstad	no
+ZA-0118	closed	Simon's Town Airstrip	ZA	ZA-EC	Cape Town	no
+FAAB	medium_airport	Alexander Bay Airport	ZA	ZA-NC	Alexander Bay	no
+FAAG	medium_airport	Aggeneys Airport	ZA	ZA-NC	Aggeneys	no
+FABP	small_airport	Black Rock Airport	ZA	ZA-NC	Santoy	no
+FABV	small_airport	Brandviei Airfield	ZA	ZA-NC	Brandviei	no
+FACB	small_airport	Colesberg Airport	ZA	ZA-NC	Colesberg	no
+FACN	small_airport	Carnarvon Airport	ZA	ZA-NC	Carnarvon	no
+FACV	small_airport	Calvinia Airport	ZA	ZA-NC	Calvinia	no
+FADA	small_airport	De Aar Airport	ZA	ZA-NC	De Aar	no
+FADC	small_airport	Douglas Cape Airport	ZA	ZA-NC	Douglas	no
+FADY	small_airport	De Aar Military Airport	ZA	ZA-NC	De Aar	no
+FAFG	small_airport	Flamingo Vlei Airport	ZA	ZA-NC	Flamingo Vlei	no
+FAFR	small_airport	Fraserburg Airport	ZA	ZA-NC	Fraseburg	no
+FAGJ	small_airport	Gifvlei Airport	ZA	ZA-NC	Gifvlei	no
+FAHI	small_airport	Halfweg Airport	ZA	ZA-NC	Halfweg	no
+FAKH	small_airport	Kenhardt Aerodrome	ZA	ZA-NC	Kenhardt	no
+FAKK	small_airport	Kakamas Airport	ZA	ZA-NC	Kakamas	no
+ZA-0050	closed	Warrenton Airport	ZA	ZA-NC	Warrenton	no
+ZA-0128	closed	Garies Airport	ZA	ZA-NC	Garies	no
+ZA-0135	closed	Nossob Airport	ZA	ZA-NC	Nossob Rest Camp	no
+ZA-0273	closed	Former Douglas Airport	ZA	ZA-NC	Douglas	no

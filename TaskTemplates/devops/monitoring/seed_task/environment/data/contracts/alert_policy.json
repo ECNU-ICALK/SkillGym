@@ -1,0 +1,10 @@
+{
+  "error_rate_pct": {
+    "ticket": 1.0,
+    "page": 5.0
+  },
+  "p95_latency_ms": {
+    "ticket": 300.0,
+    "page": 600.0
+  }
+}

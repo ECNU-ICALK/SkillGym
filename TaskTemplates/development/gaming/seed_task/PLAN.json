@@ -1,0 +1,56 @@
+{
+  "task_id": "gaming__kanto_encounter_atlas",
+  "category": "gaming",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/app/workspace/studio/index.html",
+  "selected_skill": {
+    "dir": "algorithmic-art",
+    "purpose": "Use seeded generative-art workflow, parameter exploration, and a fixed viewer-style interaction model to build a browser-based encounter atlas from local game data.",
+    "skillsmp_references": [
+      {
+        "name": "algorithmic-art",
+        "stars": "125,366",
+        "relevance": "Direct match for seeded generative visuals, parameter exploration, and single-page browser artifacts."
+      }
+    ]
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "live_services": [],
+    "determinism": "All gameplay data lives in local JSON snapshots. The verifier checks same-seed replay, hash-based replay, and different-seed divergence against the same local files.",
+    "anti_toy_features": [
+      "multiple Kanto encounter zones with distinct biome accents",
+      "PokeAPI-derived species profiles and type relations",
+      "fixed render contract for controls, summaries, export payload, and reset semantics",
+      "browser-level verification of interaction flows alongside static file checks"
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "required files and page boot",
+      "layout controls and local asset usage",
+      "zone-driven summary metrics",
+      "same-seed determinism across regenerate",
+      "same-hash determinism across reload",
+      "different-seed scene divergence",
+      "preset and reset semantics",
+      "theme-color changes alter rendering without mutating exported geometry or summaries",
+      "export payload schema, normalized sample-point coordinates, and download correctness",
+      "sample points grouped by rendered trail provenance and ordered by step",
+      "density changes exported trail coverage and sample volume",
+      "turbulence changes turning dispersion",
+      "focus changes centroid compaction",
+      "type-pressure and zone-signals text stays grounded in local type relations and zone signals"
+    ],
+    "guardrails": [
+      "input data hashes must remain unchanged",
+      "input data must remain unchanged",
+      "no placeholder or verifier-hack output in studio files"
+    ]
+  },
+  "expected_skill_effect": {
+    "without_skill": "Agents often deliver a chart-like dashboard, miss the fixed seed-control model, export unnormalized coordinates or synthetic scatter points, collapse the level band into a single mean, or let contrast mutate exported geometry.",
+    "with_skill": "The skill nudges the solver toward a seeded generative artifact with parameter exploration, trail-based geometry, and a viewer-style control layout, which lines up with the render contract and the interaction semantics."
+  }
+}

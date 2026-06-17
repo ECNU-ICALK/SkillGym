@@ -1,0 +1,113 @@
+{
+  "protocol_name": "Harbor Collateral Vault",
+  "decision_values": [
+    "allow",
+    "allow_with_conditions",
+    "review_required",
+    "reject"
+  ],
+  "coverage_status_values": [
+    "supported",
+    "partial",
+    "missing"
+  ],
+  "markdown_headings": [
+    "Scope",
+    "Protocol context",
+    "Candidate decisions",
+    "Coverage summary",
+    "Evidence notes"
+  ],
+  "output_contract": {
+    "token_decisions_columns": [
+      "token_id",
+      "symbol",
+      "decision",
+      "overall_risk",
+      "blocking_conditions",
+      "required_protocol_measures",
+      "evidence_refs"
+    ],
+    "token_behavior_findings_columns": [
+      "token_id",
+      "symbol",
+      "finding_id",
+      "finding_group",
+      "severity",
+      "integration_impact",
+      "protocol_requirement",
+      "evidence_refs"
+    ],
+    "guardrail_coverage_columns": [
+      "measure_id",
+      "requirement",
+      "protocol_location",
+      "coverage_status",
+      "covered_tokens",
+      "evidence_refs"
+    ]
+  },
+  "always_required_measures": [
+    "allowlist_gate"
+  ],
+  "protocol_measure_order": [
+    "allowlist_gate",
+    "safe_transfer_wrapper",
+    "balance_delta_check",
+    "decimals_normalization",
+    "approval_reset_flow",
+    "callback_reentrancy_guard",
+    "upgrade_watch",
+    "pause_blocklist_runbook",
+    "share_price_recalc"
+  ],
+  "protocol_measures": [
+    {
+      "measure_id": "allowlist_gate",
+      "requirement": "Collateral must be explicitly allowlisted before deposits are accepted."
+    },
+    {
+      "measure_id": "safe_transfer_wrapper",
+      "requirement": "Token transfers must use SafeERC20-style wrappers so no-return and false-return tokens are handled safely."
+    },
+    {
+      "measure_id": "balance_delta_check",
+      "requirement": "Inbound token handling must compare balance before and after transfer to detect received amount deltas."
+    },
+    {
+      "measure_id": "decimals_normalization",
+      "requirement": "Collateral amounts with non-18 decimals must be normalized before share accounting."
+    },
+    {
+      "measure_id": "approval_reset_flow",
+      "requirement": "Adapters must support zero-reset approval flows for legacy allowance behaviors."
+    },
+    {
+      "measure_id": "callback_reentrancy_guard",
+      "requirement": "Token callbacks and hook-based transfers must be fenced by reentrancy protection."
+    },
+    {
+      "measure_id": "upgrade_watch",
+      "requirement": "Upgradeable collateral must be monitored for implementation changes before continuing deposits."
+    },
+    {
+      "measure_id": "pause_blocklist_runbook",
+      "requirement": "The protocol must have an explicit blocklist and pause handling path for centrally controlled collateral."
+    },
+    {
+      "measure_id": "share_price_recalc",
+      "requirement": "Collateral whose balances can change outside transfers must trigger explicit external-balance resynchronization before share math."
+    }
+  ],
+  "overall_risk_by_decision": {
+    "allow": "low",
+    "allow_with_conditions": "medium",
+    "review_required": "high",
+    "reject": "critical"
+  },
+  "policy_notes": [
+    "Use the staged reference notes and token behavior profiles to decide which measures each token needs.",
+    "Use the staged contracts to determine whether each required measure is supported, partial, or missing.",
+    "Keep token-level findings, protocol coverage, and final decisions aligned across all deliverables."
+  ]
+}

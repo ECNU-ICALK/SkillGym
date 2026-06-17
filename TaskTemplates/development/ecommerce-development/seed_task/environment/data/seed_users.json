@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "username": "harboradmin",
+      "email": "admin@printshop.local",
+      "password": "AdminPass123!",
+      "role": "administrator"
+    },
+    {
+      "username": "catalogmanager",
+      "email": "catalog.manager@printshop.local",
+      "password": "CatalogPass123!",
+      "role": "shop_manager"
+    },
+    {
+      "username": "merchops",
+      "email": "ops@printshop.local",
+      "password": "OpsPass123!",
+      "role": "shop_manager"
+    }
+  ]
+}

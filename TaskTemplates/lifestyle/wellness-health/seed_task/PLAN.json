@@ -1,0 +1,59 @@
+{
+  "template_id": "wellness-health__weather-safe-community-schedule",
+  "category": "wellness-health",
+  "skill": {
+    "name": "weather-safety-guardrails",
+    "source_directory": "environment/skills/37__weather-safety-guardrails",
+    "selection_notes": [
+      "Open public data is easy to source and cache inside the task.",
+      "No private account, subscription gate, or device sync is required.",
+      "The skill focuses on safety-aware activity changes, which maps cleanly to action-level verifier checks."
+    ]
+  },
+  "scenario": {
+    "site_id": "ATX-WELL-001",
+    "site_theme": "community wellness scheduling",
+    "planning_window": [
+      "2026-05-04",
+      "2026-05-05",
+      "2026-05-06"
+    ],
+    "location": "Austin, Texas"
+  },
+  "public_sources": [
+    {
+      "path": "environment/service_seed/conditions_hourly.json",
+      "derived_from": [
+        "https://api.weather.gov/points/30.2672,-97.7431",
+        "https://api.weather.gov/gridpoints/EWX/156,91/forecast/hourly",
+        "https://api.open-meteo.com/v1/forecast?latitude=30.2672&longitude=-97.7431&hourly=apparent_temperature,uv_index,precipitation_probability&timezone=America%2FChicago&forecast_days=3",
+        "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=30.2672&longitude=-97.7431&hourly=us_aqi,pm2_5,ozone&timezone=America%2FChicago&forecast_days=3"
+      ]
+    },
+    {
+      "path": "environment/data/venue_catalog.csv",
+      "derived_from": [
+        "https://www.austintexas.gov/parks/austin-recreation-center",
+        "https://www.austintexas.gov/department/givens-recreation-center",
+        "https://www.austintexas.gov/department/Big-stacy-pool"
+      ]
+    }
+  ],
+  "output_contract": [
+    "/root/output/session_risk_assessment.json",
+    "/root/output/activity_schedule.csv",
+    "/root/output/participant_advisories.csv",
+    "/root/output/operations_handoff.md"
+  ],
+  "verifier_focus": [
+    "Every requested session is kept or changed using a compliant action.",
+    "Unsafe outdoor or higher-exposure slots are not left in place when a listed alternative works.",
+    "Venue hours, capacity, activity restrictions, and support needs stay consistent with the published schedule.",
+    "The solver consults the local planning service instead of relying on earlier exports."
+  ],
+  "status": {
+    "local_build": "pending",
+    "e2b_with_skill": "pending",
+    "e2b_without_skill": "pending"
+  }
+}

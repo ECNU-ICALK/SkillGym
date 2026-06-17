@@ -1,0 +1,129 @@
+{
+  "task_id": "machine-learning__occupancy-phase-sequence-classifier",
+  "task_name": "occupancy-phase-sequence-classifier",
+  "template_category": "machine-learning",
+  "scenario": "generate an end-to-end deterministic PyTorch training and export pipeline for room occupancy detection under contract-driven development split constraints",
+  "user_visible_goal": "Produce stable holdout predictions, metrics, confusion matrix, training history, and a reproducible model bundle from UCI Occupancy Detection data.",
+  "selected_skill": {
+    "name": "pytorch-patterns",
+    "source": "affaan-m/everything-claude-code",
+    "skillsmp_category_url": "https://skillsmp.com/categories/machine-learning",
+    "observed_stars": 169199,
+    "risk_screening": "No external account, cloud credential, private API, or privileged operation dependency; focuses on local PyTorch engineering workflow."
+  },
+  "input_assets": [
+    "/root/environment/data/phase_sequences/development_index.csv",
+    "/root/environment/data/phase_sequences/holdout_index.csv",
+    "/root/environment/data/phase_sequences/phase_mapping.json",
+    "/root/environment/data/phase_sequences/source_metadata.json",
+    "/root/environment/data/phase_sequences/sequences/development/*.npy",
+    "/root/environment/data/phase_sequences/sequences/holdout/*.npy",
+    "/root/environment/data/contracts/split_contract.json",
+    "/root/environment/data/contracts/output_contract.json",
+    "/root/environment/data/contracts/bundle_contract.json",
+    "/root/environment/project/run_pipeline.py"
+  ],
+  "required_outputs": [
+    "/root/answer/holdout_predictions.csv",
+    "/root/answer/holdout_metrics.json",
+    "/root/answer/confusion_matrix.csv",
+    "/root/answer/training_history.csv",
+    "/root/answer/model_bundle/manifest.json"
+  ],
+  "shipped_skills": [
+    "pytorch-patterns"
+  ],
+  "skill_hypothesis": {
+    "with_skill": "The solver is more likely to produce deterministic device-agnostic training code, obey contract-driven validation partitioning, and implement complete bundle export/reload behavior with a CPU-safe PyTorch state_dict workflow.",
+    "without_skill": "The solver is more likely to stop at a partially working baseline and miss one or more action-level requirements such as contract-driven split handling, deterministic rerun, or bundle reload consistency."
+  },
+  "verifier_strategy": {
+    "main_tests": [
+      "Validate required outputs and schema contract.",
+      "Recompute holdout metrics from predictions and ensure consistency.",
+      "Enforce contract-driven validation partitioning over the development pool.",
+      "Reload exported bundle on CPU and reproduce holdout predictions.",
+      "Require the submitted pipeline to clear the holdout quality threshold."
+    ],
+    "guardrails": [
+      "Mutate the split contract and require validation partition metadata to change accordingly.",
+      "Append transport tail beyond sequence_length and require predictions to remain unchanged.",
+      "Require deterministic repeated runs on identical input."
+    ]
+  },
+  "data_provenance": {
+    "reference_source": "UCI Occupancy Detection dataset (public).",
+    "links": [
+      "https://archive-beta.ics.uci.edu/dataset/357/occupancy+detection",
+      "https://cdn.uci-ics-mlr-prod.aws.uci.edu/357/occupancy%2Bdetection.zip"
+    ],
+    "service_source": "Single-container local runtime with pre-generated local snapshot; no external account dependency."
+  },
+  "local_validation": {
+    "naive_pipeline": "not run",
+    "oracle_solution": "passed locally on the prepared occupancy snapshot; 10/10 verifier tests green in 413.89s"
+  },
+  "e2b_validation": {
+    "oracle_job": "Local oracle confirmed; Harbor orchestration stalled during cloud submission, so final cloud validation was completed with direct E2B SDK isolated runs using the same template and verifier.",
+    "oracle_reward": "verifier passed in direct E2B cloud runs; final current verifier threshold is accuracy >= 0.80 and macro_f1 >= 0.80",
+    "with_skill_jobs": [
+      {
+        "run_id": "with_run2",
+        "summary_path": "/home/lenovo/.tmp_mlseq_direct_e2b/with_run2/summary.json",
+        "agent_seconds": 710.242,
+        "total_tokens": 3180992,
+        "final_rule_pass": true,
+        "note": "This run was produced just before the final verifier dual-threshold was locked; it was re-evaluated under the current final rule and passes."
+      },
+      {
+        "run_id": "with_run4",
+        "summary_path": "/home/lenovo/.tmp_mlseq_direct_e2b/with_run4/summary.json",
+        "agent_seconds": 856.674,
+        "total_tokens": 3048160,
+        "final_rule_pass": true,
+        "note": "Directly executed against the current final verifier; verifier stdout shows 10 passed in 76.66s."
+      },
+      {
+        "run_id": "with_run5",
+        "summary_path": "/home/lenovo/.tmp_mlseq_direct_e2b/with_run5/summary.json",
+        "agent_seconds": 1042.268,
+        "total_tokens": 2878758,
+        "final_rule_pass": true,
+        "note": "Directly executed against the current final verifier; verifier stdout shows 10 passed in 78.83s."
+      }
+    ],
+    "without_skill_jobs": [
+      {
+        "run_id": "without_run1",
+        "summary_path": "/home/lenovo/.tmp_mlseq_direct_e2b/without_run1/summary.json",
+        "agent_seconds": 610.656,
+        "total_tokens": 3023435,
+        "final_rule_pass": false,
+        "note": "This run was produced just before the final verifier dual-threshold was locked; it was re-evaluated under the current final rule and still fails."
+      },
+      {
+        "run_id": "without_run2",
+        "summary_path": "/home/lenovo/.tmp_mlseq_direct_e2b/without_run2/summary.json",
+        "agent_seconds": 1019.038,
+        "total_tokens": 6160365,
+        "final_rule_pass": false,
+        "note": "Directly executed against the current final verifier; verifier failure is macro_f1 below 0.80."
+      },
+      {
+        "run_id": "without_run3",
+        "summary_path": "/home/lenovo/.tmp_mlseq_direct_e2b/without_run3/summary.json",
+        "agent_seconds": 934.897,
+        "total_tokens": 4593544,
+        "final_rule_pass": false,
+        "note": "Directly executed against the current final verifier; verifier failure is bundle reload / checkpoint contract incompatibility."
+      }
+    ],
+    "with_skill_pass_rate": "3/3 = 100%",
+    "without_skill_pass_rate": "0/3 = 0%",
+    "with_skill_avg_agent_seconds": 869.728,
+    "without_skill_avg_agent_seconds": 854.864,
+    "with_skill_avg_tokens": 3035970,
+    "without_skill_avg_tokens": 4592448,
+    "notes": "All comparisons kept the task statement, tests, data, dependencies, and bound skill fixed; the only with/without difference was presence or absence of environment/skills during isolated cloud runs. The main observed advantage of with_skill is reliability of complete task execution, not lower mean runtime."
+  }
+}

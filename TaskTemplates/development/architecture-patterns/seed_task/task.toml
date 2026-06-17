@@ -1,0 +1,37 @@
+version = "1.0"
+
+[metadata]
+id = "architecture-patterns__mta-schedule-provider-gateway"
+name = "Template: MTA Schedule Provider Gateway"
+description = "Add a new local GTFS-backed schedule capability to an existing gateway and keep HTTP and export delivery paths consistent."
+difficulty = "hard"
+category = "architecture-patterns"
+tags = [
+  "architecture-patterns",
+  "ports-and-adapters",
+  "connector",
+  "gtfs",
+  "transit",
+  "provider-gateway",
+  "nodejs"
+]
+required_skills = ["api-connector-builder"]
+source_template_id = "architecture-patterns__mta-schedule-provider-gateway"
+task_role = "template"
+
+[agent]
+timeout_sec = 600.0
+
+[solution]
+timeout_sec = 600.0
+
+[verifier]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 12288
+gpus = 0
+allow_internet = true

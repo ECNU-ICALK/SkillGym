@@ -1,0 +1,17 @@
+{
+  "base": {
+    "name": "Launch Dollar",
+    "symbol": "USDX",
+    "decimals": 18
+  },
+  "quote": {
+    "name": "Dev Ether",
+    "symbol": "DEV",
+    "decimals": 18
+  },
+  "governance": {
+    "name": "Launch Governance Token",
+    "symbol": "GOV",
+    "decimals": 18
+  }
+}

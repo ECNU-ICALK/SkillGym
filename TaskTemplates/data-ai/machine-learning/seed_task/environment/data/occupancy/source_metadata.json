@@ -1,0 +1,27 @@
+{
+  "development_rows": 10808,
+  "development_sources": [
+    "datatraining.txt",
+    "datatest.txt"
+  ],
+  "feature_columns": [
+    "Temperature",
+    "Humidity",
+    "Light",
+    "CO2",
+    "HumidityRatio",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos"
+  ],
+  "holdout_rows": 9752,
+  "holdout_source": "datatest2.txt",
+  "label_mapping": {
+    "0": "UNOCCUPIED",
+    "1": "OCCUPIED"
+  },
+  "source_page_url": "https://archive-beta.ics.uci.edu/dataset/357/occupancy+detection",
+  "source_zip_url": "https://cdn.uci-ics-mlr-prod.aws.uci.edu/357/occupancy%2Bdetection.zip",
+  "zip_sha256": "4ae3f46aa98eedff564a9f6924d1635173e2fd2c816004342a9be93076d3a81a"
+}

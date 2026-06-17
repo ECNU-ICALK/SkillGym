@@ -1,0 +1,107 @@
+{
+  "task_id": "literature_writing__zed_parallel_agents_launch_copy",
+  "category": "literature-writing",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/root/final_launch_copy_package.json",
+  "selected_skill": {
+    "dir": "brand-writer",
+    "stars": "78,352",
+    "purpose": "Guide the solver toward fact-first, developer-facing launch copy with explicit scorecard and banned-phrase discipline."
+  },
+  "selection_rationale": [
+    "High-star public-facing literature-writing skill with a clear workflow for grounded launch copy.",
+    "No external account, login state, or private source corpus is required to use the task inputs.",
+    "Supports a single-container setup where with_skill and without_skill differ only by environment/skills."
+  ],
+  "rejected_high_star_skills": [
+    {
+      "skill": "writer-memory",
+      "stars": "32,312",
+      "reason": "Persistent manuscript memory raises privacy sensitivity and does not match the launch-copy task shape."
+    },
+    {
+      "skill": "cover-letter",
+      "stars": "3,153",
+      "reason": "Personal-application writing does not fit the target workflow and introduces sensitive personal-data patterns."
+    },
+    {
+      "skill": "inkos",
+      "stars": "5,491",
+      "reason": "External-provider-heavy workflow is a weaker fit for a self-contained Harbor template."
+    }
+  ],
+  "task_shape": {
+    "service_type": "local content packet and validation service",
+    "domain": "developer-facing launch copy for an editor AI feature",
+    "runtime": "single-container Python workspace with structured source packets and a hidden local quality gate",
+    "solver_action": "assemble one publishable JSON copy package instead of writing an analysis memo"
+  },
+  "planned_verifier_focus": [
+    "formal output JSON matches the contract and word ranges",
+    "source_trace covers required inputs and multiple source documents",
+    "fact_ledger is grounded in allowed fact ids from the source packet",
+    "banned phrases and unsupported hype are removed",
+    "solver queries the local content service and runs the local quality gate",
+    "workspace inputs and hidden service files remain unchanged"
+  ],
+  "real_data_sources": [
+    {
+      "planned_file": "environment/data/source_packets/ai_overview.json",
+      "reference_type": "structured packet distilled from public docs",
+      "reference": "Zed AI overview documentation",
+      "link": "https://raw.githubusercontent.com/zed-industries/zed/main/docs/src/ai/overview.md"
+    },
+    {
+      "planned_file": "environment/data/source_packets/parallel_agents_blog.json",
+      "reference_type": "structured packet distilled from public blog post",
+      "reference": "Introducing Parallel Agents in Zed",
+      "link": "https://zed.dev/blog/parallel-agents"
+    },
+    {
+      "planned_file": "environment/data/source_packets/parallel_agents_docs.json",
+      "reference_type": "structured packet distilled from public docs",
+      "reference": "Zed Parallel Agents documentation",
+      "link": "https://raw.githubusercontent.com/zed-industries/zed/main/docs/src/ai/parallel-agents.md"
+    },
+    {
+      "planned_file": "environment/data/source_packets/codex_in_zed.json",
+      "reference_type": "structured packet distilled from public blog post",
+      "reference": "Codex is Live in Zed",
+      "link": "https://zed.dev/blog/codex-is-live-in-zed"
+    },
+    {
+      "planned_file": "environment/data/source_packets/repo_readme.json",
+      "reference_type": "structured packet distilled from public repository readme",
+      "reference": "zed-industries/zed README",
+      "link": "https://raw.githubusercontent.com/zed-industries/zed/main/README.md"
+    }
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime skill-copy logic may differ between with_skill and without_skill variants.",
+  "local_validation": {
+    "buggy_workspace_expected_result": "The task starts as empty output; a solver that skips source collection, fact ledgering, or quality-gate execution should fail substantive verifier checks.",
+    "oracle_result": "Official solution passes the local harness and the E2B verifier with 14/14 tests.",
+    "local_test_command": "tests/test.sh"
+  },
+  "contrast_experiments": {
+    "valid_trials": 3,
+    "without_skill": {
+      "pass_rate": "0/3 (0%)",
+      "avg_agent_seconds": 225.74,
+      "avg_tokens": 218384
+    },
+    "with_skill": {
+      "pass_rate": "2/3 (66.7%)",
+      "avg_agent_seconds": 247.99,
+      "avg_tokens": 382734
+    },
+    "comparison_rule": "with_skill and without_skill differ only by environment/skills presence in the runtime copy.",
+    "notes": "Valid with-skill trials: litwrite_fix3_20260505_025511, litwrite_with3_20260505_032020, litwrite_with4_20260505_032718. Valid without-skill trials: litwrite_noskill1_20260505_030102, litwrite_noskill3_20260505_032021, litwrite_noskill4_20260505_033039."
+  },
+  "iteration_notes": [
+    "Do not rely on editing the selected skill contents to complete the task.",
+    "Do not alter instruction.md, tests, data, dependencies, or contracts between with_skill and without_skill variants.",
+    "Prefer action-level failures such as skipping source packet reads, missing fact coverage, or omitting quality-gate execution over cosmetic prose failures.",
+    "Finalize README metrics only after completed E2B comparison runs."
+  ]
+}

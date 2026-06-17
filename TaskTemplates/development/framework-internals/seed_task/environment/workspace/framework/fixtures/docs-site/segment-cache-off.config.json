@@ -1,0 +1,12 @@
+{
+  "siteName": "Next Docs Snapshot",
+  "experimental": {
+    "cacheComponents": true,
+    "authInterrupts": false,
+    "segmentCache": false
+  },
+  "render": {
+    "articleLimit": 6,
+    "defaultSection": "config"
+  }
+}

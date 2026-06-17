@@ -1,0 +1,21 @@
+{
+  "generated_from": {
+    "coinbase_combined_xlsx": "https://raw.githubusercontent.com/bhaskatripathi/Cryptodata_Coinbase_Kraken_Binance/main/Coinbase_data_combined_v2_merged.xlsx",
+    "kraken_combined_xlsx": "https://raw.githubusercontent.com/bhaskatripathi/Cryptodata_Coinbase_Kraken_Binance/main/Kraken_data_combined_v2_merged.xlsx",
+    "repo_readme": "https://raw.githubusercontent.com/bhaskatripathi/Cryptodata_Coinbase_Kraken_Binance/main/README.md"
+  },
+  "markets": [
+    "coinbase:BTC-USD",
+    "coinbase:DASH-USD",
+    "coinbase:ETH-USD",
+    "coinbase:LTC-USD",
+    "kraken:DASHUSD",
+    "kraken:ETHUSD",
+    "kraken:LTCUSD",
+    "kraken:XBTUSD"
+  ],
+  "window": {
+    "end_date": "2023-04-02",
+    "start_date": "2023-02-27"
+  }
+}

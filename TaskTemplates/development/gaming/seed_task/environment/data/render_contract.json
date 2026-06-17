@@ -1,0 +1,197 @@
+{
+  "task_id": "gaming__kanto_encounter_atlas",
+  "page_title": "Kanto Encounter Atlas",
+  "subtitle": "A seeded field atlas built from local Kanto encounter snapshots.",
+  "default_seed": 24021,
+  "default_zone_id": "viridian-forest-area",
+  "default_preset": "survey",
+  "required_sections": [
+    "Seed",
+    "Zone",
+    "Preset",
+    "Parameters",
+    "Colors",
+    "Actions"
+  ],
+  "required_controls": {
+    "seed": {
+      "display_id": "seed-display",
+      "input_id": "seed-input",
+      "prev_button_id": "seed-prev",
+      "next_button_id": "seed-next",
+      "random_button_id": "seed-random",
+      "go_button_id": "seed-go"
+    },
+    "zone": {
+      "select_id": "zone-select"
+    },
+    "preset": {
+      "button_ids": [
+        "preset-survey",
+        "preset-bloom",
+        "preset-storm"
+      ]
+    },
+    "parameters": [
+      {
+        "id": "density-control",
+        "label": "Density",
+        "min": 0.3,
+        "max": 1.2,
+        "step": 0.01
+      },
+      {
+        "id": "turbulence-control",
+        "label": "Turbulence",
+        "min": 0.05,
+        "max": 1.0,
+        "step": 0.01
+      },
+      {
+        "id": "focus-control",
+        "label": "Focus",
+        "min": 0.2,
+        "max": 1.0,
+        "step": 0.01
+      },
+      {
+        "id": "contrast-control",
+        "label": "Contrast",
+        "min": 0.2,
+        "max": 1.0,
+        "step": 0.01
+      }
+    ],
+    "colors": [
+      {
+        "id": "color1",
+        "label": "Primary Color",
+        "default": "#d97757"
+      },
+      {
+        "id": "color2",
+        "label": "Secondary Color",
+        "default": "#6a9bcc"
+      },
+      {
+        "id": "color3",
+        "label": "Accent Color",
+        "default": "#788c5d"
+      }
+    ],
+    "actions": {
+      "regenerate_button_id": "regenerate-button",
+      "reset_button_id": "reset-button",
+      "export_button_id": "export-button",
+      "export_status_id": "export-status",
+      "export_json_id": "export-json"
+    }
+  },
+  "presets": {
+    "survey": {
+      "density": 0.62,
+      "turbulence": 0.24,
+      "focus": 0.58,
+      "contrast": 0.52
+    },
+    "bloom": {
+      "density": 0.78,
+      "turbulence": 0.36,
+      "focus": 0.68,
+      "contrast": 0.76
+    },
+    "storm": {
+      "density": 0.94,
+      "turbulence": 0.74,
+      "focus": 0.44,
+      "contrast": 0.84
+    }
+  },
+  "summary_contract": {
+    "route_title_id": "route-title",
+    "route_summary_id": "route-summary",
+    "avg_level_band_mode": "mean-min-to-mean-max",
+    "avg_level_band_text_style": "x-to-y",
+    "avg_level_band_example": "3.0 to 6.5",
+    "avg_bst_mode": "direct-mean-base-stat-total",
+    "metric_ids": {
+      "species_count": "metric-species-count",
+      "avg_level": "metric-avg-level",
+      "avg_bst": "metric-avg-bst",
+      "type_mix": "metric-type-mix"
+    },
+    "highlight_list_id": "highlighted-species",
+    "highlight_card_selector": "[data-species-id]",
+    "source_list_id": "source-links",
+    "minimum_highlight_cards": 4
+  },
+  "export_contract": {
+    "required_keys": [
+      "scene_id",
+      "seed",
+      "zone_id",
+      "zone_label",
+      "preset",
+      "parameters",
+      "colors",
+      "highlighted_species",
+      "type_mix",
+      "average_level",
+      "average_base_stat_total",
+      "sample_points"
+    ],
+    "minimum_sample_points": 24,
+    "type_mix_item_required_keys": [
+      "type",
+      "share"
+    ],
+    "sample_point_required_keys": [
+      "trail_id",
+      "step",
+      "species_name",
+      "layer",
+      "x",
+      "y",
+      "radius",
+      "weight"
+    ],
+    "average_level_mode": "single-numeric-overall-mean",
+    "sample_point_coordinate_space": "normalized-0-to-1",
+    "sample_points_must_follow_rendered_trails": true,
+    "sample_points_preserve_in_trail_shape": true,
+    "parameter_semantics_surface": "exported-sample-points"
+  },
+  "shareable_state": {
+    "required_hash_keys": [
+      "seed",
+      "zone",
+      "preset",
+      "density",
+      "turbulence",
+      "focus",
+      "contrast",
+      "color1",
+      "color2",
+      "color3"
+    ]
+  },
+  "interaction_contract": {
+    "same_seed_same_output": true,
+    "different_seed_changes_output": true,
+    "reload_keeps_hashed_state": true,
+    "reset_restores_defaults": true,
+    "export_triggers_download": true,
+    "local_assets_only": true,
+    "parameter_sweeps_keep_seed_basis": true,
+    "density_changes_export_volume": true,
+    "turbulence_increases_turning_dispersion": true,
+    "focus_increases_centroid_compaction": true,
+    "contrast_changes_render_only": true
+  },
+  "notes_requirements": [
+    "seed",
+    "preset",
+    "export",
+    "zone"
+  ]
+}

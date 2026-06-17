@@ -1,0 +1,33 @@
+{
+  "required_chart_topics": [
+    {
+      "chart_id": "trend_schooling",
+      "description": "A recent trend chart for mean years of schooling across the included cohort.",
+      "indicator": "mean_years_schooling",
+      "year_window": [
+        2018,
+        2022
+      ]
+    },
+    {
+      "chart_id": "latest_enrolment_comparison",
+      "description": "A latest-common-year comparison chart for gross upper-secondary enrolment.",
+      "indicator": "gross_upper_secondary_enrolment_pct",
+      "use_latest_common_year": true
+    },
+    {
+      "chart_id": "spending_vs_enrolment_scatter",
+      "description": "A latest-common-year chart that compares education spending against upper-secondary enrolment for the included cohort.",
+      "indicators": [
+        "education_spending_pct_gdp",
+        "gross_upper_secondary_enrolment_pct"
+      ],
+      "use_latest_common_year": true
+    }
+  ],
+  "minimum_expectations": {
+    "n_chart_topics": 3,
+    "label_points_or_categories": true,
+    "brief_interpretation_after_each_chart": true
+  }
+}

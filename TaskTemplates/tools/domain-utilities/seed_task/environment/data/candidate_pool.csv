@@ -1,0 +1,12 @@
+base_name,brandability,pronounceability,developer_fit,style_tags
+buildlane,8.400,8.200,9.100,workflow;build;speed
+craftsignal,8.000,7.700,8.200,craft;signal;analytics
+deployforge,7.900,7.600,9.000,deployment;infra;craft
+deploylane,8.700,8.400,9.400,workflow;deployment;speed
+flowforge,8.400,8.100,8.700,workflow;automation;craft
+queuepilot,7.900,8.000,8.800,automation;workflow;control
+relayforge,8.000,7.800,8.700,automation;infra;craft
+shiploom,8.500,8.300,8.600,workflow;shipping;craft
+stackrelay,8.200,8.100,9.000,infra;coordination;automation
+traceforge,7.800,7.500,8.800,observability;infra;craft
+tracepath,8.100,8.400,8.900,observability;workflow;clarity

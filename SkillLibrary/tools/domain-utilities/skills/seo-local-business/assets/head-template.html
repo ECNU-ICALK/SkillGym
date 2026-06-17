@@ -1,0 +1,42 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>{{PAGE_TITLE}} | {{BUSINESS_NAME}}</title>
+  <meta name="title" content="{{PAGE_TITLE}} | {{BUSINESS_NAME}}">
+  <meta name="description" content="{{META_DESCRIPTION}}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:title" content="{{PAGE_TITLE}} | {{BUSINESS_NAME}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:image" content="{{OG_IMAGE_URL}}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{CANONICAL_URL}}">
+  <meta property="twitter:title" content="{{PAGE_TITLE}} | {{BUSINESS_NAME}}">
+  <meta property="twitter:description" content="{{META_DESCRIPTION}}">
+  <meta property="twitter:image" content="{{OG_IMAGE_URL}}">
+
+  <!-- Geo Tags (Local SEO) -->
+  <meta name="geo.region" content="{{GEO_REGION}}">
+  <meta name="geo.placename" content="{{CITY}}">
+  <meta name="geo.position" content="{{LATITUDE}};{{LONGITUDE}}">
+  <meta name="ICBM" content="{{LATITUDE}}, {{LONGITUDE}}">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {{JSON_LD_SCHEMA}}
+  </script>
+</head>

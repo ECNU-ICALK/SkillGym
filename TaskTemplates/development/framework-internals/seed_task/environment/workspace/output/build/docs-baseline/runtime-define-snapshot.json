@@ -1,0 +1,12 @@
+{
+  "app": {
+    "__FRAMEWORK_SEGMENT_CACHE__": "false",
+    "__FRAMEWORK_RUNTIME_VARIANT__": "baseline",
+    "__FRAMEWORK_APP_BUNDLE_ID__": "app-baseline"
+  },
+  "server": {
+    "__FRAMEWORK_SEGMENT_CACHE__": "false",
+    "__FRAMEWORK_RUNTIME_VARIANT__": "baseline",
+    "__FRAMEWORK_APP_BUNDLE_ID__": "app-baseline"
+  }
+}

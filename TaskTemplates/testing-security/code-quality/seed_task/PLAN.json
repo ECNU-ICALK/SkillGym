@@ -1,0 +1,105 @@
+{
+  "task_id": "code-quality__toolchain-release-readiness-audit",
+  "category": "code-quality",
+  "task_role": "template",
+  "difficulty": "hard",
+  "selected_skill": {
+    "dir": "verification-loop",
+    "skillsmp_name": "verification-loop",
+    "stars_observed": 174353,
+    "selection_reason": "This skill is among the most popular entries in the code-quality category, does not rely on external private accounts or privileged org access, and fits a release audit where the solver must execute a verification loop before making a promotion decision.",
+    "safe_use_screening": {
+      "external_private_account_required": false,
+      "privileged_org_access_required": false,
+      "sensitive_personal_data_required": false,
+      "notes": "The task uses bundled public package metadata snapshots, local git state, and a read-only local skill payload. It avoids sign-in flows, private services, and user-bound data."
+    }
+  },
+  "real_data_design": {
+    "source_type": "public package metadata snapshots from npm Registry and GitHub Releases APIs",
+    "links": [
+      "https://registry.npmjs.org/typescript/latest",
+      "https://registry.npmjs.org/eslint/latest",
+      "https://registry.npmjs.org/prettier/latest",
+      "https://api.github.com/repos/microsoft/TypeScript/releases?per_page=5",
+      "https://api.github.com/repos/eslint/eslint/releases?per_page=5",
+      "https://api.github.com/repos/prettier/prettier/releases?per_page=5"
+    ],
+    "normalization_strategy": "Bundle compact local JSON snapshots for three widely used toolchain packages while preserving the field shapes that npm Registry and GitHub Releases already expose.",
+    "determinism": "All API responses are stored inside the template so the package, oracle, and verifier recompute the same outputs without network dependence."
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "services": [
+      "local Node.js / TypeScript package in /app/workspace/package",
+      "local git repository initialized during image build with one tracked candidate modification left uncommitted",
+      "read-only skill payload copied to /root/.codex/skills for with_skill runs only"
+    ],
+    "inputs": [
+      "npm snapshot files under /app/workspace/data/npm",
+      "GitHub release snapshot files under /app/workspace/data/github",
+      "release gate and output contracts under /app/workspace/contracts",
+      "business scope notes under /app/workspace/docs/release_brief.md"
+    ],
+    "with_without_control": "with_skill and without_skill differ only by whether environment/skills is copied into /root/.codex/skills in the runtime copy."
+  },
+  "instruction_design": {
+    "goals": [
+      "State the audit deliverable and JSON contract clearly.",
+      "Keep the task audit-only, with no repository edits and one required output artifact.",
+      "Require local-skill discovery as read-only workflow guidance without spelling out the chosen skill's internal checks in the task contract."
+    ],
+    "hidden_workflow_pressure": [
+      "The repository's scripted build, type, lint, and test paths all pass, so the main discriminator is whether the solver follows through on the remaining verification-loop phases.",
+      "The blocking source issue is a committed console.log probe in tracked source, which is easy to catch with the local skill's security-scan phase but less obvious from the task text alone.",
+      "The blocking change issue is a tracked local diff in src/releaseMessaging.ts, which is intended to line up with the local skill's diff-review phase."
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "report file exists and follows the declared JSON contract",
+      "gate order matches release_contract.json",
+      "buildability, type_safety, style_checks, and test_suite are reported as passing",
+      "security_scan and diff_review are reported as failing",
+      "independent reruns of repository commands agree with the reported gate outcomes",
+      "blocking_issues covers both failing gates"
+    ],
+    "guardrails": [
+      "input data files must remain unchanged",
+      "installed skill payload stays read-only workflow guidance when present",
+      "the package diff must remain equal to the original candidate diff"
+    ],
+    "failure_target": "without_skill should fail for action-level reasons by missing the local skill guidance, typically treating security_scan and diff_review as non-blocking or using commands that do not perform the expected scan-and-review workflow."
+  },
+  "experiment_protocol": {
+    "environment": "E2B",
+    "isolation_rule": "Every cloud trial runs in a fresh isolated environment.",
+    "oracle_rule": "Do not finalize README until the current template version passes oracle in E2B.",
+    "comparison_rule": "with_skill and without_skill differ only by environment/skills presence and the corresponding Dockerfile copy-removal step in the runtime copy."
+  },
+  "experiment_results": {
+    "oracle_job": "code-quality-oracle-20260508i",
+    "with_skill_jobs": [
+      "code-quality-with-skill-p7-20260508",
+      "code-quality-with-skill-p8-20260508b",
+      "code-quality-with-skill-p9-20260508"
+    ],
+    "without_skill_jobs": [
+      "code-quality-without-skill-p3-20260508",
+      "code-quality-without-skill-p4-20260508",
+      "code-quality-without-skill-p5-20260508"
+    ],
+    "summary": {
+      "with_skill_pass_rate": 1.0,
+      "without_skill_pass_rate": 0.0,
+      "with_skill_avg_agent_seconds": 208.718,
+      "without_skill_avg_agent_seconds": 160.127,
+      "with_skill_avg_tokens": 348683.333,
+      "without_skill_avg_tokens": 280864.333
+    },
+    "notes": [
+      "All three with_skill trials opened /root/.codex/skills/verification-loop/SKILL.md and used it as read-only workflow guidance.",
+      "All three without_skill trials observed that /root/.codex/skills/ was absent and then failed verifier on the final decision and gate-specific action checks."
+    ]
+  }
+}

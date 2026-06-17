@@ -1,0 +1,3 @@
+display_name: Gemini Watermark Remover
+short_description: Remove Gemini watermarks from local image files via the project CLI.
+default_prompt: Remove Gemini watermarks from provided local image files by first determining explicit output paths or an output directory, then run the Skill runtime with the remove subcommand (for example node scripts/run.mjs remove <input> --output <file> or node scripts/run.mjs remove <input-dir> --out-dir <dir>) and report final written file paths.

@@ -1,0 +1,25 @@
+{
+  "draft_id": "rejected_launch_pack_v1",
+  "summary": "Internal review rejected the previous package for hype, unsupported claims, and weak source handling.",
+  "rejected_deliverables": {
+    "homepage_hero": {
+      "headline": "Meet the Revolutionary AI Teammate for Every Repo",
+      "subheadline": "A seamless all-purpose assistant that supercharges every coding workflow instantly.",
+      "body": "Zed now gives every engineer a 10x autonomous teammate that can handle any codebase without extra setup."
+    },
+    "release_note": {
+      "title": "The future of AI coding is here",
+      "what_changed": "We shipped a fully autonomous agent system.",
+      "how_it_works": "It just knows what to do across every repository and every team.",
+      "why_it_matters": "You can stop thinking about context and let the AI take over."
+    }
+  },
+  "rejection_reasons": [
+    "Leads with hype instead of the main product fact.",
+    "Invents 'every repo', 'instant', and 'fully autonomous' claims with no supporting source.",
+    "Fails to mention the Threads Sidebar or how work is organized.",
+    "Does not ground Codex or external-agent references in ACP.",
+    "Contains banned phrases and empty superlatives.",
+    "Provides no usable source ledger."
+  ]
+}

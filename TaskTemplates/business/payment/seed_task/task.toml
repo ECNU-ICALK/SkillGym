@@ -1,0 +1,42 @@
+version = "1.0"
+
+[metadata]
+id = "payment__invoice_batch_review"
+name = "Template: Invoice Batch Review"
+description = "Build a payable invoice batch from a nested document inbox, vendor master, stale settlement snapshot, filing policy, and a live in-container AP review service."
+difficulty = "hard"
+category = "payment"
+tags = [
+  "payment",
+  "accounts-payable",
+  "invoice-processing",
+  "document-organization",
+  "batch-review",
+  "duplicate-detection",
+  "operations",
+]
+required_skills = [
+  "invoice-organizer",
+]
+distractor_skills = [
+  "expense-reporting",
+  "spreadsheet-cleanup",
+  "receipt-summarization",
+]
+primary_output_file = "/root/output/payment_batch.json"
+source_template_id = "payment__invoice_batch_review"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

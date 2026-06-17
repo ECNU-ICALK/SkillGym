@@ -1,0 +1,7 @@
+account_id,company_name,crm_deal_id,owner_name,renewal_date,renewal_arr_usd,invoice_status,dunning_stage,seat_delta,blocker_status,last_synced_at
+ACC-101,Acorn Analytics,DEAL-101,Maya Ortiz,2026-05-20,12000,paid,healthy,0,none,2026-05-15T07:10:00Z
+ACC-102,Beacon Freight,DEAL-102,Nolan Price,2026-05-20,24500,sent,none,0,none,2026-05-15T07:10:00Z
+ACC-103,Cinder Health,DEAL-103,Priya Singh,2026-05-20,18400,open,attempt_1,0,none,2026-05-15T07:10:00Z
+ACC-104,Delta Commerce,DEAL-104,Owen Clarke,2026-05-20,30000,open,healthy,0,none,2026-05-15T07:10:00Z
+ACC-105,Elm Retail,DEAL-105,Lena Hart,2026-05-20,48800,paid,healthy,4,none,2026-05-15T07:10:00Z
+ACC-106,Fable Legal,DEAL-106,Grace Kim,2026-05-20,9800,open,none,0,none,2026-05-15T07:10:00Z

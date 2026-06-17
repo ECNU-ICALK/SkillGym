@@ -1,0 +1,44 @@
+{
+  "doc_id": "parallel_agents_blog",
+  "title": "Introducing Parallel Agents in Zed",
+  "url": "https://zed.dev/blog/parallel-agents",
+  "document_type": "blog_post",
+  "snapshot_note": "Structured fact packet distilled from Zed's public Parallel Agents launch post dated 2026-04-22.",
+  "facts": [
+    {
+      "fact_id": "parallel_agents_blog.parallel_same_window",
+      "statement": "Zed says users can orchestrate multiple agents running in parallel in the same window.",
+      "tags": ["parallel_agents", "launch"]
+    },
+    {
+      "fact_id": "parallel_agents_blog.threads_sidebar_access",
+      "statement": "The launch post says the Threads Sidebar lets users control which folders and repositories agents can access and monitor threads as they run.",
+      "tags": ["threads_sidebar", "access_control"]
+    },
+    {
+      "fact_id": "parallel_agents_blog.choose_agent_per_thread",
+      "statement": "The launch post says users can mix and match agents on a per-thread basis.",
+      "tags": ["agents", "workflow"]
+    },
+    {
+      "fact_id": "parallel_agents_blog.cross_project_work",
+      "statement": "The launch post says one thread can read and write across repositories while another works on a different project.",
+      "tags": ["projects", "workflow"]
+    },
+    {
+      "fact_id": "parallel_agents_blog.worktree_isolation",
+      "statement": "The launch post says users can isolate worktrees per thread when they want to separate edits.",
+      "tags": ["git", "workflow"]
+    },
+    {
+      "fact_id": "parallel_agents_blog.fps_120",
+      "statement": "The launch post describes Parallel Agents running at Zed's 120 fps.",
+      "tags": ["performance"]
+    },
+    {
+      "fact_id": "parallel_agents_blog.sidebar_shortcut",
+      "statement": "The launch post says users can open the Threads Sidebar with option-cmd-j on macOS and ctrl-option-j on Linux and Windows.",
+      "tags": ["keybindings", "ui"]
+    }
+  ]
+}

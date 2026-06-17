@@ -1,0 +1,9 @@
+component,amount_brl,notes
+min_bid_brl,134000.00,older workbook copied the prior reserve figure
+auctioneer_fee_brl,6700.00,rounded from an early estimate
+itbi_brl,4020.00,used bid-only tax basis
+registry_cost_brl,2500.00,legacy cartorio estimate
+modeled_tax_debts_brl,0.00,assumed settled
+modeled_condo_debts_brl,0.00,assumed settled
+modeled_regularization_brl,5000.00,light reserve from an outdated draft
+total_cash_out_brl,152220.00,older total from stale inputs

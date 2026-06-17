@@ -1,0 +1,22 @@
+{
+  "headings": {
+    "overview": "Visão geral",
+    "highlights": "Destaques",
+    "actions": "Ações"
+  },
+  "labels": {
+    "versions": "Versões",
+    "focus_areas": "Áreas de foco",
+    "audience": "Público",
+    "published": "Publicado em",
+    "generated_with": "Gerado com"
+  },
+  "summary_template": "Este resumo reúne atualizações oficiais do VS Code relevantes para {audience}.",
+  "focus_names": {
+    "extension-api": "API de extensões",
+    "workspace-extensions": "Extensões de workspace",
+    "views": "Views e workbench",
+    "accessibility": "Acessibilidade",
+    "testing": "Testes de extensões"
+  }
+}

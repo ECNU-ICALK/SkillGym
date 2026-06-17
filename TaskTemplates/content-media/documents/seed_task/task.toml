@@ -1,0 +1,37 @@
+version = "1.0"
+
+[metadata]
+id = "documents__north_america_energy_briefing_packet"
+name = "Template: North America Energy Briefing Packet"
+description = "Complete a review-ready Word briefing packet from a branded draft, public-energy data snapshots, and a fixed delivery contract."
+difficulty = "hard"
+category = "documents"
+tags = [
+  "documents",
+  "docx",
+  "word-packet",
+  "briefing",
+  "data-driven-delivery",
+  "ooxml",
+  "chart-insertion",
+]
+required_skills = [
+  "docx",
+]
+primary_output_file = "/app/output/north_america_energy_briefing.docx"
+source_template_id = "documents__north_america_energy_briefing_packet"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 2
+memory_mb = 6144
+storage_mb = 16384
+gpus = 0
+allow_internet = true

@@ -1,0 +1,129 @@
+{
+  "task_id": "arts-crafts__fiber-workshop-printable-bundle",
+  "category": "arts-crafts",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/root/answer/bundle_manifest.json",
+  "selected_skill": {
+    "dir": "find-stl",
+    "purpose": "Guide the solver through search, candidate inspection, file retrieval, and manifest-oriented model packaging for printable craft tools.",
+    "task_design_intent": [
+      "Keep the instruction focused on bundle assembly, delivery contract, policy checks, and prohibitions.",
+      "Move the search and retrieval workflow pressure into the bound skill and the verifier.",
+      "Keep with_skill and without_skill aligned everywhere except environment/skills and its copy path."
+    ],
+    "skillsmp_references": [
+      {
+        "name": "find-stl",
+        "stars": "4.4k",
+        "relevance": "searching and fetching printable model files with attribution and license data"
+      },
+      {
+        "name": "canvas-design",
+        "stars": "2.8k",
+        "relevance": "adjacent arts-crafts delivery skill focused on final artifacts"
+      },
+      {
+        "name": "openscad",
+        "stars": "2.2k",
+        "relevance": "adjacent maker workflow skill for printable objects"
+      }
+    ]
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "local_services": [
+      "HTTPS GraphQL-compatible model source service bound to api.printables.com",
+      "local file delivery routes for downloadable packs and individual model files"
+    ],
+    "data_properties": [
+      "public input files under /root/environment/data provide slot briefs, candidate hints, and policy rules",
+      "service seed holds richer model metadata and downloadable artifacts used for final packaging",
+      "selection requires combining slot semantics, popularity checks, license checks, and downloaded file evidence"
+    ],
+    "public_references": [
+      "https://www.printables.com/tag/knit",
+      "https://www.printables.com/tag/crochethook",
+      "https://www.printables.com/model/354172-yarn-bowl",
+      "https://www.printables.com/model/25823-open-stitch-marker",
+      "https://www.printables.com/model/100186-lockable-stitch-marker",
+      "https://www.printables.com/model/151345-knitting-needle-crochet-hook-holder-v2",
+      "https://www.printables.com/model/178406-crochet-hook-storage-box-1",
+      "https://www.printables.com/model/197262-stitch-marker-box-1"
+    ]
+  },
+  "instruction_design": {
+    "principles": [
+      "State the operator-facing bundle goal and required deliverables first.",
+      "Describe public inputs and the presence of a local model source chain without exposing the GraphQL workflow.",
+      "Avoid naming the bound script, command syntax, or internal service routes in the instruction.",
+      "Explicitly prohibit replacing the source chain, hardcoding checksums, or modifying task data."
+    ],
+    "expected_solver_discovery": [
+      "Recognize that candidate hints alone are insufficient and that the local source chain must be queried.",
+      "Decide to consult the bundled skill or manually reconstruct its workflow.",
+      "Fetch model files for the chosen bundle and carry file evidence forward into the output records."
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "required output files and parseability",
+      "selection recomputation from policy and service data",
+      "downloaded file inventory and hash checks against the mirrored artifacts",
+      "bundle-level summary consistency and report structure"
+    ],
+    "guardrails": [
+      "service access logs prove the solver used search, model detail, download-link, and file routes",
+      "public data, hidden service code, and mirrored artifacts remain unchanged",
+      "local HTTPS source service remains healthy at verifier end",
+      "skill consultation checks stay optional so without_skill still builds and runs"
+    ],
+    "failure_target": "Without-skill failures should center on skipped retrieval actions, incomplete source usage, wrong model selection, or missing downloaded evidence, not narrow formatting issues."
+  },
+  "experiment_protocol": {
+    "environment": "E2B",
+    "isolation_rule": "Every run must use a fresh runtime copy.",
+    "with_without_diff": "The only allowed difference is whether environment/skills is copied into the runtime.",
+    "required_result_state": "Do not finalize README metrics until oracle and at least three valid with-skill/without-skill comparison runs have been collected."
+  },
+  "experiment_results": {
+    "oracle": {
+      "job_root": "/home/lenovo/.tmp_harbor_jobs_arts_crafts_oracle6_20260503-160346",
+      "trial_id": "task_oracle_e2b__cgi4YRX",
+      "verifier_passed": 13,
+      "verifier_total": 13
+    },
+    "effective_pairs": [
+      {
+        "label": "pairA",
+        "with_skill_trial": "task_with_skills_e2b__CZcvp5i",
+        "with_skill_passed": true,
+        "without_skill_trial": "task_without_skills_e2b__NDgcbxx",
+        "without_skill_passed": false
+      },
+      {
+        "label": "pairC4",
+        "with_skill_trial": "task_with_skills_e2b__MA4VsV7",
+        "with_skill_passed": true,
+        "without_skill_trial": "task_without_skills_e2b__GaRQ2Gy",
+        "without_skill_passed": false
+      },
+      {
+        "label": "pairD4",
+        "with_skill_trial": "task_with_skills_e2b__aFm9sbx",
+        "with_skill_passed": true,
+        "without_skill_trial": "task_without_skills_e2b__FLMhy2F",
+        "without_skill_passed": false
+      }
+    ],
+    "aggregate_metrics": {
+      "sample_size": 3,
+      "with_skill_pass_rate": "100% (3/3)",
+      "without_skill_pass_rate": "0% (0/3)",
+      "with_skill_avg_duration_sec": 222.7,
+      "without_skill_avg_duration_sec": 299.0,
+      "with_skill_avg_tokens": 598149,
+      "without_skill_avg_tokens": 713254
+    }
+  }
+}

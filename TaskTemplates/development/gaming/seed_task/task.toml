@@ -1,0 +1,34 @@
+version = "1.0"
+
+[metadata]
+id = "gaming__kanto_encounter_atlas"
+name = "Kanto Encounter Atlas"
+description = "Build a seeded browser-based encounter atlas from local Kanto data snapshots and a fixed render contract."
+difficulty = "hard"
+category = "gaming"
+tags = [
+  "gaming",
+  "generative-art",
+  "p5js",
+  "data-visualization",
+  "seeded-randomness",
+  "frontend",
+]
+required_skills = ["algorithmic-art"]
+primary_output_file = "/app/workspace/studio/index.html"
+source_template_id = "gaming__kanto_encounter_atlas"
+task_role = "template"
+
+[verifier]
+timeout_sec = 1600.0
+
+[agent]
+timeout_sec = 1600.0
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 12288
+gpus = 0
+allow_internet = true

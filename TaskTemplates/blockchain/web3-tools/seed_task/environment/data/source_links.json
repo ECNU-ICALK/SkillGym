@@ -1,0 +1,5 @@
+{
+  "coinbase_combined_xlsx": "https://raw.githubusercontent.com/bhaskatripathi/Cryptodata_Coinbase_Kraken_Binance/main/Coinbase_data_combined_v2_merged.xlsx",
+  "kraken_combined_xlsx": "https://raw.githubusercontent.com/bhaskatripathi/Cryptodata_Coinbase_Kraken_Binance/main/Kraken_data_combined_v2_merged.xlsx",
+  "repo_readme": "https://raw.githubusercontent.com/bhaskatripathi/Cryptodata_Coinbase_Kraken_Binance/main/README.md"
+}

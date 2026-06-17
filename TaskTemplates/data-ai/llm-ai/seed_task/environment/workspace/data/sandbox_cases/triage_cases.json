@@ -1,0 +1,107 @@
+{
+  "bank_001": {
+    "ticket_id": "bank_001",
+    "status": "success",
+    "queue": "cash-ops",
+    "intent": "cash_withdrawal_charged_twice",
+    "recommended_action": "open_duplicate_cash_claim",
+    "evidence": [
+      {
+        "source_id": "kb:cash-duplicate-claim",
+        "snippet": "Cash withdrawal disputes should be opened when the transaction posts twice."
+      }
+    ],
+    "escalation_reason": null
+  },
+  "bank_002": {
+    "ticket_id": "bank_002",
+    "status": "success",
+    "queue": "card-ops",
+    "intent": "cash_withdrawal_reverted",
+    "recommended_action": "explain_reverted_card_payment",
+    "evidence": [
+      {
+        "source_id": "kb:card-reverted-payment",
+        "snippet": "Reverted card payments are usually released automatically if the merchant did not capture the authorization."
+      }
+    ],
+    "escalation_reason": null
+  },
+  "bank_003": {
+    "ticket_id": "bank_003",
+    "status": "escalated",
+    "queue": "transfers-risk",
+    "intent": "beneficiary_not_allowed",
+    "recommended_action": "collect_transfer_risk_context",
+    "evidence": [
+      {
+        "source_id": "kb:transfer-risk-review",
+        "snippet": "Payments blocked by beneficiary rules require a manual risk review before release."
+      }
+    ],
+    "escalation_reason": "manual_risk_review_required"
+  },
+  "bank_004": {
+    "ticket_id": "bank_004",
+    "status": "success",
+    "queue": "profile-maintenance",
+    "intent": "beneficiary_not_defined",
+    "recommended_action": "guide_profile_update_steps",
+    "evidence": [],
+    "escalation_reason": null
+  },
+  "bank_005": {
+    "ticket_id": "bank_005",
+    "status": "failed",
+    "error": {
+      "code": "provider_temporarily_unavailable",
+      "message": "The downstream model is temporarily unavailable.",
+      "retryable": true
+    }
+  },
+  "bank_006": {
+    "ticket_id": "bank_006",
+    "status": "success",
+    "queue": "profile-maintenance",
+    "intent": "beneficiary_not_defined",
+    "recommended_action": "guide_beneficiary_update_steps",
+    "evidence": [],
+    "escalation_reason": null
+  },
+  "bank_007": {
+    "ticket_id": "bank_007",
+    "status": "success",
+    "queue": "profile-maintenance",
+    "intent": "beneficiary_not_defined",
+    "recommended_action": "guide_beneficiary_update_steps",
+    "evidence": [],
+    "escalation_reason": null
+  },
+  "bank_008": {
+    "ticket_id": "bank_008",
+    "status": "failed",
+    "error": {
+      "code": "provider_temporarily_unavailable",
+      "message": "The downstream model is temporarily unavailable.",
+      "retryable": true
+    }
+  },
+  "clinc_001": {
+    "ticket_id": "clinc_001",
+    "status": "escalated",
+    "queue": "human-triage",
+    "intent": "out_of_scope",
+    "recommended_action": "route_to_manual_triage",
+    "evidence": [],
+    "escalation_reason": "out_of_scope_request"
+  },
+  "clinc_002": {
+    "ticket_id": "clinc_002",
+    "status": "escalated",
+    "queue": "human-triage",
+    "intent": "out_of_scope",
+    "recommended_action": "route_to_manual_triage",
+    "evidence": [],
+    "escalation_reason": "out_of_scope_request"
+  }
+}

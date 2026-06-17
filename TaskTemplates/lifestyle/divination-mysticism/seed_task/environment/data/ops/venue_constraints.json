@@ -1,0 +1,17 @@
+{
+  "blackout_dates": [
+    "2026-08-27",
+    "2026-11-23"
+  ],
+  "disallowed_weekdays": [
+    "Monday"
+  ],
+  "minimum_gap_days": 21,
+  "exact_weekend_count": 2,
+  "exact_friday_count": 1,
+  "notes": [
+    "The studio cannot staff a Monday event in 2026.",
+    "Dates on the blackout list cannot be selected.",
+    "Selected dates should stay comfortably spaced for promotion and setup."
+  ]
+}

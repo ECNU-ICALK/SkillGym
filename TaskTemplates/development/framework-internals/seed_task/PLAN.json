@@ -1,0 +1,133 @@
+{
+  "task_id": "framework-internals__segment-cache-flag-plumbing",
+  "category": "framework-internals",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/app/workspace/output/segment_cache_report.json",
+  "selected_skill": {
+    "dir": "flags",
+    "purpose": "Guide the solver through end-to-end framework flag wiring across type declaration, schema validation, build-time injection, runtime env plumbing, and export-time behavior without changing the task data, tests, or the bound skill.",
+    "task_design_intent": [
+      "Keep the instruction focused on the delivery contract, available code, output report, and prohibited shortcuts.",
+      "Move the diagnosis pressure for locating every participating framework file into the skill and the verifier.",
+      "Make with_skill and without_skill differ only by environment/skills and the corresponding runtime copy logic."
+    ],
+    "skillsmp_references": [
+      {
+        "name": "flags",
+        "stars": "139209",
+        "relevance": "direct match for framework feature flag plumbing"
+      },
+      {
+        "name": "pytorch-patterns",
+        "stars": "169199",
+        "relevance": "reference for internal pattern reuse across multiple framework layers"
+      },
+      {
+        "name": "regex-vs-llm-structured-text",
+        "stars": "169199",
+        "relevance": "reference for keeping structured processing deterministic"
+      },
+      {
+        "name": "effect",
+        "stars": "151254",
+        "relevance": "internal framework code organization and existing pattern reuse"
+      },
+      {
+        "name": "wpf-to-winui3-migration",
+        "stars": "132111",
+        "relevance": "cross-cutting internal wiring across multiple framework layers"
+      },
+      {
+        "name": "add-uint-support",
+        "stars": "99501",
+        "relevance": "adding one capability across a framework surface rather than patching one call site"
+      },
+      {
+        "name": "llama-cpp",
+        "stars": "122488",
+        "relevance": "local runtime and inference pipeline wiring under container constraints"
+      },
+      {
+        "name": "at-dispatch-v2",
+        "stars": "99501",
+        "relevance": "internal registration and dispatch wiring patterns"
+      },
+      {
+        "name": "aoti-debug",
+        "stars": "99501",
+        "relevance": "cross-file debugging workflow for internal compiler/runtime paths"
+      },
+      {
+        "name": "metal-kernel",
+        "stars": "99501",
+        "relevance": "bundle or kernel variant selection in low-level framework code"
+      },
+      {
+        "name": "pt2-bug-basher",
+        "stars": "99501",
+        "relevance": "validating that one change propagates across multiple execution modes"
+      },
+      {
+        "name": "implementing-jsc-classes-cpp",
+        "stars": "89413",
+        "relevance": "adding internals-facing behavior while preserving existing integration points"
+      }
+    ]
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "live_services": [
+      "one in-container framework dev server on port 3000",
+      "one in-container build and export workflow driven by local scripts"
+    ],
+    "data_properties": [
+      "deterministic local snapshots derived from public Next.js source files and official Next.js documentation routes",
+      "multiple scenario matrix entries so one report must cover disabled and enabled flag states",
+      "alternate route snapshot support to catch hardcoded summaries and fixed-path assumptions"
+    ],
+    "real_world_references": [
+      "https://github.com/vercel/next.js/blob/canary/packages/next/src/server/config-shared.ts",
+      "https://github.com/vercel/next.js/blob/canary/packages/next/src/server/config-schema.ts",
+      "https://github.com/vercel/next.js/blob/canary/packages/next/src/build/webpack/plugins/define-env-plugin.ts",
+      "https://github.com/vercel/next.js/blob/canary/packages/next/src/server/next-server.ts",
+      "https://github.com/vercel/next.js/blob/canary/packages/next/src/export/worker.ts",
+      "https://nextjs.org/docs/app/getting-started/cache-components",
+      "https://nextjs.org/docs/app/api-reference/config/next-config-js/authInterrupts",
+      "https://nextjs.org/docs/app/api-reference/config/next-config-js/taint"
+    ]
+  },
+  "instruction_design": {
+    "principles": [
+      "State the required capability and execution entrypoints before any internal file hints.",
+      "Describe the available code, local snapshots, fixture matrix, and output report as the authoritative delivery surface.",
+      "Avoid spelling out config-shared, zod schema, define-env, runtime env, or bundle-selection details in the instruction.",
+      "Explicitly prohibit replacing the current code path, modifying input data, or reducing the task to a static report."
+    ],
+    "expected_solver_discovery": [
+      "Recognize that one framework flag must participate in more than one internal layer.",
+      "Find that the enabled scenario currently disappears between config loading and later execution stages.",
+      "Repair the same capability for dev, build, export, and final report paths instead of patching a single visible output."
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "enabled dev scenario resolves the flag and drives the runtime module into segment-cache mode",
+      "build output captures the same flag in the emitted runtime flags artifact and in the runtime bundle manifest",
+      "export output uses the enabled runtime mode for the same scenario",
+      "final report covers both scenarios and reflects the actual build and export results"
+    ],
+    "guardrails": [
+      "upstream task data remains unchanged",
+      "alternate route snapshot changes route digest and summary values without code changes",
+      "report regeneration time shows the file was produced by the current run rather than checked in as a fixed answer"
+    ],
+    "failure_target": "Without-skill failures should land on action-level misses such as leaving bundle-plan files on the baseline path, patching only schema and env wiring, or fixing only one execution path while another still resolves the disabled behavior."
+  },
+  "experiment_protocol": {
+    "environment": "E2B",
+    "isolation_rule": "Every experiment run must start from a fresh isolated runtime copy.",
+    "with_without_diff": "The only allowed difference is whether environment/skills is present and copied into the runtime.",
+    "required_result_state": "Do not finalize the README until oracle and at least three valid with-skill and without-skill comparisons have been collected."
+  }
+}

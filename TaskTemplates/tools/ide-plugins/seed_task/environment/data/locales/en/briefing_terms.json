@@ -1,0 +1,22 @@
+{
+  "headings": {
+    "overview": "Overview",
+    "highlights": "Highlights",
+    "actions": "Action items"
+  },
+  "labels": {
+    "versions": "Versions",
+    "focus_areas": "Focus areas",
+    "audience": "Audience",
+    "published": "Published",
+    "generated_with": "Generated with"
+  },
+  "summary_template": "This briefing collects official VS Code updates that matter to {audience}.",
+  "focus_names": {
+    "extension-api": "Extension API",
+    "workspace-extensions": "Workspace extensions",
+    "views": "Views and workbench",
+    "accessibility": "Accessibility",
+    "testing": "Extension testing"
+  }
+}

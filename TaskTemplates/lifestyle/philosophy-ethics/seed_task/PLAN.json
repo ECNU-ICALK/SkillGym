@@ -1,0 +1,87 @@
+{
+  "task_id": "philosophy-ethics__k12-genai-decision-packet",
+  "task_name": "k12-genai-decision-packet",
+  "template_category": "philosophy-ethics",
+  "scenario": "preparing a board-ready governance decision packet for a grades 9-12 generative AI writing support pilot from local policy, evidence, and stakeholder materials",
+  "user_visible_goal": "Produce a locally grounded decision packet that selects one allowed outcome, compares all candidate options, maps issues to controls, and leaves a review-ready handoff bundle.",
+  "selected_skill": {
+    "name": "axiom",
+    "source": "sickn33/antigravity-awesome-skills",
+    "skillsmp_category_url": "https://skillsmp.com/categories/philosophy-ethics",
+    "observed_stars": 36104,
+    "risk_screening": "No external account, private credential, or high-sensitivity system access is required. The skill operates on local decision materials and emphasizes assumption auditing, prioritization, and reconstruction."
+  },
+  "input_assets": [
+    "/root/data/brief/committee_brief.json",
+    "/root/data/options/deployment_options.csv",
+    "/root/data/policy/decision_contract.json",
+    "/root/data/policy/policy_clauses.json",
+    "/root/data/evidence/public_evidence.jsonl",
+    "/root/data/stakeholders/board_priorities.json",
+    "/root/data/stakeholders/teacher_feedback.json",
+    "/root/data/stakeholders/family_feedback.json",
+    "/root/data/stakeholders/accessibility_feedback.json",
+    "/root/data/reference/source_index.json",
+    "/root/workspace/build_decision_packet.py"
+  ],
+  "required_outputs": [
+    "/root/output/decision_memo.md",
+    "/root/output/source_inventory.tsv",
+    "/root/output/option_assessment.tsv",
+    "/root/output/decision_issues.tsv",
+    "/root/output/assumption_audit.tsv",
+    "/root/output/safeguard_plan.yaml",
+    "/root/output/decision_bundle.json"
+  ],
+  "shipped_skills": [
+    "axiom"
+  ],
+  "skill_hypothesis": {
+    "with_skill": "The solver is more likely to reframe the decision correctly, surface the hidden blockers behind each option, rank the most decision-critical issues, and rebuild the recommendation into a coherent packet with controls and open questions aligned.",
+    "without_skill": "The solver may pick a superficially attractive option or stop at a narrative summary while leaving action-level gaps such as weak assumption ranking, missing monitoring linkage, incomplete issue handling, or an inconsistent bundle."
+  },
+  "verifier_strategy": {
+    "main_tests": [
+      "All required outputs exist, parse, and satisfy the declared column and key contracts.",
+      "option_assessment.tsv, decision_issues.tsv, safeguard_plan.yaml, and decision_bundle.json are checked against an independent oracle rebuilt from the local brief, option matrix, policy contract, and evidence summaries.",
+      "assumption_audit.tsv must show layered assumption coverage, valid type labels, correct risk arithmetic, and Top 3 monitoring carry-through.",
+      "decision_memo.md must contain the required sections and stay consistent with the selected option and required controls.",
+      "source_inventory.tsv must enumerate the expected local input packs."
+    ],
+    "guardrails": [
+      "The solution must read the committee brief, option matrix, and decision contract rather than hardcoding one outcome.",
+      "Mutating the committee budget cap in a rerun must change the selected outcome.",
+      "Repeated runs must produce stable outputs.",
+      "Task input data must remain unchanged, and bundled skills must stay available as runtime references."
+    ]
+  },
+  "data_provenance": {
+    "reference_source": "Task-local structured evidence and policy extracts derived from public UNESCO, U.S. Department of Education, PTAC, NIST, OECD, ADA.gov, and Pew materials.",
+    "service_source": "Single-container local document-analysis task; no remote service state is required during solving."
+  },
+  "local_validation": {
+    "naive_pipeline": "current final verifier intentionally fails representative without-skill outputs on quantitative assumption-matrix requirements",
+    "oracle_solution": "14/14 tests pass locally against solution/fixed via TASK_WORKSPACE_ROOT override"
+  },
+  "e2b_validation": {
+    "oracle_job": "manual runner with template alias task_with_skills_e2b__f4e54da9 and current final verifier logic",
+    "oracle_reward": 1.0,
+    "with_skill_jobs": [
+      "with_skill_axiom_audit_smoke2",
+      "with_skill_axiom_audit_smoke3",
+      "with_skill_axiom_audit_smoke4"
+    ],
+    "without_skill_jobs": [
+      "without_skill_axiom_audit_smoke2",
+      "without_skill_axiom_audit_smoke3",
+      "without_skill_axiom_audit_smoke4"
+    ],
+    "with_skill_pass_rate": "3/3",
+    "without_skill_pass_rate": "0/3",
+    "with_skill_avg_agent_seconds": 376.6,
+    "without_skill_avg_agent_seconds": 452.7,
+    "with_skill_avg_tokens": 454966.0,
+    "without_skill_avg_tokens": 601266.0,
+    "notes": "All six runs were genuine E2B task-level executions captured with the manual runner against fresh template aliases. Final pass/fail classification uses the current final verifier logic applied to the saved task outputs from those runs."
+  }
+}

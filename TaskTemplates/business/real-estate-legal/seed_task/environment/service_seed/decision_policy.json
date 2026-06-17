@@ -1,0 +1,6 @@
+{
+  "budget_cap_brl": 180000.0,
+  "max_high_risks_for_bid": 1,
+  "max_high_risks_for_watch_only": 3,
+  "expected_recommendation": "WATCH_ONLY"
+}

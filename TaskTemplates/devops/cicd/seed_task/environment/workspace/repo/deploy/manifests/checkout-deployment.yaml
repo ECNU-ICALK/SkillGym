@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: saturn-checkout
+  labels:
+    app: saturn-checkout
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: saturn-checkout
+  template:
+    metadata:
+      labels:
+        app: saturn-checkout
+    spec:
+      containers:
+        - name: saturn-checkout
+          image: ghcr.io/saturn-labs/saturn-checkout:latest
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 8080
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8080

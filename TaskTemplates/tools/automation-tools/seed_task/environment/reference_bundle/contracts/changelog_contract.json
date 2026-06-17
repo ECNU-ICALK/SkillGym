@@ -1,0 +1,46 @@
+{
+  "required_output_files": [
+    "latest.md",
+    "preview.md",
+    "index.md",
+    "release_manifest.json"
+  ],
+  "required_manifest_fields": [
+    "version",
+    "release_channel",
+    "release_kind",
+    "release_date_iso",
+    "release_date_long",
+    "updated_files",
+    "announcement_prs",
+    "highlight_titles",
+    "full_changelog_url"
+  ],
+  "highlight_rules": {
+    "minor_release_min": 3,
+    "minor_release_max": 5,
+    "patch_release_min": 0,
+    "patch_release_max": 0
+  },
+  "announcement_rules": {
+    "stable_minor_required": true,
+    "max_pr_links_per_item": 2
+  },
+  "preserve_rules": {
+    "stable_minor_preserve": [
+      "preview.md"
+    ],
+    "preview_minor_preserve": [
+      "latest.md",
+      "index.md"
+    ],
+    "stable_patch_preserve": [
+      "preview.md",
+      "index.md"
+    ],
+    "preview_patch_preserve": [
+      "latest.md",
+      "index.md"
+    ]
+  }
+}

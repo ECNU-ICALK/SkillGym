@@ -1,0 +1,38 @@
+version = "1.0"
+
+[metadata]
+id = "framework-internals__segment-cache-flag-plumbing"
+name = "Template: Segment Cache Flag Plumbing"
+description = "Add one experimental framework flag across configuration, build, runtime, and export paths without introducing a parallel implementation."
+difficulty = "hard"
+category = "framework-internals"
+tags = [
+  "framework-internals",
+  "feature-flags",
+  "typescript",
+  "nodejs",
+  "build-pipeline",
+  "runtime-config",
+  "export-worker"
+]
+required_skills = ["flags"]
+source_template_id = "framework-internals__segment-cache-flag-plumbing"
+task_role = "template"
+primary_output_file = "/app/workspace/output/segment_cache_report.json"
+
+[agent]
+timeout_sec = 1000.0
+
+[solution]
+timeout_sec = 1000.0
+
+[verifier]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 12288
+gpus = 0
+allow_internet = true

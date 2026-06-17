@@ -1,0 +1,6 @@
+{"release_version":"2026.04.2","section":"Fixes","include":true,"text":"Backport receipt rendering cleanup for guest checkout exports."}
+{"release_version":"2026.04.3","section":"Fixes","include":true,"text":"Fix tax calculation for discount-eligible orders in the checkout total pipeline."}
+{"release_version":"2026.04.3","section":"Fixes","include":true,"text":"Restore the null-discount guard used by manual credit orders."}
+{"release_version":"2026.04.3","section":"Risks","include":true,"text":"Audit trail export still needs a follow-up pass for bulk refund traces."}
+{"release_version":"2026.04.3","section":"Validation","include":true,"text":"Checkout totals now recalculate tax after discount and keep capped-discount orders at zero total."}
+{"release_version":"2026.04.4","section":"Fixes","include":true,"text":"Queue retry tuning for fraud-review webhook backpressure."}

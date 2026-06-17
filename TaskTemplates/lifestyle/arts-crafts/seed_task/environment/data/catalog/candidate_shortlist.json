@@ -1,0 +1,47 @@
+{
+  "candidates": [
+    {
+      "title": "Yarn Bowl",
+      "probable_slots": [
+        "yarn-management"
+      ],
+      "reason_to_review": "Popular yarn control accessory with tabletop fit."
+    },
+    {
+      "title": "Open Stitch Marker",
+      "probable_slots": [
+        "stitch-marker"
+      ],
+      "reason_to_review": "Very popular marker candidate that should be checked against transport requirements."
+    },
+    {
+      "title": "Lockable Stitch Marker",
+      "probable_slots": [
+        "stitch-marker"
+      ],
+      "reason_to_review": "Marker candidate with a closure-oriented form factor."
+    },
+    {
+      "title": "Knitting Needle & Crochet Hook Holder V2",
+      "probable_slots": [
+        "tool-storage"
+      ],
+      "reason_to_review": "Mixed-tool organizer candidate for the shared table."
+    },
+    {
+      "title": "Crochet Hook Storage Box #1",
+      "probable_slots": [
+        "tool-storage"
+      ],
+      "reason_to_review": "Compact hook case that may be too narrow for the full slot goal."
+    },
+    {
+      "title": "Stitch Marker Box #1",
+      "probable_slots": [
+        "tool-storage",
+        "stitch-marker"
+      ],
+      "reason_to_review": "Accessory box candidate that should be checked against license and slot fit."
+    }
+  ]
+}

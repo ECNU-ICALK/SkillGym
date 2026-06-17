@@ -1,0 +1,13 @@
+{
+  "name": "saturn-checkout",
+  "private": true,
+  "version": "1.4.0",
+  "type": "module",
+  "scripts": {
+    "lint": "node scripts/qa/validate-release-source.mjs lint",
+    "test": "node --test tests/*.test.mjs",
+    "smoke": "./scripts/deploy/run_smoke.sh staging",
+    "e2e": "./scripts/deploy/run_e2e.sh staging",
+    "security-scan": "./scripts/security/run_trivy_mock.sh"
+  }
+}

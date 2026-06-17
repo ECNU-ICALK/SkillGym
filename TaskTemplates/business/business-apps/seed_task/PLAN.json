@@ -1,0 +1,77 @@
+{
+  "task_id": "business-apps__renewal-action-queue",
+  "category": "business-apps",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/root/output/renewal_control_summary.json",
+  "selected_skill": {
+    "dir": "billing-automation",
+    "skillsmp_name": "billing-automation",
+    "stars_observed": 34500,
+    "selection_reason": "Recurring billing, invoicing, subscription lifecycle, and dunning management map well to a renewal action queue that depends on current operational facts.",
+    "safe_use_screening": {
+      "external_private_account_required": false,
+      "privileged_org_access_required": false,
+      "sensitive_personal_data_required": false,
+      "notes": "The task uses task-local exports, a local service, and public-source-inspired field shapes. It avoids outside SaaS credentials and private workspace access."
+    }
+  },
+  "real_data_design": {
+    "source_type": "public billing and dunning references",
+    "links": [
+      "https://docs.stripe.com/api/subscriptions/object",
+      "https://docs.stripe.com/api/invoices/object",
+      "https://docs.stripe.com/billing/subscriptions/usage-based",
+      "https://www.chargebee.com/docs/payments/2.0/dunning/dunning-v2"
+    ],
+    "normalization_strategy": "Use public billing and dunning object shapes as the semantic basis, then add task-local revops decisions, blockers, seat changes, and account ownership in the local service.",
+    "determinism": "All service payloads and exports live inside the task so the verifier can recompute outputs without network access."
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "services": [
+      "local revops service on 127.0.0.1:8144 with manifest, cursor-paginated cohort, account detail, renewal preview, and dunning endpoints"
+    ],
+    "inputs": [
+      "older CRM export under /root/data/crm_export.csv",
+      "older invoice snapshot under /root/data/invoice_snapshot.ndjson",
+      "action policy under /root/data/action_policy.yaml",
+      "contact directory under /root/data/contact_directory.csv"
+    ],
+    "with_without_control": "with_skill and without_skill differ only by whether environment/skills is present in the runtime copy and copied into the agent skill path."
+  },
+  "instruction_design": {
+    "goals": [
+      "State the business deliverables and current-source rule clearly.",
+      "Keep the action contract explicit while leaving the live workflow mostly implicit.",
+      "Make older exports tempting but insufficient."
+    ],
+    "hidden_workflow_pressure": [
+      "The cohort endpoint uses cursor pagination and must be fully traversed.",
+      "The account detail alone is insufficient; renewal preview and dunning endpoints change the action bucket.",
+      "The verifier checks for pre-verifier live service usage across all subresources."
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "required output files exist and parse",
+      "renewal worklist rows exactly match current service facts and policy-based action selection",
+      "control summary totals and action counts recompute from the live cohort",
+      "operator brief contains required business facts and highest-risk account references"
+    ],
+    "guardrails": [
+      "solver must query the manifest endpoint and follow cursor pagination before verifier traffic",
+      "solver must fetch detail, renewal preview, and dunning records for every live account",
+      "input files, hidden service files, and installed skills must remain unchanged",
+      "service must remain healthy at verifier end",
+      "live-only cohort accounts missing from the older export must still appear in output"
+    ],
+    "failure_target": "without_skill should fail for action-level reasons such as missing later cohort pages, skipping subresources, or trusting older exports over current service data."
+  },
+  "experiment_protocol": {
+    "environment": "E2B",
+    "isolation_rule": "Every cloud trial must use a new isolated runtime copy.",
+    "oracle_rule": "Do not finalize README until oracle and comparison trials are available.",
+    "comparison_rule": "with_skill and without_skill differ only by environment/skills presence and corresponding copy behavior."
+  }
+}

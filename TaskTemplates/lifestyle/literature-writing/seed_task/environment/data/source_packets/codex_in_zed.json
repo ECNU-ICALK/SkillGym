@@ -1,0 +1,34 @@
+{
+  "doc_id": "codex_in_zed",
+  "title": "Codex is Live in Zed",
+  "url": "https://zed.dev/blog/codex-is-live-in-zed",
+  "document_type": "blog_post",
+  "snapshot_note": "Structured fact packet distilled from Zed's public Codex launch post dated 2025-10-16.",
+  "facts": [
+    {
+      "fact_id": "codex_in_zed.codex_via_acp",
+      "statement": "Zed says Codex is supported out of the box through ACP.",
+      "tags": ["codex", "protocol"]
+    },
+    {
+      "fact_id": "codex_in_zed.new_thread_menu",
+      "statement": "The post says users can select Codex from the New Thread menu, alongside Claude Agent or Gemini CLI.",
+      "tags": ["codex", "ui"]
+    },
+    {
+      "fact_id": "codex_in_zed.billing_direct",
+      "statement": "The post says billing and legal terms for Codex are directly between the user and OpenAI.",
+      "tags": ["codex", "billing"]
+    },
+    {
+      "fact_id": "codex_in_zed.terminal_process",
+      "statement": "The post says the Codex agent runs terminal commands in its own process and streams terminal output bytes to the client.",
+      "tags": ["codex", "implementation"]
+    },
+    {
+      "fact_id": "codex_in_zed.non_pty_tradeoff",
+      "statement": "The post says non-PTY terminal mode can reduce interactive polish while avoiding some deadlocks that appear when interactive commands wait for human input.",
+      "tags": ["codex", "implementation"]
+    }
+  ]
+}

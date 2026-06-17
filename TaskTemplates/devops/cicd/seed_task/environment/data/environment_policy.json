@@ -1,0 +1,14 @@
+{
+  "staging": {
+    "environment_name": "staging",
+    "review_required": false,
+    "serialized": true,
+    "deployment_window": "business-hours"
+  },
+  "production": {
+    "environment_name": "production",
+    "review_required": true,
+    "serialized": true,
+    "deployment_window": "release-window"
+  }
+}

@@ -1,0 +1,8 @@
+carrier_status,normalized_meaning,is_terminal,is_conflict_when_admin_pending
+label_created,label_created,false,false
+in_transit,in_transit,false,false
+out_for_delivery,in_transit,false,false
+delivered,delivered,true,true
+exception,exception,false,true
+cancelled,cancelled,true,true
+unknown,unknown,false,false

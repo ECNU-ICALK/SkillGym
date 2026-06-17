@@ -1,0 +1,73 @@
+{
+  "task_id": "nosql-databases__redis-bike-share-rebalancing-plan",
+  "category": "nosql-databases",
+  "difficulty": "hard",
+  "design_status": "implementation_in_progress",
+  "selected_skill": "redis-expert",
+  "selected_skill_stars": "17184",
+  "selection_rationale": [
+    "High-star NoSQL skill with direct overlap on Redis data structures, sorted rankings, hash-backed object state, and safe rerun behavior.",
+    "No dependency on external private accounts, external cloud permissions, or sensitive personal workflows.",
+    "Fits a single-container task where Redis remains part of the required workflow and verifier can inspect both outputs and keyspace state."
+  ],
+  "rejected_high_star_skills": [
+    {
+      "skill": "azure-resource-manager-redis-dotnet",
+      "reason": "Depends on external cloud provisioning and account-bound permissions."
+    },
+    {
+      "skill": "vector-index-tuning",
+      "reason": "Leans toward benchmark and tuning workflows instead of a self-contained Redis application task."
+    }
+  ],
+  "task_shape": {
+    "runtime": "single-container Python CLI with local Redis server",
+    "domain": "bike-share station rebalancing prep",
+    "solver_action": "complete the starter planning job and keep Redis as the working state"
+  },
+  "planned_verifier_focus": [
+    "plan row correctness from current inputs",
+    "region-level ranking and action limits",
+    "summary consistency",
+    "Redis keyspace contents and expiries",
+    "rerun safety with the same inputs",
+    "anti-hardcoding coverage via changed input copies"
+  ],
+  "real_data_sources": [
+    {
+      "planned_file": "environment/workspace/data/station_information.json",
+      "reference_type": "station metadata and capacity fields",
+      "reference": "Citi Bike GBFS station information",
+      "link": "https://gbfs.citibikenyc.com/gbfs/en/station_information.json"
+    },
+    {
+      "planned_file": "environment/workspace/data/station_status.json",
+      "reference_type": "station availability and operating status fields",
+      "reference": "Citi Bike GBFS station status",
+      "link": "https://gbfs.citibikenyc.com/gbfs/en/station_status.json"
+    },
+    {
+      "planned_file": "environment/workspace/data/system_regions.json",
+      "reference_type": "region identifiers and names",
+      "reference": "Citi Bike GBFS system regions",
+      "link": "https://gbfs.citibikenyc.com/gbfs/en/system_regions.json"
+    },
+    {
+      "planned_file": "environment/workspace/data/system_information.json",
+      "reference_type": "network-level metadata",
+      "reference": "Citi Bike GBFS system information",
+      "link": "https://gbfs.citibikenyc.com/gbfs/en/system_information.json"
+    }
+  ],
+  "with_without_difference_policy": "Only environment/skills and the corresponding runtime skill-copy logic may differ between with_skill and without_skill variants.",
+  "local_validation": {
+    "buggy_workspace_expected_result": "fails on plan semantics, Redis state contract, and rerun safety",
+    "oracle_result": "pending",
+    "local_test_command": "tests/test.sh inside the task container"
+  },
+  "iteration_notes": [
+    "Do not modify the selected skill content.",
+    "README metrics must come from completed E2B experiments.",
+    "Timeout will be confirmed after with_skill experiment timings are collected."
+  ]
+}

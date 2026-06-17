@@ -1,0 +1,90 @@
+{
+  "task_id": "security__tenant-vulnerability-advisory-api",
+  "category": "security",
+  "design_status": "validated",
+  "selected_skill": "security-review",
+  "selected_skill_stars": "172.2k",
+  "selection_rationale": [
+    "High-star security skill with direct overlap on authentication, authorization, input validation, secret handling, and sensitive API design.",
+    "No dependence on private accounts, external cloud permissions, or manual sign-in flows.",
+    "Fits a single-container service task with deterministic local snapshots and auditable export artifacts."
+  ],
+  "rejected_high_star_skills": [
+    {
+      "skill": "1password",
+      "stars": "367.6k",
+      "reason": "Depends on external account state, CLI sign-in, and secret management flows that create privacy and permission risk."
+    },
+    {
+      "skill": "setup-browser-cookies",
+      "stars": "88.2k",
+      "reason": "Relies on browser cookie state and account-bound credential import, which adds privacy and session risk."
+    },
+    {
+      "skill": "aws-penetration-testing",
+      "stars": "36.1k",
+      "reason": "Introduces high-sensitivity dual-use cloud exploitation behavior that is outside this template's scope."
+    },
+    {
+      "skill": "anti-reversing-techniques",
+      "stars": "36.1k",
+      "reason": "High-risk dual-use content that does not fit the safe API delivery workflow required here."
+    }
+  ],
+  "task_shape": {
+    "service_type": "partner-facing vulnerability intelligence API",
+    "domain": "multi-tenant advisory search and export",
+    "runtime": "single-container Node.js service with local data files",
+    "solver_action": "complete and harden the existing service implementation"
+  },
+  "planned_verifier_focus": [
+    "API key authentication and tenant scoping",
+    "Stable pagination, filtering, and detail lookup behavior",
+    "Bulk lookup validation and request-size limits",
+    "Export-job authorization and CSV artifact creation",
+    "Quota and rate-limit response headers",
+    "Read-only input snapshots versus runtime state/output separation",
+    "Anti-cheat checks against hardcoded fixture-only behavior"
+  ],
+  "real_data_sources": [
+    {
+      "planned_file": "environment/workspace/data/nvd_cves.ndjson",
+      "reference_type": "CVE advisory records",
+      "reference": "NVD CVE API 2.0",
+      "link": "https://nvd.nist.gov/developers/vulnerabilities"
+    },
+    {
+      "planned_file": "environment/workspace/data/kev_catalog.json",
+      "reference_type": "known-exploited advisory catalog",
+      "reference": "CISA Known Exploited Vulnerabilities catalog",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "planned_file": "environment/workspace/data/epss_scores.csv",
+      "reference_type": "exploitability score feed",
+      "reference": "FIRST EPSS data",
+      "link": "https://www.first.org/epss/data_stats"
+    }
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime skill-copy logic may differ between with_skill and without_skill variants.",
+  "local_validation": {
+    "buggy_workspace_expected_result": "fails substantive verifier checks for tenant scoping, export authorization, and bulk lookup validation",
+    "oracle_result": "The containerized runtime and verifier are authoritative once the task is built and exercised end to end.",
+    "local_test_command": "tests/test.sh inside the task container or via the Harbor E2B run"
+  },
+  "e2b_experiment_summary": {
+    "effective_comparisons": 3,
+    "with_skill_reward_mean": 1.0,
+    "without_skill_reward_mean": 0.0,
+    "with_skill_common_result": "9/9 verifier tests passed",
+    "without_skill_common_result": "8/9 verifier tests passed",
+    "without_skill_common_failure": "test_export_jobs_create_csv_and_enforce_limits"
+  },
+  "iteration_notes": [
+    "Do not modify any existing skill.",
+    "Final README experiment metrics must come from completed E2B runs only.",
+    "Keep analyst-only export behavior explicit in the delivery contract, even when tenant metadata still contains export-related scope or entitlement fields.",
+    "Keep the data directory framed as read-only input snapshots and direct mutable job records to the existing runtime state/output paths.",
+    "Pre-final tuning should keep action-level failures in the without_skill run while preserving a clean with_skill pass."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "task_id": "academic__reasoning-method-review-packet",
+  "category": "academic",
+  "selected_skill": {
+    "name": "academic-researcher",
+    "source": "https://skillsmp.com/skills/shubhamsaboo-awesome-llm-apps-awesome-agent-skills-academic-researcher-skill-md"
+  },
+  "with_without_policy": "with_skill and without_skill may differ only by environment/skills presence and the runtime copy logic used by the experiment harness.",
+  "data_sources": [
+    "/root/environment/data/metadata/arxiv_id_feed.xml",
+    "/root/environment/data/metadata/candidate_manifest.tsv",
+    "/root/environment/data/text/",
+    "/root/environment/data/scope/review_scope.md"
+  ],
+  "outputs": [
+    "/root/answer/screening_decisions.tsv",
+    "/root/answer/included_papers.tsv",
+    "/root/answer/evidence_table.tsv",
+    "/root/answer/theme_map.json",
+    "/root/answer/literature_review.md",
+    "/root/answer/review_summary.json",
+    "/root/answer/references.bib"
+  ],
+  "verification_focus": [
+    "candidate coverage",
+    "scope classification",
+    "evidence alignment",
+    "cross-file consistency",
+    "bibliography alignment",
+    "theme synthesis granularity",
+    "legacy worksheet correction"
+  ],
+  "notes": [
+    "The bundle uses public arXiv metadata and local abstract snapshots.",
+    "The skill payload is mirrored under environment/skills without changing its body.",
+    "The formal with-skill and without-skill comparison may differ only by environment/skills presence and the runtime copy logic that removes skill loading from the without-skill copy."
+  ]
+}

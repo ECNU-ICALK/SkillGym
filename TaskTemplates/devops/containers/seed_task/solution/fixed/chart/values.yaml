@@ -1,0 +1,65 @@
+nameOverride: ""
+fullnameOverride: ""
+
+namespace: default
+environment: dev
+
+replicaCount: 2
+
+image:
+  repository: ghcr.io/stefanprodan/podinfo
+  tag: "6.11.2"
+  pullPolicy: IfNotPresent
+
+serviceAccount:
+  create: true
+  annotations: {}
+
+service:
+  type: ClusterIP
+  port: 80
+  metricsPort: 9797
+
+container:
+  port: 9898
+
+config:
+  LOG_FORMAT: json
+  CACHE_STRATEGY: memory
+  FEATURE_BANNER: enabled
+  LOG_LEVEL: info
+
+secretEnv:
+  - name: API_TOKEN
+    secretName: podpulse-runtime
+    key: apiToken
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 250m
+    memory: 256Mi
+
+podLabels: {}
+podAnnotations: {}
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  host: ""
+  path: /
+  pathType: Prefix
+
+autoscaling:
+  enabled: false
+  minReplicas: 2
+  maxReplicas: 4
+  targetCPUUtilizationPercentage: 75
+  targetMemoryUtilizationPercentage: 80
+
+pdb:
+  enabled: true
+  minAvailable: 1

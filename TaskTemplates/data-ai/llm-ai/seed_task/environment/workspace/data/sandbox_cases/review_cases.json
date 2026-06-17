@@ -1,0 +1,87 @@
+{
+  "bank_001": {
+    "ticket_id": "bank_001",
+    "disposition": "send_knowledge_reply",
+    "review_note": "Advise the customer that duplicate cash withdrawal disputes can be opened after the duplicate has posted.",
+    "evidence": [
+      {
+        "source_id": "kb:cash-duplicate-claim",
+        "snippet": "Cash withdrawal disputes should be opened when the transaction posts twice."
+      }
+    ],
+    "escalation_reason": null
+  },
+  "bank_002": {
+    "ticket_id": "bank_002",
+    "disposition": "send_knowledge_reply",
+    "review_note": "Explain that reversed card authorizations usually drop off automatically if the merchant did not capture them.",
+    "evidence": [
+      {
+        "source_id": "kb:card-reverted-payment",
+        "snippet": "Reverted card payments are usually released automatically if the merchant did not capture the authorization."
+      }
+    ],
+    "escalation_reason": null
+  },
+  "bank_003": {
+    "ticket_id": "bank_003",
+    "disposition": "manual_review",
+    "review_note": "Collect recipient details and route the case to transfers risk for manual verification.",
+    "evidence": [
+      {
+        "source_id": "kb:transfer-risk-review",
+        "snippet": "Payments blocked by beneficiary rules require a manual risk review before release."
+      }
+    ],
+    "escalation_reason": "manual_risk_review_required"
+  },
+  "bank_004": {
+    "ticket_id": "bank_004",
+    "disposition": "send_knowledge_reply",
+    "review_note": "Provide the account profile update steps and confirm the supported verification path.",
+    "evidence": [],
+    "escalation_reason": null
+  },
+  "bank_005": {
+    "ticket_id": "bank_005",
+    "disposition": "manual_review",
+    "review_note": "Wait for the downstream service to recover before continuing automated handling.",
+    "evidence": [],
+    "escalation_reason": "provider_temporarily_unavailable"
+  },
+  "bank_006": {
+    "ticket_id": "bank_006",
+    "disposition": "send_knowledge_reply",
+    "review_note": "Provide the beneficiary maintenance checklist and confirm the supported identity verification path.",
+    "evidence": [],
+    "escalation_reason": null
+  },
+  "bank_007": {
+    "ticket_id": "bank_007",
+    "disposition": "send_knowledge_reply",
+    "review_note": "Provide the beneficiary maintenance checklist and confirm the supported identity verification path.",
+    "evidence": [],
+    "escalation_reason": null
+  },
+  "bank_008": {
+    "ticket_id": "bank_008",
+    "disposition": "manual_review",
+    "review_note": "Keep this case in manual handling until the downstream provider can return a trustworthy update workflow.",
+    "evidence": [],
+    "escalation_reason": "provider_temporarily_unavailable"
+  },
+  "clinc_001": {
+    "ticket_id": "clinc_001",
+    "disposition": "manual_review",
+    "review_note": "This request is outside the supported banking flows and should be handled by a human triage agent.",
+    "evidence": [],
+    "escalation_reason": "out_of_scope_request"
+  },
+  "clinc_002": {
+    "ticket_id": "clinc_002",
+    "disposition": "manual_review",
+    "review_note": "This request is outside the supported banking flows and should be handled by a human triage agent.",
+    "evidence": [],
+    "escalation_reason": "out_of_scope_request"
+  }
+}

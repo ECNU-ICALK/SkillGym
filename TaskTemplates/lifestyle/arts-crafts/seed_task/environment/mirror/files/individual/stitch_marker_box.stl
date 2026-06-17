@@ -1,0 +1,10 @@
+solid stitch_marker_box.stl
+  facet normal 0 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 10 0 0
+      vertex 0 10 0
+    endloop
+  endfacet
+  // model:197262 file:197262-1
+endsolid stitch_marker_box.stl

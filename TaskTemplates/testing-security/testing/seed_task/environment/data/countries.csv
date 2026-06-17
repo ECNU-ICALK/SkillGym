@@ -1,0 +1,10 @@
+id,code,name,continent,wikipedia_link,keywords
+302618,AE,United Arab Emirates,AS,https://en.wikipedia.org/wiki/United_Arab_Emirates,"UAE,مطارات في الإمارات العربية المتحدة"
+302764,AU,Australia,OC,https://en.wikipedia.org/wiki/Australia,Australian airports
+302730,CA,Canada,NA,https://en.wikipedia.org/wiki/Canada,Canadian airports
+302681,DE,Germany,EU,https://en.wikipedia.org/wiki/Germany,Flughäfen in Deutschland
+302687,FR,France,EU,https://en.wikipedia.org/wiki/France,Aéroports de France
+302688,GB,United Kingdom,EU,https://en.wikipedia.org/wiki/United_Kingdom,Great Britain
+302639,JP,Japan,AS,https://en.wikipedia.org/wiki/Japan,"Nippon, 日本の空港"
+302708,NL,Netherlands,EU,https://en.wikipedia.org/wiki/Netherlands,"Holland, Luchthavens van Nederland, Dutch airports"
+302755,US,United States,NA,https://en.wikipedia.org/wiki/United_States,American airports

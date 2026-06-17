@@ -1,0 +1,195 @@
+{
+  "analysis_window": {
+    "start_date": "2023-01-02",
+    "end_date": "2023-02-07",
+    "weekday_indexes": [0, 1, 2, 3, 4],
+    "service_date_scope": "observed_sample_dates_only"
+  },
+  "input_tables": {
+    "trip_tables": [
+      "dispatch_batch_a",
+      "dispatch_batch_b",
+      "dispatch_batch_c",
+      "dispatch_batch_d"
+    ],
+    "zone_lookup_table": "zone_lookup"
+  },
+  "staging_expectations": {
+    "semantic_fields": [
+      "pickup_timestamp",
+      "dropoff_timestamp",
+      "pickup_location_id",
+      "dropoff_location_id",
+      "trip_distance_miles",
+      "fare_amount_usd",
+      "total_amount_usd",
+      "airport_fee_usd"
+    ],
+    "note": "Each staging batch contains the same business facts but does not use the same column names."
+  },
+  "candidate_market": {
+    "boroughs": ["Manhattan"],
+    "service_zones": ["Yellow Zone"],
+    "exclude_zone_names": ["Outside of NYC", "Unknown"]
+  },
+  "airport_mapping": [
+    {
+      "airport_code": "EWR",
+      "zone_id": 1,
+      "station_id": "USW00014734",
+      "station_name": "NEWARK LIBERTY INTERNATIONAL AIRPORT, NJ US"
+    },
+    {
+      "airport_code": "JFK",
+      "zone_id": 132,
+      "station_id": "USW00094789",
+      "station_name": "JFK INTERNATIONAL AIRPORT, NY US"
+    },
+    {
+      "airport_code": "LGA",
+      "zone_id": 138,
+      "station_id": "USW00014732",
+      "station_name": "LAGUARDIA AIRPORT, NY US"
+    }
+  ],
+  "hour_window_interpretation": {
+    "timestamp_field": "pickup_timestamp",
+    "hour_extraction": "pickup_timestamp.dt.hour",
+    "endpoint_rule": "inclusive_both_endpoints",
+    "period_examples": {
+      "morning_departures": "06:00:00 through 10:59:59",
+      "evening_arrivals": "17:00:00 through 22:59:59"
+    }
+  },
+  "periods": {
+    "morning_departures": {
+      "direction": "to_airport",
+      "pickup_hour_start": 6,
+      "pickup_hour_end": 10,
+      "airports": ["EWR", "JFK", "LGA"],
+      "top_k": 2,
+      "recommendation_type": "departure_feeder_coverage",
+      "recommended_action": "schedule morning departure feeder coverage"
+    },
+    "evening_arrivals": {
+      "direction": "from_airport",
+      "pickup_hour_start": 17,
+      "pickup_hour_end": 22,
+      "airports": ["JFK", "LGA"],
+      "top_k": 3,
+      "recommendation_type": "arrival_return_coverage",
+      "recommended_action": "schedule evening arrival return coverage"
+    }
+  },
+  "valid_trip_rules": {
+    "min_trip_distance_miles": 0.2,
+    "min_fare_amount_usd": 3.0,
+    "min_total_amount_usd": 5.0,
+    "min_trip_duration_min": 1.0,
+    "max_trip_duration_min": 180.0,
+    "max_implied_mph": 80.0,
+    "exclude_same_zone_short_hops": true,
+    "same_zone_short_hop_miles": 0.3
+  },
+  "ranking_eligibility": {
+    "min_service_dates": 4
+  },
+  "service_date_panel": {
+    "partner_zone_day_definition": "for each period and partner_zone_id include every service_date where filtered trips exist for that zone in that period, even if a given airport_code has zero airport-linked trips on that day",
+    "airport_zero_fill_rule": "when deriving airport-specific daily metrics, set airport_trip_count to 0 for panel dates without an airport-linked trip for that airport_code",
+    "applies_to": [
+      "total_partner_zone_trips",
+      "avg_airport_trip_share",
+      "airport_weather_sensitivity"
+    ]
+  },
+  "weather_buckets": {
+    "reference_bucket": "dry",
+    "snow_if_snow_gt_cm": 0.0,
+    "heavy_rain_if_prcp_ge_mm": 5.0,
+    "light_precip_if_prcp_gt_mm": 0.0
+  },
+  "weather_resilience": {
+    "wet_buckets": ["light_precip", "heavy_rain", "snow"],
+    "cap": 2.0,
+    "fallback_if_reference_zero": 2.0
+  },
+  "opportunity_score": {
+    "count_weight": 0.5,
+    "share_weight": 0.25,
+    "resilience_weight": 0.25,
+    "normalize_resilience_by": 2.0
+  },
+  "ranking_score": {
+    "count_component_source": "total_airport_trips",
+    "count_component_normalization": "within each period and airport_code divide total_airport_trips by the group maximum",
+    "share_component_source": "avg_airport_trip_share",
+    "share_component_normalization": "within each period and airport_code divide avg_airport_trip_share by the group maximum",
+    "resilience_component_source": "weather_resilience_score",
+    "resilience_component_normalization": "divide by opportunity_score.normalize_resilience_by and cap at 1.0",
+    "formula": "opportunity_score = count_weight * count_component + share_weight * share_component + resilience_weight * resilience_component",
+    "tie_break_order": [
+      "opportunity_score_desc",
+      "avg_airport_trip_share_desc",
+      "total_airport_trips_desc",
+      "partner_zone_name_asc"
+    ]
+  },
+  "reason_code_rules": {
+    "stable_high_share_min_resilience": 1.0,
+    "stable_high_share_min_avg_share": 0.08,
+    "stable_high_share_code": "stable_high_share",
+    "core_volume_min_count_component": 0.85,
+    "core_volume_code": "core_volume",
+    "share_pick_code": "share_pick"
+  },
+  "weather_effect_test": {
+    "method": "mannwhitneyu",
+    "alternative": "two-sided"
+  },
+  "weather_effect_output": {
+    "effect_direction_values": [
+      "reference",
+      "higher",
+      "lower",
+      "no_change"
+    ],
+    "effect_direction_rule": "compare the bucket mean airport_trip_count with the dry mean for the same period and airport_code"
+  },
+  "summary_top_n": 2,
+  "quality_check_contract": {
+    "recommended_dataset_values": [
+      "trip_staging_db",
+      "airport_daily_weather",
+      "period_summary",
+      "rankings"
+    ],
+    "recommended_metric_names": [
+      "unified_trip_rows",
+      "window_valid_trip_rows",
+      "candidate_partner_zone_count",
+      "weather_join_match_rate",
+      "period_summary_rows",
+      "ranked_recommendations"
+    ]
+  },
+  "output_contract": {
+    "analysis_brief_required_sections": [
+      "Scope",
+      "Morning departures",
+      "Evening arrivals",
+      "Weather notes",
+      "Method notes"
+    ],
+    "source_inventory_expected_sources": [
+      "trip_staging_db",
+      "airport_daily_weather",
+      "analysis_contract",
+      "reference_docs"
+    ],
+    "period_summary_row_scope": "one_row_per_period_airport_partner_zone_with_observed_airport_linked_trips",
+    "active_service_days_definition": "count_service_dates_with_at_least_one_airport_linked_trip_for_the_period_airport_zone_pair",
+    "airport_trip_share_definition": "for_each_period_partner_zone_service_date_compute_airport_trip_count_divided_by_partner_trip_count_then_average_across_observed_service_dates_for_that_zone",
+    "query_pack_comment_prefix": "-- Query "
+  }
+}

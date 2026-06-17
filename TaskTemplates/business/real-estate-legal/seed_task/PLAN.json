@@ -1,0 +1,118 @@
+{
+  "task_id": "real-estate-legal__caixa-auction-edital-audit",
+  "category": "real-estate-legal",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/root/output/notice_extract.json",
+  "selected_skill": {
+    "dir": "leiloeiro-edital",
+    "skillsmp_name": "leiloeiro-edital",
+    "stars_observed": "35.5k",
+    "purpose": "Review a foreclosure-auction notice, reconcile current service facts against stale exports, compute buyer cash out, and produce a committee-ready bid memo.",
+    "selection_rationale": "This skill is one of the highest-star public-safe options on the real-estate-legal page and aligns closely with notice review, payment-term checking, risk mapping, and bid-governance packaging without depending on private accounts or elevated permissions."
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "data_sources": [
+      {
+        "file": "environment/data/source_notice_batch.pdf",
+        "reference": "CAIXA auction notice PDF",
+        "url": "https://venda-imoveis.caixa.gov.br/editais/EL00200226CPARE.PDF"
+      },
+      {
+        "file": "environment/data/source_notice_excerpt.pdf",
+        "reference": "Excerpted pages from the same CAIXA auction notice",
+        "url": "https://venda-imoveis.caixa.gov.br/editais/EL00200226CPARE.PDF"
+      },
+      {
+        "file": "environment/data/source_itbi_sp.html",
+        "reference": "Sao Paulo municipal ITBI guidance page",
+        "url": "https://prefeitura.sp.gov.br/cidade/secretarias/fazenda/servicos/itbi/index.php?p=2513"
+      },
+      {
+        "file": "environment/data/source_fiduciary_law.html",
+        "reference": "Lei 9.514/1997 Art. 27 reference page",
+        "url": "https://www.planalto.gov.br/ccivil_03/Leis/l9514.htm"
+      },
+      {
+        "file": "environment/data/source_cpc.html",
+        "reference": "Lei 13.105/2015 auction-procedure reference page",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/L13105.htm"
+      }
+    ],
+    "determinism": "Public-source snapshots and modeled current-state records are stored inside the container and exposed through a local authority service for repeatable verification.",
+    "anti_toy_features": [
+      "current service facts override stale internal exports",
+      "cursor-paginated risk endpoint that must be fully drained",
+      "buyer-side cash model with fee, tax, registry, debt, and regularization reserves",
+      "decision memo that must stay consistent with structured outputs",
+      "service-access logging and file-integrity guardrails"
+    ]
+  },
+  "instruction_design": {
+    "delivery_contract_retained": [
+      "four mandatory output files",
+      "strict JSON and CSV schemas",
+      "memo headings and recommendation vocabulary",
+      "business constraints on current authority usage and file immutability"
+    ],
+    "skill_detail_handling": "Instruction text keeps the authority-service requirement and stale-export caveat, but leaves endpoint discovery, pagination handling, and recommendation derivation as solver work so the skill still carries workflow value."
+  },
+  "verifier_design": {
+    "main_tests": [
+      "output existence, parseability, schema, and numeric typing",
+      "notice extraction fields must match the current authority asset record",
+      "risk register must match the full live paginated risk set",
+      "cash requirement math must match the current cost model",
+      "memo recommendation and narrative must align with the structured outputs"
+    ],
+    "guardrails": [
+      "solver must query the local authority chain before verifier",
+      "solver must follow cursor pagination on the risk endpoint",
+      "input data, hidden service files, and seed data must remain unchanged",
+      "live authority service must remain healthy",
+      "outputs must reflect live-only payment and tax-basis updates instead of stale exports"
+    ]
+  },
+  "expected_skill_effect": {
+    "without_skill": "The task remains solvable from the local service and source files, but agents must reconstruct the notice-review workflow, discover the service shape, drain pagination, and derive the committee packet without the helper script.",
+    "with_skill": "The skill provides the working sequence and a helper that drains the local service, preserves output consistency, and reduces missed live-only updates while leaving instructions, tests, data, dependencies, and the skill body unchanged."
+  },
+  "final_e2b_results": {
+    "oracle_job": "real-estate-legal-oracle-e2b-20260502c",
+    "oracle_reward": 1.0,
+    "comparison_window_trials": 5,
+    "with_skill_jobs": [
+      "real-estate-legal-with-skill-r1-20260502c",
+      "real-estate-legal-with-skill-r2-20260502d",
+      "real-estate-legal-with-skill-r3-20260502e",
+      "real-estate-legal-with-skill-r4-20260502f",
+      "real-estate-legal-with-skill-r5-20260502g"
+    ],
+    "with_skill_trials": 5,
+    "with_skill_passed": 3,
+    "with_skill_pass_rate": 0.6,
+    "with_skill_avg_agent_seconds": 389.3,
+    "with_skill_avg_tokens": 1695775,
+    "without_skill_jobs": [
+      "real-estate-legal-without-skill-r1-20260502c",
+      "real-estate-legal-without-skill-r2-20260502d",
+      "real-estate-legal-without-skill-r3-20260502e",
+      "real-estate-legal-without-skill-r4-20260502f",
+      "real-estate-legal-without-skill-r5-20260502g"
+    ],
+    "without_skill_trials": 5,
+    "without_skill_passed": 0,
+    "without_skill_pass_rate": 0.0,
+    "without_skill_avg_agent_seconds": 437.7,
+    "without_skill_avg_tokens": 1885043,
+    "representative_with_skill_trial_uri": "file:///home/lenovo/.tmp_harbor_jobs_real_estate_legal/real-estate-legal-with-skill-r1-20260502c/task_with_skills_e2b__oo4S9dJ",
+    "representative_without_skill_trial_uri": "file:///home/lenovo/.tmp_harbor_jobs_real_estate_legal/real-estate-legal-without-skill-r1-20260502c/task_without_skills_e2b__RksJXo6",
+    "representative_with_skill_trace": "/home/lenovo/.tmp_harbor_jobs_real_estate_legal/trajectory_compare_real_estate_legal/with_skill_success__task_with_skills_e2b__oo4S9dJ__trajectory.json",
+    "representative_without_skill_trace": "/home/lenovo/.tmp_harbor_jobs_real_estate_legal/trajectory_compare_real_estate_legal/without_skill_failure__task_without_skills_e2b__RksJXo6__trajectory.json",
+    "failure_mode_notes": [
+      "without-skill trials commonly skipped /api/manifest and then propagated stale or incomplete authority facts into notice, risk, and cash outputs",
+      "with-skill trials improved pass rate and average efficiency, but two later stress runs still missed the manifest-first workflow and were kept in the aggregate for transparency"
+    ]
+  }
+}

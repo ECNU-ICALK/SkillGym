@@ -1,0 +1,187 @@
+{
+  "output_file": "promises-and-async-await.mdx",
+  "audit_report_file": "resource_audit_report.md",
+  "manifest_file": "resource_manifest.json",
+  "concept_slug": "promises-and-async-await",
+  "page_title": "Promises and Async/Await",
+  "resource_sections": [
+    "reference",
+    "articles",
+    "videos",
+    "books"
+  ],
+  "section_headings": {
+    "reference": "## Reference",
+    "articles": "## Articles",
+    "videos": "## Videos",
+    "books": "## Books"
+  },
+  "icons": {
+    "reference": "book",
+    "article": "newspaper",
+    "video": "video",
+    "book": "book"
+  },
+  "section_requirements": {
+    "reference": {
+      "exact_count": 2,
+      "resource_types": [
+        "reference"
+      ],
+      "required_tags": [
+        "official"
+      ]
+    },
+    "articles": {
+      "exact_count": 4,
+      "resource_types": [
+        "article"
+      ],
+      "required_slots": [
+        {
+          "slot_id": "promises-beginner",
+          "all_topic_tags": [
+            "promises"
+          ],
+          "any_format_tags": [
+            "beginner"
+          ]
+        },
+        {
+          "slot_id": "async-await-core",
+          "all_topic_tags": [
+            "async-await"
+          ],
+          "any_format_tags": [
+            "beginner",
+            "intermediate"
+          ]
+        },
+        {
+          "slot_id": "visual-explainer",
+          "all_topic_tags": [],
+          "any_format_tags": [
+            "visual"
+          ]
+        },
+        {
+          "slot_id": "deep-dive",
+          "all_topic_tags": [],
+          "any_format_tags": [
+            "advanced"
+          ]
+        }
+      ]
+    },
+    "videos": {
+      "exact_count": 3,
+      "resource_types": [
+        "video"
+      ],
+      "required_slots": [
+        {
+          "slot_id": "conceptual-talk",
+          "all_topic_tags": [],
+          "any_format_tags": [
+            "conceptual"
+          ]
+        },
+        {
+          "slot_id": "hands-on-video",
+          "all_topic_tags": [
+            "promises"
+          ],
+          "any_format_tags": [
+            "hands-on",
+            "beginner"
+          ]
+        },
+        {
+          "slot_id": "quick-refresh",
+          "all_topic_tags": [
+            "async-await"
+          ],
+          "any_format_tags": [
+            "quick",
+            "visual"
+          ]
+        }
+      ]
+    },
+    "books": {
+      "exact_count": 1,
+      "resource_types": [
+        "book"
+      ],
+      "required_slots": [
+        {
+          "slot_id": "long-form",
+          "all_topic_tags": [],
+          "any_format_tags": [
+            "advanced",
+            "deep-dive"
+          ]
+        }
+      ]
+    }
+  },
+  "selection_rules": {
+    "required_language": "javascript",
+    "allowed_access": [
+      "free",
+      "preview"
+    ],
+    "reject_audit_flags": [
+      "broken",
+      "outdated",
+      "other_language",
+      "generic_description",
+      "hard_paywall"
+    ],
+    "reject_resource_flags": [
+      "other_language",
+      "generic_description",
+      "hard_paywall"
+    ],
+    "min_publication_year_by_topic": {
+      "promises": 2015,
+      "async-await": 2017
+    }
+  },
+  "draft_resource_ids": [
+    "old_mdn_promises_redirect",
+    "broken_callback_hell_2014",
+    "generic_async_post",
+    "ms_csharp_async",
+    "placeholder_video",
+    "placeholder_book"
+  ],
+  "required_shell_strings": [
+    "# Promises and Async/Await",
+    "Promises let you model work that finishes later without nesting callbacks by hand.",
+    "## Why this page exists",
+    "## Related Concepts",
+    "- `Promise.all`",
+    "- microtasks",
+    "- the event loop"
+  ],
+  "cleanup_tokens": [
+    "placeholder",
+    "todo",
+    "tbd",
+    "review residue",
+    "generic cards before publish"
+  ],
+  "forbidden_urls": [
+    "https://example.com/blog/callback-hell-2014",
+    "https://example.com/generic-async",
+    "https://example.com/video-placeholder",
+    "https://example.com/book-placeholder",
+    "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS/Promises"
+  ],
+  "manifest_notes": [
+    "Built from the bundled draft page, candidate resource inventory, link audit snapshot, and source excerpts.",
+    "Selected resources satisfy the contract coverage rules for official references, articles, videos, and one long-form resource.",
+    "Canonical URLs come from the bundled link audit snapshot."
+  ]
+}

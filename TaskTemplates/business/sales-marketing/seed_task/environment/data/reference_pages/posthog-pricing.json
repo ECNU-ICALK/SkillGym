@@ -1,0 +1,8 @@
+{
+  "ref_id": "posthog-pricing",
+  "source_url": "https://posthog.com/pricing",
+  "notes": [
+    "Reference page shape: pricing page with clear page title, plan framing, and crawlable main content.",
+    "Reference pattern: explicit plan labels and usage-based pricing language."
+  ]
+}

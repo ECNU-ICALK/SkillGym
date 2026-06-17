@@ -1,0 +1,31 @@
+{
+  "required_frontmatter_keys": [
+    "title",
+    "description",
+    "nav_title"
+  ],
+  "forbidden_tokens": [
+    "TODO",
+    "TBD",
+    "placeholder",
+    "lorem ipsum"
+  ],
+  "forbidden_phrases": [
+    "powerful",
+    "simply",
+    "easily",
+    "best way"
+  ],
+  "banned_punctuation": [
+    "—"
+  ],
+  "required_callout_heading": "## Good to know",
+  "required_version_history_heading": "## Version History",
+  "required_example_languages": [
+    "ts",
+    "js"
+  ],
+  "require_switcher": true,
+  "require_filename_attribute": true,
+  "language_style": "Use direct, observable language grounded in source and tests."
+}

@@ -1,0 +1,32 @@
+{
+  "page_id": "analytics",
+  "path": "/analytics/",
+  "title": "Analytics for product teams",
+  "meta_description": "Legacy analytics overview page.",
+  "h1": "Analytics overview",
+  "canonical_path": "/analytics/",
+  "indexable": true,
+  "include_in_sitemap": true,
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Analytics"
+    }
+  ],
+  "body_blocks": [
+    {
+      "type": "paragraph",
+      "text": "This older page still attracts internal links even though the launch team wants a dedicated product analytics page."
+    },
+    {
+      "type": "links",
+      "links": [
+        {
+          "href": "/pricing/",
+          "label": "Pricing"
+        }
+      ]
+    }
+  ]
+}

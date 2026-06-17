@@ -1,0 +1,9 @@
+{
+  "batch_id": "AP-2023-03-MONTHEND",
+  "cutoff_date": "2023-03-31",
+  "ap_review_manifest_url": "http://127.0.0.1:8148/api/manifest",
+  "notes": [
+    "settlement_snapshot.csv may lag current payment and review state",
+    "ap review service is the current source for payment_status and manual review flags"
+  ]
+}

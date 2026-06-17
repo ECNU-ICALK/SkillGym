@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "id": "city_reference",
+    "label": "City Reference Connector",
+    "kind": "reference-json",
+    "timezone": "America/Chicago"
+  },
+  "stops": [
+    {
+      "stop_id": "CENTRAL",
+      "stop_name": "Central Station",
+      "location_type": "1",
+      "child_stop_ids": [
+        "CENTRAL-E",
+        "CENTRAL-W"
+      ]
+    },
+    {
+      "stop_id": "MUSEUM",
+      "stop_name": "Museum Park",
+      "location_type": "1",
+      "child_stop_ids": [
+        "MUSEUM-N",
+        "MUSEUM-S"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "C2",
+      "route_short_name": "C2",
+      "route_long_name": "Reference Loop"
+    }
+  ],
+  "departures": [
+    {
+      "trip_id": "city-1",
+      "route_id": "C2",
+      "route_short_name": "C2",
+      "route_long_name": "Reference Loop",
+      "service_id": "Saturday",
+      "direction_id": "1",
+      "stop_id": "CENTRAL-E",
+      "parent_stop_id": "CENTRAL",
+      "departure_time": "09:10:00",
+      "headsign": "Museum Park",
+      "service_date": "2026-03-07"
+    }
+  ],
+  "service_windows": [
+    {
+      "route_id": "C2",
+      "service_date": "2026-03-07",
+      "first_departure": "06:15:00",
+      "last_departure": "22:10:00",
+      "trip_count": 28,
+      "stop_count": 2,
+      "direction_count": 2
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pkgmeta-kit"
+version = "0.3.0"
+description = "Release metadata catalog utility"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+  { name = "Release Engineering" }
+]
+
+[project.scripts]
+pkgmeta-kit = "pkgmeta_kit.cli:main"
+
+[project.entry-points."pkgmeta_kit.inspectors"]
+catalog-summary = "pkgmeta_kit.reporting:catalog_summary"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pkgmeta_kit = ["data/*.json", "data/*.py", "py.typed"]

@@ -1,0 +1,4 @@
+id,ident,type,name,latitude_deg,longitude_deg,elevation_ft,continent,iso_country,iso_region,municipality,scheduled_service,icao_code,iata_code,gps_code,local_code,home_link,wikipedia_link,keywords
+1,KJFK,large_airport,John F Kennedy International Airport,40.639751,-73.778925,13,NA,US,US-NY,New York,yes,,JFK,KJFK,JFK,,,
+2,KLAX,large_airport,Los Angeles International Airport,33.942536,-118.408075,125,NA,US,US-CA,Los Angeles,yes,,LAX,KLAX,LAX,,,
+3,CYYZ,large_airport,Toronto Lester B. Pearson International Airport,43.677223,-79.630556,569,NA,CA,CA-ON,Toronto,yes,,YYZ,CYYZ,YYZ,,,

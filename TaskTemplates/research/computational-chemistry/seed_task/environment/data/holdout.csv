@@ -1,0 +1,122 @@
+row_id,SMILES,source_compound_id,split_note
+holdout_0001,c1(O)cc(O)ccc1CCCCCC,4-hexylresorcinol,current_release
+holdout_0002,CCCC(C)(O)CC,3-Methyl-3-hexanol,current_release
+holdout_0003,CC1CCCCC1NC(=O)Nc2ccccc2,Siduron,current_release
+holdout_0004,CNC(=O)Oc1ccc(N(C)C)c(C)c1,Aminocarb,current_release
+holdout_0005,Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl,"2,3',4,4',5-PCB",current_release
+holdout_0006,CCOC(=O)Nc2cccc(OC(=O)Nc1ccccc1)c2,Desmedipham,current_release
+holdout_0007,Cc1ccc2c(ccc3ccccc32)c1,2-Methylphenanthrene,current_release
+holdout_0008,CC(Cl)CCl,"1,2-Dichloropropane",current_release
+holdout_0009,CC(C)OC(=O)C(O)(c1ccc(Br)cc1)c2ccc(Br)cc2,bromopropylate,current_release
+holdout_0010,CCCO,1-Propanol,current_release
+holdout_0011,CC(C)c1ccc(C)cc1,4-Isopropyltoluene,current_release
+holdout_0012,CCC(=O)CC,3-Pentanone,current_release
+holdout_0013,Cc1cc2ccccc2cc1C,"2,3-Dimethylnaphthalene",current_release
+holdout_0014,CCCCCOC(=O)C,Pentyl acetate,current_release
+holdout_0015,Cc1ccc(Cl)cc1,4-Chlorotoluene,current_release
+holdout_0016,ClCCCCl,"1,3-Dichloropropane",current_release
+holdout_0017,CCC(=O)OC,Methyl propionate,current_release
+holdout_0018,CCCCCC=O,Caproaldehyde,current_release
+holdout_0019,c3ccc2nc1ccccc1cc2c3,Acridine,current_release
+holdout_0020,FC(F)(F)c1ccccc1,Benzyltrifluoride,current_release
+holdout_0021,CSc1nnc(c(=O)n1N)C(C)(C)C,Metribuzin,current_release
+holdout_0022,CC(C)CCOC=O,Isopentyl formate,current_release
+holdout_0023,CCCCCCCCCCCC(=O)OC,methyl laurate,current_release
+holdout_0024,CC1(C)C2CCC1(C)C(O)C2,borneol,current_release
+holdout_0025,CCOP(=S)(OCC)Oc1ccc(cc1)S(C)=O,fensulfothion,current_release
+holdout_0026,Cc2ncc1nccnc1n2,2-methylpteridine,current_release
+holdout_0027,CCCCC(=O)C,2-Hexanone,current_release
+holdout_0028,CCCCCCCC=C,1-Nonene ,current_release
+holdout_0029,CC(C)(C)C(=O)C(Oc1ccc(Cl)cc1)n2cncn2,Triadimefon,current_release
+holdout_0030,COc2ccc(Oc1ccc(NC(=O)N(C)C)cc1)cc2,Difenoxuron,current_release
+holdout_0031,CC12CCC3C(CCc4cc(O)ccc34)C2CCC1=O,Estrone,current_release
+holdout_0032,CCN(CC)C(=S)SSC(=S)N(CC)CC,Disulfiram,current_release
+holdout_0033,CC34CCC1C(CCc2cc(O)ccc12)C3CCC4(O)C#C,Ethinyl estradiol,current_release
+holdout_0034,O=C1NC(=O)NC(=O)C1(C)CC=C,5-Allyl-5-methylbarbital,current_release
+holdout_0035,CC(=O)Nc1ccc(Cl)cc1,p-Chloroacetanilide,current_release
+holdout_0036,CCC(C)C(=O)C,3-Methyl-2-pentanone,current_release
+holdout_0037,CCc1ccccc1C,2-Ethyltoluene,current_release
+holdout_0038,CCC(=C(CC)c1ccc(O)cc1)c2ccc(O)cc2,diethylstilbestrol,current_release
+holdout_0039,CC23Cc1cnoc1C=C2CCC4C3CCC5(C)C4CCC5(O)C#C,Danazol,current_release
+holdout_0040,CC(=O)OCC(=O)C3(O)CCC4C2CCC1=CC(=O)C=CC1(C)C2C(O)CC34C,prednisolone acetate,current_release
+holdout_0041,C1Cc2c3c1cccc3cc4c2ccc5ccccc54,Cholanthrene,current_release
+holdout_0042,Nc1cccc(c1)N(=O)=O,m-Nitroaniline,current_release
+holdout_0043,CCN2c1ncccc1N(C)C(=O)c3cccnc23,Reverse Transcriptase inhibitor 1,current_release
+holdout_0044,Clc1ccccc1Br,o-Chlorobromobenzene,current_release
+holdout_0045,COC(=O)c1cc(O)c(O)c(O)c1,methyl gallate,current_release
+holdout_0046,Nc1nccs1,aminothiazole,current_release
+holdout_0047,CCCCC(=O)OC3(C(C)CC4C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC34C)C(=O)CO,Betamethasone-17-valerate,current_release
+holdout_0048,Nc1cc[nH]c(=O)n1,cytosine,current_release
+holdout_0049,CCCCC=O,Valeraldehyde,current_release
+holdout_0050,CCCCOCCCC,Dibutyl ether ,current_release
+holdout_0051,NS(=O)(=O)c2cc1c(N=CNS1(=O)=O)cc2Cl,chlorothiazide,current_release
+holdout_0052,CCCC1COC(Cn2cncn2)(O1)c3ccc(Cl)cc3Cl,Propiconazole,current_release
+holdout_0053,CC1CC(C)C(=O)C(C1)C(O)CC2CC(=O)NC(=O)C2,cycloheximide,current_release
+holdout_0054,CCC1(C(C)C)C(=O)NC(=O)NC1=O,probarbital,current_release
+holdout_0055,COc1ccc(cc1)C(c2ccc(OC)cc2)C(Cl)(Cl)Cl,Methoxychlor,current_release
+holdout_0056,CCCCCCCCC=C,1-Decene,current_release
+holdout_0057,CCOC(=O)NCCOc2ccc(Oc1ccccc1)cc2,Fenoxycarb,current_release
+holdout_0058,CN2C(=O)CN=C(c1ccccc1)c3cc(Cl)ccc23,Diazepam,current_release
+holdout_0059,O=N(=O)c1ccc(cc1)N(=O)=O,"1,4-Dinitrobenzene",current_release
+holdout_0060,c1c(O)C2C(=O)C3cc(O)ccC3OC2cc1(OC),gentisin,current_release
+holdout_0061,Brc1ccccc1,Bromobenzene,current_release
+holdout_0062,CCCC1CCCC1,Propylcyclopentane,current_release
+holdout_0063,CCCC(=O)OC,Propyl butyrate,current_release
+holdout_0064,CCCCCc1ccccc1,Pentylbenzene,current_release
+holdout_0065,ClC1(C(=O)C2(Cl)C3(Cl)C14Cl)C5(Cl)C2(Cl)C3(Cl)C(Cl)(Cl)C45Cl,Kepone,current_release
+holdout_0066,CCOP(=S)(OCC)SCSCC,Phorate,current_release
+holdout_0067,NC(=O)c1cccnc1,nicotinamide,current_release
+holdout_0068,CNC(=O)C=C(C)OP(=O)(OC)OC,Azodrin,current_release
+holdout_0069,CCCCCCCCCCCCCCCC,Hexadecane,current_release
+holdout_0070,Nc1nc(=O)[nH]cc1F,Flucytosine,current_release
+holdout_0071,CC1OC(CC(O)C1O)OC2C(O)CC(OC2C)OC8C(O)CC(OC7CCC3(C)C(CCC4C3CCC5(C)C(CCC45O)C6=CC(=O)OC6)C7)OC8C,Digitoxin,current_release
+holdout_0072,OCC(O)C2OC1OC(OC1C2O)C(Cl)(Cl)Cl,chloralose,current_release
+holdout_0073,ClC1(C2(Cl)C3(Cl)C4(Cl)C5(Cl)C1(Cl)C3(Cl)Cl)C5(Cl)C(Cl)(Cl)C24Cl,Mirex,current_release
+holdout_0074,OC(c1ccc(Cl)cc1)(c2cncnc2)c3ccccc3Cl,Fenarimol,current_release
+holdout_0075,CC(Cl)(Cl)Cl,"1,1,1-Trichloroethane",current_release
+holdout_0076,COCCCNc1nc(NC(C)C)nc(SC)n1,Methoproptryne,current_release
+holdout_0077,CNC(=O)Oc1cccc(N=CN(C)C)c1,Formetanate,current_release
+holdout_0078,NC(N)=NC#N,2-cyanoguanidine,current_release
+holdout_0079,Oc1ccccc1Cl,2-Chlorophenol,current_release
+holdout_0080,CCOC=C,Ethyl vinyl ether,current_release
+holdout_0081,CNC(=O)C(C)SCCSP(=O)(OC)(OC),vamidothion,current_release
+holdout_0082,CCC(=C)C,2-Methyl-1-Butene,current_release
+holdout_0083,Oc1ccc(Cl)cc1Cl,"2,4-Dichlorophenol ",current_release
+holdout_0084,CC#N,Acetonitrile,current_release
+holdout_0085,CCC1(CC)C(=O)NC(=O)N(C)C1=O,metharbital,current_release
+holdout_0086,CCN2c1cc(N(C)C)cc(C)c1NC(=O)c3cccnc23,RTI 22,current_release
+holdout_0087,Cc3cc2nc1c(=O)[nH]c(=O)nc1n(CC(O)C(O)C(O)CO)c2cc3C,Riboflavin,current_release
+holdout_0088,Clc1ccc2ccccc2c1,2-Chloronapthalene,current_release
+holdout_0089,CNC(=O)Oc1cccc2CC(C)(C)Oc12,Carbofuran,current_release
+holdout_0090,COP(=S)(OC)Oc1ccc(SC)c(C)c1,Fenthion,current_release
+holdout_0091,ClC(Cl)Cl,Trichloromethane,current_release
+holdout_0092,C1CCCCCC1,Cycloheptane,current_release
+holdout_0093,OCc1ccccc1,Phenylmethanol,current_release
+holdout_0094,CC(C)CCC(C)(C)C,"2,2,5-Trimethylhexane",current_release
+holdout_0095,CC(C)C1CCC(C)CC1=O,Menthone,current_release
+holdout_0096,c1ccc2c(c1)ccc3c2ccc4c5ccccc5ccc43,Picene,current_release
+holdout_0097,CCCCCO,1-Pentanol,current_release
+holdout_0098,Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl,Triclosan,current_release
+holdout_0099,c1cc2ccc3cccc4ccc(c1)c2c34,Pyrene,current_release
+holdout_0100,Clc1ccc(c(Cl)c1)c2ccc(Cl)c(Cl)c2Cl,"2,3',4,4'-PCB",current_release
+holdout_0101,CCCOC(=O)CCC,Ethyl pentanoate,current_release
+holdout_0102,CC1CC2C3CCC(O)(C(=O)C)C3(C)CC(O)C2(F)C4(C)C=CC(=O)C=C14,Fluoromethalone,current_release
+holdout_0103,COc5cc4OCC3Oc2c1CC(Oc1ccc2C(=O)C3c4cc5OC)C(C)=C,Rotenone,current_release
+holdout_0104,COP(=S)(OC)SCC(=O)N(C(C)C)c1ccc(Cl)cc1,Anilofos,current_release
+holdout_0105,Cc1ccc(C)cc1,p-Xylene ,current_release
+holdout_0106,O=C1NC(=O)NC(=O)C1(CC)C(C)CC,Butabarbital,current_release
+holdout_0107,COC(=O)c1ccc(O)cc1,Methylparaben,current_release
+holdout_0108,O=C1CCCN1,2-pyrrolidone,current_release
+holdout_0109,CC34CCC1C(CCc2cc(O)ccc12)C3CC(O)C4O,estriol,current_release
+holdout_0110,CCCC,Butane,current_release
+holdout_0111,Clc1cccc(I)c1,m-Chloroiodobenzene,current_release
+holdout_0112,o1c2ccccc2c3ccccc13,Dibenzofurane,current_release
+holdout_0113,CCSCCSP(=S)(OC)OC,Thiometon,current_release
+holdout_0114,CBr,Bromomethane,current_release
+holdout_0115,Oc1cccc(O)c1,"1,3-Benzenediol",current_release
+holdout_0116,Cc1cc(no1)C(=O)NNCc2ccccc2,Isocarboxazid,current_release
+holdout_0117,CCCCCCCC(=O)OCC,Ethyl octanoate,current_release
+holdout_dup_01,CBr,Bromomethane,duplicate_in_file
+holdout_dup_02,CC(C)CCC(C)(C)C,"2,2,5-Trimethylhexane",duplicate_in_file
+holdout_bad_01,C1(CC,bad_01,invalid_smiles
+holdout_bad_02,not_a_smiles,bad_02,invalid_smiles

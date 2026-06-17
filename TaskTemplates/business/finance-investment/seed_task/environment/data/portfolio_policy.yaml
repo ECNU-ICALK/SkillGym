@@ -1,0 +1,14 @@
+# Risk policy thresholds for the ARKK mandate review.
+# All thresholds are decimal values.
+max_drawdown_min: -0.45
+tracking_error_max: 0.18
+downside_beta_max: 1.35
+var_95_min: -0.035
+cvar_95_min: -0.050
+factor_limits:
+  mkt_rf_abs_max: 1.40
+  smb_abs_max: 0.85
+  hml_abs_max: 0.90
+  rmw_abs_max: 0.90
+  cma_abs_max: 0.90
+  mom_abs_max: 0.85

@@ -1,0 +1,69 @@
+{
+  "batch_id": "AP-2023-03-MONTHEND",
+  "page_size": 3,
+  "documents": [
+    {
+      "doc_id": "DOC-100",
+      "source_file": "inbox/cloud/aws/statement-2014-08.pdf",
+      "payment_status": "unpaid",
+      "manual_review_required": false,
+      "review_note": "Current cloud usage invoice remains open."
+    },
+    {
+      "doc_id": "DOC-101",
+      "source_file": "inbox/misc/reimports/aws-statement-duplicate.pdf",
+      "payment_status": "unpaid",
+      "manual_review_required": false,
+      "review_note": "Imported copy still appears in review scope."
+    },
+    {
+      "doc_id": "DOC-102",
+      "source_file": "inbox/facilities/azure/q1-office-renewal.pdf",
+      "payment_status": "unpaid",
+      "manual_review_required": false,
+      "review_note": "Furniture invoice is open."
+    },
+    {
+      "doc_id": "DOC-103",
+      "source_file": "inbox/retail/flipkart/card-accessory-bill.pdf",
+      "payment_status": "paid",
+      "manual_review_required": false,
+      "review_note": "Retail accessory invoice has already been settled."
+    },
+    {
+      "doc_id": "DOC-104",
+      "source_file": "inbox/legal/netpresse-publication-invoice.pdf",
+      "payment_status": "unpaid",
+      "manual_review_required": false,
+      "review_note": "Publication invoice is open."
+    },
+    {
+      "doc_id": "DOC-105",
+      "source_file": "inbox/infra/qualityhosting/mail-hosting-may.pdf",
+      "payment_status": "unpaid",
+      "manual_review_required": false,
+      "review_note": "Hosting invoice is open."
+    },
+    {
+      "doc_id": "DOC-106",
+      "source_file": "inbox/telco/free/fiber-july.pdf",
+      "payment_status": "paid",
+      "manual_review_required": false,
+      "review_note": "Fiber invoice was paid through the provider billing workflow."
+    },
+    {
+      "doc_id": "DOC-107",
+      "source_file": "inbox/office/coolblue/hardware-order.pdf",
+      "payment_status": "unpaid",
+      "manual_review_required": true,
+      "review_note": "Multiple payment lines require AP confirmation before the batch can include this document."
+    },
+    {
+      "doc_id": "DOC-108",
+      "source_file": "inbox/fuel/orlen/mobile-pay.txt",
+      "payment_status": "paid",
+      "manual_review_required": false,
+      "review_note": "Fuel receipt was already paid through ORLEN Pay."
+    }
+  ]
+}

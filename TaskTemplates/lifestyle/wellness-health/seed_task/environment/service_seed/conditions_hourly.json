@@ -1,0 +1,181 @@
+{
+  "source_version": "2026-05-05-austin-3day",
+  "generated_at": "2026-05-05T14:10:00-05:00",
+  "timezone": "America/Chicago",
+  "required_dates": [
+    "2026-05-04",
+    "2026-05-05",
+    "2026-05-06"
+  ],
+  "days": [
+    {
+      "date_local": "2026-05-04",
+      "hours": [
+        {
+          "time_local": "2026-05-04T08:00:00-05:00",
+          "apparent_temperature_c": 17.0,
+          "uv_index": 0.4,
+          "precipitation_probability": 0,
+          "us_aqi": 42,
+          "pm2_5_ug_m3": 3.6,
+          "short_forecast": "Mostly Sunny",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        },
+        {
+          "time_local": "2026-05-04T09:00:00-05:00",
+          "apparent_temperature_c": 18.3,
+          "uv_index": 1.55,
+          "precipitation_probability": 0,
+          "us_aqi": 42,
+          "pm2_5_ug_m3": 5.2,
+          "short_forecast": "Mostly Sunny",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        },
+        {
+          "time_local": "2026-05-04T18:00:00-05:00",
+          "apparent_temperature_c": 28.4,
+          "uv_index": 3.35,
+          "precipitation_probability": 1,
+          "us_aqi": 95,
+          "pm2_5_ug_m3": 6.1,
+          "short_forecast": "Mostly Clear",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        },
+        {
+          "time_local": "2026-05-04T19:00:00-05:00",
+          "apparent_temperature_c": 27.8,
+          "uv_index": 1.6,
+          "precipitation_probability": 1,
+          "us_aqi": 96,
+          "pm2_5_ug_m3": 5.8,
+          "short_forecast": "Mostly Clear",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        }
+      ]
+    },
+    {
+      "date_local": "2026-05-05",
+      "hours": [
+        {
+          "time_local": "2026-05-05T17:00:00-05:00",
+          "apparent_temperature_c": 31.4,
+          "uv_index": 4.7,
+          "precipitation_probability": 48,
+          "us_aqi": 47,
+          "pm2_5_ug_m3": 8.4,
+          "short_forecast": "Chance Showers And Thunderstorms",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        },
+        {
+          "time_local": "2026-05-05T18:00:00-05:00",
+          "apparent_temperature_c": 31.2,
+          "uv_index": 2.8,
+          "precipitation_probability": 52,
+          "us_aqi": 49,
+          "pm2_5_ug_m3": 8.2,
+          "short_forecast": "Chance Showers And Thunderstorms",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        }
+      ]
+    },
+    {
+      "date_local": "2026-05-06",
+      "hours": [
+        {
+          "time_local": "2026-05-06T09:00:00-05:00",
+          "apparent_temperature_c": 27.4,
+          "uv_index": 0.6,
+          "precipitation_probability": 8,
+          "us_aqi": 31,
+          "pm2_5_ug_m3": 6.3,
+          "short_forecast": "Slight Chance Showers And Thunderstorms",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        },
+        {
+          "time_local": "2026-05-06T10:00:00-05:00",
+          "apparent_temperature_c": 27.9,
+          "uv_index": 1.15,
+          "precipitation_probability": 8,
+          "us_aqi": 31,
+          "pm2_5_ug_m3": 6.1,
+          "short_forecast": "Slight Chance Showers And Thunderstorms",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        },
+        {
+          "time_local": "2026-05-06T11:00:00-05:00",
+          "apparent_temperature_c": 28.6,
+          "uv_index": 2.5,
+          "precipitation_probability": 8,
+          "us_aqi": 31,
+          "pm2_5_ug_m3": 6.2,
+          "short_forecast": "Slight Chance Showers And Thunderstorms",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        },
+        {
+          "time_local": "2026-05-06T15:00:00-05:00",
+          "apparent_temperature_c": 32.1,
+          "uv_index": 6.35,
+          "precipitation_probability": 12,
+          "us_aqi": 35,
+          "pm2_5_ug_m3": 8.8,
+          "short_forecast": "Chance Showers And Thunderstorms",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        },
+        {
+          "time_local": "2026-05-06T16:00:00-05:00",
+          "apparent_temperature_c": 32.6,
+          "uv_index": 6.45,
+          "precipitation_probability": 12,
+          "us_aqi": 38,
+          "pm2_5_ug_m3": 9.1,
+          "short_forecast": "Chance Showers And Thunderstorms",
+          "source_refs": [
+            "nws-hourly",
+            "open-meteo-weather",
+            "open-meteo-air"
+          ]
+        }
+      ]
+    }
+  ]
+}

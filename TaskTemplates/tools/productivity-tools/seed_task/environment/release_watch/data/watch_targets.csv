@@ -1,0 +1,5 @@
+source_id,label,priority_tier,homepage_url,homepage_snapshot,feed_override_url,feed_override_snapshot
+uv_releases,uv Releases,high,https://github.com/astral-sh/uv/releases,mirror/uv-releases/index.html,,
+nodejs_blog,Node.js Blog,high,https://nodejs.org/en/blog,mirror/nodejs-blog/index.html,,
+github_blog_changelog,GitHub Changelog,standard,https://github.blog/changelog/,mirror/github-blog-changelog/index.html,https://github.blog/changelog/feed/,mirror/github-blog-changelog/feed.xml
+typescript_releases,TypeScript Releases,standard,https://github.com/microsoft/typescript/releases,mirror/typescript-releases/index.html,https://github.com/microsoft/typescript/releases.atom,mirror/typescript-releases/feed.atom

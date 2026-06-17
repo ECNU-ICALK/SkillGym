@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "unesco_guidance",
+    "title": "Guidance for generative AI in education and research",
+    "url": "https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_ab3dfd25-729d-41e8-877f-176076322557?_=386693eng.pdf&from=1&to=48",
+    "doc_type": "pdf"
+  },
+  {
+    "source_id": "doe_future_teaching_learning",
+    "title": "Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations",
+    "url": "https://www.ed.gov/sites/ed/files/documents/ai-report/ai-report.pdf",
+    "doc_type": "pdf"
+  },
+  {
+    "source_id": "doe_leader_toolkit",
+    "title": "Empowering Education Leaders: A Toolkit for Safe, Ethical, and Equitable AI Integration",
+    "url": "https://files.eric.ed.gov/fulltext/ED661924.pdf",
+    "doc_type": "pdf"
+  },
+  {
+    "source_id": "ptac_best_practices",
+    "title": "Protecting Student Privacy While Using Online Educational Services: Requirements and Best Practices",
+    "url": "https://studentprivacy.ed.gov/resources/protecting-student-privacy-while-using-online-educational-services-requirements-and-best",
+    "doc_type": "web"
+  },
+  {
+    "source_id": "ptac_model_terms",
+    "title": "Protecting Student Privacy While Using Online Educational Services: Model Terms of Service",
+    "url": "https://studentprivacy.ed.gov/resources/protecting-student-privacy-while-using-online-educational-services-model-terms-service",
+    "doc_type": "web"
+  },
+  {
+    "source_id": "nist_ai_rmf",
+    "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+    "url": "https://doi.org/10.6028/NIST.AI.100-1",
+    "doc_type": "doi"
+  },
+  {
+    "source_id": "nist_genai_profile",
+    "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+    "url": "https://doi.org/10.6028/NIST.AI.600-1",
+    "doc_type": "doi"
+  },
+  {
+    "source_id": "oecd_ai_classification",
+    "title": "OECD Framework for the Classification of AI systems",
+    "url": "https://doi.org/10.1787/cb6d9eca-en",
+    "doc_type": "doi"
+  },
+  {
+    "source_id": "ada_fact_sheet",
+    "title": "Fact Sheet: New Rule on the Accessibility of Web Content and Mobile Apps Provided by State and Local Governments",
+    "url": "https://www.ada.gov/resources/2024-03-08-web-rule/",
+    "doc_type": "web"
+  },
+  {
+    "source_id": "pew_teens_chatgpt_2025",
+    "title": "About a quarter of U.S. teens have used ChatGPT for schoolwork",
+    "url": "https://www.pewresearch.org/short-reads/2025/01/15/about-a-quarter-of-us-teens-have-used-chatgpt-for-schoolwork-double-the-share-in-2023/",
+    "doc_type": "web"
+  }
+]

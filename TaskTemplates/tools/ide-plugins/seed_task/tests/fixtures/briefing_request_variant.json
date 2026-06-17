@@ -1,0 +1,26 @@
+{
+  "report_id": "vs-code-release-briefing-variant",
+  "title": {
+    "en": "VS Code Workspace Extension Briefing",
+    "pt-br": "Resumo de Extensões de Workspace do VS Code",
+    "zh-cn": "VS Code 工作区扩展简报"
+  },
+  "audience": {
+    "en": "Maintainers validating workspace-scoped delivery and view behavior.",
+    "pt-br": "Mantenedores validando entrega no escopo do workspace e comportamento de views.",
+    "zh-cn": "验证工作区范围交付与视图行为的维护者。"
+  },
+  "versions": [
+    "1.88",
+    "1.89"
+  ],
+  "focus_areas": [
+    "views"
+  ],
+  "target_locales": [
+    "en",
+    "pt-br",
+    "zh-cn"
+  ],
+  "max_highlights_per_version": 2
+}

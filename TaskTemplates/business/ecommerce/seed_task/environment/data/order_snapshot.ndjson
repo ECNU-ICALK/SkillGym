@@ -1,0 +1,3 @@
+{"order_id":"gid://shopify/Order/7001","order_name":"#H1001","financial_status":"paid","fulfillment_status":"partial","line_item_count":1,"exported_at":"2026-04-22T05:00:00-04:00"}
+{"order_id":"gid://shopify/Order/7002","order_name":"#H1002","financial_status":"paid","fulfillment_status":"unfulfilled","line_item_count":1,"exported_at":"2026-04-22T05:00:00-04:00"}
+{"order_id":"gid://shopify/Order/7005","order_name":"#H1005","financial_status":"paid","cancelled_at":"2026-04-21T10:45:00-04:00","line_item_count":1,"exported_at":"2026-04-22T05:00:00-04:00"}

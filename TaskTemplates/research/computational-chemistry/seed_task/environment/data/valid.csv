@@ -1,0 +1,155 @@
+row_id,SMILES,measured_logS,source_compound_id,split_note
+valid_0001,Cc1ccccc1N(=O)=O,-2.33,o-Nitrotoluene,current_release
+valid_0002,CCSCC,-1.34,Diethyl sulfide,current_release
+valid_0003,CC12CC(O)C3C(CCC4=CC(=O)C=CC34C)C2CCC1(O)C(=O)CO,-3.18,Prednisolone,current_release
+valid_0004,CCCCCC1CCCC1,-6.08,Pentylcyclopentane,current_release
+valid_0005,CC1CCCO1,0.11,2-Methyltetrahydrofurane,current_release
+valid_0006,ClCCBr,-1.32,1-Chloro-2-bromoethane,current_release
+valid_0007,ClC(=C(Cl)C(=C(Cl)Cl)Cl)Cl,-4.92,"Hexachloro-1,3-butadiene",current_release
+valid_0008,CC34CC(=O)C1C(CCC2=CC(=O)CCC12C)C3CCC4(=O),-3.48,adrenosterone,current_release
+valid_0009,Nc2nc1[nH]cnc1c(=O)[nH]2,-3.583,guanine,current_release
+valid_0010,Cc1cccc(O)c1,-0.68,3-Methylphenol,current_release
+valid_0011,O=C1NC(=O)NC(=O)C1(CC=C)CC=C,-2.077,"5,5-Diallylbarbital",current_release
+valid_0012,CN(C)C(=O)Nc1cccc(c1)C(F)(F)F,-3.43,Fluometuron,current_release
+valid_0013,O=C2NC(=O)C1(CCC1)C(=O)N2,-1.655,Cyclobutyl-5-spirobarbituric acid,current_release
+valid_0014,Clc1cc(Cl)c(Cl)cc1Cl,-5.56,"1,2,4,5-Tetrachlorobenzene",current_release
+valid_0015,Clc1cc(Cl)cc(Cl)c1,-4.48,"1,3,5-Trichlorobenzene",current_release
+valid_0016,CCN2c1cc(OC)cc(C)c1NC(=O)c3cccnc23,-5.153,RTI 23,current_release
+valid_0017,Cc1c[nH]c(=O)[nH]c1=O,-1.506,thymine,current_release
+valid_0018,CC(C)C(C)C(C)C,-4.8,"2,3,4-Trimethylpentane",current_release
+valid_0019,Brc1ccccc1Br,-3.5,"1,2-Dibromobenzene",current_release
+valid_0020,Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1,-6.01,Tricresyl phosphate,current_release
+valid_0021,Clc1ccccc1N(=O)=O,-2.55,o-Chloronitrobenzene,current_release
+valid_0022,Oc1ccc(Cl)c(Cl)c1,-1.25,"3,4-Dichlorophenol",current_release
+valid_0023,CC(C)c1ccccc1,-3.27,Isopropylbenzene ,current_release
+valid_0024,CC(C)=CCC/C(C)=C\CO,-2.46,Nerol,current_release
+valid_0025,OC1C=CC2C1C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl,-5.46,hydroxychlordene,current_release
+valid_0026,CCC(C)O,0.47,Butan-2-ol,current_release
+valid_0027,Oc1ccc(C=O)cc1,-0.96,p-Hydroxybenzaldehyde ,current_release
+valid_0028,CCCc1ccccc1,-3.37,Propylbenzene ,current_release
+valid_0029,Cc1c(F)c(F)c(COC(=O)C2C(C=C(Cl)C(F)(F)F)C2(C)C)c(F)c1F,-7.321000000000001,Tetrafluthrin,current_release
+valid_0030,CCCOC(=O)C,-0.72,Propyl acetate,current_release
+valid_0031,Brc1ccc(Br)cc1,-4.07,"1,4-Dibromobenzene",current_release
+valid_0032,Cn1cnc2n(C)c(=O)n(C)c(=O)c12,-0.8759999999999999,Caffeine,current_release
+valid_0033,CC(C#C)N(C)C(=O)Nc1ccc(Cl)cc1,-3.9,Buturon,current_release
+valid_0034,Clc1cc(Cl)c(cc1Cl)c2cccc(Cl)c2Cl,-7.21,"2,2',3,4,5-PCB",current_release
+valid_0035,C1CCOCC1,-0.03,Tetrahydropyran ,current_release
+valid_0036,OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O,-0.41,Raffinose,current_release
+valid_0037,CC(=O)OC3(CCC4C2CCC1=CC(=O)CCC1C2CCC34C)C#C,-4.8,norethindrone acetate,current_release
+valid_0038,CN2C(=O)CN=C(c1ccccc1)c3cc(ccc23)N(=O)=O,-3.796,Nimetazepam,current_release
+valid_0039,NC(=S)Nc1ccccc1,-1.77,Phenylthiourea,current_release
+valid_0040,Cc1cc(C)c(C)c(C)c1C,-4.0,Pentamethylbenzene,current_release
+valid_0041,O=C1NC(=O)NC(=O)C1(C(C)C)CC=C(C)C,-2.593,5-(3-Methyl-2-butenyl)-5-isoPrbarbital,current_release
+valid_0042,c2c(C)cc1nc(C)ccc1c2,-1.94,"2,7-dimethylquinoline",current_release
+valid_0043,Clc1ccc(cc1Cl)c2cc(Cl)c(Cl)c(Cl)c2Cl,-7.82,"2,3,3',4,4',5-PCB",current_release
+valid_0044,Cc1ccc(N)cc1,-1.21,p-Methylaniline ,current_release
+valid_0045,CCCCCCCCO,-2.39,1-Octanol,current_release
+valid_0046,Nc1ccc(Cl)cc1,-1.66,p-Chloroaniline,current_release
+valid_0047,Cc1cccc(N)c1,-0.85,m-Methylaniline,current_release
+valid_0048,CCCCBr,-2.37,1-Bromobutane,current_release
+valid_0049,Oc1cccc(c1)N(=O)=O,-1.01,m-Nitrophenol,current_release
+valid_0050,CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O,-6.124,Ethalfluralin,current_release
+valid_0051,CC(C)C(Nc1ccc(cc1Cl)C(F)(F)F)C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2,-8.003,Fluvalinate,current_release
+valid_0052,Cc1ccccc1Cl,-3.52,2-Chlorotoluene,current_release
+valid_0053,C(c1ccccc1)c2ccccc2,-4.08,Diphenylmethane,current_release
+valid_0054,O=C1NC(=O)NC(=O)C1(CC)CC,-2.4,Barbital,current_release
+valid_0055,NNc1ccccc1,0.07,Phenylhydrazine,current_release
+valid_0056,CCCCCC(=O)C,-1.45,2-Heptanone,current_release
+valid_0057,ClC(Br)Br,-1.9,Chlorodibromethane,current_release
+valid_0058,CC(C)C,-2.55,2-Methylpropane,current_release
+valid_0059,CN(C=Nc1ccc(C)cc1C)C=Nc2ccc(C)cc2C,-5.47,Amitraz,current_release
+valid_0060,CCCOCC,-0.66,Ethyl propyl ether,current_release
+valid_0061,CCCCCl,-2.03,1-Chlorobutane,current_release
+valid_0062,OCC3OC(OCC2OC(OC(C#N)c1ccccc1)C(O)C(O)C2O)C(O)C(O)C3O,-0.77,Amigdalin,current_release
+valid_0063,CCN2c1ncccc1N(C)C(=S)c3cccnc23,-4.634,RTI 16,current_release
+valid_0064,CC(O)C(C)(C)C,-0.62,"3,3-Dimethyl-2-butanol",current_release
+valid_0065,CCCC(=O)CC,-0.83,3-Hexanone,current_release
+valid_0066,CCCCCCCCCCCCCCCCCCO,-8.4,1-Octadecanol,current_release
+valid_0067,Clc2ccc(Oc1ccc(cc1)N(=O)=O)c(Cl)c2,-5.46,Nitrofen,current_release
+valid_0068,CCCCCC(C)C,-5.08,2-Methylheptane,current_release
+valid_0069,CC(C)CC(C)C,-4.26,"2,4-Dimethylpentane",current_release
+valid_0070,Cc1ccncc1C,0.36,"3,4-Dimethylpyridine",current_release
+valid_0071,c1(OC)ccc(CC=C)cc1,-2.92,Estragole,current_release
+valid_0072,CCCCCCCC#C,-4.24,1-Nonyne ,current_release
+valid_0073,Oc1c(I)cc(C#N)cc1I,-3.61,Ioxynil,current_release
+valid_0074,Clc1ccccc1I,-3.54,o-Chloroiodobenzene,current_release
+valid_0075,CC1OC(CC(O)C1O)OC2C(O)CC(OC2C)OC8C(O)CC(OC7CCC3(C)C(CCC4C3CC(O)C5(C)C(CCC45O)C6=CC(=O)OC6)C7)OC8C,-4.081,"Digoxin (L1=41,8mg/mL, L2=68,2mg/mL, Z=40,1mg/mL)",current_release
+valid_0076,CC(C)c1ccc(NC(=O)N(C)C)cc1,-3.536,Isoproturon,current_release
+valid_0077,Cc1c2ccccc2cc3ccccc13,-5.89,9-Methylanthracene,current_release
+valid_0078,Cc1cccc(C)c1NC(=O)c2cc(c(Cl)cc2O)S(N)(=O)=O,-3.79,Xipamide,current_release
+valid_0079,Cc1ccc(O)cc1,-0.73,p-Cresol,current_release
+valid_0080,C=CC=C,-1.87,"1,3-Butadiene",current_release
+valid_0081,CCCCCCC=C,-4.44,1-Octene ,current_release
+valid_0082,NC(=O)NC1NC(=O)NC1=O,-1.6,allantoin,current_release
+valid_0083,c2ccc1scnc1c2,-1.5,benzothiazole,current_release
+valid_0084,CC34CCC1C(CCC2CC(=O)CCC12C)C3CCC4O,-4.743,Stanolone,current_release
+valid_0085,CCCCC(CC)COC(=O)c1ccccc1C(=O)OCC(CC)CCCC,-6.96,Di(2-ethylhexyl)-phthalate,current_release
+valid_0086,CC1=C(CCCO1)C(=O)Nc2ccccc2,-2.56,pyracarbolid,current_release
+valid_0087,COc2c1occc1c(OC)c3c(=O)cc(C)oc23,-3.0210000000000004,Khellin,current_release
+valid_0088,CC(=O)OC3(C)CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C,-5.284,methyltestosterone acetate,current_release
+valid_0089,C1OC1c2ccccc2,-1.6,styrene oxide,current_release
+valid_0090,COC1=CC(=O)CC(C)C13Oc2c(Cl)c(OC)cc(OC)c2C3=O,-3.2460000000000004,Griseofulvin,current_release
+valid_0091,CCCCCCC(C)O,-2.09,2-Octanol,current_release
+valid_0092,CCC1(C(=O)NC(=O)NC1=O)C2=CCC3CCC2C3,-2.696,Reposal,current_release
+valid_0093,CC(C)C(C)(C)C,-4.36,"2,2,3-Trimethylbutane",current_release
+valid_0094,CC1CCCCC1,-3.85,Methylcyclohexane ,current_release
+valid_0095,Oc1cccc2ncccc12,-2.54,5-hydroxyquinoline,current_release
+valid_0096,Nc1ccc(cc1)c2ccc(N)cc2,-2.7,p-benzidine,current_release
+valid_0097,CCNc1nc(Cl)nc(NC(C)C)n1,-3.85,Atrazine,current_release
+valid_0098,CCOC(=O)c1ccccc1,-2.32,Ethyl benzoate ,current_release
+valid_0099,ClCC(C)C,-2.0,1-Chloro-2-methylpropane,current_release
+valid_0100,O=C1NC(=O)NC(=O)C1(C)C,-1.742,"5,5-Dimethylbarbituric acid",current_release
+valid_0101,O=C1CNC(=O)N1,-0.4,hydantoin,current_release
+valid_0102,CC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C,-4.42,Progesterone,current_release
+valid_0103,CCCCCC(C)O,-1.55,2-Heptanol ,current_release
+valid_0104,CCOP(=S)(OCC)SCCSCC,-4.23,Disulfoton,current_release
+valid_0105,CN(C)C(=O)Nc1ccc(C)c(Cl)c1,-3.483,Chlortoluron,current_release
+valid_0106,CCC(C)C(C)C,-4.28,"2,3-Dimethylpentane",current_release
+valid_0107,CCCCCCCCC(=O)OCC,-3.8,Ethyl nonanoate,current_release
+valid_0108,CCc1ccc(CC)cc1,-3.75,"1,4-Diethylbenzene ",current_release
+valid_0109,CC(=C)C1CC=C(C)C(=O)C1,-2.06,Carvone,current_release
+valid_0110,COCOC,0.48,Dimethoxymethane,current_release
+valid_0111,c2ccc1nc(ccc1c2)c4ccc3ccccc3n4,-5.4,biquinoline,current_release
+valid_0112,ClC(Cl)CC(=O)NC2=C(Cl)C(=O)c1ccccc1C2=O,-5.03,Quinonamid,current_release
+valid_0113,CC(=O)C(C)(C)C,-0.72,"3,3-Dimethyl-2-butanone",current_release
+valid_0114,O=C(Cn1ccnc1N(=O)=O)NCc2ccccc2,-2.81,Benznidazole,current_release
+valid_0115,CC/C=C\C,-2.54,cis-2-Pentene,current_release
+valid_0116,Cc1c2ccccc2c(C)c3ccc4ccccc4c13,-7.02,"7,12-Dimethylbenz(a)anthracene",current_release
+valid_0117,COP(=O)(OC)OC(Br)C(Cl)(Cl)Br,-2.28,Naled,current_release
+valid_0118,Oc1ccc(Br)cc1,-1.09,4-Bromophenol,current_release
+valid_0119,COC(=O)c1ccccc1OC2OC(COC3OCC(O)C(O)C3O)C(O)C(O)C2O,-0.742,Monotropitoside,current_release
+valid_0120,Cc1c(C)c(C)c(C)c(C)c1C,-5.23,Hexamethylbenzene,current_release
+valid_0121,CCCC=C(CC)C=O,-2.46,2-Ethyl-2-hexanal,current_release
+valid_0122,c1nccc(C(=O)NN)c1,0.009,Isonazid,current_release
+valid_0123,CCCCCCC,-4.53,Heptane,current_release
+valid_0124,OCC2OC(Oc1ccccc1CO)C(O)C(O)C2O,-0.85,Salicin,current_release
+valid_0125,Cc1c(cccc1N(=O)=O)N(=O)=O,-3.0,"2,6-Dinitrotoluene",current_release
+valid_0126,CCN2c1nc(C)cc(C)c1NC(=O)c3cccnc23,-4.553999999999999,RTI 15,current_release
+valid_0127,CCN2c1nc(C)cc(C(F)(F)F)c1NC(=O)c3cccnc23,-4.207,RTI 13,current_release
+valid_0128,CCC1(C(=O)NC(=O)NC1=O)C2=CCCCC2,-2.17,cyclobarbital,current_release
+valid_0129,COP(=S)(OC)Oc1cc(Cl)c(Br)cc1Cl,-6.09,Bromophos,current_release
+valid_0130,ClC=C,-1.75,Chloroethylene,current_release
+valid_0131,CSSC,-1.44,Dimethyldisulfide,current_release
+valid_0132,CC(C)N(C(C)C)C(=O)SCC(Cl)=C(Cl)Cl,-4.88,Triallate,current_release
+valid_0133,C1C(O)CCC2(C)CC3CCC4(C)C5(C)CC6OCC(C)CC6OC5CC4C3C=C21,-7.32,Diosgenin,current_release
+valid_0134,Clc1ccc(cc1Cl)c2ccccc2,-6.39,"3,4-PCB",current_release
+valid_0135,CCC1(C(=O)NCNC1=O)c2ccccc2,-2.64,Primidone,current_release
+valid_0136,Cn1cnc2n(C)c(=O)[nH]c(=O)c12,-2.523,theobromine,current_release
+valid_0137,N(c1ccccc1)c2ccccc2,-3.504,Diphenylamine,current_release
+valid_0138,c1cncnc1,1.1,Pyrimidine,current_release
+valid_0139,Oc1cc(Cl)c(Cl)cc1Cl,-2.21,"2,4,5-Trichlorophenol ",current_release
+valid_0140,CCOP(=S)(OCC)SCSC(C)(C)C,-4.755,Terbufos,current_release
+valid_0141,Cc1ncc(N(=O)=O)n1CCO,-1.22,Metronidazole,current_release
+valid_0142,c1(O)c(C)ccc(C(C)C)c1,-2.08,Carvacrol,current_release
+valid_0143,Cc1cc(=O)n(c2ccccc2)n1C,0.715,Antipyrene,current_release
+valid_0144,O=C(C=CC=Cc2ccc1OCOc1c2)N3CCCCC3,-3.46,Piperine,current_release
+valid_0145,Cc1cccc2ccccc12,-3.7,1-Methylnaphthalene,current_release
+valid_0146,c1ccc(cc1)c2ccccc2,-4.345,Biphenyl,current_release
+valid_0147,CC(C)C(=O)C(C)C,-1.3,"2,4-Dimethyl-3-pentanone",current_release
+valid_0148,CC(C)c1ccccc1C,-3.76,2-Isopropyltoluene,current_release
+valid_0149,Clc1cc(Cl)c(Cl)c(Cl)c1Cl,-5.65,Pentachlorobenzene,current_release
+valid_0150,CC1=CCC(CC1)C(C)=C,-4.26,d-Limonene,current_release
+valid_dup_01,c1cncnc1,1.1,Pyrimidine,duplicate_in_file
+valid_dup_02,CC(C)N(C(C)C)C(=O)SCC(Cl)=C(Cl)Cl,-4.88,Triallate,duplicate_in_file
+valid_bad_01,C1(CC,,bad_01,invalid_smiles
+valid_bad_02,not_a_smiles,,bad_02,invalid_smiles

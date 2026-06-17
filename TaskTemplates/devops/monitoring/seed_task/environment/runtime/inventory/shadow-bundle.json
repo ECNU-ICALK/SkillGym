@@ -1,0 +1,14 @@
+[
+  {
+    "targets": ["127.0.0.1"],
+    "labels": {
+      "service_name": "shadow-target",
+      "component": "shadow",
+      "team": "shadow",
+      "metrics_port": "18085",
+      "metrics_path": "/shadow/metrics",
+      "lane": "shadow",
+      "bundle": "release-2026-05-monitoring"
+    }
+  }
+]

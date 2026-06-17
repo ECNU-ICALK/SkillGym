@@ -1,0 +1,33 @@
+{
+  "service_base_url": "http://127.0.0.1:8080",
+  "endpoints": [
+    {
+      "path": "/api/source-index",
+      "purpose": "List the available source packets."
+    },
+    {
+      "path": "/api/document/<doc_id>",
+      "purpose": "Read one structured source packet by document id."
+    },
+    {
+      "path": "/api/tone-examples",
+      "purpose": "Read approved tone examples for the campaign."
+    },
+    {
+      "path": "/api/banned-phrases",
+      "purpose": "Read blocked launch language."
+    },
+    {
+      "path": "/api/editorial-constraints",
+      "purpose": "Read release terminology and wording constraints."
+    },
+    {
+      "path": "/api/rejected-draft",
+      "purpose": "Read the previous rejected draft record."
+    },
+    {
+      "path": "/api/quality-gate",
+      "purpose": "Validate the assembled package with a POST request."
+    }
+  ]
+}

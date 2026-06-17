@@ -1,0 +1,76 @@
+{
+  "task_id": "lab-tools__egfr_bioactivity_review_notebook",
+  "target_chembl_id": "CHEMBL203",
+  "target_name": "Epidermal growth factor receptor",
+  "source_snapshot": {
+    "activity_query": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL203&limit=300",
+    "assay_query_mode": "assay_chembl_id__in over distinct assay IDs present in the activity snapshot",
+    "molecule_query_mode": "molecule_chembl_id__in over distinct molecule IDs present in the activity snapshot"
+  },
+  "activity_filters": {
+    "allowed_standard_types": [
+      "IC50"
+    ],
+    "allowed_standard_relations": [
+      "="
+    ],
+    "allowed_assay_types": [
+      "B",
+      "F"
+    ],
+    "minimum_confidence_score": 8,
+    "exclude_if_data_validity_comment_present": true
+  },
+  "eligibility": {
+    "minimum_qualifying_measurements": 2,
+    "minimum_distinct_assays": 2,
+    "panel_size": 10
+  },
+  "ranking": [
+    {
+      "field": "best_ic50_nM",
+      "direction": "asc"
+    },
+    {
+      "field": "n_distinct_assays",
+      "direction": "desc"
+    },
+    {
+      "field": "median_ic50_nM",
+      "direction": "asc"
+    },
+    {
+      "field": "molecule_chembl_id",
+      "direction": "asc"
+    }
+  ],
+  "selection_reason_rules": [
+    {
+      "label": "multi_assay_consistent_potency",
+      "minimum_distinct_assays": 3,
+      "maximum_median_ic50_nM": 25.0
+    },
+    {
+      "label": "potent_dual_assay_support",
+      "minimum_distinct_assays": 2,
+      "maximum_best_ic50_nM": 1.0
+    },
+    {
+      "label": "panel_entry_requires_follow_up",
+      "fallback": true
+    }
+  ],
+  "required_notebook_headings": [
+    "# Goal",
+    "# Inputs",
+    "# Results"
+  ],
+  "required_brief_headings": [
+    "# Scope",
+    "# Data Quality",
+    "# Candidate Panel",
+    "# Follow-up Notes"
+  ],
+  "required_plot_topic": "Top candidate best IC50 values (nM)",
+  "legacy_shortlist_policy": "legacy_shortlist.csv is a prior export for context only and does not reflect the current screening contract."
+}

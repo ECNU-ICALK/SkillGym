@@ -1,0 +1,111 @@
+{
+  "task_id": "architecture-patterns__mta-schedule-provider-gateway",
+  "category": "architecture-patterns",
+  "design_status": "finalized",
+  "selected_skill": {
+    "name": "api-connector-builder",
+    "local_path": "environment/skills/api-connector-builder/SKILL.md",
+    "skillsmp_reference": "api-connector-builder",
+    "skillsmp_stars": "169,199",
+    "selection_reason": "This skill matches a non-repair task where the solver must add one new publicly sourced provider-like capability to an existing gateway by following the repository's current integration shape, without relying on private accounts or sensitive permissions."
+  },
+  "design_goals": [
+    "Keep the task as a construction task rather than a repair prompt.",
+    "Make with-skill and without-skill differ only by environment/skills and the corresponding runtime copy logic.",
+    "Concentrate failure pressure on action-level misses such as bypassing the existing integration surface, failing to keep export and HTTP behavior aligned, or hardcoding the visible dataset."
+  ],
+  "input_data": [
+    {
+      "path": "environment/workspace/data/gtfs/*.txt",
+      "source": "https://www.mta.info/developers",
+      "notes": "Deterministic subset derived from the MTA static GTFS subway feed."
+    },
+    {
+      "path": "environment/workspace/data/delivery_contract.yaml",
+      "source": "https://gtfs.org/",
+      "notes": "Task-local contract shaped around public GTFS schedule concepts and deterministic gateway output requirements."
+    }
+  ],
+  "task_shape": {
+    "runtime": "single container with a Node.js gateway service and local GTFS snapshot",
+    "solver_action": "add one new GTFS-backed schedule capability to the existing gateway and export pipeline",
+    "required_outputs": [
+      "/app/workspace/output/schedule_snapshot.json"
+    ]
+  },
+  "intended_failures": [
+    "Naive solutions special-case only the visible HTTP routes and leave the export path broken or inconsistent.",
+    "Naive solutions parse the visible station and route ids directly in controllers instead of wiring the new capability through the existing integration surface.",
+    "Naive solutions hardcode visible route ids, stop ids, or search results and fail on the alternate GTFS fixture."
+  ],
+  "verifier_focus": [
+    "Validate that the new capability is reachable through the existing gateway and export entrypoints.",
+    "Validate departures, route service windows, and stop search against reference computations from the visible GTFS subset.",
+    "Restart the gateway against an alternate GTFS subset to catch visible-data hardcoding and provider-specific shortcuts.",
+    "Check that the repository still exposes the existing provider surface and does not replace the live gateway with a static output generator."
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime skill-copy logic may differ between with_skill and without_skill variants.",
+  "iteration_notes": [
+    "Do not modify the selected skill source.",
+    "Do not change instruction, tests, data, dependencies, or runtime logic between with-skill and without-skill variants.",
+    "without-skill failure should remain action-level, not a mere formatting mismatch."
+  ],
+  "oracle_validation": {
+    "status": "passed",
+    "job_root": "/home/lenovo/.tmp_harbor_jobs_arch_patterns_oracle4b_20260503_005906/arch_patterns_oracle4b_20260503_005906",
+    "trial": "task_oracle_e2b__fmQgbzp",
+    "reward": 1.0,
+    "notes": "Official solution passed the full verifier set in E2B."
+  },
+  "comparison_experiments": {
+    "sample_size": 3,
+    "selection_rule": "Only valid task-level trials with complete result.json were counted; build, startup, and verifier-only records without task-level result.json were excluded.",
+    "with_skill": {
+      "pass_rate": "100%",
+      "avg_agent_execution_sec": 324.7,
+      "avg_total_tokens": 718699,
+      "runs": [
+        {
+          "job_root": "/home/lenovo/.tmp_harbor_jobs_arch_patterns_zero_with_20260503_032006/arch-patterns-zero-with-20260503_032006",
+          "trial": "task_with_skills_e2b__befUxMf",
+          "reward": 1.0
+        },
+        {
+          "job_root": "/home/lenovo/.tmp_harbor_jobs_arch_patterns_zero_with_20260503_033536/arch-patterns-zero-with-20260503_033536",
+          "trial": "task_with_skills_e2b__MdtWtab",
+          "reward": 1.0
+        },
+        {
+          "job_root": "/home/lenovo/.tmp_harbor_jobs_arch_patterns_with_refresh_20260503_034458_with_refresh/arch-patterns-zero-with-refresh-20260503_034458_with_refresh",
+          "trial": "task_with_skills_e2b__fXaFg9g",
+          "reward": 1.0
+        }
+      ]
+    },
+    "without_skill": {
+      "pass_rate": "0%",
+      "avg_agent_execution_sec": 326.6,
+      "avg_total_tokens": 724713,
+      "runs": [
+        {
+          "job_root": "/home/lenovo/.tmp_harbor_jobs_arch_patterns_zero_without_20260503_024045/arch-patterns-zero-without-20260503_024045",
+          "trial": "task_without_skills_e2b__tKaShGa",
+          "reward": 0.0,
+          "action_level_failure": "Provider audit and same-process compare reused the first mounted GTFS root, so alternate queries hit unknown stop ids."
+        },
+        {
+          "job_root": "/home/lenovo/.tmp_harbor_jobs_arch_patterns_zero_without_20260503_025003/arch-patterns-zero-without-20260503_025003",
+          "trial": "task_without_skills_e2b__ppaEXVa",
+          "reward": 0.0,
+          "action_level_failure": "The solver collapsed the provider catalog to a single provider and broke the required multi-provider delivery surface."
+        },
+        {
+          "job_root": "/home/lenovo/.tmp_harbor_jobs_arch_patterns_zero_without_20260503_025854/arch-patterns-zero-without-20260503_025854",
+          "trial": "task_without_skills_e2b__MsxeBBZ",
+          "reward": 0.0,
+          "action_level_failure": "The visible HTTP and export path looked healthy, but the shared loader scope still mixed multiple data roots inside one process."
+        }
+      ]
+    }
+  }
+}

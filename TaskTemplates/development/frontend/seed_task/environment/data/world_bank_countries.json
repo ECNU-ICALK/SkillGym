@@ -1,0 +1,82 @@
+[
+  {
+    "id": "AUS",
+    "iso2Code": "AU",
+    "name": "Australia",
+    "region": "East Asia & Pacific",
+    "incomeLevel": "High income",
+    "lendingType": "Not classified"
+  },
+  {
+    "id": "BRA",
+    "iso2Code": "BR",
+    "name": "Brazil",
+    "region": "Latin America & Caribbean",
+    "incomeLevel": "Upper middle income",
+    "lendingType": "IBRD"
+  },
+  {
+    "id": "CAN",
+    "iso2Code": "CA",
+    "name": "Canada",
+    "region": "North America",
+    "incomeLevel": "High income",
+    "lendingType": "Not classified"
+  },
+  {
+    "id": "CHN",
+    "iso2Code": "CN",
+    "name": "China",
+    "region": "East Asia & Pacific",
+    "incomeLevel": "Upper middle income",
+    "lendingType": "IBRD"
+  },
+  {
+    "id": "DEU",
+    "iso2Code": "DE",
+    "name": "Germany",
+    "region": "Europe & Central Asia",
+    "incomeLevel": "High income",
+    "lendingType": "Not classified"
+  },
+  {
+    "id": "FRA",
+    "iso2Code": "FR",
+    "name": "France",
+    "region": "Europe & Central Asia",
+    "incomeLevel": "High income",
+    "lendingType": "Not classified"
+  },
+  {
+    "id": "GBR",
+    "iso2Code": "GB",
+    "name": "United Kingdom",
+    "region": "Europe & Central Asia",
+    "incomeLevel": "High income",
+    "lendingType": "Not classified"
+  },
+  {
+    "id": "IND",
+    "iso2Code": "IN",
+    "name": "India",
+    "region": "South Asia",
+    "incomeLevel": "Lower middle income",
+    "lendingType": "IBRD"
+  },
+  {
+    "id": "USA",
+    "iso2Code": "US",
+    "name": "United States",
+    "region": "North America",
+    "incomeLevel": "High income",
+    "lendingType": "Not classified"
+  },
+  {
+    "id": "ZAF",
+    "iso2Code": "ZA",
+    "name": "South Africa",
+    "region": "Sub-Saharan Africa",
+    "incomeLevel": "Upper middle income",
+    "lendingType": "IBRD"
+  }
+]

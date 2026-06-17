@@ -1,0 +1,13 @@
+request_id,clip_id,still_locator,preview_start_sec,preview_duration_sec,slot_name
+launch_001,launch,,0.0,2.0,opening_wide
+launch_002,launch,--time 00:00:02.002,1.4,2.2,ignition_hold
+launch_003,launch,--index 202,6.2,2.4,ascent_plume
+launch_004,launch,--time 00:00:11.011,10.4,2.0,upper_stage
+tracking_001,tracking,,0.0,1.8,canopy_entry
+tracking_002,tracking,--time 00:00:00.500,0.3,1.8,parachute_hold
+tracking_003,tracking,--index 217,7.1,1.4,target_lock
+tracking_004,tracking,--time 00:00:08.008,7.8,1.0,terrain_exit
+touchdown_001,touchdown,,0.0,1.4,descent_entry
+touchdown_002,touchdown,--time 00:00:01.168,0.8,1.6,parachute_center
+touchdown_003,touchdown,--index 125,3.8,1.6,capsule_ground
+touchdown_004,touchdown,--time 00:00:05.005,4.7,1.0,recovery_tail

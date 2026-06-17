@@ -1,0 +1,19 @@
+{
+  "queries": [
+    {
+      "query": "Broadway",
+      "label": "Broadway",
+      "expected_station_id": "1975518133370609774"
+    },
+    {
+      "query": "Central Park",
+      "label": "Central Park",
+      "expected_station_id": "66dd4ccc-0aca-11e7-82f6-3863bb44ef7c"
+    },
+    {
+      "query": "Allen",
+      "label": "Allen",
+      "expected_station_id": "1960020817312746312"
+    }
+  ]
+}

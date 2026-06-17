@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Node.js Blog</title>
+    <link>https://nodejs.org/en/blog</link>
+    <description>Bundled Node.js blog feed snapshot.</description>
+    <item>
+      <title>Node.js 26.1.0 (Current)</title>
+      <link>https://nodejs.org/en/blog/release/v26.1.0</link>
+      <guid>https://nodejs.org/en/blog/release/v26.1.0</guid>
+      <pubDate>Thu, 07 May 2026 10:09:15 GMT</pubDate>
+    </item>
+    <item>
+      <title>Node.js 26.0.0 (Current)</title>
+      <link>https://nodejs.org/en/blog/release/v26.0.0</link>
+      <guid>https://nodejs.org/en/blog/release/v26.0.0</guid>
+      <pubDate>Tue, 05 May 2026 14:26:09 GMT</pubDate>
+    </item>
+    <item>
+      <title>Trip report: Node.js collaboration summit (2026 London)</title>
+      <link>https://nodejs.org/en/blog/events/collab-summit-2026-london</link>
+      <guid>https://nodejs.org/en/blog/events/collab-summit-2026-london</guid>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Node.js 24.15.0 (LTS)</title>
+      <link>https://nodejs.org/en/blog/release/v24.15.0</link>
+      <guid>https://nodejs.org/en/blog/release/v24.15.0</guid>
+      <pubDate>Wed, 15 Apr 2026 18:17:11 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

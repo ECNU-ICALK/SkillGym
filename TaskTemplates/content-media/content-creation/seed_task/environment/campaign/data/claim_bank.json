@@ -1,0 +1,94 @@
+{
+  "campaign_title": "Renewable Capacity Momentum 2025",
+  "claims": [
+    {
+      "id": "C01",
+      "source_id": "irena_stats_2025",
+      "statement": "Global renewable power capacity reached 4,448 GW in 2024 after a 585 GW annual increase.",
+      "data": {
+        "metric_year": 2024,
+        "capacity_gw": 4448,
+        "annual_addition_gw": 585
+      }
+    },
+    {
+      "id": "C02",
+      "source_id": "irena_stats_2025",
+      "statement": "Renewables accounted for 92.5% of total power capacity expansion in 2024, with annual growth at 15.1%.",
+      "data": {
+        "expansion_share_pct": 92.5,
+        "annual_growth_pct": 15.1
+      }
+    },
+    {
+      "id": "C03",
+      "source_id": "iea_stocktake_2025",
+      "statement": "The 2030 tripling benchmark still points to 11,000 GW of renewable capacity.",
+      "data": {
+        "benchmark_gw": 11000,
+        "target_year": 2030
+      }
+    },
+    {
+      "id": "C04",
+      "source_id": "iea_stocktake_2025",
+      "statement": "Current government ambitions still sit closer to 8,000 GW by 2030.",
+      "data": {
+        "ambition_gw": 8000,
+        "target_year": 2030
+      }
+    },
+    {
+      "id": "C05",
+      "source_id": "iea_tripling_2023",
+      "statement": "Solar PV is on course to deliver about two-thirds of the year's increase in global renewable capacity.",
+      "data": {
+        "share_text": "about two-thirds"
+      }
+    },
+    {
+      "id": "C06",
+      "source_id": "iea_tripling_2023",
+      "statement": "Tripling renewable capacity by 2030 would cut unabated coal-fired generation by half between 2022 and 2030.",
+      "data": {
+        "impact_text": "cut unabated coal-fired generation by half between 2022 and 2030"
+      }
+    },
+    {
+      "id": "C07",
+      "source_id": "iea_stocktake_2025",
+      "statement": "Long permitting waits, grid investment gaps, and high financing costs still slow deployment.",
+      "data": {
+        "constraints": [
+          "permitting",
+          "grid investment",
+          "financing"
+        ]
+      }
+    },
+    {
+      "id": "C08",
+      "source_id": "owid_generation",
+      "statement": "World solar rose from 1,054 TWh in 2021 to 1,664 TWh in 2023, while world wind rose from 1,857 TWh to 2,319 TWh.",
+      "data": {
+        "solar_start_twh": 1054,
+        "solar_end_twh": 1664,
+        "wind_start_twh": 1857,
+        "wind_end_twh": 2319,
+        "start_year": 2021,
+        "end_year": 2023
+      }
+    },
+    {
+      "id": "C09",
+      "source_id": "owid_generation",
+      "statement": "The bundled China 2023 row reports 584 TWh of solar generation and 886 TWh of wind generation.",
+      "data": {
+        "country": "China",
+        "year": 2023,
+        "solar_twh": 584,
+        "wind_twh": 886
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": "2026-05-01",
+  "single_triage_response": {
+    "top_level_required": ["request_id", "mode", "data"],
+    "data_required": ["ticket_id", "status", "queue", "intent", "recommended_action", "evidence", "escalation", "source"]
+  },
+  "single_triage_error": {
+    "top_level_required": ["request_id", "mode", "error"],
+    "error_required": ["code", "message", "retryable", "ticket_id"]
+  },
+  "batch_triage_response": {
+    "top_level_required": ["request_id", "mode", "summary", "results"],
+    "summary_required": ["total", "processed", "success_count", "escalated_count", "failed_count"]
+  },
+  "review_response": {
+    "top_level_required": ["request_id", "mode", "data"],
+    "data_required": ["ticket_id", "disposition", "review_note", "evidence", "escalation_reason", "source"]
+  }
+}

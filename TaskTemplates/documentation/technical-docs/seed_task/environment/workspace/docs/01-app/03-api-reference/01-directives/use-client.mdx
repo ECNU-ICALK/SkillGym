@@ -1,0 +1,27 @@
+---
+title: use client
+description: API reference for the use client directive.
+nav_title: use client
+---
+
+`use client` marks a module for client-side rendering behavior.
+
+```tsx filename="app/example.tsx" switcher highlight={1}
+'use client'
+
+export default function Counter() {
+  return <button>Count</button>
+}
+```
+
+```jsx filename="app/example.jsx" switcher highlight={1}
+'use client'
+
+export default function Counter() {
+  return <button>Count</button>
+}
+```
+
+## Usage
+
+Place the directive at the top of the module before imports.

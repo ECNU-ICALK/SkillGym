@@ -1,0 +1,1033 @@
+{
+  "source": "PokeAPI Kanto Pokedex + pokemon + pokemon-species endpoints",
+  "species_count": 42,
+  "species": [
+    {
+      "species_name": "bulbasaur",
+      "display_name": "Bulbasaur",
+      "dex_number": 1,
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "height_dm": 7,
+      "weight_hg": 69,
+      "base_stats": {
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 45
+      },
+      "base_stat_total": 318,
+      "habitat": "grassland",
+      "color": "green",
+      "shape": "quadruped",
+      "genus": "Seed Pokémon",
+      "flavor_excerpt": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON."
+    },
+    {
+      "species_name": "charmander",
+      "display_name": "Charmander",
+      "dex_number": 4,
+      "types": [
+        "fire"
+      ],
+      "height_dm": 6,
+      "weight_hg": 85,
+      "base_stats": {
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "special-attack": 60,
+        "special-defense": 50,
+        "speed": 65
+      },
+      "base_stat_total": 309,
+      "habitat": "mountain",
+      "color": "red",
+      "shape": "upright",
+      "genus": "Lizard Pokémon",
+      "flavor_excerpt": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."
+    },
+    {
+      "species_name": "squirtle",
+      "display_name": "Squirtle",
+      "dex_number": 7,
+      "types": [
+        "water"
+      ],
+      "height_dm": 5,
+      "weight_hg": 90,
+      "base_stats": {
+        "hp": 44,
+        "attack": 48,
+        "defense": 65,
+        "special-attack": 50,
+        "special-defense": 64,
+        "speed": 43
+      },
+      "base_stat_total": 314,
+      "habitat": "waters-edge",
+      "color": "blue",
+      "shape": "upright",
+      "genus": "Tiny Turtle Pokémon",
+      "flavor_excerpt": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."
+    },
+    {
+      "species_name": "caterpie",
+      "display_name": "Caterpie",
+      "dex_number": 10,
+      "types": [
+        "bug"
+      ],
+      "height_dm": 3,
+      "weight_hg": 29,
+      "base_stats": {
+        "hp": 45,
+        "attack": 30,
+        "defense": 35,
+        "special-attack": 20,
+        "special-defense": 20,
+        "speed": 45
+      },
+      "base_stat_total": 195,
+      "habitat": "forest",
+      "color": "green",
+      "shape": "armor",
+      "genus": "Worm Pokémon",
+      "flavor_excerpt": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls."
+    },
+    {
+      "species_name": "butterfree",
+      "display_name": "Butterfree",
+      "dex_number": 12,
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "height_dm": 11,
+      "weight_hg": 320,
+      "base_stats": {
+        "hp": 60,
+        "attack": 45,
+        "defense": 50,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 70
+      },
+      "base_stat_total": 395,
+      "habitat": "forest",
+      "color": "white",
+      "shape": "bug-wings",
+      "genus": "Butterfly Pokémon",
+      "flavor_excerpt": "In battle, it flaps its wings at high speed to release highly toxic dust into the air."
+    },
+    {
+      "species_name": "weedle",
+      "display_name": "Weedle",
+      "dex_number": 13,
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "height_dm": 3,
+      "weight_hg": 32,
+      "base_stats": {
+        "hp": 40,
+        "attack": 35,
+        "defense": 30,
+        "special-attack": 20,
+        "special-defense": 20,
+        "speed": 50
+      },
+      "base_stat_total": 195,
+      "habitat": "forest",
+      "color": "brown",
+      "shape": "armor",
+      "genus": "Hairy Bug Pokémon",
+      "flavor_excerpt": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head."
+    },
+    {
+      "species_name": "beedrill",
+      "display_name": "Beedrill",
+      "dex_number": 15,
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "height_dm": 10,
+      "weight_hg": 295,
+      "base_stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 40,
+        "special-attack": 45,
+        "special-defense": 80,
+        "speed": 75
+      },
+      "base_stat_total": 395,
+      "habitat": "forest",
+      "color": "yellow",
+      "shape": "bug-wings",
+      "genus": "Poison Bee Pokémon",
+      "flavor_excerpt": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly."
+    },
+    {
+      "species_name": "pidgey",
+      "display_name": "Pidgey",
+      "dex_number": 16,
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "height_dm": 3,
+      "weight_hg": 18,
+      "base_stats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 40,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 56
+      },
+      "base_stat_total": 251,
+      "habitat": "forest",
+      "color": "brown",
+      "shape": "wings",
+      "genus": "Tiny Bird Pokémon",
+      "flavor_excerpt": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand."
+    },
+    {
+      "species_name": "sandshrew",
+      "display_name": "Sandshrew",
+      "dex_number": 27,
+      "types": [
+        "ground"
+      ],
+      "height_dm": 6,
+      "weight_hg": 120,
+      "base_stats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 85,
+        "special-attack": 20,
+        "special-defense": 30,
+        "speed": 40
+      },
+      "base_stat_total": 300,
+      "habitat": "rough-terrain",
+      "color": "yellow",
+      "shape": "upright",
+      "genus": "Mouse Pokémon",
+      "flavor_excerpt": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food."
+    },
+    {
+      "species_name": "sandslash",
+      "display_name": "Sandslash",
+      "dex_number": 28,
+      "types": [
+        "ground"
+      ],
+      "height_dm": 10,
+      "weight_hg": 295,
+      "base_stats": {
+        "hp": 75,
+        "attack": 100,
+        "defense": 110,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 65
+      },
+      "base_stat_total": 450,
+      "habitat": "rough-terrain",
+      "color": "yellow",
+      "shape": "upright",
+      "genus": "Mouse Pokémon",
+      "flavor_excerpt": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape."
+    },
+    {
+      "species_name": "clefairy",
+      "display_name": "Clefairy",
+      "dex_number": 35,
+      "types": [
+        "fairy"
+      ],
+      "height_dm": 6,
+      "weight_hg": 75,
+      "base_stats": {
+        "hp": 70,
+        "attack": 45,
+        "defense": 48,
+        "special-attack": 60,
+        "special-defense": 65,
+        "speed": 35
+      },
+      "base_stat_total": 323,
+      "habitat": "mountain",
+      "color": "pink",
+      "shape": "upright",
+      "genus": "Fairy Pokémon",
+      "flavor_excerpt": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas."
+    },
+    {
+      "species_name": "zubat",
+      "display_name": "Zubat",
+      "dex_number": 41,
+      "types": [
+        "poison",
+        "flying"
+      ],
+      "height_dm": 8,
+      "weight_hg": 75,
+      "base_stats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "special-attack": 30,
+        "special-defense": 40,
+        "speed": 55
+      },
+      "base_stat_total": 245,
+      "habitat": "cave",
+      "color": "purple",
+      "shape": "wings",
+      "genus": "Bat Pokémon",
+      "flavor_excerpt": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets."
+    },
+    {
+      "species_name": "golbat",
+      "display_name": "Golbat",
+      "dex_number": 42,
+      "types": [
+        "poison",
+        "flying"
+      ],
+      "height_dm": 16,
+      "weight_hg": 550,
+      "base_stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 70,
+        "special-attack": 65,
+        "special-defense": 75,
+        "speed": 90
+      },
+      "base_stat_total": 455,
+      "habitat": "cave",
+      "color": "purple",
+      "shape": "wings",
+      "genus": "Bat Pokémon",
+      "flavor_excerpt": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly."
+    },
+    {
+      "species_name": "oddish",
+      "display_name": "Oddish",
+      "dex_number": 43,
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "height_dm": 5,
+      "weight_hg": 54,
+      "base_stats": {
+        "hp": 45,
+        "attack": 50,
+        "defense": 55,
+        "special-attack": 75,
+        "special-defense": 65,
+        "speed": 30
+      },
+      "base_stat_total": 320,
+      "habitat": "grassland",
+      "color": "blue",
+      "shape": "legs",
+      "genus": "Weed Pokémon",
+      "flavor_excerpt": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds."
+    },
+    {
+      "species_name": "paras",
+      "display_name": "Paras",
+      "dex_number": 46,
+      "types": [
+        "bug",
+        "grass"
+      ],
+      "height_dm": 3,
+      "weight_hg": 54,
+      "base_stats": {
+        "hp": 35,
+        "attack": 70,
+        "defense": 55,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 25
+      },
+      "base_stat_total": 285,
+      "habitat": "forest",
+      "color": "red",
+      "shape": "armor",
+      "genus": "Mushroom Pokémon",
+      "flavor_excerpt": "Burrows to suck tree roots. The mushrooms on its back grow by draw­ ing nutrients from the bug host."
+    },
+    {
+      "species_name": "psyduck",
+      "display_name": "Psyduck",
+      "dex_number": 54,
+      "types": [
+        "water"
+      ],
+      "height_dm": 8,
+      "weight_hg": 196,
+      "base_stats": {
+        "hp": 50,
+        "attack": 52,
+        "defense": 48,
+        "special-attack": 65,
+        "special-defense": 50,
+        "speed": 55
+      },
+      "base_stat_total": 320,
+      "habitat": "waters-edge",
+      "color": "yellow",
+      "shape": "upright",
+      "genus": "Duck Pokémon",
+      "flavor_excerpt": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers."
+    },
+    {
+      "species_name": "poliwag",
+      "display_name": "Poliwag",
+      "dex_number": 60,
+      "types": [
+        "water"
+      ],
+      "height_dm": 6,
+      "weight_hg": 124,
+      "base_stats": {
+        "hp": 40,
+        "attack": 50,
+        "defense": 40,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 90
+      },
+      "base_stat_total": 300,
+      "habitat": "waters-edge",
+      "color": "blue",
+      "shape": "legs",
+      "genus": "Tadpole Pokémon",
+      "flavor_excerpt": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand."
+    },
+    {
+      "species_name": "bellsprout",
+      "display_name": "Bellsprout",
+      "dex_number": 69,
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "height_dm": 7,
+      "weight_hg": 40,
+      "base_stats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 35,
+        "special-attack": 70,
+        "special-defense": 30,
+        "speed": 40
+      },
+      "base_stat_total": 300,
+      "habitat": "forest",
+      "color": "green",
+      "shape": "humanoid",
+      "genus": "Flower Pokémon",
+      "flavor_excerpt": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture."
+    },
+    {
+      "species_name": "geodude",
+      "display_name": "Geodude",
+      "dex_number": 74,
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "height_dm": 4,
+      "weight_hg": 200,
+      "base_stats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 100,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 20
+      },
+      "base_stat_total": 300,
+      "habitat": "mountain",
+      "color": "brown",
+      "shape": "arms",
+      "genus": "Rock Pokémon",
+      "flavor_excerpt": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them."
+    },
+    {
+      "species_name": "graveler",
+      "display_name": "Graveler",
+      "dex_number": 75,
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "height_dm": 10,
+      "weight_hg": 1050,
+      "base_stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 115,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 35
+      },
+      "base_stat_total": 390,
+      "habitat": "mountain",
+      "color": "brown",
+      "shape": "humanoid",
+      "genus": "Rock Pokémon",
+      "flavor_excerpt": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction."
+    },
+    {
+      "species_name": "slowpoke",
+      "display_name": "Slowpoke",
+      "dex_number": 79,
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "height_dm": 12,
+      "weight_hg": 360,
+      "base_stats": {
+        "hp": 90,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 15
+      },
+      "base_stat_total": 315,
+      "habitat": "waters-edge",
+      "color": "pink",
+      "shape": "quadruped",
+      "genus": "Dopey Pokémon",
+      "flavor_excerpt": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack."
+    },
+    {
+      "species_name": "slowbro",
+      "display_name": "Slowbro",
+      "dex_number": 80,
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "height_dm": 16,
+      "weight_hg": 785,
+      "base_stats": {
+        "hp": 95,
+        "attack": 75,
+        "defense": 110,
+        "special-attack": 100,
+        "special-defense": 80,
+        "speed": 30
+      },
+      "base_stat_total": 490,
+      "habitat": "waters-edge",
+      "color": "pink",
+      "shape": "upright",
+      "genus": "Hermit Crab Pokémon",
+      "flavor_excerpt": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps."
+    },
+    {
+      "species_name": "seel",
+      "display_name": "Seel",
+      "dex_number": 86,
+      "types": [
+        "water"
+      ],
+      "height_dm": 11,
+      "weight_hg": 900,
+      "base_stats": {
+        "hp": 65,
+        "attack": 45,
+        "defense": 55,
+        "special-attack": 45,
+        "special-defense": 70,
+        "speed": 45
+      },
+      "base_stat_total": 325,
+      "habitat": "sea",
+      "color": "white",
+      "shape": "fish",
+      "genus": "Sea Lion Pokémon",
+      "flavor_excerpt": "The protruding horn on its head is very hard. It is used for bashing through thick ice."
+    },
+    {
+      "species_name": "dewgong",
+      "display_name": "Dewgong",
+      "dex_number": 87,
+      "types": [
+        "water",
+        "ice"
+      ],
+      "height_dm": 17,
+      "weight_hg": 1200,
+      "base_stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "special-attack": 70,
+        "special-defense": 95,
+        "speed": 70
+      },
+      "base_stat_total": 475,
+      "habitat": "sea",
+      "color": "white",
+      "shape": "fish",
+      "genus": "Sea Lion Pokémon",
+      "flavor_excerpt": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters."
+    },
+    {
+      "species_name": "grimer",
+      "display_name": "Grimer",
+      "dex_number": 88,
+      "types": [
+        "poison"
+      ],
+      "height_dm": 9,
+      "weight_hg": 300,
+      "base_stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 25
+      },
+      "base_stat_total": 325,
+      "habitat": "urban",
+      "color": "purple",
+      "shape": "arms",
+      "genus": "Sludge Pokémon",
+      "flavor_excerpt": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories."
+    },
+    {
+      "species_name": "muk",
+      "display_name": "Muk",
+      "dex_number": 89,
+      "types": [
+        "poison"
+      ],
+      "height_dm": 12,
+      "weight_hg": 300,
+      "base_stats": {
+        "hp": 105,
+        "attack": 105,
+        "defense": 75,
+        "special-attack": 65,
+        "special-defense": 100,
+        "speed": 50
+      },
+      "base_stat_total": 500,
+      "habitat": "urban",
+      "color": "purple",
+      "shape": "arms",
+      "genus": "Sludge Pokémon",
+      "flavor_excerpt": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison."
+    },
+    {
+      "species_name": "onix",
+      "display_name": "Onix",
+      "dex_number": 95,
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "height_dm": 88,
+      "weight_hg": 2100,
+      "base_stats": {
+        "hp": 35,
+        "attack": 45,
+        "defense": 160,
+        "special-attack": 30,
+        "special-defense": 45,
+        "speed": 70
+      },
+      "base_stat_total": 385,
+      "habitat": "cave",
+      "color": "gray",
+      "shape": "squiggle",
+      "genus": "Rock Snake Pokémon",
+      "flavor_excerpt": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black."
+    },
+    {
+      "species_name": "krabby",
+      "display_name": "Krabby",
+      "dex_number": 98,
+      "types": [
+        "water"
+      ],
+      "height_dm": 4,
+      "weight_hg": 65,
+      "base_stats": {
+        "hp": 30,
+        "attack": 105,
+        "defense": 90,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 50
+      },
+      "base_stat_total": 325,
+      "habitat": "waters-edge",
+      "color": "red",
+      "shape": "armor",
+      "genus": "River Crab Pokémon",
+      "flavor_excerpt": "Its pincers are not only powerful weapons, they are used for balance when walking sideways."
+    },
+    {
+      "species_name": "voltorb",
+      "display_name": "Voltorb",
+      "dex_number": 100,
+      "types": [
+        "electric"
+      ],
+      "height_dm": 5,
+      "weight_hg": 104,
+      "base_stats": {
+        "hp": 40,
+        "attack": 30,
+        "defense": 50,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 100
+      },
+      "base_stat_total": 330,
+      "habitat": "urban",
+      "color": "red",
+      "shape": "ball",
+      "genus": "Ball Pokémon",
+      "flavor_excerpt": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people."
+    },
+    {
+      "species_name": "electrode",
+      "display_name": "Electrode",
+      "dex_number": 101,
+      "types": [
+        "electric"
+      ],
+      "height_dm": 12,
+      "weight_hg": 666,
+      "base_stats": {
+        "hp": 60,
+        "attack": 50,
+        "defense": 70,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 150
+      },
+      "base_stat_total": 490,
+      "habitat": "urban",
+      "color": "red",
+      "shape": "ball",
+      "genus": "Ball Pokémon",
+      "flavor_excerpt": "It stores electric energy under very high pressure. It often explodes with little or no provocation."
+    },
+    {
+      "species_name": "cubone",
+      "display_name": "Cubone",
+      "dex_number": 104,
+      "types": [
+        "ground"
+      ],
+      "height_dm": 4,
+      "weight_hg": 65,
+      "base_stats": {
+        "hp": 50,
+        "attack": 50,
+        "defense": 95,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 35
+      },
+      "base_stat_total": 320,
+      "habitat": "mountain",
+      "color": "brown",
+      "shape": "upright",
+      "genus": "Lonely Pokémon",
+      "flavor_excerpt": "Because it never removes its skull helmet, no one has ever seen this POKéMON's real face."
+    },
+    {
+      "species_name": "koffing",
+      "display_name": "Koffing",
+      "dex_number": 109,
+      "types": [
+        "poison"
+      ],
+      "height_dm": 6,
+      "weight_hg": 10,
+      "base_stats": {
+        "hp": 40,
+        "attack": 65,
+        "defense": 95,
+        "special-attack": 60,
+        "special-defense": 45,
+        "speed": 35
+      },
+      "base_stat_total": 340,
+      "habitat": "urban",
+      "color": "purple",
+      "shape": "ball",
+      "genus": "Poison Gas Pokémon",
+      "flavor_excerpt": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning."
+    },
+    {
+      "species_name": "weezing",
+      "display_name": "Weezing",
+      "dex_number": 110,
+      "types": [
+        "poison"
+      ],
+      "height_dm": 12,
+      "weight_hg": 95,
+      "base_stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 120,
+        "special-attack": 85,
+        "special-defense": 70,
+        "speed": 60
+      },
+      "base_stat_total": 490,
+      "habitat": "urban",
+      "color": "purple",
+      "shape": "heads",
+      "genus": "Poison Gas Pokémon",
+      "flavor_excerpt": "Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years."
+    },
+    {
+      "species_name": "rhyhorn",
+      "display_name": "Rhyhorn",
+      "dex_number": 111,
+      "types": [
+        "ground",
+        "rock"
+      ],
+      "height_dm": 10,
+      "weight_hg": 1150,
+      "base_stats": {
+        "hp": 80,
+        "attack": 85,
+        "defense": 95,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 25
+      },
+      "base_stat_total": 345,
+      "habitat": "rough-terrain",
+      "color": "gray",
+      "shape": "quadruped",
+      "genus": "Spikes Pokémon",
+      "flavor_excerpt": "A POKéMON with a one-track mind. Once it charges, it won't stop running until it falls asleep."
+    },
+    {
+      "species_name": "chansey",
+      "display_name": "Chansey",
+      "dex_number": 113,
+      "types": [
+        "normal"
+      ],
+      "height_dm": 11,
+      "weight_hg": 346,
+      "base_stats": {
+        "hp": 250,
+        "attack": 5,
+        "defense": 5,
+        "special-attack": 35,
+        "special-defense": 105,
+        "speed": 50
+      },
+      "base_stat_total": 450,
+      "habitat": "urban",
+      "color": "pink",
+      "shape": "upright",
+      "genus": "Egg Pokémon",
+      "flavor_excerpt": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it."
+    },
+    {
+      "species_name": "kangaskhan",
+      "display_name": "Kangaskhan",
+      "dex_number": 115,
+      "types": [
+        "normal"
+      ],
+      "height_dm": 22,
+      "weight_hg": 800,
+      "base_stats": {
+        "hp": 105,
+        "attack": 95,
+        "defense": 80,
+        "special-attack": 40,
+        "special-defense": 80,
+        "speed": 90
+      },
+      "base_stat_total": 490,
+      "habitat": "grassland",
+      "color": "brown",
+      "shape": "upright",
+      "genus": "Parent Pokémon",
+      "flavor_excerpt": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old."
+    },
+    {
+      "species_name": "goldeen",
+      "display_name": "Goldeen",
+      "dex_number": 118,
+      "types": [
+        "water"
+      ],
+      "height_dm": 6,
+      "weight_hg": 150,
+      "base_stats": {
+        "hp": 45,
+        "attack": 67,
+        "defense": 60,
+        "special-attack": 35,
+        "special-defense": 50,
+        "speed": 63
+      },
+      "base_stat_total": 320,
+      "habitat": "waters-edge",
+      "color": "red",
+      "shape": "fish",
+      "genus": "Goldfish Pokémon",
+      "flavor_excerpt": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen."
+    },
+    {
+      "species_name": "seaking",
+      "display_name": "Seaking",
+      "dex_number": 119,
+      "types": [
+        "water"
+      ],
+      "height_dm": 13,
+      "weight_hg": 390,
+      "base_stats": {
+        "hp": 80,
+        "attack": 92,
+        "defense": 65,
+        "special-attack": 65,
+        "special-defense": 80,
+        "speed": 68
+      },
+      "base_stat_total": 450,
+      "habitat": "waters-edge",
+      "color": "red",
+      "shape": "fish",
+      "genus": "Goldfish Pokémon",
+      "flavor_excerpt": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks."
+    },
+    {
+      "species_name": "jynx",
+      "display_name": "Jynx",
+      "dex_number": 124,
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "height_dm": 14,
+      "weight_hg": 406,
+      "base_stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "special-attack": 115,
+        "special-defense": 95,
+        "speed": 95
+      },
+      "base_stat_total": 455,
+      "habitat": "urban",
+      "color": "red",
+      "shape": "humanoid",
+      "genus": "Human Shape Pokémon",
+      "flavor_excerpt": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it."
+    },
+    {
+      "species_name": "magikarp",
+      "display_name": "Magikarp",
+      "dex_number": 129,
+      "types": [
+        "water"
+      ],
+      "height_dm": 9,
+      "weight_hg": 100,
+      "base_stats": {
+        "hp": 20,
+        "attack": 10,
+        "defense": 55,
+        "special-attack": 15,
+        "special-defense": 20,
+        "speed": 80
+      },
+      "base_stat_total": 200,
+      "habitat": "waters-edge",
+      "color": "red",
+      "shape": "fish",
+      "genus": "Fish Pokémon",
+      "flavor_excerpt": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today."
+    },
+    {
+      "species_name": "zapdos",
+      "display_name": "Zapdos",
+      "dex_number": 145,
+      "types": [
+        "electric",
+        "flying"
+      ],
+      "height_dm": 16,
+      "weight_hg": 526,
+      "base_stats": {
+        "hp": 90,
+        "attack": 90,
+        "defense": 85,
+        "special-attack": 125,
+        "special-defense": 90,
+        "speed": 100
+      },
+      "base_stat_total": 580,
+      "habitat": "rare",
+      "color": "yellow",
+      "shape": "wings",
+      "genus": "Electric Pokémon",
+      "flavor_excerpt": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts."
+    },
+    {
+      "species_name": "dratini",
+      "display_name": "Dratini",
+      "dex_number": 147,
+      "types": [
+        "dragon"
+      ],
+      "height_dm": 18,
+      "weight_hg": 33,
+      "base_stats": {
+        "hp": 41,
+        "attack": 64,
+        "defense": 45,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 50
+      },
+      "base_stat_total": 300,
+      "habitat": "waters-edge",
+      "color": "blue",
+      "shape": "squiggle",
+      "genus": "Dragon Pokémon",
+      "flavor_excerpt": "Long considered a mythical POKéMON until recently when a small colony was found living underwater."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "examples": [
+    {
+      "example_id": "tone_001",
+      "source": "ai_overview",
+      "pattern": "fact_first",
+      "text": "Zed is an open-source AI code editor.",
+      "notes": "Starts with the main product fact in a single sentence."
+    },
+    {
+      "example_id": "tone_002",
+      "source": "parallel_agents_docs",
+      "pattern": "workflow_before_promise",
+      "text": "Parallel Agents lets you run multiple agent threads at once, each working independently with its own agent, context window, and conversation history.",
+      "notes": "Explains the mechanism and the scope before drawing a benefit."
+    },
+    {
+      "example_id": "tone_003",
+      "source": "codex_in_zed",
+      "pattern": "specific_integration_language",
+      "text": "As of today, Zed supports Codex out-the-box via ACP.",
+      "notes": "Names the integration path directly."
+    },
+    {
+      "example_id": "tone_004",
+      "source": "repo_readme",
+      "pattern": "plain_positioning",
+      "text": "Welcome to Zed, a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "notes": "Uses grounded product positioning without sales language."
+    }
+  ]
+}

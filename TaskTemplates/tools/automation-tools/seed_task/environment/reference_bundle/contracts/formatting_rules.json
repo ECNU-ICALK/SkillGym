@@ -1,0 +1,30 @@
+{
+  "heading_order": {
+    "stable_page": [
+      "# Latest stable release:",
+      "Released:",
+      "## Highlights",
+      "## What's Changed",
+      "**Full Changelog**:"
+    ],
+    "preview_page": [
+      "# Preview release:",
+      "Released:",
+      "## Highlights",
+      "## What's Changed",
+      "**Full Changelog**:"
+    ]
+  },
+  "highlights": {
+    "must_use_bold_titles": true,
+    "must_omit_pr_links": true,
+    "must_omit_authors": true
+  },
+  "announcement": {
+    "must_use_bold_titles": true,
+    "must_include_pr_links": true
+  },
+  "manifest": {
+    "updated_files_sorted": true
+  }
+}

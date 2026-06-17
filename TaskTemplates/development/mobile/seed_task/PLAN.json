@@ -1,0 +1,151 @@
+{
+  "task_id": "mobile__citibike-commuter-reentry-pwa",
+  "category": "mobile",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/app/workspace/artifacts/release-notes.md",
+  "selected_skill": {
+    "dir": "progressive-web-app",
+    "skillsmp_page": "https://skillsmp.com/skills/sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-progressive-web-app-skill-md",
+    "stars": "35521",
+    "selection_reason": [
+      "移动端分类里热度高，能力边界清楚，直接覆盖离线可用、快捷入口、缓存策略和再次进入体验。",
+      "不依赖外部私有账号、发布权限、设计平台令牌、设备授权或高敏感个人信息。",
+      "可以完全基于公开 GBFS 数据和单容器本地服务构造稳定环境。",
+      "相比原生 iOS、商店发布、设备消息、设计协同类 skill，更适合做可运行、可验证的 Harbor 模板任务。"
+    ]
+  },
+  "screened_skill_families": [
+    {
+      "name": "progressive-web-app",
+      "stars": "35521",
+      "decision": "selected",
+      "notes": "适合把安装入口、离线体验、缓存更新和弱网再次进入收束成明确可测的移动 Web 交付。"
+    },
+    {
+      "name": "mobile-developer",
+      "stars": "35521",
+      "decision": "reserve",
+      "notes": "范围更宽，容易把题型拉向泛移动开发，不如 PWA 目标聚焦。"
+    },
+    {
+      "name": "building-native-ui",
+      "stars": "35521",
+      "decision": "reserve",
+      "notes": "更偏 UI 结构和路由组织，弱化了离线链路与快捷入口这一组关键能力。"
+    },
+    {
+      "name": "android-ui-verification",
+      "stars": "35521",
+      "decision": "not selected",
+      "notes": "更像测试执行 skill，不适合作为本任务主能力绑定。"
+    },
+    {
+      "name": "installing-mobile-preview-builds",
+      "stars": "38187",
+      "decision": "rejected",
+      "notes": "依赖设备和安装链路。"
+    },
+    {
+      "name": "mobile-release",
+      "stars": "38187",
+      "decision": "rejected",
+      "notes": "依赖发布权限和外部流程。"
+    },
+    {
+      "name": "imessage",
+      "stars": "122488",
+      "decision": "rejected",
+      "notes": "需要消息权限和设备上下文。"
+    },
+    {
+      "name": "swiftui-patterns",
+      "stars": "169199",
+      "decision": "rejected",
+      "notes": "Apple 原生工具链不适合当前单容器模板。"
+    },
+    {
+      "name": "compose-multiplatform-patterns",
+      "stars": "169199",
+      "decision": "rejected",
+      "notes": "栈更重，环境与验证成本明显更高。"
+    }
+  ],
+  "real_data_sources": [
+    {
+      "local_input": "environment/data/system_information.json",
+      "role": "系统名称、运营方、时区和入口信息",
+      "source": "Citi Bike GBFS system_information",
+      "link": "https://gbfs.citibikenyc.com/gbfs/en/system_information.json"
+    },
+    {
+      "local_input": "environment/data/station_information.json",
+      "role": "站点元数据、容量、经纬度、站型、short name",
+      "source": "Citi Bike GBFS station_information",
+      "link": "https://gbfs.citibikenyc.com/gbfs/en/station_information.json"
+    },
+    {
+      "local_input": "environment/data/station_status.json",
+      "role": "站点可借车辆、可还空桩、可租借状态、最近上报时间",
+      "source": "Citi Bike GBFS station_status",
+      "link": "https://gbfs.citibikenyc.com/gbfs/en/station_status.json"
+    }
+  ],
+  "task_shape": {
+    "scenario": "commuter mobile station board delivery",
+    "deliverables": [
+      "updated mobile web app under /app/workspace/app",
+      "/app/workspace/artifacts/release-notes.md"
+    ],
+    "live_chain": [
+      "local citibike-api service on port 3001",
+      "public GBFS snapshot files under /app/workspace/data",
+      "existing mobile web app code under /app/workspace/app"
+    ],
+    "difficulty_rationale": [
+      "需要把移动端浏览、再次进入、数据时效表达和快捷入口体验收口到同一套应用代码里。",
+      "既要保证在线重载能拿到更新后的当前数据，又要保证网络中断后仍可继续访问已访问内容。",
+      "可以通过替换当前数据快照稳定制造 without_skill 的行动级失败，例如快捷入口元数据缺漏、再次进入断链或缓存策略错误导致在线数据不更新。"
+    ]
+  },
+  "instruction_design": {
+    "principles": [
+      "题面只交代应用场景、正式交付合同、输入范围和禁止事项。",
+      "不在 instruction 中直接点名 service worker、manifest、offline 页面、缓存模式或 verifier 逻辑。",
+      "保留网络波动、再次进入、桌面快捷入口和数据时效提示这些业务症状，让 solver 自己识别需要补哪组移动 Web 能力。",
+      "明确禁止改数据、改本地数据服务、改启动方式或改成离线导出脚本。"
+    ],
+    "expected_solver_discovery": [
+      "识别出当前任务需要一套可安装、可再次进入、可在网络波动下继续浏览的移动 Web 工作流。",
+      "识别出导航壳层、站点详情内容和数据副本都需要配合处理，不能只补页面外观。",
+      "识别出 API 数据需要在线优先更新，同时为再次进入保留已访问内容。"
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "首页、搜索、详情能在手机视口下完成主要流程",
+      "manifest 已接入，快捷入口 URL 正确，浏览器中已注册并激活 service worker",
+      "离线后再次进入首页与已访问详情页仍可使用，并带有保存状态提示",
+      "断网后可直接打开离线说明页，并带恢复引导",
+      "release-notes.md 覆盖首页、搜索、详情、再次进入、快捷入口和数据时效"
+    ],
+    "guardrails": [
+      "本地 API 必须按给定数据返回当前快照和交付合同",
+      "切换到替代数据快照后，首页与详情必须反映新的站点数值，防止长期停留在旧副本",
+      "输入数据文件和本地 API 服务代码不得变化"
+    ],
+    "without_skill_failure_target": "without_skill 至少保留一项行动级失败，优先集中在快捷入口元数据缺漏、离线再次进入断链、缓存策略错误导致在线数据不更新，或页面没有清楚提示当前内容状态。"
+  },
+  "environment_constraints": {
+    "container_shape": "single Docker container",
+    "runtime_rule": "with_skill 和 without_skill 的唯一区别只能来自 environment/skills 及其对应 runtime 复制逻辑",
+    "skill_handling": "progressive-web-app 仅做原样复制，不改写内容",
+    "e2b_rule": "每次 E2B 实验都从新的隔离 runtime 副本启动"
+  },
+  "experiment_results": {
+    "oracle": "pass: mobile-iter-20260503-rerun3-oracle / task_oracle_e2b__XdDwDS4",
+    "with_skill": "paired runs used in README: rerun4 pass, rerun6 fail, rerun7 fail",
+    "without_skill": "paired runs used in README: rerun4 fail, rerun6 fail, rerun7 fail"
+  },
+  "status": "task validated in E2B; README updated with 3 paired comparison runs; final cleanup pending"
+}

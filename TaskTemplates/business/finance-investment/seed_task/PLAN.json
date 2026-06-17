@@ -1,0 +1,63 @@
+{
+  "task_id": "finance-investment__arkk-factor-risk-review",
+  "category": "finance-investment",
+  "task_role": "template",
+  "difficulty": "hard",
+  "primary_output_file": "/root/output/arkk_risk_report.json",
+  "selected_skill": {
+    "dir": "risk-metrics-calculation",
+    "skillsmp_name": "risk-metrics-calculation.md",
+    "stars_observed": "30,958",
+    "purpose": "Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, drawdown, active risk, factor exposure, HAC statistics, and risk-limit monitoring.",
+    "selection_rationale": "The finance-investment category contains higher-star qualitative skills, but this task needs deterministic, behavior-verifiable investment-risk calculations. risk-metrics-calculation is the closest popular skill to the verifier's required competency."
+  },
+  "environment_design": {
+    "shape": "single Docker container",
+    "data_sources": [
+      "Yahoo Finance adjusted daily ETF prices",
+      "Kenneth R. French daily Fama-French 5 factors",
+      "Kenneth R. French daily momentum factor"
+    ],
+    "determinism": "Public data is frozen into /root/input CSV files for repeatable verification.",
+    "anti_toy_features": [
+      "multi-file financial data alignment",
+      "factor unit conversion",
+      "risk-free-rate excess-return workflow",
+      "tail-risk, downside-beta, and active-risk calculations",
+      "deterministic moving-block bootstrap stress grid",
+      "policy-threshold breach evaluation"
+    ]
+  },
+  "verifier_design": {
+    "main_tests": [
+      "output existence, parseability, schema, and numeric types",
+      "analysis window and common trading-day alignment",
+      "portfolio absolute risk metrics",
+      "benchmark-relative active risk metrics",
+      "Fama-French plus momentum factor regression",
+      "bootstrap tail risk and stress-harness grid",
+      "risk policy breach list"
+    ],
+    "guardrails": [
+      "input data hashes must remain unchanged",
+      "VaR and CVaR must be negative lower-tail values",
+      "French factors must be converted from percent to decimal",
+      "downside beta must use only negative QQQ days",
+      "output must contain the full numeric stress grid and only finite numeric values"
+    ]
+  },
+  "expected_skill_effect": {
+    "without_skill": "The task remains theoretically solvable from the data and finance concepts, but agents must infer several institutional risk-methodology conventions and rebuild a deterministic stress grid without helper guidance.",
+    "with_skill": "The skill exposes the risk-metric workflow and a non-answer helper script that derives the report from input data, reducing convergence cost while keeping task data, tests, dependencies, and instructions identical."
+  },
+  "final_e2b_results": {
+    "oracle_job": "finance-arkk-oracle-final11-20260426-021252",
+    "oracle_reward": 1.0,
+    "with_skill_job": "finance-arkk-with-skills-final11-20260426-021638",
+    "with_skill_trials": 3,
+    "with_skill_passed": 3,
+    "without_skill_job": "finance-arkk-without-skills-final11-20260426-023439",
+    "without_skill_trials": 3,
+    "without_skill_passed": 0
+  }
+}

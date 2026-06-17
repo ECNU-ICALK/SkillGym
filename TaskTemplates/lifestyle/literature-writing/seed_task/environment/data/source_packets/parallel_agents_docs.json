@@ -1,0 +1,39 @@
+{
+  "doc_id": "parallel_agents_docs",
+  "title": "Parallel Agents - Zed",
+  "url": "https://raw.githubusercontent.com/zed-industries/zed/main/docs/src/ai/parallel-agents.md",
+  "document_type": "docs",
+  "snapshot_note": "Structured fact packet distilled from Zed's public Parallel Agents documentation.",
+  "facts": [
+    {
+      "fact_id": "parallel_agents_docs.independent_threads",
+      "statement": "Parallel Agents lets users run multiple agent threads at once, each with its own agent, context window, and conversation history.",
+      "tags": ["parallel_agents", "context"]
+    },
+    {
+      "fact_id": "parallel_agents_docs.default_layout_02330",
+      "statement": "From version 0.233.0 onward, the Agent Panel and Threads Sidebar are on the left by default, with the Project Panel and Git Panel on the right.",
+      "tags": ["layout", "release"]
+    },
+    {
+      "fact_id": "parallel_agents_docs.grouped_by_project",
+      "statement": "The Threads Sidebar groups threads by project and shows thread title, status indicator, and active agent.",
+      "tags": ["threads_sidebar", "ui"]
+    },
+    {
+      "fact_id": "parallel_agents_docs.multiple_projects",
+      "statement": "The Threads Sidebar can hold multiple projects at once, each with its own thread list and conversation history.",
+      "tags": ["projects", "workflow"]
+    },
+    {
+      "fact_id": "parallel_agents_docs.multi_root",
+      "statement": "A single project can contain multiple folders so agents can read and write across those folders in one thread.",
+      "tags": ["projects", "workflow"]
+    },
+    {
+      "fact_id": "parallel_agents_docs.worktree_isolation",
+      "statement": "If two threads might edit the same files, users can start one in a new Git worktree to give it an isolated checkout.",
+      "tags": ["git", "workflow"]
+    }
+  ]
+}

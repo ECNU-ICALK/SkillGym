@@ -1,0 +1,15 @@
+{
+  "data": {
+    "timezone": "America/New_York",
+    "purchase_url": "https://account.citibikenyc.com/access-plans",
+    "operator": "Lyft",
+    "language": "en",
+    "system_id": "lyft_nyc",
+    "url": "http://www.citibikenyc.com",
+    "name": "Citi Bike",
+    "start_date": "2013-05-01"
+  },
+  "last_updated": 1777743438,
+  "ttl": 60,
+  "version": "1.1"
+}

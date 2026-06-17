@@ -1,0 +1,13 @@
+{
+  "name": "energy-api",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "csv-parse": "5.5.6",
+    "express": "4.21.1"
+  }
+}

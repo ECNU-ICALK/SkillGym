@@ -1,0 +1,10 @@
+{
+  "as_of_date": "2023-04-02",
+  "manifest_endpoint": "http://127.0.0.1:8155/api/manifest",
+  "notes": [
+    "The reference export is older context and does not define the full authoritative market set.",
+    "Use the live manifest and paginated catalog endpoints as the authoritative source for market coverage."
+  ],
+  "reference_export_path": "/app/data/reference/market_reference.csv",
+  "workspace_id": "marketwatch-daily-20230402"
+}

@@ -1,0 +1,51 @@
+{
+  "task_id": "git-workflows__meridian-hotfix-isolated-worktree",
+  "category": "git-workflows",
+  "binding_skill": "using-git-worktrees",
+  "status": "validated",
+  "design_goals": [
+    "Require a real isolated git worktree to protect an existing dirty primary checkout.",
+    "Keep the hotfix workflow fully local, single-container, and reproducible.",
+    "Use action-level verifier checks instead of brittle formatting-only checks.",
+    "Ensure with-skill and without-skill differ only by environment/skills presence."
+  ],
+  "input_artifacts": [
+    "environment/data/hotfix_request.json",
+    "environment/data/changelog_fragments.ndjson",
+    "environment/data/reference/git_worktree.md",
+    "environment/data/reference/github_flow.md",
+    "environment/data/reference/conventional_commits.md",
+    "environment/data/reference/keep_a_changelog.md"
+  ],
+  "environment_shape": {
+    "single_container": true,
+    "repo_seed_generated_at_build": true,
+    "dirty_primary_checkout": true,
+    "isolated_hotfix_branch_required": true
+  },
+  "verifier_focus": {
+    "main_tests": [
+      "hotfix outputs exist and are parseable",
+      "hotfix pipeline reruns successfully inside the target worktree",
+      "hidden pricing regression cases pass",
+      "release notes and report facts match the data contract"
+    ],
+    "guardrails": [
+      "primary checkout branch and dirty diff remain unchanged",
+      "target hotfix branch exists in a linked worktree and not in the primary checkout",
+      "release branch ancestry is preserved",
+      "input data remains unchanged"
+    ]
+  },
+  "expected_solver_behavior": [
+    "Inspect the current repository state and notice the dirty primary checkout cannot be disturbed.",
+    "Create an isolated worktree from the requested release branch under the existing hidden repo-local worktree directory.",
+    "Fix the pricing regression inside the hotfix branch worktree.",
+    "Run the in-repo hotfix script to generate release artifacts."
+  ],
+  "iteration_notes": [
+    "Final validated version keeps both .worktrees/ and worktrees/ present, but only the hidden repo-local .worktrees/ path satisfies the full guardrail set.",
+    "The visible tracked worktrees/ directory acts as a realistic decoy: without-skill runs often choose it, which pollutes the primary checkout and leaves action-level failures without changing the skill body.",
+    "Three valid E2B comparisons on the final version produced stable separation: with-skill passed 3/3, without-skill passed 0/3."
+  ]
+}

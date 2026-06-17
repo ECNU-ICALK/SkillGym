@@ -1,0 +1,7 @@
+{
+  "id": "webdev_async_functions",
+  "description_sentences": [
+    "Explains why async functions make Promise-based flows easier to compose without hiding what the runtime is doing.",
+    "Use it for a deeper pass on readability, sequencing, and how Promise-returning functions evolve into `await`-driven code."
+  ]
+}

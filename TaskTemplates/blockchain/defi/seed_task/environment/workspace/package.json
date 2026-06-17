@@ -1,0 +1,17 @@
+{
+  "name": "harbor-defi-governance-launch",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "replay": "hardhat run scripts/replay.js --network hardhat",
+    "launch": "bash run_launch.sh"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "3.0.8",
+    "@openzeppelin/contracts": "4.9.6",
+    "ethers": "6.13.2",
+    "hardhat": "2.22.7",
+    "js-yaml": "4.1.0"
+  }
+}

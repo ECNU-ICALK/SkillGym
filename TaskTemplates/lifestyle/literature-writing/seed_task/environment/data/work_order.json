@@ -1,0 +1,57 @@
+{
+  "campaign_id": "zed_parallel_agents_launch_q2",
+  "campaign_name": "Zed Parallel Agents Launch",
+  "audience": "Developers who already use AI tools and want a clearer way to run parallel agent work inside an editor.",
+  "required_deliverables": [
+    "homepage_hero",
+    "feature_page_section",
+    "docs_intro",
+    "release_note",
+    "short_update"
+  ],
+  "mandatory_topics": [
+    "Parallel Agents lets users run multiple agent threads at once.",
+    "The Threads Sidebar is the main place to start, manage, and switch between threads.",
+    "Different threads can use different agents, including external agents such as Codex through ACP.",
+    "The campaign should include at least one grounded point about Zed's open-source, Rust, or GPU-accelerated foundation."
+  ],
+  "required_fact_ids": [
+    "ai_overview.editor_identity",
+    "ai_overview.native_rust",
+    "parallel_agents_blog.parallel_same_window",
+    "parallel_agents_blog.threads_sidebar_access",
+    "parallel_agents_docs.independent_threads",
+    "codex_in_zed.codex_via_acp"
+  ],
+  "word_limits": {
+    "homepage_hero": {
+      "headline_max_words": 8,
+      "subheadline_min_words": 8,
+      "subheadline_max_words": 24,
+      "body_min_words": 35,
+      "body_max_words": 90
+    },
+    "feature_page_section": {
+      "body_min_words": 90,
+      "body_max_words": 180
+    },
+    "docs_intro": {
+      "body_min_words": 80,
+      "body_max_words": 160
+    },
+    "release_note": {
+      "section_min_words": 25,
+      "section_max_words": 120
+    },
+    "short_update": {
+      "body_min_words": 35,
+      "body_max_words": 90
+    }
+  },
+  "must_avoid": [
+    "Unsupported speed claims beyond the source packet",
+    "Made-up compatibility promises",
+    "Claims that agents work without user review or project context",
+    "Generic AI-launch hype"
+  ]
+}

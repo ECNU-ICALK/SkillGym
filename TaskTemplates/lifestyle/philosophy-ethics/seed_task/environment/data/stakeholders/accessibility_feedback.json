@@ -1,0 +1,12 @@
+{
+  "stakeholder": "student_support_services",
+  "requested_conditions": [
+    "accessibility_review_ready",
+    "multilingual_support_level",
+    "human_remedy_path"
+  ],
+  "notes": [
+    "Accessibility review cannot be deferred until after launch.",
+    "Language support and escalation paths should be visible in the board packet."
+  ]
+}

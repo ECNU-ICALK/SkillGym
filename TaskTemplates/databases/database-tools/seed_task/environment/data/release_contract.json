@@ -1,0 +1,96 @@
+{
+  "analysis_window": {
+    "start_date": "2026-05-11",
+    "end_date": "2026-05-15",
+    "weekday_isodow_values": [1, 2, 3, 4, 5]
+  },
+  "timezone_authority": {
+    "from_agency_id": "1",
+    "fallback_timezone": "America/New_York"
+  },
+  "selected_routes": [
+    {
+      "route_family": "Blue",
+      "route_id": "Blue"
+    },
+    {
+      "route_family": "Orange",
+      "route_id": "Orange"
+    },
+    {
+      "route_family": "Red",
+      "route_id": "Red"
+    }
+  ],
+  "output_conventions": {
+    "route_short_name_fallback_to_route_id": true,
+    "station_rollup_rule": "Use parent_station when present; otherwise use stop_id as the station identity."
+  },
+  "time_windows": [
+    {
+      "window_name": "morning_peak",
+      "start_time": "06:00:00",
+      "end_time": "08:59:59"
+    },
+    {
+      "window_name": "evening_peak",
+      "start_time": "16:00:00",
+      "end_time": "18:59:59"
+    }
+  ],
+  "panel_rules": {
+    "eligible_station_scope": "For each route_id and direction_id, include every rolled-up station that has at least one in-scope departure event in any configured window during the analysis window.",
+    "zero_fill_rule": "For each active service_date, route_id, direction_id, eligible station, and configured window, output one row even when scheduled_trip_count is zero.",
+    "first_last_time_rule": "Populate first_departure_local and last_departure_local from in-window departure events for the row. Leave them blank when the row is zero-filled."
+  },
+  "terminal_origin_rules": {
+    "derive_candidates_from": "Use the first stop of each trip after station rollup.",
+    "candidate_window_filter_basis": "Use the first-stop departure time on the GTFS service-day clock.",
+    "candidate_min_active_service_days_in_analysis_window": 2,
+    "rolling_window_days_inclusive": 4,
+    "snapshot_dates": ["2026-05-14", "2026-05-15"],
+    "min_active_service_days_per_snapshot": 2,
+    "min_scheduled_departure_count_per_snapshot": 4
+  },
+  "ranking_weights": {
+    "median_headway_minutes": 0.2,
+    "p90_headway_minutes": 0.35,
+    "max_headway_minutes": 0.45
+  },
+  "ranking_partition": [
+    "snapshot_date",
+    "route_id",
+    "window_name"
+  ],
+  "ranking_sort_order": [
+    {
+      "field": "service_gap_score",
+      "direction": "desc"
+    },
+    {
+      "field": "max_headway_minutes",
+      "direction": "desc"
+    },
+    {
+      "field": "p90_headway_minutes",
+      "direction": "desc"
+    },
+    {
+      "field": "terminal_station_name",
+      "direction": "asc"
+    },
+    {
+      "field": "terminal_station_id",
+      "direction": "asc"
+    }
+  ],
+  "required_relations": [
+    "raw.gtfs_routes",
+    "raw.gtfs_trips",
+    "raw.gtfs_stop_times",
+    "core.service_dates",
+    "core.station_departures",
+    "mart.weekday_station_window_panel",
+    "mart.terminal_service_gap_leaderboard"
+  ]
+}

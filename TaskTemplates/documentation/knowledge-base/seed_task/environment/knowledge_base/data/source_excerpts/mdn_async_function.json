@@ -1,0 +1,7 @@
+{
+  "id": "mdn_async_function",
+  "description_sentences": [
+    "MDN's reference page focuses on `async function` syntax, return behavior, and how `await` changes control flow.",
+    "It is the quickest authoritative lookup for edge cases around async function semantics."
+  ]
+}

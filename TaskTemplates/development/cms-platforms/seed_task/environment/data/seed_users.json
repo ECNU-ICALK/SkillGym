@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "email": "admin@metfeed.local",
+      "password": "AdminPass123!",
+      "role": "admin",
+      "displayName": "Admin User"
+    },
+    {
+      "email": "curator@metfeed.local",
+      "password": "CuratorPass123!",
+      "role": "curator",
+      "displayName": "Curator User"
+    },
+    {
+      "email": "editor@metfeed.local",
+      "password": "EditorPass123!",
+      "role": "editor",
+      "displayName": "Editor User"
+    },
+    {
+      "email": "assistant.editor@metfeed.local",
+      "password": "AssistantEditorPass123!",
+      "role": "editor",
+      "displayName": "Assistant Editor"
+    }
+  ]
+}

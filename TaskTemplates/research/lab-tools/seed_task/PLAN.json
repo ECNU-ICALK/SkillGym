@@ -1,0 +1,69 @@
+{
+  "task_id": "lab-tools__egfr_bioactivity_review_notebook",
+  "category": "lab-tools",
+  "difficulty": "hard",
+  "selected_skill": {
+    "name": "jupyter-notebook",
+    "stars": "60.4k",
+    "rationale": "High-star notebook workflow skill that is public-safe, does not depend on external private accounts, and matches a rerunnable lab analysis handoff."
+  },
+  "design_goals": [
+    "Require a solver to deliver one rerunnable notebook plus aligned CSV, JSON, and Markdown review outputs from a bundled ChEMBL packet.",
+    "Push the task beyond a single final panel by requiring a filter audit, a baseline candidate trace, and a compact contract scenario sweep inside the notebook workflow.",
+    "Keep the output contract explicit while leaving the analysis path, notebook organization, QC framing, and scenario reasoning workflow to the solver and the bundled skill.",
+    "Keep with_skill and without_skill identical except for environment/skills presence and the corresponding runtime copy behavior."
+  ],
+  "verifier_focus": [
+    "all required outputs exist, parse, and satisfy the notebook plus data-contract requirements",
+    "candidate selection is recomputed from the bundled snapshots and screening contract rather than copied from legacy_shortlist.csv",
+    "filter_audit.csv, scenario_comparison.csv, and candidate_trace.json expose intermediate reasoning and match oracle recomputation",
+    "the notebook executes top-to-bottom, regenerates all deliverables, and visibly performs the review workflow",
+    "mutating the bundled source data or contract changes the rerun outputs",
+    "input data and bundled skill files are not modified"
+  ],
+  "oracle_validation": {
+    "local": "passed: 16 passed via pytest with generated data and skill hash manifests on 2026-05-07",
+    "e2b": "passed: Harbor oracle reward 1.0 in jobs labtools-egfr-oracle4-20260507-current and labtools-egfr-oracle5-20260507-current"
+  },
+  "contrast_experiments": {
+    "valid_trials_per_arm": 3,
+    "without_skill": {
+      "pass_rate": "0/3",
+      "avg_agent_seconds": 516.6,
+      "avg_tokens": 930692
+    },
+    "with_skill": {
+      "pass_rate": "3/3",
+      "avg_agent_seconds": 503.6,
+      "avg_tokens": 1494635
+    },
+    "comparison_rule": "with_skill and without_skill differ only by environment/skills presence in the runtime copy.",
+    "notes": "Recent effective contrast set used for README metrics: u7, u10, and u11. The latest current-checksum runs are u10 and u11, both with task checksum a450b278fed4c7f7904b71e413679a2b87e7162a88136684a77404d382818cb8 on the with-skill arm. Without-skill failures remained action-level: u7 failed candidate_trace assay provenance ordering/content, u10 failed contract-mutation rerun robustness in the notebook brief generation cell, and u11 failed filter-audit reasoning detail plus brief/scenario mutation robustness."
+  },
+  "reference_data": [
+    {
+      "file": "environment/data/egfr_activity_snapshot.json",
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL203&limit=300"
+    },
+    {
+      "file": "environment/data/egfr_assay_snapshot.json",
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/assay.json"
+    },
+    {
+      "file": "environment/data/egfr_target_snapshot.json",
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/target/CHEMBL203.json"
+    },
+    {
+      "file": "environment/data/egfr_molecule_snapshot.json",
+      "source_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json"
+    },
+    {
+      "file": "environment/data/legacy_shortlist.csv",
+      "source_url": ""
+    },
+    {
+      "file": "environment/data/screening_contract.json",
+      "source_url": ""
+    }
+  ]
+}

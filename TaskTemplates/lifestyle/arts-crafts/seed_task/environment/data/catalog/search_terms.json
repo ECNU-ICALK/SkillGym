@@ -1,0 +1,19 @@
+{
+  "queries": [
+    {
+      "slot_id": "yarn-management",
+      "query": "yarn bowl",
+      "limit": 6
+    },
+    {
+      "slot_id": "stitch-marker",
+      "query": "stitch marker",
+      "limit": 6
+    },
+    {
+      "slot_id": "tool-storage",
+      "query": "crochet hook holder",
+      "limit": 6
+    }
+  ]
+}

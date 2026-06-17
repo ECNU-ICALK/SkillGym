@@ -1,0 +1,38 @@
+{
+  "task_id": "system-admin__debian-security-digest-recovery",
+  "category": "system-admin",
+  "bound_skill": "tmux",
+  "reference_skillsmp_url": "https://skillsmp.com/skills/openclaw-openclaw-skills-tmux-skill-md",
+  "design_summary": {
+    "scenario": "Take over an already staged Debian Security digest publication by discovering and continuing the one live recovery console session that already owns the publication state.",
+    "why_skill_relevant": [
+      "The supported control path is an already running live recovery console session rather than a fresh one-off command.",
+      "Publication requires a session-local token that is only valid in the existing staged session, and write actions are bound to that staged console identity.",
+      "Reliable completion benefits from tmux session discovery, attaching to the right live pane, safe send-keys usage, and pane capture polling."
+    ],
+    "real_data": [
+      "https://snapshot.debian.org/archive/debian-security/20240311T000000Z/dists/bookworm-security/InRelease",
+      "https://snapshot.debian.org/archive/debian-security/20240311T000000Z/dists/bookworm-security/main/binary-amd64/Packages.xz"
+    ],
+    "single_container": true
+  },
+  "verifier_focus": {
+    "main_tests": [
+      "Output report matches digest rebuilt from the real snapshot metadata.",
+      "Published artifact exists and its sha256 matches the reported digest hash.",
+      "Publish receipt matches the output contract.",
+      "Console audit log shows the pre-staged live session completed the publish and report steps without a substitute session taking over."
+    ],
+    "guardrails": [
+      "Immutable upstream inputs and console implementation hashes remain unchanged.",
+      "Runtime state is healthy after recovery and still points at the staged session owner.",
+      "The receipt session, publish event, report event, and staged-session context all agree on one session identity."
+    ]
+  },
+  "control_condition_rule": "with_skill and without_skill must differ only by environment/skills and corresponding runtime copy behavior",
+  "experiment_status": {
+    "local_oracle": "final e2b oracle21 passed with reward 1.0 on the timeout-adjusted template",
+    "with_skill_e2b": "passed in 3/3 recent task-level trials (with5, with11, with12)",
+    "without_skill_e2b": "failed in 3/3 recent task-level trials (without5, without8, without11); clean failures are staged-session ownership violations rather than startup failures"
+  }
+}

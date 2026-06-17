@@ -1,0 +1,22 @@
+{
+  "exported_at": "2026-05-05T13:45:00-05:00",
+  "covers_until": "2026-05-05T15:00:00-05:00",
+  "note": "Earlier weather export for internal backlog review.",
+  "hours": [
+    {
+      "time_local": "2026-05-04T08:00:00-05:00",
+      "apparent_temperature_c": 17.0,
+      "precipitation_probability": 0
+    },
+    {
+      "time_local": "2026-05-04T18:00:00-05:00",
+      "apparent_temperature_c": 27.8,
+      "precipitation_probability": 0
+    },
+    {
+      "time_local": "2026-05-05T15:00:00-05:00",
+      "apparent_temperature_c": 31.7,
+      "precipitation_probability": 1
+    }
+  ]
+}

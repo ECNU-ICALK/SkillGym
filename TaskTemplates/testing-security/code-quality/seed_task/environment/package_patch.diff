@@ -1,0 +1,11 @@
+diff --git a/src/releaseMessaging.ts b/src/releaseMessaging.ts
+index 8190c46..9808cee 100644
+--- a/src/releaseMessaging.ts
++++ b/src/releaseMessaging.ts
+@@ -1,4 +1,5 @@
+ export const releaseMessaging = {
+   banner: "Toolchain digest candidate",
+-  reviewerHint: "Run the repository verification path before promotion."
++  reviewerHint: "Audit the current candidate before promotion.",
++  candidateTrack: "june-review",
+ } as const;

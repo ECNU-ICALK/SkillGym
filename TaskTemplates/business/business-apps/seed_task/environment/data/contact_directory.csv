@@ -1,0 +1,9 @@
+account_id,owner_name,region,escalation_contact
+ACC-101,Maya Ortiz,NA,ops-na@example.com
+ACC-102,Nolan Price,NA,ops-na@example.com
+ACC-103,Priya Singh,EU,ops-eu@example.com
+ACC-104,Owen Clarke,EU,ops-eu@example.com
+ACC-105,Lena Hart,APAC,ops-apac@example.com
+ACC-106,Grace Kim,NA,ops-na@example.com
+ACC-107,Rafael Diaz,LATAM,ops-latam@example.com
+ACC-108,Tessa Moore,NA,ops-na@example.com

@@ -1,0 +1,7 @@
+country_code,country_name,airport_count,open_airport_count,scheduled_open_airport_count,runway_count,longest_runway_ft
+AE,United Arab Emirates,36,32,0,0,
+AU,Australia,40,32,0,2,3799
+IS,Iceland,35,27,2,9,4921
+NO,Norway,35,32,6,22,9810
+NZ,New Zealand,38,32,0,3,98
+ZA,South Africa,40,32,1,13,8202

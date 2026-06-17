@@ -1,0 +1,23 @@
+{
+  "page_id": "plans",
+  "path": "/plans/",
+  "title": "Plans overview",
+  "meta_description": "Legacy plans page.",
+  "h1": "Plans",
+  "canonical_path": "/plans/",
+  "indexable": true,
+  "include_in_sitemap": true,
+  "structured_data": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Plans"
+    }
+  ],
+  "body_blocks": [
+    {
+      "type": "paragraph",
+      "text": "This older plans page competes with the canonical pricing page."
+    }
+  ]
+}

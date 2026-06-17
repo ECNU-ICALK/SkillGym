@@ -1,0 +1,4 @@
+-- This workspace file is only a placeholder.
+-- Build analysis.airport_zone_snapshot_leaderboard from the contract and local
+-- PostgreSQL sources. If the local PostgreSQL skill is available, use the
+-- bundled airport rolling-mart scaffold there instead of this file.

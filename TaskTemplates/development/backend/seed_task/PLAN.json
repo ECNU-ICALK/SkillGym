@@ -1,0 +1,84 @@
+{
+  "task_id": "partner-order-refund-api-contract",
+  "category": "backend",
+  "design_status": "e2b_validated_complete",
+  "selected_skill": "api-design",
+  "selected_skill_stars": "169.2k",
+  "selection_rationale": [
+    "High-star backend skill with direct verifier-friendly surface area: URLs, methods, status codes, pagination, filtering, error envelopes, versioning, and rate limiting.",
+    "No dependency on private accounts, external cloud permissions, social accounts, or sensitive personal workflows.",
+    "Suitable for a single-container task with a realistic partner-facing service and deterministic local data."
+  ],
+  "rejected_high_star_skills": [
+    {
+      "skill": "acp-router",
+      "stars": "365.8k",
+      "reason": "Depends on external ACP/runtime routing flows rather than a self-contained backend repair task."
+    },
+    {
+      "skill": "xurl",
+      "stars": "365.8k",
+      "reason": "Requires authenticated external social-platform operations and introduces account, permission, and privacy risk."
+    }
+  ],
+  "task_shape": {
+    "service_type": "partner-facing REST API",
+    "domain": "orders and refund requests",
+    "runtime": "single-container Node.js service with local data files",
+    "solver_action": "repair the existing service implementation instead of generating a report"
+  },
+  "planned_verifier_focus": [
+    "Resource naming and stable versioned routes",
+    "Semantic HTTP status codes",
+    "Consistent success and error response envelopes",
+    "Pagination, filtering, and sorting correctness",
+    "Refund create idempotent retry behavior",
+    "Authentication and rate-limit headers/429 behavior",
+    "Anti-cheat checks against hardcoded fixture-only behavior"
+  ],
+  "real_data_sources": [
+    {
+      "planned_file": "environment/workspace/data/orders_snapshot.json",
+      "reference_type": "field shape and business semantics",
+      "reference": "Shopify Order resource",
+      "link": "https://shopify.dev/docs/api/admin-rest/latest/resources/order"
+    },
+    {
+      "planned_file": "environment/workspace/data/customers_snapshot.json",
+      "reference_type": "field shape and customer/address semantics",
+      "reference": "Shopify Customer resource",
+      "link": "https://shopify.dev/docs/api/admin-rest/latest/resources/customer"
+    },
+    {
+      "planned_file": "environment/workspace/data/refund_requests.json",
+      "reference_type": "refund object fields and refund lifecycle semantics",
+      "reference": "Shopify Refund resource",
+      "link": "https://shopify.dev/docs/api/admin-rest/latest/resources/refund"
+    },
+    {
+      "planned_file": "environment/workspace/data/refund_requests.json",
+      "reference_type": "safe retry behavior for create operations",
+      "reference": "Stripe idempotent requests",
+      "link": "https://docs.stripe.com/api/idempotent_requests"
+    },
+    {
+      "planned_file": "environment/workspace/data/refund_requests.json",
+      "reference_type": "refund status and object semantics",
+      "reference": "Stripe Refund object",
+      "link": "https://docs.stripe.com/api/refunds/object"
+    }
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime skill-copy logic may differ between with_skill and without_skill variants.",
+  "local_validation": {
+    "buggy_workspace_expected_result": "fails substantive verifier checks for route semantics, pagination stability, replay-safe refund writes, and auth/rate-limit behavior",
+    "oracle_result": "Containerized E2B runs are treated as the authoritative oracle signal for this task; final pass/fail data is collected there.",
+    "local_test_command": "tests/test.sh inside the built task container or via Harbor E2B run"
+  },
+  "iteration_notes": [
+    "Do not modify any existing skill.",
+    "Final README experiment metrics must come from completed E2B runs only.",
+    "Pre-final verifier tuning only relaxed equivalent machine-readable error-code aliases; it did not weaken action-level contract checks.",
+    "Latest successful with_skill E2B run: pair12_with_20260501-041408 (9/9 verifier points passed).",
+    "Recent without_skill E2B runs still retained action-level failures in refund-state conflict handling or replay-safety requirements."
+  ]
+}

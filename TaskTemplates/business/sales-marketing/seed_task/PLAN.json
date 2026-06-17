@@ -1,0 +1,58 @@
+{
+  "task_id": "sales-marketing__seo_launch_readiness_remediation",
+  "category": "sales-marketing",
+  "difficulty": "hard",
+  "selected_skill": {
+    "name": "seo",
+    "stars": "169.2k",
+    "rationale": "Popular low-sensitivity sales-marketing skill that can be simulated locally with a realistic site, crawl service, and release gate without requiring private marketing accounts."
+  },
+  "design_goals": [
+    "Require the solver to use a live local SEO audit chain rather than stale snapshots.",
+    "Exercise page remediation, legacy URL normalization, internal discovery-path fixes, sitemap inclusion, and evidence-backed reporting.",
+    "Keep with_skill and without_skill identical except for environment/skills presence."
+  ],
+  "verifier_focus": [
+    "all target pages satisfy the live release gate after rebuild",
+    "keyword coverage and report outputs match the live audit state",
+    "legacy competing URLs are normalized and removed from the effective release surface",
+    "solver consulted the local seo-audit service before verifier",
+    "input packets and hidden audit service were not modified"
+  ],
+  "oracle_validation": {
+    "local": "smoke-pass: live release gate cleared with official solution in a patched local mirror of the container filesystem",
+    "e2b": "pass: official solution cleared 11/11 verifier tests in isolated E2B runtime"
+  },
+  "contrast_experiments": {
+    "valid_trials": 3,
+    "without_skill": {
+      "pass_rate": "0/3",
+      "avg_agent_seconds": 356.9,
+      "avg_tokens": 502159
+    },
+    "with_skill": {
+      "pass_rate": "3/3",
+      "avg_agent_seconds": 371.5,
+      "avg_tokens": 975702
+    },
+    "isolation": "with/without differ only by environment/skills presence; Dockerfile conditionally copies skills when present.",
+    "notes": "Representative without-skill failure is action-level: the agent did not query the live release gate before verifier, leaving live blockers unresolved."
+  },
+  "reference_data": [
+    {
+      "file": "environment/data/reference_pages/posthog-product-analytics.json",
+      "source_url": "https://posthog.com/product-analytics"
+    },
+    {
+      "file": "environment/data/reference_pages/posthog-pricing.json",
+      "source_url": "https://posthog.com/pricing"
+    },
+    {
+      "file": "environment/data/reference_pages/sentry-error-monitoring.json",
+      "source_url": "https://sentry.io/for/performance/"
+    },
+    {
+      "file": "environment/data/reference_pages/posthog-docs.json",
+      "source_url": "https://posthog.com/docs"
+    }
+  ]

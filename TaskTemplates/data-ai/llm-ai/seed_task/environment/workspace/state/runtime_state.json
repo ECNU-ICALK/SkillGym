@@ -1,0 +1,23 @@
+{
+  "provider_requests": [
+    {
+      "at": "2026-04-30T23:13:01.561Z",
+      "route": "/v1/classify",
+      "ticket_id": "bank_001"
+    }
+  ],
+  "service_requests": [
+    {
+      "at": "2026-04-30T23:13:01.503Z",
+      "route": "/api/v1/triage",
+      "mode": "sandbox",
+      "ticket_id": "bank_001"
+    },
+    {
+      "at": "2026-04-30T23:13:01.510Z",
+      "route": "/api/v1/triage",
+      "mode": "live",
+      "ticket_id": "bank_001"
+    }
+  ]
+}

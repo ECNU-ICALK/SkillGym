@@ -1,0 +1,4 @@
+option_id,outcome_id,option_name,scope_schools,hosting_model,budget_usd,prompt_retention_days,student_data_used_for_model_training,human_review_for_graded_work,teacher_opt_in_first_semester,student_opt_out,accessibility_review_ready,multilingual_support_level,teacher_training_hours,family_notice_plan,incident_response_playbook,procurement_state,evaluation_plan
+district_gateway_micro,approve_bounded_pilot,District Gateway Micro-Pilot,2,district_gateway,92000,0,false,required,true,true,draft,strong,8,yes,yes,ready,semester_review
+vendor_suite_rollout,approve_vendor_pilot,Vendor Suite Multi-School Rollout,8,vendor_saas,148000,180,true,recommended,false,true,no,medium,6,draft,no,ready,quarterly_checkin
+defer_and_procure,defer_pilot,Defer and Run Procurement Readiness Sprint,0,planning_only,28000,0,false,not_applicable,false,true,planning,strong,4,yes,yes,ready,procurement_only

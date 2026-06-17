@@ -1,0 +1,38 @@
+{
+  "flagName": "experimental.segmentCache",
+  "defaultValue": false,
+  "valueType": "boolean",
+  "requiredEntryPoints": [
+    "dev-server",
+    "build-artifact",
+    "export-worker",
+    "final-report"
+  ],
+  "deliveryChecks": [
+    "The same config value must stay aligned across dev startup, build output, export output, and the generated report.",
+    "Enabled and disabled scenarios must continue to use the existing framework entry points.",
+    "The enabled scenario must switch the active runtime behavior instead of only changing report text.",
+    "The enabled scenario must select an app runtime bundle that is declared by the framework bundle registry."
+  ],
+  "runtimeBundleContract": {
+    "bundleType": "app",
+    "selectedBundleMustBeRegistered": true
+  },
+  "reportContract": {
+    "outputFile": "/app/workspace/output/segment_cache_report.json",
+    "requiredScenarioIds": [
+      "docs-baseline",
+      "docs-segment-cache"
+    ],
+    "requiredFields": [
+      "scenarioId",
+      "requestedSegmentCache",
+      "resolvedSegmentCache",
+      "buildSegmentCache",
+      "exportMode",
+      "routeDigest",
+      "groupCount",
+      "reusedSegmentCount"
+    ]
+  }
+}

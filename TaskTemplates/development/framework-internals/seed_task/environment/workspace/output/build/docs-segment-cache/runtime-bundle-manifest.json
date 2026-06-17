@@ -1,0 +1,14 @@
+{
+  "selected": {
+    "bundleType": "app",
+    "bundleId": "app-segment-cache",
+    "runtimeVariant": "segment-cache"
+  },
+  "availableAppBundles": [
+    {
+      "bundleId": "app-baseline",
+      "runtimeVariant": "baseline"
+    }
+  ],
+  "selectedBundleAvailable": false
+}

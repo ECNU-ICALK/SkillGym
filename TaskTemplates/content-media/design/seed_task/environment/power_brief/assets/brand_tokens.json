@@ -1,0 +1,22 @@
+{
+  "colors": {
+    "bg": "#f4f1e8",
+    "panel": "#fffdf8",
+    "ink": "#1d2731",
+    "muted": "#53616f",
+    "accent": "#0f766e",
+    "accent_soft": "#cfe8e5",
+    "line": "#c6d1db",
+    "warn": "#8a3b12"
+  },
+  "type": {
+    "heading": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+    "body": "\"Aptos\", \"Segoe UI\", sans-serif",
+    "mono": "\"Courier New\", monospace"
+  },
+  "spacing": {
+    "page_padding": 32,
+    "panel_gap": 18,
+    "card_radius": 20
+  }
+}

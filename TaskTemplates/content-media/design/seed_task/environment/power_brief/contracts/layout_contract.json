@@ -1,0 +1,89 @@
+{
+  "site_title": "North America Power Mix Brief",
+  "page_order": [
+    "cover",
+    "agenda",
+    "snapshot",
+    "power-mix",
+    "emissions",
+    "implications",
+    "appendix"
+  ],
+  "required_pages": [
+    {
+      "page_id": "cover",
+      "title": "North America Power Mix Brief",
+      "wireframe": "01_cover.svg",
+      "required_modules": ["hero", "title-block", "year-chip", "brand-mark"],
+      "required_chart_ids": []
+    },
+    {
+      "page_id": "agenda",
+      "title": "Agenda",
+      "wireframe": "02_agenda.svg",
+      "required_modules": ["section-title", "agenda-list", "agenda-context"],
+      "required_chart_ids": []
+    },
+    {
+      "page_id": "snapshot",
+      "title": "Country Snapshot",
+      "wireframe": "03_snapshot.svg",
+      "required_modules": ["section-title", "snapshot-table", "snapshot-explainer"],
+      "required_chart_ids": []
+    },
+    {
+      "page_id": "power-mix",
+      "title": "Power Mix Comparison",
+      "wireframe": "04_power_mix.svg",
+      "required_modules": ["section-title", "mix-chart", "mix-legend", "mix-explainer"],
+      "required_chart_ids": ["power-mix-latest-common-year"]
+    },
+    {
+      "page_id": "emissions",
+      "title": "Emissions Trend",
+      "wireframe": "05_emissions.svg",
+      "required_modules": ["section-title", "co2-chart", "co2-explainer"],
+      "required_chart_ids": ["co2-recent-window"]
+    },
+    {
+      "page_id": "implications",
+      "title": "Implications",
+      "wireframe": "06_implications.svg",
+      "required_modules": ["section-title", "implication-cards", "source-note-callout"],
+      "required_chart_ids": []
+    },
+    {
+      "page_id": "appendix",
+      "title": "Appendix",
+      "wireframe": "07_appendix.svg",
+      "required_modules": ["section-title", "appendix-table", "method-note"],
+      "required_chart_ids": []
+    }
+  ],
+  "navigation": {
+    "button_ids": ["nav-prev", "nav-next"],
+    "keyboard_keys": ["ArrowLeft", "ArrowRight"],
+    "progress_required": true
+  },
+  "viewport_profiles": [
+    {"name": "desktop", "width": 1440, "height": 900},
+    {"name": "tablet", "width": 1024, "height": 768},
+    {"name": "phone-landscape", "width": 667, "height": 375}
+  ],
+  "metrics_policy": {
+    "recent_co2_window_years": 10,
+    "latest_common_population_year": true,
+    "latest_common_gdp_year": true,
+    "latest_common_co2_year": true,
+    "latest_common_electricity_year": true
+  },
+  "copy_rules": {
+    "executive_card_count": 3,
+    "snapshot_explainer_sentences_max": 3,
+    "chart_explainer_sentences_max": 3
+  },
+  "output_rules": {
+    "single_html_file": true,
+    "manifest_required": true
+  }
+}

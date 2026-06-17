@@ -1,0 +1,74 @@
+[
+  {
+    "route": "/docs/app/getting-started/cache-components",
+    "title": "Cache Components",
+    "section": "getting-started",
+    "docType": "guide",
+    "pathSegments": ["docs", "app", "getting-started", "cache-components"],
+    "sourceUrl": "https://nextjs.org/docs/app/getting-started/cache-components",
+    "wordCount": 1620
+  },
+  {
+    "route": "/docs/app/api-reference/config/next-config-js",
+    "title": "next.config.js Options",
+    "section": "config",
+    "docType": "api-reference",
+    "pathSegments": ["docs", "app", "api-reference", "config", "next-config-js"],
+    "sourceUrl": "https://nextjs.org/docs/app/api-reference/config/next-config-js",
+    "wordCount": 1410
+  },
+  {
+    "route": "/docs/app/api-reference/config/next-config-js/authInterrupts",
+    "title": "authInterrupts",
+    "section": "config",
+    "docType": "api-reference",
+    "pathSegments": ["docs", "app", "api-reference", "config", "next-config-js", "authInterrupts"],
+    "sourceUrl": "https://nextjs.org/docs/app/api-reference/config/next-config-js/authInterrupts",
+    "wordCount": 420
+  },
+  {
+    "route": "/docs/app/api-reference/config/next-config-js/taint",
+    "title": "taint",
+    "section": "config",
+    "docType": "api-reference",
+    "pathSegments": ["docs", "app", "api-reference", "config", "next-config-js", "taint"],
+    "sourceUrl": "https://nextjs.org/docs/app/api-reference/config/next-config-js/taint",
+    "wordCount": 390
+  },
+  {
+    "route": "/docs/app/building-your-application/rendering/partial-prerendering",
+    "title": "Partial Prerendering",
+    "section": "rendering",
+    "docType": "guide",
+    "pathSegments": ["docs", "app", "building-your-application", "rendering", "partial-prerendering"],
+    "sourceUrl": "https://nextjs.org/docs/app/building-your-application/rendering/partial-prerendering",
+    "wordCount": 1130
+  },
+  {
+    "route": "/docs/app/api-reference/directives/use-cache",
+    "title": "use cache",
+    "section": "directives",
+    "docType": "api-reference",
+    "pathSegments": ["docs", "app", "api-reference", "directives", "use-cache"],
+    "sourceUrl": "https://nextjs.org/docs/app/api-reference/directives/use-cache",
+    "wordCount": 870
+  },
+  {
+    "route": "/docs/app/building-your-application/data-fetching",
+    "title": "Data Fetching",
+    "section": "data-fetching",
+    "docType": "guide",
+    "pathSegments": ["docs", "app", "building-your-application", "data-fetching"],
+    "sourceUrl": "https://nextjs.org/docs/app/building-your-application/data-fetching",
+    "wordCount": 1790
+  },
+  {
+    "route": "/docs/app/api-reference/file-conventions/route-segment-config",
+    "title": "Route Segment Config",
+    "section": "file-conventions",
+    "docType": "api-reference",
+    "pathSegments": ["docs", "app", "api-reference", "file-conventions", "route-segment-config"],
+    "sourceUrl": "https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config",
+    "wordCount": 1020
+  }
+]

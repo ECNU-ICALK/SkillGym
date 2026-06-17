@@ -1,0 +1,14 @@
+{
+  "selected": {
+    "bundleType": "app",
+    "bundleId": "app-baseline",
+    "runtimeVariant": "baseline"
+  },
+  "availableAppBundles": [
+    {
+      "bundleId": "app-baseline",
+      "runtimeVariant": "baseline"
+    }
+  ],
+  "selectedBundleAvailable": true
+}

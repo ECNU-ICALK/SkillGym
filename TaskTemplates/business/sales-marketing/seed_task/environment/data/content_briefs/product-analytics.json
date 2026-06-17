@@ -1,0 +1,15 @@
+{
+  "brief_id": "product-analytics",
+  "page_id": "product-analytics",
+  "audience": "Product managers and engineering leads",
+  "approved_facts": [
+    "Acme Observe connects event timelines with release context.",
+    "Teams can inspect feature usage by release cohort.",
+    "Funnels, usage trends, and release markers live in one workflow."
+  ],
+  "forbidden_claims": [
+    "best in market",
+    "guaranteed uplift",
+    "supports every warehouse out of the box"
+  ]
+}

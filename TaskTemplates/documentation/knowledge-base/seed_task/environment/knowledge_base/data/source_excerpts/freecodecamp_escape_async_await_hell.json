@@ -1,0 +1,7 @@
+{
+  "id": "freecodecamp_escape_async_await_hell",
+  "description_sentences": [
+    "A scenario-driven article about avoiding accidental serialization and keeping async flows readable once the basics are familiar.",
+    "It is useful when you want one concrete discussion of where `await` can still produce clumsy code."
+  ]
+}

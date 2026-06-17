@@ -1,0 +1,22 @@
+{
+  "project": "aqsol_release_2026",
+  "run_id": "legacy_hgb_shadow_202403",
+  "created_at": "2024-03-01T00:00:00Z",
+  "status": "complete",
+  "target_col": "measured_logS",
+  "smiles_col": "SMILES",
+  "task_type": "regression",
+  "model_type": "HistGradientBoostingRegressor",
+  "feature_set": "descriptors",
+  "data_signature": "legacy_snapshot_v0",
+  "duplicate_policy": "raw_rows",
+  "release_band": "shadow",
+  "valid_rmse": 0.6376579617845868,
+  "valid_mae": 0.4734526351535079,
+  "test_rmse": 0.7459660505241746,
+  "test_mae": 0.5353478528789553,
+  "train_rows": 702,
+  "valid_rows": 152,
+  "test_rows": 152,
+  "model_file": "model.pkl"
+}

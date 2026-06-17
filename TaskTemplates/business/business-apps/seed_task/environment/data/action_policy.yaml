@@ -1,0 +1,11 @@
+collect_payment:
+  min_past_due_days: 30
+  min_payment_attempts: 2
+  min_amount_due_usd: 5000
+next_steps:
+  send_invoice: "Send the draft invoice and confirm customer delivery."
+  collect_payment: "Contact the billing owner and advance the collection follow-up."
+  escalate_csm: "Escalate to the account owner to clear the procurement blocker."
+  update_expansion_quote: "Refresh the expansion quote before renewal approval."
+  pause_renewal: "Pause renewal work and route the account to legal review."
+  monitor: "No immediate action; keep the account in the weekly review."

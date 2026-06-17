@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cust_001",
+    "name": "Avery Stone",
+    "email": "avery.stone@example.com",
+    "default_address": {
+      "country_code": "US",
+      "city": "Seattle"
+    }
+  },
+  {
+    "id": "cust_002",
+    "name": "Maya Laurent",
+    "email": "maya.laurent@example.ca",
+    "default_address": {
+      "country_code": "CA",
+      "city": "Montreal"
+    }
+  },
+  {
+    "id": "cust_003",
+    "name": "Theo Marsh",
+    "email": "theo.marsh@example.co.uk",
+    "default_address": {
+      "country_code": "GB",
+      "city": "Leeds"
+    }
+  },
+  {
+    "id": "cust_004",
+    "name": "Leonie Haas",
+    "email": "leonie.haas@example.de",
+    "default_address": {
+      "country_code": "DE",
+      "city": "Berlin"
+    }
+  },
+  {
+    "id": "cust_005",
+    "name": "Elliot Hart",
+    "email": "elliot.hart@example.com.au",
+    "default_address": {
+      "country_code": "AU",
+      "city": "Melbourne"
+    }
+  },
+  {
+    "id": "cust_006",
+    "name": "Sora Tanaka",
+    "email": "sora.tanaka@example.jp",
+    "default_address": {
+      "country_code": "JP",
+      "city": "Osaka"
+    }
+  }
+]

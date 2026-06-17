@@ -1,0 +1,33 @@
+{
+  "window_id": "citibike-ops-2026-05-08-am",
+  "managed_region_ids": [
+    "71",
+    "70",
+    "311"
+  ],
+  "low_fill_ratio": 0.25,
+  "high_fill_ratio": 0.85,
+  "min_capacity": 15,
+  "max_move_per_station": 8,
+  "region_targets": {
+    "71": 0.56,
+    "70": 0.53,
+    "311": 0.52
+  },
+  "region_action_limits": {
+    "71": 4,
+    "70": 3,
+    "311": 3
+  },
+  "priority_weights": {
+    "bike_gap_weight": 7.0,
+    "capacity_weight": 0.35,
+    "zero_side_bonus": 8.0,
+    "region_pressure_weight": 20.0
+  },
+  "excluded_station_ids": [
+    "66dbe3a2-0aca-11e7-82f6-3863bb44ef7c",
+    "fadf00cf-d84a-49e8-9607-c67154915412"
+  ],
+  "redis_namespace": "rebalance:v1"
+}

@@ -1,0 +1,12 @@
+{
+  "app": {
+    "__FRAMEWORK_SEGMENT_CACHE__": "true",
+    "__FRAMEWORK_RUNTIME_VARIANT__": "segment-cache",
+    "__FRAMEWORK_APP_BUNDLE_ID__": "app-segment-cache"
+  },
+  "server": {
+    "__FRAMEWORK_SEGMENT_CACHE__": "true",
+    "__FRAMEWORK_RUNTIME_VARIANT__": "segment-cache",
+    "__FRAMEWORK_APP_BUNDLE_ID__": "app-segment-cache"
+  }
+}

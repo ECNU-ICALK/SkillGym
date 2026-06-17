@@ -1,0 +1,41 @@
+---
+title: fetch
+description: API reference for the fetch integration.
+nav_title: fetch
+---
+
+`fetch` issues an HTTP request and returns a response promise.
+
+```tsx filename="app/example.tsx" switcher highlight={3}
+const response = await fetch('https://example.com/data.json')
+const payload = await response.json()
+```
+
+```jsx filename="app/example.jsx" switcher highlight={3}
+const response = await fetch('https://example.com/data.json')
+const payload = await response.json()
+```
+
+## Reference
+
+### Options
+
+| Option | Type | Default | Description |
+| --- | --- | --- | --- |
+| `cache` | `string` | `default` | Controls response caching behavior. |
+
+## Good to know
+
+- Response handling still depends on the returned promise lifecycle.
+
+## Examples
+
+### Request JSON
+
+Read a JSON payload and wait for the parsed body.
+
+## Version History
+
+| Version | Changes |
+| --- | --- |
+| `v1` | Example reference page for local docs style. |

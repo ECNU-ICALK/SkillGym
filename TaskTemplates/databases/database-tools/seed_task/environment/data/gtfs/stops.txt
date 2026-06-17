@@ -1,0 +1,159 @@
+stop_id,stop_code,stop_name,stop_desc,platform_code,platform_name,stop_lat,stop_lon,zone_id,stop_address,stop_url,level_id,location_type,parent_station,wheelchair_boarding,municipality,on_street,at_street,vehicle_type
+place-alfcl,,Alewife,,,,42.39583,-71.141287,,"Alewife Brook Pkwy and Cambridge Park Dr, Cambridge, MA 02140",https://www.mbta.com/stops/place-alfcl,,1,,1,Cambridge,,,
+70061,70061,Alewife,Alewife - Red Line,,Red Line,42.396148,-71.140698,RapidTransit,,https://www.mbta.com/stops/place-alfcl,level_-2_platform,0,place-alfcl,1,Cambridge,,,1
+place-andrw,,Andrew,,,,42.330154,-71.057655,,"Dorchester Ave and Southhampton St, South Boston, MA 02127",https://www.mbta.com/stops/place-andrw,,1,,1,Boston,,,
+70083,70083,Andrew,Andrew - Red Line - Ashmont/Braintree,1,Ashmont/Braintree,42.330154,-71.057655,RapidTransit,,https://www.mbta.com/stops/place-andrw,level_-2_platform,0,place-andrw,1,Boston,,,1
+70084,70084,Andrew,Andrew - Red Line - Alewife,2,Alewife,42.330154,-71.057655,RapidTransit,,https://www.mbta.com/stops/place-andrw,level_-2_platform,0,place-andrw,1,Boston,,,1
+place-aport,,Airport,,,,42.374262,-71.030395,,"Transportation Way and Service Rd, Boston, MA 02128",https://www.mbta.com/stops/place-aport,,1,,1,Boston,,,
+70047,70047,Airport,Airport - Blue Line - Bowdoin,,Bowdoin,42.374262,-71.030395,RapidTransit,,https://www.mbta.com/stops/place-aport,level_0_platform,0,place-aport,1,Boston,,,1
+70048,70048,Airport,Airport - Blue Line - Wonderland,,Wonderland,42.374262,-71.030395,RapidTransit,,https://www.mbta.com/stops/place-aport,level_0_platform,0,place-aport,1,Boston,,,1
+place-aqucl,,Aquarium,,,,42.359784,-71.051652,,"Atlantic Ave and State St, Boston, MA 02120",https://www.mbta.com/stops/place-aqucl,,1,,1,Boston,,,
+70043,70043,Aquarium,Aquarium - Blue Line - Bowdoin,1,Bowdoin,42.359784,-71.051652,RapidTransit,,https://www.mbta.com/stops/place-aqucl,level_-2_platform,0,place-aqucl,1,Boston,,,1
+70044,70044,Aquarium,Aquarium - Blue Line - Wonderland,2,Wonderland,42.359784,-71.051652,RapidTransit,,https://www.mbta.com/stops/place-aqucl,level_-2_platform,0,place-aqucl,1,Boston,,,1
+place-asmnl,,Ashmont,,,,42.28452,-71.063777,,"Dorchester Ave and Ashmont St, Boston, MA 02124",https://www.mbta.com/stops/place-asmnl,,1,,1,Boston,,,
+70093,70093,Ashmont,Ashmont - Red Line - Exit Only,,Exit Only,42.284508,-71.063833,RapidTransit,,https://www.mbta.com/stops/place-asmnl,level_-1_platform,0,place-asmnl,1,Boston,,,1
+70094,70094,Ashmont,Ashmont - Red Line - Alewife,,Alewife,42.28453,-71.063725,RapidTransit,,https://www.mbta.com/stops/place-asmnl,level_-1_platform,0,place-asmnl,1,Boston,,,1
+place-astao,,Assembly,,,,42.392811,-71.077257,,"499 Foley St, Somerville, MA 02145",https://www.mbta.com/stops/place-astao,,1,,1,Somerville,,,
+70278,70278,Assembly,Assembly - Orange Line - Forest Hills,,Forest Hills,42.392331,-71.077262,RapidTransit,,https://www.mbta.com/stops/place-astao,level_0_platform,0,place-astao,1,Somerville,,,1
+70279,70279,Assembly,Assembly - Orange Line - Oak Grove,,Oak Grove,42.392336,-71.07718,RapidTransit,,https://www.mbta.com/stops/place-astao,level_0_platform,0,place-astao,1,Somerville,,,1
+place-bbsta,,Back Bay,,,,42.34735,-71.075727,CR-zone-1A,"145 Dartmouth St Boston, MA 02116",https://www.mbta.com/stops/place-bbsta,,1,,1,Boston,,,
+70014,70014,Back Bay,Back Bay - Orange Line - Forest Hills,,Forest Hills,42.34735,-71.075727,RapidTransit,,https://www.mbta.com/stops/place-bbsta,level_-1_orange_platform,0,place-bbsta,1,Boston,,,1
+70015,70015,Back Bay,Back Bay - Orange Line - Oak Grove,,Oak Grove,42.34735,-71.075727,RapidTransit,,https://www.mbta.com/stops/place-bbsta,level_-1_orange_platform,0,place-bbsta,1,Boston,,,1
+place-bmmnl,,Beachmont,,,,42.3975423,-70.9923194,,"630 Winthrop Ave, Revere, MA 02151",https://www.mbta.com/stops/place-bmmnl,,1,,1,Revere,,,
+70055,70055,Beachmont,Beachmont - Blue Line - Bowdoin,1,Bowdoin,42.397219,-70.992647,RapidTransit,,https://www.mbta.com/stops/place-bmmnl,level_1_platform,0,place-bmmnl,1,Revere,,,1
+70056,70056,Beachmont,Beachmont - Blue Line - Wonderland,2,Wonderland,42.397204,-70.992551,RapidTransit,,https://www.mbta.com/stops/place-bmmnl,level_1_platform,0,place-bmmnl,1,Revere,,,1
+place-bomnl,,Bowdoin,,,,42.361365,-71.062037,,"Cambridge St and New Chardon St, Boston, MA 02114",https://www.mbta.com/stops/place-bomnl,,1,,2,Boston,,,
+70038,70038,Bowdoin,Bowdoin - Blue Line - Wonderland,,Wonderland,42.361365,-71.062037,RapidTransit,,https://www.mbta.com/stops/place-bomnl,level_-1_platform,0,place-bomnl,2,Boston,,,1
+70838,70838,Bowdoin,Bowdoin - Blue Line - Exit Only,,Exit Only,42.361365,-71.062037,RapidTransit,,https://www.mbta.com/stops/place-bomnl,level_-1_platform,0,place-bomnl,2,Boston,,,1
+place-brdwy,,Broadway,,,,42.342622,-71.056967,,"Dorchester Ave and Broadway, Boston, MA",https://www.mbta.com/stops/place-brdwy,,1,,1,Boston,,,
+70081,70081,Broadway,Broadway - Red Line - Ashmont/Braintree,,Ashmont/Braintree,42.342622,-71.056967,RapidTransit,,https://www.mbta.com/stops/place-brdwy,level_-2_platform,0,place-brdwy,1,Boston,,,1
+70082,70082,Broadway,Broadway - Red Line - Alewife,,Alewife,42.342622,-71.056967,RapidTransit,,https://www.mbta.com/stops/place-brdwy,level_-2_platform,0,place-brdwy,1,Boston,,,1
+place-brntn,,Braintree,,,,42.2078543,-71.0011385,CR-zone-2,"197 Ivory St, Braintree, MA 02184",https://www.mbta.com/stops/place-brntn,,1,,1,Braintree,,,
+70105,70105,Braintree,Braintree - Red Line,,Red Line,42.207424,-71.001645,RapidTransit,,https://www.mbta.com/stops/place-brntn,level_1_red_platform,0,place-brntn,1,Braintree,,,1
+place-ccmnl,,Community College,,,,42.373622,-71.069533,,"Austin St and Rutherford Ave, Charlestown, MA",https://www.mbta.com/stops/place-ccmnl,,1,,1,Boston,,,
+70028,70028,Community College,Community College - Orange Line - Forest Hills,,Forest Hills,42.373622,-71.069533,RapidTransit,,https://www.mbta.com/stops/place-ccmnl,level_-1_platform,0,place-ccmnl,1,Boston,,,1
+70029,70029,Community College,Community College - Orange Line - Oak Grove,,Oak Grove,42.373622,-71.069533,RapidTransit,,https://www.mbta.com/stops/place-ccmnl,level_-1_platform,0,place-ccmnl,1,Boston,,,1
+place-chmnl,,Charles/MGH,,,,42.361166,-71.070628,,"Cambridge St and Charles St, Boston, MA",https://www.mbta.com/stops/place-chmnl,,1,,1,Boston,,,
+70073,70073,Charles/MGH,Charles/MGH - Red Line - Ashmont/Braintree,,Ashmont/Braintree,42.361187,-71.071505,RapidTransit,,https://www.mbta.com/stops/place-chmnl,level_1_platform,0,place-chmnl,1,Boston,,,1
+70074,70074,Charles/MGH,Charles/MGH - Red Line - Alewife,,Alewife,42.361263,-71.071602,RapidTransit,,https://www.mbta.com/stops/place-chmnl,level_1_platform,0,place-chmnl,1,Boston,,,1
+place-chncl,,Chinatown,,,,42.352547,-71.062752,,"Washington St and Boylston St, Boston, MA",https://www.mbta.com/stops/place-chncl,,1,,1,Boston,,,
+70018,70018,Chinatown,Chinatown - Orange Line - Forest Hills,,Forest Hills,42.352547,-71.062752,RapidTransit,,https://www.mbta.com/stops/place-chncl,level_-1_platform,0,place-chncl,1,Boston,,,1
+70019,70019,Chinatown,Chinatown - Orange Line - Oak Grove,,Oak Grove,42.352547,-71.062752,RapidTransit,,https://www.mbta.com/stops/place-chncl,level_-1_platform,0,place-chncl,1,Boston,,,1
+place-cntsq,,Central,,,,42.365486,-71.103802,,"Massachusetts Ave and Prospect St, Cambridge, MA 02139",https://www.mbta.com/stops/place-cntsq,,1,,1,Cambridge,,,
+70069,70069,Central,Central - Red Line - Ashmont/Braintree,,Ashmont/Braintree,42.365304,-71.103621,RapidTransit,,https://www.mbta.com/stops/place-cntsq,level_-1_platform,0,place-cntsq,1,Cambridge,,,1
+70070,70070,Central,Central - Red Line - Alewife,,Alewife,42.365379,-71.103554,RapidTransit,,https://www.mbta.com/stops/place-cntsq,level_-1_platform,0,place-cntsq,1,Cambridge,,,1
+place-davis,,Davis,,,,42.39674,-71.121815,,"College Ave and Elm St, Somerville, MA",https://www.mbta.com/stops/place-davis,,1,,1,Somerville,,,
+70063,70063,Davis,Davis - Red Line - Ashmont/Braintree,,Ashmont/Braintree,42.39674,-71.121815,RapidTransit,,https://www.mbta.com/stops/place-davis,level_-2_platform,0,place-davis,1,Somerville,,,1
+70064,70064,Davis,Davis - Red Line - Alewife,,Alewife,42.39674,-71.121815,RapidTransit,,https://www.mbta.com/stops/place-davis,level_-2_platform,0,place-davis,1,Somerville,,,1
+place-dwnxg,,Downtown Crossing,,,,42.355518,-71.060225,,"Washington St and Summer St, Boston, MA",https://www.mbta.com/stops/place-dwnxg,,1,,1,Boston,,,
+70020,70020,Downtown Crossing,Downtown Crossing - Orange Line - Forest Hills,,Forest Hills,42.355518,-71.060225,RapidTransit,,https://www.mbta.com/stops/place-dwnxg,level_-1_orange_platform,0,place-dwnxg,1,Boston,,,1
+70021,70021,Downtown Crossing,Downtown Crossing - Orange Line - Oak Grove,,Oak Grove,42.355518,-71.060225,RapidTransit,,https://www.mbta.com/stops/place-dwnxg,level_-1_orange_platform,0,place-dwnxg,1,Boston,,,1
+70077,70077,Downtown Crossing,Downtown Crossing - Red Line - Ashmont/Braintree,,Ashmont/Braintree,42.355518,-71.060225,RapidTransit,,https://www.mbta.com/stops/place-dwnxg,level_-2_red_platform,0,place-dwnxg,1,Boston,,,1
+70078,70078,Downtown Crossing,Downtown Crossing - Red Line - Alewife,,Alewife,42.355518,-71.060225,RapidTransit,,https://www.mbta.com/stops/place-dwnxg,level_-2_red_platform,0,place-dwnxg,1,Boston,,,1
+place-fldcr,,Fields Corner,,,,42.300093,-71.061667,,"50 Freeman St, Dorchester, MA 02122",https://www.mbta.com/stops/place-fldcr,,1,,1,Boston,,,
+70089,70089,Fields Corner,Fields Corner - Red Line - Ashmont,,Ashmont,42.299993,-71.062021,RapidTransit,,https://www.mbta.com/stops/place-fldcr,level_1_platform,0,place-fldcr,1,Boston,,,1
+70090,70090,Fields Corner,Fields Corner - Red Line - Alewife,,Alewife,42.299935,-71.061945,RapidTransit,,https://www.mbta.com/stops/place-fldcr,level_1_platform,0,place-fldcr,1,Boston,,,1
+place-forhl,,Forest Hills,,,,42.300713,-71.113943,CR-zone-1A,"Washington St and Hyde Park Ave, Jamaica Plain, MA 02130",https://www.mbta.com/stops/place-forhl,,1,,1,Boston,,,
+70001,70001,Forest Hills,Forest Hills - Orange Line,,Orange Line,42.300926,-71.114129,RapidTransit,,https://www.mbta.com/stops/place-forhl,level_-1_orange_platform,0,place-forhl,1,Boston,,,1
+place-gover,,Government Center,,,,42.359705,-71.059215,,"Cambridge St and Court St, Boston, MA",https://www.mbta.com/stops/place-gover,,1,,1,Boston,,,
+70039,70039,Government Center,Government Center - Blue Line - Bowdoin,,Bowdoin,42.359705,-71.059215,RapidTransit,,https://www.mbta.com/stops/place-gover,level_-2_blue_platform,0,place-gover,1,Boston,,,1
+70040,70040,Government Center,Government Center - Blue Line - Wonderland,,Wonderland,42.359705,-71.059215,RapidTransit,,https://www.mbta.com/stops/place-gover,level_-2_blue_platform,0,place-gover,1,Boston,,,1
+place-grnst,,Green Street,,,,42.310525,-71.107414,,"150 Green St, Jamaica Plain, MA",https://www.mbta.com/stops/place-grnst,,1,,1,Boston,,,
+70002,70002,Green Street,Green Street - Orange Line - Forest Hills,,Forest Hills,42.309832,-71.108059,RapidTransit,,https://www.mbta.com/stops/place-grnst,level_-1_platform,0,place-grnst,1,Boston,,,1
+70003,70003,Green Street,Green Street - Orange Line - Oak Grove,,Oak Grove,42.309796,-71.107988,RapidTransit,,https://www.mbta.com/stops/place-grnst,level_-1_platform,0,place-grnst,1,Boston,,,1
+place-haecl,,Haymarket,,,,42.363021,-71.05829,,"136 Blackstone St, Boston, MA 02109",https://www.mbta.com/stops/place-haecl,,1,,1,Boston,,,
+70024,70024,Haymarket,Haymarket - Orange Line - Forest Hills,,Forest Hills,42.363021,-71.05829,RapidTransit,,https://www.mbta.com/stops/place-haecl,level_-1_orange_platform,0,place-haecl,1,Boston,,,1
+70025,70025,Haymarket,Haymarket - Orange Line - Oak Grove,,Oak Grove,42.363021,-71.05829,RapidTransit,,https://www.mbta.com/stops/place-haecl,level_-1_orange_platform,0,place-haecl,1,Boston,,,1
+place-harsq,,Harvard,,,,42.373362,-71.118956,,"1400 Massachusetts Ave, Cambridge, MA",https://www.mbta.com/stops/place-harsq,,1,,1,Cambridge,,,
+70067,70067,Harvard,Harvard - Red Line - Ashmont/Braintree,,Ashmont/Braintree,42.374663,-71.118814,RapidTransit,,https://www.mbta.com/stops/place-harsq,level_-2_southbound_platform,0,place-harsq,1,Cambridge,,,1
+70068,70068,Harvard,Harvard - Red Line - Alewife,,Alewife,42.374663,-71.118814,RapidTransit,,https://www.mbta.com/stops/place-harsq,level_-1_alewife_platform,0,place-harsq,1,Cambridge,,,1
+place-jaksn,,Jackson Square,,,,42.323132,-71.099592,,"1500 Columbus Ave, Jamaica Plain, MA",https://www.mbta.com/stops/place-jaksn,,1,,1,Boston,,,
+70006,70006,Jackson Square,Jackson Square - Orange Line - Forest Hills,,Forest Hills,42.323132,-71.099592,RapidTransit,,https://www.mbta.com/stops/place-jaksn,level_-1_platform,0,place-jaksn,1,Boston,,,1
+70007,70007,Jackson Square,Jackson Square - Orange Line - Oak Grove,,Oak Grove,42.323132,-71.099592,RapidTransit,,https://www.mbta.com/stops/place-jaksn,level_-1_platform,0,place-jaksn,1,Boston,,,1
+place-jfk,,JFK/UMass,,,,42.320685,-71.052391,CR-zone-1A,"599 Old Colony Ave, Boston, MA 02127-3805",https://www.mbta.com/stops/place-jfk,,1,,1,Boston,,,
+70085,70085,JFK/UMass,JFK/UMass - Red Line - Ashmont,,Ashmont,42.320632,-71.052514,RapidTransit,,https://www.mbta.com/stops/place-jfk,level_0_red_platform,0,place-jfk,1,Boston,,,1
+70086,70086,JFK/UMass,JFK/UMass - Red Line - Alewife (from Ashmont),,Alewife (from Ashmont),42.320637,-71.052473,RapidTransit,,https://www.mbta.com/stops/place-jfk,level_0_red_platform,0,place-jfk,1,Boston,,,1
+70095,70095,JFK/UMass,JFK/UMass - Red Line - Braintree,,Braintree,42.320418,-71.052287,RapidTransit,,https://www.mbta.com/stops/place-jfk,level_0_red_platform,0,place-jfk,1,Boston,,,1
+70096,70096,JFK/UMass,JFK/UMass - Red Line - Alewife (from Braintree),,Alewife (from Braintree),42.320434,-71.052215,RapidTransit,,https://www.mbta.com/stops/place-jfk,level_0_red_platform,0,place-jfk,1,Boston,,,1
+place-knncl,,Kendall/MIT,,,,42.3624908,-71.0861765,,"300 Main St, Cambridge, MA 02142",https://www.mbta.com/stops/place-knncl,,1,,1,Cambridge,,,
+70071,70071,Kendall/MIT,Kendall/MIT - Red Line - Ashmont/Braintree,,Ashmont/Braintree,42.362355,-71.085605,RapidTransit,,https://www.mbta.com/stops/place-knncl,level_-1_platform,0,place-knncl,1,Cambridge,,,1
+70072,70072,Kendall/MIT,Kendall/MIT - Red Line - Alewife,,Alewife,42.362434,-71.085591,RapidTransit,,https://www.mbta.com/stops/place-knncl,level_-1_platform,0,place-knncl,1,Cambridge,,,1
+place-masta,,Massachusetts Avenue,,,,42.341512,-71.083423,,"393 Massachusetts Ave, Boston, MA 02118",https://www.mbta.com/stops/place-masta,,1,,1,Boston,,,
+70012,70012,Massachusetts Avenue,Massachusetts Avenue - Orange Line - Forest Hills,,Forest Hills,42.340927,-71.084188,RapidTransit,,https://www.mbta.com/stops/place-masta,level_-1_platform,0,place-masta,1,Boston,,,1
+70013,70013,Massachusetts Avenue,Massachusetts Avenue - Orange Line - Oak Grove,,Oak Grove,42.340892,-71.084124,RapidTransit,,https://www.mbta.com/stops/place-masta,level_-1_platform,0,place-masta,1,Boston,,,1
+place-mlmnl,,Malden Center,,,,42.426632,-71.07411,CR-zone-1A,"Commercial St and Pleasant St, Malden, MA 02148",https://www.mbta.com/stops/place-mlmnl,,1,,1,Malden,,,
+70034,70034,Malden Center,Malden Center - Orange Line - Forest Hills,,Forest Hills,42.426677,-71.074381,RapidTransit,,https://www.mbta.com/stops/place-mlmnl,level_1_orange_platform,0,place-mlmnl,1,Malden,,,1
+70035,70035,Malden Center,Malden Center - Orange Line - Oak Grove,,Oak Grove,42.426662,-71.074314,RapidTransit,,https://www.mbta.com/stops/place-mlmnl,level_1_orange_platform,0,place-mlmnl,1,Malden,,,1
+place-mvbcl,,Maverick,,,,42.3691186,-71.0395296,,"Sumner St and Maverick Sq, East Boston, MA",https://www.mbta.com/stops/place-mvbcl,,1,,1,Boston,,,
+70045,70045,Maverick,Maverick - Blue Line - Bowdoin,,Bowdoin,42.3691186,-71.0395296,RapidTransit,,https://www.mbta.com/stops/place-mvbcl,level_-1_platform,0,place-mvbcl,1,Boston,,,1
+70046,70046,Maverick,Maverick - Blue Line - Wonderland,,Wonderland,42.3691186,-71.0395296,RapidTransit,,https://www.mbta.com/stops/place-mvbcl,level_-1_platform,0,place-mvbcl,1,Boston,,,1
+place-north,,North Station,,,,42.365577,-71.06129,CR-zone-1A,"135 Causeway St, Boston, MA 02114",https://www.mbta.com/stops/place-north,,1,,1,Boston,,,
+70026,70026,North Station,North Station - Orange Line - Forest Hills,,Forest Hills,42.36528,-71.060205,RapidTransit,,https://www.mbta.com/stops/place-north,level_-2_low_platform,0,place-north,1,Boston,,,1
+70027,70027,North Station,North Station - Orange Line - Oak Grove,,Oak Grove,42.36528,-71.060205,RapidTransit,,https://www.mbta.com/stops/place-north,level_-2_low_platform,0,place-north,1,Boston,,,1
+place-nqncy,,North Quincy,,,,42.275275,-71.029583,,"Hancock St and Hunt St, Quincy, MA 02171",https://www.mbta.com/stops/place-nqncy,,1,,1,Quincy,,,
+70097,70097,North Quincy,North Quincy - Red Line - Braintree,2,Braintree,42.27577,-71.030194,RapidTransit,,https://www.mbta.com/stops/place-nqncy,level_0_platform,0,place-nqncy,1,Quincy,,,1
+70098,70098,North Quincy,North Quincy - Red Line - Alewife,1,Alewife,42.275802,-71.030144,RapidTransit,,https://www.mbta.com/stops/place-nqncy,level_0_platform,0,place-nqncy,1,Quincy,,,1
+place-ogmnl,,Oak Grove,,,,42.43668,-71.071097,CR-zone-1A,"Washington St and Winter St, Malden, MA 02148",https://www.mbta.com/stops/place-ogmnl,,1,,1,Malden,,,
+70036,70036,Oak Grove,Oak Grove - Orange Line,,Orange Line,42.437735,-71.070875,RapidTransit,,https://www.mbta.com/stops/place-ogmnl,level_0_platform,0,place-ogmnl,1,Malden,,,1
+place-orhte,,Orient Heights,,,,42.386867,-71.004736,,"1000 Bennington St, East Boston, MA 02128",https://www.mbta.com/stops/place-orhte,,1,,1,Boston,,,
+70051,70051,Orient Heights,Orient Heights - Blue Line - Bowdoin,,Bowdoin,42.386909,-71.004809,RapidTransit,,https://www.mbta.com/stops/place-orhte,level_0_platform,0,place-orhte,1,Boston,,,1
+70052,70052,Orient Heights,Orient Heights - Blue Line - Wonderland,,Wonderland,42.386842,-71.004767,RapidTransit,,https://www.mbta.com/stops/place-orhte,level_0_platform,0,place-orhte,1,Boston,,,1
+place-pktrm,,Park Street,,,,42.3563946,-71.0624242,,"Tremont St and Winter St, Boston, MA 02108",https://www.mbta.com/stops/place-pktrm,,1,,1,Boston,,,
+70075,70075,Park Street,Park Street - Red Line - Ashmont/Braintree,,Ashmont/Braintree,42.3563946,-71.0624242,RapidTransit,,https://www.mbta.com/stops/place-pktrm,level_-2_red_platform,0,place-pktrm,1,Boston,,,1
+70076,70076,Park Street,Park Street - Red Line - Alewife,,Alewife,42.3563946,-71.0624242,RapidTransit,,https://www.mbta.com/stops/place-pktrm,level_-2_red_platform,0,place-pktrm,1,Boston,,,1
+place-portr,,Porter,,,,42.3884,-71.119149,CR-zone-1A,"1899 Massachusetts Ave, Cambridge, MA 02140",https://www.mbta.com/stops/place-portr,,1,,1,Cambridge,,,
+70065,70065,Porter,Porter - Red Line - Ashmont/Braintree,,Ashmont/Braintree,42.3884,-71.119149,RapidTransit,,https://www.mbta.com/stops/place-portr,level_-3_southbound_platform,0,place-portr,1,Cambridge,,,1
+70066,70066,Porter,Porter - Red Line - Alewife,,Alewife,42.3884,-71.119149,RapidTransit,,https://www.mbta.com/stops/place-portr,level_-4_alewife_platform,0,place-portr,1,Cambridge,,,1
+place-qamnl,,Quincy Adams,,,,42.233391,-71.007153,,"Burgin Pkwy and Centre St, Quincy, MA 02169",https://www.mbta.com/stops/place-qamnl,,1,,1,Quincy,,,
+70103,70103,Quincy Adams,Quincy Adams - Red Line - Braintree,,Braintree,42.233391,-71.007153,RapidTransit,,https://www.mbta.com/stops/place-qamnl,level_1_platform,0,place-qamnl,1,Quincy,,,1
+70104,70104,Quincy Adams,Quincy Adams - Red Line - Alewife,,Alewife,42.233391,-71.007153,RapidTransit,,https://www.mbta.com/stops/place-qamnl,level_1_platform,0,place-qamnl,1,Quincy,,,1
+place-qnctr,,Quincy Center,,,,42.251809,-71.005409,CR-zone-1,"175 Thomas E Burgin Pkwy, Quincy, MA 02169",https://www.mbta.com/stops/place-qnctr,,1,,1,Quincy,,,
+70101,70101,Quincy Center,Quincy Center - Red Line - Braintree,2,Braintree,42.251809,-71.005409,RapidTransit,,https://www.mbta.com/stops/place-qnctr,level_-1_red_platform,0,place-qnctr,1,Quincy,,,1
+70102,70102,Quincy Center,Quincy Center - Red Line - Alewife,1,Alewife,42.251809,-71.005409,RapidTransit,,https://www.mbta.com/stops/place-qnctr,level_-1_red_platform,0,place-qnctr,1,Quincy,,,1
+place-rbmnl,,Revere Beach,,,,42.4078425,-70.9925332,,"220 Shirley Ave, Revere, MA",https://www.mbta.com/stops/place-rbmnl,,1,,1,Revere,,,
+70057,70057,Revere Beach,Revere Beach - Blue Line - Bowdoin,1,Bowdoin,42.40776,-70.992586,RapidTransit,,https://www.mbta.com/stops/place-rbmnl,level_-1_platform,0,place-rbmnl,1,Revere,,,1
+70058,70058,Revere Beach,Revere Beach - Blue Line - Wonderland,2,Wonderland,42.407874,-70.992497,RapidTransit,,https://www.mbta.com/stops/place-rbmnl,level_-1_platform,0,place-rbmnl,1,Revere,,,1
+place-rcmnl,,Roxbury Crossing,,,,42.331397,-71.095451,,"1400 Tremont St, Roxbury, MA",https://www.mbta.com/stops/place-rcmnl,,1,,1,Boston,,,
+70008,70008,Roxbury Crossing,Roxbury Crossing - Orange Line - Forest Hills,,Forest Hills,42.330671,-71.096121,RapidTransit,,https://www.mbta.com/stops/place-rcmnl,level_-1_platform,0,place-rcmnl,1,Boston,,,1
+70009,70009,Roxbury Crossing,Roxbury Crossing - Orange Line - Oak Grove,,Oak Grove,42.33064,-71.09604,RapidTransit,,https://www.mbta.com/stops/place-rcmnl,level_-1_platform,0,place-rcmnl,1,Boston,,,1
+place-rugg,,Ruggles,,,,42.336377,-71.088961,CR-zone-1A,"1150 Tremont St, Roxbury, MA 02120",https://www.mbta.com/stops/place-rugg,,1,,1,Boston,,,
+70010,70010,Ruggles,Ruggles - Orange Line - Forest Hills,,Forest Hills,42.33649,-71.089684,RapidTransit,,https://www.mbta.com/stops/place-rugg,level_0_orange_platform,0,place-rugg,1,Boston,,,1
+70011,70011,Ruggles,Ruggles - Orange Line - Oak Grove,,Oak Grove,42.336451,-71.089635,RapidTransit,,https://www.mbta.com/stops/place-rugg,level_0_orange_platform,0,place-rugg,1,Boston,,,1
+place-sbmnl,,Stony Brook,,,,42.317062,-71.104248,,"100 Boylston St, Jamaica Plain, MA",https://www.mbta.com/stops/place-sbmnl,,1,,1,Boston,,,
+70004,70004,Stony Brook,Stony Brook - Orange Line - Forest Hills,,Forest Hills,42.317062,-71.104248,RapidTransit,,https://www.mbta.com/stops/place-sbmnl,level_-1_platform,0,place-sbmnl,1,Boston,,,1
+70005,70005,Stony Brook,Stony Brook - Orange Line - Oak Grove,,Oak Grove,42.317062,-71.104248,RapidTransit,,https://www.mbta.com/stops/place-sbmnl,level_-1_platform,0,place-sbmnl,1,Boston,,,1
+place-sdmnl,,Suffolk Downs,,,,42.3905007,-70.9971226,,"1230 Bennington St, East Boston, MA 02128",https://www.mbta.com/stops/place-sdmnl,,1,,1,Boston,,,
+70053,70053,Suffolk Downs,Suffolk Downs - Blue Line - Bowdoin,1,Bowdoin,42.390422,-70.997323,RapidTransit,,https://www.mbta.com/stops/place-sdmnl,level_0_platform,0,place-sdmnl,1,Boston,,,1
+70054,70054,Suffolk Downs,Suffolk Downs - Blue Line - Wonderland,2,Wonderland,42.39061,-70.99703,RapidTransit,,https://www.mbta.com/stops/place-sdmnl,level_0_platform,0,place-sdmnl,1,Boston,,,1
+place-shmnl,,Savin Hill,,,,42.31129,-71.053331,,"125 Savin Hill Ave, Dorchester, MA 02124",https://www.mbta.com/stops/place-shmnl,,1,,1,Boston,,,
+70087,70087,Savin Hill,Savin Hill - Red Line - Ashmont,,Ashmont,42.310603,-71.053678,RapidTransit,,https://www.mbta.com/stops/place-shmnl,level_0_platform,0,place-shmnl,1,Boston,,,1
+70088,70088,Savin Hill,Savin Hill - Red Line - Alewife,,Alewife,42.310591,-71.053612,RapidTransit,,https://www.mbta.com/stops/place-shmnl,level_0_platform,0,place-shmnl,1,Boston,,,1
+place-smmnl,,Shawmut,,,,42.2931258,-71.065738,,"Dayton St and Clementine Park, Dorchester, MA 02124",https://www.mbta.com/stops/place-smmnl,,1,,1,Boston,,,
+70091,70091,Shawmut,Shawmut - Red Line - Ashmont,,Ashmont,42.2931258,-71.065738,RapidTransit,,https://www.mbta.com/stops/place-smmnl,level_-1_platform,0,place-smmnl,1,Boston,,,1
+70092,70092,Shawmut,Shawmut - Red Line - Alewife,,Alewife,42.2931258,-71.065738,RapidTransit,,https://www.mbta.com/stops/place-smmnl,level_-1_platform,0,place-smmnl,1,Boston,,,1
+place-sstat,,South Station,,,,42.352271,-71.055242,CR-zone-1A,"700 Atlantic Ave, Boston, MA 02110",https://www.mbta.com/stops/place-sstat,,1,,1,Boston,,,
+70079,70079,South Station,South Station - Red Line - Ashmont/Braintree,,Ashmont/Braintree,42.352271,-71.055242,RapidTransit,,https://www.mbta.com/stops/place-sstat,level_-3_red_platform,0,place-sstat,1,Boston,,,1
+70080,70080,South Station,South Station - Red Line - Alewife,,Alewife,42.352271,-71.055242,RapidTransit,,https://www.mbta.com/stops/place-sstat,level_-3_red_platform,0,place-sstat,1,Boston,,,1
+place-state,,State,,,,42.358978,-71.057598,,"200 Washington St, Boston, MA",https://www.mbta.com/stops/place-state,,1,,1,Boston,,,
+70022,70022,State,State - Orange Line - Forest Hills,,Forest Hills,42.358978,-71.057598,RapidTransit,,https://www.mbta.com/stops/place-state,level_-1_up_platform,0,place-state,1,Boston,,,1
+70023,70023,State,State - Orange Line - Oak Grove,,Oak Grove,42.358978,-71.057598,RapidTransit,,https://www.mbta.com/stops/place-state,level_-2_oak_grove_platform,0,place-state,1,Boston,,,1
+70041,70041,State,State - Blue Line - Bowdoin,,Bowdoin,42.358978,-71.057598,RapidTransit,,https://www.mbta.com/stops/place-state,level_-1_up_platform,0,place-state,1,Boston,,,1
+70042,70042,State,State - Blue Line - Wonderland,,Wonderland,42.358978,-71.057598,RapidTransit,,https://www.mbta.com/stops/place-state,level_-1_up_platform,0,place-state,1,Boston,,,1
+place-sull,,Sullivan Square,,,,42.383975,-71.076994,,"Maffa Way and Cambridge St, Charlestown, MA 02129",https://www.mbta.com/stops/place-sull,,1,,1,Boston,,,
+70030,70030,Sullivan Square,Sullivan Square - Orange Line - Forest Hills,1,Forest Hills,42.383975,-71.076994,RapidTransit,,https://www.mbta.com/stops/place-sull,level_-1_platform,0,place-sull,1,Boston,,,1
+70031,70031,Sullivan Square,Sullivan Square - Orange Line - Oak Grove,2,Oak Grove,42.383975,-71.076994,RapidTransit,,https://www.mbta.com/stops/place-sull,level_-1_platform,0,place-sull,1,Boston,,,1
+place-tumnl,,Tufts Medical Center,,,,42.349662,-71.063917,,"750 Washington St, Boston, MA",https://www.mbta.com/stops/place-tumnl,,1,,1,Boston,,,
+70016,70016,Tufts Medical Center,Tufts Medical Center - Orange Line - Forest Hills,,Forest Hills,42.349662,-71.063917,RapidTransit,,https://www.mbta.com/stops/place-tumnl,level_-2_platform,0,place-tumnl,1,Boston,,,1
+70017,70017,Tufts Medical Center,Tufts Medical Center - Orange Line - Oak Grove,,Oak Grove,42.349662,-71.063917,RapidTransit,,https://www.mbta.com/stops/place-tumnl,level_-2_platform,0,place-tumnl,1,Boston,,,1
+place-welln,,Wellington,,,,42.40237,-71.077082,,"Revere Beach Pkwy and Rivers Edge Dr, Medford, MA 02155",https://www.mbta.com/stops/place-welln,,1,,1,Medford,,,
+70032,70032,Wellington,Wellington - Orange Line - Forest Hills,1,Forest Hills,42.401505,-71.077252,RapidTransit,,https://www.mbta.com/stops/place-welln,level_-0.5_platform,0,place-welln,1,Medford,,,1
+70033,70033,Wellington,Wellington - Orange Line - Oak Grove,2,Oak Grove,42.401507,-71.07715,RapidTransit,,https://www.mbta.com/stops/place-welln,level_-0.5_platform,0,place-welln,1,Medford,,,1
+place-wimnl,,Wood Island,,,,42.3796403,-71.0228654,,"450 Bennington St, East Boston, MA",https://www.mbta.com/stops/place-wimnl,,1,,1,Boston,,,
+70049,70049,Wood Island,Wood Island - Blue Line - Bowdoin,1,Bowdoin,42.37974,-71.022818,RapidTransit,,https://www.mbta.com/stops/place-wimnl,level_0_platform,0,place-wimnl,1,Boston,,,1
+70050,70050,Wood Island,Wood Island - Blue Line - Wonderland,2,Wonderland,42.379671,-71.022783,RapidTransit,,https://www.mbta.com/stops/place-wimnl,level_0_platform,0,place-wimnl,1,Boston,,,1
+place-wlsta,,Wollaston,,,,42.2665139,-71.0203369,,"90 Woodbine St, Quincy, MA 02171",https://www.mbta.com/stops/place-wlsta,,1,,1,Quincy,,,
+70099,70099,Wollaston,Wollaston - Red Line - Braintree,,Braintree,42.266762,-71.020542,RapidTransit,,https://www.mbta.com/stops/place-wlsta,level_1_platform,0,place-wlsta,1,Quincy,,,1
+70100,70100,Wollaston,Wollaston - Red Line - Alewife,,Alewife,42.266788,-71.020457,RapidTransit,,https://www.mbta.com/stops/place-wlsta,level_1_platform,0,place-wlsta,1,Quincy,,,1
+place-wondl,,Wonderland,,,,42.41342,-70.991648,,"1300 North Shore Rd, Revere, MA 02151",https://www.mbta.com/stops/place-wondl,,1,,1,Revere,,,
+70059,70059,Wonderland,Wonderland - Blue Line - Bowdoin,1,Bowdoin,42.413514,-70.991714,RapidTransit,,https://www.mbta.com/stops/place-wondl,level_0_platform,0,place-wondl,1,Revere,,,1
+70060,70060,Wonderland,Wonderland - Blue Line - Exit Only,2,Exit Only,42.413361,-70.991685,RapidTransit,,https://www.mbta.com/stops/place-wondl,level_0_platform,0,place-wondl,1,Revere,,,1

@@ -1,0 +1,28 @@
+{
+  "district_name": "Northshore Public Schools",
+  "analysis_cycle": "2026-fall-board-review",
+  "program_name": "Generative Writing Support Pilot",
+  "grade_band": "9-12",
+  "allowed_outcomes": [
+    "approve_bounded_pilot",
+    "approve_vendor_pilot",
+    "defer_pilot"
+  ],
+  "budget_cap_usd": 100000,
+  "launch_deadline": "2026-10-15",
+  "max_prompt_retention_days": 30,
+  "non_negotiables": {
+    "student_data_used_for_model_training": false,
+    "human_review_for_graded_work": "required",
+    "teacher_opt_in_first_semester": true,
+    "family_notice_plan": "yes",
+    "student_opt_out": true
+  },
+  "board_focus": [
+    "student privacy",
+    "human oversight for graded use",
+    "budget discipline",
+    "visible evaluation plan",
+    "accessibility and language support"
+  ]
+}

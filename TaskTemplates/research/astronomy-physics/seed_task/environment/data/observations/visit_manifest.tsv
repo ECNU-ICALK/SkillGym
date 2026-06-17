@@ -1,0 +1,4 @@
+visit_id	field_id	fits_file	filter_name	obs_start_utc	exposure_seconds	zeropoint_ab	extinction_mag
+visit_g_01	M101-LS-DR10	m101_field_g.fits	g	2025-03-18T03:15:21	90.0	25.05	0.032
+visit_r_01	M101-LS-DR10	m101_field_r.fits	r	2025-03-18T03:21:11	120.0	25.1	0.024
+visit_z_01	M101-LS-DR10	m101_field_z.fits	z	2025-03-18T03:27:48	150.0	24.85	0.018

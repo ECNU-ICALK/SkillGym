@@ -1,0 +1,22 @@
+{
+  "project": "aqsol_release_2026",
+  "run_id": "legacy_rf_raw_202402",
+  "created_at": "2024-03-01T00:00:00Z",
+  "status": "complete",
+  "target_col": "measured_logS",
+  "smiles_col": "SMILES",
+  "task_type": "regression",
+  "model_type": "RandomForestRegressor",
+  "feature_set": "descriptors",
+  "data_signature": "legacy_snapshot_v0",
+  "duplicate_policy": "raw_rows",
+  "release_band": "shadow",
+  "valid_rmse": 0.6028703397178569,
+  "valid_mae": 0.46190752737508917,
+  "test_rmse": 0.7657872504953475,
+  "test_mae": 0.5531499828115181,
+  "train_rows": 702,
+  "valid_rows": 152,
+  "test_rows": 152,
+  "model_file": "model.pkl"
+}

@@ -1,0 +1,103 @@
+{
+  "policy_version": "2026-04-29",
+  "assessment_rules": {
+    "bmr_formula": "mifflin_st_jeor",
+    "activity_factors": {
+      "sedentary": 1.2,
+      "lightly_active": 1.375,
+      "moderately_active": 1.55,
+      "very_active": 1.725
+    },
+    "phase_calorie_adjustments": {
+      "cut": {
+        "training_day_delta_kcal": -350,
+        "rest_day_delta_kcal": -500
+      }
+    },
+    "protein_g_per_kg": 1.8,
+    "fat_g_per_kg": 0.8,
+    "fiber_target_g": 22.0,
+    "round_digits": 2
+  },
+  "training_rules": {
+    "required_sessions": 4,
+    "required_focus_blocks_by_day": {
+      "Monday": "upper_a",
+      "Tuesday": "lower_a",
+      "Thursday": "upper_b",
+      "Saturday": "lower_b"
+    },
+    "minimum_exercises_per_session": 4,
+    "minimum_compound_exercises_per_session": 1,
+    "minimum_accessory_exercises_per_session": 2,
+    "allowed_focus_blocks": [
+      "upper_a",
+      "lower_a",
+      "upper_b",
+      "lower_b"
+    ],
+    "exercise_filters": {
+      "require_approved": true,
+      "require_current": true,
+      "allowed_languages": [
+        "en"
+      ]
+    },
+    "category_rules": {
+      "compound": {
+        "sets_min": 3,
+        "sets_max": 4,
+        "reps_min": 6,
+        "reps_max": 10,
+        "rest_seconds_min": 90,
+        "rest_seconds_max": 150
+      },
+      "accessory": {
+        "sets_min": 2,
+        "sets_max": 4,
+        "reps_min": 10,
+        "reps_max": 15,
+        "rest_seconds_min": 45,
+        "rest_seconds_max": 90
+      }
+    },
+    "weekly_primary_muscle_set_targets": {
+      "chest": 8,
+      "back": 10,
+      "quads": 7,
+      "hamstrings": 7,
+      "glutes": 6,
+      "shoulders": 6
+    }
+  },
+  "meal_rules": {
+    "required_slots": {
+      "training_day": [
+        "breakfast",
+        "lunch",
+        "pre_workout",
+        "post_workout",
+        "dinner"
+      ],
+      "rest_day": [
+        "breakfast",
+        "lunch",
+        "snack",
+        "dinner"
+      ]
+    },
+    "grams_increment": 5,
+    "kcal_tolerance": 45,
+    "macro_tolerance_g": 6,
+    "fiber_tolerance_g": 2.5
+  },
+  "handoff_rules": {
+    "required_headings": [
+      "# Client Goal",
+      "# Assessment",
+      "# Training Plan",
+      "# Nutrition Plan",
+      "# Risks And Substitutions"
+    ]
+  }
+}

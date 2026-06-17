@@ -1,0 +1,69 @@
+{
+  "required_chart_files": [
+    "Chart.yaml",
+    ".helmignore",
+    "values.yaml",
+    "values.schema.json",
+    "templates/_helpers.tpl",
+    "templates/NOTES.txt",
+    "templates/configmap.yaml",
+    "templates/deployment.yaml",
+    "templates/service.yaml",
+    "templates/serviceaccount.yaml",
+    "templates/ingress.yaml",
+    "templates/hpa.yaml",
+    "templates/pdb.yaml",
+    "templates/tests/test-connection.yaml"
+  ],
+  "releases": {
+    "staging": {
+      "namespace": "observability-staging",
+      "must_render": [
+        "ConfigMap",
+        "Deployment",
+        "Ingress",
+        "PodDisruptionBudget",
+        "Service",
+        "ServiceAccount"
+      ],
+      "must_not_render": [
+        "HorizontalPodAutoscaler"
+      ],
+      "fixed_replicas": 2,
+      "ingress_host": "podpulse-staging.internal.example.com",
+      "pdb_min_available": 1
+    },
+    "prod": {
+      "namespace": "observability-prod",
+      "must_render": [
+        "ConfigMap",
+        "Deployment",
+        "HorizontalPodAutoscaler",
+        "Ingress",
+        "PodDisruptionBudget",
+        "Service",
+        "ServiceAccount"
+      ],
+      "must_not_render": [],
+      "hpa": {
+        "minReplicas": 3,
+        "maxReplicas": 8,
+        "targetCPUUtilizationPercentage": 75,
+        "targetMemoryUtilizationPercentage": 80
+      },
+      "ingress_host": "podpulse.example.com",
+      "pdb_min_available": 2
+    }
+  },
+  "general_rules": {
+    "service_ports": {
+      "http": 80,
+      "metrics": 9797
+    },
+    "container_ports": {
+      "http": 9898,
+      "metrics": 9797
+    },
+    "checksum_annotation": "checksum/config"
+  }
+}

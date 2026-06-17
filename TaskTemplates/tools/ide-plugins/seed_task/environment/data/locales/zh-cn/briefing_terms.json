@@ -1,0 +1,22 @@
+{
+  "headings": {
+    "overview": "概览",
+    "highlights": "重点",
+    "actions": "行动项"
+  },
+  "labels": {
+    "versions": "版本",
+    "focus_areas": "关注领域",
+    "audience": "受众",
+    "published": "发布时间",
+    "generated_with": "生成工具"
+  },
+  "summary_template": "本简报汇总了与{audience}相关的 VS Code 官方更新。",
+  "focus_names": {
+    "extension-api": "扩展 API",
+    "workspace-extensions": "工作区扩展",
+    "views": "视图与工作台",
+    "accessibility": "无障碍",
+    "testing": "扩展测试"
+  }
+}

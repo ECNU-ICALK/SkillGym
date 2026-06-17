@@ -1,0 +1,7 @@
+{
+  "source_months": ["2023-01"],
+  "raw_trip_rows": 63041,
+  "accepted_trip_rows": 62511,
+  "daily_borough_metrics_rows": 59,
+  "top_zone_routes_rows": 20
+}

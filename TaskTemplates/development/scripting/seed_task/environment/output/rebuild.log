@@ -1,0 +1,5 @@
+pipeline=airport-report start=2026-05-01T15:38:58Z
+stage=extract_open_airports
+stage=join_runway_stats
+stage=build_reports
+status=ok finished=2026-05-01T15:38:58Z

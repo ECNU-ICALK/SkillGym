@@ -1,0 +1,6 @@
+{
+  "entry_point_group": "pkgmeta_kit.inspectors",
+  "entry_point_name": "catalog-summary",
+  "callable": "pkgmeta_kit.reporting:catalog_summary",
+  "top_classifier_roots_limit": 5
+}

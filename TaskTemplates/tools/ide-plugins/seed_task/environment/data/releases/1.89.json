@@ -1,0 +1,60 @@
+{
+  "version": "1.89",
+  "published": "2024-04-03",
+  "highlights": [
+    {
+      "focus": "workspace-extensions",
+      "title": {
+        "en": "Local workspace extensions became generally available",
+        "pt-br": "Extensões locais de workspace ficaram amplamente disponíveis",
+        "zh-cn": "本地工作区扩展进入普遍可用阶段"
+      },
+      "summary": {
+        "en": "The April release promoted local workspace extensions beyond preview, which made workspace-scoped distribution patterns more relevant for internal tooling teams.",
+        "pt-br": "A atualização de abril levou extensões locais de workspace além da prévia, tornando padrões de distribuição no escopo do workspace mais relevantes para equipes de ferramentas internas.",
+        "zh-cn": "四月版本将本地工作区扩展从预览推进到普遍可用阶段，使工作区范围内的分发模式对内部工具团队更重要。"
+      },
+      "action": {
+        "en": "Confirm that your packaging and onboarding flow works for teams adopting workspace-scoped extensions.",
+        "pt-br": "Confirme que seu fluxo de empacotamento e onboarding funciona para equipes que adotam extensões no escopo do workspace.",
+        "zh-cn": "确认面向采用工作区范围扩展的团队时，打包与引导流程都能正常工作。"
+      }
+    },
+    {
+      "focus": "views",
+      "title": {
+        "en": "Accessibility help for extension-contributed views",
+        "pt-br": "Ajuda de acessibilidade para views contribuídas por extensões",
+        "zh-cn": "扩展贡献视图的无障碍帮助"
+      },
+      "summary": {
+        "en": "VS Code 1.89 added an accessibility-help surface for extension views so custom navigation areas can explain keyboard support and layout more clearly.",
+        "pt-br": "O VS Code 1.89 adicionou uma superfície de ajuda de acessibilidade para views de extensões, permitindo explicar melhor suporte de teclado e layout em áreas de navegação customizadas.",
+        "zh-cn": "VS Code 1.89 为扩展视图增加了无障碍帮助入口，让自定义导航区域可以更清楚地说明键盘支持与布局。"
+      },
+      "action": {
+        "en": "Refresh view text and onboarding copy so keyboard guidance is available where users first land.",
+        "pt-br": "Atualize textos de views e onboarding para que orientações de teclado estejam disponíveis onde os usuários chegam primeiro.",
+        "zh-cn": "更新视图文案与引导内容，让用户首次进入时就能看到键盘操作说明。"
+      }
+    },
+    {
+      "focus": "extension-api",
+      "title": {
+        "en": "Window activity API moved forward for extension authors",
+        "pt-br": "A API de atividade de janela avançou para autores de extensões",
+        "zh-cn": "面向扩展作者的窗口活动 API 继续推进"
+      },
+      "summary": {
+        "en": "The 1.89 cycle moved the window activity API forward, giving extensions more context about the active editor window during reporting and navigation flows.",
+        "pt-br": "O ciclo 1.89 avançou a API de atividade de janela, dando às extensões mais contexto sobre a janela ativa durante fluxos de relatório e navegação.",
+        "zh-cn": "1.89 周期继续推进窗口活动 API，让扩展在报告与导航流程中获得更多关于当前活动编辑器窗口的上下文。"
+      },
+      "action": {
+        "en": "Review whether export and note-opening commands should react differently when users work across multiple windows.",
+        "pt-br": "Revise se comandos de exportação e abertura de notas devem reagir de forma diferente quando usuários trabalham em várias janelas.",
+        "zh-cn": "检查当用户跨多个窗口工作时，导出与打开说明命令是否需要不同处理。"
+      }
+    }
+  ]
+}

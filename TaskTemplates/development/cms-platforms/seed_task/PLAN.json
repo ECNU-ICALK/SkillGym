@@ -1,0 +1,97 @@
+{
+  "task_id": "cms-platforms__met-highlight-feed",
+  "category": "cms-platforms",
+  "design_status": "validated_with_e2b_comparisons",
+  "selected_skill": "payload",
+  "selected_skill_stars": "42,162",
+  "selection_rationale": [
+    "Top-tier CMS-platform skill in the target category with clear overlap on collections, hooks, access control, local API, and custom endpoints.",
+    "Can be exercised inside one container with local SQLite storage and without external accounts, store backends, or private workspaces.",
+    "Offers verifier-friendly behavioral surfaces: draft visibility, relationship queries, role boundaries, local API access enforcement, and feed assembly."
+  ],
+  "rejected_high_star_skills": [
+    {
+      "skill": "shopify-development",
+      "stars": "35,521",
+      "reason": "Common usage depends on a store backend, Admin API credentials, or partner-style configuration outside the isolated task container."
+    },
+    {
+      "skill": "notion",
+      "stars": "365,790",
+      "reason": "Depends on workspace tokens and private content permissions, which do not fit this task family."
+    },
+    {
+      "skill": "widget-generator",
+      "stars": "161,038",
+      "reason": "Platform-specific automation helper rather than a CMS build workflow."
+    }
+  ],
+  "task_shape": {
+    "service_type": "Payload CMS workspace with public JSON feed",
+    "domain": "museum curation and editorial highlight lanes",
+    "runtime": "single-container Next.js plus Payload plus SQLite",
+    "solver_action": "complete and correct the CMS workspace rather than write a standalone report"
+  },
+  "planned_verifier_focus": [
+    "Seed pipeline correctness and summary regeneration",
+    "Collection relationships and published-feed assembly",
+    "Audience and department filtering behavior",
+    "Role-based publish and ordering boundaries",
+    "Editor-owned draft visibility and cross-editor isolation",
+    "Public feed exclusion of ineligible or draft highlights",
+    "Re-run behavior after changing seed input"
+  ],
+  "real_data_sources": [
+    {
+      "planned_file": "environment/data/met_departments.json",
+      "reference_type": "department list",
+      "reference": "The Met Collection API departments endpoint",
+      "link": "https://collectionapi.metmuseum.org/public/collection/v1/departments"
+    },
+    {
+      "planned_file": "environment/data/met_object_details.ndjson",
+      "reference_type": "object detail snapshots",
+      "reference": "The Met Collection API object endpoint",
+      "link": "https://metmuseum.github.io/"
+    },
+    {
+      "planned_file": "environment/data/met_objects_seed.csv",
+      "reference_type": "object field shape and editorial seed set",
+      "reference": "The Met Open Access object catalog and object detail API",
+      "link": "https://github.com/metmuseum/openaccess"
+    }
+  ],
+  "with_without_difference_policy": "Only environment/skills/ and the corresponding runtime skill-copy logic may differ between with_skill and without_skill variants.",
+  "local_validation": {
+    "buggy_workspace_expected_result": "fails substantive verifier checks around published-feed assembly, access enforcement, and role-scoped publish actions",
+    "oracle_result": "Official solution passed the latest local verifier on 2026-05-04 after the final role-boundary checks were added.",
+    "local_test_command": "tests/test.sh inside the task container"
+  },
+  "e2b_validation": {
+    "comparison_window": [
+      "cms_platforms_round29_20260503_161510",
+      "cms_platforms_round30_20260503_161620",
+      "cms_platforms_round31_20260504_000650"
+    ],
+    "with_skill": {
+      "pass_rate": "1/3",
+      "avg_agent_execution_sec": 744.1,
+      "avg_tokens": 3166561
+    },
+    "without_skill": {
+      "pass_rate": "0/3",
+      "avg_agent_execution_sec": 730.5,
+      "avg_tokens": 3276928
+    },
+    "notes": [
+      "Latest valid with_skill success came from round29.",
+      "All latest without_skill runs retained at least one action-level verifier failure in the draft lifecycle path.",
+      "Later with_skill failures came from solver-side changes to editorial user seeding or draft persistence, not sandbox startup errors."
+    ]
+  },
+  "iteration_notes": [
+    "Do not modify the selected skill body; mirror it under environment/skills only.",
+    "Do not change instruction, tests, data, or dependencies between with_skill and without_skill variants.",
+    "Keep at least one action-level without_skill failure after final verifier tuning."
+  ]
+}

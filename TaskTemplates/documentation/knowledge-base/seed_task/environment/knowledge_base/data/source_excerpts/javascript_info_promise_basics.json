@@ -1,0 +1,7 @@
+{
+  "id": "javascript_info_promise_basics",
+  "description_sentences": [
+    "A beginner-friendly walkthrough of Promise states, handlers, and the move away from callback-style control flow.",
+    "Read this first if you want a clear mental model before layering on chaining or `await`."
+  ]
+}

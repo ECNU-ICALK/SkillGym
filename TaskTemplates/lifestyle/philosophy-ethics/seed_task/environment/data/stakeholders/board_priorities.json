@@ -1,0 +1,14 @@
+{
+  "stakeholder": "board",
+  "priority_order": [
+    "privacy",
+    "oversight",
+    "budget",
+    "evaluation",
+    "accessibility"
+  ],
+  "notes": [
+    "The board wants one option that can be defended in public session.",
+    "Any deployable option needs a visible evaluation checkpoint before expansion."
+  ]
+}

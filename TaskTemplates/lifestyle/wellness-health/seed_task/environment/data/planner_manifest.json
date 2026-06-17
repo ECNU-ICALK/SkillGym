@@ -1,0 +1,16 @@
+{
+  "site_id": "ATX-WELL-001",
+  "planning_window_start": "2026-05-04T00:00:00-05:00",
+  "planning_window_end": "2026-05-06T23:59:59-05:00",
+  "timezone": "America/Chicago",
+  "required_session_count": 6,
+  "required_dates": [
+    "2026-05-04",
+    "2026-05-05",
+    "2026-05-06"
+  ],
+  "service_urls": {
+    "manifest": "http://127.0.0.1:8147/api/manifest",
+    "hourly_conditions": "http://127.0.0.1:8147/api/conditions/hourly"
+  }
+}

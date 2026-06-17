@@ -1,0 +1,6 @@
+apiVersion: v2
+name: podpulse
+description: Reusable Helm chart for Podpulse multi-environment releases.
+type: application
+version: 0.1.0
+appVersion: "6.11.2"

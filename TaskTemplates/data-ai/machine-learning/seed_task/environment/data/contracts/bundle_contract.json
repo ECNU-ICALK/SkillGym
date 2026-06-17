@@ -1,0 +1,37 @@
+{
+  "required_bundle_files": {
+    "weight_file": "weights/model_weights.bin",
+    "training_checkpoint_file": "checkpoints/training_resume.bin",
+    "phase_mapping_file": "metadata/phase_mapping.json",
+    "preprocessor_file": "metadata/preprocessor_stats.npz",
+    "model_config_file": "metadata/model_config.json",
+    "split_manifest_file": "metadata/split_manifest.json",
+    "inference_entry": "inference.py"
+  },
+  "checkpoint_contract": {
+    "required_top_level_keys": [
+      "epoch",
+      "model_state_dict",
+      "optimizer_state_dict",
+      "selected_val_macro_f1"
+    ],
+    "note": "training_checkpoint_file must be sufficient to resume from the selected export point without retraining from scratch, must expose the selected validation macro-F1 under the exact key selected_val_macro_f1, and the checkpoint payload should stay limited to resume-critical tensor or primitive state"
+  },
+  "weight_format_contract": {
+    "note": "weight_file must be the formal inference weight artifact used by the exported bundle"
+  },
+  "inference_contract": {
+    "cli": "python inference.py --bundle-dir <bundle> --data-dir <data-dir> --split holdout --output <csv>",
+    "required_output_columns": [
+      "sequence_id",
+      "source_file",
+      "anchor_timestamp",
+      "sequence_length",
+      "phase_id",
+      "phase_label",
+      "predicted_phase_id",
+      "predicted_phase_label",
+      "confidence"
+    ]
+  }
+}

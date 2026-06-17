@@ -1,0 +1,10 @@
+day_type,meal_slot,min_foods,max_foods,min_protein_g,max_fat_g
+training_day,breakfast,2,3,20,10
+training_day,lunch,3,4,30,25
+training_day,pre_workout,1,2,0,6
+training_day,post_workout,1,2,20,5
+training_day,dinner,3,4,25,35
+rest_day,breakfast,2,3,20,10
+rest_day,lunch,3,5,30,25
+rest_day,snack,2,3,20,15
+rest_day,dinner,3,4,25,35

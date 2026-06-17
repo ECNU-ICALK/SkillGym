@@ -1,0 +1,4537 @@
+{
+  "source": "ChEMBL molecule endpoint",
+  "target_chembl_id": "CHEMBL203",
+  "rows": [
+    {
+      "molecule_chembl_id": "CHEMBL1009",
+      "pref_name": "LEVODOPA",
+      "max_phase": "4.0",
+      "molecule_properties": {
+        "alogp": "0.05",
+        "full_mwt": "197.19",
+        "hba": 4,
+        "hbd": 4,
+        "psa": "103.78",
+        "qed_weighted": "0.51",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N[C@@H](Cc1ccc(O)c(O)c1)C(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": true,
+      "chirality": 1,
+      "topical": true,
+      "oral": true,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL106232",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.13",
+        "full_mwt": "489.45",
+        "hba": 7,
+        "hbd": 1,
+        "psa": "66.29",
+        "qed_weighted": "0.48",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN1CCN(CCCCCNc2ncc3cc(-c4c(Cl)cccc4Cl)c(=O)n(C)c3n2)CC1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL109547",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.22",
+        "full_mwt": "469.33",
+        "hba": 7,
+        "hbd": 1,
+        "psa": "86.11",
+        "qed_weighted": "0.40",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCOC(=O)c1cccc(Nc2ncc3cc(-c4c(Cl)cccc4Cl)c(=O)n(C)c3n2)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL110034",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.31",
+        "full_mwt": "412.28",
+        "hba": 6,
+        "hbd": 1,
+        "psa": "72.70",
+        "qed_weighted": "0.54",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(=O)c(-c2c(Cl)cccc2Cl)cc2cnc(NCc3cccnc3)nc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL111197",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.05",
+        "full_mwt": "427.29",
+        "hba": 6,
+        "hbd": 1,
+        "psa": "69.04",
+        "qed_weighted": "0.49",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cccc(Nc2ncc3cc(-c4c(Cl)cccc4Cl)c(=O)n(C)c3n2)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL111365",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.45",
+        "full_mwt": "428.28",
+        "hba": 7,
+        "hbd": 1,
+        "psa": "81.93",
+        "qed_weighted": "0.52",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc(Nc2ncc3cc(-c4c(Cl)cccc4Cl)c(=O)n(C)c3n2)cn1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL111434",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.81",
+        "full_mwt": "476.16",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "59.81",
+        "qed_weighted": "0.41",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(=O)c(-c2c(Cl)cccc2Cl)cc2cnc(Nc3cccc(Br)c3)nc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL111913",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.26",
+        "full_mwt": "363.20",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "76.88",
+        "qed_weighted": "0.76",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CC(=O)Nc1ncc2cc(-c3c(Cl)cccc3Cl)c(=O)n(C)c2n1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL113023",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.36",
+        "full_mwt": "441.32",
+        "hba": 6,
+        "hbd": 1,
+        "psa": "69.04",
+        "qed_weighted": "0.46",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc(Nc2ncc3cc(-c4c(Cl)cccc4Cl)c(=O)n(C)c3n2)cc1C"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL113128",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.05",
+        "full_mwt": "403.31",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "59.81",
+        "qed_weighted": "0.67",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(=O)c(-c2c(Cl)cccc2Cl)cc2cnc(NC3CCCCC3)nc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL113356",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.91",
+        "full_mwt": "411.29",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "59.81",
+        "qed_weighted": "0.52",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(=O)c(-c2c(Cl)cccc2Cl)cc2cnc(NCc3ccccc3)nc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL113521",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.03",
+        "full_mwt": "484.39",
+        "hba": 7,
+        "hbd": 2,
+        "psa": "81.07",
+        "qed_weighted": "0.34",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCNCCOc1ccc(Nc2ncc3cc(-c4c(Cl)cccc4Cl)c(=O)n(C)c3n2)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL129989",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.64",
+        "full_mwt": "301.30",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "88.35",
+        "qed_weighted": "0.51",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COC(=O)c1cc(/N=C/c2cc(O)ccc2O)ccc1OC"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL132907",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.50",
+        "full_mwt": "273.29",
+        "hba": 5,
+        "hbd": 3,
+        "psa": "78.79",
+        "qed_weighted": "0.59",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COC(=O)c1cc(NCc2ccccc2O)ccc1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL133023",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.24",
+        "full_mwt": "306.37",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "65.77",
+        "qed_weighted": "0.58",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cccc(Nc2ncnc3ccc(/N=N/N(C)C)cc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL133024",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.44",
+        "full_mwt": "312.76",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "74.56",
+        "qed_weighted": "0.55",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C/N=N/Nc1ccc2ncnc(Nc3cccc(Cl)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL134312",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.70",
+        "full_mwt": "371.24",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "65.77",
+        "qed_weighted": "0.53",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN(C)/N=N/c1ccc2ncnc(Nc3cccc(Br)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL135592",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.81",
+        "full_mwt": "292.35",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "65.77",
+        "qed_weighted": "0.59",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C/N=N/Nc1ccc2ncnc(N(C)c3ccccc3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL136058",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.86",
+        "full_mwt": "540.42",
+        "hba": 8,
+        "hbd": 3,
+        "psa": "121.37",
+        "qed_weighted": "0.28",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(/C=C/C(=O)Nc1cc2c(Nc3cccc(Br)c3)ncnc2cn1)NCCCN1CCOCC1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL136404",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.05",
+        "full_mwt": "384.24",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "79.80",
+        "qed_weighted": "0.66",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C/C=C/C(=O)Nc1cc2c(Nc3cccc(Br)c3)ncnc2cn1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL136491",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.59",
+        "full_mwt": "326.79",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "65.77",
+        "qed_weighted": "0.56",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN(C)/N=N/c1ccc2ncnc(Nc3cccc(Cl)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL136492",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.98",
+        "full_mwt": "250.31",
+        "hba": 4,
+        "hbd": 1,
+        "psa": "55.04",
+        "qed_weighted": "0.71",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN(c1ccccc1)c1ncnc2ccc(N)cc12"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL136674",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.56",
+        "full_mwt": "401.27",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "83.79",
+        "qed_weighted": "0.34",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COCC/N=N/Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL137027",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.80",
+        "full_mwt": "306.37",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "65.77",
+        "qed_weighted": "0.57",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN(C)/N=N/c1ccc2ncnc(NCc3ccccc3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL137189",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.09",
+        "full_mwt": "292.35",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "74.56",
+        "qed_weighted": "0.56",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C/N=N/Nc1ccc2ncnc(Nc3cccc(C)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL137364",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.25",
+        "full_mwt": "456.35",
+        "hba": 7,
+        "hbd": 2,
+        "psa": "87.03",
+        "qed_weighted": "0.41",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Brc1cccc(Nc2ncnc3ccc(N/N=N/CCN4CCOCC4)cc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL137534",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.48",
+        "full_mwt": "414.31",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "77.80",
+        "qed_weighted": "0.44",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN(C)CC/N=N/Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL137617",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.54",
+        "full_mwt": "357.22",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "74.56",
+        "qed_weighted": "0.53",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C/N=N/Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL137635",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.77",
+        "full_mwt": "369.43",
+        "hba": 6,
+        "hbd": 1,
+        "psa": "78.66",
+        "qed_weighted": "0.39",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN(c1ccccc1)c1ncnc2ccc(N/N=N/Cc3ccccn3)cc12"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL137788",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.65",
+        "full_mwt": "292.35",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "74.56",
+        "qed_weighted": "0.56",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C/N=N/Nc1ccc2ncnc(NCc3ccccc3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL138125",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.51",
+        "full_mwt": "434.30",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "87.45",
+        "qed_weighted": "0.31",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Brc1cccc(Nc2ncnc3ccc(N/N=N/Cc4ccccn4)cc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL138691",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.61",
+        "full_mwt": "441.33",
+        "hba": 6,
+        "hbd": 1,
+        "psa": "74.25",
+        "qed_weighted": "0.57",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C=CC(=O)N(CCN(C)C)c1cc2c(Nc3cccc(Br)c3)ncnc2cn1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL139307",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.38",
+        "full_mwt": "496.41",
+        "hba": 6,
+        "hbd": 1,
+        "psa": "70.59",
+        "qed_weighted": "0.47",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C=CC(=O)N(CCCN1CCOCC1)c1ccc2ncnc(Nc3cccc(Br)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL145",
+      "pref_name": "CAFFEIC ACID",
+      "max_phase": "3.0",
+      "molecule_properties": {
+        "alogp": "1.20",
+        "full_mwt": "180.16",
+        "hba": 3,
+        "hbd": 3,
+        "psa": "77.76",
+        "qed_weighted": "0.47",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(O)/C=C/c1ccc(O)c(O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": 2,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL264382",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.41",
+        "full_mwt": "602.70",
+        "hba": 8,
+        "hbd": 4,
+        "psa": "129.20",
+        "qed_weighted": "0.18",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)NCCN2CCOCC2)[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc4c(ccn4Cc4ccccc4)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL266487",
+      "pref_name": "RO-316233",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.22",
+        "full_mwt": "327.34",
+        "hba": 2,
+        "hbd": 3,
+        "psa": "77.75",
+        "qed_weighted": "0.49",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1c[nH]c2ccccc12"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL266969",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.06",
+        "full_mwt": "341.46",
+        "hba": 4,
+        "hbd": 3,
+        "psa": "70.23",
+        "qed_weighted": "0.72",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1NC(=O)c2cc(NC3CCCCC3)c(NC3CCCCC3)cc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL267019",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.47",
+        "full_mwt": "361.36",
+        "hba": 6,
+        "hbd": 5,
+        "psa": "110.69",
+        "qed_weighted": "0.36",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1NC(=O)c2cc(Nc3ccc(O)cc3)c(Nc3ccc(O)cc3)cc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL267941",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.11",
+        "full_mwt": "357.41",
+        "hba": 4,
+        "hbd": 1,
+        "psa": "52.65",
+        "qed_weighted": "0.71",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN(c1ccccc1)c1cc2c(cc1N(C)c1ccccc1)C(=O)NC2=O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL268368",
+      "pref_name": "STAUROSPORINE AGLYCON",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.84",
+        "full_mwt": "325.33",
+        "hba": 2,
+        "hbd": 3,
+        "psa": "77.75",
+        "qed_weighted": "0.38",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1NC(=O)c2c1c1c3ccccc3[nH]c1c1[nH]c3ccccc3c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL276711",
+      "pref_name": "SEMAXANIB",
+      "max_phase": "3.0",
+      "molecule_properties": {
+        "alogp": "3.12",
+        "full_mwt": "238.29",
+        "hba": 1,
+        "hbd": 2,
+        "psa": "44.89",
+        "qed_weighted": "0.74",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C)c(/C=C2\\C(=O)Nc3ccccc32)[nH]1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": 2,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL285063",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.26",
+        "full_mwt": "369.22",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "66.91",
+        "qed_weighted": "0.67",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C=CC(=O)Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL291667",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "9.28",
+        "full_mwt": "631.61",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "68.06",
+        "qed_weighted": "0.17",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(SSc2c(C(=O)Nc3ccccc3)c3cccc(Cl)c3n2C)c(C(=O)Nc2ccccc2)c2cccc(Cl)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL291979",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "7.72",
+        "full_mwt": "612.74",
+        "hba": 8,
+        "hbd": 2,
+        "psa": "115.64",
+        "qed_weighted": "0.18",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(SSc2c(C(=O)Nc3ccccc3)c3cc(C#N)ccc3n2C)c(C(=O)Nc2ccccc2)c2cc(C#N)ccc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL292323",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "7.99",
+        "full_mwt": "622.77",
+        "hba": 8,
+        "hbd": 2,
+        "psa": "86.52",
+        "qed_weighted": "0.16",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cccc2c(C(=O)Nc3ccccc3)c(SSc3c(C(=O)Nc4ccccc4)c4cccc(OC)c4n3C)n(C)c12"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL293261",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "7.95",
+        "full_mwt": "618.83",
+        "hba": 4,
+        "hbd": 4,
+        "psa": "89.78",
+        "qed_weighted": "0.10",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(CCc1c(SSc2[nH]c3ccccc3c2CCC(=O)NCc2ccccc2)[nH]c2ccccc12)NCc1ccccc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL294475",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.67",
+        "full_mwt": "430.31",
+        "hba": 8,
+        "hbd": 2,
+        "psa": "88.09",
+        "qed_weighted": "0.62",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Brc1cccc(Nc2ncnc3cnc(NCCN4CCOCC4)nc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL296407",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "0.49",
+        "full_mwt": "204.19",
+        "hba": 4,
+        "hbd": 3,
+        "psa": "107.34",
+        "qed_weighted": "0.37",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C\\c1ccc(O)c(O)c1)C(N)=O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL298931",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.05",
+        "full_mwt": "252.28",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "89.61",
+        "qed_weighted": "0.73",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cccc(Nc2ncnc3cnc(N)nc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL302552",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.90",
+        "full_mwt": "511.95",
+        "hba": 7,
+        "hbd": 4,
+        "psa": "124.27",
+        "qed_weighted": "0.36",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1Nc2ncnc(Nc3ccc(F)c(Cl)c3)c2/C1=C/c1ccc(C(=O)NCCN2CCOCC2)[nH]1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL304271",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.57",
+        "full_mwt": "542.02",
+        "hba": 7,
+        "hbd": 5,
+        "psa": "135.27",
+        "qed_weighted": "0.25",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCN(CC)CC(O)CNC(=O)c1cc(C)c(/C=C2\\C(=O)Nc3ncnc(Nc4ccc(F)c(Cl)c4)c32)[nH]1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL304414",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "7.97",
+        "full_mwt": "562.72",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "68.06",
+        "qed_weighted": "0.19",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(SSc2c(C(=O)Nc3ccccc3)c3ccccc3n2C)c(C(=O)Nc2ccccc2)c2ccccc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL304971",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.53",
+        "full_mwt": "495.95",
+        "hba": 6,
+        "hbd": 3,
+        "psa": "106.25",
+        "qed_weighted": "0.48",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1c(C(=O)N2CCN(C)CC2)c[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc(F)c(Cl)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL305194",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.84",
+        "full_mwt": "413.80",
+        "hba": 5,
+        "hbd": 4,
+        "psa": "120.00",
+        "qed_weighted": "0.48",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)O)[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc(F)c(Cl)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL305246",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.53",
+        "full_mwt": "495.95",
+        "hba": 6,
+        "hbd": 3,
+        "psa": "106.25",
+        "qed_weighted": "0.48",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)N2CCN(C)CC2)[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc(F)c(Cl)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL305695",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.82",
+        "full_mwt": "170.17",
+        "hba": 3,
+        "hbd": 1,
+        "psa": "67.81",
+        "qed_weighted": "0.65",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc(O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL305782",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.47",
+        "full_mwt": "455.88",
+        "hba": 5,
+        "hbd": 4,
+        "psa": "120.00",
+        "qed_weighted": "0.41",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1[nH]c(/C=C2\\C(=O)Nc3ncnc(Nc4ccc(F)c(Cl)c4)c32)c(C)c1CCC(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL306988",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.31",
+        "full_mwt": "283.29",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "113.98",
+        "qed_weighted": "0.80",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CC(=C(C#N)C#N)c1ccc(NC(=O)CCC(=O)O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL307179",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.74",
+        "full_mwt": "245.19",
+        "hba": 6,
+        "hbd": 1,
+        "psa": "120.18",
+        "qed_weighted": "0.49",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(C=C(C#N)C#N)cc([N+](=O)[O-])c1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL307248",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.92",
+        "full_mwt": "269.26",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "113.98",
+        "qed_weighted": "0.79",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc(NC(=O)CCC(=O)O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL307250",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.39",
+        "full_mwt": "219.20",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "90.55",
+        "qed_weighted": "0.59",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(/C=C(\\C#N)C(=O)O)ccc1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL308048",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "0.78",
+        "full_mwt": "188.19",
+        "hba": 3,
+        "hbd": 2,
+        "psa": "87.11",
+        "qed_weighted": "0.53",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C\\c1ccc(O)cc1)C(N)=O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL308133",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "0.94",
+        "full_mwt": "208.17",
+        "hba": 3,
+        "hbd": 3,
+        "psa": "94.83",
+        "qed_weighted": "0.39",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(O)C(=Cc1ccc(O)cc1)C(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL308134",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.73",
+        "full_mwt": "215.17",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "110.95",
+        "qed_weighted": "0.46",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc(O)c([N+](=O)[O-])c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL308339",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "-1.30",
+        "full_mwt": "190.12",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "122.85",
+        "qed_weighted": "0.28",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=C1C(=O)NC(=O)NC1=O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL308645",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.16",
+        "full_mwt": "441.85",
+        "hba": 5,
+        "hbd": 4,
+        "psa": "120.00",
+        "qed_weighted": "0.43",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(CCC(=O)O)[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc(F)c(Cl)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL308672",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.21",
+        "full_mwt": "511.99",
+        "hba": 6,
+        "hbd": 4,
+        "psa": "115.04",
+        "qed_weighted": "0.32",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCN(CC)CCNC(=O)c1cc(C)c(/C=C2\\C(=O)Nc3ncnc(Nc4ccc(Cl)cc4F)c32)[nH]1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL309334",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.26",
+        "full_mwt": "252.23",
+        "hba": 6,
+        "hbd": 3,
+        "psa": "137.85",
+        "qed_weighted": "0.41",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=C(N)/C(C#N)=C/c1ccc(O)c(O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL309598",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.12",
+        "full_mwt": "218.17",
+        "hba": 6,
+        "hbd": 4,
+        "psa": "128.50",
+        "qed_weighted": "0.32",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=C(O)c1cc(O)c(O)c(O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL309625",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.47",
+        "full_mwt": "281.23",
+        "hba": 7,
+        "hbd": 2,
+        "psa": "160.76",
+        "qed_weighted": "0.37",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=C(N)/C(C#N)=C/c1ccc(O)c([N+](=O)[O-])c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL309866",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.59",
+        "full_mwt": "218.17",
+        "hba": 4,
+        "hbd": 1,
+        "psa": "104.23",
+        "qed_weighted": "0.36",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C\\c1ccc([N+](=O)[O-])cc1)C(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL310400",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.82",
+        "full_mwt": "170.17",
+        "hba": 3,
+        "hbd": 1,
+        "psa": "67.81",
+        "qed_weighted": "0.65",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1cccc(O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL310514",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.45",
+        "full_mwt": "143.15",
+        "hba": 2,
+        "hbd": 1,
+        "psa": "63.37",
+        "qed_weighted": "0.60",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc[nH]1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL310798",
+      "pref_name": "TYRPHOSTIN 25",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.23",
+        "full_mwt": "202.17",
+        "hba": 5,
+        "hbd": 3,
+        "psa": "108.27",
+        "qed_weighted": "0.47",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1cc(O)c(O)c(O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL310958",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.21",
+        "full_mwt": "186.17",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "92.20",
+        "qed_weighted": "0.41",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=NNc1ccc(O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL311119",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.93",
+        "full_mwt": "182.18",
+        "hba": 3,
+        "hbd": 0,
+        "psa": "64.65",
+        "qed_weighted": "0.52",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc(C=O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL311564",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.01",
+        "full_mwt": "200.20",
+        "hba": 4,
+        "hbd": 1,
+        "psa": "77.04",
+        "qed_weighted": "0.58",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc(C(O)=C(C#N)C#N)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL313500",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.06",
+        "full_mwt": "370.45",
+        "hba": 2,
+        "hbd": 2,
+        "psa": "54.12",
+        "qed_weighted": "0.63",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc(-c2ccc3c(c2)NC(=O)/C3=C\\c2cc3c([nH]2)CCCC3)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL313746",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.05",
+        "full_mwt": "340.43",
+        "hba": 1,
+        "hbd": 2,
+        "psa": "44.89",
+        "qed_weighted": "0.63",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1Nc2cc(-c3ccccc3)ccc2/C1=C/c1cc2c([nH]1)CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL313821",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.08",
+        "full_mwt": "442.52",
+        "hba": 3,
+        "hbd": 3,
+        "psa": "91.42",
+        "qed_weighted": "0.46",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccccc1-c1ccc2c(c1)NC(=O)/C2=C\\c1[nH]c2c(c1CCC(=O)O)CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL314995",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.17",
+        "full_mwt": "415.29",
+        "hba": 2,
+        "hbd": 3,
+        "psa": "82.19",
+        "qed_weighted": "0.66",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(O)CCc1c(/C=C2\\C(=O)Nc3ccc(Br)cc32)[nH]c2c1CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL315753",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.40",
+        "full_mwt": "336.39",
+        "hba": 2,
+        "hbd": 3,
+        "psa": "82.19",
+        "qed_weighted": "0.75",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(O)CCc1c(/C=C2\\C(=O)Nc3ccccc32)[nH]c2c1CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL316764",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.25",
+        "full_mwt": "273.24",
+        "hba": 5,
+        "hbd": 4,
+        "psa": "110.35",
+        "qed_weighted": "0.51",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(O)c1cc(/N=C/c2cc(O)ccc2O)ccc1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL322298",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.53",
+        "full_mwt": "411.29",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "59.81",
+        "qed_weighted": "0.48",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCn1c(=O)c(-c2c(Cl)cccc2Cl)cc2cnc(Nc3ccccc3)nc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL322395",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "6.66",
+        "full_mwt": "519.43",
+        "hba": 6,
+        "hbd": 1,
+        "psa": "70.41",
+        "qed_weighted": "0.31",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(Nc2c(C#N)cnc3cc(-c4ccc(CN5CCOCC5)cc4)ccc23)c(Cl)cc1Cl"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL323405",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.75",
+        "full_mwt": "413.26",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "80.04",
+        "qed_weighted": "0.47",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(=O)c(-c2c(Cl)cccc2Cl)cc2cnc(Nc3ccc(O)cc3)nc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL323775",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.91",
+        "full_mwt": "524.45",
+        "hba": 7,
+        "hbd": 1,
+        "psa": "72.28",
+        "qed_weighted": "0.32",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(=O)c(-c2c(Cl)cccc2Cl)cc2cnc(Nc3ccc(OCCN4CCCCC4)cc3)nc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL327127",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.54",
+        "full_mwt": "427.29",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "80.04",
+        "qed_weighted": "0.50",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(=O)c(-c2c(Cl)cccc2Cl)cc2cnc(Nc3cccc(CO)c3)nc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL328029",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.39",
+        "full_mwt": "264.33",
+        "hba": 1,
+        "hbd": 2,
+        "psa": "44.89",
+        "qed_weighted": "0.76",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1Nc2ccccc2/C1=C/c1cc2c([nH]1)CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL331366",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.38",
+        "full_mwt": "456.33",
+        "hba": 7,
+        "hbd": 2,
+        "psa": "95.06",
+        "qed_weighted": "0.45",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(=O)c(-c2c(Cl)cccc2Cl)cc2cnc(Nc3ccc(OCCN)cc3)nc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL332096",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.82",
+        "full_mwt": "250.31",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "63.83",
+        "qed_weighted": "0.70",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Nc1ccc2ncnc(NCc3ccccc3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL334334",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.50",
+        "full_mwt": "273.29",
+        "hba": 5,
+        "hbd": 3,
+        "psa": "78.79",
+        "qed_weighted": "0.59",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COC(=O)c1cccc(NCc2cc(O)ccc2O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL334697",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.68",
+        "full_mwt": "384.24",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "71.01",
+        "qed_weighted": "0.70",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C=CC(=O)N(C)c1cc2c(Nc3cccc(Br)c3)ncnc2cn1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL336113",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.26",
+        "full_mwt": "250.31",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "63.83",
+        "qed_weighted": "0.69",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cccc(Nc2ncnc3ccc(N)cc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL343352",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.61",
+        "full_mwt": "270.72",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "63.83",
+        "qed_weighted": "0.70",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Nc1ccc2ncnc(Nc3cccc(Cl)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL344652",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.96",
+        "full_mwt": "306.37",
+        "hba": 5,
+        "hbd": 0,
+        "psa": "56.98",
+        "qed_weighted": "0.54",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN(C)/N=N/c1ccc2ncnc(N(C)c3ccccc3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL417420",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.06",
+        "full_mwt": "444.34",
+        "hba": 8,
+        "hbd": 2,
+        "psa": "88.09",
+        "qed_weighted": "0.54",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Brc1cccc(Nc2ncnc3cnc(NCCCN4CCOCC4)nc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL419682",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.06",
+        "full_mwt": "370.45",
+        "hba": 2,
+        "hbd": 2,
+        "psa": "54.12",
+        "qed_weighted": "0.63",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cccc(-c2ccc3c(c2)NC(=O)/C3=C\\c2cc3c([nH]2)CCCC3)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL420385",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.95",
+        "full_mwt": "239.28",
+        "hba": 4,
+        "hbd": 0,
+        "psa": "60.05",
+        "qed_weighted": "0.74",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc(N2CCOCC2)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL420609",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.41",
+        "full_mwt": "366.42",
+        "hba": 3,
+        "hbd": 3,
+        "psa": "91.42",
+        "qed_weighted": "0.71",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc2c(c1)NC(=O)/C2=C\\c1[nH]c2c(c1CCC(=O)O)CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL421877",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.84",
+        "full_mwt": "230.22",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "86.27",
+        "qed_weighted": "0.80",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(C=C(C#N)C#N)cc(OC)c1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL422292",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.59",
+        "full_mwt": "442.27",
+        "hba": 7,
+        "hbd": 2,
+        "psa": "106.10",
+        "qed_weighted": "0.44",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCOC(=O)/C=C/C(=O)Nc1cc2c(Nc3cccc(Br)c3)ncnc2cn1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL424093",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "6.12",
+        "full_mwt": "433.31",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "74.56",
+        "qed_weighted": "0.28",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Brc1cccc(Nc2ncnc3ccc(N/N=N/Cc4ccccc4)cc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL42423",
+      "pref_name": "4-Nitrocatechol",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.01",
+        "full_mwt": "155.11",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "83.60",
+        "qed_weighted": "0.36",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=[N+]([O-])c1ccc(O)c(O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL431996",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.10",
+        "full_mwt": "380.40",
+        "hba": 3,
+        "hbd": 4,
+        "psa": "119.49",
+        "qed_weighted": "0.59",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(O)CCc1c(/C=C2\\C(=O)Nc3ccc(C(=O)O)cc32)[nH]c2c1CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL432903",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.52",
+        "full_mwt": "526.02",
+        "hba": 6,
+        "hbd": 4,
+        "psa": "115.04",
+        "qed_weighted": "0.31",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCN(CC)CCNC(=O)c1c(C)[nH]c(/C=C2\\C(=O)Nc3ncnc(Nc4ccc(F)c(Cl)c4)c32)c1C"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL432941",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.08",
+        "full_mwt": "442.52",
+        "hba": 3,
+        "hbd": 3,
+        "psa": "91.42",
+        "qed_weighted": "0.46",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cccc(-c2ccc3c(c2)NC(=O)/C3=C\\c2[nH]c3c(c2CCC(=O)O)CCCC3)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL434827",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.87",
+        "full_mwt": "526.44",
+        "hba": 7,
+        "hbd": 3,
+        "psa": "112.14",
+        "qed_weighted": "0.26",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCN(CC)CCCNC(=O)/C=C/C(=O)Nc1cc2c(Nc3cccc(Br)c3)ncnc2cn1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL441343",
+      "pref_name": "PARABEN",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.09",
+        "full_mwt": "138.12",
+        "hba": 2,
+        "hbd": 2,
+        "psa": "57.53",
+        "qed_weighted": "0.61",
+        "ro3_pass": "Y"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(O)c1ccc(O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL443268",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.23",
+        "full_mwt": "540.00",
+        "hba": 7,
+        "hbd": 3,
+        "psa": "115.48",
+        "qed_weighted": "0.39",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)NCCN2CCOCC2)[nH]c1/C=C1\\C(=O)N(C)c2ncnc(Nc3ccc(F)c(Cl)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL47940",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.59",
+        "full_mwt": "370.46",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "65.96",
+        "qed_weighted": "0.51",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Nc1ncnc2c1c(-c1ccc(Oc3ccccc3)cc1)cn2C1CCCC1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL47986",
+      "pref_name": "ERBSTATIN",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "0.81",
+        "full_mwt": "179.18",
+        "hba": 3,
+        "hbd": 3,
+        "psa": "69.56",
+        "qed_weighted": "0.47",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=CN/C=C/c1cc(O)ccc1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL51283",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.80",
+        "full_mwt": "495.41",
+        "hba": 7,
+        "hbd": 1,
+        "psa": "66.29",
+        "qed_weighted": "0.44",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN1CCN(c2ccc(Nc3ncc4cc(-c5c(Cl)cccc5Cl)c(=O)n(C)c4n3)cc2)CC1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL51573",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.61",
+        "full_mwt": "320.18",
+        "hba": 4,
+        "hbd": 0,
+        "psa": "47.78",
+        "qed_weighted": "0.69",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1ncc2cc(-c3c(Cl)cccc3Cl)c(=O)n(C)c2n1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL51854",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.93",
+        "full_mwt": "332.16",
+        "hba": 6,
+        "hbd": 1,
+        "psa": "72.82",
+        "qed_weighted": "0.79",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ncc2ncnc(Nc3cccc(Br)c3)c2n1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL52591",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.51",
+        "full_mwt": "266.31",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "75.62",
+        "qed_weighted": "0.76",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CNc1ncc2ncnc(Nc3cccc(C)c3)c2n1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL52765",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.72",
+        "full_mwt": "315.17",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "63.83",
+        "qed_weighted": "0.71",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL52823",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.13",
+        "full_mwt": "271.71",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "63.59",
+        "qed_weighted": "0.73",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cccc(Nc2ncnc3cnc(Cl)nc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL52829",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.54",
+        "full_mwt": "280.34",
+        "hba": 6,
+        "hbd": 1,
+        "psa": "66.83",
+        "qed_weighted": "0.79",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cccc(Nc2ncnc3cnc(N(C)C)nc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL53310",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.21",
+        "full_mwt": "252.28",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "75.62",
+        "qed_weighted": "0.74",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CNc1ncc2ncnc(Nc3ccccc3)c2n1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL545315",
+      "pref_name": "CANERTINIB DIHYDROCHLORIDE",
+      "max_phase": "3.0",
+      "molecule_properties": {
+        "alogp": "4.39",
+        "full_mwt": "558.87",
+        "hba": 7,
+        "hbd": 2,
+        "psa": "88.61",
+        "qed_weighted": "0.34",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C=CC(=O)Nc1cc2c(Nc3ccc(F)c(Cl)c3)ncnc2cc1OCCCN1CCOCC1.Cl.Cl"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": 2,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL57712",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "0.75",
+        "full_mwt": "171.16",
+        "hba": 3,
+        "hbd": 0,
+        "psa": "74.52",
+        "qed_weighted": "0.36",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1cc[n+]([O-])cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL62843",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "7.39",
+        "full_mwt": "594.72",
+        "hba": 8,
+        "hbd": 4,
+        "psa": "108.52",
+        "qed_weighted": "0.14",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cn1c(SSc2c(C(=O)Nc3ccccc3)c3cccc(O)c3n2C)c(C(=O)Nc2ccccc2)c2cccc(O)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL63009",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.36",
+        "full_mwt": "296.39",
+        "hba": 2,
+        "hbd": 1,
+        "psa": "32.34",
+        "qed_weighted": "0.86",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN1C(=S)C(C)(C(=O)Nc2ccccc2)c2ccccc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL64459",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "8.59",
+        "full_mwt": "590.77",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "68.06",
+        "qed_weighted": "0.18",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1ccc2c(C(=O)Nc3ccccc3)c(SSc3c(C(=O)Nc4ccccc4)c4ccc(C)cc4n3C)n(C)c2c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL65848",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.31",
+        "full_mwt": "470.53",
+        "hba": 6,
+        "hbd": 3,
+        "psa": "112.24",
+        "qed_weighted": "0.50",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)N2CCOCC2)[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc4c(c3)CCC4)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL66570",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.92",
+        "full_mwt": "509.97",
+        "hba": 6,
+        "hbd": 3,
+        "psa": "106.25",
+        "qed_weighted": "0.45",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCN1CCN(C(=O)c2cc(C)c(/C=C3\\C(=O)Nc4ncnc(Nc5ccc(F)c(Cl)c5)c43)[nH]2)CC1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL66879",
+      "pref_name": "COUMARIC ACID",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.49",
+        "full_mwt": "164.16",
+        "hba": 2,
+        "hbd": 2,
+        "psa": "57.53",
+        "qed_weighted": "0.65",
+        "ro3_pass": "Y"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(O)/C=C/c1ccc(O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL67003",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.22",
+        "full_mwt": "560.62",
+        "hba": 8,
+        "hbd": 3,
+        "psa": "130.06",
+        "qed_weighted": "0.27",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)N2CCOCC2)[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc4c(cnn4Cc4ccccc4)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL67057",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.82",
+        "full_mwt": "559.63",
+        "hba": 7,
+        "hbd": 3,
+        "psa": "117.17",
+        "qed_weighted": "0.26",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)N2CCOCC2)[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc4c(ccn4Cc4ccccc4)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL68258",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.07",
+        "full_mwt": "422.49",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "103.45",
+        "qed_weighted": "0.73",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)N2CCOCC2)[nH]c1/C=C1\\C(=O)Nc2ncnc(N3CCCCC3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL68920",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.45",
+        "full_mwt": "383.81",
+        "hba": 4,
+        "hbd": 3,
+        "psa": "82.70",
+        "qed_weighted": "0.58",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C)c(/C=C2\\C(=O)Nc3ncnc(Nc4ccc(F)c(Cl)c4)c32)[nH]1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL69071",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.96",
+        "full_mwt": "509.97",
+        "hba": 6,
+        "hbd": 4,
+        "psa": "115.04",
+        "qed_weighted": "0.40",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)N2CC(C)NC(C)C2)[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc(F)c(Cl)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL69106",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.83",
+        "full_mwt": "355.76",
+        "hba": 4,
+        "hbd": 3,
+        "psa": "82.70",
+        "qed_weighted": "0.62",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1Nc2ncnc(Nc3ccc(F)c(Cl)c3)c2/C1=C/c1ccc[nH]1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL69129",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.56",
+        "full_mwt": "386.45",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "86.19",
+        "qed_weighted": "0.54",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Nc1ncnc2c1c(-c1ccc(Oc3ccccc3)cc1)cn2C1CCC(O)C1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL69358",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.21",
+        "full_mwt": "511.99",
+        "hba": 6,
+        "hbd": 4,
+        "psa": "115.04",
+        "qed_weighted": "0.32",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCN(CC)CCNC(=O)c1cc(C)c(/C=C2\\C(=O)Nc3ncnc(Nc4ccc(F)c(Cl)c4)c32)[nH]1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL69629",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.20",
+        "full_mwt": "525.97",
+        "hba": 7,
+        "hbd": 4,
+        "psa": "124.27",
+        "qed_weighted": "0.35",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)NCCN2CCOCC2)[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc(F)c(Cl)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL69709",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.47",
+        "full_mwt": "397.84",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "73.91",
+        "qed_weighted": "0.64",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C)c(/C=C2\\C(=O)N(C)c3ncnc(Nc4ccc(F)c(Cl)c4)c32)[nH]1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL69960",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.61",
+        "full_mwt": "482.90",
+        "hba": 6,
+        "hbd": 3,
+        "psa": "112.24",
+        "qed_weighted": "0.49",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(C(=O)N2CCOCC2)[nH]c1/C=C1\\C(=O)Nc2ncnc(Nc3ccc(F)c(Cl)c3)c21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL69964",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.53",
+        "full_mwt": "495.95",
+        "hba": 6,
+        "hbd": 3,
+        "psa": "106.25",
+        "qed_weighted": "0.48",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1cc(/C=C2\\C(=O)Nc3ncnc(Nc4ccc(F)c(Cl)c4)c32)[nH]c1C(=O)N1CCN(C)CC1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL69966",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.39",
+        "full_mwt": "497.56",
+        "hba": 7,
+        "hbd": 4,
+        "psa": "124.27",
+        "qed_weighted": "0.29",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C#Cc1cccc(Nc2ncnc3c2/C(=C/c2[nH]c(C(=O)NCCN4CCOCC4)cc2C)C(=O)N3)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL73820",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.09",
+        "full_mwt": "205.17",
+        "hba": 4,
+        "hbd": 3,
+        "psa": "101.55",
+        "qed_weighted": "0.38",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C\\c1ccc(O)c(O)c1)C(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL75718",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.93",
+        "full_mwt": "145.16",
+        "hba": 2,
+        "hbd": 1,
+        "psa": "44.02",
+        "qed_weighted": "0.61",
+        "ro3_pass": "Y"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C=C/c1ccc(O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76082",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.75",
+        "full_mwt": "243.18",
+        "hba": 6,
+        "hbd": 0,
+        "psa": "109.18",
+        "qed_weighted": "0.44",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1cc2c(cc1[N+](=O)[O-])OCO2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76557",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "0.94",
+        "full_mwt": "227.22",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "96.91",
+        "qed_weighted": "0.46",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CCNC(=O)/C(C#N)=C/c1ccc(O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76587",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.60",
+        "full_mwt": "172.19",
+        "hba": 3,
+        "hbd": 1,
+        "psa": "67.81",
+        "qed_weighted": "0.74",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)Cc1ccc(O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76589",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.56",
+        "full_mwt": "236.23",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "117.62",
+        "qed_weighted": "0.60",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=C(N)/C(C#N)=C/c1ccc(O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76602",
+      "pref_name": "alpha-CYANO-4-HYDROXYCINNAMIC ACID",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.38",
+        "full_mwt": "189.17",
+        "hba": 3,
+        "hbd": 2,
+        "psa": "81.32",
+        "qed_weighted": "0.54",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C\\c1ccc(O)cc1)C(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76642",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.09",
+        "full_mwt": "205.17",
+        "hba": 4,
+        "hbd": 3,
+        "psa": "101.55",
+        "qed_weighted": "0.38",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C/c1cc(O)ccc1O)C(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76904",
+      "pref_name": "TYRPHOSTIN 23",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.53",
+        "full_mwt": "186.17",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "88.04",
+        "qed_weighted": "0.51",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc(O)c(O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76905",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.53",
+        "full_mwt": "186.17",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "88.04",
+        "qed_weighted": "0.65",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1cc(O)cc(O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76979",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.40",
+        "full_mwt": "249.22",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "99.78",
+        "qed_weighted": "0.62",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(/C=C(\\C#N)C(=O)O)cc(OC)c1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76983",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.26",
+        "full_mwt": "172.16",
+        "hba": 2,
+        "hbd": 0,
+        "psa": "47.58",
+        "qed_weighted": "0.61",
+        "ro3_pass": "Y"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc(F)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL76985",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.49",
+        "full_mwt": "201.18",
+        "hba": 3,
+        "hbd": 1,
+        "psa": "78.16",
+        "qed_weighted": "0.46",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C\\c1ccc(C=O)cc1)C(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77030",
+      "pref_name": "TYRPHOSTIN 47",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.29",
+        "full_mwt": "220.25",
+        "hba": 4,
+        "hbd": 3,
+        "psa": "90.27",
+        "qed_weighted": "0.30",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C\\c1ccc(O)c(O)c1)C(N)=S"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77085",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.73",
+        "full_mwt": "215.17",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "110.95",
+        "qed_weighted": "0.46",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1cc(O)ccc1[N+](=O)[O-]"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77197",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.78",
+        "full_mwt": "233.22",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "90.55",
+        "qed_weighted": "0.61",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(/C(C)=C(\\C#N)C(=O)O)ccc1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77243",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.47",
+        "full_mwt": "300.40",
+        "hba": 3,
+        "hbd": 2,
+        "psa": "87.11",
+        "qed_weighted": "0.57",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CCCCc1cc(/C=C(\\C#N)C(N)=O)cc(CCCC)c1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77278",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.99",
+        "full_mwt": "187.20",
+        "hba": 2,
+        "hbd": 1,
+        "psa": "61.09",
+        "qed_weighted": "0.57",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1ccc(/C=C(\\C#N)C(=O)O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77280",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.09",
+        "full_mwt": "183.21",
+        "hba": 3,
+        "hbd": 1,
+        "psa": "73.60",
+        "qed_weighted": "0.53",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CC(=C(C#N)C#N)c1ccc(N)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77298",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.59",
+        "full_mwt": "279.09",
+        "hba": 4,
+        "hbd": 1,
+        "psa": "77.04",
+        "qed_weighted": "0.84",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(C=C(C#N)C#N)cc(Br)c1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77381",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.01",
+        "full_mwt": "162.15",
+        "hba": 2,
+        "hbd": 2,
+        "psa": "76.88",
+        "qed_weighted": "0.50",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C/c1ccc[nH]1)C(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77387",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.73",
+        "full_mwt": "215.17",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "110.95",
+        "qed_weighted": "0.46",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc([N+](=O)[O-])c(O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77436",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.74",
+        "full_mwt": "216.24",
+        "hba": 3,
+        "hbd": 1,
+        "psa": "64.33",
+        "qed_weighted": "0.62",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CN(C)c1ccc(/C=C(\\C#N)C(=O)O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77456",
+      "pref_name": "TYRPHOSTIN 1",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.13",
+        "full_mwt": "184.20",
+        "hba": 3,
+        "hbd": 0,
+        "psa": "56.81",
+        "qed_weighted": "0.66",
+        "ro3_pass": "Y"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc(C=C(C#N)C#N)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77524",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.69",
+        "full_mwt": "203.20",
+        "hba": 3,
+        "hbd": 1,
+        "psa": "70.32",
+        "qed_weighted": "0.60",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc(/C=C(\\C#N)C(=O)O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77595",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.68",
+        "full_mwt": "173.17",
+        "hba": 2,
+        "hbd": 1,
+        "psa": "61.09",
+        "qed_weighted": "0.55",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C\\c1ccccc1)C(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77724",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.13",
+        "full_mwt": "214.22",
+        "hba": 4,
+        "hbd": 0,
+        "psa": "66.04",
+        "qed_weighted": "0.72",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(C=C(C#N)C#N)cc(OC)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77737",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.51",
+        "full_mwt": "155.16",
+        "hba": 3,
+        "hbd": 0,
+        "psa": "60.47",
+        "qed_weighted": "0.58",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccncc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77778",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.21",
+        "full_mwt": "224.22",
+        "hba": 3,
+        "hbd": 1,
+        "psa": "84.88",
+        "qed_weighted": "0.63",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc(/C=C/C(=O)O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77803",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.03",
+        "full_mwt": "331.13",
+        "hba": 6,
+        "hbd": 3,
+        "psa": "137.85",
+        "qed_weighted": "0.43",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=C(N)/C(C#N)=C/c1cc(O)c(O)c(Br)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77814",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.74",
+        "full_mwt": "185.19",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "79.84",
+        "qed_weighted": "0.54",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=CNc1ccc(O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77825",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.51",
+        "full_mwt": "200.20",
+        "hba": 5,
+        "hbd": 1,
+        "psa": "81.20",
+        "qed_weighted": "0.59",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc(NN=C(C#N)C#N)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL77869",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.83",
+        "full_mwt": "200.20",
+        "hba": 4,
+        "hbd": 1,
+        "psa": "77.04",
+        "qed_weighted": "0.74",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(C=C(C#N)C#N)ccc1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL78005",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.85",
+        "full_mwt": "198.18",
+        "hba": 4,
+        "hbd": 0,
+        "psa": "66.04",
+        "qed_weighted": "0.65",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc2c(c1)OCO2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL78150",
+      "pref_name": "TYRPHOSTIN A9",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.42",
+        "full_mwt": "282.39",
+        "hba": 3,
+        "hbd": 1,
+        "psa": "67.81",
+        "qed_weighted": "0.78",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "CC(C)(C)c1cc(C=C(C#N)C#N)cc(C(C)(C)C)c1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL78174",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.82",
+        "full_mwt": "198.18",
+        "hba": 3,
+        "hbd": 1,
+        "psa": "84.88",
+        "qed_weighted": "0.73",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=Cc1ccc(C(=O)O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL78184",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.82",
+        "full_mwt": "191.16",
+        "hba": 2,
+        "hbd": 1,
+        "psa": "61.09",
+        "qed_weighted": "0.57",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#C/C(=C\\c1ccc(F)cc1)C(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL78257",
+      "pref_name": "TYRPHOSTIN 51",
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "0.97",
+        "full_mwt": "268.23",
+        "hba": 7,
+        "hbd": 4,
+        "psa": "158.08",
+        "qed_weighted": "0.35",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=C(N)/C(C#N)=C/c1cc(O)c(O)c(O)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL78302",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.83",
+        "full_mwt": "200.20",
+        "hba": 4,
+        "hbd": 1,
+        "psa": "77.04",
+        "qed_weighted": "0.74",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc(C=C(C#N)C#N)cc1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL79064",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.71",
+        "full_mwt": "186.17",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "88.04",
+        "qed_weighted": "0.52",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "N#CC(C#N)=C(O)c1ccc(O)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL8000",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.97",
+        "full_mwt": "405.46",
+        "hba": 4,
+        "hbd": 2,
+        "psa": "61.44",
+        "qed_weighted": "0.40",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1c2cc(Nc3ccccc3)c(Nc3ccccc3)cc2C(=O)N1c1ccccc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL80155",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.54",
+        "full_mwt": "216.20",
+        "hba": 5,
+        "hbd": 2,
+        "psa": "97.27",
+        "qed_weighted": "0.58",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(C=C(C#N)C#N)cc(O)c1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL80745",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "1.27",
+        "full_mwt": "282.26",
+        "hba": 7,
+        "hbd": 3,
+        "psa": "147.08",
+        "qed_weighted": "0.43",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc(/C=C(\\C#N)C(N)=C(C#N)C#N)cc(O)c1O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL8091",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.03",
+        "full_mwt": "412.39",
+        "hba": 6,
+        "hbd": 2,
+        "psa": "76.66",
+        "qed_weighted": "0.55",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COC(=O)c1cc(Nc2ccc(F)cc2)c(Nc2ccc(F)cc2)cc1C(=O)OC"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL8271",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.87",
+        "full_mwt": "363.46",
+        "hba": 4,
+        "hbd": 1,
+        "psa": "46.17",
+        "qed_weighted": "0.67",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1NC(=O)c2cc(Sc3ccccc3)c(Sc3ccccc3)cc21"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL86531",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.05",
+        "full_mwt": "415.47",
+        "hba": 4,
+        "hbd": 4,
+        "psa": "142.35",
+        "qed_weighted": "0.55",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "NS(=O)(=O)c1ccc2c(c1)/C(=C/c1[nH]c3c(c1CCC(=O)O)CCCC3)C(=O)N2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL88462",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.06",
+        "full_mwt": "370.45",
+        "hba": 2,
+        "hbd": 2,
+        "psa": "54.12",
+        "qed_weighted": "0.63",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccccc1-c1ccc2c(c1)NC(=O)/C2=C\\c1cc2c([nH]1)CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL88483",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.03",
+        "full_mwt": "343.41",
+        "hba": 3,
+        "hbd": 3,
+        "psa": "105.05",
+        "qed_weighted": "0.73",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "NS(=O)(=O)c1ccc2c(c1)/C(=C/c1cc3c([nH]1)CCCC3)C(=O)N2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL88606",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "4.15",
+        "full_mwt": "343.22",
+        "hba": 1,
+        "hbd": 2,
+        "psa": "44.89",
+        "qed_weighted": "0.75",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1Nc2ccc(Br)cc2/C1=C/c1cc2c([nH]1)CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL88771",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.07",
+        "full_mwt": "412.49",
+        "hba": 2,
+        "hbd": 3,
+        "psa": "82.19",
+        "qed_weighted": "0.51",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C(O)CCc1c(/C=C2\\C(=O)Nc3cc(-c4ccccc4)ccc32)[nH]c2c1CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL89010",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.08",
+        "full_mwt": "308.34",
+        "hba": 2,
+        "hbd": 3,
+        "psa": "82.19",
+        "qed_weighted": "0.75",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "O=C1Nc2ccc(C(=O)O)cc2/C1=C/c1cc2c([nH]1)CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL89363",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "2.83",
+        "full_mwt": "296.33",
+        "hba": 2,
+        "hbd": 3,
+        "psa": "82.19",
+        "qed_weighted": "0.76",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "Cc1c[nH]c(/C=C2\\C(=O)Nc3ccccc32)c1CCC(=O)O"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL91250",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.39",
+        "full_mwt": "294.35",
+        "hba": 2,
+        "hbd": 2,
+        "psa": "54.12",
+        "qed_weighted": "0.83",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc2c(c1)NC(=O)/C2=C\\c1cc2c([nH]1)CCCC2"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL91815",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "5.08",
+        "full_mwt": "442.52",
+        "hba": 3,
+        "hbd": 3,
+        "psa": "91.42",
+        "qed_weighted": "0.46",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1ccc(-c2ccc3c(c2)NC(=O)/C3=C\\c2[nH]c3c(c2CCC(=O)O)CCCC3)cc1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL939",
+      "pref_name": "GEFITINIB",
+      "max_phase": "4.0",
+      "molecule_properties": {
+        "alogp": "4.28",
+        "full_mwt": "446.91",
+        "hba": 7,
+        "hbd": 1,
+        "psa": "68.74",
+        "qed_weighted": "0.52",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": true,
+      "chirality": 2,
+      "topical": false,
+      "oral": true,
+      "parenteral": false
+    },
+    {
+      "molecule_chembl_id": "CHEMBL95320",
+      "pref_name": null,
+      "max_phase": null,
+      "molecule_properties": {
+        "alogp": "3.88",
+        "full_mwt": "417.47",
+        "hba": 7,
+        "hbd": 1,
+        "psa": "85.63",
+        "qed_weighted": "0.40",
+        "ro3_pass": "N"
+      },
+      "molecule_structures": {
+        "canonical_smiles": "C#Cc1cccc(Nc2c(C#N)cnc3cc(OCCOC)c(OCCOC)cc23)c1"
+      },
+      "molecule_type": "Small molecule",
+      "therapeutic_flag": false,
+      "chirality": -1,
+      "topical": false,
+      "oral": false,
+      "parenteral": false
+    }
+  ]
+}

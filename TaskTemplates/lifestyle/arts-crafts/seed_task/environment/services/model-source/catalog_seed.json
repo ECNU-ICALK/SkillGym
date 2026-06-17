@@ -1,0 +1,258 @@
+{
+  "models": [
+    {
+      "id": "354172",
+      "name": "Yarn Bowl",
+      "slug": "yarn-bowl",
+      "summary": "Tabletop yarn guide bowl for keeping one active skein in place during fiber sessions.",
+      "description": "Passive yarn management bowl with a feed notch and a stable base. Suitable for a shared workshop table and requires no assembly hardware.",
+      "downloadCount": 642,
+      "likesCount": 107,
+      "filesCount": 2,
+      "user": {
+        "handle": "BsPrintlab"
+      },
+      "license": {
+        "id": "cc-by-4.0",
+        "disallowRemixing": false
+      },
+      "excludeCommercialUsage": false,
+      "slot_hints": [
+        "yarn-management",
+        "tabletop",
+        "passive-guide"
+      ],
+      "search_terms": [
+        "yarn bowl",
+        "yarn guide",
+        "fiber bowl"
+      ],
+      "pack": {
+        "id": "pack-354172",
+        "fileSize": 495
+      },
+      "files": [
+        {
+          "id": "354172-1",
+          "name": "yarn_bowl_body.stl",
+          "fileSize": 203,
+          "note": "main shell"
+        },
+        {
+          "id": "354172-2",
+          "name": "yarn_bowl_base_ring.stl",
+          "fileSize": 213,
+          "note": "stability ring"
+        }
+      ]
+    },
+    {
+      "id": "25823",
+      "name": "Open Stitch Marker",
+      "slug": "open-stitch-marker",
+      "summary": "Simple clip-style stitch marker with an open latch profile.",
+      "description": "Lightweight open marker for quick row marking. It is convenient at the table but can slip free in transport pouches.",
+      "downloadCount": 2128,
+      "likesCount": 300,
+      "filesCount": 1,
+      "user": {
+        "handle": "Winston_52333"
+      },
+      "license": {
+        "id": "cc-by-4.0",
+        "disallowRemixing": false
+      },
+      "excludeCommercialUsage": false,
+      "slot_hints": [
+        "stitch-marker",
+        "open-marker"
+      ],
+      "search_terms": [
+        "stitch marker",
+        "open stitch marker",
+        "knit marker"
+      ],
+      "pack": {
+        "id": "pack-25823",
+        "fileSize": 260
+      },
+      "files": [
+        {
+          "id": "25823-1",
+          "name": "open_stitch_marker.stl",
+          "fileSize": 209,
+          "note": "single marker"
+        }
+      ]
+    },
+    {
+      "id": "100186",
+      "name": "Lockable Stitch Marker",
+      "slug": "lockable-stitch-marker",
+      "summary": "Clip-style stitch marker with a closing latch for transport and shared kits.",
+      "description": "Single-piece marker that stays closed in storage pouches. Intended for repeated workshop handling and transport between stations.",
+      "downloadCount": 1478,
+      "likesCount": 199,
+      "filesCount": 1,
+      "user": {
+        "handle": "osoderholm"
+      },
+      "license": {
+        "id": "cc-by-4.0",
+        "disallowRemixing": false
+      },
+      "excludeCommercialUsage": false,
+      "slot_hints": [
+        "stitch-marker",
+        "closable-marker"
+      ],
+      "search_terms": [
+        "stitch marker",
+        "lockable stitch marker",
+        "knit marker"
+      ],
+      "pack": {
+        "id": "pack-100186",
+        "fileSize": 293
+      },
+      "files": [
+        {
+          "id": "100186-1",
+          "name": "lockable_stitch_marker.3mf",
+          "fileSize": 218,
+          "note": "single marker"
+        }
+      ]
+    },
+    {
+      "id": "151345",
+      "name": "Knitting Needle & Crochet Hook Holder V2",
+      "slug": "knitting-needle-crochet-hook-holder-v2",
+      "summary": "Desk organizer for both knitting needles and crochet hooks.",
+      "description": "Two-part organizer with separate lanes for hooks and longer needles. It fits a shared tool table and covers mixed fiber classes.",
+      "downloadCount": 394,
+      "likesCount": 116,
+      "filesCount": 3,
+      "user": {
+        "handle": "atomslab"
+      },
+      "license": {
+        "id": "cc-by-sa-4.0",
+        "disallowRemixing": false
+      },
+      "excludeCommercialUsage": false,
+      "slot_hints": [
+        "tool-storage",
+        "needle-holder",
+        "hook-holder"
+      ],
+      "search_terms": [
+        "crochet hook holder",
+        "knitting needle holder",
+        "tool storage"
+      ],
+      "pack": {
+        "id": "pack-151345",
+        "fileSize": 714
+      },
+      "files": [
+        {
+          "id": "151345-1",
+          "name": "holder_base.stl",
+          "fileSize": 197,
+          "note": "main organizer body"
+        },
+        {
+          "id": "151345-2",
+          "name": "hook_rack_insert.stl",
+          "fileSize": 207,
+          "note": "hook insert"
+        },
+        {
+          "id": "151345-3",
+          "name": "needle_support_rail.stl",
+          "fileSize": 213,
+          "note": "needle support"
+        }
+      ]
+    },
+    {
+      "id": "178406",
+      "name": "Crochet Hook Storage Box #1",
+      "slug": "crochet-hook-storage-box-1",
+      "summary": "Compact case for crochet hooks only.",
+      "description": "Small lidded box intended for crochet hooks. It does not provide a lane for knitting needles and is sized for hook sets only.",
+      "downloadCount": 183,
+      "likesCount": 79,
+      "filesCount": 1,
+      "user": {
+        "handle": "SteveS42"
+      },
+      "license": {
+        "id": "cc-by-4.0",
+        "disallowRemixing": false
+      },
+      "excludeCommercialUsage": false,
+      "slot_hints": [
+        "tool-storage",
+        "hooks-only"
+      ],
+      "search_terms": [
+        "crochet hook holder",
+        "crochet hook storage",
+        "tool storage"
+      ],
+      "pack": {
+        "id": "pack-178406",
+        "fileSize": 278
+      },
+      "files": [
+        {
+          "id": "178406-1",
+          "name": "crochet_hook_storage_box.stl",
+          "fileSize": 223,
+          "note": "single body"
+        }
+      ]
+    },
+    {
+      "id": "197262",
+      "name": "Stitch Marker Box #1",
+      "slug": "stitch-marker-box-1",
+      "summary": "Accessory box for marker storage, sized for small stitch markers.",
+      "description": "Storage box for loose marker sets. It is useful as an accessory container but does not itself act as the marker item for participant kits.",
+      "downloadCount": 257,
+      "likesCount": 81,
+      "filesCount": 1,
+      "user": {
+        "handle": "SteveS42"
+      },
+      "license": {
+        "id": "cc-by-nc-4.0",
+        "disallowRemixing": false
+      },
+      "excludeCommercialUsage": true,
+      "slot_hints": [
+        "tool-storage",
+        "marker-box"
+      ],
+      "search_terms": [
+        "stitch marker",
+        "stitch marker box",
+        "tool storage"
+      ],
+      "pack": {
+        "id": "pack-197262",
+        "fileSize": 259
+      },
+      "files": [
+        {
+          "id": "197262-1",
+          "name": "stitch_marker_box.stl",
+          "fileSize": 209,
+          "note": "single body"
+        }
+      ]
+    }
+  ]
+}

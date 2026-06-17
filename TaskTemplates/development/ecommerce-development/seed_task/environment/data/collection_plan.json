@@ -1,0 +1,72 @@
+{
+  "store_name": "Harbor Museum Printshop",
+  "currency": "USD",
+  "size_attribute": {
+    "name": "Print Size",
+    "slug": "print_size",
+    "options": [
+      {
+        "key": "small",
+        "label": "11 x 14 in",
+        "sku_suffix": "SM",
+        "price_delta": 0,
+        "shipping_class": "standard-print"
+      },
+      {
+        "key": "large",
+        "label": "18 x 24 in",
+        "sku_suffix": "LG",
+        "price_delta": 36,
+        "shipping_class": "oversized-print"
+      }
+    ]
+  },
+  "collections": [
+    {
+      "key": "portrait-studio",
+      "title": "Portrait Studio",
+      "sort_order": 10,
+      "department_slugs": [
+        "european-paintings",
+        "photographs"
+      ]
+    },
+    {
+      "key": "cross-cultural-forms",
+      "title": "Cross-Cultural Forms",
+      "sort_order": 20,
+      "department_slugs": [
+        "asian-art"
+      ]
+    },
+    {
+      "key": "city-temples",
+      "title": "City and Temple Sketches",
+      "sort_order": 30,
+      "department_slugs": [
+        "the-american-wing"
+      ]
+    },
+    {
+      "key": "costume-and-performance",
+      "title": "Costume and Performance",
+      "sort_order": 40,
+      "department_slugs": [
+        "modern-and-contemporary-art",
+        "photographs"
+      ]
+    }
+  ],
+  "launch_feed": {
+    "require_launch_state": "publish",
+    "require_public_domain_clearance": true,
+    "require_primary_image": true,
+    "require_in_stock_variation": true,
+    "default_limit": 12,
+    "sort": [
+      "collection_sort_order",
+      "featured_rank",
+      "object_id"
+    ]
+  }
+}

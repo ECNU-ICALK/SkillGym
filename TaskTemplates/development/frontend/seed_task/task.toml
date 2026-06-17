@@ -1,0 +1,26 @@
+version = "1.0"
+
+[metadata]
+id = "react-energy-workbench-state-regressions"
+name = "Template: React Energy Workbench State Regressions"
+difficulty = "hard"
+category = "frontend"
+tags = ["frontend", "react", "vite", "state-management", "routing", "lazy-loading", "accessibility", "performance"]
+required_skills = ["frontend-patterns"]
+
+[agent]
+timeout_sec = 1100.0
+
+[solution]
+timeout_sec = 1100.0
+
+[verifier]
+timeout_sec = 700.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

@@ -1,0 +1,28 @@
+---
+title: page
+description: API reference for the page file convention.
+nav_title: page
+---
+
+`page` defines the UI entry point for a route segment.
+
+```tsx filename="app/blog/page.tsx" switcher highlight={1}
+export default function Page() {
+  return <main>Blog</main>
+}
+```
+
+```jsx filename="app/blog/page.jsx" switcher highlight={1}
+export default function Page() {
+  return <main>Blog</main>
+}
+```
+
+## Reference
+
+### Props
+
+| Prop | Type | Description |
+| --- | --- | --- |
+| `params` | `object` | Route parameters for the segment. |
+| `searchParams` | `object` | Query parameters for the request URL. |

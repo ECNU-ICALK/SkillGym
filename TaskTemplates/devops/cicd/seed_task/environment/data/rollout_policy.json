@@ -1,0 +1,34 @@
+{
+  "manifest_path": "deploy/rollouts/checkout-production-rollout.yaml",
+  "kind": "Rollout",
+  "service_name": "saturn-checkout",
+  "stable_service": "saturn-checkout-stable",
+  "canary_service": "saturn-checkout-canary",
+  "analysis_templates": [
+    "saturn-success-rate",
+    "saturn-p95-latency"
+  ],
+  "steps": [
+    {
+      "setWeight": 10
+    },
+    {
+      "pause": "5m"
+    },
+    {
+      "setWeight": 25
+    },
+    {
+      "pause": "5m"
+    },
+    {
+      "setWeight": 50
+    },
+    {
+      "pause": "10m"
+    },
+    {
+      "setWeight": 100
+    }
+  ]
+}

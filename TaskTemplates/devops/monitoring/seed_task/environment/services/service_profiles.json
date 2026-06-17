@@ -1,0 +1,58 @@
+{
+  "harbor-core": {
+    "port": 18081,
+    "metrics_path": "/core/metrics",
+    "request_rate_rps": 18.0,
+    "error_rate_pct": 0.6,
+    "latency_fractions": [0.18, 0.62, 0.90, 0.98, 0.995, 1.0, 1.0, 1.0, 1.0]
+  },
+  "harbor-jobservice": {
+    "port": 18082,
+    "metrics_path": "/job/metrics",
+    "request_rate_rps": 5.0,
+    "error_rate_pct": 6.8,
+    "latency_fractions": [0.05, 0.18, 0.42, 0.70, 0.86, 0.93, 0.96, 1.0, 1.0]
+  },
+  "harbor-registry-api": {
+    "port": 18083,
+    "metrics_path": "/registry/api/metrics",
+    "request_rate_rps": 7.2,
+    "error_rate_pct": 2.4,
+    "latency_fractions": [0.08, 0.28, 0.66, 0.90, 0.95, 0.985, 1.0, 1.0, 1.0]
+  },
+  "harbor-registry-storage": {
+    "port": 18087,
+    "metrics_path": "/registry/storage/metrics",
+    "request_rate_rps": 4.8,
+    "error_rate_pct": 2.4,
+    "latency_fractions": [0.08, 0.28, 0.66, 0.90, 0.95, 0.985, 1.0, 1.0, 1.0]
+  },
+  "harbor-registry": {
+    "port": 18083,
+    "metrics_path": "/registry/api/metrics",
+    "request_rate_rps": 12.0,
+    "error_rate_pct": 2.4,
+    "latency_fractions": [0.08, 0.28, 0.66, 0.90, 0.95, 0.985, 1.0, 1.0, 1.0]
+  },
+  "harbor-exporter": {
+    "port": 18084,
+    "metrics_path": "/exporter/metrics",
+    "request_rate_rps": 1.5,
+    "error_rate_pct": 0.0,
+    "latency_fractions": [0.45, 0.86, 0.98, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+  },
+  "smoke-probe": {
+    "port": 18086,
+    "metrics_path": "/probe/metrics",
+    "request_rate_rps": 2.5,
+    "error_rate_pct": 0.2,
+    "latency_fractions": [0.30, 0.74, 0.94, 0.99, 1.0, 1.0, 1.0, 1.0, 1.0]
+  },
+  "shadow-target": {
+    "port": 18085,
+    "metrics_path": "/shadow/metrics",
+    "request_rate_rps": 30.0,
+    "error_rate_pct": 0.0,
+    "latency_fractions": [0.90, 0.99, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+  }
+}

@@ -1,0 +1,17 @@
+tconst	titleType	primaryTitle	originalTitle	isAdult	startYear	endYear	runtimeMinutes	genres
+tt0903747	tvSeries	Breaking Bad	Breaking Bad	0	2008	2013	48	Crime,Drama,Thriller
+tt0185906	tvMiniSeries	Band of Brothers	Band of Brothers	0	2001	2001	60	Action,Drama,History
+tt0795176	tvMiniSeries	Planet Earth	Planet Earth	0	2006	2006	50	Documentary,Family
+tt0111161	movie	The Shawshank Redemption	The Shawshank Redemption	0	1994	\N	142	Drama
+tt0417299	tvSeries	Avatar: The Last Airbender	Avatar: The Last Airbender	0	2005	2008	23	Action,Adventure,Animation
+tt0306414	tvSeries	The Wire	The Wire	0	2002	2008	60	Crime,Drama,Thriller
+tt0944947	tvSeries	Game of Thrones	Game of Thrones	0	2011	2019	60	Action,Adventure,Drama
+tt0141842	tvSeries	The Sopranos	The Sopranos	0	1999	2007	55	Crime,Drama
+tt12392504	tvMiniSeries	Scam 1992: The Harshad Mehta Story	Scam 1992: The Harshad Mehta Story	0	2020	2020	60	Biography,Crime,Drama
+tt30263074	tvSeries	Sapne Vs Everyone	Sapne vs Everyone	0	2023	\N		Drama
+tt0468569	movie	The Dark Knight	The Dark Knight	0	2008	\N	152	Action,Crime,Drama
+tt2560140	tvSeries	Attack on Titan	Shingeki no kyojin	0	2013	2023	24	Action,Adventure,Animation
+tt14392248	tvSeries	Aspirants	Aspirants	0	2021	\N	45	Drama
+tt0167260	movie	The Lord of the Rings: The Return of the King	The Lord of the Rings: The Return of the King	0	2003	\N	201	Adventure,Drama,Fantasy
+tt0108052	movie	Schindler's List	Schindler's List	0	1993	\N	195	Biography,Drama,History
+tt0120737	movie	The Lord of the Rings: The Fellowship of the Ring	The Lord of the Rings: The Fellowship of the Ring	0	2001	\N	178	Adventure,Drama,Fantasy

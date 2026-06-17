@@ -1,0 +1,78 @@
+{
+  "primary_output_dir": "/root/answer",
+  "required_outputs": {
+    "holdout_predictions_csv": {
+      "path": "/root/answer/holdout_predictions.csv",
+      "columns": [
+        "sequence_id",
+        "source_file",
+        "anchor_timestamp",
+        "sequence_length",
+        "phase_id",
+        "phase_label",
+        "predicted_phase_id",
+        "predicted_phase_label",
+        "confidence"
+      ]
+    },
+    "holdout_metrics_json": {
+      "path": "/root/answer/holdout_metrics.json",
+      "top_level_keys": [
+        "dataset",
+        "split",
+        "training",
+        "holdout",
+        "per_class",
+        "notes"
+      ],
+      "training_keys": [
+        "best_epoch",
+        "selected_val_macro_f1"
+      ],
+      "split_keys": [
+        "train_sequences",
+        "val_sequences",
+        "holdout_sequences",
+        "train_sources",
+        "val_sources",
+        "holdout_sources",
+        "validation_sources_from_contract"
+      ],
+      "precision_note": "reported holdout metrics must be recomputable from the final prediction CSV without lossy rounding or truncated decimals"
+    },
+    "confusion_matrix_csv": {
+      "path": "/root/answer/confusion_matrix.csv",
+      "row_label_column": "actual_phase_label",
+      "prediction_columns": [
+        "pred_STEADY_EMPTY",
+        "pred_RAMPING_UP",
+        "pred_RAMPING_DOWN",
+        "pred_STEADY_OCCUPIED"
+      ]
+    },
+    "training_history_csv": {
+      "path": "/root/answer/training_history.csv",
+      "columns": [
+        "epoch",
+        "train_loss",
+        "val_loss",
+        "val_macro_f1",
+        "selected_for_export"
+      ]
+    },
+    "bundle_manifest_json": {
+      "path": "/root/answer/model_bundle/manifest.json",
+      "top_level_keys": [
+        "framework",
+        "weight_file",
+        "training_checkpoint_file",
+        "phase_mapping_file",
+        "preprocessor_file",
+        "model_config_file",
+        "split_manifest_file",
+        "inference_entry"
+      ],
+      "determinism_note": "final manifest content must be stable across repeated runs with the same inputs"
+    }
+  }
+}

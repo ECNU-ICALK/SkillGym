@@ -1,0 +1,37 @@
+version = "1.0"
+
+[metadata]
+id = "culinary-arts__paprika_workshop_ops_packet"
+name = "Template: Paprika Workshop Ops Packet"
+description = "Assemble a workshop meal manifest, shopping delta, and nutrition audit from a synced Paprika workspace plus pantry allowances."
+difficulty = "hard"
+category = "culinary-arts"
+tags = [
+  "culinary-arts",
+  "paprika",
+  "meal-operations",
+  "shopping-delta",
+  "nutrition-audit",
+  "workshop-planning",
+]
+required_skills = [
+  "paprika",
+  "healthy-eating",
+]
+primary_output_file = "/root/output/meal_manifest.json"
+source_template_id = "culinary-arts__paprika_workshop_ops_packet"
+task_role = "template"
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 700.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+allow_internet = true

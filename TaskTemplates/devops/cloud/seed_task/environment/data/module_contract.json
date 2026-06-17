@@ -1,0 +1,66 @@
+{
+  "module_name": "aws/vpc",
+  "required_files": [
+    "main.tf",
+    "variables.tf",
+    "outputs.tf",
+    "versions.tf",
+    "README.md"
+  ],
+  "required_variables": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "cidr_block",
+      "type": "string",
+      "validation": "valid IPv4 CIDR notation"
+    },
+    {
+      "name": "availability_zones",
+      "type": "list(string)"
+    },
+    {
+      "name": "public_subnet_cidrs",
+      "type": "list(string)"
+    },
+    {
+      "name": "private_subnet_cidrs",
+      "type": "list(string)"
+    },
+    {
+      "name": "single_nat_gateway",
+      "type": "bool"
+    },
+    {
+      "name": "cluster_name",
+      "type": "string"
+    },
+    {
+      "name": "tags",
+      "type": "map(string)"
+    }
+  ],
+  "required_outputs": [
+    "vpc_id",
+    "vpc_cidr_block",
+    "public_subnet_ids",
+    "private_subnet_ids",
+    "public_route_table_ids",
+    "private_route_table_ids"
+  ],
+  "examples_required": true,
+  "tests_required": true,
+  "version_constraints_required": true,
+  "behavior_expectations": {
+    "subnet_count_matches_az_count": true,
+    "public_subnets_have_internet_gateway_route": true,
+    "private_subnets_have_nat_default_route": true,
+    "single_nat_gateway_true_means_one_nat_gateway": true,
+    "single_nat_gateway_false_means_one_nat_gateway_per_az": true,
+    "must_plan_in_local_container_without_cloud_credentials": true,
+    "caller_roots_must_not_need_provider_login_for_plan": true,
+    "shared_module_must_preserve_existing_local_execution_model": true
+  }
+}

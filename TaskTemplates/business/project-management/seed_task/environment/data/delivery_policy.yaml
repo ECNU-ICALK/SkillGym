@@ -1,0 +1,19 @@
+sprint_story_point_buffer: 5
+selection_sort:
+  - priority_desc
+  - milestone_date_asc
+  - downstream_blocked_count_desc
+  - story_points_asc
+  - item_id_asc
+rejection_reason_precedence:
+  - already_closed
+  - not_ready
+  - blocked_dependency
+  - insufficient_story_points
+  - insufficient_qa_capacity
+  - insufficient_review_capacity
+  - below_cutline
+notes:
+  - must_ship items that are ready and unblocked must be committed before any discretionary work
+  - story point capacity uses total team points minus the reserved buffer
+  - qa_slots_available and review_slots_available are team-wide totals derived from team_capacity.csv

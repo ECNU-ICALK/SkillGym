@@ -1,0 +1,9 @@
+Temperature
+Humidity
+Light
+CO2
+HumidityRatio
+hour_sin
+hour_cos
+dow_sin
+dow_cos

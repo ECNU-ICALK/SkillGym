@@ -1,0 +1,33 @@
+{
+  "allowed_settings": [
+    "outdoor",
+    "covered",
+    "indoor"
+  ],
+  "decision_values": [
+    "outdoor_ok",
+    "move_indoors",
+    "move_to_lower_exposure",
+    "reschedule",
+    "cancel"
+  ],
+  "required_advisory_audiences": [
+    "all",
+    "outdoor_only",
+    "high_heat_sensitive",
+    "mobility_support"
+  ],
+  "program_rules": {
+    "keep_required_session_count": true,
+    "cancel_last_resort": true,
+    "same_day_only": true
+  },
+  "operating_notes": [
+    "Review current conditions before publishing the final schedule.",
+    "Local air-quality advisories can invalidate an exposed outdoor session even when rain and temperature remain manageable.",
+    "When live forecast wording includes thunderstorms, do not keep an open-sided covered space in the published plan; use a listed indoor fallback when one is available.",
+    "When conditions shift, use an allowed lower-exposure, indoor, or earlier same-day option when one keeps the program compliant.",
+    "Check venue hours, capacity, allowed activity tags, and support needs before publishing the final schedule.",
+    "Earlier exports are planning aids from a prior checkpoint."
+  ]
+}

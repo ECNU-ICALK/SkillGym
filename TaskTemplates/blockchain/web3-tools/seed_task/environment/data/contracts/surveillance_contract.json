@@ -1,0 +1,88 @@
+{
+  "analysis_window_days": 30,
+  "base_aliases": {
+    "XBT": "BTC"
+  },
+  "cross_exchange_alert_thresholds": {
+    "close_gap_bps_max": 90.0
+  },
+  "history_bars_required": 31,
+  "market_alert_thresholds": {
+    "avg_spread_bps_7d_max": 380.0,
+    "min_quote_volume_7d_usd": {
+      "BTC/USD": 2000000000.0,
+      "ETH/USD": 1500000000.0
+    }
+  },
+  "output_contract": {
+    "cross_exchange_fields": [
+      "best_return_30d_exchange",
+      "lowest_spread_exchange",
+      "close_gap_bps",
+      "has_full_coverage",
+      "alert_codes"
+    ],
+    "liquidity_alerts_header": [
+      "canonical_symbol",
+      "exchange",
+      "alert_code",
+      "observed_value",
+      "threshold",
+      "severity"
+    ],
+    "market_entry_fields": [
+      "exchange",
+      "native_symbol",
+      "canonical_symbol",
+      "latest_date",
+      "latest_close",
+      "return_1d",
+      "return_7d",
+      "return_30d",
+      "quote_volume_7d_usd",
+      "avg_spread_bps_7d",
+      "bar_count",
+      "status"
+    ],
+    "market_report_top_level": [
+      "report_id",
+      "as_of_date",
+      "analysis_window_days",
+      "symbols",
+      "exchange_summary",
+      "coverage_summary"
+    ],
+    "runbook_headings": [
+      "Collection",
+      "Checks",
+      "Outputs"
+    ]
+  },
+  "report_id": "web3-tools__cross-exchange-daily-surveillance",
+  "severity_map": {
+    "close_gap_bps": "warn",
+    "insufficient_history": "critical",
+    "low_quote_volume_7d_usd": "warn",
+    "wide_avg_spread_bps_7d": "warn"
+  },
+  "tracked_symbols": [
+    {
+      "base_asset": "BTC",
+      "canonical_symbol": "BTC/USD",
+      "quote_asset": "USD",
+      "required_exchanges": [
+        "coinbase",
+        "kraken"
+      ]
+    },
+    {
+      "base_asset": "ETH",
+      "canonical_symbol": "ETH/USD",
+      "quote_asset": "USD",
+      "required_exchanges": [
+        "coinbase",
+        "kraken"
+      ]
+    }
+  ]
+}

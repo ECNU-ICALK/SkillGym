@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+export PYTHONPATH="/app/ops${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 /app/ops/recovery_console.py

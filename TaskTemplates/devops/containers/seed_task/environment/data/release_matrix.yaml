@@ -1,0 +1,55 @@
+releases:
+  staging:
+    namespace: observability-staging
+    environment: staging
+    replicaCount: 2
+    ingress:
+      enabled: true
+      className: nginx
+      annotations:
+        nginx.ingress.kubernetes.io/ssl-redirect: "false"
+      host: podpulse-staging.internal.example.com
+      path: /
+      pathType: Prefix
+    autoscaling:
+      enabled: false
+      minReplicas: 2
+      maxReplicas: 4
+      targetCPUUtilizationPercentage: 70
+      targetMemoryUtilizationPercentage: 75
+    pdb:
+      enabled: true
+      minAvailable: 1
+    config:
+      LOG_LEVEL: debug
+    secretEnv:
+      - name: API_TOKEN
+        secretName: podpulse-staging-runtime
+        key: apiToken
+  prod:
+    namespace: observability-prod
+    environment: prod
+    replicaCount: 3
+    ingress:
+      enabled: true
+      className: nginx
+      annotations:
+        nginx.ingress.kubernetes.io/ssl-redirect: "true"
+      host: podpulse.example.com
+      path: /
+      pathType: Prefix
+    autoscaling:
+      enabled: true
+      minReplicas: 3
+      maxReplicas: 8
+      targetCPUUtilizationPercentage: 75
+      targetMemoryUtilizationPercentage: 80
+    pdb:
+      enabled: true
+      minAvailable: 2
+    config:
+      LOG_LEVEL: info
+    secretEnv:
+      - name: API_TOKEN
+        secretName: podpulse-prod-runtime
+        key: apiToken

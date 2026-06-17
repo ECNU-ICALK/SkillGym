@@ -1,0 +1,123 @@
+{
+  "task_id": "documents__north_america_energy_briefing_packet",
+  "document_filename": "north_america_energy_briefing.docx",
+  "manifest_filename": "briefing_manifest.json",
+  "countries": [
+    "Canada",
+    "Mexico",
+    "United States"
+  ],
+  "country_codes": [
+    "CAN",
+    "MEX",
+    "USA"
+  ],
+  "required_sections": [
+    {
+      "id": "executive-summary",
+      "title": "1. Executive Summary",
+      "table_ids": [],
+      "chart_ids": []
+    },
+    {
+      "id": "country-snapshot",
+      "title": "2. Country Snapshot",
+      "table_ids": [
+        "country_snapshot_table"
+      ],
+      "chart_ids": []
+    },
+    {
+      "id": "electricity-mix",
+      "title": "3. Electricity Mix",
+      "table_ids": [],
+      "chart_ids": [
+        "electricity_mix_latest"
+      ]
+    },
+    {
+      "id": "co2-trend",
+      "title": "4. CO2 Trend",
+      "table_ids": [],
+      "chart_ids": [
+        "co2_trend_recent"
+      ]
+    },
+    {
+      "id": "source-notes",
+      "title": "5. Source Notes",
+      "table_ids": [],
+      "chart_ids": []
+    },
+    {
+      "id": "appendix-a",
+      "title": "Appendix A. Country Profile Notes",
+      "table_ids": [
+        "country_profile_table"
+      ],
+      "chart_ids": []
+    }
+  ],
+  "metrics_policy": {
+    "population_year": "latest_common_non_null_year",
+    "gdp_year": "latest_common_non_null_year",
+    "co2_year": "latest_common_non_null_year",
+    "electricity_year": "latest_common_non_null_year",
+    "recent_co2_window_years": 10
+  },
+  "table_contract": {
+    "country_snapshot_table": {
+      "columns": [
+        "Country",
+        "Population (M)",
+        "GDP (T USD)",
+        "CO2 (Mt)",
+        "Top power source",
+        "Top source TWh"
+      ]
+    },
+    "country_profile_table": {
+      "columns": [
+        "Country",
+        "Capital",
+        "Income level",
+        "Region"
+      ]
+    }
+  },
+  "chart_contract": {
+    "electricity_mix_latest": {
+      "kind": "stacked_bar",
+      "title": "Figure 1. Latest electricity mix by source",
+      "caption": "Latest common electricity year across all three countries."
+    },
+    "co2_trend_recent": {
+      "kind": "line",
+      "title": "Figure 2. Annual CO2 emissions trend",
+      "caption": "Most recent common 10-year window across all three countries."
+    }
+  },
+  "preserve_document_parts": [
+    "word/header1.xml",
+    "word/footer1.xml",
+    "word/styles.xml"
+  ],
+  "cleanup_rules": {
+    "forbidden_substrings": [
+      "{{",
+      "}}",
+      "TODO",
+      "TBD",
+      "Draft note:",
+      "Review comment:"
+    ],
+    "remove_comment_parts": true
+  },
+  "source_files": [
+    "data/country_profile.json",
+    "data/world_bank_population.json",
+    "data/world_bank_gdp.json",
+    "data/annual_co2_emissions.csv",
+    "data/electricity_prod_source.csv"
+  ]
+}

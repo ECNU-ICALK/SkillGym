@@ -1,0 +1,17 @@
+{
+  "name": "toolchain-release-digest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-check.mjs",
+    "typecheck": "tsc --project tsconfig.json --noEmit --pretty false",
+    "lint": "node scripts/lint-check.mjs",
+    "test": "node scripts/test-check.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  }
+}

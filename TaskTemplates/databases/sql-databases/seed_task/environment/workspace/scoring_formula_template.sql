@@ -1,0 +1,4 @@
+-- This workspace file is only a reminder that the score comes from the contract.
+-- Read the ranking configuration from analysis_contract.json and derive the final
+-- weighted score inside PostgreSQL. If the local PostgreSQL skill is available,
+-- use the task-specific scoring scaffold shipped with that skill.

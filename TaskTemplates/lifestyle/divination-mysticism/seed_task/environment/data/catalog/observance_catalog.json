@@ -1,0 +1,124 @@
+{
+  "observances": [
+    {
+      "observance_id": "lantern-festival",
+      "title": "Lantern Festival",
+      "lunar_rule": "1-15",
+      "season_bucket": "spring",
+      "audience_tag": "community-family",
+      "format": "lantern-fair",
+      "program_kind": "family-evening",
+      "notes": "Good fit for an indoor evening launch with family attendance."
+    },
+    {
+      "observance_id": "longtaitou",
+      "title": "Longtaitou",
+      "lunar_rule": "2-2",
+      "season_bucket": "spring",
+      "audience_tag": "market-demo",
+      "format": "tea-fair",
+      "program_kind": "market-kickoff",
+      "notes": "Useful for a small spring market opener."
+    },
+    {
+      "observance_id": "shangsi",
+      "title": "Shangsi Festival",
+      "lunar_rule": "3-3",
+      "season_bucket": "spring",
+      "audience_tag": "youth-walk",
+      "format": "waterfront-rite",
+      "program_kind": "riverside-walk",
+      "notes": "Outdoor format with stronger weather sensitivity."
+    },
+    {
+      "observance_id": "huazhao",
+      "title": "Huazhao Festival",
+      "lunar_rule": "2-12",
+      "season_bucket": "spring",
+      "audience_tag": "garden-craft",
+      "format": "flower-fair",
+      "program_kind": "garden-market",
+      "notes": "Flower-themed craft day with a garden venue preference."
+    },
+    {
+      "observance_id": "buddha-birthday",
+      "title": "Buddha Birthday",
+      "lunar_rule": "4-8",
+      "season_bucket": "early-summer",
+      "audience_tag": "quiet-family",
+      "format": "temple-hall",
+      "program_kind": "reflection-rite",
+      "notes": "Lower-noise reflective program suitable for a calm hall setup."
+    },
+    {
+      "observance_id": "dragon-boat",
+      "title": "Dragon Boat Festival",
+      "lunar_rule": "5-5",
+      "season_bucket": "early-summer",
+      "audience_tag": "waterfront-sport",
+      "format": "river-stage",
+      "program_kind": "race-showcase",
+      "notes": "Public-facing festival with a stronger shoreline setup footprint."
+    },
+    {
+      "observance_id": "tiankuang",
+      "title": "Tiankuang Festival",
+      "lunar_rule": "6-6",
+      "season_bucket": "early-summer",
+      "audience_tag": "craft-laundry",
+      "format": "open-courtyard",
+      "program_kind": "household-fair",
+      "notes": "Traditional airing and craft showcase with outdoor setup risk."
+    },
+    {
+      "observance_id": "qixi",
+      "title": "Qixi Festival",
+      "lunar_rule": "7-7",
+      "season_bucket": "late-summer",
+      "audience_tag": "couple-evening",
+      "format": "rooftop-stage",
+      "program_kind": "wish-night",
+      "notes": "Small evening program with a romance-oriented audience."
+    },
+    {
+      "observance_id": "zhongyuan",
+      "title": "Zhongyuan Festival",
+      "lunar_rule": "7-15",
+      "season_bucket": "late-summer",
+      "audience_tag": "memorial-evening",
+      "format": "lantern-court",
+      "program_kind": "remembrance-vigil",
+      "notes": "Reflective night program with a quieter tone."
+    },
+    {
+      "observance_id": "mid-autumn",
+      "title": "Mid-Autumn Festival",
+      "lunar_rule": "8-15",
+      "season_bucket": "late-summer",
+      "audience_tag": "family-night-market",
+      "format": "moon-plaza",
+      "program_kind": "family-night-market",
+      "notes": "Strong family turnout and evening market potential."
+    },
+    {
+      "observance_id": "chongyang",
+      "title": "Chongyang Festival",
+      "lunar_rule": "9-9",
+      "season_bucket": "late-autumn",
+      "audience_tag": "senior-outing",
+      "format": "hill-garden",
+      "program_kind": "senior-outing",
+      "notes": "Best suited to an older audience and daytime movement."
+    },
+    {
+      "observance_id": "xiayuan",
+      "title": "Xiayuan Festival",
+      "lunar_rule": "10-15",
+      "season_bucket": "late-autumn",
+      "audience_tag": "lantern-rite",
+      "format": "riverside-lantern",
+      "program_kind": "lantern-release",
+      "notes": "Night ritual format with water-adjacent venue needs."
+    }
+  ]
+}

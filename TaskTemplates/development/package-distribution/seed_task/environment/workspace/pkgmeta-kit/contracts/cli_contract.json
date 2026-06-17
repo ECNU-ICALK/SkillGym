@@ -1,0 +1,22 @@
+{
+  "snapshot": {
+    "argv": [
+      "snapshot"
+    ],
+    "top_classifier_roots_limit": 5
+  },
+  "license_lookup": {
+    "argv": [
+      "license",
+      "MIT"
+    ]
+  },
+  "classifier_prefix_lookup": {
+    "argv": [
+      "classifier-prefix",
+      "Framework ::",
+      "--limit",
+      "4"
+    ]
+  }
+}

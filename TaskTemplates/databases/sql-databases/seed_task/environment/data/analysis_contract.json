@@ -1,0 +1,113 @@
+{
+  "analysis_window": {
+    "start_date": "2023-01-02",
+    "end_date": "2023-02-07",
+    "weekday_isodow_values": [1, 2, 3, 4, 5],
+    "service_date_scope": "observed_sample_dates_only"
+  },
+  "input_tables": {
+    "trip_tables": [
+      "raw.dispatch_batch_a",
+      "raw.dispatch_batch_b",
+      "raw.dispatch_batch_c",
+      "raw.dispatch_batch_d"
+    ],
+    "zone_lookup_table": "raw.zone_lookup"
+  },
+  "candidate_market": {
+    "boroughs": ["Manhattan"],
+    "service_zones": ["Yellow Zone"],
+    "exclude_zone_names": ["Outside of NYC", "Unknown"]
+  },
+  "airport_mapping": [
+    {
+      "airport_code": "EWR",
+      "zone_id": 1
+    },
+    {
+      "airport_code": "JFK",
+      "zone_id": 132
+    },
+    {
+      "airport_code": "LGA",
+      "zone_id": 138
+    }
+  ],
+  "periods": {
+    "morning_departures": {
+      "direction": "to_airport",
+      "pickup_hour_start": 6,
+      "pickup_hour_end": 10,
+      "airports": ["EWR", "JFK", "LGA"],
+      "top_k": 2
+    },
+    "evening_arrivals": {
+      "direction": "from_airport",
+      "pickup_hour_start": 17,
+      "pickup_hour_end": 22,
+      "airports": ["JFK", "LGA"],
+      "top_k": 3
+    }
+  },
+  "valid_trip_rules": {
+    "min_trip_distance_miles": 0.2,
+    "min_fare_amount_usd": 3.0,
+    "min_total_amount_usd": 5.0,
+    "min_trip_duration_min": 1.0,
+    "max_trip_duration_min": 180.0,
+    "max_implied_mph": 80.0,
+    "exclude_same_zone_short_hops": true,
+    "same_zone_short_hop_miles": 0.3
+  },
+  "daily_panel": {
+    "partner_zone_day_definition": "for each period and zone include every observed service_date where candidate trips exist for that zone in that period",
+    "airport_pair_scope": "only create airport_code plus zone pairs that have at least one qualifying airport-linked trip in the analysis window",
+    "airport_zero_fill_rule": "when a scoped airport plus zone pair has no airport-linked trip on an observed zone-day row, set airport_trip_count to 0 and keep the total_trip_count for that zone-day"
+  },
+  "rolling_window": {
+    "service_dates_in_window": 7,
+    "snapshot_dates": [
+      "2023-01-17",
+      "2023-01-24",
+      "2023-01-31",
+      "2023-02-07"
+    ],
+    "min_active_days_in_window": 3
+  },
+  "ranking_score": {
+    "count_weight": 0.5,
+    "share_weight": 0.3,
+    "active_days_weight": 0.2,
+    "count_component_source": "rolling_airport_trip_count",
+    "share_component_source": "rolling_airport_trip_share",
+    "active_days_component_source": "active_days_in_window",
+    "normalization_scope": "within each snapshot_date, period, and airport_code divide each metric by the group maximum",
+    "tie_break_order": [
+      "rolling_opportunity_score_desc",
+      "rolling_airport_trip_count_desc",
+      "rolling_airport_trip_share_desc",
+      "zone_id_asc"
+    ]
+  },
+  "benchmark": {
+    "target_relation": "analysis.airport_zone_daily",
+    "recommended_strategy": "support repeated snapshot leaderboard queries with helper objects and indexes in PostgreSQL",
+    "benchmark_filters": {
+      "periods": ["morning_departures", "evening_arrivals"],
+      "airport_codes": ["JFK", "LGA"],
+      "service_date_from": "2023-01-17",
+      "service_date_to": "2023-02-07"
+    }
+  },
+  "output_contract": {
+    "benchmark_report_required_sections": [
+      "Scope",
+      "Daily mart",
+      "Snapshot leaderboard",
+      "Index strategy"
+    ],
+    "query_pack_comment_prefix": "-- Query ",
+    "daily_mart_row_scope": "one_row_per_service_date_period_airport_zone_for_the_zero_filled_airport_zone_day_panel",
+    "leaderboard_scope": "top_k_rows_per_snapshot_date_period_airport_code_after_rolling_window_scoring"
+  }
+}

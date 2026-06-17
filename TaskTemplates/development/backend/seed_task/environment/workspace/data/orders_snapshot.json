@@ -1,0 +1,192 @@
+[
+  {
+    "id": "ord_1001",
+    "number": "1001",
+    "created_at": "2026-04-10T09:15:00Z",
+    "financial_status": "paid",
+    "fulfillment_status": "fulfilled",
+    "currency": "USD",
+    "subtotal_price": 119.9,
+    "total_price": 129.9,
+    "refundable_amount": 29.9,
+    "cancelled_at": null,
+    "customer_id": "cust_001",
+    "line_items": [
+      {
+        "id": "li_1001_1",
+        "sku": "TSHIRT-CLASSIC-BLK-M",
+        "title": "Classic Tee",
+        "quantity": 2,
+        "unit_price": 39.95
+      },
+      {
+        "id": "li_1001_2",
+        "sku": "CAP-LOGO-NVY",
+        "title": "Logo Cap",
+        "quantity": 1,
+        "unit_price": 40.0
+      }
+    ]
+  },
+  {
+    "id": "ord_1002",
+    "number": "1002",
+    "created_at": "2026-04-11T11:45:00Z",
+    "financial_status": "partially_refunded",
+    "fulfillment_status": "fulfilled",
+    "currency": "USD",
+    "subtotal_price": 82.4,
+    "total_price": 88.4,
+    "refundable_amount": 18.4,
+    "cancelled_at": null,
+    "customer_id": "cust_002",
+    "line_items": [
+      {
+        "id": "li_1002_1",
+        "sku": "BAG-CANVAS-OLV",
+        "title": "Canvas Bag",
+        "quantity": 1,
+        "unit_price": 52.4
+      },
+      {
+        "id": "li_1002_2",
+        "sku": "MUG-STONE-WHT",
+        "title": "Stone Mug",
+        "quantity": 1,
+        "unit_price": 30.0
+      }
+    ]
+  },
+  {
+    "id": "ord_1003",
+    "number": "1003",
+    "created_at": "2026-04-12T14:05:00Z",
+    "financial_status": "pending",
+    "fulfillment_status": "unfulfilled",
+    "currency": "USD",
+    "subtotal_price": 198.0,
+    "total_price": 210.0,
+    "refundable_amount": 0.0,
+    "cancelled_at": null,
+    "customer_id": "cust_003",
+    "line_items": [
+      {
+        "id": "li_1003_1",
+        "sku": "JACKET-RAIN-GLD-L",
+        "title": "Rain Jacket",
+        "quantity": 1,
+        "unit_price": 198.0
+      }
+    ]
+  },
+  {
+    "id": "ord_1004",
+    "number": "1004",
+    "created_at": "2026-04-13T08:20:00Z",
+    "financial_status": "paid",
+    "fulfillment_status": "unfulfilled",
+    "currency": "USD",
+    "subtotal_price": 42.0,
+    "total_price": 45.0,
+    "refundable_amount": 45.0,
+    "cancelled_at": null,
+    "customer_id": "cust_004",
+    "line_items": [
+      {
+        "id": "li_1004_1",
+        "sku": "SOCKS-MERINO-GRY",
+        "title": "Merino Socks",
+        "quantity": 3,
+        "unit_price": 14.0
+      }
+    ]
+  },
+  {
+    "id": "ord_1005",
+    "number": "1005",
+    "created_at": "2026-04-14T16:50:00Z",
+    "financial_status": "refunded",
+    "fulfillment_status": "fulfilled",
+    "currency": "USD",
+    "subtotal_price": 289.5,
+    "total_price": 305.5,
+    "refundable_amount": 0.0,
+    "cancelled_at": null,
+    "customer_id": "cust_001",
+    "line_items": [
+      {
+        "id": "li_1005_1",
+        "sku": "SNEAKER-STREET-WHT-42",
+        "title": "Street Sneaker",
+        "quantity": 1,
+        "unit_price": 289.5
+      }
+    ]
+  },
+  {
+    "id": "ord_1006",
+    "number": "1006",
+    "created_at": "2026-04-15T10:10:00Z",
+    "financial_status": "paid",
+    "fulfillment_status": "fulfilled",
+    "currency": "USD",
+    "subtotal_price": 54.0,
+    "total_price": 59.0,
+    "refundable_amount": 59.0,
+    "cancelled_at": null,
+    "customer_id": "cust_005",
+    "line_items": [
+      {
+        "id": "li_1006_1",
+        "sku": "NOTEBOOK-DOT-A5",
+        "title": "Dot Notebook",
+        "quantity": 2,
+        "unit_price": 27.0
+      }
+    ]
+  },
+  {
+    "id": "ord_1007",
+    "number": "1007",
+    "created_at": "2026-04-16T19:30:00Z",
+    "financial_status": "cancelled",
+    "fulfillment_status": "unfulfilled",
+    "currency": "USD",
+    "subtotal_price": 131.75,
+    "total_price": 140.75,
+    "refundable_amount": 0.0,
+    "cancelled_at": "2026-04-17T02:15:00Z",
+    "customer_id": "cust_001",
+    "line_items": [
+      {
+        "id": "li_1007_1",
+        "sku": "HOODIE-WAVE-NVY-M",
+        "title": "Wave Hoodie",
+        "quantity": 1,
+        "unit_price": 131.75
+      }
+    ]
+  },
+  {
+    "id": "ord_1008",
+    "number": "1008",
+    "created_at": "2026-04-17T07:55:00Z",
+    "financial_status": "paid",
+    "fulfillment_status": "fulfilled",
+    "currency": "USD",
+    "subtotal_price": 22.25,
+    "total_price": 25.25,
+    "refundable_amount": 25.25,
+    "cancelled_at": null,
+    "customer_id": "cust_006",
+    "line_items": [
+      {
+        "id": "li_1008_1",
+        "sku": "PATCH-IRONON-SUN",
+        "title": "Iron-on Patch",
+        "quantity": 1,
+        "unit_price": 22.25
+      }
+    ]
+  }
+]
