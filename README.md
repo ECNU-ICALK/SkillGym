@@ -2,6 +2,12 @@
 
 SkillGym is an open skill library and task-generation framework for AI agents. It contains reusable skills, task templates, and an automated builder that generates benchmark tasks from selected skills.
 
+## Dataset
+
+The released SkillGym task dataset is available on Hugging Face:
+
+[ecnu-icalk/SkillGym](https://huggingface.co/datasets/ecnu-icalk/SkillGym)
+
 ## Contents
 
 ```text
