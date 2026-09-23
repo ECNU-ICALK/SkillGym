@@ -1,3 +1,11 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/skillgym_brand_dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/skillgym_brand_light.svg">
+    <img src="assets/skillgym_brand_light.svg" alt="SkillGym — Train Agents with Real Skills" width="620">
+  </picture>
+</p>
+
 <div align="center">
 
 <p><strong>Internalizing Large-Scale Human-Written Skills into LLMs for Real-World Problem Solving</strong></p>
