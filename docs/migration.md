@@ -10,7 +10,7 @@ The large \`skill_library/\`, \`task_templates/\`, and \`Trajectories/\` data re
 | \`task_templates.tar.zst\` | Extract to \`task_templates/\` |
 | \`Trajectories/*.jsonl\` | Keep under \`.hf/skillgym/Trajectories/\` or copy as needed |
 
-The two archives and eight trajectory files preserve the local release snapshot corresponding to GitHub commit \`6ebabba67ca449cb04c87085a30fe78096eb99b3\`. See [\`migration_manifest.json\`](https://huggingface.co/datasets/ecnu-icalk/SkillGym/blob/main/migration_manifest.json) for byte sizes, line counts, and SHA-256 checksums.
+The two archives and eight trajectory files preserve the local release snapshot corresponding to GitHub commit `6ebabba67ca449cb04c87085a30fe78096eb99b3`. File sizes and SHA-256 checksums are available from the corresponding file metadata on the Hugging Face Hub.
 
 ## Download
 
@@ -18,7 +18,7 @@ From the repository root:
 
 \`\`\`bash
 hf download ecnu-icalk/SkillGym \
-  skill_library.tar.zst task_templates.tar.zst migration_manifest.json \
+  skill_library.tar.zst task_templates.tar.zst \
   --repo-type dataset --local-dir .hf/skillgym
 hf download ecnu-icalk/SkillGym \
   --include "Trajectories/*.jsonl" \
@@ -40,4 +40,4 @@ After extraction, the builder defaults resolve \`<repository>/task_templates\` a
 
 ## Checks
 
-Run the commands in the README's Development Checks section after extracting the archives. CI checks code and documentation without downloading the HF data files.
+Run the commands in the [Task Builder guide](../task_builder/README.md) after extracting the archives. CI checks code and documentation without downloading the HF data files.
