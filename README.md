@@ -23,6 +23,17 @@
 
 > **Core question:** Can verified experience generated from human-written skills become reusable procedural competence inside the model?
 
+<div align="center">
+
+| Harness | Model | GDPval-AA v2<br>(Elo) ↑ | Terminal-Bench 2.1<br>(%) ↑ | SkillsBench v1.1<br>w/ Skills (%) ↑ | SkillsBench v1.1<br>w/o Skills (%) ↑ |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Codex | Qwen3.5-35B-A3B | 942 | 10.11 | 5.33 | 0.69 |
+| Codex | **SkillGym-Agent** | **979** | **46.07** | **33.02** | **21.08** |
+| Claude Code | Qwen3.5-35B-A3B | 974 | 39.33 | 23.34 | 12.13 |
+| Claude Code | **SkillGym-Agent** | **1173** | **58.43** | **51.47** | **26.81** |
+
+</div>
+
 <p align="center">
   <a href="assets/SkillGym.pdf">
     <img
@@ -101,34 +112,6 @@
 **Skill-Dep.** denotes environments satisfying the stricter contrastive criterion under the reference construction setup. **Verifier-Passed** denotes environments that pass execution and verification checks without satisfying that additional criterion. These are task-construction labels, not guarantees about every later model or harness.
 
 </details>
-
-## Main Results
-
-<p align="center">
-  <a href="assets/skillgym_baseline.pdf">
-    <img
-      src="assets/skillgym_baseline.png"
-      alt="SkillGym-Agent performance across general-agent benchmarks"
-      width="95%"
-    >
-  </a>
-</p>
-
-Higher is better for every metric. **GDPval-AA v2** is reported as Elo; the remaining metrics are task success rates (%).
-
-| Harness | Model | GDPval-AA v2<br>(Elo) ↑ | Terminal-Bench 2.1<br>(%) ↑ | SkillsBench v1.1<br>w/ Skills (%) ↑ | SkillsBench v1.1<br>w/o Skills (%) ↑ |
-| --- | --- | ---: | ---: | ---: | ---: |
-| Codex | Qwen3.5-35B-A3B | 942 | 10.11 | 5.33 | 0.69 |
-| Codex | **SkillGym-Agent** | **979** | **46.07** | **33.02** | **21.08** |
-| Claude Code | Qwen3.5-35B-A3B | 974 | 39.33 | 23.34 | 12.13 |
-| Claude Code | **SkillGym-Agent** | **1173** | **58.43** | **51.47** | **26.81** |
-
-The released **SkillGym-Agent** checkpoint corresponds to the paper's **All Teachers** setting and is trained on the full set of **8,364 successful trajectories** from the released teacher–harness configurations.
-
-A central observation is **skill-free transfer**: after training on verified SkillGym trajectories, the released agent retains substantial performance even when the external skill is removed at inference time. Performance remains strongest when external skills are available, **suggesting that internalized capability and explicit skills are complementary**.
-
-> [!NOTE]
-> Under Claude Code, the base and trained models use the same standard system prompt. Under Codex, the base uses the standard prompt while SkillGym-Agent uses the `no-applypatch` prompt, so the Codex difference is not a pure fine-tuning-only comparison. See the paper for the complete evaluation configuration, teacher/harness ablations, and public-reference results.
 
 ## Project Resources
 
