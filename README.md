@@ -89,6 +89,16 @@ In the released data, **Skill-Dep.** denotes environments satisfying the stricte
 
 ## Main Results
 
+<p align="center">
+  <a href="assets/skillgym_baseline.pdf">
+    <img
+      src="assets/skillgym_baseline.png"
+      alt="SkillGym-Agent performance across general-agent benchmarks"
+      width="95%"
+    >
+  </a>
+</p>
+
 Higher is better for every metric. **GDPval-AA v2** is reported as Elo; the remaining metrics are task success rates (%).
 
 | Harness | Model | GDPval-AA v2<br>(Elo) ↑ | Terminal-Bench 2.1<br>(%) ↑ | SkillsBench v1.1<br>w/ Skills (%) ↑ | SkillsBench v1.1<br>w/o Skills (%) ↑ |
@@ -184,6 +194,12 @@ Large artifacts such as the skill library, task templates, executable tasks, and
 This repository releases the **Task Builder**, documentation, and project materials. The companion Hugging Face repositories release the **data/trajectories** and **SkillGym-Agent checkpoint**. The current release does not include a standalone end-to-end training script or a single script that reproduces every external benchmark result.
 
 The paper reports long-context full-parameter supervised fine-tuning with **ms-swift / Megatron** on **16 × NVIDIA H200 GPUs**. Use the linked Dataset Card and Model Card for artifact-specific metadata and usage details.
+
+## Questions & Contributions
+
+Questions, bug reports, and feature requests are welcome through [GitHub Issues](https://github.com/ECNU-ICALK/SkillGym/issues). Contributions to the Task Builder and documentation are welcome via pull requests.
+
+For dataset- or checkpoint-specific questions, please include the relevant Hugging Face repository and revision when reporting an issue.
 
 ## Citation
 
