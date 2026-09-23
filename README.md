@@ -33,20 +33,6 @@
   </a>
 </p>
 
-<div align="center">
-
-**Navigate:**  
-[Framework](#framework) ·
-[Contributions](#contributions) ·
-[Dataset](#dataset-at-a-glance) ·
-[Results](#main-results) ·
-[Resources](#project-resources) ·
-[Quick Start](#quick-start) ·
-[Reproducibility](#release--reproducibility) ·
-[Citation](#citation)
-
-</div>
-
 > **Key takeaway.** Across the reported evaluations, SkillGym-Agent scores higher than the same-backbone base on GDPval-AA v2, Terminal-Bench 2.1, and SkillsBench v1.1 under both evaluated harnesses. Its skill-free score also exceeds the skill-assisted base in both harnesses, suggesting that part of the verified workflow experience transfers beyond direct access to external skills.
 
 The framework below shows how SkillGym turns human-written skills into executable environments, verifier-backed interaction experience, and training trajectories for agent capability acquisition.
