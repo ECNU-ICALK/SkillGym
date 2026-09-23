@@ -37,17 +37,18 @@
   <sub><em>From human-written skills to executable environments, verifier-backed experience, and reusable agent capability.</em></sub>
 </p>
 
-## Release Map
+## Project Resources
 
-The SkillGym release is split across three repositories with distinct roles:
-
-| Resource | Primary contents | Start here when you want to… |
+| Resource | What it provides | Link |
 | --- | --- | --- |
-| [**Code · GitHub**](https://github.com/ECNU-ICALK/SkillGym) | Task Builder, construction pipeline, documentation, figures, and paper materials | understand, reproduce, or extend the task-construction workflow |
-| [**Data · Hugging Face**](https://huggingface.co/datasets/ecnu-icalk/SkillGym) | Skill library, task templates, executable task environments, and trajectory collections | inspect the released data or train on SkillGym trajectories |
-| [**Model · Hugging Face**](https://huggingface.co/ecnu-icalk/SkillGym-Agent) | **SkillGym-Agent**, a Qwen3.5-35B-A3B checkpoint trained on verified SkillGym trajectories | download, load, or evaluate the released agent checkpoint |
+| **Code** | Task Builder, construction pipeline, project materials, and lightweight assets | [GitHub](https://github.com/ECNU-ICALK/SkillGym) |
+| **Dataset** | Skill library, task templates, executable environments, and trajectory collections | [Hugging Face](https://huggingface.co/datasets/ecnu-icalk/SkillGym) |
+| **Model** | **SkillGym-Agent**, the released Qwen3.5-35B-A3B checkpoint trained on verified SkillGym trajectories | [Hugging Face](https://huggingface.co/ecnu-icalk/SkillGym-Agent) |
+| **Task Builder** | Environment construction, validation, skill-effect testing, repair, and publishing | [Guide](task_builder/README.md) |
+| **Pipeline Docs** | Construction stages, repair semantics, acceptance gates, and outputs | [Documentation](task_builder/docs/task-generation-pipeline.md) |
+| **Paper** | Full method, dataset analysis, experiments, ablations, and appendices | [PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) |
 
-The repositories are versioned independently. The large-artifact dataset snapshot is associated with GitHub commit `6ebabba`. Dataset-specific provenance, archive layout, schemas, and licensing live in the **Dataset Card**; checkpoint-specific loading, evaluation, and limitations live in the **Model Card**.
+The code, dataset, and model repositories are versioned independently. The large-artifact dataset snapshot is associated with GitHub commit `6ebabba`.
 
 ## What SkillGym Contributes
 
@@ -169,28 +170,6 @@ tar --zstd -xf .hf/skillgym/task_templates.tar.zst
 ```
 
 Then follow the [Task Builder guide](task_builder/README.md) for generation, validation, skill-effect testing, repair, and publishing. A full generation run additionally requires Harbor, a configured runtime such as E2B, Daytona, or Docker, and the relevant model/runtime credentials.
-
-## Repository Structure
-
-```text
-SkillGym/
-├── task_builder/   # Task construction, validation, repair, and publishing
-├── assets/         # Paper, figures, and project branding
-├── README.md       # Project overview
-└── LICENSE
-```
-
-Large artifacts such as the skill library, task templates, executable tasks, and trajectories are hosted in the [SkillGym Dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym).
-
-## Documentation
-
-| Resource | Scope |
-| --- | --- |
-| [Task Builder guide](task_builder/README.md) | Installation, configuration, generation, validation, and output layout |
-| [Task-generation pipeline](task_builder/docs/task-generation-pipeline.md) | Construction stages, repair semantics, acceptance gates, and outputs |
-| [Dataset Card](https://huggingface.co/datasets/ecnu-icalk/SkillGym) | Released artifacts, schemas, labels, terminology, provenance, and data licensing |
-| [Model Card](https://huggingface.co/ecnu-icalk/SkillGym-Agent) | Checkpoint loading, training summary, evaluation, intended use, and limitations |
-| [Paper](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) | Full method, dataset analysis, experiments, ablations, and appendices |
 
 ## Reproducibility
 
