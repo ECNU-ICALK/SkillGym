@@ -154,7 +154,7 @@ Then fill in the provider credentials and runtime settings required by your envi
 - `OPENAI_API_KEY`
 - `OPENAI_BASE_URL`
 - `E2B_API_KEY`
-- ``X_TASK_BUILDER_RUNTIME_ENV`
+- `CODEX_TASK_BUILDER_RUNTIME_ENV``
 
 The builder does not provision model access or a sandbox automatically. Verify those services before starting a long run.
 
