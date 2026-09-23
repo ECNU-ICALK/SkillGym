@@ -54,7 +54,7 @@ The three repositories are versioned separately. The large data snapshot is asso
 4. **Contrast:** compare paired runs with and without the target skill.
 5. **Learn:** archive successful long-horizon trajectories for agent training.
 
-`Skill-Dep.` is a construction-time label: the `withskill` run succeeds and the paired `withoutskill` run produces a valid reward failure. `Verifier-Passed` tasks have a valid environment and verifier but do not satisfy that stricter contrastive criterion. Neither label guarantees success for every later model or harness.
+`Skill-Dep.` is a construction-time label: the `with-skill` run succeeds and the paired `without-skill` run produces a valid reward failure (stored as `withskill`/`withoutskill`). `Verifier-Passed` tasks have a valid environment and verifier but do not satisfy that stricter contrastive criterion. Neither label guarantees success for every later model or harness.
 
 ## Results at a glance
 
