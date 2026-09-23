@@ -24,6 +24,16 @@
 > **Core question:** Can verified experience generated from human-written skills become reusable procedural competence inside the model?
 
 <p align="center">
+  <a href="assets/skillgym_baseline.pdf">
+    <img
+      src="assets/skillgym_baseline.png"
+      alt="SkillGym-Agent performance across general-agent benchmarks"
+      width="95%"
+    >
+  </a>
+</p>
+
+<p align="center">
   <a href="assets/SkillGym.pdf">
     <img
       src="assets/skillgym_framework.jpg"
@@ -103,16 +113,6 @@
 </details>
 
 ## Main Results
-
-<p align="center">
-  <a href="assets/skillgym_baseline.pdf">
-    <img
-      src="assets/skillgym_baseline.png"
-      alt="SkillGym-Agent performance across general-agent benchmarks"
-      width="95%"
-    >
-  </a>
-</p>
 
 Higher is better for every metric. **GDPval-AA v2** is reported as Elo; the remaining metrics are task success rates (%).
 
