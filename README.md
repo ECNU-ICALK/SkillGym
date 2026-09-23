@@ -15,7 +15,7 @@
 [![Model](https://img.shields.io/badge/🤗%20Model-SkillGym--Agent-FFD21E)](https://huggingface.co/ecnu-icalk/SkillGym-Agent)
 [![License](https://img.shields.io/badge/License-MIT-2EA44F)](LICENSE)
 
-[Paper](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) · [Dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) · [Agent](https://huggingface.co/ecnu-icalk/SkillGym-Agent) · [Task Builder](task_builder/README.md) · [Quick Start](#quick-start)
+[Task Builder](task_builder/README.md) · [Documentation](task_builder/docs/task-generation-pipeline.md) · [Quick Start](#quick-start)
 
 </div>
 
@@ -23,27 +23,27 @@
 
 > **Core question:** Can verified experience generated from human-written skills become reusable procedural competence inside the model?
 
-## Release map
+## Release Map
 
 The SkillGym release is split across three repositories with distinct roles:
 
 | Resource | Primary contents | Start here when you want to… |
 | --- | --- | --- |
-| **Code · GitHub** | Task Builder, construction pipeline, documentation, figures, and paper materials | understand, reproduce, or extend the task-construction workflow |
-| **Data · Hugging Face** | Skill library, task templates, executable task environments, and trajectory collections | inspect the released data or train on SkillGym trajectories |
-| **Model · Hugging Face** | **SkillGym-Agent**, a Qwen3.5-35B-A3B checkpoint trained on verified SkillGym trajectories | download, load, or evaluate the released agent checkpoint |
+| [**Code · GitHub**](https://github.com/ECNU-ICALK/SkillGym) | Task Builder, construction pipeline, documentation, figures, and paper materials | understand, reproduce, or extend the task-construction workflow |
+| [**Data · Hugging Face**](https://huggingface.co/datasets/ecnu-icalk/SkillGym) | Skill library, task templates, executable task environments, and trajectory collections | inspect the released data or train on SkillGym trajectories |
+| [**Model · Hugging Face**](https://huggingface.co/ecnu-icalk/SkillGym-Agent) | **SkillGym-Agent**, a Qwen3.5-35B-A3B checkpoint trained on verified SkillGym trajectories | download, load, or evaluate the released agent checkpoint |
 
-The repositories are versioned independently. Dataset-specific provenance, archive layout, and schema details live in the **Dataset Card**; checkpoint-specific loading and evaluation notes live in the **Model Card**.
+The repositories are versioned independently. The large-artifact dataset snapshot is associated with GitHub commit `6ebabba`. Dataset-specific provenance, archive layout, schemas, and licensing live in the **Dataset Card**; checkpoint-specific loading, evaluation, and limitations live in the **Model Card**.
 
-## What SkillGym contributes
+## What SkillGym Contributes
 
 - **Skill-to-task construction.** Human-written procedural knowledge is converted into executable tasks with explicit runtime requirements, assets, and task-specific outcome verifiers.
 - **Verifier-backed acceptance.** Candidate environments must pass feasibility and outcome-verification checks before release.
 - **Contrastive skill-dependency assessment.** Paired runs with and without the target skill identify tasks whose success depends on the provided procedural knowledge under the reference construction setup.
-- **Verified long-horizon experience.** Successful executions are retained as trajectories for supervised fine-tuning and analysis, while the environments and verifiers can also support outcome-based learning.
-- **A released skill-internalized agent.** SkillGym-Agent tests how much verified workflow experience transfers into the model and how that capability interacts with explicit skills at inference time.
+- **Verified long-horizon experience.** Successful executions are retained as trajectories for supervised fine-tuning and analysis; the environments and verifiers can also support outcome-based learning.
+- **A released trained agent.** SkillGym-Agent enables evaluation of how verified workflow experience transfers into the model and how that capability interacts with explicit skills at inference time.
 
-## At a glance
+## At a Glance
 
 <table>
   <tr>
@@ -70,7 +70,7 @@ The repositories are versioned independently. Dataset-specific provenance, archi
   </tr>
 </table>
 
-## How SkillGym works
+## How SkillGym Works
 
 <p align="center">
   <a href="assets/SkillGym.pdf">
@@ -87,7 +87,7 @@ The repositories are versioned independently. Dataset-specific provenance, archi
 
 In the released data, **Skill-Dep.** denotes environments satisfying the stricter contrastive criterion under the reference construction setup; **Verifier-Passed** denotes environments that pass execution and verification checks without satisfying that additional criterion. These are task-construction labels, not guarantees about every later model or harness.
 
-## Main results
+## Main Results
 
 Higher is better for every metric. **GDPval-AA v2** is reported as Elo; the remaining metrics are task success rates (%).
 
@@ -98,7 +98,9 @@ Higher is better for every metric. **GDPval-AA v2** is reported as Elo; the rema
 | Claude Code | Qwen3.5-35B-A3B | 974 | 39.33 | 23.34 | 12.13 |
 | Claude Code | **SkillGym-Agent** | **1173** | **58.43** | **51.47** | **26.81** |
 
-A central observation is **skill-free transfer**: after training on verified SkillGym trajectories, the released agent retains substantial performance even when the external skill is removed at inference time. Performance remains strongest when skills are available, indicating that internalized capability and explicit skills are complementary.
+The released **SkillGym-Agent** checkpoint corresponds to the paper's **All Teachers** setting and is trained on the full set of **8,364 successful trajectories** from the released teacher–harness configurations.
+
+A central observation is **skill-free transfer**: after training on verified SkillGym trajectories, the released agent retains substantial performance even when the external skill is removed at inference time. Performance remains strongest when external skills are available, **suggesting that internalized capability and explicit skills are complementary**.
 
 > [!NOTE]
 > Under Claude Code, the base and trained models use the same standard system prompt. Under Codex, the base uses the standard prompt while SkillGym-Agent uses the `no-applypatch` prompt, so the Codex difference is not a pure fine-tuning-only comparison. See the paper for the complete evaluation configuration, teacher/harness ablations, and public-reference results.
@@ -109,7 +111,7 @@ A central observation is **skill-free transfer**: after training on verified Ski
 
 Choose the path that matches your goal.
 
-### Use the released data
+### Use the Released Data
 
 ```bash
 python -m pip install -U huggingface_hub
@@ -120,7 +122,7 @@ hf download ecnu-icalk/SkillGym \
   --local-dir .hf/skillgym
 ```
 
-For archive contents, trajectory schemas, task labels, and loading examples, see the **SkillGym Dataset Card**.
+For archive contents, trajectory schemas, task labels, terminology, and loading examples, see the [**SkillGym Dataset Card**](https://huggingface.co/datasets/ecnu-icalk/SkillGym).
 
 ### Download SkillGym-Agent
 
@@ -129,9 +131,9 @@ hf download ecnu-icalk/SkillGym-Agent \
   --local-dir .hf/skillgym-agent
 ```
 
-For Transformers loading, checkpoint metadata, intended use, and evaluation caveats, see the **SkillGym-Agent Model Card**.
+For Transformers loading, checkpoint metadata, intended use, and evaluation caveats, see the [**SkillGym-Agent Model Card**](https://huggingface.co/ecnu-icalk/SkillGym-Agent).
 
-### Build new skill-grounded environments
+### Build New Skill-Grounded Environments
 
 ```bash
 git clone https://github.com/ECNU-ICALK/SkillGym.git
@@ -161,7 +163,7 @@ Then follow the [Task Builder guide](task_builder/README.md) for generation, val
 | --- | --- |
 | [Task Builder guide](task_builder/README.md) | Installation, configuration, generation, validation, and output layout |
 | [Task-generation pipeline](task_builder/docs/task-generation-pipeline.md) | Construction stages, repair semantics, acceptance gates, and outputs |
-| [Dataset Card](https://huggingface.co/datasets/ecnu-icalk/SkillGym) | Released artifacts, schemas, labels, provenance, and data licensing |
+| [Dataset Card](https://huggingface.co/datasets/ecnu-icalk/SkillGym) | Released artifacts, schemas, labels, terminology, provenance, and data licensing |
 | [Model Card](https://huggingface.co/ecnu-icalk/SkillGym-Agent) | Checkpoint loading, training summary, evaluation, intended use, and limitations |
 | [Paper](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) | Full method, dataset analysis, experiments, ablations, and appendices |
 
@@ -176,10 +178,9 @@ The paper reports long-context full-parameter supervised fine-tuning with **ms-s
 The accompanying paper is currently under double-blind review. Until final publication metadata is available, please use:
 
 ```bibtex
-@misc{skillgym,
-  title = {SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving},
+@misc{skillgym2026,
+  title = {Internalizing Large-Scale Human-Written Skills into LLMs for Real-World Problem Solving},
   year  = {2026},
-  note  = {Under review at ICLR 2027},
   url   = {https://github.com/ECNU-ICALK/SkillGym}
 }
 ```
