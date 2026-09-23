@@ -1,3 +1,27 @@
+<div align="center">
+
+<h1>🧠 SkillGym</h1>
+
+<p><strong>Internalizing Large-Scale Human-Written Skills into LLMs for Real-World Problem Solving</strong></p>
+
+<p><em>From human-written workflows to executable, verifiable training environments.</em></p>
+
+<p>
+  🤗 <a href="https://huggingface.co/datasets/ecnu-icalk/SkillGym">Dataset</a>
+  &nbsp;·&nbsp;
+  🤖 <a href="https://huggingface.co/ecnu-icalk/SkillGym-Agent">Model checkpoint</a>
+  &nbsp;·&nbsp;
+  🧰 <a href="task_builder/README.md">Task Builder</a>
+  &nbsp;·&nbsp;
+  🧭 <a href="task_builder/docs/task-generation-pipeline.md">Pipeline</a>
+  &nbsp;·&nbsp;
+  🚀 <a href="#quick-start">Quick start</a>
+</p>
+
+</div>
+
+> **SkillGym** transforms human-written agent skills into executable environments, verifies outcomes with code, and collects successful long-horizon trajectories for training general-purpose agents.
+
 ## 📌 At a glance
 
 <table>
