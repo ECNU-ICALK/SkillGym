@@ -168,40 +168,11 @@ npm run generate-family -- \
 
 A generation run may take hours and can invoke paid model and sandbox services. Installing npm dependencies alone does not provision Harbor, a runtime, or model credentials.
 
-## 🗂️ Repository layout
-
-```text
-SkillGym/
-├── README.md
-├── task_builder/
-│   ├── README.md                         # Developer guide
-│   ├── docs/task-generation-pipeline.md  # Full construction flow
-│   ├── src/                              # CLI, discovery, planning, validation
-│   └── tests/                            # Unit and regression tests
-├── assets/                               # Framework and benchmark figures
-├── docs/migration.md                     # Data-release and archive notes
-└── .github/workflows/                    # CI checks
-```
-
-The large skill, template, task, and trajectory trees are hosted on HF rather than committed to GitHub. See [migration notes](docs/migration.md) if you need to reproduce the archive layout locally.
-
 ## 📄 Experiments and paper
 
 The figure above is a compact visual summary of the current manuscript. The [manuscript PDF](Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) contains the benchmark tables, ablations, task-selection rules, and evaluation caveats. Reported scores are manuscript snapshots and should not be interpreted as a continuously updated leaderboard.
 
 The released repository does not yet include standalone scripts for reproducing the complete SFT run or every benchmark harness. The task builder and data artifacts are released; training and evaluation recipes remain separate follow-up work.
-
-## ✅ Release status
-
-| Component | Status |
-| --- | --- |
-| Task Builder and validation code | Available in this repository |
-| Skill library and task templates | Available on HF |
-| Published task environments | Available on HF |
-| Successful trajectories | Available on HF |
-| SkillGym-Agent checkpoint | Available on HF; model card and training recipe are being expanded |
-| End-to-end SFT and benchmark reproduction scripts | Not included yet |
-| Final paper metadata and BibTeX | Coming with the paper release |
 
 ## 📚 Citation
 
