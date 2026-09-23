@@ -29,11 +29,11 @@ The TypeScript implementation is in `src/`. Default bundled templates are resolv
 ## Flow
 
 1. Load a generation unit from `--template-root`, `--template`, and one or more `--skill-dir` arguments.
-2. Ask Codex to plan a derived task for the selected template and skill.
-3. Materialize a task draft and run validation checks.
-4. Repair the draft before runtime if validation reports issues.
+2. Ask Codex to plan and write a derived task for the selected template and skill.
+3. Run a blocking Codex review, followed by static validation.
+4. Repair the draft when review or validation reports issues, then repeat the review and validation cycle.
 5. Run runtime checks and repair failures up to the configured limits.
-6. Run skill-effect evaluation with `with_skill` and `no_skill` variants.
+6. Run skill-effect evaluation with `with_skill` and `no_skill` variants, repairing failed comparisons when needed.
 7. Publish accepted variants into `final/`.
 8. Archive traces and write `manifest.jsonl` event records.
 
