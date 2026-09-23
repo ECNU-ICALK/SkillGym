@@ -1,4 +1,0 @@
-page_id,primary_keyword,secondary_keywords,search_intent,page_type,title_min,title_max
-product-analytics,product analytics,event funnels|feature usage analytics|release cohorts,commercial,solution-page,35,68
-error-monitoring,error monitoring,release diagnostics|stack traces|regression triage,commercial,solution-page,35,68
-pricing,pricing,usage-based pricing|plans|developer pricing,transactional,pricing-page,20,60

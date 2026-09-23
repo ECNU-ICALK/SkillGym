@@ -1,33 +1,33 @@
-# Directory Naming Migration
+# Data Release Migration
 
-This update is limited to three top-level directory names, their path references, and the paper-oriented README. It does not migrate data to Hugging Face or change task-generation, repair, or verification criteria.
+The large `skill_library/` and `task_templates/` trees have moved out of Git history and into the [SkillGym Hugging Face dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym). This keeps GitHub focused on the construction code and documentation while preserving reproducible snapshots.
 
-## Paths
+## HF archives
 
-| Previous path | Current path |
+Download these files from the dataset repository:
+
+| Archive | Restored path |
 | --- | --- |
-| `SkillLibrary/` | `skill_library/` |
-| `TaskTemplates/` | `task_templates/` |
-| `TaskBuilder/` | `task_builder/` |
+| `skill_library.tar.zst` | `skill_library/` |
+| `task_templates.tar.zst` | `task_templates/` |
 
-Update local shell scripts and saved commands to use the current paths. No filesystem aliases for the old directory names are created.
+The archives preserve the source tree at GitHub commit `6ebabba67ca449cb04c87085a30fe78096eb99b3`. See [`migration_manifest.json`](https://huggingface.co/datasets/ecnu-icalk/SkillGym/blob/main/migration_manifest.json) for byte sizes and SHA-256 checksums.
 
-The `skill_library/` and `task_templates/` subtrees retain their original file contents, permissions, and internal directory structures. Names such as `SKILL.md`, `task.toml`, `instruction.md`, `environment/`, `tests/`, `solution/`, `seed_task/`, category slugs, and skill slugs are unchanged. Task/template IDs and runtime output names remain unchanged.
+From the repository root:
 
-## Default Resource Paths
+```bash
+hf download ecnu-icalk/SkillGym skill_library.tar.zst task_templates.tar.zst \
+  --repo-type dataset --local-dir .hf/skillgym
+tar --zstd -xf .hf/skillgym/skill_library.tar.zst
+tar --zstd -xf .hf/skillgym/task_templates.tar.zst
+```
 
-Bundled templates now resolve to `<repository>/task_templates` based on the location of `task_builder/src/utils.ts`, rather than `process.cwd()`. The default output root is `<repository>/outputs`. This makes defaults consistent when starting from the repository root, `task_builder/`, or another working directory.
+## Path behavior
 
-Existing explicit `--template-root`, `--skill-dir`, and `--output-root` arguments remain supported. Relative arguments are still interpreted from the process working directory; npm runs package scripts inside the package directory.
+Once extracted, the existing builder defaults continue to resolve `<repository>/task_templates` and `<repository>/outputs`. Explicit `--template-root`, `--skill-dir`, and `--output-root` arguments remain supported.
 
-## Existing Data and Local Installations
-
-`Trajectories/` and its Git LFS attributes are unchanged. HF repository contents, visibility, dataset labels, and model checkpoints are not modified. Keep using the current data locations until a separately validated migration is completed.
-
-An existing ignored `TaskBuilder/node_modules/` directory is local state, not part of the tracked rename. Reinstall with `npm --prefix task_builder ci`. Preserve any locally generated outputs before cleaning an old checkout.
+`Trajectories/` is deliberately unchanged in this migration. Its eight JSONL files remain tracked by Git LFS in GitHub and can be fetched separately with `git lfs pull --include="Trajectories/*.jsonl"`.
 
 ## Checks
 
-Run the commands in the README's Development Checks section. The new `repo_paths.test.ts` covers the renamed default paths and explicit external template roots. The CI workflow runs type checking and the builder test files without model-provider credentials or a sandbox job.
-
-Static/unit checks are not an end-to-end environment-generation run and do not reproduce the paper's experimental scores.
+Run the commands in the README's Development Checks section after extracting the archives. CI checks code and path references without downloading the large HF archives or trajectory objects.

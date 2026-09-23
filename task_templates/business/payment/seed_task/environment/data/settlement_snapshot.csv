@@ -1,8 +1,0 @@
-doc_id,source_file,payment_status_snapshot,manual_review_required_snapshot,last_synced_at
-DOC-100,inbox/cloud/aws/statement-2014-08.pdf,unpaid,false,2023-03-25T09:00:00Z
-DOC-101,inbox/misc/reimports/aws-statement-duplicate.pdf,unpaid,false,2023-03-25T09:00:00Z
-DOC-102,inbox/facilities/azure/q1-office-renewal.pdf,unpaid,false,2023-03-25T09:00:00Z
-DOC-103,inbox/retail/flipkart/card-accessory-bill.pdf,unpaid,false,2023-03-25T09:00:00Z
-DOC-104,inbox/legal/netpresse-publication-invoice.pdf,unpaid,false,2023-03-25T09:00:00Z
-DOC-105,inbox/infra/qualityhosting/mail-hosting-may.pdf,unpaid,false,2023-03-25T09:00:00Z
-DOC-106,inbox/telco/free/fiber-july.pdf,unpaid,false,2023-03-25T09:00:00Z

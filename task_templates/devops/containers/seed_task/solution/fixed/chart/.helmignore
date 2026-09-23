@@ -1,8 +1,0 @@
-.git/
-.github/
-.DS_Store
-*.swp
-*.tmp
-*.bak
-tests/
-README.md

@@ -1,1 +1,0 @@
-https://github.com/google-gemini/gemini-cli/releases/tag/v0.41.0-preview.1

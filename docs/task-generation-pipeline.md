@@ -2,6 +2,19 @@
 
 SkillGym generates tasks by combining one reusable task template with one or more skills.
 
+## Data prerequisites
+
+The builder expects the two large input trees at the repository root. They are distributed as archives in the [SkillGym Hugging Face dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) and are not tracked in GitHub:
+
+```bash
+hf download ecnu-icalk/SkillGym skill_library.tar.zst task_templates.tar.zst \
+  --repo-type dataset --local-dir .hf/skillgym
+tar --zstd -xf .hf/skillgym/skill_library.tar.zst
+tar --zstd -xf .hf/skillgym/task_templates.tar.zst
+```
+
+After extraction, the expected paths are `skill_library/<major>/<minor>/skills/<skill>/` and `task_templates/<major>/<minor>/seed_task/`. The source commit and archive checksums are recorded in the dataset's `migration_manifest.json`.
+
 ## Inputs
 
 - `task_templates/<major>/<minor>/seed_task`

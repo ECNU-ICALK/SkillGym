@@ -136,57 +136,64 @@ Source: manuscript Table 5. “Both” refers to the two teachers listed for the
 
 ## Data and Release Status
 
-The companion dataset repository is **[ecnu-icalk/SkillGym](https://huggingface.co/datasets/ecnu-icalk/SkillGym)**. Consult its dataset card for the available task-environment and template archives and access requirements.
+The companion dataset repository is **[ecnu-icalk/SkillGym](https://huggingface.co/datasets/ecnu-icalk/SkillGym)**. Large release artifacts are distributed there so that the GitHub repository stays focused on code, documentation, and lightweight assets.
 
 | Component | Location / status |
 | --- | --- |
-| Skill library | [`skill_library/`](skill_library/) |
-| Task templates | [`task_templates/`](task_templates/) |
+| Skill library | [HF archive: `skill_library.tar.zst`](https://huggingface.co/datasets/ecnu-icalk/SkillGym/blob/main/skill_library.tar.zst); extract to `skill_library/` |
+| Task templates | [HF archive: `task_templates.tar.zst`](https://huggingface.co/datasets/ecnu-icalk/SkillGym/blob/main/task_templates.tar.zst); extract to `task_templates/` |
 | Environment construction code | [`task_builder/`](task_builder/) |
 | Task-environment dataset | [Hugging Face dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) |
-| Existing trajectory JSONL files | [`Trajectories/`](Trajectories/), tracked with Git LFS; unchanged in this refactor |
+| Existing trajectory JSONL files | [`Trajectories/`](Trajectories/), tracked with Git LFS and retained in GitHub |
 | Standalone sampling, SFT and benchmark-reproduction recipes | Release pending |
 | Model checkpoints | Release pending |
 | arXiv and finalized citation metadata | Coming soon |
 
-This update does not migrate trajectories, alter data labels, or change the HF dataset. Full datasets should be distributed through the companion HF repository as the release is consolidated; GitHub remains the entry point for code and documentation.
+The two directory archives were created from GitHub commit [`6ebabba`](https://github.com/ECNU-ICALK/SkillGym/commit/6ebabba67ca449cb04c87085a30fe78096eb99b3). Their checksums and sizes are recorded in the HF [`migration_manifest.json`](https://huggingface.co/datasets/ecnu-icalk/SkillGym/blob/main/migration_manifest.json). The trajectory files are intentionally outside this migration and remain available through Git LFS.
+
 
 ## Repository Layout
 
 ```text
 SkillGym/
 ├── README.md
-├── skill_library/        # Human-written skills; original internal layout retained
-├── task_templates/       # Reusable <major>/<minor>/seed_task directories
 ├── task_builder/         # TypeScript construction, validation, and repair pipeline
 │   ├── src/
 │   ├── tests/
 │   ├── package.json
 │   └── package-lock.json
-├── Trajectories/         # Existing Git LFS files; retained during the transition
+├── Trajectories/         # Existing Git LFS files; retained during this migration
 ├── assets/               # Framework illustration
 ├── docs/                 # Construction and migration notes
 └── .github/workflows/    # Lightweight builder checks
 ```
 
-The three renamed directories retain their internal skill/template layouts. See [migration notes](docs/migration.md) for updated paths and default-path behavior.
+The large `skill_library/` and `task_templates/` trees are released as HF archives and recreated locally by the Quick Start commands. See [migration notes](docs/migration.md) for the release layout and path behavior.
 
 ## Quick Start
 
-### Install and Inspect Templates
+### Download the data archives
 
-Use Node.js 22 and npm. The commands below clone the code without automatically downloading the large trajectory LFS objects:
+Clone the code repository without downloading trajectory LFS objects, then download and extract the two large directory archives from Hugging Face:
 
 ```bash
 GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/ECNU-ICALK/SkillGym.git
 cd SkillGym
+
+python -m pip install -U huggingface_hub
+hf auth login
+hf download ecnu-icalk/SkillGym \
+  skill_library.tar.zst task_templates.tar.zst \
+  --repo-type dataset --local-dir .hf/skillgym
+tar --zstd -xf .hf/skillgym/skill_library.tar.zst
+tar --zstd -xf .hf/skillgym/task_templates.tar.zst
 
 npm --prefix task_builder ci
 npm --prefix task_builder run check
 npm --prefix task_builder run inventory
 ```
 
-Template inventory is a local inspection command; it does not launch model-based task generation. To obtain the existing trajectory objects separately, install Git LFS and run `git lfs pull --include="Trajectories/*.jsonl"` from the repository root.
+The extraction commands recreate `skill_library/` and `task_templates/` at the repository root. The archives are pinned to the source commit recorded in [`migration_manifest.json`](https://huggingface.co/datasets/ecnu-icalk/SkillGym/blob/main/migration_manifest.json). Trajectories are still separate: install Git LFS and run `git lfs pull --include="Trajectories/*.jsonl"` only when you need those files.
 
 ### Configure Task Generation
 

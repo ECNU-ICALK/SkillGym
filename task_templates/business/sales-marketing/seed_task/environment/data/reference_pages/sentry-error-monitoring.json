@@ -1,8 +1,0 @@
-{
-  "ref_id": "sentry-error-monitoring",
-  "source_url": "https://sentry.io/for/performance/",
-  "notes": [
-    "Reference page shape: engineering-facing monitoring page with direct problem framing.",
-    "Reference pattern: release, regression, and stack-trace language anchored in developer workflows."
-  ]
-}

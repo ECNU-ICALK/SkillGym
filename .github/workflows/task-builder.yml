@@ -87,5 +87,3 @@ jobs:
             node --import tsx "$test_file"
             echo "::endgroup::"
           done
-      - name: Inspect bundled templates
-        run: npm --prefix task_builder run inventory
