@@ -37,18 +37,11 @@
   <sub><em>From human-written skills to executable environments, verifier-backed experience, and reusable agent capability.</em></sub>
 </p>
 
-## Project Resources
+## How SkillGym Works
 
-| Resource | What it provides | Link |
-| --- | --- | --- |
-| **Code** | Task Builder, construction pipeline, project materials, and lightweight assets | [GitHub](https://github.com/ECNU-ICALK/SkillGym) |
-| **Dataset** | Skill library, task templates, executable environments, and trajectory collections | [Hugging Face](https://huggingface.co/datasets/ecnu-icalk/SkillGym) |
-| **Model** | **SkillGym-Agent**, the released Qwen3.5-35B-A3B checkpoint trained on verified SkillGym trajectories | [Hugging Face](https://huggingface.co/ecnu-icalk/SkillGym-Agent) |
-| **Task Builder** | Environment construction, validation, skill-effect testing, repair, and publishing | [Guide](task_builder/README.md) |
-| **Pipeline Docs** | Construction stages, repair semantics, acceptance gates, and outputs | [Documentation](task_builder/docs/task-generation-pipeline.md) |
-| **Paper** | Full method, dataset analysis, experiments, ablations, and appendices | [PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) |
+SkillGym grounds human-written skills in reusable task templates, constructs executable environments with task-specific verifiers, assesses skill dependence through paired with-skill / without-skill execution, samples multi-harness trajectories, and trains SkillGym-Agent from successful verified experience.
 
-The code, dataset, and model repositories are versioned independently. The large-artifact dataset snapshot is associated with GitHub commit `6ebabba`.
+In the released data, **Skill-Dep.** denotes environments satisfying the stricter contrastive criterion under the reference construction setup; **Verifier-Passed** denotes environments that pass execution and verification checks without satisfying that additional criterion. These are task-construction labels, not guarantees about every later model or harness.
 
 ## What SkillGym Contributes
 
@@ -85,12 +78,6 @@ The code, dataset, and model repositories are versioned independently. The large
   </tr>
 </table>
 
-## How SkillGym Works
-
-SkillGym grounds human-written skills in reusable task templates, constructs executable environments with task-specific verifiers, assesses skill dependence through paired with-skill / without-skill execution, samples multi-harness trajectories, and trains SkillGym-Agent from successful verified experience.
-
-In the released data, **Skill-Dep.** denotes environments satisfying the stricter contrastive criterion under the reference construction setup; **Verifier-Passed** denotes environments that pass execution and verification checks without satisfying that additional criterion. These are task-construction labels, not guarantees about every later model or harness.
-
 ## Main Results
 
 <p align="center">
@@ -118,6 +105,19 @@ A central observation is **skill-free transfer**: after training on verified Ski
 
 > [!NOTE]
 > Under Claude Code, the base and trained models use the same standard system prompt. Under Codex, the base uses the standard prompt while SkillGym-Agent uses the `no-applypatch` prompt, so the Codex difference is not a pure fine-tuning-only comparison. See the paper for the complete evaluation configuration, teacher/harness ablations, and public-reference results.
+
+## Project Resources
+
+| Resource | What it provides | Link |
+| --- | --- | --- |
+| **Code** | Task Builder, construction pipeline, project materials, and lightweight assets | [GitHub](https://github.com/ECNU-ICALK/SkillGym) |
+| **Dataset** | Skill library, task templates, executable environments, and trajectory collections | [Hugging Face](https://huggingface.co/datasets/ecnu-icalk/SkillGym) |
+| **Model** | **SkillGym-Agent**, the released Qwen3.5-35B-A3B checkpoint trained on verified SkillGym trajectories | [Hugging Face](https://huggingface.co/ecnu-icalk/SkillGym-Agent) |
+| **Task Builder** | Environment construction, validation, skill-effect testing, repair, and publishing | [Guide](task_builder/README.md) |
+| **Pipeline Docs** | Construction stages, repair semantics, acceptance gates, and outputs | [Documentation](task_builder/docs/task-generation-pipeline.md) |
+| **Paper** | Full method, dataset analysis, experiments, ablations, and appendices | [PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) |
+
+The code, dataset, and model repositories are versioned independently. The large-artifact dataset snapshot is associated with GitHub commit `6ebabba`.
 
 <a id="quick-start"></a>
 
