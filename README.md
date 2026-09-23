@@ -35,6 +35,16 @@ These counts are the current manuscript snapshot. Environments, variants, sample
 
 <p align="center"><em>Benchmark overview from the current manuscript. Click the figure to open the PDF version.</em></p>
 
+## Framework
+
+<p align="center">
+  <img src="assets/skillgym_framework.jpg" alt="SkillGym framework: skill-aware task template building, validated environment construction, and trajectory sampling." width="100%">
+</p>
+
+<p align="center"><em>SkillGym converts human-written skills into executable, verifiable environments, then samples successful trajectories across multiple harness-model combinations.</em></p>
+
+
+
 ## What is in the release?
 
 | I want to… | Start here |
