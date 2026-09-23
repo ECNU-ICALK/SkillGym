@@ -15,7 +15,16 @@
 [![Model](https://img.shields.io/badge/🤗%20Model-SkillGym--Agent-FFD21E)](https://huggingface.co/ecnu-icalk/SkillGym-Agent)
 [![License](https://img.shields.io/badge/License-MIT-2EA44F)](LICENSE)
 
-[Task Builder](task_builder/README.md) · [Documentation](task_builder/docs/task-generation-pipeline.md) · [Quick Start](#quick-start)
+<p align="center">
+  <a href="#framework">Framework</a> ·
+  <a href="#contributions">Contributions</a> ·
+  <a href="#dataset-at-a-glance">Dataset</a> ·
+  <a href="#main-results">Results</a> ·
+  <a href="#quick-start">Quick Start</a> ·
+  <a href="#project-resources">Resources</a> ·
+  <a href="#release--reproducibility">Reproducibility</a> ·
+  <a href="#citation">Citation</a>
+</p>
 
 </div>
 
