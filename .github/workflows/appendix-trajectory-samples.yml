@@ -1,0 +1,200 @@
+name: Temporary appendix trajectory sampling
+
+on:
+  push:
+    branches: ['appendix/trajectory-samples-20260923']
+    paths: ['.github/workflows/appendix-trajectory-samples.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: appendix-trajectory-samples-20260923
+  cancel-in-progress: false
+
+jobs:
+  sample:
+    if: github.ref == 'refs/heads/appendix/trajectory-samples-20260923'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out only the two requested trajectory pointers
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        env:
+          GIT_LFS_SKIP_SMUDGE: '1'
+        with:
+          fetch-depth: 2
+          lfs: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.gitattributes
+            /.github/workflows/appendix-trajectory-samples.yml
+            /Trajectories/pf_claude-code-deepseek-v4-pro.jsonl
+            /Trajectories/pf_codex-gpt-5.4.jsonl
+      - name: Fetch only the two authorized LFS objects
+        run: |
+          git lfs install --local
+          git lfs pull --include='Trajectories/pf_claude-code-deepseek-v4-pro.jsonl,Trajectories/pf_codex-gpt-5.4.jsonl' --exclude=''
+      - name: Index records and export auditable candidate pairs
+        env:
+          SOURCE_COMMIT: be2b3dd542503356390b9ce31990805c9afc35fb
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import collections, hashlib, json, os, pathlib, re, subprocess
+          from datetime import datetime, timezone
+
+          root = pathlib.Path('appendix_sample_export')
+          root.mkdir(exist_ok=True)
+          sources = {
+              'claude_code': 'Trajectories/pf_claude-code-deepseek-v4-pro.jsonl',
+              'codex': 'Trajectories/pf_codex-gpt-5.4.jsonl',
+          }
+          source_commit = os.environ['SOURCE_COMMIT']
+          manifest = {'source_commit': source_commit, 'workflow_commit': os.environ.get('GITHUB_SHA'),
+                      'created_utc': datetime.now(timezone.utc).isoformat(),
+                      'selection_note': 'Candidates only. No success, skill-use, or causal claims are inferred.',
+                      'files': {}, 'pairs': [], 'records': []}
+          indices, raw_records = {}, {}
+
+          def scalar_metadata(obj, prefix='', depth=0):
+              result = {}
+              if isinstance(obj, dict) and depth <= 4:
+                  for key, value in obj.items():
+                      p = prefix + str(key)
+                      if isinstance(value, (str, int, float, bool)) or value is None:
+                          if not isinstance(value, str) or len(value) <= 1500:
+                              result[p] = value
+                      elif isinstance(value, dict):
+                          result.update(scalar_metadata(value, p + '.', depth + 1))
+              return result
+
+          def find_messages(obj, depth=0):
+              if depth > 5:
+                  return []
+              if isinstance(obj, list):
+                  if obj and isinstance(obj[0], dict) and any(k in obj[0] for k in ('role', 'from', 'speaker')):
+                      return obj
+                  candidates = [find_messages(x, depth + 1) for x in obj[:4]]
+              elif isinstance(obj, dict):
+                  candidates = [find_messages(obj[k], depth + 1) for k in ('messages', 'conversations', 'trajectory', 'steps', 'data', 'record') if k in obj]
+              else:
+                  return []
+              return max(candidates, key=len, default=[])
+
+          def message_text(message):
+              content = message.get('content', message.get('value', ''))
+              if isinstance(content, str):
+                  return content
+              if isinstance(content, list):
+                  return '\n'.join(x.get('text', '') for x in content if isinstance(x, dict) and isinstance(x.get('text', ''), str))
+              return ''
+
+          def call_count(messages):
+              count = 0
+              for m in messages:
+                  calls = m.get('tool_calls')
+                  if isinstance(calls, list):
+                      count += len(calls)
+                  if isinstance(m.get('function_call'), dict):
+                      count += 1
+                  content = m.get('content')
+                  if isinstance(content, list):
+                      count += sum(isinstance(x, dict) and x.get('type') == 'tool_use' for x in content)
+              return count
+
+          for label, filename in sources.items():
+              path = pathlib.Path(filename)
+              pointer = subprocess.check_output(['git', 'show', source_commit + ':' + filename], text=True)
+              oid = re.search(r'oid sha256:([0-9a-f]{64})', pointer).group(1)
+              expected_size = int(re.search(r'size (\d+)', pointer).group(1))
+              digest = hashlib.sha256()
+              rows, records, key_schemas = [], {}, collections.Counter()
+              with path.open('rb') as handle:
+                  for lineno, raw in enumerate(handle, 1):
+                      digest.update(raw)
+                      if not raw.strip():
+                          continue
+                      obj = json.loads(raw)
+                      if isinstance(obj, str):
+                          obj = json.loads(obj)
+                      messages = find_messages(obj)
+                      meta = scalar_metadata(obj)
+                      users = [m for m in messages if m.get('role', m.get('from', m.get('speaker'))) in ('user', 'human')]
+                      prompt = message_text(users[0]) if users else ''
+                      normalized_prompt = re.sub(r'\s+', ' ', prompt).strip()
+                      prompt_hash = hashlib.sha256(normalized_prompt.encode()).hexdigest() if normalized_prompt else None
+                      ids = {k: v for k, v in meta.items() if isinstance(v, str) and re.search(r'(^|\.)(task_id|task_name|environment_id|env_id|task_path|task_dir)$', k)}
+                      assistant_count = sum(m.get('role', m.get('from', m.get('speaker'))) in ('assistant', 'gpt') for m in messages)
+                      calls = call_count(messages)
+                      topic_text = (prompt + ' ' + json.dumps(ids, ensure_ascii=False)).lower()
+                      priority = 0
+                      for word, weight in [('clickhouse', 100), ('data-engineering', 30), ('etl', 10), ('briefing', 50), ('docx', 25), ('data-analysis', 15), ('csv', 5)]:
+                          if word in topic_text:
+                              priority += weight
+                      score = priority - abs(calls - 40) / 10 - max(len(raw) - 300000, 0) / 100000
+                      row = {'source': filename, 'line': lineno, 'sha256_line': hashlib.sha256(raw).hexdigest(),
+                             'bytes': len(raw), 'top_keys': list(obj) if isinstance(obj, dict) else [],
+                             'metadata': meta, 'task_identifiers': ids, 'prompt_hash': prompt_hash,
+                             'prompt_excerpt': prompt[:1800], 'message_count': len(messages),
+                             'assistant_messages': assistant_count, 'structured_tool_calls': calls, 'selection_score': score}
+                      rows.append(row)
+                      records[lineno] = obj
+                      key_schemas[tuple(row['top_keys'])] += 1
+              if digest.hexdigest() != oid or path.stat().st_size != expected_size:
+                  raise RuntimeError('LFS integrity mismatch for ' + filename)
+              indices[label], raw_records[label] = rows, records
+              manifest['files'][label] = {'path': filename, 'lfs_oid_sha256': oid, 'size': expected_size,
+                                          'record_count': len(rows), 'schemas': [{'keys': list(k), 'count': v} for k, v in key_schemas.items()]}
+              with (root / (label + '_index.jsonl')).open('w', encoding='utf-8') as handle:
+                  for row in rows:
+                      handle.write(json.dumps(row, ensure_ascii=False) + '\n')
+
+          def keys(row):
+              out = []
+              if row['prompt_hash']:
+                  out.append('prompt:' + row['prompt_hash'])
+              for value in row['task_identifiers'].values():
+                  out.append('task:' + value)
+              return out
+
+          right = collections.defaultdict(list)
+          for row in indices['codex']:
+              for key in keys(row):
+                  right[key].append(row)
+          candidates, seen = [], set()
+          for left in indices['claude_code']:
+              for key in keys(left):
+                  for other in right.get(key, []):
+                      pair = (left['line'], other['line'])
+                      if pair not in seen:
+                          seen.add(pair)
+                          candidates.append((left['selection_score'] + other['selection_score'], key, left, other))
+          candidates.sort(key=lambda x: (-x[0], x[2]['line'], x[3]['line']))
+          chosen = {label: set() for label in sources}
+          for score, key, left, other in candidates[:10]:
+              chosen['claude_code'].add(left['line'])
+              chosen['codex'].add(other['line'])
+              manifest['pairs'].append({'match_key': key, 'claude_code_line': left['line'], 'codex_line': other['line'], 'score': score})
+          for label, rows in indices.items():
+              for row in sorted(rows, key=lambda x: (-x['selection_score'], x['line']))[:8]:
+                  chosen[label].add(row['line'])
+              for row in sorted(rows, key=lambda x: (abs(x['structured_tool_calls'] - 40), x['line']))[:2]:
+                  chosen[label].add(row['line'])
+              for lineno in sorted(chosen[label]):
+                  name = label + '_line_' + str(lineno) + '.json'
+                  (root / name).write_text(json.dumps(raw_records[label][lineno], ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+                  manifest['records'].append({'harness': label, 'original_line': lineno, 'file': name})
+          manifest['matching_pair_count'] = len(candidates)
+          (root / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps({'record_counts': {k: len(v) for k, v in indices.items()}, 'matching_pairs': len(candidates), 'exported_candidates': len(manifest['records'])}))
+          PY
+      - name: Upload private candidate artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: appendix-trajectory-candidates
+          path: appendix_sample_export/
+          retention-days: 3
+          if-no-files-found: error
+          compression-level: 6
