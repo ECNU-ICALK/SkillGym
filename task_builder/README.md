@@ -1,24 +1,49 @@
 # SkillGym Task Builder
 
-The Task Builder turns a reusable task template and one or more human-written skills into executable Harbor tasks. It uses Codex for planning, task authoring, review, and repair, then validates the task with an oracle run and a with_skill / no_skill comparison.
+**Developer guide for turning reusable skills and task templates into executable Harbor environments.**
 
-For the repository overview, see the [root README](../README.md). For the data release layout, see [Data Release Migration](../docs/migration.md). The full construction flow is documented in [Task Generation Pipeline](docs/task-generation-pipeline.md).
+<p align="center">
+  <a href="../README.md">Project overview</a>
+  &nbsp;·&nbsp;
+  <a href="docs/task-generation-pipeline.md">Full pipeline</a>
+  &nbsp;·&nbsp;
+  <a href="https://huggingface.co/datasets/ecnu-icalk/SkillGym">Dataset</a>
+  &nbsp;·&nbsp;
+  <a href="../docs/migration.md">Data layout</a>
+</p>
 
-## Prerequisites
+> The builder uses Codex for planning, task authoring, review, and repair, then validates each candidate with Harbor and a with-skill / no-skill comparison.
 
-The builder expects these directories at the repository root:
+## What this component does
+
+| Stage | Responsibility | Main entry point |
+| --- | --- | --- |
+| Discover | Find templates and skills in the selected scope | `inventory` |
+| Author | Produce a structured plan and Harbor task draft | `generate-family` |
+| Validate | Run static checks, preflight, oracle, and reward parsing | `src/validate.ts` |
+| Measure skill effect | Compare the same task with and without the target skill | `src/skill_effect.ts` |
+| Publish | Copy accepted variants and archive evidence | `src/materialize.ts`, `src/trace_archive.ts` |
+
+The builder is a task-construction pipeline, not a benchmark runner or a complete SFT reproduction script.
+
+## Before you run it
+
+A local checkout should contain:
 
 ```text
-skill_library/<major>/<minor>/skills/<skill>/
-task_templates/<major>/<minor>/seed_task/
+SkillGym/
+├── skill_library/<major>/<minor>/skills/<skill>/
+├── task_templates/<major>/<minor>/seed_task/
+└── task_builder/
 ```
 
-Download the archives from the [SkillGym Hugging Face dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) and extract them before running the builder:
+Download the skill and template archives from the [SkillGym Hugging Face dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym), then extract them at the repository root:
 
 ```bash
 hf download ecnu-icalk/SkillGym \
   skill_library.tar.zst task_templates.tar.zst \
   --repo-type dataset --local-dir .hf/skillgym
+
 tar --zstd -xf .hf/skillgym/skill_library.tar.zst
 tar --zstd -xf .hf/skillgym/task_templates.tar.zst
 ```
@@ -29,30 +54,19 @@ Install the locked JavaScript dependencies:
 npm --prefix task_builder ci
 ```
 
-A full generation run also requires the Harbor CLI, a configured runtime (e2b, daytona, or docker), and the credentials described in [.env.example](../.env.example). Model and sandbox services may incur charges.
+A full generation run also needs the Harbor CLI, a configured runtime such as e2b, Daytona, or Docker, and the credentials listed in [`.env.example`](../.env.example). Model and sandbox services may incur charges.
 
-## End-to-end flow
+## Quick start
 
-1. Discover a template and input skills.
-2. Ask Codex to produce a structured task plan.
-3. Write a draft Harbor task.
-4. Run a blocking review and static validation.
-5. Run the oracle task through Harbor.
-6. Run the same task with and without the target skill.
-7. Repair failures within the configured budgets.
-8. Publish accepted variants and archive logs, rewards, and trajectories.
-
-The strict skill-effect gate accepts a task when with_skill passes and no_skill produces a valid reward failure. Other outcomes are retained as repair evidence or may be published as oracle_fallback_success after repair budgets are exhausted.
-
-## CLI
-
-Inspect the available templates and their metadata:
+### Inspect available units
 
 ```bash
 npm --prefix task_builder run inventory
 ```
 
-Generate one family of tasks:
+### Generate one task family
+
+Run from the repository root:
 
 ```bash
 npm --prefix task_builder run generate-family -- \
@@ -65,53 +79,88 @@ npm --prefix task_builder run generate-family -- \
   --concurrency 1
 ```
 
-Important options include:
+The command above is intentionally small. For long-running production jobs, tune the repair and timeout budgets explicitly:
 
-- --skill-mode all|per-skill
-- --task-count
-- --concurrency
-- --limit
-- --scope-slug
-- --task-attempt-timeout-hours
-- --max-task-restarts
-- --max-pre-runtime-repair-rounds
-- --max-runtime-repair-rounds
-- --max-skill-effect-repair-rounds
-
-## Source modules
-
-| Module | Responsibility |
+| Option | Meaning |
 | --- | --- |
-| [cli.ts](src/cli.ts) | CLI parsing, unit loading, orchestration, repair budgets, and publishing |
-| [discovery.ts](src/discovery.ts) | Template and skill discovery; all and per-skill modes |
-| [codex.ts](src/codex.ts) | Codex SDK threads, structured outputs, retries, and repair turns |
-| [prompts.ts](src/prompts.ts) | Planner, writer, reviewer, and repair instructions |
-| [schema.ts](src/schema.ts) | Zod schemas and structured-output JSON schemas |
-| [validate.ts](src/validate.ts) | Static checks, Harbor preflight, runtime validation, and reward parsing |
-| [skill_effect.ts](src/skill_effect.ts) | with_skill / no_skill variant construction and evaluation |
-| [materialize.ts](src/materialize.ts) | Sanitized copying of accepted task files into final/ |
-| [published.ts](src/published.ts) | Resume support and detection of already-published task ordinals |
-| [workspace.ts](src/workspace.ts) | Family and task-attempt workspace creation |
-| [trace_archive.ts](src/trace_archive.ts) | Archiving paired runtime evidence and trajectories |
-| [manifest.ts](src/manifest.ts) | Append-only manifest.jsonl and run summaries |
+| `--skill-mode all|per-skill` | Use all skills together or create one unit per skill |
+| `--task-count` | Number of tasks to request per unit |
+| `--concurrency` | Number of active units |
+| `--limit` | Cap the number of discovered units |
+| `--scope-slug` | Restrict output to a named scope |
+| `--task-attempt-timeout-hours` | Maximum time for one task attempt |
+| `--max-task-restarts` | Number of task-level restarts |
+| `--max-pre-runtime-repair-rounds` | Repairs before runtime execution |
+| `--max-runtime-repair-rounds` | Repairs after runtime failures |
+| `--max-skill-effect-repair-rounds` | Repairs after the skill-effect comparison |
+
+A run can take hours. Start with one unit and concurrency `1`, inspect the output, then scale up.
+
+## Pipeline and acceptance gates
+
+Each candidate moves through the following stages:
+
+1. **Discovery** loads a template and one or more skills.
+2. **Planning** asks Codex for a structured task plan.
+3. **Authoring** writes the draft Harbor task, environment, solution, and tests.
+4. **Static review** checks schemas, paths, task structure, and required files.
+5. **Oracle validation** runs the task and checks the expected outcome.
+6. **Skill-effect validation** compares `with_skill` and `no_skill` runs.
+7. **Repair or publish** either spends the configured repair budget or writes an accepted variant and its evidence.
+
+The strict skill-effect gate accepts a candidate when the with-skill run passes and the no-skill run produces a valid reward failure. If the oracle passes but the contrastive evidence is unavailable after the repair budget, the candidate may be written to `oracle_fallback_success/`. This distinction is preserved in the final output directories.
 
 ## Output layout
 
 ```text
 outputs/
-├── raw/             # Workspaces, drafts, repair artifacts, and runtime logs
+├── raw/                         # Workspaces, drafts, repairs, and runtime logs
 ├── final/
-│   ├── pf_success/
-│   └── oracle_fallback_success/
-├── trace_archive/   # Paired with_skill/no_skill evidence
-└── manifest.jsonl   # Task-builder event log
+│   ├── pf_success/              # Strict with-skill / no-skill acceptance
+│   └── oracle_fallback_success/ # Oracle passed; contrastive evidence incomplete
+├── trace_archive/               # Paired runtime evidence and trajectories
+└── manifest.jsonl               # Append-only event log and run summaries
 ```
 
-Published task variants contain the task plan, user instruction, task metadata, environment, solution, and tests. The materializer copies only the approved task entries into the final directory.
+Published variants contain the task plan, user instruction, metadata, environment, solution, and tests. The materializer copies only approved entries into `final/`; raw workspaces remain useful for debugging and repair analysis.
 
-## Tests
+## Source map
 
-Run the local checks from the repository root:
+| File | Responsibility |
+| --- | --- |
+| [`src/cli.ts`](src/cli.ts) | CLI parsing, unit loading, orchestration, budgets, and publishing |
+| [`src/discovery.ts`](src/discovery.ts) | Template and skill discovery; all/per-skill modes |
+| [`src/codex.ts`](src/codex.ts) | Codex SDK threads, structured outputs, retries, and repair turns |
+| [`src/prompts.ts`](src/prompts.ts) | Planner, writer, reviewer, and repair instructions |
+| [`src/schema.ts`](src/schema.ts) | Zod schemas and structured-output schemas |
+| [`src/validate.ts`](src/validate.ts) | Static checks, Harbor preflight, runtime validation, reward parsing |
+| [`src/skill_effect.ts`](src/skill_effect.ts) | With-skill / no-skill construction and evaluation |
+| [`src/materialize.ts`](src/materialize.ts) | Sanitized copying of accepted task files |
+| [`src/published.ts`](src/published.ts) | Resume support and published-ordinal detection |
+| [`src/workspace.ts`](src/workspace.ts) | Family and task-attempt workspace creation |
+| [`src/trace_archive.ts`](src/trace_archive.ts) | Paired runtime evidence and trajectory archiving |
+| [`src/manifest.ts`](src/manifest.ts) | Append-only manifest and run summaries |
+
+## Configuration
+
+Copy the example only when a local `.env` does not already exist:
+
+```bash
+[ -f .env ] || cp .env.example .env
+```
+
+Then fill in the provider credentials and runtime settings required by your environment. The example file documents the supported variables, including:
+
+- `OPENAI_API_KEY`
+- `OPENAI_BASE_URL`
+- `E2B_API_KEY`
+- ``X_TASK_BUILDER_RUNTIME_ENV`
+
+The builder does not provision model access or a sandbox automatically. Verify those services before starting a long run.
+
+## Checks and tests
+
+Run the type check and focused tests from the repository root:
 
 ```bash
 npm --prefix task_builder run check
@@ -123,11 +172,11 @@ node --import tsx task_builder/tests/harbor_metrics.test.ts
 node --import tsx task_builder/tests/repo_paths.test.ts
 ```
 
-The CI workflow runs the type check and all tests/*.test.ts files. It does not run a paid end-to-end generation job.
+The CI workflow runs the type check and the `tests/*.test.ts` files. It does not start a paid end-to-end generation job.
 
 ## Further reading
 
-- [Full task-generation pipeline](docs/task-generation-pipeline.md)
-- [Repository data migration](../docs/migration.md)
-- [Task Builder source](src/)
-- [Task Builder tests](tests/)
+- [Task-generation pipeline](docs/task-generation-pipeline.md) — detailed stages, artifacts, and repair semantics.
+- [Repository overview](../README.md) — release contents, HF downloads, and paper context.
+- [Data migration notes](../docs/migration.md) — archive layout and path behavior.
+- [Task Builder source](src/) and [tests](tests/) — implementation and regression coverage.
