@@ -8,10 +8,10 @@ coverage/
 outputs/
 .local-workspace/
 
-# Local TaskBuilder install/runtime artifacts.
-TaskBuilder/node_modules/
-TaskBuilder/*.log
-TaskBuilder/*.pid
-TaskBuilder/*.lock
-TaskBuilder/.cache/
-TaskBuilder/dist/
+# Local task_builder install/runtime artifacts.
+task_builder/node_modules/
+task_builder/*.log
+task_builder/*.pid
+task_builder/*.lock
+task_builder/.cache/
+task_builder/dist/
