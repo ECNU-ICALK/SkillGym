@@ -48,7 +48,7 @@ These counts are the current manuscript snapshot. Environments, variants, sample
 
 ## How SkillGym works
 
-```
+```mermaid
 flowchart LR
     A[Human-written skills] --> C[Template instantiation]
     B[Task templates] --> C
@@ -84,7 +84,7 @@ The archives and trajectory files are a data snapshot associated with GitHub com
 
 ### 1. Check the builder
 
-```
+```bash
 git clone https://github.com/ECNU-ICALK/SkillGym.git
 cd SkillGym
 
@@ -96,7 +96,7 @@ npm --prefix task_builder run check
 
 This downloads the skill cards and templates needed by `task_builder`. It does not download the 9 GB published task archive.
 
-```
+```bash
 python -m pip install -U huggingface_hub
 hf auth login
 
@@ -110,7 +110,7 @@ tar --zstd -xf .hf/skillgym/task_templates.tar.zst
 
 ### 3. Download published environments (optional)
 
-```
+```bash
 hf download ecnu-icalk/SkillGym Tasks.tar.zst \
   --repo-type dataset --local-dir .hf/skillgym
 
@@ -121,7 +121,7 @@ tar --zstd -xf .hf/skillgym/Tasks.tar.zst
 
 The full command, configuration variables, repair budgets, runtime requirements, and output semantics are documented in the [Task Builder guide](task_builder/README.md). A minimal example is:
 
-```
+```bash
 cd task_builder
 
 npm run generate-family -- \
