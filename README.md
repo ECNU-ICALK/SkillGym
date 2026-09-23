@@ -1,31 +1,15 @@
-# SkillGym
+## 📌 At a glance
 
-**Internalizing Large-Scale Human-Written Skills into LLMs for Real-World Problem Solving**
+<table>
+  <tr>
+    <td align="center">🏗️<br><strong>2,756</strong><br><sub>accepted environments</sub></td>
+    <td align="center">🧪<br><strong>5,512</strong><br><sub>with-skill / no-skill variants</sub></td>
+    <td align="center">🧵<br><strong>8,364</strong><br><sub>successful trajectories</sub></td>
+    <td align="center">🗂️<br><strong>12 / 63</strong><br><sub>major / sub-categories</sub></td>
+  </tr>
+</table>
 
-<p align="center">
-  <a href="https://huggingface.co/datasets/ecnu-icalk/SkillGym">Dataset</a>
-  &nbsp;·&nbsp;
-  <a href="https://huggingface.co/ecnu-icalk/SkillGym-Agent">Model checkpoint</a>
-  &nbsp;·&nbsp;
-  <a href="task_builder/README.md">Task Builder</a>
-  &nbsp;·&nbsp;
-  <a href="task_builder/docs/task-generation-pipeline.md">Pipeline</a>
-  &nbsp;·&nbsp;
-  <a href="#quick-start">Quick start</a>
-</p>
-
-> SkillGym turns human-written agent skills into executable, verifiable environments and successful long-horizon trajectories for training general-purpose agents.
-
-## At a glance
-
-| Release unit | Current scope |
-| --- | ---: |
-| Accepted task environments | **2,756** |
-| Published task variants | **5,512** with-skill / no-skill variants |
-| Successful trajectories | **8,364** |
-| Skill taxonomy | **12** major categories / **63** sub-categories |
-
-These counts are the current manuscript snapshot. Environments, variants, sampled trials, and trajectories are different units; see the [manuscript PDF](Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) for the full evaluation protocol.
+<p><sub>Counts are the current manuscript snapshot. Environments, variants, sampled trials, and trajectories are different units; see the <a href="Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf">manuscript PDF</a> for the evaluation protocol.</sub></p>
 
 <p align="center">
   <a href="assets/skillgym_baseline.pdf">
@@ -35,7 +19,7 @@ These counts are the current manuscript snapshot. Environments, variants, sample
 
 <p align="center"><em>Benchmark overview from the current manuscript. Click the figure to open the PDF version.</em></p>
 
-## Framework
+## 🧩 Framework
 
 <p align="center">
   <a href="assets/SkillGym.pdf">
@@ -45,7 +29,7 @@ These counts are the current manuscript snapshot. Environments, variants, sample
 
 <p align="center"><em>SkillGym converts human-written skills into executable, verifiable environments, then samples successful trajectories across multiple harness-model combinations.</em></p>
 
-## Key experimental results
+## 📊 Key experimental results
 
 SkillGym-Agent is a supervised fine-tuned Qwen3.5-35B-A3B model trained on successful SkillGym trajectories. The table reports the same-harness comparison from the manuscript: GDPval-AA v2 is Elo, while the other columns are task success rates (%).
 
@@ -58,18 +42,18 @@ SkillGym-Agent is a supervised fine-tuned Qwen3.5-35B-A3B model trained on succe
 
 SkillGym-Agent improves every reported metric under both harnesses. The largest professional-task gain appears under Claude Code (+187 Elo), while Codex shows the larger Terminal-Bench gain (+30.34 points). The Claude Code comparison uses the same standard system prompt for base and trained models; the Codex comparison also changes the system prompt, so its improvement should not be attributed to fine-tuning alone. See the [manuscript PDF](Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) and the [benchmark figure](assets/skillgym_baseline.pdf) for the full setup and caveats.
 
-## What is in the release?
+## 🧭 Explore the release
 
 | I want to… | Start here |
 | --- | --- |
-| Read the project overview | This page |
-| Download published environments and trajectories | [HF dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) |
-| Build new task environments | [Task Builder guide](task_builder/README.md) |
-| Understand the complete construction flow | [Task-generation pipeline](task_builder/docs/task-generation-pipeline.md) |
-| Download the released checkpoint | [SkillGym-Agent on Hugging Face](https://huggingface.co/ecnu-icalk/SkillGym-Agent) |
-| Understand the data migration and archive layout | [Migration notes](docs/migration.md) |
+| 📖 Read the project overview | This page |
+| 📦 Download published environments and trajectories | [HF dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) |
+| 🧰 Build new task environments | [Task Builder guide](task_builder/README.md) |
+| 🧭 Understand the complete construction flow | [Task-generation pipeline](task_builder/docs/task-generation-pipeline.md) |
+| 🤖 Download the released checkpoint | [SkillGym-Agent on Hugging Face](https://huggingface.co/ecnu-icalk/SkillGym-Agent) |
+| 🗃️ Understand the data migration and archive layout | [Migration notes](docs/migration.md) |
 
-## How SkillGym works
+## 🔄 How SkillGym works
 
 ```mermaid
 flowchart LR
@@ -89,7 +73,7 @@ flowchart LR
 
 The strict skill-effect gate requires the with-skill run to pass while the no-skill run produces a valid reward failure. Other verifier-passed outcomes can be retained as fallback releases after repair budgets are exhausted. These labels describe construction-time checks; they are not guarantees for every later agent execution.
 
-## Release contents
+## 📦 Release contents
 
 Large artifacts live in the companion [Hugging Face dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) so that this GitHub repository stays focused on code, documentation, and lightweight figures.
 
@@ -103,7 +87,8 @@ Large artifacts live in the companion [Hugging Face dataset](https://huggingface
 
 The archives and trajectory files are a data snapshot associated with GitHub commit `6ebabba`. The current GitHub code can evolve independently from that snapshot. File sizes and SHA-256 checksums are available from the corresponding Hugging Face file metadata.
 
-## Quick start
+<a id="quick-start"></a>
+## 🚀 Quick start
 
 ### 1. Check the builder
 
@@ -159,7 +144,7 @@ npm run generate-family -- \
 
 A generation run may take hours and can invoke paid model and sandbox services. Installing npm dependencies alone does not provision Harbor, a runtime, or model credentials.
 
-## Repository layout
+## 🗂️ Repository layout
 
 ```text
 SkillGym/
@@ -176,13 +161,13 @@ SkillGym/
 
 The large skill, template, task, and trajectory trees are hosted on HF rather than committed to GitHub. See [migration notes](docs/migration.md) if you need to reproduce the archive layout locally.
 
-## Experiments and paper
+## 📄 Experiments and paper
 
 The figure above is a compact visual summary of the current manuscript. The [manuscript PDF](Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) contains the benchmark tables, ablations, task-selection rules, and evaluation caveats. Reported scores are manuscript snapshots and should not be interpreted as a continuously updated leaderboard.
 
 The released repository does not yet include standalone scripts for reproducing the complete SFT run or every benchmark harness. The task builder and data artifacts are released; training and evaluation recipes remain separate follow-up work.
 
-## Release status
+## ✅ Release status
 
 | Component | Status |
 | --- | --- |
@@ -194,10 +179,10 @@ The released repository does not yet include standalone scripts for reproducing 
 | End-to-end SFT and benchmark reproduction scripts | Not included yet |
 | Final paper metadata and BibTeX | Coming with the paper release |
 
-## Citation
+## 📚 Citation
 
 The final arXiv link and BibTeX entry will be added with the paper release.
 
-## License
+## ⚖️ License
 
 See [LICENSE](LICENSE) for the repository license. Source skills and supporting materials retain their applicable upstream notices; this documentation refactor does not change their licensing or provenance.
