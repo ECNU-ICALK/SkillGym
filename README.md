@@ -16,8 +16,7 @@
 [![License](https://img.shields.io/badge/License-MIT-2EA44F)](LICENSE)
 
 <p align="center">
-  <a href="#framework">Framework</a> ·
-  <a href="#contributions">Contributions</a> ·
+  <a href="#framework-and-contributions">Framework & Contributions</a> ·
   <a href="#dataset-at-a-glance">Dataset</a> ·
   <a href="#main-results">Results</a> ·
   <a href="#quick-start">Quick Start</a> ·
@@ -44,9 +43,11 @@
 
 > **Key takeaway.** Across the reported evaluations, SkillGym-Agent scores higher than the same-backbone base on GDPval-AA v2, Terminal-Bench 2.1, and SkillsBench v1.1 under both evaluated harnesses. Its skill-free score also exceeds the skill-assisted base in both harnesses, suggesting that part of the verified workflow experience transfers beyond direct access to external skills.
 
-The framework below shows how SkillGym turns human-written skills into executable environments, verifier-backed interaction experience, and training trajectories for agent capability acquisition.
+<a id="framework-and-contributions"></a>
 
-## Framework
+## Framework & Contributions
+
+SkillGym operationalizes skill internalization as a pipeline from **human-written procedural knowledge** to **executable environments**, **verified interaction experience**, and ultimately **reusable agent capability**.
 
 <p align="center">
   <a href="assets/SkillGym.pdf">
@@ -59,16 +60,13 @@ The framework below shows how SkillGym turns human-written skills into executabl
 </p>
 
 <p align="center">
-  <sub><em>From human-written skills to executable environments, verifier-backed experience, and reusable agent capability.</em></sub>
+  <sub><em>Skill-aware task construction → validated environments → verified trajectory sampling → capability internalization.</em></sub>
 </p>
 
-## Contributions
-
-- **SkillGym framework.** Human-written agent skills are transformed into executable, verifier-backed training environments rather than being used only as inference-time instructions.
-- **Contrastive skill-dependency validation.** Paired with-skill / without-skill execution identifies environments whose success depends on the target procedural knowledge under the reference construction setup.
-- **Large-scale verified experience.** The release connects accepted environments, task-specific verifiers, and successful long-horizon trajectories across a broad procedural taxonomy.
-- **Multi-harness trajectory collection.** Execution experience is sampled across multiple harness–model configurations instead of relying on a single agent setup.
-- **Skill internalization study.** SkillGym-Agent tests whether verified workflow experience can become reusable model capability, including when external skills are removed at inference time.
+- **Executable skill grounding.** SkillGym turns human-written agent skills into concrete task environments with explicit inputs, assets, runtime requirements, and task-specific verifiers.
+- **Contrastive skill-dependency validation.** Paired with-skill / without-skill execution distinguishes tasks that genuinely depend on the target procedural knowledge under the reference construction setup.
+- **Verifier-backed long-horizon experience.** Accepted environments support diverse trajectory sampling across multiple harness–model configurations, retaining successful executions as training and analysis data.
+- **Skill internalization beyond direct skill access.** SkillGym-Agent tests whether learning from verified skill-generated experience produces reusable capability that persists even when external skills are unavailable at inference time.
 
 ## Dataset at a Glance
 
