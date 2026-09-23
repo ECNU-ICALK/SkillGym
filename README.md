@@ -57,7 +57,11 @@ Source: manuscript Table 2. Pooling teachers covers more tasks than any individu
 
 ## Experimental Results
 
-[Baseline comparison figure (PDF)](assets/skillgym_baseline.pdf) — original paper figure provided for reference; detailed results remain available as Markdown tables below.
+### General-Agent Benchmark Overview
+
+[![Figure 1: SkillGym-Agent performance on GDPval-AA v2, Terminal-Bench 2.1, and SkillsBench v1.1 with and without skills.](assets/skillgym_baseline.png)](assets/skillgym_baseline.pdf)
+
+**Figure 1 — Performance on general-agent benchmarks.** The figure summarizes four evaluation views: GDPval-AA v2, Terminal-Bench 2.1, SkillsBench v1.1 with skills, and SkillsBench v1.1 without skills. It places the two SkillGym-Agent harness configurations alongside comparable-scale agent baselines and the public reference scores reported in the manuscript. Click the figure to open the original [PDF](assets/skillgym_baseline.pdf). Exact values and evaluation caveats are retained in the Markdown tables below.
 
 The student backbone is **Qwen3.5-35B-A3B**. GDPval-AA v2 is reported in **Elo**; Terminal-Bench 2.1 and SkillsBench v1.1 are reported as **task success rates (%)**. Parenthesized improvements are absolute Elo points or percentage points, not relative percentages.
 
