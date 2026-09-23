@@ -57,6 +57,8 @@ Source: manuscript Table 2. Pooling teachers covers more tasks than any individu
 
 ## Experimental Results
 
+[Baseline comparison figure (PDF)](assets/skillgym_baseline.pdf) — original paper figure provided for reference; detailed results remain available as Markdown tables below.
+
 The student backbone is **Qwen3.5-35B-A3B**. GDPval-AA v2 is reported in **Elo**; Terminal-Bench 2.1 and SkillsBench v1.1 are reported as **task success rates (%)**. Parenthesized improvements are absolute Elo points or percentage points, not relative percentages.
 
 ### Comparison with the Base Model
