@@ -1,6 +1,8 @@
-<div align="center">
+<p align="center">
+  <img src="assets/skillgym_hero.jpg" alt="SkillGym — Train Agents with Real Skills" width="100%">
+</p>
 
-<h1>SkillGym</h1>
+<div align="center">
 
 <p><strong>Internalizing Large-Scale Human-Written Skills into LLMs for Real-World Problem Solving</strong></p>
 
