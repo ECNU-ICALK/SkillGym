@@ -1,9 +1,11 @@
 import { spawn } from "node:child_process";
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-export const REPO_ROOT = process.cwd();
-export const TEMPLATE_ROOT = path.join(REPO_ROOT, "TaskTemplates");
+// Resolve bundled resources from this module, not the caller's working directory.
+export const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+export const TEMPLATE_ROOT = path.join(REPO_ROOT, "task_templates");
 export const DEFAULT_OUTPUT_ROOT = path.join(REPO_ROOT, "outputs");
 
 export function buildRawRoot(outputRoot: string): string {
