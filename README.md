@@ -33,6 +33,20 @@
   </a>
 </p>
 
+<div align="center">
+
+**Navigate:**  
+[Framework](#framework) ·
+[Contributions](#contributions) ·
+[Dataset](#dataset-at-a-glance) ·
+[Results](#main-results) ·
+[Resources](#project-resources) ·
+[Quick Start](#quick-start) ·
+[Reproducibility](#release--reproducibility) ·
+[Citation](#citation)
+
+</div>
+
 > **Key takeaway.** Across the reported evaluations, SkillGym-Agent scores higher than the same-backbone base on GDPval-AA v2, Terminal-Bench 2.1, and SkillsBench v1.1 under both evaluated harnesses. Its skill-free score also exceeds the skill-assisted base in both harnesses, suggesting that part of the verified workflow experience transfers beyond direct access to external skills.
 
 The framework below shows how SkillGym turns human-written skills into executable environments, verifier-backed interaction experience, and training trajectories for agent capability acquisition.
@@ -130,17 +144,6 @@ Performance remains strongest when external skills are available, **suggesting t
 
 </details>
 
-## Project Resources
-
-| Resource | Contents | Link |
-| --- | --- | --- |
-| **Code** | Task Builder, construction pipeline, documentation, figures, and project materials | [GitHub](https://github.com/ECNU-ICALK/SkillGym) |
-| **Dataset** | Skill library, task templates, executable environments, and trajectory collections | [Hugging Face](https://huggingface.co/datasets/ecnu-icalk/SkillGym) |
-| **Model** | SkillGym-Agent, the released Qwen3.5-35B-A3B checkpoint | [Hugging Face](https://huggingface.co/ecnu-icalk/SkillGym-Agent) |
-| **Paper** | Full method, dataset analysis, experiments, ablations, and appendices | [PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) |
-
-The code, dataset, and model repositories are versioned independently. The large-artifact dataset snapshot is associated with GitHub commit `6ebabba`.
-
 <a id="quick-start"></a>
 
 ## Quick Start
@@ -190,6 +193,17 @@ tar --zstd -xf .hf/skillgym/task_templates.tar.zst
 ```
 
 Then follow the [Task Builder guide](task_builder/README.md) for generation, validation, skill-effect testing, repair, and publishing. A full generation run additionally requires Harbor, a configured runtime such as E2B, Daytona, or Docker, and the relevant model/runtime credentials.
+
+## Project Resources
+
+| Resource | Contents | Link |
+| --- | --- | --- |
+| **Code** | Task Builder, construction pipeline, documentation, figures, and project materials | [GitHub](https://github.com/ECNU-ICALK/SkillGym) |
+| **Dataset** | Skill library, task templates, executable environments, and trajectory collections | [Hugging Face](https://huggingface.co/datasets/ecnu-icalk/SkillGym) |
+| **Model** | SkillGym-Agent, the released Qwen3.5-35B-A3B checkpoint | [Hugging Face](https://huggingface.co/ecnu-icalk/SkillGym-Agent) |
+| **Paper** | Full method, dataset analysis, experiments, ablations, and appendices | [PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) |
+
+The code, dataset, and model repositories are versioned independently. The large-artifact dataset snapshot is associated with GitHub commit `6ebabba`.
 
 ## Release & Reproducibility
 
