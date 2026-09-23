@@ -8,7 +8,7 @@
   <b>Models:</b> coming soon &nbsp;·&nbsp;
   <a href="#experimental-results">Results</a> &nbsp;·&nbsp;
   <a href="#quick-start">Quick Start</a> &nbsp;·&nbsp;
-  <a href="docs/task-generation-pipeline.md">Task Construction</a>
+  <a href="task_builder/README.md">Task Construction</a>
 </p>
 
 SkillGym converts reusable human-written agent skills into task environments with concrete inputs, runtime configuration, and code-based outcome verifiers. The current manuscript reports **2,756 accepted environments** and **8,364 successful long-horizon trajectories**, which provide verified workflow demonstrations for supervised fine-tuning.
@@ -149,7 +149,7 @@ The companion dataset repository is **[ecnu-icalk/SkillGym](https://huggingface.
 | Model checkpoints | Release pending |
 | arXiv and finalized citation metadata | Coming soon |
 
-The two directory archives and eight trajectory files were created from the local release snapshot corresponding to GitHub commit [\`6ebabba\`](https://github.com/ECNU-ICALK/SkillGym/commit/6ebabba67ca449cb04c87085a30fe78096eb99b3). Their sizes, line counts, and SHA-256 checksums are recorded in the HF [\`migration_manifest.json\`](https://huggingface.co/datasets/ecnu-icalk/SkillGym/blob/main/migration_manifest.json). GitHub no longer stores the large data trees or trajectory LFS pointers.
+The two directory archives and eight trajectory files were created from the local release snapshot corresponding to GitHub commit [`6ebabba`](https://github.com/ECNU-ICALK/SkillGym/commit/6ebabba67ca449cb04c87085a30fe78096eb99b3). File sizes and SHA-256 checksums are available from the corresponding file metadata on the Hugging Face Hub. GitHub no longer stores the large data trees or trajectory LFS pointers.
 
 ## Repository Layout
 
@@ -157,12 +157,14 @@ The two directory archives and eight trajectory files were created from the loca
 SkillGym/
 ├── README.md
 ├── task_builder/         # TypeScript construction, validation, and repair pipeline
+│   ├── README.md
+│   ├── docs/
 │   ├── src/
 │   ├── tests/
 │   ├── package.json
 │   └── package-lock.json
 ├── assets/               # Framework illustration
-├── docs/                 # Construction and migration notes
+├── docs/                 # Repository-level data release notes
 └── .github/workflows/    # Lightweight builder checks
 \`\`\`
 
@@ -181,7 +183,7 @@ cd SkillGym
 python -m pip install -U huggingface_hub
 hf auth login
 hf download ecnu-icalk/SkillGym \
-  skill_library.tar.zst task_templates.tar.zst migration_manifest.json \
+  skill_library.tar.zst task_templates.tar.zst \
   --repo-type dataset --local-dir .hf/skillgym
 hf download ecnu-icalk/SkillGym \
   --include "Trajectories/*.jsonl" \
@@ -218,7 +220,7 @@ E2B_API_KEY=
 CODEX_TASK_BUILDER_RUNTIME_ENV=e2b
 ```
 
-The builder uses the Codex SDK and an external runtime/validation setup. Installing npm dependencies alone does not provision a sandbox or model access. See [the construction guide](docs/task-generation-pipeline.md) and the runtime preflight messages for the environment used by the existing implementation.
+The builder uses the Codex SDK and an external runtime/validation setup. Installing npm dependencies alone does not provision a sandbox or model access. See [the Task Builder guide](task_builder/README.md) and the runtime preflight messages for the environment used by the existing implementation.
 
 ### Generate One Task
 
