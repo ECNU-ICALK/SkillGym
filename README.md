@@ -23,6 +23,20 @@
 
 > **Core question:** Can verified experience generated from human-written skills become reusable procedural competence inside the model?
 
+<p align="center">
+  <a href="assets/SkillGym.pdf">
+    <img
+      src="assets/skillgym_framework.jpg"
+      alt="SkillGym framework: from human-written skills to executable environments, verified trajectories, and agent training"
+      width="100%"
+    >
+  </a>
+</p>
+
+<p align="center">
+  <sub><em>From human-written skills to executable environments, verifier-backed experience, and reusable agent capability.</em></sub>
+</p>
+
 ## Release Map
 
 The SkillGym release is split across three repositories with distinct roles:
@@ -72,18 +86,7 @@ The repositories are versioned independently. The large-artifact dataset snapsho
 
 ## How SkillGym Works
 
-<p align="center">
-  <a href="assets/SkillGym.pdf">
-    <img src="assets/skillgym_framework.jpg" alt="SkillGym framework" width="100%">
-  </a>
-</p>
-
-1. **Ground** human-written skills and reusable task templates.
-2. **Construct** executable tasks with inputs, tools, runtime requirements, and verifiers.
-3. **Validate** task feasibility and verifier correctness.
-4. **Contrast** paired execution with and without the target skill to assess skill dependence.
-5. **Sample** multi-harness agent trajectories and retain verified outcomes.
-6. **Train** SkillGym-Agent on successful trajectories and evaluate transfer on external agent benchmarks.
+SkillGym grounds human-written skills in reusable task templates, constructs executable environments with task-specific verifiers, assesses skill dependence through paired with-skill / without-skill execution, samples multi-harness trajectories, and trains SkillGym-Agent from successful verified experience.
 
 In the released data, **Skill-Dep.** denotes environments satisfying the stricter contrastive criterion under the reference construction setup; **Verifier-Passed** denotes environments that pass execution and verification checks without satisfying that additional criterion. These are task-construction labels, not guarantees about every later model or harness.
 
