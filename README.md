@@ -53,18 +53,64 @@
 
 <p align="center"><em>SkillGym converts human-written skills into executable, verifiable environments, then samples successful trajectories across multiple harness-model combinations.</em></p>
 
-## 📊 Key experimental results
+## 📊 Experiments and paper
 
-SkillGym-Agent is a supervised fine-tuned Qwen3.5-35B-A3B model trained on successful SkillGym trajectories. The table reports the same-harness comparison from the manuscript: GDPval-AA v2 is Elo, while the other columns are task success rates (%).
+The results below are synchronized with the latest manuscript PDF. SkillGym-Agent is a full-parameter supervised fine-tuned Qwen3.5-35B-A3B model trained on successful SkillGym trajectories. GDPval-AA v2 is reported as Elo; Terminal-Bench 2.1 and SkillsBench v1.1 are reported as task success rates (%). Values in parentheses are absolute improvements over the same-harness base model.
 
-| Harness | Model | GDPval-AA v2 | Terminal-Bench 2.1 | SkillsBench v1.1 (with skills) | SkillsBench v1.1 (without skills) |
+### 📈 Controlled benchmark comparison
+
+| Harness | Model | GDPval-AA v2 | Terminal-Bench 2.1 | SkillsBench v1.1 | SkillsBench v1.1 without skills |
 | --- | --- | ---: | ---: | ---: | ---: |
 | Codex | Qwen3.5-35B-A3B (base) | 942 | 10.11 | 5.33 | 0.69 |
-| Codex | **SkillGym-Agent** | **976 (+34)** | **40.45 (+30.34)** | **19.91 (+14.58)** | **13.59 (+12.90)** |
+| Codex | **SkillGym-Agent** | **979 (+37)** | **46.07 (+35.96)** | **33.02 (+27.69)** | **21.08 (+20.39)** |
 | Claude Code | Qwen3.5-35B-A3B (base) | 974 | 39.33 | 23.34 | 12.13 |
-| Claude Code | **SkillGym-Agent** | **1161 (+187)** | **57.30 (+17.97)** | **47.33 (+23.99)** | **28.41 (+16.28)** |
+| Claude Code | **SkillGym-Agent** | **1173 (+199)** | **58.43 (+19.10)** | **51.47 (+28.13)** | **26.81 (+14.68)** |
 
-SkillGym-Agent improves every reported metric under both harnesses. The largest professional-task gain appears under Claude Code (+187 Elo), while Codex shows the larger Terminal-Bench gain (+30.34 points). The Claude Code comparison uses the same standard system prompt for base and trained models; the Codex comparison also changes the system prompt, so its improvement should not be attributed to fine-tuning alone. See the [manuscript PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) and the [benchmark figure](assets/skillgym_baseline.pdf) for the full setup and caveats.
+SkillGym-Agent improves every reported metric under both harnesses. Under Claude Code, the largest gain is **+199 GDPval-AA v2 Elo** and **+19.10 points on Terminal-Bench 2.1**. Under Codex, the largest gain is **+35.96 points on Terminal-Bench 2.1**. The skill-free scores are especially informative: SkillGym-Agent reaches **26.81%** under Claude Code and **21.08%** under Codex, exceeding the corresponding base models even when those base models are given external skills (23.34% and 5.33%).
+
+### 🧱 Dataset scale and trajectory quality
+
+| Measure | Latest manuscript result |
+| --- | --- |
+| Accepted environments | 2,756 across 12 major and 63 sub-categories |
+| Acceptance groups | 1,081 Skill-Dep. (39.2%) and 1,675 Verifier-Passed fallback environments |
+| Sampling outcome | 8,364 successful trajectories from 48,152 trials (17.4% overall success) |
+| Deduplicated coverage | 2,302 unique tasks, all 12 major categories, and 62 of 63 sub-categories |
+| Average successful trajectory | 49.0 tool calls, 63.4k logged text tokens, and 35.2 interaction steps |
+| Longest observed trajectory | 350 tool calls, 342.9k logged text tokens, and 318 interaction steps |
+
+The 17.4% trial-level success rate shows that the released trajectories are filtered successful executions rather than easy demonstrations. The long interaction lengths preserve action-observation sequences, verifier outcomes, and failure evidence that can support both supervised fine-tuning and future verifier-rewarded reinforcement learning.
+
+### 🧪 Teacher and harness ablation
+
+| Harness | Teacher setting | GDPval-AA v2 | Terminal-Bench 2.1 | SkillsBench v1.1 | Without skills |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Codex | GPT-5.4 | 969 | 24.72 | 14.00 | 6.96 |
+| Codex | Nex-N2-Pro | 1074 | 33.71 | 13.59 | 12.61 |
+| Codex | GPT+Nex | 976 | 40.45 | 19.91 | 13.59 |
+| Codex | **All Teachers** | **979** | **46.07** | **33.02** | **21.08** |
+| Claude Code | DeepSeek V4 Pro | 1106 | 43.82 | 28.81 | 19.02 |
+| Claude Code | GLM-5.2 | **1212** | 55.06 | 45.50 | 25.10 |
+| Claude Code | DeepSeek+GLM | 1161 | 57.30 | 47.33 | **28.41** |
+| Claude Code | **All Teachers** | 1173 | **58.43** | **51.47** | 26.81 |
+
+Teacher mixing consistently improves execution-oriented metrics such as Terminal-Bench and skill-assisted SkillsBench. The strongest single teacher can still achieve the highest GDPval-AA v2 score, so teacher diversity improves capabilities unevenly rather than every metric at once. Pooling both harnesses benefits Codex particularly strongly: compared with GPT+Nex, All Teachers adds 5.62 Terminal-Bench points, 13.11 skill-assisted SkillsBench points, and 7.49 skill-free points.
+
+### 🔍 What the results suggest
+
+1. **Verified workflow experience transfers beyond prompt following.** Without inference-time skills, SkillGym-Agent beats the base model with skills under both harnesses, suggesting that training on verified action-observation sequences internalizes reusable procedural competence.
+2. **External skills remain complementary.** The trained model performs better with skills than without skills, so internalized abilities do not make the original skill cards unnecessary.
+3. **The gains cover multiple capabilities.** Improvements span professional artifact production, sustained terminal execution, and skill-assisted and skill-free task solving instead of concentrating on one benchmark.
+4. **The data is long-horizon by construction.** Successful records average 49 tool calls and 63.4k logged text tokens, making the release relevant to planning, tool coordination, verification, and failure recovery.
+
+### ⚠️ Evaluation notes
+
+- The latest paper reports long-context full-parameter SFT with ms-swift/Megatron on 16 NVIDIA H200 GPUs. The repository releases the task builder, data, trajectories, and checkpoint, but does not yet include standalone training or full benchmark-reproduction scripts.
+- Claude Code uses the same standard system prompt for the base and trained models. The Codex comparison uses the standard prompt for the base model and the no-applypatch prompt for SkillGym-Agent, so the Codex difference cannot be attributed to fine-tuning alone.
+- Public reference scores use their reported harnesses, inference budgets, and runtime configurations; they provide context rather than strictly controlled head-to-head comparisons.
+- Parenthesized values are absolute Elo or percentage-point gains, not relative percentage improvements.
+
+See the [latest manuscript PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) and the [benchmark figure](assets/skillgym_baseline.pdf) for complete tables, baselines, implementation details, and evaluation caveats.
 
 ## 🧭 Explore the release
 
@@ -167,12 +213,6 @@ npm run generate-family -- \
 ```
 
 A generation run may take hours and can invoke paid model and sandbox services. Installing npm dependencies alone does not provision Harbor, a runtime, or model credentials.
-
-## 📄 Experiments and paper
-
-The figure above is a compact visual summary of the current manuscript. The [manuscript PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) contains the benchmark tables, ablations, task-selection rules, and evaluation caveats. Reported scores are manuscript snapshots and should not be interpreted as a continuously updated leaderboard.
-
-The released repository does not yet include standalone scripts for reproducing the complete SFT run or every benchmark harness. The task builder and data artifacts are released; training and evaluation recipes remain separate follow-up work.
 
 ## 📚 Citation
 
