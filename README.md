@@ -64,7 +64,7 @@ SkillGym-Agent is a supervised fine-tuned Qwen3.5-35B-A3B model trained on succe
 | Claude Code | Qwen3.5-35B-A3B (base) | 974 | 39.33 | 23.34 | 12.13 |
 | Claude Code | **SkillGym-Agent** | **1161 (+187)** | **57.30 (+17.97)** | **47.33 (+23.99)** | **28.41 (+16.28)** |
 
-SkillGym-Agent improves every reported metric under both harnesses. The largest professional-task gain appears under Claude Code (+187 Elo), while Codex shows the larger Terminal-Bench gain (+30.34 points). The Claude Code comparison uses the same standard system prompt for base and trained models; the Codex comparison also changes the system prompt, so its improvement should not be attributed to fine-tuning alone. See the [manuscript PDF](Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) and the [benchmark figure](assets/skillgym_baseline.pdf) for the full setup and caveats.
+SkillGym-Agent improves every reported metric under both harnesses. The largest professional-task gain appears under Claude Code (+187 Elo), while Codex shows the larger Terminal-Bench gain (+30.34 points). The Claude Code comparison uses the same standard system prompt for base and trained models; the Codex comparison also changes the system prompt, so its improvement should not be attributed to fine-tuning alone. See the [manuscript PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) and the [benchmark figure](assets/skillgym_baseline.pdf) for the full setup and caveats.
 
 ## 🧭 Explore the release
 
@@ -170,7 +170,7 @@ A generation run may take hours and can invoke paid model and sandbox services. 
 
 ## 📄 Experiments and paper
 
-The figure above is a compact visual summary of the current manuscript. The [manuscript PDF](Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) contains the benchmark tables, ablations, task-selection rules, and evaluation caveats. Reported scores are manuscript snapshots and should not be interpreted as a continuously updated leaderboard.
+The figure above is a compact visual summary of the current manuscript. The [manuscript PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) contains the benchmark tables, ablations, task-selection rules, and evaluation caveats. Reported scores are manuscript snapshots and should not be interpreted as a continuously updated leaderboard.
 
 The released repository does not yet include standalone scripts for reproducing the complete SFT run or every benchmark harness. The task builder and data artifacts are released; training and evaluation recipes remain separate follow-up work.
 
