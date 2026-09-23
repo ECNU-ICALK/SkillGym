@@ -157,6 +157,18 @@ tar --zstd -xf .hf/skillgym/task_templates.tar.zst
 
 Then follow the [Task Builder guide](task_builder/README.md) for generation, validation, skill-effect testing, repair, and publishing. A full generation run additionally requires Harbor, a configured runtime such as E2B, Daytona, or Docker, and the relevant model/runtime credentials.
 
+## Repository Structure
+
+```text
+SkillGym/
+├── task_builder/   # Task construction, validation, repair, and publishing
+├── assets/         # Paper, figures, and project branding
+├── README.md       # Project overview
+└── LICENSE
+```
+
+Large artifacts such as the skill library, task templates, executable tasks, and trajectories are hosted in the [SkillGym Dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym).
+
 ## Documentation
 
 | Resource | Scope |
