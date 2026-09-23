@@ -15,6 +15,8 @@
 [![Model](https://img.shields.io/badge/🤗%20Model-SkillGym--Agent-FFD21E)](https://huggingface.co/ecnu-icalk/SkillGym-Agent)
 [![License](https://img.shields.io/badge/License-MIT-2EA44F)](LICENSE)
 
+**English** · [简体中文](README_zh-CN.md)
+
 <p align="center">
   <a href="#framework-and-contributions">Framework & Contributions</a> ·
   <a href="#dataset-at-a-glance">Dataset</a> ·
