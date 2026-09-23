@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/skillgym_hero.jpg" alt="SkillGym — Train Agents with Real Skills" width="100%">
+  <img src="assets/skillgym_hero_v2.jpg" alt="SkillGym — Train Agents with Real Skills" width="100%">
 </p>
 
 <div align="center">
