@@ -1,16 +1,25 @@
-# SkillGym
+# SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving
 
-## Internalizing Human Skills into LLMs for Real-World Problem Solving
+*Turning human-written agent skills into executable, verifiable training environments and reusable procedural capabilities.*
 
-**Paper:** arXiv coming soon · **Dataset:** [Hugging Face](https://huggingface.co/datasets/ecnu-icalk/SkillGym) · **Models:** release pending · [Results](#experimental-results) · [Quick Start](#quick-start) · [Task Construction](docs/task-generation-pipeline.md)
+<p align="center">
+  <b>Paper:</b> coming soon &nbsp;·&nbsp;
+  <a href="https://huggingface.co/datasets/ecnu-icalk/SkillGym">Dataset</a> &nbsp;·&nbsp;
+  <b>Models:</b> coming soon &nbsp;·&nbsp;
+  <a href="#experimental-results">Results</a> &nbsp;·&nbsp;
+  <a href="#quick-start">Quick Start</a> &nbsp;·&nbsp;
+  <a href="docs/task-generation-pipeline.md">Task Construction</a>
+</p>
 
-SkillGym transforms human-written agent skills into executable, verifiable training environments and uses verified long-horizon interaction trajectories to learn reusable procedural capabilities. Results below are reported in the current manuscript and are not a live leaderboard.
+SkillGym converts reusable human-written agent skills into task environments with concrete inputs, runtime configuration, and code-based outcome verifiers. The current manuscript reports **2,756 accepted environments** and **8,364 successful long-horizon trajectories**, which provide verified workflow demonstrations for supervised fine-tuning.
 
-## Main Results
+<p align="center">
+  <a href="assets/skillgym_baseline.pdf">
+    <img src="assets/skillgym_baseline.png" alt="SkillGym-Agent performance on GDPval-AA v2, Terminal-Bench 2.1, and SkillsBench v1.1 with and without skills." width="100%">
+  </a>
+</p>
 
-[![Figure 1: SkillGym-Agent performance on GDPval-AA v2, Terminal-Bench 2.1, and SkillsBench v1.1 with and without skills.](assets/skillgym_baseline.png)](assets/skillgym_baseline.pdf)
-
-**Figure 1 — Performance on general-agent benchmarks.** The four panels report GDPval-AA v2, Terminal-Bench 2.1, SkillsBench v1.1 with skills, and SkillsBench v1.1 without skills. They show the two SkillGym-Agent harness configurations together with comparable-scale agent baselines and public reference scores reported in the manuscript. Click the figure to open the original [PDF](assets/skillgym_baseline.pdf); exact values and evaluation caveats are provided in [Experimental Results](#experimental-results).
+*Figure 1. General-agent benchmark performance reported in the current manuscript. The four panels show GDPval-AA v2, Terminal-Bench 2.1, SkillsBench v1.1 with skills, and SkillsBench v1.1 without skills. Click the figure for the original PDF; exact values and evaluation caveats are listed in [Experimental Results](#experimental-results).*
 
 ## Framework
 
