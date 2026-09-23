@@ -19,7 +19,7 @@
 
 </div>
 
-**SkillGym** is a framework for converting human-written skills into executable, verifier-backed training environments and verified long-horizon agent trajectories. It studies whether procedural knowledge supplied as external skills can be transformed into reusable capability inside an LLM agent.
+**SkillGym** converts human-written skills into executable, verifier-backed training environments and verified long-horizon agent trajectories, enabling the study of whether external procedural knowledge can become reusable capability inside an LLM agent.
 
 > **Core question:** Can verified experience generated from human-written skills become reusable procedural competence inside the model?
 
@@ -32,6 +32,8 @@
     >
   </a>
 </p>
+
+## Framework
 
 <p align="center">
   <a href="assets/SkillGym.pdf">
@@ -76,7 +78,7 @@
   </tr>
 </table>
 
-## At a Glance
+## Dataset at a Glance
 
 <table>
   <tr>
@@ -112,9 +114,17 @@
 
 </details>
 
+## Evaluation Overview
+
+| Benchmark | Metric | Evaluated setting |
+| --- | --- | --- |
+| **GDPval-AA v2** | Elo | General-agent evaluation through blind pairwise comparison |
+| **Terminal-Bench 2.1** | Success rate (%) | Full set of 89 terminal-based tasks |
+| **SkillsBench v1.1** | Success rate (%) | All 87 tasks under both **w/ Skills** and **w/o Skills** conditions |
+
 ## Main Results
 
-Higher is better for every metric. **GDPval-AA v2** is reported as Elo; the remaining metrics are task success rates (%).
+Higher is better for every metric.
 
 | Harness | Model | GDPval-AA v2<br>(Elo) ↑ | Terminal-Bench 2.1<br>(%) ↑ | SkillsBench v1.1<br>w/ Skills (%) ↑ | SkillsBench v1.1<br>w/o Skills (%) ↑ |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -125,10 +135,19 @@ Higher is better for every metric. **GDPval-AA v2** is reported as Elo; the rema
 
 The released **SkillGym-Agent** checkpoint corresponds to the paper's **All Teachers** setting and is trained on the full set of **8,364 successful trajectories** from the released teacher–harness configurations.
 
-A central observation is **skill-free transfer**: after training on verified SkillGym trajectories, the released agent retains substantial performance even when the external skill is removed at inference time. Performance remains strongest when external skills are available, **suggesting that internalized capability and explicit skills are complementary**.
+A central observation is **skill-free transfer**: after training on verified SkillGym trajectories, the released agent retains substantial performance when the external skill is removed at inference time. Performance remains strongest when external skills are available, **suggesting that internalized capability and explicit skills are complementary**.
 
-> [!NOTE]
-> Under Claude Code, the base and trained models use the same standard system prompt. Under Codex, the base uses the standard prompt while SkillGym-Agent uses the `no-applypatch` prompt, so the Codex difference is not a pure fine-tuning-only comparison. See the paper for the complete evaluation configuration, teacher/harness ablations, and public-reference results.
+<details>
+<summary><strong>Evaluation notes</strong></summary>
+
+<br>
+
+- Under **Claude Code**, the base and trained models use the same standard system prompt.
+- Under **Codex**, the base uses the standard prompt while SkillGym-Agent uses the `no-applypatch` prompt, so the Codex delta is not a pure fine-tuning-only comparison.
+- Benchmark results depend on the exact harness, prompt, runtime, inference budget, checkpoint, and benchmark version.
+- See the [paper](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) for teacher/harness ablations and the complete evaluation configuration.
+
+</details>
 
 ## Project Resources
 
@@ -146,8 +165,6 @@ The code, dataset, and model repositories are versioned independently. The large
 <a id="quick-start"></a>
 
 ## Quick Start
-
-Choose the path that matches your goal.
 
 ### Use the Released Data
 
@@ -195,11 +212,17 @@ tar --zstd -xf .hf/skillgym/task_templates.tar.zst
 
 Then follow the [Task Builder guide](task_builder/README.md) for generation, validation, skill-effect testing, repair, and publishing. A full generation run additionally requires Harbor, a configured runtime such as E2B, Daytona, or Docker, and the relevant model/runtime credentials.
 
-## Reproducibility
+## Release & Reproducibility
 
-This repository releases the **Task Builder**, documentation, and project materials. The companion Hugging Face repositories release the **data/trajectories** and **SkillGym-Agent checkpoint**. The current release does not include a standalone end-to-end training script or a single script that reproduces every external benchmark result.
+| Item | Status |
+| --- | --- |
+| **Task Builder** | Released in this repository |
+| **Skills, templates, tasks, trajectories** | Released in the companion Hugging Face dataset |
+| **SkillGym-Agent checkpoint** | Released on Hugging Face |
+| **Standalone end-to-end training script** | Not included in the current release |
+| **Single script reproducing every external benchmark** | Not included in the current release |
 
-The paper reports long-context full-parameter supervised fine-tuning with **ms-swift / Megatron** on **16 × NVIDIA H200 GPUs**. Use the linked Dataset Card and Model Card for artifact-specific metadata and usage details.
+The paper reports long-context full-parameter supervised fine-tuning with **ms-swift / Megatron** on **16 × NVIDIA H200 GPUs**. For exact artifact provenance, record the GitHub commit and Hugging Face revisions used in your experiment.
 
 ## Questions & Contributions
 
