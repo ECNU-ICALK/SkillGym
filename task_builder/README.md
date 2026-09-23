@@ -1,6 +1,20 @@
-# SkillGym Task Builder
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/brand-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="../assets/brand-light.png">
+    <img src="../assets/brand-light.png" alt="SkillGym" width="420">
+  </picture>
+</p>
 
-**Developer guide for turning reusable skills and task templates into executable Harbor environments.**
+<h1 align="center">SkillGym Task Builder</h1>
+
+<p align="center">
+  <strong>Developer guide for turning reusable skills and task templates into executable Harbor environments.</strong>
+</p>
+
+<p align="center">
+  <strong>English</strong> · <a href="README_zh-CN.md">简体中文</a>
+</p>
 
 <p align="center">
   <a href="../README.md">Project overview</a>
@@ -12,6 +26,18 @@
   <a href="../docs/migration.md">Data layout</a>
 </p>
 
+<p align="center">
+  <a href="#what-this-component-does">Overview</a> ·
+  <a href="#before-you-run-it">Setup</a> ·
+  <a href="#quick-start">Quick Start</a> ·
+  <a href="#pipeline-and-acceptance-gates">Pipeline</a> ·
+  <a href="#output-layout">Outputs</a> ·
+  <a href="#source-map">Source Map</a> ·
+  <a href="#configuration">Configuration</a> ·
+  <a href="#checks-and-tests">Tests</a>
+</p>
+
+> [!NOTE]
 > The builder uses Codex for planning, task authoring, review, and repair, then validates each candidate with Harbor and a with-skill / no-skill comparison.
 
 ## What this component does
@@ -26,7 +52,8 @@
 | Repair | Repair failed drafts using reported issues and runtime evidence, then repeat the review and validation cycle | `src/cli.ts`, `src/codex.ts` |
 | Publish | Copy accepted variants and archive evidence | `src/materialize.ts`, `src/trace_archive.ts` |
 
-The builder is a task-construction pipeline, not a benchmark runner or a complete SFT reproduction script.
+> [!IMPORTANT]
+> The builder is a task-construction pipeline, not a benchmark runner or a complete SFT reproduction script.
 
 ## Before you run it
 
@@ -96,7 +123,8 @@ The command above is intentionally small. For long-running production jobs, tune
 | `--max-runtime-repair-rounds` | Repairs after runtime failures |
 | `--max-skill-effect-repair-rounds` | Repairs after the skill-effect comparison |
 
-A run can take hours. Start with one unit and concurrency `1`, inspect the output, then scale up.
+> [!TIP]
+> A run can take hours. Start with one unit and concurrency `1`, inspect the output, then scale up.
 
 ## Pipeline and acceptance gates
 
