@@ -33,6 +33,10 @@
   </a>
 </p>
 
+> **Key takeaway.** Across the reported evaluations, SkillGym-Agent scores higher than the same-backbone base on GDPval-AA v2, Terminal-Bench 2.1, and SkillsBench v1.1 under both evaluated harnesses. Its skill-free score also exceeds the skill-assisted base in both harnesses, suggesting that part of the verified workflow experience transfers beyond direct access to external skills.
+
+The framework below shows how SkillGym turns human-written skills into executable environments, verifier-backed interaction experience, and training trajectories for agent capability acquisition.
+
 ## Framework
 
 <p align="center">
@@ -49,13 +53,13 @@
   <sub><em>From human-written skills to executable environments, verifier-backed experience, and reusable agent capability.</em></sub>
 </p>
 
-## Key Contributions
+## Contributions
 
-- **Skill-to-task construction.** Human-written procedural knowledge is converted into executable tasks with explicit runtime requirements, assets, and task-specific outcome verifiers.
-- **Verifier-backed acceptance.** Candidate environments must pass feasibility and outcome-verification checks before release.
-- **Contrastive skill-dependency assessment.** Paired runs with and without the target skill identify tasks whose success depends on the provided procedural knowledge under the reference construction setup.
-- **Verified long-horizon experience.** Successful executions are retained as trajectories for supervised fine-tuning and analysis; the environments and verifiers can also support outcome-based learning.
-- **A released trained agent.** SkillGym-Agent enables evaluation of how verified workflow experience transfers into the model and how that capability interacts with explicit skills at inference time.
+- **SkillGym framework.** Human-written agent skills are transformed into executable, verifier-backed training environments rather than being used only as inference-time instructions.
+- **Contrastive skill-dependency validation.** Paired with-skill / without-skill execution identifies environments whose success depends on the target procedural knowledge under the reference construction setup.
+- **Large-scale verified experience.** The release connects accepted environments, task-specific verifiers, and successful long-horizon trajectories across a broad procedural taxonomy.
+- **Multi-harness trajectory collection.** Execution experience is sampled across multiple harness–model configurations instead of relying on a single agent setup.
+- **Skill internalization study.** SkillGym-Agent tests whether verified workflow experience can become reusable model capability, including when external skills are removed at inference time.
 
 ## Dataset at a Glance
 
@@ -93,17 +97,9 @@
 
 </details>
 
-## Evaluation Overview
-
-| Benchmark | Metric | Evaluated setting |
-| --- | --- | --- |
-| **GDPval-AA v2** | Elo | General-agent evaluation through blind pairwise comparison |
-| **Terminal-Bench 2.1** | Success rate (%) | Full set of 89 terminal-based tasks |
-| **SkillsBench v1.1** | Success rate (%) | All 87 tasks under both **w/ Skills** and **w/o Skills** conditions |
-
 ## Main Results
 
-Higher is better for every metric.
+**GDPval-AA v2** is reported as Elo; **Terminal-Bench 2.1** and **SkillsBench v1.1** are reported as task success rates (%). Higher is better for every metric.
 
 | Harness | Model | GDPval-AA v2<br>(Elo) ↑ | Terminal-Bench 2.1<br>(%) ↑ | SkillsBench v1.1<br>w/ Skills (%) ↑ | SkillsBench v1.1<br>w/o Skills (%) ↑ |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -114,12 +110,18 @@ Higher is better for every metric.
 
 The released **SkillGym-Agent** checkpoint corresponds to the paper's **All Teachers** setting and is trained on the full set of **8,364 successful trajectories** from the released teacher–harness configurations.
 
-A central observation is **skill-free transfer**: after training on verified SkillGym trajectories, the released agent retains substantial performance when the external skill is removed at inference time. Performance remains strongest when external skills are available, **suggesting that internalized capability and explicit skills are complementary**.
+Performance remains strongest when external skills are available, **suggesting that internalized capability and explicit skills are complementary**.
 
 <details>
-<summary><strong>Evaluation notes</strong></summary>
+<summary><strong>Evaluation setup and notes</strong></summary>
 
 <br>
+
+| Benchmark | Metric | Evaluated setting |
+| --- | --- | --- |
+| **GDPval-AA v2** | Elo | General-agent evaluation through blind pairwise comparison |
+| **Terminal-Bench 2.1** | Success rate (%) | Full set of 89 tasks |
+| **SkillsBench v1.1** | Success rate (%) | All 87 tasks under both **w/ Skills** and **w/o Skills** conditions |
 
 - Under **Claude Code**, the base and trained models use the same standard system prompt.
 - Under **Codex**, the base uses the standard prompt while SkillGym-Agent uses the `no-applypatch` prompt, so the Codex delta is not a pure fine-tuning-only comparison.
@@ -130,13 +132,11 @@ A central observation is **skill-free transfer**: after training on verified Ski
 
 ## Project Resources
 
-| Resource | What it provides | Link |
+| Resource | Contents | Link |
 | --- | --- | --- |
-| **Code** | Task Builder, construction pipeline, project materials, and lightweight assets | [GitHub](https://github.com/ECNU-ICALK/SkillGym) |
+| **Code** | Task Builder, construction pipeline, documentation, figures, and project materials | [GitHub](https://github.com/ECNU-ICALK/SkillGym) |
 | **Dataset** | Skill library, task templates, executable environments, and trajectory collections | [Hugging Face](https://huggingface.co/datasets/ecnu-icalk/SkillGym) |
-| **Model** | **SkillGym-Agent**, the released Qwen3.5-35B-A3B checkpoint trained on verified SkillGym trajectories | [Hugging Face](https://huggingface.co/ecnu-icalk/SkillGym-Agent) |
-| **Task Builder** | Environment construction, validation, skill-effect testing, repair, and publishing | [Guide](task_builder/README.md) |
-| **Pipeline Docs** | Construction stages, repair semantics, acceptance gates, and outputs | [Documentation](task_builder/docs/task-generation-pipeline.md) |
+| **Model** | SkillGym-Agent, the released Qwen3.5-35B-A3B checkpoint | [Hugging Face](https://huggingface.co/ecnu-icalk/SkillGym-Agent) |
 | **Paper** | Full method, dataset analysis, experiments, ablations, and appendices | [PDF](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) |
 
 The code, dataset, and model repositories are versioned independently. The large-artifact dataset snapshot is associated with GitHub commit `6ebabba`.
@@ -193,13 +193,7 @@ Then follow the [Task Builder guide](task_builder/README.md) for generation, val
 
 ## Release & Reproducibility
 
-| Item | Status |
-| --- | --- |
-| **Task Builder** | Released in this repository |
-| **Skills, templates, tasks, trajectories** | Released in the companion Hugging Face dataset |
-| **SkillGym-Agent checkpoint** | Released on Hugging Face |
-| **Standalone end-to-end training script** | Not included in the current release |
-| **Single script reproducing every external benchmark** | Not included in the current release |
+The current release includes the **Task Builder**, the companion **SkillGym dataset and trajectories**, and the **SkillGym-Agent checkpoint**. Standalone end-to-end training code and a single script reproducing every external benchmark are not included in this release.
 
 The paper reports long-context full-parameter supervised fine-tuning with **ms-swift / Megatron** on **16 × NVIDIA H200 GPUs**. For exact artifact provenance, record the GitHub commit and Hugging Face revisions used in your experiment.
 
