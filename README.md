@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/skillgym_brand_dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="assets/skillgym_brand_light.png">
-    <img src="assets/skillgym_brand_light.png" alt="SkillGym — Train Agents with Real Skills" width="520">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/brand.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/brand.png">
+    <img src="assets/brand.png" alt="SkillGym — Train Agents with Real Skills" width="520">
   </picture>
 </p>
 
