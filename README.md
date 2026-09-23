@@ -2,13 +2,15 @@
 
 ## Internalizing Human Skills into LLMs for Real-World Problem Solving
 
-[Dataset on Hugging Face](https://huggingface.co/datasets/ecnu-icalk/SkillGym) · [Results](#experimental-results) · [Quick Start](#quick-start) · [Task Construction](docs/task-generation-pipeline.md)
+**Paper:** arXiv coming soon · **Dataset:** [Hugging Face](https://huggingface.co/datasets/ecnu-icalk/SkillGym) · **Models:** release pending · [Results](#experimental-results) · [Quick Start](#quick-start) · [Task Construction](docs/task-generation-pipeline.md)
 
-**Paper:** arXiv link coming soon. **Models:** release pending.
+SkillGym transforms human-written agent skills into executable, verifiable training environments and uses verified long-horizon interaction trajectories to learn reusable procedural capabilities. Results below are reported in the current manuscript and are not a live leaderboard.
 
-SkillGym transforms human-written agent skills into executable, verifiable training environments. Instead of training a model to reproduce skill descriptions, it turns their underlying workflows into tasks with input assets, runtime environments, and code-based outcome checkers. Verified interaction trajectories provide supervision for learning reusable procedural capabilities.
+## Main Results
 
-This repository accompanies **SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving**. Dataset statistics and experimental scores below are reported in the current manuscript; they are not newly reproduced results or a live leaderboard.
+[![Figure 1: SkillGym-Agent performance on GDPval-AA v2, Terminal-Bench 2.1, and SkillsBench v1.1 with and without skills.](assets/skillgym_baseline.png)](assets/skillgym_baseline.pdf)
+
+**Figure 1 — Performance on general-agent benchmarks.** The four panels report GDPval-AA v2, Terminal-Bench 2.1, SkillsBench v1.1 with skills, and SkillsBench v1.1 without skills. They show the two SkillGym-Agent harness configurations together with comparable-scale agent baselines and public reference scores reported in the manuscript. Click the figure to open the original [PDF](assets/skillgym_baseline.pdf); exact values and evaluation caveats are provided in [Experimental Results](#experimental-results).
 
 ## Framework
 
@@ -57,11 +59,7 @@ Source: manuscript Table 2. Pooling teachers covers more tasks than any individu
 
 ## Experimental Results
 
-### General-Agent Benchmark Overview
-
-[![Figure 1: SkillGym-Agent performance on GDPval-AA v2, Terminal-Bench 2.1, and SkillsBench v1.1 with and without skills.](assets/skillgym_baseline.png)](assets/skillgym_baseline.pdf)
-
-**Figure 1 — Performance on general-agent benchmarks.** The figure summarizes four evaluation views: GDPval-AA v2, Terminal-Bench 2.1, SkillsBench v1.1 with skills, and SkillsBench v1.1 without skills. It places the two SkillGym-Agent harness configurations alongside comparable-scale agent baselines and the public reference scores reported in the manuscript. Click the figure to open the original [PDF](assets/skillgym_baseline.pdf). Exact values and evaluation caveats are retained in the Markdown tables below.
+Figure 1 above provides the visual overview; the tables below preserve the exact manuscript-reported values and evaluation caveats.
 
 The student backbone is **Qwen3.5-35B-A3B**. GDPval-AA v2 is reported in **Elo**; Terminal-Bench 2.1 and SkillsBench v1.1 are reported as **task success rates (%)**. Parenthesized improvements are absolute Elo points or percentage points, not relative percentages.
 
