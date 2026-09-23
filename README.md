@@ -4,7 +4,7 @@
 
 <p><strong>Internalizing Large-Scale Human-Written Skills into LLMs for Real-World Problem Solving</strong></p>
 
-<p><em>A skill-grounded benchmark, dataset, and training resource for turning human-written workflows into executable, verifiable agent experience.</em></p>
+<p><em>Turn human-written workflows into executable, verifiable agent experience — and train LLM agents to internalize reusable real-world capabilities.</em></p>
 
 <p>
   <a href="https://huggingface.co/datasets/ecnu-icalk/SkillGym"><img src="https://img.shields.io/badge/🤗%20Dataset-SkillGym-FFD21E" alt="Hugging Face Dataset"></a>
@@ -15,61 +15,55 @@
 </p>
 
 <p>
-  <a href="https://huggingface.co/datasets/ecnu-icalk/SkillGym">Dataset</a>
+  <a href="https://huggingface.co/datasets/ecnu-icalk/SkillGym"><strong>Dataset</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://huggingface.co/ecnu-icalk/SkillGym-Agent">Model</a>
+  <a href="https://huggingface.co/ecnu-icalk/SkillGym-Agent"><strong>Model</strong></a>
   &nbsp;·&nbsp;
-  <a href="task_builder/README.md">Task Builder</a>
+  <a href="task_builder/README.md"><strong>Task Builder</strong></a>
   &nbsp;·&nbsp;
-  <a href="task_builder/docs/task-generation-pipeline.md">Pipeline</a>
+  <a href="task_builder/docs/task-generation-pipeline.md"><strong>Pipeline</strong></a>
   &nbsp;·&nbsp;
-  <a href="assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf">Paper</a>
+  <a href="assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf"><strong>Paper</strong></a>
   &nbsp;·&nbsp;
-  <a href="#quick-start">Quick Start</a>
+  <a href="#quick-start"><strong>Quick Start</strong></a>
 </p>
 
 </div>
 
-**SkillGym** studies whether LLM agents can acquire reusable procedural abilities from human-written skills. It turns skill documents into **executable task environments**, checks outcomes with **code-based verifiers**, measures skill dependence through **with-skill / without-skill paired execution**, and collects successful **long-horizon trajectories** for agent training.
+---
+
+## TL;DR
+
+**SkillGym** studies whether LLM agents can acquire **reusable procedural abilities** from **human-written skills**. It turns skill documents into **executable task environments**, validates outcomes with **code-based verifiers**, measures skill dependence through **with-skill / without-skill paired execution**, and collects successful **long-horizon trajectories** for agent training.
 
 > **Core question:** Can verified experience generated from human-written skills become reusable capability inside the model itself?
 
-## At a glance
+## Highlights
 
 <table>
   <tr>
-    <td align="center">🏗️<br><strong>2,756</strong><br><sub>accepted environments</sub></td>
-    <td align="center">🧪<br><strong>5,512</strong><br><sub>with-skill / no-skill variants</sub></td>
-    <td align="center">🧵<br><strong>8,364</strong><br><sub>successful trajectories</sub></td>
-    <td align="center">🗂️<br><strong>12 / 63</strong><br><sub>major / sub-categories</sub></td>
+    <td align="center"><strong>🏗️ 2,756</strong><br><sub>accepted environments</sub></td>
+    <td align="center"><strong>🧪 5,512</strong><br><sub>with-skill / no-skill variants</sub></td>
+    <td align="center"><strong>🧵 8,364</strong><br><sub>successful trajectories</sub></td>
+    <td align="center"><strong>🗂️ 12 / 63</strong><br><sub>major / sub-categories</sub></td>
   </tr>
 </table>
 
 <p><sub>Counts correspond to the current manuscript snapshot. Environments, paired variants, sampled trials, and successful trajectories are different units.</sub></p>
 
-## Three pieces, one project
+### Project components
 
-| Resource | Start here | Use it for |
+| Component | What it is | Start here |
 | --- | --- | --- |
-| **Code** | [GitHub · SkillGym](https://github.com/ECNU-ICALK/SkillGym) | Task construction, validation, documentation, and project materials |
-| **Data** | [Hugging Face · SkillGym Dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) | Skill library, task templates, executable environments, and trajectories |
-| **Model** | [Hugging Face · SkillGym-Agent](https://huggingface.co/ecnu-icalk/SkillGym-Agent) | Released checkpoint trained on successful SkillGym trajectories |
+| **Dataset** | Skills, task templates, executable environments, and trajectories | [Hugging Face · SkillGym Dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) |
+| **Model** | Released checkpoint trained on successful SkillGym trajectories | [Hugging Face · SkillGym-Agent](https://huggingface.co/ecnu-icalk/SkillGym-Agent) |
+| **Task Builder** | The construction pipeline for new skill-grounded environments | [Task Builder Guide](task_builder/README.md) |
 
 > [!TIP]
-> **Want the data or model?** Start from Hugging Face.  
+> **Want to use the released data or model?** Start from Hugging Face.  
 > **Want to create new skill-grounded environments?** Start from the [Task Builder](task_builder/README.md).
 
-## Benchmark overview
-
-<p align="center">
-  <a href="assets/skillgym_baseline.pdf">
-    <img src="assets/skillgym_baseline.png" alt="SkillGym-Agent benchmark overview" width="100%">
-  </a>
-</p>
-
-<p align="center"><em>General-agent benchmark results from the current manuscript. Click the figure to open the PDF version.</em></p>
-
-## Framework
+## Overview
 
 <p align="center">
   <a href="assets/SkillGym.pdf">
@@ -79,7 +73,7 @@
 
 <p align="center"><em>SkillGym converts human-written skills into executable, verifiable environments and then samples successful long-horizon trajectories across multiple harness-model configurations.</em></p>
 
-## How it works
+### How SkillGym works
 
 | Stage | What happens |
 | --- | --- |
@@ -91,13 +85,23 @@
 
 A task enters the strict **Skill-Dep** group when the <code>with_skill</code> execution succeeds while the paired <code>no_skill</code> execution produces a valid reward failure. Other valid verifier-passed tasks are released separately as **Verifier-Passed** fallback environments.
 
-For the complete construction pipeline, repair semantics, and output layout, see [task_builder/docs/task-generation-pipeline.md](task_builder/docs/task-generation-pipeline.md).
+For the full construction pipeline, repair semantics, and output layout, see [task_builder/docs/task-generation-pipeline.md](task_builder/docs/task-generation-pipeline.md).
 
-## Key results
+## Results
+
+### General-agent benchmark overview
+
+<p align="center">
+  <a href="assets/skillgym_baseline.pdf">
+    <img src="assets/skillgym_baseline.png" alt="SkillGym-Agent benchmark overview" width="100%">
+  </a>
+</p>
+
+<p align="center"><em>General-agent benchmark results from the current manuscript. Click the figure to open the PDF version.</em></p>
+
+### Controlled same-backbone comparison
 
 **SkillGym-Agent** is a full-parameter supervised fine-tuned Qwen3.5-35B-A3B model trained on successful SkillGym trajectories.
-
-### Controlled benchmark comparison
 
 | Harness | Model | GDPval-AA v2 ↑ | Terminal-Bench 2.1 ↑ | SkillsBench v1.1 ↑ | Without skills ↑ |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -108,14 +112,14 @@ For the complete construction pipeline, repair semantics, and output layout, see
 
 Parenthesized values are absolute Elo or percentage-point gains over the same-harness base model.
 
-### Skill-free transfer
+### Key takeaway: skill-free transfer
 
 The most informative signal is what remains **without an inference-time skill**:
 
 - Under **Claude Code**, SkillGym-Agent without skills reaches **26.81%**, versus **23.34%** for the base model *with* skills.
 - Under **Codex**, SkillGym-Agent without skills reaches **21.08%**, versus **5.33%** for the base model *with* skills.
 
-These results are consistent with verified workflow experience transferring beyond direct prompt following. At the same time, SkillGym-Agent performs best when external skills are still available, suggesting that **internalized capability and explicit skills are complementary**.
+These results suggest that verified workflow experience can transfer beyond direct prompt following. At the same time, SkillGym-Agent performs best when external skills remain available, indicating that **internalized capability and explicit skills are complementary**.
 
 <details>
 <summary><strong>Teacher and harness ablation</strong></summary>
@@ -135,7 +139,11 @@ These results are consistent with verified workflow experience transferring beyo
 
 </details>
 
-## Data & release
+## Releases
+
+Large artifacts live in the companion [Hugging Face dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym), keeping this GitHub repository focused on construction code, documentation, and lightweight figures.
+
+### Release summary
 
 | Release signal | Value |
 | --- | --- |
@@ -147,7 +155,7 @@ These results are consistent with verified workflow experience transferring beyo
 | Average successful trajectory | **49.0** tool calls · **63.4k** logged text tokens · **35.2** interaction steps |
 | Longest observed trajectory | **350** tool calls · **342.9k** logged text tokens · **318** interaction steps |
 
-Large artifacts live in the companion [Hugging Face dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym), keeping this GitHub repository focused on construction code, documentation, and lightweight figures.
+### Available artifacts
 
 | Artifact | What it contains | Get it |
 | --- | --- | --- |
@@ -166,15 +174,12 @@ For schema details, task layout, licensing notes, and intended use, see the full
 
 Choose the path that matches what you want to do.
 
-### 1. Download released trajectories
+### 1. Use the released trajectories
 
 ~~~bash
 python -m pip install -U huggingface_hub
 
-hf download ecnu-icalk/SkillGym \
-  --include "Trajectories/*.jsonl" \
-  --repo-type dataset \
-  --local-dir .hf/skillgym
+hf download ecnu-icalk/SkillGym   --include "Trajectories/*.jsonl"   --repo-type dataset   --local-dir .hf/skillgym
 ~~~
 
 Stream one trajectory file directly:
@@ -197,13 +202,12 @@ trajectories = load_dataset(
 print(next(iter(trajectories))["session_id"])
 ~~~
 
-### 2. Download SkillGym-Agent
+### 2. Use SkillGym-Agent
 
 ~~~bash
 python -m pip install -U huggingface_hub
 
-hf download ecnu-icalk/SkillGym-Agent \
-  --local-dir .hf/skillgym-agent
+hf download ecnu-icalk/SkillGym-Agent   --local-dir .hf/skillgym-agent
 ~~~
 
 → [Open SkillGym-Agent on Hugging Face](https://huggingface.co/ecnu-icalk/SkillGym-Agent)
@@ -218,10 +222,7 @@ npm --prefix task_builder ci
 npm --prefix task_builder run check
 
 python -m pip install -U huggingface_hub
-hf download ecnu-icalk/SkillGym \
-  skill_library.tar.zst task_templates.tar.zst \
-  --repo-type dataset \
-  --local-dir .hf/skillgym
+hf download ecnu-icalk/SkillGym   skill_library.tar.zst task_templates.tar.zst   --repo-type dataset   --local-dir .hf/skillgym
 
 tar --zstd -xf .hf/skillgym/skill_library.tar.zst
 tar --zstd -xf .hf/skillgym/task_templates.tar.zst
@@ -230,20 +231,16 @@ tar --zstd -xf .hf/skillgym/task_templates.tar.zst
 Generate one small task family:
 
 ~~~bash
-npm --prefix task_builder run generate-family -- \
-  --template-root task_templates \
-  --template development/frontend/seed_task \
-  --skill-dir skill_library/development/frontend/skills/tailwind-design-system \
-  --skill-mode per-skill \
-  --task-count 1 \
-  --output-root /tmp/skillgym-output \
-  --concurrency 1
+npm --prefix task_builder run generate-family --   --template-root task_templates   --template development/frontend/seed_task   --skill-dir skill_library/development/frontend/skills/tailwind-design-system   --skill-mode per-skill   --task-count 1   --output-root /tmp/skillgym-output   --concurrency 1
 ~~~
 
 > [!IMPORTANT]
 > Full generation additionally requires Harbor, a configured runtime such as E2B, Daytona, or Docker, and the relevant model/runtime credentials. Runs can take hours and may invoke paid services. See the [Task Builder guide](task_builder/README.md) before scaling up.
 
-## Evaluation notes
+<details>
+<summary><strong>Evaluation details and caveats</strong></summary>
+
+<br>
 
 > [!NOTE]
 > **GDPval-AA v2** is reported as Elo. **Terminal-Bench 2.1** and **SkillsBench v1.1** are reported as task success rates (%).
@@ -258,7 +255,9 @@ Public reference scores may use different harnesses, inference budgets, runtime 
 
 See the [manuscript](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) for complete tables and evaluation details.
 
-## Project navigation
+</details>
+
+## Documentation
 
 | I want to… | Start here |
 | --- | --- |
