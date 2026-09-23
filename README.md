@@ -51,32 +51,11 @@
 
 ## Key Contributions
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <strong>Skill-to-Task Construction</strong><br>
-      <sub>Turn human-written procedures into executable tasks with explicit runtime requirements and assets.</sub>
-    </td>
-    <td width="33%" valign="top">
-      <strong>Verifier-Backed Acceptance</strong><br>
-      <sub>Validate task feasibility and outcomes with task-specific executable checks.</sub>
-    </td>
-    <td width="33%" valign="top">
-      <strong>Skill-Dependency Assessment</strong><br>
-      <sub>Contrast paired with-skill and without-skill executions under a shared task setup.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" valign="top">
-      <strong>Verified Long-Horizon Experience</strong><br>
-      <sub>Release successful multi-harness trajectories for supervised fine-tuning, analysis, and outcome-based learning.</sub>
-    </td>
-    <td valign="top">
-      <strong>SkillGym-Agent</strong><br>
-      <sub>Study how verified workflow experience transfers into reusable model capability.</sub>
-    </td>
-  </tr>
-</table>
+- **Skill-to-task construction.** Human-written procedural knowledge is converted into executable tasks with explicit runtime requirements, assets, and task-specific outcome verifiers.
+- **Verifier-backed acceptance.** Candidate environments must pass feasibility and outcome-verification checks before release.
+- **Contrastive skill-dependency assessment.** Paired runs with and without the target skill identify tasks whose success depends on the provided procedural knowledge under the reference construction setup.
+- **Verified long-horizon experience.** Successful executions are retained as trajectories for supervised fine-tuning and analysis; the environments and verifiers can also support outcome-based learning.
+- **A released trained agent.** SkillGym-Agent enables evaluation of how verified workflow experience transfers into the model and how that capability interacts with explicit skills at inference time.
 
 ## Dataset at a Glance
 
