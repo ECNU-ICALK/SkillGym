@@ -19,9 +19,11 @@
 | Stage | Responsibility | Main entry point |
 | --- | --- | --- |
 | Discover | Find templates and skills in the selected scope | `inventory` |
-| Author | Produce a structured plan and Harbor task draft | `generate-family` |
-| Validate | Run static checks, preflight, oracle, and reward parsing | `src/validate.ts` |
+| Author | Ask Codex to plan and write a Harbor task draft | `generate-family` |
+| Review | Run a Codex-based blocking review of the task draft before execution | `src/codex.ts`, `src/prompts.ts` |
+| Validate | Run static checks and Harbor runtime validation | `src/validate.ts` |
 | Measure skill effect | Compare the same task with and without the target skill | `src/skill_effect.ts` |
+| Repair | Repair failed drafts using reported issues and runtime evidence, then repeat the review and validation cycle | `src/cli.ts`, `src/codex.ts` |
 | Publish | Copy accepted variants and archive evidence | `src/materialize.ts`, `src/trace_archive.ts` |
 
 The builder is a task-construction pipeline, not a benchmark runner or a complete SFT reproduction script.
@@ -101,14 +103,14 @@ A run can take hours. Start with one unit and concurrency `1`, inspect the outpu
 Each candidate moves through the following stages:
 
 1. **Discovery** loads a template and one or more skills.
-2. **Planning** asks Codex for a structured task plan.
-3. **Authoring** writes the draft Harbor task, environment, solution, and tests.
-4. **Static review** checks schemas, paths, task structure, and required files.
-5. **Oracle validation** runs the task and checks the expected outcome.
-6. **Skill-effect validation** compares `with_skill` and `no_skill` runs.
-7. **Repair or publish** either spends the configured repair budget or writes an accepted variant and its evidence.
+2. **Planning and authoring** ask Codex to create the task plan and Harbor task draft.
+3. **Blocking review** checks the current draft before execution.
+4. **Validation** runs static checks and Harbor runtime verification.
+5. **Skill-effect validation** compares `with_skill` and `no_skill` runs.
+6. If a gate fails, Codex repairs the draft using the reported issues and available runtime evidence, then the task returns to the review and validation stages.
+7. Accepted variants are published with their evidence.
 
-The strict skill-effect gate accepts a candidate when the with-skill run passes and the no-skill run produces a valid reward failure. If the oracle passes but the contrastive evidence is unavailable after the repair budget, the candidate may be written to `oracle_fallback_success/`. This distinction is preserved in the final output directories.
+The strict skill-effect gate accepts a candidate when the with-skill run passes and the no-skill run produces a valid reward failure. If a complete with-skill/no-skill pair is available but the strict gate is not satisfied, the candidate may be written to `oracle_fallback_success/`.
 
 ## Output layout
 
