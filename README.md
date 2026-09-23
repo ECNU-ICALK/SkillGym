@@ -38,7 +38,7 @@ The three repositories are versioned separately. The large data snapshot is asso
 ## What SkillGym contributes
 
 - **Skill-grounded task construction.** Human-written procedural knowledge is converted into executable tasks with explicit runtime requirements and verifiers.
-- **Contrastive skill-dependence evaluation.** A paired `withskill`/`withoutskill` execution measures whether a task depends on its target skill under the reference construction setup.
+- **Contrastive skill-dependence evaluation.** A paired `with-skill`/`without-skill` execution (stored as `withskill`/`withoutskill`) measures whether a task depends on its target skill under the reference construction setup.
 - **Verified long-horizon experience.** Only executions that pass environment-level checks are released as training trajectories.
 - **Open research artifacts.** The task builder, archives, trajectory collections, model checkpoint, and paper materials are available through the linked repositories.
 
