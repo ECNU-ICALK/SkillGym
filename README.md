@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/skillgym_hero_v2.jpg" alt="SkillGym — Train Agents with Real Skills" width="100%">
-</p>
-
 <div align="center">
 
 <p><strong>Internalizing Large-Scale Human-Written Skills into LLMs for Real-World Problem Solving</strong></p>
