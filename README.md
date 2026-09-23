@@ -11,7 +11,7 @@
     <img
       src="assets/brand-light.png"
       alt="SkillGym"
-      width="680"
+      width="600"
     >
   </picture>
 </p>
