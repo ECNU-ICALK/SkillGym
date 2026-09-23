@@ -15,70 +15,104 @@
 [![Model](https://img.shields.io/badge/🤗%20Model-SkillGym--Agent-FFD21E)](https://huggingface.co/ecnu-icalk/SkillGym-Agent)
 [![License](https://img.shields.io/badge/License-MIT-2EA44F)](LICENSE)
 
-[Paper](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) · [Dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) · [Agent](https://huggingface.co/ecnu-icalk/SkillGym-Agent) · [Task Builder](task_builder/README.md) · [Quick start](#quick-start)
+[Paper](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) · [Dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) · [Agent](https://huggingface.co/ecnu-icalk/SkillGym-Agent) · [Task Builder](task_builder/README.md) · [Quick Start](#quick-start)
 
 </div>
 
-<p align="center">
-  <a href="assets/SkillGym.pdf"><img src="assets/skillgym_framework.jpg" alt="SkillGym framework" width="100%"></a>
-</p>
+**SkillGym** is a framework for converting human-written skills into executable, verifier-backed training environments and verified long-horizon agent trajectories. It studies whether procedural knowledge supplied as external skills can be transformed into reusable capability inside an LLM agent.
 
-SkillGym is a benchmark and task-construction framework for studying whether human-written skills can become reusable agent capability. It turns skills and task templates into executable environments, verifies outcomes with code, compares paired runs with and without the target skill, and releases successful long-horizon trajectories for training and analysis.
+> **Core question:** Can verified experience generated from human-written skills become reusable procedural competence inside the model?
 
-## The three-part release
+## Release map
 
-| Repository | What it contains | Start here when you want to… |
+The SkillGym release is split across three repositories with distinct roles:
+
+| Resource | Primary contents | Start here when you want to… |
 | --- | --- | --- |
-| [GitHub](https://github.com/ECNU-ICALK/SkillGym) | Task Builder, documentation, paper materials, and lightweight figures | understand or extend the pipeline |
-| [SkillGym-Agent](https://huggingface.co/ecnu-icalk/SkillGym-Agent) | Qwen3.5-35B-A3B checkpoint fine-tuned on verified trajectories | download or run the released model |
-| [SkillGym Dataset](https://huggingface.co/datasets/ecnu-icalk/SkillGym) | Skills, templates, task environments, and trajectory JSONL files | inspect or train on the released data |
+| **Code · GitHub** | Task Builder, construction pipeline, documentation, figures, and paper materials | understand, reproduce, or extend the task-construction workflow |
+| **Data · Hugging Face** | Skill library, task templates, executable task environments, and trajectory collections | inspect the released data or train on SkillGym trajectories |
+| **Model · Hugging Face** | **SkillGym-Agent**, a Qwen3.5-35B-A3B checkpoint trained on verified SkillGym trajectories | download, load, or evaluate the released agent checkpoint |
 
-The three repositories are versioned separately. The large data snapshot is associated with GitHub commit `6ebabba`; see the dataset card for archive contents and provenance.
+The repositories are versioned independently. Dataset-specific provenance, archive layout, and schema details live in the **Dataset Card**; checkpoint-specific loading and evaluation notes live in the **Model Card**.
 
 ## What SkillGym contributes
 
-- **Skill-grounded task construction.** Human-written procedural knowledge is converted into executable tasks with explicit runtime requirements and verifiers.
-- **Contrastive skill-dependence evaluation.** A paired `with-skill`/`without-skill` execution (stored as `withskill`/`withoutskill`) measures whether a task depends on its target skill under the reference construction setup.
-- **Verified long-horizon experience.** Only executions that pass environment-level checks are released as training trajectories.
-- **Open research artifacts.** The task builder, archives, trajectory collections, model checkpoint, and paper materials are available through the linked repositories.
+- **Skill-to-task construction.** Human-written procedural knowledge is converted into executable tasks with explicit runtime requirements, assets, and task-specific outcome verifiers.
+- **Verifier-backed acceptance.** Candidate environments must pass feasibility and outcome-verification checks before release.
+- **Contrastive skill-dependency assessment.** Paired runs with and without the target skill identify tasks whose success depends on the provided procedural knowledge under the reference construction setup.
+- **Verified long-horizon experience.** Successful executions are retained as trajectories for supervised fine-tuning and analysis, while the environments and verifiers can also support outcome-based learning.
+- **A released skill-internalized agent.** SkillGym-Agent tests how much verified workflow experience transfers into the model and how that capability interacts with explicit skills at inference time.
 
-## Framework
+## At a glance
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <sub><strong>ACCEPTED ENVIRONMENTS</strong></sub><br>
+      <strong>2,756</strong><br>
+      <sub>executable and verifier-passed</sub>
+    </td>
+    <td align="center" width="25%">
+      <sub><strong>SKILL-DEPENDENT</strong></sub><br>
+      <strong>1,081</strong><br>
+      <sub>39.2% of accepted environments</sub>
+    </td>
+    <td align="center" width="25%">
+      <sub><strong>SUCCESSFUL TRAJECTORIES</strong></sub><br>
+      <strong>8,364</strong><br>
+      <sub>verified long-horizon executions</sub>
+    </td>
+    <td align="center" width="25%">
+      <sub><strong>TAXONOMY</strong></sub><br>
+      <strong>12 / 63</strong><br>
+      <sub>major / sub-categories</sub>
+    </td>
+  </tr>
+</table>
+
+## How SkillGym works
 
 <p align="center">
-  <a href="assets/SkillGym.pdf"><img src="assets/skillgym_framework.jpg" alt="SkillGym workflow" width="100%"></a>
+  <a href="assets/SkillGym.pdf">
+    <img src="assets/skillgym_framework.jpg" alt="SkillGym framework" width="100%">
+  </a>
 </p>
 
-1. **Ground:** organize skills and templates into reusable units.
-2. **Build:** instantiate executable tasks with inputs, tools, and expected outcomes.
-3. **Verify:** run static checks, oracle validation, and reward parsing.
-4. **Contrast:** compare paired runs with and without the target skill.
-5. **Learn:** archive successful long-horizon trajectories for agent training.
+1. **Ground** human-written skills and reusable task templates.
+2. **Construct** executable tasks with inputs, tools, runtime requirements, and verifiers.
+3. **Validate** task feasibility and verifier correctness.
+4. **Contrast** paired execution with and without the target skill to assess skill dependence.
+5. **Sample** multi-harness agent trajectories and retain verified outcomes.
+6. **Train** SkillGym-Agent on successful trajectories and evaluate transfer on external agent benchmarks.
 
-`Skill-Dep.` is a construction-time label: the `with-skill` run succeeds and the paired `without-skill` run produces a valid reward failure (stored as `withskill`/`withoutskill`). `Verifier-Passed` tasks have a valid environment and verifier but do not satisfy that stricter contrastive criterion. Neither label guarantees success for every later model or harness.
+In the released data, **Skill-Dep.** denotes environments satisfying the stricter contrastive criterion under the reference construction setup; **Verifier-Passed** denotes environments that pass execution and verification checks without satisfying that additional criterion. These are task-construction labels, not guarantees about every later model or harness.
 
-## Results at a glance
+## Main results
 
-The release contains **2,756 accepted environments**, **5,512 paired variants**, and **8,364 successful trajectories** across **12 major** and **63 sub-categories**.
+Higher is better for every metric. **GDPval-AA v2** is reported as Elo; the remaining metrics are task success rates (%).
 
-| Harness | Model | GDPval-AA v2 (Elo) | Terminal-Bench 2.1 (%) | SkillsBench v1.1 (%) | SkillsBench without skills (%) |
+| Harness | Model | GDPval-AA v2<br>(Elo) ↑ | Terminal-Bench 2.1<br>(%) ↑ | SkillsBench v1.1<br>w/ Skills (%) ↑ | SkillsBench v1.1<br>w/o Skills (%) ↑ |
 | --- | --- | ---: | ---: | ---: | ---: |
 | Codex | Qwen3.5-35B-A3B | 942 | 10.11 | 5.33 | 0.69 |
 | Codex | **SkillGym-Agent** | **979** | **46.07** | **33.02** | **21.08** |
 | Claude Code | Qwen3.5-35B-A3B | 974 | 39.33 | 23.34 | 12.13 |
 | Claude Code | **SkillGym-Agent** | **1173** | **58.43** | **51.47** | **26.81** |
 
-Scores are reported from the current manuscript. GDPval-AA v2 is Elo; the other metrics are task success rates. SkillGym-Agent improves every reported metric under both harnesses, and its skill-free score exceeds the base model with skills in both comparisons. Performance remains higher when external skills are available, so internalized capability and explicit skills are complementary. Under Claude Code, the base and trained models use the same standard system prompt. Under Codex, SkillGym-Agent uses the `no-applypatch` prompt while the base model uses the standard prompt, so the Codex difference is not a fine-tuning-only comparison. Public benchmark scores can also depend on harness, runtime, prompt, and inference budget.
+A central observation is **skill-free transfer**: after training on verified SkillGym trajectories, the released agent retains substantial performance even when the external skill is removed at inference time. Performance remains strongest when skills are available, indicating that internalized capability and explicit skills are complementary.
 
-For the full ablation tables and evaluation configuration, see the [paper](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) and the [dataset card](https://huggingface.co/datasets/ecnu-icalk/SkillGym).
+> [!NOTE]
+> Under Claude Code, the base and trained models use the same standard system prompt. Under Codex, the base uses the standard prompt while SkillGym-Agent uses the `no-applypatch` prompt, so the Codex difference is not a pure fine-tuning-only comparison. See the paper for the complete evaluation configuration, teacher/harness ablations, and public-reference results.
 
-## Quick start
+<a id="quick-start"></a>
 
-Choose the path that matches your goal. Downloading trajectories and building a task family are independent workflows.
+## Quick Start
 
-### Use the released trajectories
+Choose the path that matches your goal.
+
+### Use the released data
 
 ```bash
-python -m pip install -U huggingface_hub datasets
+python -m pip install -U huggingface_hub
 
 hf download ecnu-icalk/SkillGym \
   --include "Trajectories/*.jsonl" \
@@ -86,26 +120,18 @@ hf download ecnu-icalk/SkillGym \
   --local-dir .hf/skillgym
 ```
 
-Stream one trajectory collection without materializing the full corpus:
+For archive contents, trajectory schemas, task labels, and loading examples, see the **SkillGym Dataset Card**.
 
-```python
-from datasets import load_dataset
+### Download SkillGym-Agent
 
-records = load_dataset(
-    "json",
-    data_files={
-        "train": "hf://datasets/ecnu-icalk/SkillGym/Trajectories/skill_dependent_claude_code_deepseek_v4_pro.jsonl",
-    },
-    split="train",
-    streaming=True,
-)
-
-print(next(iter(records))["session_id"])
+```bash
+hf download ecnu-icalk/SkillGym-Agent \
+  --local-dir .hf/skillgym-agent
 ```
 
-See the [dataset README](https://huggingface.co/datasets/ecnu-icalk/SkillGym) for the directory layout, schema differences between trajectory files, and task semantics.
+For Transformers loading, checkpoint metadata, intended use, and evaluation caveats, see the **SkillGym-Agent Model Card**.
 
-### Build a task family
+### Build new skill-grounded environments
 
 ```bash
 git clone https://github.com/ECNU-ICALK/SkillGym.git
@@ -113,8 +139,11 @@ cd SkillGym
 
 npm --prefix task_builder ci
 npm --prefix task_builder run check
+```
 
-python -m pip install -U huggingface_hub
+Download the released skill library and task templates:
+
+```bash
 hf download ecnu-icalk/SkillGym \
   skill_library.tar.zst task_templates.tar.zst \
   --repo-type dataset \
@@ -124,45 +153,27 @@ tar --zstd -xf .hf/skillgym/skill_library.tar.zst
 tar --zstd -xf .hf/skillgym/task_templates.tar.zst
 ```
 
-Generate one small family from the repository root:
+Then follow the [Task Builder guide](task_builder/README.md) for generation, validation, skill-effect testing, repair, and publishing. A full generation run additionally requires Harbor, a configured runtime such as E2B, Daytona, or Docker, and the relevant model/runtime credentials.
 
-```bash
-npm --prefix task_builder run generate-family -- \
-  --template-root task_templates \
-  --template development/frontend/seed_task \
-  --skill-dir skill_library/development/frontend/skills/tailwind-design-system \
-  --skill-mode per-skill \
-  --task-count 1 \
-  --output-root /tmp/skillgym-output \
-  --concurrency 1
-```
+## Documentation
 
-The example checks the local pipeline; a full generation run additionally requires Harbor, a configured runtime such as E2B, Daytona, or Docker, and model/runtime credentials. It can take hours and may incur service charges. See the [Task Builder guide](task_builder/README.md) before scaling up.
+| Resource | Scope |
+| --- | --- |
+| [Task Builder guide](task_builder/README.md) | Installation, configuration, generation, validation, and output layout |
+| [Task-generation pipeline](task_builder/docs/task-generation-pipeline.md) | Construction stages, repair semantics, acceptance gates, and outputs |
+| [Dataset Card](https://huggingface.co/datasets/ecnu-icalk/SkillGym) | Released artifacts, schemas, labels, provenance, and data licensing |
+| [Model Card](https://huggingface.co/ecnu-icalk/SkillGym-Agent) | Checkpoint loading, training summary, evaluation, intended use, and limitations |
+| [Paper](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) | Full method, dataset analysis, experiments, ablations, and appendices |
 
-### Download the model
+## Reproducibility
 
-```bash
-hf download ecnu-icalk/SkillGym-Agent --local-dir .hf/skillgym-agent
-```
+This repository releases the **Task Builder**, documentation, and project materials. The companion Hugging Face repositories release the **data/trajectories** and **SkillGym-Agent checkpoint**. The current release does not include a standalone end-to-end training script or a single script that reproduces every external benchmark result.
 
-The [SkillGym-Agent model card](https://huggingface.co/ecnu-icalk/SkillGym-Agent) contains the Transformers smoke test and explains why loading the checkpoint alone does not reproduce the reported agent-harness scores.
-
-## Documentation and resources
-
-- [Task Builder guide](task_builder/README.md) — install, configure, generate, validate, and test task families.
-- [Task-generation pipeline](task_builder/docs/task-generation-pipeline.md) — stages, repair semantics, acceptance gates, and outputs.
-- [Migration notes](docs/migration.md) — archive layout and path behavior.
-- [Dataset card](https://huggingface.co/datasets/ecnu-icalk/SkillGym) — task structure, trajectory schema, statistics, and licensing.
-- [Model card](https://huggingface.co/ecnu-icalk/SkillGym-Agent) — checkpoint usage, evaluation scope, and limitations.
-- [Paper](assets/Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) — full method and experiments.
-
-## Reproducibility notes
-
-The repository currently releases the task builder, data, trajectories, and checkpoint. It does not include standalone training code or a complete script for reproducing every external benchmark. The paper reports long-context full-parameter SFT with ms-swift/Megatron on 16 NVIDIA H200 GPUs. Use the linked model and dataset cards for the exact release metadata and loading instructions.
+The paper reports long-context full-parameter supervised fine-tuning with **ms-swift / Megatron** on **16 × NVIDIA H200 GPUs**. Use the linked Dataset Card and Model Card for artifact-specific metadata and usage details.
 
 ## Citation
 
-The accompanying paper is under double-blind review. Until final publication metadata is available, use:
+The accompanying paper is currently under double-blind review. Until final publication metadata is available, please use:
 
 ```bibtex
 @misc{skillgym,
@@ -175,4 +186,6 @@ The accompanying paper is under double-blind review. Until final publication met
 
 ## License
 
-Repository-level code and materials are released under the [MIT License](LICENSE). Skills, fixtures, and supporting assets may retain upstream notices or additional licensing terms; preserve those notices when redistributing the corresponding files.
+Repository-level code and materials are released under the [MIT License](LICENSE).
+
+Dataset source skills, fixtures, and supporting assets may retain upstream notices or additional licensing terms. Preserve those notices when redistributing the corresponding materials; see the Dataset Card for artifact-specific details.
