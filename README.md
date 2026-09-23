@@ -197,7 +197,7 @@ npm --prefix task_builder run check
 npm --prefix task_builder run inventory
 \`\`\`
 
-The extraction commands recreate \`skill_library/\` and \`task_templates/\` at the repository root. The trajectory files remain under \`.hf/skillgym/Trajectories/\`; their names encode the result type, harness, and teacher model. See [\`migration_manifest.json\`](https://huggingface.co/datasets/ecnu-icalk/SkillGym/blob/main/migration_manifest.json) for the exact mapping and checksums.
+The extraction commands recreate `skill_library/` and `task_templates/` at the repository root. The trajectory files remain under `.hf/skillgym/Trajectories/`; their names encode the result type, harness, and teacher model. File sizes and SHA-256 checksums are available from the corresponding file metadata on the Hugging Face Hub.
 
 ### Configure Task Generation
 
