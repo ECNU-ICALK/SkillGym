@@ -45,6 +45,20 @@ These counts are the current manuscript snapshot. Environments, variants, sample
 
 
 
+
+## Key experimental results
+
+SkillGym-Agent is a supervised fine-tuned Qwen3.5-35B-A3B model trained on successful SkillGym trajectories. The table reports the same-harness comparison from the manuscript: GDPval-AA v2 is Elo, while the other columns are task success rates (%).
+
+| Harness | Model | GDPval-AA v2 | Terminal-Bench 2.1 | SkillsBench v1.1 (with skills) | SkillsBench v1.1 (without skills) |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Codex | Qwen3.5-35B-A3B (base) | 942 | 10.11 | 5.33 | 0.69 |
+| Codex | **SkillGym-Agent** | **976 (+34)** | **40.45 (+30.34)** | **19.91 (+14.58)** | **13.59 (+12.90)** |
+| Claude Code | Qwen3.5-35B-A3B (base) | 974 | 39.33 | 23.34 | 12.13 |
+| Claude Code | **SkillGym-Agent** | **1161 (+187)** | **57.30 (+17.97)** | **47.33 (+23.99)** | **28.41 (+16.28)** |
+
+SkillGym-Agent improves every reported metric under both harnesses. The largest professional-task gain appears under Claude Code (+187 Elo), while Codex shows the larger Terminal-Bench gain (+30.34 points). The Claude Code comparison uses the same standard system prompt for base and trained models; the Codex comparison also changes the system prompt, so its improvement should not be attributed to fine-tuning alone. See the [manuscript PDF](Internalizing_Large_Scale_Human_Written_Skills_into_LLMs_for_Real_World_Problem_Solving.pdf) and the [benchmark figure](assets/skillgym_baseline.pdf) for the full setup and caveats.
+
 ## What is in the release?
 
 | I want to… | Start here |
